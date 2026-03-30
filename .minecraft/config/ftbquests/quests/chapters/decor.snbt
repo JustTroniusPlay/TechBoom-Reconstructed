@@ -1,0 +1,349 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "decor"
+	group: ""
+	icon: "interiors:red_chair"
+	id: "64B5FC56C815DD60"
+	order_index: 4
+	quest_links: [{
+		id: "45F19FA923F620A1"
+		linked_quest: "20F8F5FEA03406E6"
+		x: -0.5d
+		y: 3.0d
+	}]
+	quests: [
+		{
+			description: ["The most powerful tool for a builder. Expand the variety of blocks and add new ones to build with! "]
+			id: "497C619A7840452E"
+			tasks: [{
+				id: "5B2689FEB5A3B1F7"
+				item: {
+					Count: 1
+					id: "chisel:iron_chisel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Friend of the builder"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Before you will be able to get good furniture you need to power your crafting station. First step is crafting a source of electricity for your future Workbench."
+				""
+				"There two ways:"
+				"- Simple solid fuel generator to power your house."
+				"- Circuit braker that can use FE sources of energy."
+				""
+				"Additionally generators will power various furniture blocks like fridge, stove, lamps and etc."
+			]
+			id: "4EACC2BD120E4F11"
+			tasks: [
+				{
+					id: "60C994614265AA6E"
+					item: "cfm_wap:light_circuit_breaker"
+					type: "item"
+				}
+				{
+					id: "33FE2932243D6F82"
+					item: "refurbished_furniture:light_electricity_generator"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Lights on!"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4EACC2BD120E4F11"]
+			description: ["To make complex and advanced furniture for your house you need Workbench. Everything will be crafted in this block."]
+			id: "171984E2621C6ACD"
+			tasks: [{
+				id: "7AAD2EC3AB5840C5"
+				item: "refurbished_furniture:workbench"
+				type: "item"
+			}]
+			title: "Advanced Furniture"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			id: "5142562557CBD9EE"
+			rewards: [{
+				count: 4
+				id: "5A71BC28751DC8D1"
+				item: "create:flywheel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "30C45CBADED4933E"
+				item: "create:flywheel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			description: ["Copycat block come with many forms and sizes. There even functional blocks like cogs, pipes and etc. "]
+			id: "07EAF46039399D70"
+			rewards: [{
+				count: 32
+				id: "65D1F874D314B014"
+				item: "copycats:copycat_block"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "767C95EDF7BF1763"
+				item: "copycats:copycat_block"
+				type: "item"
+			}]
+			title: "Shapeshifters of block world"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["497C619A7840452E"]
+			id: "15B4E79FE3985C2F"
+			rewards: [{
+				count: 256
+				id: "76886DF9729BE4A9"
+				item: "chisel:factory/dots"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "7F547149E10C06EA"
+				item: { Count: 64, id: "chisel:factory/dots" }
+				type: "item"
+			}]
+			title: "Raw Metalic Style"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["545BBD97C96F963A"]
+			id: "77D53B254B716EB9"
+			tasks: [
+				{
+					id: "091B2AA08B830264"
+					item: "adchimneys:cobblestone_chimney"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "394B69321C7F9BCA"
+					item: "adchimneys:small_brick_chimney"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7BE95FE06C76C447"
+					item: "adchimneys:large_brick_chimney"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "514B073CB7F3CE94"
+					item: "adchimneys:metal_chimney"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "07DEE6017AEA51AC"
+					item: "adchimneys:glass_chimney"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "World of chimneys!"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["77D53B254B716EB9"]
+			id: "375012CBB7DEBA40"
+			tasks: [{
+				id: "1BCE8DA30E8557DE"
+				item: {
+					Count: 1
+					id: "adchimneys:wooden_paintbrush"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4EACC2BD120E4F11"]
+			description: ["By using wrench you can connect any electric devices to electric generator or just together."]
+			id: "4360743A4EE7CE7D"
+			tasks: [{
+				id: "38AF26EB1352AEBF"
+				item: "refurbished_furniture:wrench"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			id: "5FB266E16C440D33"
+			rewards: [
+				{
+					count: 16
+					id: "5920F817CD52F3F4"
+					item: "create:wooden_bracket"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2651D3540B690EE5"
+					item: "create:metal_bracket"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7E4E20439001D22F"
+					item: "create:wooden_bracket"
+					type: "item"
+				}
+				{
+					id: "4FEAC9EE20629459"
+					item: "create:metal_bracket"
+					type: "item"
+				}
+			]
+			title: "Decor Brackets"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			id: "4F18D7D45D9753B5"
+			tasks: [{
+				id: "615173F1FC66A596"
+				item: "create:cuckoo_clock"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			id: "74878810382F1295"
+			tasks: [{
+				id: "18501AC5291F965F"
+				item: "create:turntable"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			icon: "create:display_board"
+			id: "6362DB17E665EDF3"
+			tasks: [
+				{
+					id: "24CD788330643779"
+					item: "create:display_board"
+					type: "item"
+				}
+				{
+					id: "1D560626CC860B75"
+					item: "create:display_link"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			id: "21ECBCD25A77230D"
+			tasks: [
+				{
+					id: "15FBF0A80C8D1DA8"
+					item: "create:nixie_tube"
+					type: "item"
+				}
+				{
+					id: "2839B2C097EB8833"
+					item: "bits_n_bobs:large_nixie_tube"
+					type: "item"
+				}
+				{
+					id: "3F7FBC0CD340620B"
+					item: "bits_n_bobs:nixie_board"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			id: "0ED6CE7F452DE7FF"
+			tasks: [{
+				id: "514EA71B60BAAE46"
+				item: "create:placard"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			id: "14D9817B30708716"
+			size: 1.0d
+			tasks: [{
+				id: "75126CCDD2B01AC1"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			id: "7174B08F0F1FA468"
+			tasks: [{
+				id: "5B46E567D808CE1E"
+				item: "createdieselgenerators:andesite_girder"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			id: "6B04EA2C93C2DA95"
+			tasks: [{
+				id: "3154E2AE9CA0911A"
+				item: "createdieselgenerators:sheet_metal_panel"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			id: "3B2B9A664D1EC8D2"
+			tasks: [{
+				id: "6970E5F5257CF081"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cb_microblock:tools/saw"
+					}
+				}
+				title: "Microblocks Saws"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+	]
+	title: "Decor"
+}

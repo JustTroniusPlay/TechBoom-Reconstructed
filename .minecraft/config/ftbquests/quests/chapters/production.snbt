@@ -1,0 +1,3388 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "production"
+	group: ""
+	icon: "thermal:machine_pulverizer"
+	id: "4289A20A871DC7D0"
+	order_index: 2
+	quest_links: [
+		{
+			id: "706C6771133466D1"
+			linked_quest: "25951FDCB7908145"
+			shape: "diamond"
+			size: 1.5d
+			x: -6.75d
+			y: 3.0d
+		}
+		{
+			id: "567528A927199C37"
+			linked_quest: "1A155790CD83B2A7"
+			shape: "rsquare"
+			size: 1.5d
+			x: -10.0d
+			y: -0.75d
+		}
+		{
+			id: "183BD844B51E68E0"
+			linked_quest: "2798CCE5B1DE21DA"
+			shape: "hexagon"
+			size: 1.5d
+			x: -24.8d
+			y: 0.15000000000000036d
+		}
+		{
+			id: "0D37DA266658503C"
+			linked_quest: "7A0C939E0FE540EC"
+			shape: "octagon"
+			size: 1.5d
+			x: -9.75d
+			y: 6.75d
+		}
+		{
+			id: "088304EF00FB61C8"
+			linked_quest: "43943D53B8603D29"
+			size: 0.6d
+			x: -28.0d
+			y: 1.6d
+		}
+		{
+			id: "07F748B62276EB96"
+			linked_quest: "1EC45844AE9357C0"
+			size: 0.7d
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			id: "275A575F5F19A334"
+			linked_quest: "4619627EEEE566A4"
+			shape: "hexagon"
+			size: 1.5d
+			x: -20.25d
+			y: 5.25d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "75D2966F919D360B"
+			tasks: [{
+				id: "1AAB0CDD45820F0D"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5D5A08D782C68D01"]
+			hide_dependent_lines: true
+			id: "746BED2E65591E76"
+			tasks: [
+				{
+					id: "6DC3201C3189C45F"
+					item: "createoreexcavation:drilling_machine"
+					type: "item"
+				}
+				{
+					id: "4BC0895228D1F6BF"
+					item: "createoreexcavation:drill"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "2EF4C6591798F00E"
+			rewards: [{
+				id: "0BC17D80EE89CEDD"
+				item: "createoreexcavation:drill"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5D2F173EBA533BDC"
+				item: "createoreexcavation:sample_drill"
+				type: "item"
+			}]
+			x: -17.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2EF4C6591798F00E"]
+			description: [
+				"Infinite ore veins need special equipment and preporation to gather. They can be found using Ore Vein Finder."
+				""
+				"There exist some vanilla and modded veins from Thermal and Mekanism. "
+			]
+			icon: "createoreexcavation:raw_diamond"
+			id: "2381B310EA56A896"
+			tasks: [{
+				id: "1C903EBAB216FAE0"
+				title: "Infinite ores"
+				type: "checkmark"
+			}]
+			x: -18.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"766AF1AE840A63FD"
+				"75D2966F919D360B"
+				"4D1A4AA16B63FB77"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Molten Vents can generate some Create related blocks when lava is poured on them. But before that you need to use explosives to awake them from their dormant state. "
+				""
+				"Collect and crush blocks to get resources with some chance."
+			]
+			icon: "molten_vents:dormant_molten_asurine"
+			id: "382680D8EC3065F3"
+			tasks: [{
+				id: "5BF6F2EEB79D532B"
+				title: "Molten Vents"
+				type: "checkmark"
+			}]
+			x: -16.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			hide_dependent_lines: true
+			id: "766AF1AE840A63FD"
+			tasks: [{
+				id: "1F9BC542641DB9E1"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: -28.0d
+			y: -2.6999999999999997d
+		}
+		{
+			dependencies: ["691DD9FDCE3E58DA"]
+			description: ["The most simple kinetic power generator you can make."]
+			id: "22BE56C3CA087A04"
+			tasks: [{
+				id: "7AFD8D061F48A989"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -2.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			id: "67C1B62B8C68F0F1"
+			size: 0.7d
+			tasks: [{
+				id: "36F9C8C36842D28F"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: -2.1d
+			y: 1.05d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			id: "52FD5BFF07C6D698"
+			subtitle: "Rotation of heat"
+			tasks: [{
+				id: "3F1E879A8F6BFC6A"
+				item: "create_new_age:stirling_engine"
+				type: "item"
+			}]
+			x: -2.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			icon: "create:mechanical_mixer"
+			id: "2185592369B7D5FC"
+			tasks: [
+				{
+					id: "75EF127A24F42C09"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "174DEA2B5FE97FAD"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: -3.323469387755104d
+			y: 1.5394557823129063d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			id: "567F66C720FFFE6D"
+			tasks: [{
+				id: "57F2973B980D99FD"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 4.0d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			id: "621E6E9756E60D93"
+			subtitle: "Blown away!"
+			tasks: [{
+				id: "0C9519C78E083041"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -1.75d
+			y: 2.0d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			icon: "create:windmill_bearing"
+			id: "34A4F350D3CE0400"
+			rewards: [{
+				count: 8
+				id: "48580E80C5D15DF4"
+				item: "create:white_sail"
+				type: "item"
+			}]
+			size: 1.2d
+			tasks: [
+				{
+					id: "6D20CC13ACBADAD1"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4A72412E92C89193"
+					item: { Count: 8, id: "create:white_sail" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "53F5087CB369FEE1"
+					item: { Count: 8, id: "thermal:white_rockwool" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["621E6E9756E60D93"]
+			id: "121519A8BF334E14"
+			size: 0.5d
+			tasks: [{
+				id: "0E4B28AA52856E41"
+				item: "create:nozzle"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.75d
+		}
+		{
+			dependencies: [
+				"5A3BFC118141DC5C"
+				"691DD9FDCE3E58DA"
+			]
+			id: "2D85F9C5CA1B055C"
+			size: 0.6d
+			tasks: [
+				{
+					id: "00F413111767EB80"
+					item: "create_connected:crank_wheel"
+					type: "item"
+				}
+				{
+					id: "76E405DC8B6C067E"
+					item: "create_connected:large_crank_wheel"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Crank Wheels"
+			x: -5.25d
+			y: 3.6d
+		}
+		{
+			dependencies: ["25951FDCB7908145"]
+			id: "691DD9FDCE3E58DA"
+			tasks: [{
+				id: "2F80DA5183FF4976"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1A155790CD83B2A7"]
+			icon: "create:deployer"
+			id: "37FAA3D4CF96E9EE"
+			tasks: [{
+				id: "7C1169D7D67535EC"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3D1CCF8E85981E52"]
+			id: "7B289C03327D9227"
+			tasks: [{
+				count: 9L
+				id: "50C021836BABC536"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "Mechanical Crafters"
+			x: -16.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			icon: "gtceu:coke_oven"
+			id: "49EAA9A6F41A7551"
+			tasks: [
+				{
+					id: "06A693B62FDAE319"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "0CBC08D5914738D8"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7CD3A054FEF6769C"
+					item: "gtceu:coke_oven_hatch"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			id: "4A33371DB94DFD62"
+			size: 0.7d
+			tasks: [{
+				id: "5AFF08EF595FA079"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -10.85d
+			y: 6.6499999999999995d
+		}
+		{
+			dependencies: ["2381B310EA56A896"]
+			description: ["Ore Vein Finder will help you seek for infinite ore veins that you will be able to drill for endless supply of various resources."]
+			id: "529C35B3C2D42687"
+			tasks: [{
+				id: "6DA3E3C425D13D74"
+				item: "createoreexcavation:vein_finder"
+				type: "item"
+			}]
+			x: -18.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["529C35B3C2D42687"]
+			description: [
+				"Contains information about the ore veins you find. Just click Sample Drill with it after drill finished."
+				""
+				"Atlas will show you coordinates of the vein. You can additionally filter what veins you don't want to search next time. It can be helpful if you want to find a new resources."
+			]
+			id: "5D5A08D782C68D01"
+			tasks: [{
+				id: "40200C11FBCC292B"
+				item: "createoreexcavation:vein_atlas"
+				type: "item"
+			}]
+			x: -17.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["25951FDCB7908145"]
+			description: [
+				"The backbone tool of Create mod is its gold plated beatiful wrench!"
+				""
+				"That tool helps you rotate mechanisms, change their behavior and brake them without use of tools (shift+right click)."
+			]
+			icon: "create:wrench"
+			id: "7F493483338AF21E"
+			tasks: [
+				{
+					id: "733F4F8FF9018E48"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "385235578CAD7CD7"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "42F2B3DC445CED5F"
+			size: 0.5d
+			tasks: [{
+				id: "0D204D98A9693D68"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			x: -19.25d
+			y: -6.25d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "35E21107F56A809E"
+			size: 1.0d
+			tasks: [{
+				id: "5CED78FBD31C8589"
+				item: {
+					Count: 1
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -19.023469387755092d
+			y: -5.075510204081617d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "0EF84E4CE1E414B8"
+			size: 0.5d
+			tasks: [{
+				id: "6470436C90DC56F7"
+				item: "fluid:baton"
+				type: "item"
+			}]
+			x: -17.75d
+			y: -7.75d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			icon: "create:mechanical_press"
+			id: "1A3BA4BEFD861942"
+			size: 1.2d
+			tasks: [
+				{
+					id: "04010810049E0C99"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "2982F274BA157CCF"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			x: -2.739285714285721d
+			y: 0.41904761904761756d
+		}
+		{
+			dependencies: ["25951FDCB7908145"]
+			description: ["Filters needed when you want ceirtan output or input when working with Create mod machines. "]
+			id: "1E77A0BEA339B0BB"
+			rewards: [
+				{
+					count: 6
+					id: "27019049C8653BB4"
+					item: "create:filter"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "12C94DAE9B677C32"
+					item: "createdieselgenerators:entity_filter"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6BDFE17E7811785E"
+					item: "create:filter"
+					type: "item"
+				}
+				{
+					id: "25AEEFBEDD242E01"
+					item: "createdieselgenerators:entity_filter"
+					type: "item"
+				}
+			]
+			title: "Create Filters"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F493483338AF21E"]
+			description: ["Toolbox can hold up to 8 tools inside that you can take from it remotely using a keybind (ALT bu default). Its range not infinite, so consider putting it closer to you workplace. "]
+			id: "0DE96BB04654485F"
+			size: 0.7d
+			tasks: [{
+				id: "31D916323BEB89DE"
+				item: "create:brown_toolbox"
+				type: "item"
+			}]
+			x: -6.6499999999999995d
+			y: 1.4d
+		}
+		{
+			dependencies: ["25951FDCB7908145"]
+			description: [""]
+			hide_dependent_lines: true
+			id: "3082ACB31EDFB2D1"
+			subtitle: "Hunting the black gold"
+			tasks: [{
+				id: "2BE071B6A294E103"
+				item: "createdieselgenerators:oil_scanner"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			icon: "create_sa:brass_drone_item"
+			id: "2D24B69CEABE3F73"
+			tasks: [
+				{
+					id: "16DA750BAC91D902"
+					item: "create_sa:brass_drone_item"
+					type: "item"
+				}
+				{
+					id: "6BA9E14E300BC1C4"
+					item: "create_sa:drone_controller"
+					type: "item"
+				}
+			]
+			x: -21.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2D24B69CEABE3F73"]
+			id: "1D6381AA70C87A0E"
+			tasks: [{
+				id: "0C4D4AB1C4FFC13F"
+				item: "create_sa:vault_component"
+				type: "item"
+			}]
+			x: -20.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2D24B69CEABE3F73"]
+			id: "2071E54E3C20E9B0"
+			tasks: [{
+				id: "141DDDE49F857406"
+				item: "create_sa:fan_component"
+				type: "item"
+			}]
+			x: -20.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2D24B69CEABE3F73"]
+			id: "0524C6A3A4051DAC"
+			tasks: [{
+				id: "7B51DF1E3282AFE1"
+				item: "create_sa:brass_drill_head"
+				type: "item"
+			}]
+			x: -22.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2D24B69CEABE3F73"]
+			id: "37DC8B98BD8A2989"
+			tasks: [{
+				id: "599FE90366E31732"
+				item: "create_sa:copper_magnet"
+				type: "item"
+			}]
+			x: -22.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"43943D53B8603D29"
+				"3155C182FC72865E"
+			]
+			id: "0D808399A2E281BC"
+			tasks: [{
+				id: "5E8A531F5ED2B677"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
+			}]
+			x: -28.0d
+			y: 0.8000000000000003d
+		}
+		{
+			dependencies: ["0D808399A2E281BC"]
+			id: "4AD162D4214DFACB"
+			tasks: [{
+				id: "462CF174CED05F6C"
+				item: "thermal:upgrade_augment_3"
+				type: "item"
+			}]
+			x: -27.0d
+			y: 0.8000000000000003d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "3155C182FC72865E"
+			tasks: [{
+				id: "741F7FE453646B65"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: -29.0d
+			y: 0.30000000000000027d
+		}
+		{
+			dependencies: ["25951FDCB7908145"]
+			id: "786AE8A849CD860F"
+			rewards: [
+				{
+					count: 4
+					id: "33E23D15DFD4FC72"
+					item: "create:schematic_and_quill"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7ED457458DAD2243"
+					item: "create:empty_schematic"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "25D1588C95E6BF1C"
+					item: "create:schematic_table"
+					type: "item"
+				}
+				{
+					id: "4E1A5F4463ECE637"
+					item: "create:schematicannon"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Schematics"
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"25951FDCB7908145"
+			]
+			id: "2D5E5EAF4F278A1C"
+			tasks: [{
+				id: "4C4B2BDD6CDC2221"
+				item: "tfmg:electricians_wrench"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1A3BA4BEFD861942"]
+			icon: "create_sa:hydraulic_engine"
+			id: "188E10C139F48264"
+			tasks: [
+				{
+					id: "7BB9C943BF725539"
+					item: "create_sa:hydraulic_engine"
+					type: "item"
+				}
+				{
+					id: "1652EEFFA56A50FE"
+					item: {
+						Count: 1
+						id: "create_sa:copper_jetpack_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "480FF33038745E80"
+					item: {
+						Count: 1
+						id: "create_sa:copper_exoskeleton_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -2.732142857142861d
+			y: -1.642857142857146d
+		}
+		{
+			dependencies: [
+				"7B289C03327D9227"
+				"37FAA3D4CF96E9EE"
+			]
+			icon: "create_sa:heat_engine"
+			id: "7ED421A21A7BB90C"
+			tasks: [
+				{
+					id: "7B7D00BD48861DCD"
+					item: "create_sa:heat_engine"
+					type: "item"
+				}
+				{
+					id: "36DE4EC6B3272945"
+					item: {
+						Count: 1
+						id: "create_sa:andesite_jetpack_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "74A993EAE1CF1EF3"
+					item: {
+						Count: 1
+						id: "create_sa:andesite_exoskeleton_chestplate"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -13.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["188E10C139F48264"]
+			id: "261E072888FAEA04"
+			size: 0.6d
+			tasks: [
+				{
+					id: "3452A1204DB5EBA4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_sa:small_filling_tank"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7BE91237F878FF59"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_sa:medium_filling_tank"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "60A186509C149AEC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_sa:large_filling_tank"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Filling Tanks"
+			x: -3.3d
+			y: -1.2d
+		}
+		{
+			dependencies: [
+				"37FAA3D4CF96E9EE"
+				"7B289C03327D9227"
+			]
+			icon: "create_sa:steam_engine"
+			id: "0E0B2F4801CE1F38"
+			tasks: [
+				{
+					id: "1A01BC99C57525E4"
+					item: "create_sa:steam_engine"
+					type: "item"
+				}
+				{
+					id: "3338D2E19066F518"
+					item: {
+						Count: 1
+						id: "create_sa:brass_jetpack_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "10B9F9ED8CF6B1BF"
+					item: {
+						Count: 1
+						id: "create_sa:brass_exoskeleton_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -13.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["25951FDCB7908145"]
+			id: "03BA308F466FCAF4"
+			tasks: [
+				{
+					id: "27D72E46E8E13889"
+					item: {
+						Count: 1
+						id: "create_sa:slime_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "492C8F7E0F2111ED"
+					item: {
+						Count: 1
+						id: "create_sa:slime_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Slime Cloth"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			icon: "create:mechanical_bearing"
+			id: "108C99B4F1FE705F"
+			tasks: [
+				{
+					id: "5BCDB3A286FFDAAD"
+					item: "create:mechanical_bearing"
+					type: "item"
+				}
+				{
+					id: "63EF971EDF1B271B"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			icon: "create:mechanical_piston"
+			id: "131F6E41A7F8D902"
+			rewards: [{
+				count: 8
+				id: "4E1742C1443E1B0D"
+				item: "create:piston_extension_pole"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "58F3B08D1092E3C0"
+					item: "create:mechanical_piston"
+					type: "item"
+				}
+				{
+					id: "6C5BC2EB0279EE93"
+					item: "create:sticky_mechanical_piston"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "65C50E8270E40B5F"
+					item: "create:piston_extension_pole"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3D1CCF8E85981E52"]
+			id: "01F0CE0956D6A361"
+			tasks: [{
+				id: "6248A70F71D52EB6"
+				item: "create:clockwork_bearing"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["691DD9FDCE3E58DA"]
+			id: "18BF6D22CDB7509D"
+			tasks: [{
+				id: "3E75252022BD8BD2"
+				item: "create_new_age:basic_motor"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"18BF6D22CDB7509D"
+				"5ECEF02D7431A68F"
+			]
+			id: "7168542153473DA6"
+			size: 0.7d
+			tasks: [{
+				id: "566F7EB455062C02"
+				item: "create_new_age:basic_motor_extension"
+				type: "item"
+			}]
+			x: -3.85d
+			y: -0.35d
+		}
+		{
+			dependencies: ["6E605D41A0CFDD7E"]
+			id: "610C4C8C26ED7A5C"
+			size: 0.7d
+			tasks: [{
+				id: "2B6901624C4B38FA"
+				item: "create_new_age:advanced_motor_extension"
+				type: "item"
+			}]
+			x: -6.3d
+			y: -1.05d
+		}
+		{
+			dependencies: ["18BF6D22CDB7509D"]
+			id: "4EF6BA6A14C473DA"
+			size: 0.7d
+			tasks: [{
+				id: "280DFCBEF5CD6FC8"
+				item: "create_new_age:advanced_motor"
+				type: "item"
+			}]
+			x: -5.6d
+			y: -0.7d
+		}
+		{
+			dependencies: ["4EF6BA6A14C473DA"]
+			id: "6E605D41A0CFDD7E"
+			size: 0.7d
+			tasks: [{
+				id: "2740AC605AC1361B"
+				item: "create_new_age:reinforced_motor"
+				type: "item"
+			}]
+			x: -5.6d
+			y: -1.75d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			icon: "create:gantry_carriage"
+			id: "63D13484D290E086"
+			rewards: [{
+				count: 8
+				id: "7890C5317AB8F97A"
+				item: "create:gantry_shaft"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "01968051960F926F"
+					item: "create:gantry_carriage"
+					type: "item"
+				}
+				{
+					id: "514A3E1A10C4B51A"
+					item: "create:gantry_shaft"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			icon: "create:rope_pulley"
+			id: "006BE374861F163C"
+			tasks: [
+				{
+					id: "49AEC744D1FE730E"
+					item: "create:rope_pulley"
+					type: "item"
+				}
+				{
+					id: "3282C9647DC204C6"
+					item: "bits_n_bobs:chain_pulley"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1A155790CD83B2A7"]
+			hide_dependent_lines: true
+			id: "3F3B85401746F8BC"
+			tasks: [{
+				id: "248D68B3369469F7"
+				item: "create:elevator_pulley"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			id: "6CB66A8B5CA50E79"
+			tasks: [
+				{
+					id: "10992A01971DDC28"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+				{
+					id: "00200431CBFE3905"
+					item: "create:radial_chassis"
+					type: "item"
+				}
+				{
+					id: "39596A3B6F63E942"
+					item: "create:secondary_linear_chassis"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"108C99B4F1FE705F"
+				"3F3B85401746F8BC"
+			]
+			dependency_requirement: "one_completed"
+			id: "5BCF22055EDA1850"
+			tasks: [
+				{
+					id: "0C3EF92710D2C5CF"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+				{
+					id: "541DDB5FADCE70FB"
+					item: "create:redstone_contact"
+					type: "item"
+				}
+			]
+			title: "Making a contact"
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			id: "54661956247869DD"
+			tasks: [{
+				id: "75946E4EDDDCAB70"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			id: "17304F0AA96C369E"
+			tasks: [{
+				id: "1CBC9D7B52E79AD5"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -1.7119047619047407d
+			y: 3.9047619047619264d
+		}
+		{
+			dependencies: ["17304F0AA96C369E"]
+			hide_dependent_lines: true
+			id: "4D1A4AA16B63FB77"
+			tasks: [{
+				id: "38D5D8B1ADDFF417"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5BCF22055EDA1850"
+				"27D02A3ECE518CCE"
+			]
+			id: "0B61ED63E8F8E7D2"
+			tasks: [{
+				id: "1AFEBD1BA0CEECD0"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: 2.1404761904761784d
+			y: 6.595238095238081d
+		}
+		{
+			dependencies: ["5BCF22055EDA1850"]
+			id: "2921356EB034FB43"
+			tasks: [{
+				id: "444CE0029226CAFB"
+				item: "create:mechanical_plough"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			id: "40B9ECFB3C0DB31F"
+			size: 1.2d
+			tasks: [{
+				id: "51660897DFAD0E55"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			id: "5B4C38C2E2CA7441"
+			tasks: [{
+				id: "05952F8B7DB80B45"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			id: "5CD12AC552AA4061"
+			tasks: [{
+				id: "117966985BB1862C"
+				item: "moreburners:electric_burner"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			id: "0DB76665DD848A9A"
+			tasks: [{
+				id: "49DC50BF84CA042D"
+				item: "create_new_age:heater"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			description: ["The most effective fuel for Burner is &lGasoline&r. It is only one which allow it to reach &osuperheated&r state."]
+			id: "036AB4BD3B27FB1B"
+			rewards: [{
+				id: "6E53A882F5DBD1E9"
+				item: "create:copper_valve_handle"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E683E95464CDCDE"
+				item: "createdieselgenerators:burner"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5CD12AC552AA4061"]
+			id: "1DA15BD0E020EBB9"
+			size: 0.6d
+			tasks: [{
+				id: "77589BB2B73B66EA"
+				item: "moreburners:heat_upgrade"
+				type: "item"
+			}]
+			x: 3.9d
+			y: 3.5999999999999996d
+		}
+		{
+			dependencies: ["5B4C38C2E2CA7441"]
+			id: "13992CA785DBF66B"
+			size: 0.6d
+			tasks: [{
+				id: "585354293C63CD22"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 3.9d
+			y: 2.4d
+		}
+		{
+			dependencies: ["18BF6D22CDB7509D"]
+			icon: "create_new_age:basic_energiser"
+			id: "5ECEF02D7431A68F"
+			tasks: [
+				{
+					id: "60F538EEAB17B4CD"
+					item: "create_new_age:basic_energiser"
+					type: "item"
+				}
+				{
+					id: "1B76AD2112C6742A"
+					item: "create_new_age:overcharged_iron"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5ECEF02D7431A68F"]
+			id: "0316B642B81524B4"
+			size: 0.6d
+			tasks: [{
+				id: "54BE51B7463086F2"
+				item: "create_new_age:advanced_energiser"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.7999999999999998d
+		}
+		{
+			dependencies: ["0316B642B81524B4"]
+			id: "4D6E6EA47CA5978C"
+			size: 0.6d
+			tasks: [{
+				id: "48907E5611166EA3"
+				item: "create_new_age:reinforced_energiser"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.4d
+		}
+		{
+			dependencies: ["52FD5BFF07C6D698"]
+			id: "288826470DDF0F30"
+			rewards: [
+				{
+					count: 8
+					id: "30E527826AEEA8F8"
+					item: "create_new_age:heat_pipe"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "736D9303FFDDC260"
+					item: "create_new_age:heat_pump"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4995DF26034CDA70"
+					item: "create_new_age:heat_pipe"
+					type: "item"
+				}
+				{
+					id: "2FB103F218F59805"
+					item: "create_new_age:heat_pump"
+					type: "item"
+				}
+			]
+			title: "Heat Pipes"
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["52FD5BFF07C6D698"]
+			id: "0E4787407FD60897"
+			tasks: [{
+				id: "2AC23B59760A6EF8"
+				item: "create_new_age:basic_solar_heating_plate"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			icon: "vs_clockwork:gas_heater"
+			id: "195C4A83D91C9C82"
+			tasks: [
+				{
+					id: "4AA677DCA5E1A8E1"
+					item: "vs_clockwork:gas_heater"
+					type: "item"
+				}
+				{
+					id: "48FBDEEFFC79E867"
+					item: "vs_clockwork:air_compressor"
+					type: "item"
+				}
+				{
+					id: "13A158EFE1E1F83A"
+					item: "vs_clockwork:coal_burner"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"40B9ECFB3C0DB31F"
+				"195C4A83D91C9C82"
+			]
+			id: "6C17A7CA919D75E5"
+			tasks: [{
+				id: "52FD4F3A43884192"
+				item: "vs_clockwork:gas_engine"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"3082ACB31EDFB2D1"
+				"5BCF22055EDA1850"
+			]
+			id: "0D95F54AC91C2DF0"
+			rewards: [{
+				count: 64
+				id: "2CDD15D8E47C8B90"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "756CAB5FB9173561"
+					item: "createdieselgenerators:pumpjack_bearing"
+					type: "item"
+				}
+				{
+					id: "536EA1287B8280EB"
+					item: "createdieselgenerators:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "4AE1C5D5E9268692"
+					item: "createdieselgenerators:pumpjack_head"
+					type: "item"
+				}
+				{
+					id: "65FBAA5FD6C42773"
+					item: "createdieselgenerators:pumpjack_hole"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0D95F54AC91C2DF0"
+				"54661956247869DD"
+			]
+			description: ["The top segment will contain &oGasoline&r and middle one &oDiesel&r."]
+			icon: "createdieselgenerators:crude_oil_bucket"
+			id: "043F7FFDC6430B34"
+			size: 1.2d
+			subtitle: "Simple and easy"
+			tasks: [
+				{
+					id: "22AF7F92510AB871"
+					item: "createdieselgenerators:distillation_controller"
+					type: "item"
+				}
+				{
+					id: "70E346771A8B2024"
+					item: "createdieselgenerators:gasoline_bucket"
+					type: "item"
+				}
+				{
+					id: "400A83B1DF44BB16"
+					item: "createdieselgenerators:diesel_bucket"
+					type: "item"
+				}
+			]
+			title: "Oil Proccesing"
+			x: 5.535714285714292d
+			y: 7.464285714285708d
+		}
+		{
+			dependencies: ["043F7FFDC6430B34"]
+			description: ["Oil Barrels work similar to copper fluid tanks, but just can be more fitting to your refinery place."]
+			id: "20F8F5FEA03406E6"
+			size: 0.7d
+			tasks: [
+				{
+					id: "6ABBAD21DE1F859C"
+					item: "createdieselgenerators:oil_barrel"
+					type: "item"
+				}
+				{
+					id: "58DC4D782CC7F434"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:canister"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Thematical containment"
+			x: 4.8999999999999995d
+			y: 6.6499999999999995d
+		}
+		{
+			dependencies: [
+				"1A155790CD83B2A7"
+				"18BF6D22CDB7509D"
+			]
+			id: "7863C9BC39A7F9D8"
+			tasks: [{
+				id: "0BE45FEC8B325CAA"
+				item: "createdieselgenerators:diesel_engine"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7863C9BC39A7F9D8"]
+			description: [
+				"Before you get real dieseil you can craft its replacement made from seeds oil and ethanol. How and what way you will choose to create them is up to you."
+				""
+				"With biodisel though your engines will give less SU."
+			]
+			id: "5C9C2540BA21612F"
+			size: 0.7d
+			tasks: [{
+				id: "27E606CF6F14B22A"
+				item: "createdieselgenerators:biodiesel_bucket"
+				type: "item"
+			}]
+			title: "Ecological replacement"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2185592369B7D5FC"]
+			id: "3CD6BF0CF344C8A1"
+			size: 0.7d
+			tasks: [{
+				id: "20F1151AF5039D7A"
+				item: "createdieselgenerators:basin_lid"
+				type: "item"
+			}]
+			x: -3.445918367346934d
+			y: 2.5598639455782077d
+		}
+		{
+			dependencies: ["7863C9BC39A7F9D8"]
+			id: "5B4C03560857B7FA"
+			tasks: [{
+				id: "79801EA3EA2F45FB"
+				item: "createdieselgenerators:large_diesel_engine"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			description: [
+				"Bulk Fermentor can procces and help to craft many things."
+				""
+				"One block is enough to start, but you can make it bigger for more liquid storage."
+			]
+			id: "209DE8284AADF311"
+			tasks: [{
+				id: "3553C0677F1F17B2"
+				item: "createdieselgenerators:bulk_fermenter"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["40B9ECFB3C0DB31F"]
+			id: "00A2DD71A6D04C32"
+			size: 1.2d
+			tasks: [{
+				id: "78302B8EDA5D2C1A"
+				item: "createdieselgenerators:huge_diesel_engine"
+				type: "item"
+			}]
+			x: 5.484693877551024d
+			y: -1.3707482993197289d
+		}
+		{
+			dependencies: ["7863C9BC39A7F9D8"]
+			description: ["Just remember that as speed increases, so does the stress requirement of powered machinery."]
+			id: "307B27F7EDC1D052"
+			size: 0.6d
+			tasks: [
+				{
+					id: "2C2A9442744DE7F1"
+					item: "createdieselgenerators:engine_silencer"
+					type: "item"
+				}
+				{
+					id: "7A46A17885973A77"
+					item: "createdieselgenerators:engine_turbocharger"
+					type: "item"
+				}
+			]
+			title: "Engine Upgrades"
+			x: -8.1d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "35EFF8146D90FE18"
+			tasks: [
+				{
+					id: "00E5D9239FED3AB9"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:chemical_sprayer"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "3B8B380CB2BD2FC7"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:chemical_sprayer_lighter"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -19.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["35EFF8146D90FE18"]
+			icon: "createdieselgenerators:chemical_turret"
+			id: "00CDC15A7E3EE931"
+			tasks: [
+				{
+					id: "1AFD2530A4B64520"
+					item: "createdieselgenerators:chemical_turret"
+					type: "item"
+				}
+				{
+					id: "23A7A332670DC8CF"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:lighter"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Hans bring the flammenwerfer"
+			x: -21.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["37FAA3D4CF96E9EE"]
+			id: "0852CB10008D7CDB"
+			tasks: [{
+				id: "15140B4F56F7A582"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0852CB10008D7CDB"]
+			id: "11D2F8CDD6C8BE1E"
+			tasks: [{
+				id: "35EC02D719243E98"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0852CB10008D7CDB"]
+			id: "305B85EBEB9776A3"
+			rewards: [{
+				id: "5A49412929F2A366"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E38F3B4A6AD1591"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: -12.141836734693868d
+			y: -7.54081632653061d
+		}
+		{
+			dependencies: ["1A155790CD83B2A7"]
+			id: "3D1CCF8E85981E52"
+			tasks: [{
+				id: "09034466495D9971"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D1CCF8E85981E52"]
+			id: "16C915DA96722503"
+			size: 0.7d
+			tasks: [{
+				id: "5A1C9770541C568A"
+				item: "vintageimprovements:belt_grinder"
+				type: "item"
+			}]
+			x: -12.487414965986375d
+			y: -1.0795918367346786d
+		}
+		{
+			dependencies: [
+				"11D2F8CDD6C8BE1E"
+				"332E6B2C638AE656"
+			]
+			icon: "fluid:pipette"
+			id: "6B98F8F66130812D"
+			size: 0.6d
+			tasks: [
+				{
+					id: "11A5AD5E6D1E20A1"
+					item: "fluid:pipette"
+					type: "item"
+				}
+				{
+					id: "52DCE31F071A4F1F"
+					item: "fluid:fluid_interface"
+					type: "item"
+				}
+				{
+					id: "094644FFBB5E76FA"
+					item: "fluid:smart_fluid_interface"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -12.899999999999999d
+			y: -7.8d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "0FBD8C5E61338813"
+			tasks: [{
+				id: "27E562EA84E185E1"
+				item: "create_new_age:redstone_magnet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "46A13C7F6842C1AE"
+			tasks: [{
+				id: "526ECE3776D213C2"
+				item: "create_new_age:layered_magnet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "50FB45708E0B12F5"
+			tasks: [{
+				id: "5DE441D21EB24EE3"
+				item: "create_new_age:fluxuated_magnetite"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "4DF0DA70E0E5048F"
+			tasks: [{
+				id: "612B2AC75C9138B1"
+				item: "create_new_age:netherite_magnet"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["34A4F350D3CE0400"]
+			icon: "create_new_age:generator_coil"
+			id: "59DE400FAB603D8A"
+			size: 1.5d
+			tasks: [
+				{
+					id: "269949462ECBD686"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "24924A62ABEF622E"
+					item: { Count: 12, id: "create_new_age:magnetite_block" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1D916F39592C1711"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "3238F7E1DF448006"
+			size: 1.3d
+			tasks: [{
+				id: "49357F146F9F534C"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: -17.428571428571423d
+			y: -3.6071428571428683d
+		}
+		{
+			dependencies: ["3238F7E1DF448006"]
+			id: "0D94E3F4B5743A8F"
+			tasks: [{
+				id: "1F332663789FD80B"
+				item: "create_better_motors:starter_motor"
+				type: "item"
+			}]
+			title: "Even More power"
+			x: -17.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "600DDB0FDB97CFFA"
+			size: 1.3d
+			tasks: [{
+				id: "688817377E3F75B2"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: -15.714285714285708d
+			y: -3.6071428571428683d
+		}
+		{
+			dependencies: ["600DDB0FDB97CFFA"]
+			id: "42CC6B90C412D25F"
+			tasks: [{
+				id: "1D846205CE76CE8D"
+				item: "create_better_motors:andesite_alternator"
+				type: "item"
+			}]
+			x: -15.714285714285708d
+			y: -2.500000000000014d
+		}
+		{
+			dependencies: ["0852CB10008D7CDB"]
+			id: "43E9C14749BCCDAB"
+			tasks: [{
+				id: "1DE9E628F17FF16C"
+				item: "create_connected:kinetic_battery"
+				type: "item"
+			}]
+			x: -10.827551020408151d
+			y: -7.569387755102042d
+		}
+		{
+			dependencies: ["49EAA9A6F41A7551"]
+			id: "575BDE04271E94D1"
+			tasks: [{
+				count: 27L
+				id: "2F40390FDF8B0340"
+				item: { Count: 27, id: "railcraft:coke_oven_bricks" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3CD05E2E5661246B"]
+			id: "79EF5B4E470ACDB4"
+			tasks: [{
+				count: 27L
+				id: "4539E419960B6A2B"
+				item: { Count: 27, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"79EF5B4E470ACDB4"
+				"7A0C939E0FE540EC"
+			]
+			icon: "immersiveengineering:blastbrick_reinforced"
+			id: "745A282BA4A843D5"
+			tasks: [
+				{
+					count: 27L
+					id: "68CFC7DD9D063B7B"
+					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "592251313E28E9FF"
+					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["79EF5B4E470ACDB4"]
+			id: "697FDEFDED0990AC"
+			tasks: [{
+				count: 36L
+				id: "1BCE9E2477B7E389"
+				item: { Count: 36, id: "railcraft:blast_furnace_bricks" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			id: "48BC04D05B89C7EA"
+			tasks: [{
+				id: "4C2630267ED5A26F"
+				item: "railcraft:powered_rolling_machine"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"2185592369B7D5FC"
+				"1A3BA4BEFD861942"
+			]
+			icon: "create:cardboard"
+			id: "67A60A92B37AEADD"
+			size: 0.5d
+			tasks: [
+				{
+					id: "0A8D4029AEB0A4A2"
+					item: "create:pulp"
+					type: "item"
+				}
+				{
+					id: "126845B7B6B7554E"
+					item: "create:cardboard"
+					type: "item"
+				}
+			]
+			title: "Cardboard"
+			x: -3.75d
+			y: 0.5d
+		}
+		{
+			dependencies: ["67A60A92B37AEADD"]
+			description: ["Equip full complect and press Shift."]
+			id: "12A40E965198E364"
+			rewards: [{
+				id: "1A93D215FC861110"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"undermod:capability_item_life_leech": {
+							power: 1
+						}
+					}
+					id: "create:cardboard_sword"
+				}
+				type: "item"
+			}]
+			size: 0.7d
+			tasks: [
+				{
+					id: "22E39FD8E8E62429"
+					item: {
+						Count: 1
+						id: "create:cardboard_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6ADD17C5A6C1ED6F"
+					item: {
+						Count: 1
+						id: "create:cardboard_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "237CA9FB4DCA7A09"
+					item: {
+						Count: 1
+						id: "create:cardboard_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "16E1D455121E2465"
+					item: {
+						Count: 1
+						id: "create:cardboard_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Not! That is not a Solid Snake!"
+			x: -3.2010204081632594d
+			y: -0.5013605442176967d
+		}
+		{
+			dependencies: ["37FAA3D4CF96E9EE"]
+			id: "70A43884F1EE4D7A"
+			tasks: [{
+				id: "44897A9AC6CC214E"
+				item: "create_factory_logistics:fluid_mechanism"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3D1CCF8E85981E52"]
+			id: "269BE244B9748C44"
+			tasks: [{
+				id: "6404C505F94DD717"
+				item: "create:content_observer"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1A155790CD83B2A7"
+				"1E77A0BEA339B0BB"
+			]
+			id: "05641858A233D910"
+			tasks: [{
+				id: "3388CAAE5DE6EAB6"
+				item: "create:attribute_filter"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CB66A8B5CA50E79"]
+			id: "5C76216A1010F53A"
+			tasks: [{
+				id: "1A5E65B530FCD384"
+				item: "create:sticker"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5BCF22055EDA1850"]
+			id: "7FB3323035BFA2A5"
+			tasks: [{
+				id: "44E3412E0A30E847"
+				item: "create:contraption_controls"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5BCF22055EDA1850"]
+			id: "123E31364D6068D8"
+			tasks: [{
+				id: "5ED2E404231FA563"
+				item: "create:mechanical_roller"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1A3BA4BEFD861942"]
+			id: "23A0ABE328B88B5A"
+			size: 0.7d
+			tasks: [
+				{
+					id: "7A1309F58E46D570"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:mold"
+						tag: {
+							Mold: "createdieselgenerators:bowl"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "52A045966C8C5267"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:mold"
+						tag: {
+							Mold: "createdieselgenerators:lines"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07487334A5F02165"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:mold"
+						tag: {
+							Mold: "createdieselgenerators:chain"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Additional Molds"
+			x: -1.5642857142857096d
+			y: 0.3857142857142861d
+		}
+		{
+			dependencies: ["2185592369B7D5FC"]
+			description: ["With help of the mixer you can make liquid version of vanilla concrete. It can be usefule to create roads or just fill some space with solid blocks automaticaly."]
+			icon: "createdieselgenerators:gray_cement_bucket"
+			id: "7DDFBA75F3B9965B"
+			size: 0.7d
+			tasks: [{
+				id: "1390C43B05D96B7E"
+				item: "createdieselgenerators:gray_cement_bucket"
+				type: "item"
+			}]
+			x: -3.9765306122448933d
+			y: 2.090476190476174d
+		}
+		{
+			dependencies: ["7ED421A21A7BB90C"]
+			id: "3768363D8D069FD0"
+			size: 0.6d
+			tasks: [
+				{
+					id: "09A8549F9A2D449A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_sa:small_fueling_tank"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0257FAB3E88DF213"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_sa:medium_fueling_tank"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "77AB653C7F61E62B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_sa:large_fueling_tank"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fueling Tanks"
+			x: -14.166326530612238d
+			y: -6.238775510204064d
+		}
+		{
+			dependencies: ["75D2966F919D360B"]
+			id: "031B519BF4D06C79"
+			size: 0.7d
+			tasks: [{
+				id: "6C6472BBCEEDA677"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			x: -15.75d
+			y: -7.35d
+		}
+		{
+			dependencies: ["031B519BF4D06C79"]
+			id: "6EF8A861057F5B0C"
+			tasks: [
+				{
+					id: "160718F1612ECF4A"
+					item: {
+						Count: 1
+						id: "create_sa:experience_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "512A90C8216EE293"
+					item: {
+						Count: 1
+						id: "create_sa:experience_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5AD06944001644E0"
+					item: {
+						Count: 1
+						id: "create_sa:experience_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "688BAE7EA39FC4A6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"undermod:capability_item_life_leech": {
+								power: 1
+							}
+						}
+						id: "create_sa:experience_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -15.541836734693874d
+			y: -8.197959183673454d
+		}
+		{
+			dependencies: ["7ED421A21A7BB90C"]
+			id: "40B6B0C798A68B81"
+			tasks: [{
+				id: "2337EDCABE644A51"
+				item: {
+					Count: 1
+					id: "create_sa:flamethrower"
+					tag: {
+						tagActivated: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: -13.166326530612245d
+			y: -4.646938775510186d
+		}
+		{
+			dependencies: ["0E0B2F4801CE1F38"]
+			id: "2A4AFDE15F127A08"
+			tasks: [{
+				id: "777F9D46FFCF46D3"
+				item: {
+					Count: 1
+					id: "create_sa:portable_drill"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -13.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7ED421A21A7BB90C"]
+			id: "6C4582F5223A69AB"
+			tasks: [{
+				id: "5E0386E552BA4E93"
+				item: {
+					Count: 1
+					id: "create_sa:grapplin_whisk"
+					tag: {
+						tagHooked: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: -13.94183673469388d
+			y: -4.157142857142837d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "45859986D34FB28C"
+			tasks: [
+				{
+					id: "3525B965F120E8F0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"undermod:capability_item_life_leech": {
+								power: 1
+							}
+						}
+						id: "create_sa:rose_quartz_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FCAAC9D6FFD064C"
+					item: {
+						Count: 1
+						id: "create_sa:rose_quartz_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B9BED94B6B992C5"
+					item: {
+						Count: 1
+						id: "create_sa:rose_quartz_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B24095B4F6D6288"
+					item: {
+						Count: 1
+						id: "create_sa:rose_quartz_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Gilded Tools"
+			x: -20.1704081632653d
+			y: -3.7979591836734556d
+		}
+		{
+			dependencies: ["1A155790CD83B2A7"]
+			description: ["Brass armor can protect you from piglins like gold armor."]
+			id: "2DF67CBA16DF2242"
+			tasks: [
+				{
+					id: "04E89917BD3383A9"
+					item: {
+						Count: 1
+						id: "create_sa:brass_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "25952DEDC79C47A2"
+					item: {
+						Count: 1
+						id: "create_sa:brass_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "255D954E82191E80"
+					item: {
+						Count: 1
+						id: "create_sa:brass_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "257B49CF0EFAAACB"
+					item: {
+						Count: 1
+						id: "create_sa:brass_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "06874A7B159EABB8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"undermod:capability_item_life_leech": {
+								power: 1
+							}
+						}
+						id: "create_sa:brass_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "15DB9ED164189460"
+					item: {
+						Count: 1
+						id: "create_sa:brass_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E6A4FCB25B84A37"
+					item: {
+						Count: 1
+						id: "create_sa:brass_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "61AB021D6CB3CA0F"
+					item: {
+						Count: 1
+						id: "create_sa:brass_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "534652793C4E2F78"
+					item: {
+						Count: 1
+						id: "create_sa:brass_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Brass things"
+			x: -11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E0B2F4801CE1F38"]
+			id: "6C7E622388940B38"
+			size: 0.7d
+			tasks: [{
+				id: "5CA1B3CA6D717365"
+				item: {
+					Count: 1
+					id: "create_sa:netherite_jetpack_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -12.6d
+			y: -6.6499999999999995d
+		}
+		{
+			dependencies: ["2185592369B7D5FC"]
+			id: "34517076E949A7C5"
+			size: 0.6d
+			tasks: [
+				{
+					id: "318CEF8A9233AD04"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"undermod:capability_item_life_leech": {
+								power: 1
+							}
+						}
+						id: "create_sa:blazing_cleaver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07B333E4952E86FF"
+					item: {
+						Count: 1
+						id: "create_sa:blazing_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79655E3F2E3C4762"
+					item: {
+						Count: 1
+						id: "create_sa:blazing_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "74DF3E24DB6E2AB5"
+					item: {
+						Count: 1
+						id: "create_sa:blazing_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Blazing Tools"
+			x: -4.5d
+			y: 0.6d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			id: "56393CE986C95C0E"
+			tasks: [{
+				id: "7A876C488D5C0D23"
+				item: "create_interactive:propagator_bearing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["56393CE986C95C0E"]
+			id: "78F2DFA7C3C6E372"
+			size: 0.7d
+			tasks: [{
+				id: "3E8C01F51C4B8D09"
+				item: "create_interactive:disjointed_propagator_bearing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.05d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			icon: "create_interactive:interact_me"
+			id: "3862A47C6FC3972D"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0732F3B5183013FB"
+					item: "create_interactive:interact_me"
+					type: "item"
+				}
+				{
+					id: "4A9E4CA91E992F26"
+					item: "create_interactive:interact_me_not"
+					type: "item"
+				}
+			]
+			title: "Interaction"
+			x: 2.69285714285715d
+			y: -0.12857142857143344d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "115F76F055B5EB09"
+			tasks: [{
+				id: "436FB829F5275F40"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: -16.59285714285714d
+			y: -2.9285714285714306d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			id: "6157725B6CC022A4"
+			tasks: [{
+				id: "6C544548BD22602D"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5B4C38C2E2CA7441"]
+			id: "005DB10C76DA5354"
+			size: 0.7d
+			tasks: [{
+				id: "0451DA21192C9998"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			x: 3.85d
+			y: 1.4d
+		}
+		{
+			dependencies: ["1A155790CD83B2A7"]
+			hide_dependent_lines: true
+			id: "006F0DFB4E9FE795"
+			tasks: [{
+				id: "6C31D6E55511897C"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"006F0DFB4E9FE795"
+				"5BCF22055EDA1850"
+			]
+			id: "44BAF1D73912447F"
+			tasks: [{
+				id: "3912433E1D751A96"
+				item: "createaddition:portable_energy_interface"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6157725B6CC022A4"]
+			id: "656C50B30625A19F"
+			size: 0.6d
+			tasks: [{
+				id: "4F2FAD39C6F76BCA"
+				item: "createaddition:barbed_wire"
+				type: "item"
+			}]
+			x: -4.2d
+			y: 4.8d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			icon: "thermal:machine_refinery"
+			id: "0324FC7EAE1601BA"
+			tasks: [{
+				id: "7A41E04A88A84541"
+				item: "thermal:machine_refinery"
+				type: "item"
+			}]
+			x: -26.5d
+			y: 1.8000000000000003d
+		}
+		{
+			dependencies: ["0AF793828ADDBE71"]
+			id: "420669759AE11743"
+			tasks: [
+				{
+					id: "2088683BEF5729F3"
+					item: "thermal:oil_sand"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "32E9B1241308C7B2"
+					item: "thermal:oil_red_sand"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "06A845F27E02725A"
+					item: "thermal:bitumen"
+					type: "item"
+				}
+			]
+			title: "Oil in the soil"
+			x: -25.5d
+			y: 3.8000000000000003d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "0AF793828ADDBE71"
+			tasks: [{
+				id: "53B60082ECC3713D"
+				item: "thermal:machine_centrifuge"
+				type: "item"
+			}]
+			x: -25.5d
+			y: 2.3000000000000003d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "5B9B2FD0295FF131"
+			size: 1.3d
+			tasks: [{
+				id: "12026B543DBAE1EF"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: -24.79047619047619d
+			y: -1.722448979591857d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "42EE9B0972E68F0D"
+			tasks: [{
+				id: "38D3463798C8B544"
+				item: "thermal:machine_sawmill"
+				type: "item"
+			}]
+			x: -28.0d
+			y: -1.1999999999999997d
+		}
+		{
+			dependencies: [
+				"420669759AE11743"
+				"746BED2E65591E76"
+			]
+			dependency_requirement: "one_completed"
+			id: "120ED2BF66C46BE9"
+			tasks: [{
+				id: "28FA1AFE565966DA"
+				item: "thermal:crude_oil_bucket"
+				type: "item"
+			}]
+			x: -27.0d
+			y: 3.3000000000000003d
+		}
+		{
+			dependencies: [
+				"120ED2BF66C46BE9"
+				"0324FC7EAE1601BA"
+			]
+			icon: "thermal:refined_fuel_bucket"
+			id: "46DF54F9A3A6645F"
+			tasks: [
+				{
+					id: "7DACF52D38C903C4"
+					item: "thermal:heavy_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "2815E70D6C860B13"
+					item: "thermal:light_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "4AF19D587BE60463"
+					item: "thermal:refined_fuel_bucket"
+					type: "item"
+				}
+			]
+			title: "Refined Oil"
+			x: -27.5d
+			y: 2.3000000000000003d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "1425D94DC58182E5"
+			tasks: [{
+				id: "1B62D4ED538A6F70"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			x: -22.5d
+			y: -1.1999999999999997d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "030F34B864E08816"
+			tasks: [{
+				id: "7F5DB119F6C0BC89"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			x: -26.5d
+			y: -2.6999999999999997d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "4F3810AFE024D92E"
+			tasks: [{
+				id: "00ED23394CFB1C4E"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			title: "Industrial Smeting"
+			x: -23.0d
+			y: 3.3000000000000003d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "2ABA250ADE658FF3"
+			tasks: [{
+				id: "502E9403F1EC58BD"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: -24.0d
+			y: 2.8000000000000003d
+		}
+		{
+			dependencies: ["420669759AE11743"]
+			icon: "thermal:coal_coke"
+			id: "6BA3BF805371E239"
+			tasks: [
+				{
+					id: "421DDC903B9F6AE0"
+					item: "thermal:machine_pyrolyzer"
+					type: "item"
+				}
+				{
+					id: "2920FB65B24B44D4"
+					item: "thermal:coal_coke"
+					type: "item"
+				}
+			]
+			title: "Enriched Coke Coal"
+			x: -25.5d
+			y: 5.300000000000001d
+		}
+		{
+			dependencies: ["5B9B2FD0295FF131"]
+			description: ["You can convert rotten flesh to leather in Redstone Furnace."]
+			icon: "minecraft:leather"
+			id: "187D904C784986DE"
+			tasks: [
+				{
+					count: 4L
+					id: "1FD14CB4300EBC2E"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "68D563CB10586ACA"
+					item: "minecraft:leather"
+					type: "item"
+				}
+			]
+			title: "Another Leather Recipe"
+			x: -23.5d
+			y: -1.6999999999999997d
+		}
+		{
+			dependencies: ["3155C182FC72865E"]
+			id: "1553365BB32E7666"
+			size: 1.2d
+			tasks: [{
+				id: "0AA2C62668AC3827"
+				item: "thermal:obsidian_glass"
+				type: "item"
+			}]
+			x: -29.0d
+			y: 4.300000000000001d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "2B05CC4B1B1A5914"
+			tasks: [{
+				id: "67033ADFE66C1124"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: -22.785714285714285d
+			y: 2.111224489795919d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "6C266F8B01ED6B4D"
+			tasks: [{
+				id: "539A4920B4C741D2"
+				item: "thermal:machine_brewer"
+				type: "item"
+			}]
+			x: -22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2798CCE5B1DE21DA"
+				"1553365BB32E7666"
+			]
+			icon: "thermal:machine_crystallizer"
+			id: "3751A61EDD08EF41"
+			tasks: [
+				{
+					id: "6A005F1EEABC8C01"
+					item: "thermal:machine_crystallizer"
+					type: "item"
+				}
+				{
+					id: "01EC653EFE34E479"
+					item: "ae2:certus_quartz_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "00DD9BBC58E8E0BC"
+					item: "ae2:charged_certus_quartz_crystal"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -30.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "1A6E6CC618DD8F57"
+			tasks: [{
+				id: "56253D279396132E"
+				item: "thermal:machine_crafter"
+				type: "item"
+			}]
+			x: -22.0d
+			y: 1.3000000000000003d
+		}
+		{
+			dependencies: ["3155C182FC72865E"]
+			id: "52563AE115ACBF51"
+			tasks: [{
+				id: "1BF835186BF38E32"
+				item: "thermal:signalum_ingot"
+				type: "item"
+			}]
+			x: -30.0d
+			y: 1.8000000000000003d
+		}
+		{
+			dependencies: ["3155C182FC72865E"]
+			id: "4D475C5C6D1FF754"
+			tasks: [{
+				id: "116D655695EC2B63"
+				item: "thermal:lumium_ingot"
+				type: "item"
+			}]
+			x: -31.5d
+			y: 1.8000000000000003d
+		}
+		{
+			dependencies: ["3155C182FC72865E"]
+			id: "57C04ECC73C4EAD3"
+			tasks: [{
+				id: "3707DC8DE82D445F"
+				item: "thermal:enderium_ingot"
+				type: "item"
+			}]
+			x: -33.0d
+			y: 1.8000000000000003d
+		}
+		{
+			dependencies: [
+				"1553365BB32E7666"
+				"52563AE115ACBF51"
+			]
+			id: "21F9764D362E05BD"
+			tasks: [{
+				id: "2940ACD23DC02DBE"
+				item: "thermal:signalum_glass"
+				type: "item"
+			}]
+			x: -30.0d
+			y: 2.8000000000000003d
+		}
+		{
+			dependencies: [
+				"1553365BB32E7666"
+				"4D475C5C6D1FF754"
+			]
+			id: "1CF740E2938F462A"
+			tasks: [{
+				id: "0168FA658DCB0628"
+				item: "thermal:lumium_glass"
+				type: "item"
+			}]
+			x: -31.5d
+			y: 2.8000000000000003d
+		}
+		{
+			dependencies: [
+				"1553365BB32E7666"
+				"57C04ECC73C4EAD3"
+			]
+			id: "4624968B64822373"
+			tasks: [{
+				id: "122D40204096A9B9"
+				item: "thermal:enderium_glass"
+				type: "item"
+			}]
+			x: -33.0d
+			y: 2.8000000000000003d
+		}
+		{
+			dependencies: ["0852CB10008D7CDB"]
+			id: "14EC0F32B3ED3C33"
+			size: 0.6d
+			tasks: [{
+				id: "0F976689CD00F595"
+				item: "vintageimprovements:laser"
+				type: "item"
+			}]
+			x: -12.6d
+			y: -9.299999999999999d
+		}
+		{
+			dependencies: [
+				"0852CB10008D7CDB"
+				"7B289C03327D9227"
+			]
+			id: "769E68032FC9806D"
+			tasks: [{
+				id: "44108E03742800E5"
+				item: "vintageimprovements:lathe"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "3F6DF0D28A64980E"
+			tasks: [{
+				id: "0886E6A8BB4B16CE"
+				item: "vintageimprovements:helve_hammer"
+				type: "item"
+			}]
+			x: -14.42755102040816d
+			y: -7.226530612244886d
+		}
+		{
+			dependencies: ["769E68032FC9806D"]
+			id: "6E9B2C7B591148F9"
+			tasks: [{
+				id: "3E124680BD9DC007"
+				item: "vintageimprovements:curving_press"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			id: "0DAACB42DF4A9056"
+			tasks: [{
+				id: "504F7EAC0B8A2901"
+				item: "vintageimprovements:centrifuge"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2185592369B7D5FC"]
+			id: "2E69DC64B0EB928C"
+			size: 0.7d
+			tasks: [{
+				id: "0EBA437E5A032A22"
+				item: "vintageimprovements:vacuum_chamber"
+				type: "item"
+			}]
+			x: -4.55d
+			y: 1.4d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			id: "311F17E0AB89A1B2"
+			size: 0.6d
+			tasks: [{
+				id: "0F82134DDC1369D1"
+				item: "vintageimprovements:spring_coiling_machine"
+				type: "item"
+			}]
+			x: -1.2581632653061234d
+			y: 2.6030612244898066d
+		}
+		{
+			dependencies: ["311F17E0AB89A1B2"]
+			id: "1DB745BC4D6EDCA5"
+			tasks: [{
+				id: "736A270EE00E7B37"
+				item: "vintageimprovements:vibrating_table"
+				type: "item"
+			}]
+			x: -0.4214285714285779d
+			y: 2.4193877551020506d
+		}
+		{
+			dependencies: ["1DB745BC4D6EDCA5"]
+			id: "63BBA18C50C124F0"
+			size: 0.7d
+			tasks: [{
+				id: "5DABA79DB9BB8BCD"
+				item: "vintageimprovements:redstone_module"
+				type: "item"
+			}]
+			x: -0.4418367346938794d
+			y: 1.6030612244898066d
+		}
+		{
+			dependencies: ["1553365BB32E7666"]
+			id: "199167CF567E26BB"
+			tasks: [{
+				id: "6DD4D5B639F82401"
+				item: "systeams:boiler_pipe"
+				type: "item"
+			}]
+			x: -29.0d
+			y: 5.800000000000001d
+		}
+		{
+			dependencies: ["1553365BB32E7666"]
+			id: "08F0E06F30471E3E"
+			tasks: [{
+				id: "54255A04237FA5AC"
+				item: {
+					Count: 1
+					id: "thermal:fluid_cell"
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								Amount: 0
+								Capacity: 32000
+								FluidName: "minecraft:empty"
+								Tank: 0b
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -27.5d
+			y: 5.800000000000001d
+		}
+		{
+			dependencies: ["08F0E06F30471E3E"]
+			id: "7AE82FECE43A0323"
+			size: 0.7d
+			tasks: [{
+				id: "6AD621CCBF572A3C"
+				item: "thermal:fluid_tank_augment"
+				type: "item"
+			}]
+			x: -27.500000000000007d
+			y: 4.907142857142855d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "4DE3A5EB02DCDC59"
+			tasks: [{
+				id: "4E67081F5752155F"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: -24.535714285714285d
+			y: 4.4428571428571395d
+		}
+		{
+			id: "09E41832773146F4"
+			tasks: [{
+				id: "538305270B07FB36"
+				item: "tfmg:simple_large_engine"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.0d
+		}
+		{
+			id: "6FDCA019B5DD1C8C"
+			tasks: [{
+				id: "65BD2106E6810780"
+				item: "tfmg:engine_gearbox"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 10.0d
+		}
+		{
+			id: "7855B49FE76C8688"
+			tasks: [{
+				id: "2AE8D6BBB08AEF5E"
+				item: "tfmg:large_engine"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 9.0d
+		}
+		{
+			id: "11A4BC034E377900"
+			tasks: [{
+				id: "0C9BED316B1A8283"
+				item: "tfmg:regular_engine"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 10.0d
+		}
+		{
+			id: "6C1230404AC891BB"
+			tasks: [{
+				id: "44E3C70906064561"
+				item: "tfmg:turbine_engine"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 10.0d
+		}
+		{
+			id: "02330D444E578283"
+			tasks: [{
+				id: "434DE2DD2DC0C5F8"
+				item: "tfmg:radial_engine"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 9.0d
+		}
+		{
+			id: "644DA6D29FB50DA8"
+			tasks: [{
+				id: "62222DF3CA4498D7"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 10.0d
+		}
+		{
+			id: "3F632B05FE359F8D"
+			tasks: [{
+				id: "4E20AA3C6A316AEB"
+				item: "immersiveengineering:radiator"
+				type: "item"
+			}]
+			title: "Diesel Engine"
+			x: -8.5d
+			y: 9.0d
+		}
+		{
+			id: "6F9B67A2C1FAE11D"
+			tasks: [{
+				id: "12D43A6E9D5D8752"
+				item: "immersiveengineering:steel_fence"
+				type: "item"
+			}]
+			title: "Energy from clouds"
+			x: -9.5d
+			y: 9.0d
+		}
+		{
+			id: "27E0F81FE63D2E85"
+			tasks: [{
+				id: "648C61E6740F0E1E"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 8.5d
+		}
+		{
+			id: "4252FD2C3076FC2E"
+			tasks: [{
+				id: "6331E20345C82C18"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4252FD2C3076FC2E"]
+			id: "43A2DDA0E123E8D0"
+			tasks: [{
+				id: "4455D4C4BCE7ECDF"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 9.5d
+		}
+		{
+			id: "1EA14587D11D38CE"
+			tasks: [{
+				id: "2BEF1448BC6EC577"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"7BF7C8E5AFC2EE6A"
+				"030F34B864E08816"
+			]
+			description: ["Behind the weird name hides a way to convert metals into energy. "]
+			id: "12E8CE069EDE3C56"
+			size: 0.7d
+			subtitle: "Capitalistic generator!"
+			tasks: [{
+				id: "2635907355B0E210"
+				item: "thermal:dynamo_numismatic"
+				type: "item"
+			}]
+			x: -25.9d
+			y: -3.5d
+		}
+		{
+			dependencies: ["26F7DA43C2FE94AB"]
+			id: "0846DDA488B481DB"
+			tasks: [{
+				id: "3CE72493234599E9"
+				item: "forestry:engine_peat"
+				type: "item"
+			}]
+			x: -21.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"16550070AD851335"
+				"691DD9FDCE3E58DA"
+			]
+			description: ["Manual way to make rails components."]
+			id: "4DB042DAF83D7A0A"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "19BA601086193C7D"
+				item: "railcraft:manual_rolling_machine"
+				type: "item"
+			}]
+			title: "Rails Time!"
+			x: -5.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["3751A61EDD08EF41"]
+			description: ["You can grow certus quarts inside Crystalizer with full tank of water and charged crystal. It is more convinient and efficent way."]
+			id: "73593A2A2EF304AC"
+			tasks: [{
+				id: "2830AA48A04F1399"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			title: "Crystalization"
+			x: -31.0d
+			y: -1.0d
+		}
+	]
+	title: "Production"
+}

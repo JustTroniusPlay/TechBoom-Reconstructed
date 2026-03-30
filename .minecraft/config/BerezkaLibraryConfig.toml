@@ -1,0 +1,21 @@
+
+["Spawn Config"]
+	#just debug mode
+	"Debug mode" = false
+
+	["Spawn Config"."The Lost City"]
+		#Should city spawn?
+		"Spawn City" = true
+		#Average distance between two neighboring generation attempts.
+		"City Spacing" = 34
+		#Minimum distance between two neighboring attempts.
+		"City Separation" = 8
+		#Should Cars spawn?
+		"Spawn Cars" = true
+		#Defines the list of biomes where cities can spawn.
+		Biomes = ["plains", "snowy_plains", "sunflower_plains"]
+		#Allows adding new houses to the city generation.
+		Houses = []
+		#Allows adding new houses to the city generation.
+		Bases = []
+

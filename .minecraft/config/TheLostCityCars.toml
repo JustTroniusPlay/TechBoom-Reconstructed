@@ -1,0 +1,4 @@
+#Amount of fuel in cars (only: 0 or 50 and with 'DragN's VV: Refueled' mod, downloaded - false)
+#Range: 0 ~ 51
+StartFuel = 0
+

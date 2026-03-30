@@ -1,0 +1,85 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "abandoned_places"
+	group: "31544B14A6F1FD15"
+	icon: "minecraft:cracked_stone_bricks"
+	id: "1E833984333A516D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"In the oceans there old sea bases that still standing even after times of the old war."
+				""
+				"But be aware that security systems of those places are still operational. Strong war units and Anti Aircraft turrets will be on your way to get close."
+				""
+				"It looks like plating of this place was made out of steel. You can get some of it from Rusty Platings."
+			]
+			icon: "crusty_chunks:structural_concrete"
+			id: "101415427B38BBC2"
+			rewards: [{
+				id: "20FD696084A0CA0F"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			subtitle: "Battle ocean rig!"
+			tasks: [
+				{
+					id: "5B48AA0598F83BD6"
+					structure: "crusty_chunks:sea_base"
+					title: "Towers of Old war"
+					type: "structure"
+				}
+				{
+					id: "21CC6B92E377C27E"
+					item: "crusty_chunks:rusty_block"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			description: ["Undergound facilities contains many goods, but at the same time guarded by strong zombie soldiers. Going here and exploring the place can be dangerous task without proper equipment."]
+			id: "5B73FC6F8C6D687F"
+			rewards: [{
+				id: "16CDEAE6E8CE72C3"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			subtitle: "Armies of infected"
+			tasks: [{
+				icon: "minecraft:polished_deepslate"
+				id: "35F5B276C3F53444"
+				structure: "underground_bunkers:underground_bunker"
+				title: "Underground Bunkers"
+				type: "structure"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Large clusters of structures can be seen sometimes when exploring the world. Lost Cities were blooming with life in the past, but now became nothing but reminder how achievements of old world were forgotten. "
+				""
+				"This is up to you what do with them: just loot the city for many advanced resources or even use buildings for your own needs. "
+				""
+				"&lBut be aware&r that those buildings are guarded by mobs of &overy strong caliber&r. They will tear appart any unwelcomed guests if they not gonna be prepared enough for a fight. Or if they not gonna be smart and not careful enough to barg right into the heat of battle."
+				""
+				"I think at least getting some strong protection and way to shoot bullets can help greatly."
+			]
+			icon: "minecraft:cyan_terracotta"
+			id: "470D889050A766B1"
+			subtitle: "Megapolis of old world"
+			tasks: [{
+				id: "20E10537F4B0738E"
+				title: "Lost Cities"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+	]
+	title: "Abandoned Places"
+}

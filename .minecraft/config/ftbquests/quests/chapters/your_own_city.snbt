@@ -1,0 +1,96 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "your_own_city"
+	group: ""
+	icon: "mca:villager_editor"
+	id: "67B34152EE2C02BA"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["What a city without citizens? Your next step in building lively place to live is finding them! Look for villagers around the world and either live along side them and share your tech wonders or get them to your place."]
+			id: "2CE7CF54B3F0E568"
+			tasks: [{
+				advancement: "morevillagers:first_village"
+				criterion: ""
+				icon: "mca:villager_editor"
+				id: "3BA5CF0BB8B1FAAC"
+				title: "Finding citizens"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2CE7CF54B3F0E568"]
+			id: "6206190C1CA030C1"
+			tasks: [{
+				id: "3D076E4F546099BB"
+				item: "mca:book_romance"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2CE7CF54B3F0E568"]
+			description: [
+				"You can hire your villagers to do some different work like mining and getting resources. "
+				""
+				"First you should get a worker table. There various professions, but we will stop on classical miner and lumberjack. Trade with villagers until one of them be LVL2 and there a chance they can sale you a profession table."
+			]
+			id: "75687C039E813E88"
+			tasks: [
+				{
+					id: "1243939AA3327FFC"
+					item: "workers:miner_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0CB8703C77C32D05"
+					item: "workers:lumberjack_block"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Workers and helpers"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2CE7CF54B3F0E568"]
+			description: [
+				"Sometimes you can encounter villagers recruits. You can hire them with emeralds to protect yourself or a area for you. "
+				""
+				"Shift+rightclick to open their inventory. Here you can give the recruit orders, armor and weapons. "
+				""
+				"Press \" \" to open command window to control your army more efficently."
+			]
+			id: "7362C3E42F4C8D2D"
+			tasks: [{
+				icon: "recruits:recruit_block"
+				id: "5E86AB403F81198B"
+				observe_type: 5
+				timer: 0L
+				title: "Guards! Guards!"
+				to_observe: "recruits:recruit"
+				type: "observation"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			id: "033561B61F2E0C3E"
+			tasks: [{
+				id: "6EC99FACFA4EF589"
+				item: "trading_floor:trading_depot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+	]
+	title: "Your own city"
+}

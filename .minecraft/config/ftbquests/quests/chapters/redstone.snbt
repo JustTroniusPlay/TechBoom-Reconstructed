@@ -1,0 +1,156 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "redstone"
+	group: "78A677EE2AEFB46F"
+	icon: "minecraft:redstone_torch"
+	id: "25C95A9936E9ABEF"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["25951FDCB7908145"]
+			id: "7BCA54C671476825"
+			tasks: [
+				{
+					count: 2L
+					id: "0D52B69C44FDAA58"
+					item: { Count: 2, id: "create:redstone_link" }
+					type: "item"
+				}
+				{
+					id: "2DFF1719790CAAEA"
+					item: "create:linked_controller"
+					type: "item"
+				}
+			]
+			title: "Wireless red signal"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7BCA54C671476825"]
+			id: "42B924D42D8F916B"
+			rewards: [{
+				id: "503FAF696AD085AE"
+				item: "minecraft:stone_button"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FE1F79FB9833875"
+				item: { Count: 2, id: "create_connected:linked_transmitter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7F493483338AF21E"
+				"7BCA54C671476825"
+				"0689EE9B69E13F13"
+				"0852CB10008D7CDB"
+				"3D1CCF8E85981E52"
+			]
+			id: "06655C0B6099C3B8"
+			tasks: [{
+				id: "0BFD82279426EAB8"
+				item: "create_tweaked_controllers:tweaked_linked_controller"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7BCA54C671476825"
+				"1A155790CD83B2A7"
+			]
+			id: "40F9D3C037C42784"
+			tasks: [{
+				id: "6DEA4FCE5597A08B"
+				item: "create:pulse_repeater"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40F9D3C037C42784"]
+			id: "0818099B59A9110B"
+			tasks: [{
+				id: "35FFA49E7C455630"
+				item: "create:pulse_extender"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7BCA54C671476825"]
+			id: "0689EE9B69E13F13"
+			tasks: [{
+				id: "6996E414D467EFC4"
+				item: "create:analog_lever"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["40F9D3C037C42784"]
+			id: "7425B115E20A7650"
+			tasks: [{
+				id: "455F5A5A8D1DA468"
+				item: "create:pulse_timer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["34D049FD2BF84E84"]
+			id: "5F32A4D7512CD618"
+			tasks: [{
+				id: "5C5DB00DFBB8C6AB"
+				item: "create:powered_toggle_latch"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F32A4D7512CD618"]
+			id: "3337815BA73731BC"
+			tasks: [{
+				id: "097BB6280A951418"
+				item: "create:powered_latch"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D1CCF8E85981E52"]
+			id: "63985703F2FF5100"
+			tasks: [{
+				id: "5C45642240292831"
+				item: "create:rose_quartz_lamp"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "2340C618EB94F42E"
+			tasks: [{
+				id: "4FB927CDAC531C0E"
+				item: "projectred_transmission:red_alloy_wire"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+	]
+	title: "Redstone"
+}

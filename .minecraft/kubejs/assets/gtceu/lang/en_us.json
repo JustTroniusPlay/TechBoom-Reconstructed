@@ -1,0 +1,8 @@
+{
+    "block.gtceu.casing_coke_bricks": "Advanced Coke Oven Bricks",
+    "block.gtceu.coke_oven_bricks": "Advanced Coke Oven Bricks",
+    "block.gtceu.coke_oven": "Advanced Coke Oven",
+    "block.gtceu.coke_oven_hatch": "Advanced Coke Oven Hatch",
+    "gtceu.machine.coke_oven_hatch.tooltip": "§7Allows automation access for the Advanced Coke Oven.",
+    "material.gtceu.aluminium": "Pure Aluminium"
+}

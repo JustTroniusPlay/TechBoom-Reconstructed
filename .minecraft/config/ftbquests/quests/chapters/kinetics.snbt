@@ -1,0 +1,454 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "kinetics"
+	group: "78A677EE2AEFB46F"
+	icon: "create:large_cogwheel"
+	id: "1520912C9E316A01"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"3F0F17AD293B8B8F"
+				"25951FDCB7908145"
+			]
+			description: [
+				"The backbone of Create mod and its systems is &lcogs and shafts&r! They will transfer kinetic energy and power your machines. "
+				""
+				"They can be directly connected with shafts or cogs."
+				""
+				"Craft good amount of them so you can always expand your system easily."
+			]
+			id: "5A3BFC118141DC5C"
+			tasks: [
+				{
+					count: 16L
+					id: "293A97135F5D3264"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2C1E6ADBDDD393DD"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "58BB1478F17DA07B"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "Primitive engineering kit"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5A3BFC118141DC5C"]
+			id: "2FB249F10D1AA777"
+			tasks: [
+				{
+					count: 8L
+					id: "4DE78BA335CF3E78"
+					item: { Count: 8, id: "petrolsparts:coaxial_gear" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "096CF5AEEEA4B004"
+					item: { Count: 8, id: "petrolsparts:large_coaxial_gear" }
+					type: "item"
+				}
+			]
+			title: "Coaxial Wheels"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5A3BFC118141DC5C"]
+			id: "56C85ED33C12C55B"
+			tasks: [{
+				count: 8L
+				id: "0750A83B09AB395F"
+				item: "petrolsparts:double_cardan_shaft"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["024F753F2FAAC210"]
+			id: "7DA9B81F0E5C1A28"
+			tasks: [{
+				count: 4L
+				id: "1F2AAD8218094E06"
+				item: "petrolsparts:differential"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5A3BFC118141DC5C"]
+			id: "024F753F2FAAC210"
+			tasks: [{
+				count: 4L
+				id: "3C66C3F3155CC18D"
+				item: "petrolsparts:planetary_gearset"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5A3BFC118141DC5C"]
+			id: "01AB8F49F3F439C8"
+			tasks: [{
+				id: "21962DD873CC489A"
+				item: "petrolsparts:colossal_cogwheel"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["32FCC9DCD937E066"]
+			id: "1196A36E66D35045"
+			tasks: [{
+				id: "26BD44B5629B5971"
+				item: "petrolsparts:pneumatic_tube"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1196A36E66D35045"]
+			id: "66D3429E2D4FC3F9"
+			tasks: [{
+				id: "46B38C9B237CDD63"
+				item: "petrolsparts:hydraulic_transmission"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5A3BFC118141DC5C"]
+			icon: "create:chain_conveyor"
+			id: "6F496DC9A766E115"
+			rewards: [{
+				id: "5A31129522417CCC"
+				item: "minecraft:chain"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "2146B78CF2CBE507"
+				item: "create:chain_conveyor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A3BFC118141DC5C"]
+			id: "1B53FA2848ED5392"
+			tasks: [
+				{
+					count: 8L
+					id: "75F5CE025213F42A"
+					item: "create:gearbox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2811F12AB045170F"
+					item: "create:vertical_gearbox"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Gearboxes"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1B53FA2848ED5392"]
+			id: "7F74737CCBAFCCBD"
+			tasks: [
+				{
+					count: 4L
+					id: "3CF66A6987E4DB16"
+					item: { Count: 4, id: "create_connected:six_way_gearbox" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "54535EFEBDBE02CA"
+					item: "create_connected:vertical_six_way_gearbox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6F27194DEB0FA5C5"
+					item: { Count: 4, id: "createutilities:gearcube" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Ultimate Gearboxes"
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1B53FA2848ED5392"]
+			id: "3DBDFB0BE5EB10FB"
+			tasks: [
+				{
+					count: 4L
+					id: "39327A16F6D6CB52"
+					item: { Count: 4, id: "create_connected:brass_gearbox" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3185313705782A3E"
+					item: { Count: 4, id: "create_connected:vertical_brass_gearbox" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Advanced Gearboxes"
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1B53FA2848ED5392"]
+			id: "341171F317866B61"
+			tasks: [
+				{
+					count: 4L
+					id: "145C918ED584F22D"
+					item: "create_connected:parallel_gearbox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7E48CCA02CF7FCD3"
+					item: "create_connected:vertical_parallel_gearbox"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Parallel Gearboxes"
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5A3BFC118141DC5C"]
+			id: "072634110D7A6027"
+			tasks: [
+				{
+					count: 4L
+					id: "68CE23DEFE52E117"
+					item: { Count: 4, id: "create:clutch" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "566199C5C9516FFC"
+					item: { Count: 4, id: "create_connected:inverted_clutch" }
+					type: "item"
+				}
+			]
+			title: "Simple Clutches"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["072634110D7A6027"]
+			id: "71415DFA7F79D1D1"
+			tasks: [
+				{
+					count: 4L
+					id: "1CB8E9CE1E57C9D2"
+					item: "create_connected:overstress_clutch"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "520C24FF0757BCE9"
+					item: "create_connected:centrifugal_clutch"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "527B1B72B3EF1A3C"
+					item: "create_connected:freewheel_clutch"
+					type: "item"
+				}
+			]
+			title: "Advanced Clutches"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1B53FA2848ED5392"]
+			id: "7276B5E272C7EF7F"
+			tasks: [{
+				count: 8L
+				id: "5C3789F3003068E1"
+				item: { Count: 8, id: "createutilities:lshaped_gearbox" }
+				type: "item"
+			}]
+			title: "L-shaped Gearbox"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6F496DC9A766E115"]
+			id: "67654355E567D4AE"
+			rewards: [{
+				count: 16
+				id: "49BA4C0B4E9E6065"
+				item: "minecraft:chain"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "38CCF31E425CF90C"
+					item: { Count: 16, id: "bits_n_bobs:small_flanged_cogwheel" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "015D3132C93F6DB0"
+					item: { Count: 16, id: "bits_n_bobs:large_flanged_cogwheel" }
+					type: "item"
+				}
+			]
+			title: "Flanged Cogwheels"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B53FA2848ED5392"]
+			id: "0966F994586EED73"
+			tasks: [{
+				count: 4L
+				id: "4BB6629B9E833827"
+				item: { Count: 4, id: "create:encased_chain_drive" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0966F994586EED73"]
+			id: "28496C2652844266"
+			tasks: [{
+				count: 4L
+				id: "5B414CBD7903AA88"
+				item: "create_connected:encased_chain_cogwheel"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0966F994586EED73"]
+			id: "32F4C3407FBD4B16"
+			tasks: [{
+				count: 4L
+				id: "4D2850102D5E0934"
+				item: "create:adjustable_chain_gearshift"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5A3BFC118141DC5C"
+				"26041794979A3851"
+			]
+			id: "32FCC9DCD937E066"
+			tasks: [{
+				id: "429E8F991FC3C015"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5A3BFC118141DC5C"]
+			description: [
+				"This blocks will show you information of your kinetic network."
+				""
+				"Speedometer will show speed of certain network points."
+				""
+				"Stressometer will show how many mechanisms your network can sustain."
+				""
+				""
+				"Multimeter is both blocks in form of one!"
+			]
+			icon: "create_better_motors:multimeter"
+			id: "3A32F6B5E26895FE"
+			subtitle: "To know how good you do it"
+			tasks: [
+				{
+					id: "747E727712B3FEDC"
+					item: "create:stressometer"
+					type: "item"
+				}
+				{
+					id: "49076E8CDC4A9BF5"
+					item: "create:speedometer"
+					type: "item"
+				}
+				{
+					id: "3CB7A1BADBA3F933"
+					item: "create_better_motors:multimeter"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Metrics"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["11F275436272AE0A"]
+			id: "2EDF601D368B62D4"
+			tasks: [{
+				id: "4221768B1843448C"
+				item: "create:sequenced_gearshift"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0966F994586EED73"]
+			id: "11F275436272AE0A"
+			tasks: [{
+				id: "55C228C7654260A8"
+				item: "create:gearshift"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+	]
+	title: "Kinetics"
+}

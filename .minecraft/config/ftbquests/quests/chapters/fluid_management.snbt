@@ -1,0 +1,423 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fluid_management"
+	group: "78A677EE2AEFB46F"
+	icon: "minecraft:lava_bucket"
+	id: "1BEAE39254DC4E0F"
+	order_index: 4
+	quest_links: [
+		{
+			id: "1BC37209B1F69641"
+			linked_quest: "37506D0DC482AAA8"
+			shape: "gear"
+			size: 1.5d
+			x: 2.25d
+			y: -2.25d
+		}
+		{
+			id: "4800D7C6F6EC0B89"
+			linked_quest: "7D3FA2BBD1033FE9"
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			id: "594CC73C5D91EA9C"
+			linked_quest: "6B98F8F66130812D"
+			x: 1.0d
+			y: -5.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"5A3BFC118141DC5C"
+				"332E6B2C638AE656"
+			]
+			id: "72304D7D63A87E7A"
+			rewards: [{
+				count: 7
+				id: "77E3376DF8D5E9F4"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0DF17C17F177D4C1"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["72304D7D63A87E7A"]
+			id: "1C2524E076D09250"
+			size: 0.7d
+			tasks: [{
+				count: 4L
+				id: "2638355BF5726249"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			x: 1.4d
+			y: -7.7d
+		}
+		{
+			dependencies: ["72304D7D63A87E7A"]
+			id: "4AD6B16A03ED9014"
+			rewards: [{
+				count: 4
+				id: "44D7C89593A943D4"
+				item: "create:copper_valve_handle"
+				type: "item"
+			}]
+			size: 0.7d
+			tasks: [{
+				count: 4L
+				id: "42300471C2A25051"
+				item: { Count: 4, id: "create:fluid_valve" }
+				type: "item"
+			}]
+			x: 0.7d
+			y: -7.7d
+		}
+		{
+			dependencies: ["5186990A391ADB8D"]
+			id: "11A8EA423A27F25F"
+			tasks: [{
+				id: "659C09D8B97484B1"
+				item: "create:portable_fluid_interface"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["72304D7D63A87E7A"]
+			id: "477C63414BE6219A"
+			tasks: [{
+				id: "6F27651D938A8F50"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["332E6B2C638AE656"]
+			id: "62F294152390992E"
+			tasks: [{
+				id: "380D784BB1E618E7"
+				item: "immersiveengineering:fluid_pump"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["37506D0DC482AAA8"]
+			icon: "gtceu:primitive_pump"
+			id: "4885642010185D62"
+			tasks: [
+				{
+					id: "47C352AFF3F595A0"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					id: "0D72F40037C563B2"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "766BE103CE85AD80"
+					item: { Count: 10, id: "gtceu:treated_wood_frame" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "3D2DD1F079E2B208"
+					item: { Count: 10, id: "gtceu:pump_deck" }
+					type: "item"
+				}
+			]
+			x: 1.3000000000000003d
+			y: -3.3d
+		}
+		{
+			dependencies: ["4885642010185D62"]
+			id: "0B9E46B8967F33B0"
+			size: 0.6d
+			tasks: [{
+				count: 26L
+				id: "1FA4DE9CB92AC078"
+				item: { Count: 26, id: "railcraft:water_tank_siding" }
+				type: "item"
+			}]
+			x: 1.3142857142857167d
+			y: -4.0857142857142925d
+		}
+		{
+			dependencies: ["5186990A391ADB8D"]
+			icon: "railcraft:white_iron_tank_valve"
+			id: "3E8CD30DEAF3BF95"
+			subtitle: "But Iron"
+			tasks: [
+				{
+					count: 2L
+					id: "5A9D01228FFE918C"
+					item: { Count: 2, id: "railcraft:white_iron_tank_valve" }
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "36648CC40E4F7EDD"
+					item: "railcraft:white_iron_tank_wall"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "50775EA036444109"
+					item: "railcraft:white_iron_tank_gauge"
+					type: "item"
+				}
+			]
+			title: "Modular Tank"
+			x: -0.028571428571432023d
+			y: -2.9142857142857252d
+		}
+		{
+			dependencies: ["37506D0DC482AAA8"]
+			id: "5186990A391ADB8D"
+			rewards: [{
+				count: 5
+				id: "44F851FD22347AAE"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "4E298575197A217F"
+					item: { Count: 4, id: "create:fluid_tank" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "490EB6EA64327ACA"
+					item: { Count: 4, id: "create_connected:fluid_vessel" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Modular Tanks"
+			x: 0.7714285714285722d
+			y: -2.20000000000001d
+		}
+		{
+			dependencies: ["5186990A391ADB8D"]
+			id: "597FD4AD71F0A0E0"
+			size: 0.5d
+			tasks: [
+				{
+					id: "0BBC7E933222AC06"
+					item: "tfmg:aluminum_fluid_tank"
+					type: "item"
+				}
+				{
+					id: "4F83CE70DF57CDC3"
+					item: "tfmg:cast_iron_fluid_tank"
+					type: "item"
+				}
+				{
+					id: "5366AE570F09C41D"
+					item: "tfmg:steel_fluid_tank"
+					type: "item"
+				}
+			]
+			title: "Variations"
+			x: 0.7714285714285722d
+			y: -1.5142857142857267d
+		}
+		{
+			dependencies: [
+				"37506D0DC482AAA8"
+				"7D3FA2BBD1033FE9"
+			]
+			dependency_requirement: "one_completed"
+			id: "332E6B2C638AE656"
+			rewards: [
+				{
+					count: 4
+					id: "0C67E64DE0B1BEBC"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "69FA7870E7ABA6BC"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "08740B4F418FE221"
+					item: "gtceu:copper_normal_fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "371255B1F8DE8F55"
+					item: "thermal:fluid_duct"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7193899BAC76DB7C"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "034E126ECB509CDB"
+					item: { Count: 8, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					id: "5395229CCDE0BE95"
+					item: "gtceu:copper_normal_fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3718609297BC697E"
+					item: "thermal:fluid_duct"
+					type: "item"
+				}
+			]
+			title: "Pick your hydration"
+			x: 2.2333333333333343d
+			y: -5.983333333333341d
+		}
+		{
+			dependencies: ["332E6B2C638AE656"]
+			id: "724160D9F6565F29"
+			tasks: [{
+				id: "0C26B01F98328560"
+				item: "ulvcovm:ulv_electric_pump"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["332E6B2C638AE656"]
+			id: "4B5C5C9B6CD1301C"
+			rewards: [{
+				count: 16
+				id: "6108D511C679D34A"
+				item: "mekanism:basic_mechanical_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "1BBEC075D886841D"
+				item: "mekanism:basic_mechanical_pipe"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"7D3FA2BBD1033FE9"
+				"37506D0DC482AAA8"
+			]
+			icon: "gtceu:treated_wood_normal_fluid_pipe"
+			id: "6C4F567410AA97A0"
+			size: 0.6d
+			tasks: [{
+				id: "10ED1745F41877F2"
+				item: "gtceu:treated_wood_normal_fluid_pipe"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"72304D7D63A87E7A"
+				"721BF9359D5D6E95"
+			]
+			id: "3A3B6216A170CB26"
+			tasks: [{
+				id: "384046EB40283700"
+				item: "create_factory_logistics:jar_packager"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"72304D7D63A87E7A"
+				"2B9896C67F23D3AA"
+				"70A43884F1EE4D7A"
+			]
+			id: "5C7C6D50FA0F035C"
+			size: 0.7d
+			tasks: [{
+				id: "592E545539D326BF"
+				item: "create_factory_logistics:factory_fluid_gauge"
+				type: "item"
+			}]
+			x: 1.05d
+			y: -5.95d
+		}
+		{
+			dependencies: ["72304D7D63A87E7A"]
+			id: "7B64D58280611794"
+			tasks: [{
+				id: "49AA13685907BE91"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7B64D58280611794"]
+			id: "1D4DBC1D0C614116"
+			size: 0.6d
+			tasks: [{
+				id: "458FC61C183C619A"
+				item: "create_things_and_misc:spout_gun"
+				type: "item"
+			}]
+			x: -0.6d
+			y: -4.2d
+		}
+		{
+			dependencies: ["7B64D58280611794"]
+			id: "5EEE76B2026B635B"
+			size: 0.6d
+			tasks: [{
+				id: "0B1B5AF9778A8730"
+				item: {
+					Count: 1
+					id: "createdieselgenerators:mold"
+					tag: {
+						Mold: "createdieselgenerators:bar"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.4d
+			y: -4.2d
+		}
+	]
+	title: "Fluid Management"
+}

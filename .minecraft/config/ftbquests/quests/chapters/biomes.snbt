@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "biomes"
+	group: "31544B14A6F1FD15"
+	icon: "regions_unexplored:eucalyptus_sapling"
+	id: "200DB5A79B4B3182"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Biomes"
+}

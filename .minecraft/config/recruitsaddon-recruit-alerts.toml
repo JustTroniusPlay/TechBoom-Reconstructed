@@ -1,0 +1,45 @@
+
+#Recruit Alert System Configuration
+#Controls when and how recruits alert commanders for reinforcements
+[recruit_alerts]
+
+	#Alert Detection Settings
+	[recruit_alerts.detection]
+		#Enable the recruit alert system entirely
+		enable_recruit_alerts = true
+		#Radius (in blocks) that recruits can detect enemies for alerts
+		#Range: 5.0 ~ 50.0
+		enemy_detection_radius = 15.0
+		#How many more enemies than allies before sending outnumbered alert
+		#Range: 1 ~ 10
+		outnumbered_threshold = 3
+		#Health percentage (0.0-1.0) below which recruits send critical alerts
+		#Range: 0.1 ~ 0.5
+		health_critical_threshold = 0.25
+		#Damage amount that triggers an alert
+		#Range: 2.0 ~ 20.0
+		damage_alert_threshold = 6.0
+
+	#Alert Timing Settings
+	[recruit_alerts.timing]
+		#Cooldown in seconds between alerts from the same recruit
+		#Range: 10 ~ 120
+		alert_cooldown_seconds = 30
+		#How often (in seconds) to check for alert situations
+		#Range: 1 ~ 10
+		situation_check_interval_seconds = 3
+
+	#Reinforcement Response Settings
+	[recruit_alerts.response]
+		#Radius (in blocks) to search for available reinforcements
+		#Range: 50.0 ~ 500.0
+		reinforcement_search_radius = 150.0
+		#Minimum number of troops to send as reinforcements
+		#Range: 1 ~ 10
+		min_reinforcement_size = 3
+		#Maximum number of troops to send as reinforcements
+		#Range: 5 ~ 50
+		max_reinforcement_size = 12
+		#Allow emergency deployment of all available forces
+		enable_emergency_deployment = true
+

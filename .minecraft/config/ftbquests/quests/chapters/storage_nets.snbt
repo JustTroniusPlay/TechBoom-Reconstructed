@@ -1,0 +1,368 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage_nets"
+	group: "78A677EE2AEFB46F"
+	icon: {
+		Count: 1
+		id: "sophisticatedstorage:iron_chest"
+		tag: {
+			woodType: "oak"
+		}
+	}
+	id: "13E0E7C3F28FFF40"
+	order_index: 1
+	quest_links: [{
+		id: "4929F8A1F5008F26"
+		linked_quest: "32FCC9DCD937E066"
+		x: -3.5d
+		y: 5.5d
+	}]
+	quests: [
+		{
+			dependencies: ["542363BD0341A56C"]
+			icon: "create:item_vault"
+			id: "2B605F8F5C28FCAD"
+			rewards: [{
+				count: 8
+				id: "5BAA21F11211E815"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "0A9AC9832EBE014B"
+					item: "create:item_vault"
+					type: "item"
+				}
+				{
+					id: "3E08A9D744D7118F"
+					item: "create_connected:item_silo"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "48568B2FA3180461"
+					item: "create:item_hatch"
+					type: "item"
+				}
+			]
+			title: "Big storage"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["34D049FD2BF84E84"]
+			description: [
+				"You can upgrade some vanilla storage containers to hold more items and even give them special features in the future!"
+				""
+				"But fow now lets just make simple metal upgrades."
+			]
+			id: "542363BD0341A56C"
+			rewards: [{
+				count: 6
+				id: "6F23DB51CF4889E4"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+				type: "item"
+			}]
+			subtitle: "More space for my mess!"
+			tasks: [
+				{
+					id: "1E38A9BD0D3F1765"
+					item: "sophisticatedstorage:basic_to_copper_tier_upgrade"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "477F5D98209BBCA8"
+					item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Storage Upgrade"
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["542363BD0341A56C"]
+			id: "3B872B9D66E36739"
+			tasks: [{
+				id: "1CCC7ECC82DEBE48"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:limited_barrel_1"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			title: "Limited Barrels"
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"25951FDCB7908145"
+				"7A722F4E1BB2DF66"
+			]
+			icon: "create:andesite_funnel"
+			id: "26041794979A3851"
+			tasks: [
+				{
+					id: "3C05CAF2814DE9D2"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+				{
+					id: "05141A26A2B0948B"
+					item: "create:andesite_tunnel"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"26041794979A3851"
+				"3D1CCF8E85981E52"
+			]
+			icon: "create:brass_funnel"
+			id: "09A3CBAAEEA779DA"
+			tasks: [
+				{
+					id: "25EB6F09703BF87F"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "741428B6306F87E1"
+					item: "create:brass_tunnel"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["542363BD0341A56C"]
+			id: "7A722F4E1BB2DF66"
+			tasks: [{
+				id: "7D585E691EC4060E"
+				item: "create:chute"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"3D1CCF8E85981E52"
+				"2B605F8F5C28FCAD"
+			]
+			id: "2E05C5DC65334CCF"
+			tasks: [{
+				id: "450872BAD605C6D5"
+				item: "create:stockpile_switch"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3D1CCF8E85981E52"
+				"7A722F4E1BB2DF66"
+			]
+			id: "6260FB2B98C9ABE6"
+			tasks: [{
+				id: "2488955CF7022E31"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["32FCC9DCD937E066"]
+			id: "5829B229883C5738"
+			tasks: [{
+				id: "043E620411D78B58"
+				item: "create:packager"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5829B229883C5738"]
+			id: "0749ABF0D2E22F29"
+			size: 0.7d
+			tasks: [{
+				id: "507A889A76ADF7B0"
+				item: "create:repackager"
+				type: "item"
+			}]
+			x: -4.2d
+			y: 4.2d
+		}
+		{
+			dependencies: ["5829B229883C5738"]
+			id: "2F69960DFCAC5C3C"
+			tasks: [{
+				id: "0EDFD24FF65FBD28"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7A722F4E1BB2DF66"
+				"621E6E9756E60D93"
+			]
+			id: "1EC45844AE9357C0"
+			tasks: [{
+				id: "2A4D1043AD3F22C7"
+				item: "expandingtechnologies:item_vacuum"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5829B229883C5738"]
+			id: "721BF9359D5D6E95"
+			tasks: [{
+				id: "567D1DADC515AEB4"
+				item: "create:stock_link"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["721BF9359D5D6E95"]
+			id: "0D6832578FA06AE0"
+			tasks: [{
+				id: "062ED7C68413E8B8"
+				item: "createstockbridge:ae_bridge"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["721BF9359D5D6E95"]
+			id: "14197015F8EAE8BE"
+			tasks: [{
+				id: "57AB7333EF6DFDB6"
+				item: "create:stock_ticker"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["721BF9359D5D6E95"]
+			id: "14540AB6837F226E"
+			tasks: [{
+				id: "6AA762E113223494"
+				item: "create:redstone_requester"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E05C5DC65334CCF"]
+			id: "66695DC6D6526310"
+			size: 0.7d
+			tasks: [{
+				id: "45B868FB8061EBA9"
+				item: "create_factory_logistics:network_link"
+				type: "item"
+			}]
+			x: 1.25d
+			y: 3.261904761904752d
+		}
+		{
+			dependencies: ["721BF9359D5D6E95"]
+			icon: "create:factory_gauge"
+			id: "2B9896C67F23D3AA"
+			size: 0.7d
+			tasks: [{
+				id: "1C8061AAF24DC98D"
+				item: "create:factory_gauge"
+				type: "item"
+			}]
+			x: -4.55d
+			y: 3.5d
+		}
+		{
+			dependencies: ["721BF9359D5D6E95"]
+			id: "6957B078ADC132B8"
+			tasks: [{
+				id: "621F080FCAE503CB"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:table_cloths"
+					}
+				}
+				title: "Table Covers"
+				type: "item"
+			}]
+			title: "Shopkeeper"
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5829B229883C5738"]
+			id: "2BFC197BE8157C14"
+			size: 0.7d
+			tasks: [{
+				id: "2232B90780E9A8D1"
+				item: "create:package_filter"
+				type: "item"
+			}]
+			x: -2.4499999999999997d
+			y: 3.5d
+		}
+		{
+			dependencies: ["542363BD0341A56C"]
+			icon: "gtceu:tin_small_item_pipe"
+			id: "7E43DE8E8F0F36A6"
+			rewards: [{
+				count: 16
+				id: "5A395AE399DB7D60"
+				item: "gtceu:tin_small_item_pipe"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "3288538FC13A6B2B"
+					item: "gtceu:tin_small_item_pipe"
+					type: "item"
+				}
+				{
+					id: "3FBB6A0138735A33"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+			]
+			title: "Item Pipes"
+			x: 2.5d
+			y: 7.5d
+		}
+	]
+	title: "Storage Solutions"
+}

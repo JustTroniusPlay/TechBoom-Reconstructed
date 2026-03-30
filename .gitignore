@@ -1,0 +1,15 @@
+*
+!.gitignore
+!README.md
+!TechBoom-Reconstructed.html
+
+!/.minecraft/
+!/.minecraft/config
+!/.minecraft/config/**
+!/.minecraft/defaultconfigs
+!/.minecraft/defaultconfigs/**
+!/.minecraft/kubejs
+!/.minecraft/kubejs/**
+!/.minecraft/tacz
+!/.minecraft/tacz/**
+!/.minecraft/options.txt

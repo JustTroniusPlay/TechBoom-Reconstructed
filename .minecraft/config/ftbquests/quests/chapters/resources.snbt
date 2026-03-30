@@ -1,0 +1,457 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "resources"
+	group: ""
+	icon: "vs_clockwork:wanderlite_crystal"
+	id: "12986285C01890E8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3F0F17AD293B8B8F"
+			tasks: [{
+				count: 16L
+				id: "178B9BCF754BE620"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			icon: "minecraft:copper_ingot"
+			id: "5038C6347E1253ED"
+			tasks: [
+				{
+					count: 16L
+					id: "02E180CADA4726D0"
+					item: "minecraft:copper_ingot"
+					title: "Copper"
+					type: "item"
+				}
+				{
+					id: "424AC0AC339104C9"
+					item: "minecraft:raw_copper"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3A05C39343316BF8"
+					item: "gtceu:raw_malachite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "72AB7D9400848E10"
+					item: "gtceu:raw_chalcopyrite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5DD742DA52946DB5"
+					item: "gtceu:raw_tetrahedrite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3C75EB8C78E9A9F1"
+					item: "gtceu:raw_bornite"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			icon: "minecraft:iron_ingot"
+			id: "04D9645A3F78682C"
+			tasks: [
+				{
+					count: 16L
+					id: "302A720970E7F50A"
+					item: "minecraft:iron_ingot"
+					title: "Iron"
+					type: "item"
+				}
+				{
+					id: "1E50C717A518E411"
+					item: "minecraft:raw_iron"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E6976C90AD91BF5"
+					item: "gtceu:raw_pyrite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7816EDDCC6BC7D8F"
+					item: "gtceu:raw_hematite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "66C3A89F1601E5FB"
+					item: "gtceu:raw_granitic_mineral_sand"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "02FAB6FB6182BD15"
+					item: "gtceu:raw_basaltic_mineral_sand"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4B0C862FAC45DC6A"
+					item: "gtceu:raw_magnetite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3A7463979E5E3632"
+					item: "gtceu:raw_yellow_limonite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "549E6DD7BF415046"
+					item: "gtceu:raw_goethite"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			icon: "minecraft:gold_ingot"
+			id: "640EE33E02A43DB7"
+			tasks: [
+				{
+					count: 16L
+					id: "017CA75993BE4BEF"
+					item: "minecraft:gold_ingot"
+					title: "Gold"
+					type: "item"
+				}
+				{
+					id: "57182B807DF05AFE"
+					item: "minecraft:raw_gold"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			icon: "minecraft:coal"
+			id: "0AB65D0E517F2F9E"
+			tasks: [
+				{
+					count: 16L
+					id: "769C670BCADC85B7"
+					item: { Count: 16, id: "minecraft:coal" }
+					type: "item"
+				}
+				{
+					id: "0EFEBFAB5610ECCB"
+					item: "gtceu:raw_coal"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Coal"
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			id: "5CDE13F097EC8781"
+			tasks: [
+				{
+					count: 16L
+					id: "302C25D61D73C271"
+					item: "tfmg:cast_iron_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "145178F89BB75C39"
+					item: { Count: 16, id: "createbigcannons:cast_iron_ingot" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Cast Iron"
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			id: "28B14F276350912F"
+			tasks: [
+				{
+					count: 16L
+					id: "442E3DBB0EB4DB06"
+					item: { Count: 16, id: "crusty_chunks:sulfur" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "14E683C585C654E8"
+					item: "electrodynamics:dustsulfur"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Sulfur"
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			icon: "create:zinc_ingot"
+			id: "39B74A03DA98661C"
+			tasks: [
+				{
+					count: 16L
+					id: "122FF34E223FD4EC"
+					item: { Count: 16, id: "create:zinc_ingot" }
+					type: "item"
+				}
+				{
+					id: "56077032150AB036"
+					item: "create:raw_zinc"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "57A80E79C718C127"
+					item: "gtceu:raw_sphalerite"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Zinc"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			id: "4122E674728CDD25"
+			tasks: [{
+				count: 16L
+				id: "5EA13617DE63ABEF"
+				item: { Count: 16, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			title: "Brass"
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			id: "53A2FA4D0E38D477"
+			tasks: [{
+				id: "799BDD2485C0C776"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			id: "156CBEF77AAAF530"
+			tasks: [{
+				id: "03D2C5399CBA3D8F"
+				item: "createutilities:void_steel_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.5d
+		}
+		{
+			icon: "immersiveengineering:ingot_aluminum"
+			id: "42E0BB0DB56E20DF"
+			tasks: [
+				{
+					count: 16L
+					id: "6F9F20F267CCFD7C"
+					item: "immersiveengineering:ingot_aluminum"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "065A43419436A505"
+					item: "gtceu:aluminium_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "055428328CDA4DB9"
+					item: "immersiveengineering:raw_aluminum"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3F5E975F722937FD"
+					item: "gtceu:raw_bauxite"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Aluminum"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			id: "1342293BBB112D9A"
+			tasks: [{
+				count: 16L
+				id: "6DF50E70BA726598"
+				item: { Count: 16, id: "cbc_cw:alumisulfate_ingot" }
+				type: "item"
+			}]
+			title: "Alumisulfate"
+			x: 7.0d
+			y: 8.5d
+		}
+		{
+			icon: "thermal:nickel_ingot"
+			id: "76501E1A279E0C2D"
+			tasks: [
+				{
+					count: 16L
+					id: "5E10E53F2D75B411"
+					item: "thermal:nickel_ingot"
+					type: "item"
+				}
+				{
+					id: "44A84896F9C37D4C"
+					item: "gtceu:raw_nickel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4F5B11D95913F7F9"
+					item: "gtceu:raw_garnierite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2B94EE9B18601BC8"
+					item: "gtceu:raw_pentlandite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5670A73FA0D65417"
+					item: "thermal:raw_nickel"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Nickel"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			id: "60AD67675990CD77"
+			tasks: [{
+				count: 16L
+				id: "29A92DDFCC0E0E17"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			title: "Steel"
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			icon: "thermal:lead_ingot"
+			id: "5D6E26389BB75E43"
+			tasks: [
+				{
+					count: 16L
+					id: "7B881846544F6BD5"
+					item: "thermal:lead_ingot"
+					type: "item"
+				}
+				{
+					id: "44279DA946C6E4EB"
+					item: "gtceu:raw_galena"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "76CE5CB40E8FCC53"
+					item: "thermal:raw_lead"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Lead"
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			icon: "thermal:tin_ingot"
+			id: "57555B7CC23F264F"
+			tasks: [
+				{
+					count: 16L
+					id: "3E8AB68B0929A996"
+					item: { Count: 16, id: "thermal:tin_ingot" }
+					type: "item"
+				}
+				{
+					id: "1335FA6A6CD4A1DB"
+					item: "gtceu:raw_tin"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "01288684E54C6DAD"
+					item: "gtceu:raw_cassiterite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "04AC3F39636BA650"
+					item: "thermal:raw_tin"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Tin"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			id: "7E4193485C2ED192"
+			tasks: [{
+				count: 16L
+				id: "7169DD1ECC0CE3E0"
+				item: { Count: 16, id: "thermal:bronze_ingot" }
+				type: "item"
+			}]
+			title: "Bronze"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			icon: "thermal:invar_ingot"
+			id: "22B7147BADC4FF68"
+			tasks: [{
+				id: "47D7F01A677BB5DD"
+				item: "thermal:invar_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+	]
+	title: "Resources"
+}

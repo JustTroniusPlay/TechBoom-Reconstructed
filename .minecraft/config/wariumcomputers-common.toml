@@ -1,0 +1,3 @@
+#ids of warium aimable blocks.
+weapons = ["ordinance_core", "mortar", "rotary_auto_cannon", "autocannon", "light_autocannon", "battle_cannon_breech", "artillerybreech", "rocket_pod", "large_rocket_pod", "empty_missile_hardpoint", "fire_spear_missile_hardpoint", "seeker_spear_missile_hardpoint", "strike_spear_missile_hardpoint"]
+

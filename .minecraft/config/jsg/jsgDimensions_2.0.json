@@ -1,0 +1,458 @@
+{
+  "jsg:abydos": {
+    "name": "jsg:abydos",
+    "distance": 13,
+    "groups": [
+      "milkyway"
+    ],
+    "milkyWayOrigins": {
+      "AGED": 4
+    },
+    "lightingBoltChance": 1.9999999494757503E-4,
+    "isBlackHoleDim": false
+  },
+  "ae2:spatial_storage": {
+    "name": "ae2:spatial_storage",
+    "distance": 12,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "gcyr:venus_orbit": {
+    "name": "gcyr:venus_orbit",
+    "distance": 9,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:phobos_orbit": {
+    "name": "adastraextra:phobos_orbit",
+    "distance": 7,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:neptune_orbit": {
+    "name": "adastraextra:neptune_orbit",
+    "distance": 13,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:thebe": {
+    "name": "adastraextra:thebe",
+    "distance": 12,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:amalthea": {
+    "name": "adastraextra:amalthea",
+    "distance": 13,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "immersive_portals:alternate3": {
+    "name": "immersive_portals:alternate3",
+    "distance": 5,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "immersive_portals:alternate4": {
+    "name": "immersive_portals:alternate4",
+    "distance": 5,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:deimos": {
+    "name": "adastraextra:deimos",
+    "distance": 5,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "immersive_portals:alternate5": {
+    "name": "immersive_portals:alternate5",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "immersive_portals:alternate1": {
+    "name": "immersive_portals:alternate1",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "immersive_portals:alternate2": {
+    "name": "immersive_portals:alternate2",
+    "distance": 14,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:metis": {
+    "name": "adastraextra:metis",
+    "distance": 14,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra_dh:trash_x_1": {
+    "name": "ad_astra_dh:trash_x_1",
+    "distance": 13,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:thebe_orbit": {
+    "name": "adastraextra:thebe_orbit",
+    "distance": 12,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "compactmachines:compact_world": {
+    "name": "compactmachines:compact_world",
+    "distance": 13,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:glacio_orbit": {
+    "name": "ad_astra:glacio_orbit",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:glacio": {
+    "name": "ad_astra:glacio",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:adrastea": {
+    "name": "adastraextra:adrastea",
+    "distance": 5,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:uranus": {
+    "name": "adastraextra:uranus",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "gcyr:venus": {
+    "name": "gcyr:venus",
+    "distance": 13,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:venus_orbit": {
+    "name": "ad_astra:venus_orbit",
+    "distance": 6,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "gcyr:black_hole_orbit": {
+    "name": "gcyr:black_hole_orbit",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "minecraft:the_nether": {
+    "name": "minecraft:the_nether",
+    "distance": 5,
+    "groups": [
+      "milkyway"
+    ],
+    "milkyWayOrigins": {
+      "NORMAL": 2
+    },
+    "lightingBoltChance": 0.0,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:venus": {
+    "name": "ad_astra:venus",
+    "distance": 5,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:earth_orbit": {
+    "name": "ad_astra:earth_orbit",
+    "distance": 8,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:mercury_orbit": {
+    "name": "ad_astra:mercury_orbit",
+    "distance": 12,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:moon": {
+    "name": "ad_astra:moon",
+    "distance": 3,
+    "groups": [
+      "milkyway"
+    ],
+    "milkyWayOrigins": {
+      "NORMAL": 3
+    },
+    "lightingBoltChance": 0.0,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:amalthea_orbit": {
+    "name": "adastraextra:amalthea_orbit",
+    "distance": 11,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "gcyr:luna": {
+    "name": "gcyr:luna",
+    "distance": 7,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "gcyr:mars_orbit": {
+    "name": "gcyr:mars_orbit",
+    "distance": 11,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:moon_orbit": {
+    "name": "ad_astra:moon_orbit",
+    "distance": 7,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "gcyr:overworld_orbit": {
+    "name": "gcyr:overworld_orbit",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:neptune": {
+    "name": "adastraextra:neptune",
+    "distance": 12,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:phobos": {
+    "name": "adastraextra:phobos",
+    "distance": 14,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:mars_orbit": {
+    "name": "ad_astra:mars_orbit",
+    "distance": 7,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "geotech:medium_dimension": {
+    "name": "geotech:medium_dimension",
+    "distance": 6,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "gcyr:mars": {
+    "name": "gcyr:mars",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:saturn_orbit": {
+    "name": "adastraextra:saturn_orbit",
+    "distance": 7,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "minecraft:overworld": {
+    "name": "minecraft:overworld",
+    "distance": 0,
+    "groups": [
+      "milkyway"
+    ],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:jupiter_orbit": {
+    "name": "adastraextra:jupiter_orbit",
+    "distance": 6,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:deimos_orbit": {
+    "name": "adastraextra:deimos_orbit",
+    "distance": 6,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:jupiter": {
+    "name": "adastraextra:jupiter",
+    "distance": 11,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:metis_orbit": {
+    "name": "adastraextra:metis_orbit",
+    "distance": 8,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:mars": {
+    "name": "ad_astra:mars",
+    "distance": 8,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "gcyr:mercury_orbit": {
+    "name": "gcyr:mercury_orbit",
+    "distance": 9,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra_dh:hoz_2_o": {
+    "name": "ad_astra_dh:hoz_2_o",
+    "distance": 7,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "minecraft:the_end": {
+    "name": "minecraft:the_end",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {
+      "NORMAL": 1
+    },
+    "lightingBoltChance": 0.0,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:adrastea_orbit": {
+    "name": "adastraextra:adrastea_orbit",
+    "distance": 8,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:saturn": {
+    "name": "adastraextra:saturn",
+    "distance": 8,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "ad_astra:mercury": {
+    "name": "ad_astra:mercury",
+    "distance": 9,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "adastraextra:uranus_orbit": {
+    "name": "adastraextra:uranus_orbit",
+    "distance": 8,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "gcyr:luna_orbit": {
+    "name": "gcyr:luna_orbit",
+    "distance": 9,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  },
+  "gcyr:mercury": {
+    "name": "gcyr:mercury",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {},
+    "lightingBoltChance": 5.000000237487257E-4,
+    "isBlackHoleDim": false
+  }
+}

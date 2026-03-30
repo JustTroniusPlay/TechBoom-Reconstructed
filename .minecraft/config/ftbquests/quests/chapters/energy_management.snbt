@@ -1,0 +1,135 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "energy_management"
+	group: "78A677EE2AEFB46F"
+	icon: "thermal:energy_duct"
+	id: "153E7C5D5F57897F"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["56766749439CD7E0"]
+			id: "2444CBFAA8471EE0"
+			tasks: [
+				{
+					count: 2L
+					id: "3722466214FF641D"
+					item: "create_new_age:electrical_connector"
+					type: "item"
+				}
+				{
+					id: "4A3D5D6B59E0A7F1"
+					item: "create_new_age:copper_wire"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"56766749439CD7E0"
+				"156FF337D16F88B3"
+			]
+			id: "3CADA01B0663BC89"
+			rewards: [
+				{
+					count: 4
+					id: "6BD27129FA260939"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1FAE80622F4B6C18"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3C292645820BBB74"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "214D51E2B8D3177B"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					id: "5E84E78BFAF4A56E"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+				{
+					id: "3225178BC4EBF4E5"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"56766749439CD7E0"
+				"5361A9865C6547F4"
+			]
+			id: "3E885ACD84B8FF4F"
+			rewards: [{
+				count: 16
+				id: "057C34174B31A361"
+				item: "thermal:energy_duct"
+				type: "item"
+			}]
+			tasks: [{
+				id: "152D2CC8E10BE5ED"
+				item: "thermal:energy_duct"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"56766749439CD7E0"
+				"7A0C939E0FE540EC"
+			]
+			id: "0646482B8B0DF2D2"
+			tasks: [{
+				id: "562332DC217B0C7B"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "32532A558BC7C731"
+			tasks: [{
+				count: 2L
+				id: "7649875CF5210992"
+				item: { Count: 2, id: "createaddition:connector" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["32532A558BC7C731"]
+			id: "5CD10FA8BA33B6F7"
+			size: 0.7d
+			tasks: [{
+				id: "729E78CBCFAEBB78"
+				item: "createaddition:redstone_relay"
+				type: "item"
+			}]
+			x: -0.35d
+			y: -2.4499999999999997d
+		}
+	]
+	title: "Energy Management"
+}

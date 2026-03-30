@@ -1,0 +1,55 @@
+
+#Raid / March behaviour settings. Adjust movement, notifications and arrival detection parameters.
+["Raid Behavior"]
+	#Enable notifications for raid events
+	enableRaidNotifications = true
+	#Range in blocks for raid notifications
+	#Range: 10 ~ 500
+	notificationRange = 100
+	#Distance in blocks to consider destination reached
+	#Range: 1 ~ 20
+	destinationReachDistance = 5
+
+#Entity blacklist – recruits will ignore or avoid these entities during raids.
+["Entity Blacklist"]
+	#List of entity types that recruits should not attack during raids
+	#Format: modid:entity_name (e.g., minecraft:creeper, minecraft:villager)
+	raidEntityBlacklist = ["minecraft:creeper", "minecraft:villager", "minecraft:iron_golem", "minecraft:cat", "minecraft:wolf"]
+	#Prevent recruits from attacking creepers (to avoid explosions)
+	blacklistCreepers = true
+	#Prevent recruits from attacking endermen (to avoid teleportation issues)
+	blacklistEndermen = true
+	#Prevent recruits from attacking villagers and other peaceful NPCs
+	blacklistVillagers = true
+
+#Toggles for in-game chat notifications sent to the commander player.
+[Notifications]
+	#Notify player when recruits reach their destination
+	notifyOnDestinationReached = true
+	#Notify player when recruits start combat
+	notifyOnCombatStart = true
+	#Notify player when recruits appear to be stuck
+	notifyOnRecruitStuck = true
+	#Notify player when a recruit dies
+	notifyOnRecruitDeath = true
+
+#Distance thresholds used by various /recruits commands.
+[Commands]
+	#Maximum distance to target player for attack command (in blocks)
+	#Range: 10 ~ 500
+	attackCommandMaxDistance = 125
+	#Minimum distance required for follow command (in blocks)
+	#Range: 5 ~ 200
+	followCommandMinDistance = 50
+
+#Automatic teleportation of lagging recruits during march / raid approach phase. Disable or fine-tune here.
+[Teleportation]
+	#Enable automatic teleportation of lagging recruits during movement
+	enableTeleportation = true
+	#Distance (in blocks) behind the group's average position at which a recruit is considered 'lagging'.  If exceeded, the recruit will be teleported to the group centre.
+	#Range: 10 ~ 100
+	teleportationDistanceThreshold = 30
+	#Safety margin (in blocks) the group must have progressed from their initial position before any teleportation can occur. Prevents recruits warping at mission start.
+	#Range: 20 ~ 200
+	teleportationProgressThreshold = 50
+
