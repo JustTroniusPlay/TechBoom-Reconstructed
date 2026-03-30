@@ -7,4 +7,6 @@ The main goal is to balance things out. I am trying to achieve the same feel as 
 
 Additionally there some exploration and combat aspects to not get bored by just constantly sitting on your base!
 
+### HEAVILY WORK IN PROGRESS RIGHT NOW
+
 This description will be supplemented over time.
