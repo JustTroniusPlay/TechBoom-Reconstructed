@@ -5,8 +5,8 @@
 
 !/.minecraft/
 !/.minecraft/config
-/.minecraft/config/xaerominimap_entities.json
 !/.minecraft/config/**
+/.minecraft/config/xaerominimap_entities.json
 /.minecraft/config/jei/world
 !/.minecraft/defaultconfigs
 !/.minecraft/defaultconfigs/**
