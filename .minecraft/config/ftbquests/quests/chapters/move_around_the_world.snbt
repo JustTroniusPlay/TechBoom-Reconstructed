@@ -34,6 +34,13 @@
 			x: -1.5d
 			y: -3.0d
 		}
+		{
+			id: "2763A3D7F44C526E"
+			linked_quest: "510D59805EF033F8"
+			size: 0.7d
+			x: -1.05d
+			y: -1.75d
+		}
 	]
 	quests: [
 		{
@@ -647,6 +654,7 @@
 				"4D475C5C6D1FF754"
 				"7DD34728381D1555"
 			]
+			description: ["Glow in the dark."]
 			id: "51F27E0987380337"
 			size: 1.5d
 			tasks: [{
@@ -727,6 +735,7 @@
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
+			description: ["Can be put underwater."]
 			id: "63AFBFC47D0B51C1"
 			size: 1.5d
 			tasks: [{
@@ -1503,8 +1512,47 @@
 				item: "immersive_machinery:tunnel_digger"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["16550070AD851335"]
+			description: ["Very cheap imitation of legendery Elytra. Have less durability and loose it faster with sharp dives or use of fireworks, but atleast not costy to repair with tough fabric."]
+			id: "64454BD70315F1D1"
+			tasks: [{
+				id: "1212314BA71B0DC5"
+				item: {
+					Count: 1
+					id: "immersiveengineering:glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["16550070AD851335"]
+			description: ["Hook to wires, ropes or steel cables."]
+			id: "0929320096BEA3D5"
+			tasks: [{
+				id: "71DBBF5769B3E84F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 2
+						}
+					}
+					id: "immersiveengineering:skyhook"
+				}
+				type: "item"
+			}]
+			x: -0.39345238095236823d
+			y: -1.242346938775519d
 		}
 	]
 	title: "Transportation"

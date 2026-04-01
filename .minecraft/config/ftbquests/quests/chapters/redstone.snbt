@@ -151,6 +151,55 @@
 			x: 4.5d
 			y: -2.0d
 		}
+		{
+			id: "074857E8BD03F22B"
+			tasks: [
+				{
+					id: "7D558A570241D680"
+					item: "immersiveengineering:wirecoil_redstone"
+					type: "item"
+				}
+				{
+					id: "3A319BFA39571017"
+					item: "immersiveengineering:connector_redstone"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["074857E8BD03F22B"]
+			id: "47A065DFF858B1A6"
+			tasks: [{
+				id: "567783945BC96F65"
+				item: "immersiveengineering:connector_probe"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["074857E8BD03F22B"]
+			id: "6ADF57F4F29BCCBF"
+			tasks: [{
+				id: "7470E1138523E28C"
+				item: "immersiveengineering:connector_bundled"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			id: "075BE885F4845BF5"
+			tasks: [{
+				id: "0A65ED82EACEAE5A"
+				item: "immersiveengineering:turntable"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
 	]
 	title: "Redstone"
 }

@@ -61,6 +61,14 @@
 			x: -20.25d
 			y: 5.25d
 		}
+		{
+			id: "3699CE0C026189E1"
+			linked_quest: "5169668687940129"
+			shape: "rsquare"
+			size: 1.5d
+			x: -15.0d
+			y: 7.0d
+		}
 	]
 	quests: [
 		{
@@ -382,7 +390,7 @@
 				type: "item"
 			}]
 			x: -10.85d
-			y: 6.6499999999999995d
+			y: 6.3d
 		}
 		{
 			dependencies: ["2381B310EA56A896"]
@@ -953,7 +961,7 @@
 				type: "item"
 			}]
 			x: -16.0d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["691DD9FDCE3E58DA"]
@@ -1868,7 +1876,7 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: 10.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["3CD05E2E5661246B"]
@@ -1916,18 +1924,21 @@
 				type: "item"
 			}]
 			x: -12.0d
-			y: 10.5d
+			y: 9.5d
 		}
 		{
-			dependencies: ["7A0C939E0FE540EC"]
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"4DB042DAF83D7A0A"
+			]
 			id: "48BC04D05B89C7EA"
 			tasks: [{
 				id: "4C2630267ED5A26F"
 				item: "railcraft:powered_rolling_machine"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 7.5d
+			x: -5.20714285714287d
+			y: 6.760714285714293d
 		}
 		{
 			dependencies: [
@@ -2030,7 +2041,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3D1CCF8E85981E52"]
@@ -2278,8 +2289,8 @@
 				}
 				type: "item"
 			}]
-			x: -13.166326530612245d
-			y: -4.646938775510186d
+			x: -12.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0E0B2F4801CE1F38"]
@@ -2310,8 +2321,8 @@
 				}
 				type: "item"
 			}]
-			x: -13.94183673469388d
-			y: -4.157142857142837d
+			x: -13.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -3181,25 +3192,14 @@
 			y: 4.907142857142855d
 		}
 		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "4DE3A5EB02DCDC59"
-			tasks: [{
-				id: "4E67081F5752155F"
-				item: "thermal:device_tree_extractor"
-				type: "item"
-			}]
-			x: -24.535714285714285d
-			y: 4.4428571428571395d
-		}
-		{
 			id: "09E41832773146F4"
 			tasks: [{
 				id: "538305270B07FB36"
 				item: "tfmg:simple_large_engine"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 9.0d
+			x: -1.5d
+			y: 10.5d
 		}
 		{
 			id: "6FDCA019B5DD1C8C"
@@ -3208,8 +3208,8 @@
 				item: "tfmg:engine_gearbox"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 10.0d
+			x: -3.5d
+			y: 11.5d
 		}
 		{
 			id: "7855B49FE76C8688"
@@ -3218,8 +3218,8 @@
 				item: "tfmg:large_engine"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 9.0d
+			x: -3.5d
+			y: 10.5d
 		}
 		{
 			id: "11A4BC034E377900"
@@ -3228,8 +3228,8 @@
 				item: "tfmg:regular_engine"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 10.0d
+			x: -1.5d
+			y: 11.5d
 		}
 		{
 			id: "6C1230404AC891BB"
@@ -3238,8 +3238,8 @@
 				item: "tfmg:turbine_engine"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 10.0d
+			x: -2.5d
+			y: 11.5d
 		}
 		{
 			id: "02330D444E578283"
@@ -3248,60 +3248,44 @@
 				item: "tfmg:radial_engine"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 9.0d
+			x: -2.5d
+			y: 10.5d
 		}
 		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"3CADA01B0663BC89"
+			]
 			id: "644DA6D29FB50DA8"
 			tasks: [{
 				id: "62222DF3CA4498D7"
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 10.0d
-		}
-		{
-			id: "3F632B05FE359F8D"
-			tasks: [{
-				id: "4E20AA3C6A316AEB"
-				item: "immersiveengineering:radiator"
-				type: "item"
-			}]
-			title: "Diesel Engine"
-			x: -8.5d
-			y: 9.0d
-		}
-		{
-			id: "6F9B67A2C1FAE11D"
-			tasks: [{
-				id: "12D43A6E9D5D8752"
-				item: "immersiveengineering:steel_fence"
-				type: "item"
-			}]
-			title: "Energy from clouds"
 			x: -9.5d
-			y: 9.0d
+			y: 5.5d
 		}
 		{
+			dependencies: ["5169668687940129"]
 			id: "27E0F81FE63D2E85"
 			tasks: [{
 				id: "648C61E6740F0E1E"
 				item: "mekanismgenerators:wind_generator"
 				type: "item"
 			}]
-			x: -14.5d
+			x: -17.0d
 			y: 8.5d
 		}
 		{
+			dependencies: ["5169668687940129"]
 			id: "4252FD2C3076FC2E"
 			tasks: [{
 				id: "6331E20345C82C18"
 				item: "mekanismgenerators:solar_generator"
 				type: "item"
 			}]
-			x: -14.5d
-			y: 9.5d
+			x: -16.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["4252FD2C3076FC2E"]
@@ -3311,18 +3295,19 @@
 				item: "mekanismgenerators:advanced_solar_generator"
 				type: "item"
 			}]
-			x: -16.0d
-			y: 9.5d
+			x: -18.0d
+			y: 10.0d
 		}
 		{
+			dependencies: ["5169668687940129"]
 			id: "1EA14587D11D38CE"
 			tasks: [{
 				id: "2BEF1448BC6EC577"
 				item: "mekanismgenerators:gas_burning_generator"
 				type: "item"
 			}]
-			x: -14.5d
-			y: 10.5d
+			x: -15.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -3382,6 +3367,245 @@
 			title: "Crystalization"
 			x: -31.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["4619627EEEE566A4"]
+			description: ["You can use carpenter to automate creation of wooden ties for your railroads."]
+			id: "4C7E5BEF0E29D6F3"
+			size: 0.7d
+			tasks: [{
+				id: "4B49A1C5DB4AA5D3"
+				item: "railcraft:wooden_tie"
+				type: "item"
+			}]
+			x: -19.25d
+			y: 6.3d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Upgrade to steam oven with steel. Use less space, accepts items and steam from all directions and have bigger items internal buffer. Will smelt 9 items at a time."]
+			id: "6103B2A9C790E8EF"
+			tasks: [{
+				id: "793CF622DA144ED2"
+				item: "railcraft:steam_oven"
+				type: "item"
+			}]
+			title: "Steel Steam Oven"
+			x: -10.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "1C59476B07336B42"
+			size: 1.3d
+			tasks: [
+				{
+					id: "298BFE41EAE4BE11"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "471926DD4EB9A9DA"
+					item: "gtceu:resistor"
+					type: "item"
+				}
+				{
+					id: "7B9A40F294EFAA93"
+					item: "gtceu:vacuum_tube"
+					type: "item"
+				}
+				{
+					id: "3EBD5A265A15E71B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/red_alloy"
+						}
+					}
+					title: "Redd Alloy"
+					type: "item"
+				}
+			]
+			x: -11.700000000000001d
+			y: 16.900000000000002d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Some complex machinery require you to build a structure from multiple blocks which are present here. "]
+			id: "0729C937DEFF1E0B"
+			size: 1.3d
+			tasks: [
+				{
+					id: "425EB8C1F747EA83"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "6779EA038CC99BBC"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "6EB38F7733151E22"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "7C839D26FE9093D0"
+					item: "immersiveengineering:generator"
+					type: "item"
+				}
+				{
+					id: "0E741B8A6732DEA6"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+			]
+			title: "Multiblocks components"
+			x: -9.100000000000001d
+			y: 16.900000000000002d
+		}
+		{
+			dependencies: ["115F76F055B5EB09"]
+			id: "416F4CC8D57BAF00"
+			size: 0.7d
+			tasks: [{
+				id: "63408CE7D7C442FB"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -16.605102040816327d
+			y: -1.912755102040819d
+		}
+		{
+			dependencies: [
+				"4423C396B2C5D34D"
+				"164EFF8B7B80321D"
+			]
+			dependency_requirement: "one_completed"
+			id: "09919FCD6E63DF42"
+			tasks: [
+				{
+					id: "611436010390C138"
+					item: "immersiveengineering:turret_chem"
+					type: "item"
+				}
+				{
+					id: "72186F65EC4CC792"
+					item: "immersiveengineering:turret_gun"
+					type: "item"
+				}
+			]
+			title: "Industrial Turrets"
+			x: 4.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			id: "4423C396B2C5D34D"
+			tasks: [{
+				id: "62CB93AFF9971747"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 4
+						}
+					}
+					id: "immersiveengineering:chemthrower"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 21
+					}
+				}
+				id: "immersiveengineering:revolver"
+			}
+			id: "164EFF8B7B80321D"
+			rewards: [{
+				count: 24
+				id: "754EF7A50F5522EA"
+				item: "immersiveengineering:casull"
+				type: "item"
+			}]
+			size: 1.4d
+			tasks: [
+				{
+					id: "42BD6E2AA624C098"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 21
+							}
+						}
+						id: "immersiveengineering:revolver"
+					}
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "662F62ED3C7DB189"
+					item: { Count: 6, id: "immersiveengineering:casull" }
+					type: "item"
+				}
+			]
+			title: "Wild Weapon"
+			x: -7.0d
+			y: 13.299999999999999d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			id: "4C8C44388703BD22"
+			tasks: [{
+				count: 3L
+				id: "77B2B70E6B74701B"
+				item: "immersiveengineering:watermill"
+				type: "item"
+			}]
+			title: "Water Energy"
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["164EFF8B7B80321D"]
+			id: "652C9178E27A233E"
+			rewards: [{
+				count: 4
+				id: "196504B9658EA0C7"
+				item: "immersiveengineering:stick_steel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E4FA0AA72B42EB3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 3
+						}
+					}
+					id: "immersiveengineering:railgun"
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 15.0d
 		}
 	]
 	title: "Production"

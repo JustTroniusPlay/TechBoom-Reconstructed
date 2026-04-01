@@ -689,6 +689,7 @@
 				"15C30310B03E4F79"
 				"10E87B6699909383"
 			]
+			description: ["Aside from making alloys it can work with steel molds to create some components, blocks or nuggets from ingots.  "]
 			id: "61DA87FD5E45D2BC"
 			tasks: [{
 				id: "4A05A522EC33C3F6"
@@ -707,6 +708,8 @@
 				""
 				"{@pagebreak}"
 				"Steam machinery have exhaust vents that need open space beside them to operate. "
+				""
+				"Unfotunately they can't auto-output or input items by themselves. You need to use additional means like hoppers or other ways. Starting with Low Voltage machinery or some other Redstone Flux machines it not gonna be a problem anymore."
 			]
 			id: "15C30310B03E4F79"
 			size: 1.3d
@@ -1163,10 +1166,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"7B81DDC0AA14EF81"
-				"3809893D00C74388"
-			]
+			dependencies: ["7B81DDC0AA14EF81"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Paxels combine axe, pickaxe and shovel into one item. "
@@ -1193,7 +1193,11 @@
 		{
 			can_repeat: true
 			dependencies: ["7F1D22C969F965A6"]
-			description: ["About materials you can use in tools and its modifiers, weakneses and other stats."]
+			description: [
+				"About materials you can use in tools and its modifiers, weakneses and other stats."
+				""
+				"This quest will repeat itself for you to get book if you will lost it."
+			]
 			icon: "tconstruct:materials_and_you"
 			id: "1836959FBE9CC719"
 			rewards: [{
@@ -1247,7 +1251,11 @@
 		{
 			can_repeat: true
 			dependencies: ["51D2A2A99A671311"]
-			description: ["Everything about Immersive Engineering to get more detailed info."]
+			description: [
+				"Everything about Immersive Engineering to get more detailed info."
+				""
+				"This quest will repeat itself for you to get book if you will lost it."
+			]
 			icon: "immersiveengineering:manual"
 			id: "1EF7AEE6B0AA5B8E"
 			rewards: [{
@@ -1265,6 +1273,7 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
+			description: [""]
 			id: "156FF337D16F88B3"
 			tasks: [{
 				id: "41FA3EBCCC16C424"
@@ -1276,6 +1285,7 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
+			description: ["Can grind things into dusts. Most notable use to grind down raw ores and getting two times more. "]
 			id: "7DC8D43AB8C12697"
 			tasks: [{
 				id: "33565194B1EBDA18"
@@ -1457,7 +1467,7 @@
 			description: [
 				"This type of boilers have different variations depending on its size. Maximum amount fireboxes are 3x3. With each size level amount of minimum boilers grows. You can start with 1 firebox and boiler."
 				""
-				"They much more efficent then bronze and high pressure ones, but need fuel and &lconstant supply of WATER.&r If you will not provide it and boiler get too heated, trying adding more will make it EXPLODE. "
+				"They much more efficent than bronze and high pressure ones, but need fuel and &lconstant supply of WATER.&r If you will not provide it and boiler get too heated, trying adding more will make it EXPLODE. "
 			]
 			icon: "railcraft:solid_fueled_firebox"
 			id: "6AF4C17E9C8FF9DC"
@@ -1545,6 +1555,7 @@
 				"7DC8D43AB8C12697"
 				"319CEF2BDD679CF5"
 			]
+			description: ["Can grind multiplie items at the same time."]
 			icon: "gtceu:steam_grinder"
 			id: "6D95B9D2E5EB331E"
 			tasks: [
@@ -1583,6 +1594,7 @@
 				"61DA87FD5E45D2BC"
 				"319CEF2BDD679CF5"
 			]
+			description: ["Multiblock version of alloy smeltery."]
 			icon: "steamadditions:steam_foundry"
 			id: "5303D30192D7463A"
 			tasks: [
@@ -1626,6 +1638,11 @@
 			dependencies: [
 				"15C30310B03E4F79"
 				"319CEF2BDD679CF5"
+			]
+			description: [
+				"Some grinded dusts, for example Redstone, need to be washed after grind proccesing to become useful or smelted to get ingots."
+				""
+				"You also can throw them into the cauldron with water manually."
 			]
 			icon: "steamadditions:steam_separator"
 			id: "37EE9AB51014DCBA"
@@ -1676,6 +1693,7 @@
 				"625BBC103C7A0FCE"
 				"319CEF2BDD679CF5"
 			]
+			description: ["Can smelt 8 items at a time using Steam. "]
 			icon: "gtceu:steam_oven"
 			id: "35DDCEC2CECEF4D6"
 			tasks: [
@@ -1717,7 +1735,11 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
-			description: ["Many Gregtech multiblocks can share walls. Thats mean you can save resources and space if you put them between intersecting casings. &oJust remember&r that inputs and outputs busses must not connect to two specific machines. At the same time Steam Input Hatches can fuel both multiblocks."]
+			description: [
+				"Many Gregtech multiblocks can share walls. Thats mean you can save resources and space if you put them between intersecting casings. &oJust remember&r that inputs and outputs busses must not connect to two specific machines. At the same time Steam Input Hatches can fuel both multiblocks."
+				""
+				"You can add more than 1 input or output busses if you want."
+			]
 			hide_dependent_lines: true
 			icon: "gtceu:steam_machine_casing"
 			id: "319CEF2BDD679CF5"
@@ -1786,41 +1808,6 @@
 			title: "Multiblock Tank"
 			x: 7.153061224489811d
 			y: -8.0d
-		}
-		{
-			dependencies: ["3129F95624CBEDD4"]
-			description: ["Drums can store liquids even when broken. They have output hatch underneath you can activate with Mallets."]
-			icon: "gtceu:bronze_drum"
-			id: "031595756B809ADC"
-			tasks: [
-				{
-					id: "245EC16FFDD91042"
-					item: "gtceu:bronze_drum"
-					type: "item"
-				}
-				{
-					id: "1F52D31FEA7B080B"
-					item: "gtceu:gold_drum"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "76DE4AF14F6E2CC4"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "gtceu:tools/crafting_mallets"
-						}
-					}
-					optional_task: true
-					title: "Mallets"
-					type: "item"
-				}
-			]
-			title: "Better Buckets"
-			x: 0.5d
-			y: -6.0d
 		}
 		{
 			dependencies: ["173F0498DAC0D9CB"]
@@ -2052,8 +2039,8 @@
 				}
 			]
 			title: "Osmium Tools"
-			x: 4.407142857142858d
-			y: -5.5d
+			x: 5.408163265306136d
+			y: -5.568877551020414d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -2063,8 +2050,8 @@
 				item: "thermal:tinker_bench"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -5.5d
+			x: 7.6530612244897895d
+			y: -4.977040816326529d
 		}
 		{
 			dependencies: ["1BB3AB8685428FB7"]
@@ -2078,8 +2065,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: -6.5d
+			x: 7.6530612244897895d
+			y: -5.977040816326529d
 		}
 		{
 			dependencies: ["1BB3AB8685428FB7"]
@@ -2093,8 +2080,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.0d
+			x: 6.6530612244897895d
+			y: -5.477040816326529d
 		}
 		{
 			dependencies: ["1BB3AB8685428FB7"]
@@ -2119,8 +2106,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: -4.5d
+			x: 7.6530612244897895d
+			y: -3.9770408163265287d
 		}
 		{
 			dependencies: ["56D8B89369ABF606"]
@@ -2138,8 +2125,8 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: -6.0d
+			x: 8.65306122448979d
+			y: -5.477040816326529d
 		}
 		{
 			dependencies: ["56D8B89369ABF606"]
@@ -2149,8 +2136,8 @@
 				item: "thermal:upgrade_augment_1"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -5.0d
+			x: 8.65306122448979d
+			y: -4.477040816326529d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -2233,19 +2220,21 @@
 				"26F7DA43C2FE94AB"
 			]
 			dependency_requirement: "one_completed"
+			icon: "thermal:rf_coil"
 			id: "69DB58E1CD20ED2B"
 			shape: "pentagon"
 			size: 1.5d
 			tasks: [{
-				id: "754E92CAA3EB0882"
-				item: "create_new_age:electrical_connector"
-				type: "item"
+				id: "69F71A3FCCB8D977"
+				title: "Energy Management"
+				type: "checkmark"
 			}]
 			x: 4.035714285714285d
 			y: -10.653571428571425d
 		}
 		{
 			dependencies: ["1836959FBE9CC719"]
+			dependency_requirement: "one_started"
 			description: ["If you plan use guide books from various mods then how about making a little library with chiseled bookshelves to store them?"]
 			id: "0A1B2576C270CA09"
 			rewards: [{
@@ -2332,22 +2321,6 @@
 			y: -3.6527210884353494d
 		}
 		{
-			dependencies: [
-				"031595756B809ADC"
-				"1843506F57D72661"
-			]
-			description: ["Metal Barrels inferior to drums in terms of capacity, but they have configurable input and output hatches above and below. You can change them using &oEngineer's Hammer&r"]
-			id: "29271E54A7DBAF2E"
-			size: 0.7d
-			tasks: [{
-				id: "682E0D9AE8BA7C3E"
-				item: "immersiveengineering:metal_barrel"
-				type: "item"
-			}]
-			x: -0.35d
-			y: -5.95d
-		}
-		{
 			dependencies: ["61DA87FD5E45D2BC"]
 			id: "193EDD7B079CF150"
 			subtitle: "No zombies on my lawn!"
@@ -2356,8 +2329,8 @@
 				item: "torchmaster:megatorch"
 				type: "item"
 			}]
-			x: -1.5102040816326507d
-			y: -6.945578231292515d
+			x: -0.49829931972789154d
+			y: -6.570578231292508d
 		}
 		{
 			dependencies: ["193EDD7B079CF150"]
@@ -2367,8 +2340,8 @@
 				item: "torchmaster:dreadlamp"
 				type: "item"
 			}]
-			x: -1.5816326530612201d
-			y: -5.683673469387749d
+			x: -0.4880952380952408d
+			y: -5.624999999999993d
 		}
 		{
 			dependencies: ["193EDD7B079CF150"]
@@ -2379,8 +2352,8 @@
 				item: "torchmaster:feral_flare_lantern"
 				type: "item"
 			}]
-			x: -0.24829931972788444d
-			y: -6.874149659863946d
+			x: -0.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -2417,6 +2390,7 @@
 		{
 			dependencies: ["49BFD7BD22B74CBD"]
 			id: "40DAF71D31B80879"
+			size: 0.7d
 			tasks: [
 				{
 					id: "38CF07019CD01173"
@@ -2441,8 +2415,8 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
-			y: -3.5d
+			x: 7.7d
+			y: -2.1d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -2714,7 +2688,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["34D049FD2BF84E84"]
+			dependencies: ["5D86113FD3732735"]
 			description: ["Break Leaves 3x3."]
 			id: "2336AC6FCEF9FAB2"
 			tasks: [{
@@ -2728,11 +2702,11 @@
 				}
 				type: "item"
 			}]
-			x: 0.835714285714289d
-			y: -5.1000000000000085d
+			x: 2.19047619047619d
+			y: -4.946428571428569d
 		}
 		{
-			dependencies: ["34D049FD2BF84E84"]
+			dependencies: ["5D86113FD3732735"]
 			description: ["Deals 25 (Heart × 12.5) points of damage when attacking Endermen and 1 (Half Heart) damage when attacking any other mob."]
 			id: "62FDFA213337537A"
 			tasks: [{
@@ -2752,8 +2726,8 @@
 				type: "item"
 			}]
 			title: "Bane of Endermans"
-			x: 0.007142857142859782d
-			y: -4.585714285714282d
+			x: 4.499999999999993d
+			y: -5.446428571428569d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2862,25 +2836,6 @@
 			y: -8.331632653061227d
 		}
 		{
-			dependencies: ["3129F95624CBEDD4"]
-			id: "28AA5C24C1C4BC2C"
-			tasks: [
-				{
-					id: "37D1534257C58BBE"
-					item: "gtceu:wood_crate"
-					type: "item"
-				}
-				{
-					id: "5CC40A3FE41B0075"
-					item: "gtceu:bronze_crate"
-					type: "item"
-				}
-			]
-			title: "Simple Crates"
-			x: -0.5d
-			y: -8.0d
-		}
-		{
 			dependencies: ["69DB58E1CD20ED2B"]
 			id: "32EB398D4A9D6EAB"
 			tasks: [
@@ -2926,8 +2881,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: -3.0d
+			x: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["49BFD7BD22B74CBD"]
@@ -2987,10 +2942,11 @@
 			]
 			title: "Diving Suit"
 			x: 8.5d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["49BFD7BD22B74CBD"]
+			description: ["Protects againts hazards like fire and even lava. "]
 			icon: {
 				Count: 1
 				id: "thermal:hazmat_chestplate"
@@ -3078,8 +3034,8 @@
 				}
 			]
 			title: "Manual Rubber"
-			x: -3.5d
-			y: -2.0d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7BFF886E57F3D543"]
@@ -3094,7 +3050,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7BFF886E57F3D543"]
@@ -3108,8 +3064,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.0d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7BFF886E57F3D543"]
@@ -3130,8 +3086,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.0d
+			x: -4.5714285714285765d
+			y: -1.6607142857142847d
 		}
 		{
 			dependencies: ["3809893D00C74388"]
@@ -3143,8 +3099,8 @@
 				type: "item"
 			}]
 			title: "Stackable Liquids"
-			x: 5.285714285714292d
-			y: -5.107142857142847d
+			x: 5.326530612244916d
+			y: -4.568877551020407d
 		}
 		{
 			dependencies: [
@@ -3204,6 +3160,112 @@
 			}]
 			x: 0.5d
 			y: -10.5d
+		}
+		{
+			dependencies: ["7BFF886E57F3D543"]
+			id: "4DE3A5EB02DCDC59"
+			tasks: [
+				{
+					id: "4E67081F5752155F"
+					item: "thermal:device_tree_extractor"
+					type: "item"
+				}
+				{
+					id: "7D3376A6FE7DB162"
+					item: "thermal:latex_bucket"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: ["Have additional storage inside to keep some items and components."]
+			id: "69057739C5B7EB11"
+			tasks: [{
+				id: "50CBFA6876FEF895"
+				item: "immersiveengineering:craftingtable"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["69057739C5B7EB11"]
+			hide_dependent_lines: true
+			id: "5CED0B2F5E3DE3B1"
+			tasks: [{
+				id: "33D8A249D8783B83"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["69057739C5B7EB11"]
+			id: "169058626B01552F"
+			tasks: [{
+				id: "3BEEF1CB8C255FDE"
+				item: "immersiveengineering:circuit_table"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"5CED0B2F5E3DE3B1"
+			]
+			id: "6E68DB6406FB4D3F"
+			tasks: [{
+				id: "2989E62548390D70"
+				item: "immersiveengineering:charging_station"
+				type: "item"
+			}]
+			x: -3.352040816326536d
+			y: -1.3035714285714306d
+		}
+		{
+			dependencies: ["6099D2F4EEE9112A"]
+			description: [
+				"Can store additional items, tools and even food. Shift-rightclick to place and pick up it. You can put it into the Tool Belt slots. "
+				""
+				"Wiring slots are for IE wires and connectors."
+			]
+			id: "797391FB5DEDC3D1"
+			size: 0.7d
+			tasks: [{
+				id: "16B54E554582D684"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 23
+						}
+					}
+					id: "immersiveengineering:toolbox"
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["521B2505E5C81E16"]
+			description: ["You can upgrade your windmills by clicking them with tough fabric."]
+			id: "50BA9C41804AE9A2"
+			size: 0.7d
+			tasks: [{
+				id: "462801C5FA1E27FA"
+				item: "immersiveengineering:hemp_fabric"
+				type: "item"
+			}]
+			x: 6.1377551020408205d
+			y: -10.172959183673463d
 		}
 	]
 	title: "Start of the journey"

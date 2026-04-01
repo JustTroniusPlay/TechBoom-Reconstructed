@@ -233,8 +233,8 @@
 				item: "expandingtechnologies:item_vacuum"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 7.5d
+			x: -0.797619047619051d
+			y: 4.511904761904759d
 		}
 		{
 			dependencies: ["5829B229883C5738"]
@@ -362,6 +362,182 @@
 			title: "Item Pipes"
 			x: 2.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["2B605F8F5C28FCAD"]
+			description: [
+				"Item silo is 3x3 blocks wide structure that can store big amount of one item. The limit is around 24 stacks. Please looks &lEngineers Manual&r to see how to build the multiblock and some redstone interactions. "
+				""
+				"As much as there other ways to store items this one can work as good functioning decoration."
+			]
+			icon: "immersiveengineering:sheetmetal_iron"
+			id: "2C4EF247DFAA752C"
+			rewards: [{
+				count: 25
+				id: "7DD5B086BC00FB6F"
+				item: "immersiveengineering:sheetmetal_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 25L
+					id: "288D2A2510964112"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2811B688DA876B12"
+					item: { Count: 4, id: "immersiveengineering:treated_fence" }
+					type: "item"
+				}
+			]
+			title: "Fancy Silos"
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"3129F95624CBEDD4"
+				"7E43DE8E8F0F36A6"
+			]
+			description: ["GregTech crates can store many items, but considering how other means of storage can be better, you probably can use them more like a decoration."]
+			id: "28AA5C24C1C4BC2C"
+			tasks: [
+				{
+					id: "37D1534257C58BBE"
+					item: "gtceu:wood_crate"
+					type: "item"
+				}
+				{
+					id: "5CC40A3FE41B0075"
+					item: "gtceu:bronze_crate"
+					type: "item"
+				}
+			]
+			title: "Simple Crates"
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["542363BD0341A56C"]
+			id: "566F5CF387C7F261"
+			tasks: [
+				{
+					id: "39128269FC8E5756"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					id: "341A1E839FE74684"
+					item: "immersiveengineering:conveyor_vertical"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "232962920734B32B"
+					item: "immersiveengineering:conveyor_extract"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "451FE29CAAFF0D6C"
+					item: "immersiveengineering:conveyor_splitter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6FDC2D14F3354E7F"
+					item: "immersiveengineering:conveyor_dropper"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6CEDC8FF029E86A6"
+					item: "immersiveengineering:conveyor_redstone"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Selfworking conveyor"
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["566F5CF387C7F261"]
+			id: "00184A6D50E0066F"
+			size: 0.7d
+			tasks: [{
+				id: "0AA90B27B99C3B2A"
+				item: "immersiveengineering:chute_iron"
+				type: "item"
+			}]
+			x: 0.35d
+			y: 6.6499999999999995d
+		}
+		{
+			dependencies: ["566F5CF387C7F261"]
+			id: "29D1656935B85ABD"
+			size: 0.7d
+			tasks: [
+				{
+					id: "20BBB03D785CCF01"
+					item: "immersiveengineering:treated_scaffold"
+					type: "item"
+				}
+				{
+					id: "10C2F165B55E49F8"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Covering"
+			x: 1.4d
+			y: 7.7d
+		}
+		{
+			dependencies: [
+				"566F5CF387C7F261"
+				"26041794979A3851"
+				"7E43DE8E8F0F36A6"
+			]
+			dependency_requirement: "one_completed"
+			id: "07DD3A2F452B366A"
+			tasks: [{
+				id: "66F8A0441B19B426"
+				item: "immersiveengineering:sorter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"566F5CF387C7F261"
+				"26041794979A3851"
+				"7E43DE8E8F0F36A6"
+			]
+			dependency_requirement: "one_completed"
+			id: "5E1CC541E65C3D24"
+			tasks: [{
+				id: "44174784C133F210"
+				item: "immersiveengineering:item_batcher"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["7A722F4E1BB2DF66"]
+			id: "22DBC765ABF06217"
+			tasks: [{
+				id: "6718331D52353EAF"
+				item: "immersiveengineering:electromagnet"
+				type: "item"
+			}]
+			x: -0.3214285714285694d
+			y: 3.488095238095241d
 		}
 	]
 	title: "Storage Solutions"

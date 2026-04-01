@@ -6,7 +6,8 @@ ServerEvents.recipes(event => {
         'silver', 'uranium', 'nickel',
         'constantan', 'electrum', 'aluminium', 
         'brass','aluminum', 'invar', 
-        'tin','enderium','lumium','signalum'
+        'tin','enderium','lumium','signalum',
+        'constantan'
     ]
     event.remove({id: "railcraft:rolling/zinc_plate"});
     metals.forEach(metal =>
@@ -35,6 +36,7 @@ ServerEvents.recipes(event => {
             event.remove({id: "ad_astra:" + metal + "_ingot_from_" + metal + "_block"});
             event.remove({id: "railcraft:" + metal +"_ingot_crafted_with_ingots"});
             event.remove({id: "thermal:storage/" + metal + "_ingot_from_block"});
+            event.remove({id: "immersiveengineering:crafting/storage_" + metal + "_to_ingot_" + metal});
 
 
             //nuggets
@@ -45,6 +47,7 @@ ServerEvents.recipes(event => {
             event.remove({id: "ad_astra:" + metal + "_ingot"});
             event.remove({id: "thermal:storage/" + metal + "_ingot_from_nuggets"});
             event.remove({id:"common_ore_library:ingot_to_nugget/" + metal});
+            event.remove({id: "immersiveengineering:crafting/nugget_" + metal + "_to_ingot_" + metal});
 
         });
     

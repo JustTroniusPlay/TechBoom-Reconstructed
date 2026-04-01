@@ -49,4 +49,25 @@ event.replaceInput(
         'railcraft:creosote_bucket',
         '#forge:creosot_bucket'
     )
+
+   event.remove({id: "railcraft:steam_oven"});
+    event.shaped(
+  Item.of('railcraft:steam_oven', 8), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'immersiveengineering:sheetmetal_steel',
+    B: 'thermal:steel_plate',  //arg 3: the mapping object
+    C: 'gtceu:steam_oven',
+  }
+)
+
+event.replaceInput(
+        {id: "railcraft:steam_locomotive"},
+        'railcraft:blast_furnace_bricks',
+        'railcraft:solid_fueled_firebox'
+    )
 })

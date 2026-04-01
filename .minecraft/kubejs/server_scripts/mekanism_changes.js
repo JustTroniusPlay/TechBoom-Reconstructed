@@ -27,4 +27,17 @@ event.remove({id: "mekanism:metallurgic_infuser"});
     E: 'thermal:charge_bench'
   })
 
+  event.remove({id: "mekanism:transmitter/universal_cable/basic"});
+  event.shaped(
+  Item.of('mekanism:basic_universal_cable', 8), // arg 1: output
+  [
+    ' A ',
+    'BCB', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'thermal:energy_duct',
+    B: 'gtceu:double_aluminium_plate',  //arg 3: the mapping object
+    C: 'createaddition:modular_accumulator'
+  })
 })

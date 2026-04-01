@@ -1,5 +1,8 @@
 ServerEvents.recipes(event => {
 
+  event.remove({id: "fluid:copper_tap"});
+  event.remove({id: "fluid:copper_sink"});
+
     event.remove({id: "create:crafting/kinetics/mechanical_press"});
     event.shaped(
   Item.of('create:mechanical_press', 1), // arg 1: output

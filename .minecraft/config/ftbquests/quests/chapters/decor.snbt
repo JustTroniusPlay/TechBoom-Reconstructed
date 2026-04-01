@@ -6,12 +6,26 @@
 	icon: "interiors:red_chair"
 	id: "64B5FC56C815DD60"
 	order_index: 4
-	quest_links: [{
-		id: "45F19FA923F620A1"
-		linked_quest: "20F8F5FEA03406E6"
-		x: -0.5d
-		y: 3.0d
-	}]
+	quest_links: [
+		{
+			id: "45F19FA923F620A1"
+			linked_quest: "20F8F5FEA03406E6"
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			id: "32604DDD06610A0A"
+			linked_quest: "2C4EF247DFAA752C"
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			id: "6EB151E487E15967"
+			linked_quest: "28AA5C24C1C4BC2C"
+			x: 5.5d
+			y: 6.0d
+		}
+	]
 	quests: [
 		{
 			description: ["The most powerful tool for a builder. Expand the variety of blocks and add new ones to build with! "]
@@ -343,6 +357,93 @@
 			}]
 			x: 3.5d
 			y: 6.0d
+		}
+		{
+			id: "0F17C10C4998426B"
+			tasks: [{
+				id: "5D0278E3ECCC0DB9"
+				item: {
+					Count: 1
+					id: "immersiveengineering:balloon"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			id: "67A41D397214BE42"
+			tasks: [{
+				id: "0EA9F2EB1411FE64"
+				item: "immersiveengineering:clinker_brick"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			id: "0909DFCD508EC139"
+			tasks: [
+				{
+					id: "069D53A5053096E3"
+					item: "immersiveengineering:lantern"
+					type: "item"
+				}
+				{
+					id: "21BA438E06C08A07"
+					item: "immersiveengineering:electric_lantern"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			id: "02AF1BC4057D548F"
+			tasks: [{
+				id: "0E6A648C297F1C7E"
+				item: "immersiveengineering:razor_wire"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			id: "5EFC319A28000945"
+			tasks: [{
+				id: "33B70C96F714F925"
+				item: "immersiveengineering:tesla_coil"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0929320096BEA3D5"]
+			icon: "immersiveengineering:wirecoil_structure_steel"
+			id: "510D59805EF033F8"
+			tasks: [
+				{
+					id: "7111DBFC4A9A9E64"
+					item: "immersiveengineering:wirecoil_structure_rope"
+					type: "item"
+				}
+				{
+					id: "39C379E5C2372D94"
+					item: "immersiveengineering:wirecoil_structure_steel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "11ED8F4EA48A46E8"
+					item: "immersiveengineering:connector_structural"
+					type: "item"
+				}
+			]
+			title: "Deco Coils"
+			x: 8.5d
+			y: 4.5d
 		}
 	]
 	title: "Decor"
