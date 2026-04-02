@@ -146,6 +146,10 @@
     "crafting_monitor": true,
     "part_name": true
   },
+  "tesseract": {
+    "tesseract": true,
+    "remove_default": true
+  },
   "jadeaddons": {
     "equipment_requirement": ""
   },
@@ -172,5 +176,14 @@
     "preservation_chamber": true,
     "milk_jar": true,
     "toaster": true
+  },
+  "securitycraft": {
+    "showowner": true,
+    "showmodules": true,
+    "info": true,
+    "showcustomname": true
+  },
+  "immersivetechnology": {
+    "display": true
   }
 }

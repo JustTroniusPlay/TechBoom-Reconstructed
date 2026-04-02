@@ -6,7 +6,12 @@
 	icon: "minecraft:crafting_table"
 	id: "0899FBC774E74E99"
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [{
+		id: "0E64812A0919423B"
+		linked_quest: "031595756B809ADC"
+		x: 0.5d
+		y: -5.5d
+	}]
 	quests: [
 		{
 			description: ["Nothing changed in normal Minecraft progressin. So start with basic blocks for now!"]
@@ -731,12 +736,20 @@
 			icon: "immersiveengineering:alloybrick"
 			id: "10E87B6699909383"
 			subtitle: "No more dusts!(for now)"
-			tasks: [{
-				count: 8L
-				id: "7A52FCB874179E9E"
-				item: "immersiveengineering:alloybrick"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 8L
+					id: "7A52FCB874179E9E"
+					item: "immersiveengineering:alloybrick"
+					type: "item"
+				}
+				{
+					id: "5230DCF2FDD40859"
+					item: "immersiveengineering:alloy_smelter"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "Alloys with ingots"
 			x: 1.5d
 			y: -10.0d
@@ -751,6 +764,7 @@
 				""
 				"You also finally can get charcoal from wood!"
 			]
+			icon: "immersiveengineering:coke_oven"
 			id: "51D2A2A99A671311"
 			rewards: [{
 				count: 4
@@ -759,12 +773,20 @@
 				type: "item"
 			}]
 			subtitle: "Better fuel!"
-			tasks: [{
-				count: 27L
-				id: "65C0F943A5744932"
-				item: "immersiveengineering:cokebrick"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 27L
+					id: "65C0F943A5744932"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					id: "40BBBB445E7C475D"
+					item: "immersiveengineering:coke_oven"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "First Coke Oven"
 			x: 4.5d
 			y: -7.5d
@@ -1187,7 +1209,7 @@
 				type: "item"
 			}]
 			title: "Simple multitool"
-			x: 4.407142857142858d
+			x: 5.0d
 			y: -6.5d
 		}
 		{
@@ -1268,7 +1290,7 @@
 				title: "Manual for engineering"
 				type: "checkmark"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: -7.0d
 		}
 		{
@@ -3163,6 +3185,7 @@
 		}
 		{
 			dependencies: ["7BFF886E57F3D543"]
+			icon: "thermal:device_tree_extractor"
 			id: "4DE3A5EB02DCDC59"
 			tasks: [
 				{
@@ -3176,6 +3199,7 @@
 					type: "item"
 				}
 			]
+			title: "Latex"
 			x: -6.0d
 			y: -3.0d
 		}

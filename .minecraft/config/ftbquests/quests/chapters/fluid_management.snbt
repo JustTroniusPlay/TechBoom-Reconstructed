@@ -27,6 +27,18 @@
 			x: 1.0d
 			y: -5.0d
 		}
+		{
+			id: "2116D0F5A7431D33"
+			linked_quest: "784AEC9BF8755F95"
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			id: "7B95BDC607E0AB2F"
+			linked_quest: "08F0E06F30471E3E"
+			x: 4.0d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{
@@ -471,8 +483,8 @@
 		}
 		{
 			dependencies: ["5186990A391ADB8D"]
-			description: ["Sheetmetal tank is 3x3 blocks wide structure that can store big amount of fluid. The limit is around 512 buckets. It will store more fluid then copper tank of similar size, but it can't be expanded. Please looks &lEngineers Manual&r to see how to build the multiblock and some redstone interactions. "]
-			icon: "immersiveengineering:sheetmetal_colored_blue"
+			description: ["Sheetmetal tank is 3x3 blocks wide structure that can store big amount of fluid. The limit is around 512 buckets. It will store more fluid then copper tank of similar size, but it can't be expanded."]
+			icon: "immersiveengineering:tank"
 			id: "7931B771167AFDFE"
 			rewards: [{
 				count: 17
@@ -491,6 +503,12 @@
 					count: 4L
 					id: "7CA51784C1C57E98"
 					item: { Count: 4, id: "immersiveengineering:treated_fence" }
+					type: "item"
+				}
+				{
+					id: "1BEA2DA942793254"
+					item: "immersiveengineering:tank"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -552,6 +570,51 @@
 			}]
 			x: 4.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["29271E54A7DBAF2E"]
+			id: "54AC9F9641B65853"
+			size: 0.5d
+			tasks: [{
+				id: "4C95D16B740DE5D5"
+				item: "immersivetechnology:barrel_steel"
+				type: "item"
+			}]
+			x: 4.75d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7931B771167AFDFE"]
+			icon: "immersivetechnology:steel_sheetmetal_tank"
+			id: "07F4A2373ACBF0D5"
+			rewards: [{
+				count: 17
+				id: "596A1D7F66FFB51B"
+				item: "immersiveengineering:sheetmetal_steel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 17L
+					id: "35E888EF52773AE6"
+					item: { Count: 17, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1B942879CE87A8C0"
+					item: { Count: 4, id: "immersiveengineering:treated_fence" }
+					type: "item"
+				}
+				{
+					id: "34AD3142522FC12B"
+					item: "immersivetechnology:steel_sheetmetal_tank"
+					type: "item"
+				}
+			]
+			title: "Fancy Tank"
+			x: 1.5d
+			y: 0.0d
 		}
 	]
 	title: "Fluid Management"

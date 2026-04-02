@@ -445,6 +445,16 @@
 			x: 8.5d
 			y: 4.5d
 		}
+		{
+			id: "1CAF439EAD5B091D"
+			tasks: [{
+				id: "534F484BB986ED07"
+				item: "rsgauges:industrial_small_lever"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.0d
+		}
 	]
 	title: "Decor"
 }

@@ -366,11 +366,11 @@
 		{
 			dependencies: ["2B605F8F5C28FCAD"]
 			description: [
-				"Item silo is 3x3 blocks wide structure that can store big amount of one item. The limit is around 24 stacks. Please looks &lEngineers Manual&r to see how to build the multiblock and some redstone interactions. "
+				"Item silo is 3x3 blocks wide structure that can store big amount of one item. The limit is around 24 stacks."
 				""
 				"As much as there other ways to store items this one can work as good functioning decoration."
 			]
-			icon: "immersiveengineering:sheetmetal_iron"
+			icon: "immersiveengineering:silo"
 			id: "2C4EF247DFAA752C"
 			rewards: [{
 				count: 25
@@ -389,6 +389,12 @@
 					count: 4L
 					id: "2811B688DA876B12"
 					item: { Count: 4, id: "immersiveengineering:treated_fence" }
+					type: "item"
+				}
+				{
+					id: "76F3DDEDCBF202DE"
+					item: "immersiveengineering:silo"
+					optional_task: true
 					type: "item"
 				}
 			]

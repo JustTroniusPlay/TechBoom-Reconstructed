@@ -319,7 +319,13 @@
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
+			description: [
+				"Ponder is one of the most useful features of Create mod. Press 'W' on item in your inventory and you will see animated guide of how to use the blocks or items. "
+				""
+				"Instead of explaining things quests will say interesting facts. But if there no ponder then quest will still tell you what and how to use thing."
+			]
 			id: "691DD9FDCE3E58DA"
+			subtitle: "Please use Ponder!"
 			tasks: [{
 				id: "2F80DA5183FF4976"
 				item: "create:hand_crank"
@@ -377,8 +383,8 @@
 					type: "item"
 				}
 			]
-			x: -11.0d
-			y: 8.5d
+			x: -7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -1364,6 +1370,12 @@
 			dependencies: ["54661956247869DD"]
 			icon: "vs_clockwork:gas_heater"
 			id: "195C4A83D91C9C82"
+			rewards: [{
+				count: 16
+				id: "3F1A97A93F3D9317"
+				item: "vs_clockwork:duct"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4AA677DCA5E1A8E1"
@@ -1378,6 +1390,11 @@
 				{
 					id: "13A158EFE1E1F83A"
 					item: "vs_clockwork:coal_burner"
+					type: "item"
+				}
+				{
+					id: "3C1EF2C6A0CBD189"
+					item: "vs_clockwork:duct"
 					type: "item"
 				}
 			]
@@ -1493,10 +1510,7 @@
 			y: 6.6499999999999995d
 		}
 		{
-			dependencies: [
-				"1A155790CD83B2A7"
-				"18BF6D22CDB7509D"
-			]
+			dependencies: ["1A155790CD83B2A7"]
 			id: "7863C9BC39A7F9D8"
 			tasks: [{
 				id: "0BE45FEC8B325CAA"
@@ -1875,8 +1889,8 @@
 				item: { Count: 27, id: "railcraft:coke_oven_bricks" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 9.5d
+			x: -6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3CD05E2E5661246B"]
@@ -1887,8 +1901,8 @@
 				item: { Count: 27, id: "immersiveengineering:blastbrick" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: 8.5d
+			x: -12.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -1897,6 +1911,11 @@
 			]
 			icon: "immersiveengineering:blastbrick_reinforced"
 			id: "745A282BA4A843D5"
+			rewards: [{
+				id: "0CE7ADC1EA15951B"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 27L
@@ -1908,6 +1927,12 @@
 					count: 2L
 					id: "592251313E28E9FF"
 					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
+				{
+					id: "40CEA24B000E795E"
+					item: "immersiveengineering:advanced_blast_furnace"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1923,8 +1948,8 @@
 				item: { Count: 36, id: "railcraft:blast_furnace_bricks" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: 9.5d
+			x: -12.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -3428,8 +3453,8 @@
 					type: "item"
 				}
 			]
-			x: -11.700000000000001d
-			y: 16.900000000000002d
+			x: -18.200000000000003d
+			y: 20.8d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -3578,8 +3603,8 @@
 				type: "item"
 			}]
 			title: "Water Energy"
-			x: -7.5d
-			y: 7.5d
+			x: -8.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["164EFF8B7B80321D"]
@@ -3606,6 +3631,45 @@
 			}]
 			x: -7.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			icon: "immersivetechnology:advanced_coke_oven"
+			id: "37659341AAB207BF"
+			rewards: [{
+				id: "2F672DC8998FF637"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 12L
+					id: "55293C72AFEA3416"
+					item: "immersivetechnology:reinforced_coke_brick"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5EC104707890A538"
+					item: { Count: 6, id: "thermal:steel_block" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "753F31BF9E101B47"
+					item: { Count: 9, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					id: "7A9953884436904E"
+					item: "immersivetechnology:advanced_coke_oven"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Steel plated Coke Oven"
+			x: -11.5d
+			y: 8.5d
 		}
 	]
 	title: "Production"
