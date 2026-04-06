@@ -59,8 +59,14 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["4EBBAB4B8A99D4A7"]
-			description: ["Finding coal can be difficult sometimes and you can't get charcoal easily. But there a other solution! Sulfur! You can use it as replacement for coal to craft torches!"]
+			dependencies: ["29EE940649C3AE38"]
+			description: [
+				"Finding coal can be difficult sometimes and you can't get charcoal easily. But there a other solutions! Sulfur or Sticky resin! You can use it as replacement for coal to craft torches!"
+				""
+				"You can get &lSticky Resin&r from chopping down &oGregtech Rubber Trees.&r"
+				""
+				"&lSulfur&r can be found in ores underground, but not far down, so you can do some minor digging or find a cave entrance."
+			]
 			id: "062CF3CD78A87B5B"
 			rewards: [{
 				count: 16
@@ -75,11 +81,12 @@
 				type: "item"
 			}]
 			title: "Sulfuric Torches"
-			x: 3.0d
-			y: 2.5d
+			x: 2.1598639455782234d
+			y: -0.9345238095238102d
 		}
 		{
-			dependencies: ["062CF3CD78A87B5B"]
+			dependencies: ["4EBBAB4B8A99D4A7"]
+			dependency_requirement: "one_started"
 			description: [
 				"Most of machines while working generate pollution. Additionally explosions and torches can cause this too.  "
 				""
@@ -243,13 +250,13 @@
 			rewards: [{
 				count: 16
 				id: "3B9BF72955A52F70"
-				item: "adchimneys:stone_chimney"
+				item: "adchimneys:cobblestone_chimney"
 				type: "item"
 			}]
 			tasks: [{
 				count: 4L
-				id: "5CB63BAB0C674463"
-				item: { Count: 4, id: "adchimneys:stone_chimney" }
+				id: "2B75F60BE3F95BC8"
+				item: { Count: 4, id: "adchimneys:cobblestone_chimney" }
 				type: "item"
 			}]
 			title: "Chimneys"
@@ -452,7 +459,7 @@
 							value: "gtceu:tools/crafting_hammers"
 						}
 					}
-					title: "Any #gtceu:tools/crafting_hammers"
+					title: "Crafting Hammers"
 					type: "item"
 				}
 				{
@@ -464,7 +471,7 @@
 							value: "gtceu:tools/crafting_files"
 						}
 					}
-					title: "Any #gtceu:tools/crafting_files"
+					title: "Crafting Files"
 					type: "item"
 				}
 				{
@@ -476,7 +483,20 @@
 							value: "gtceu:tools/crafting_mortars"
 						}
 					}
-					title: "Any #gtceu:tools/crafting_mortars"
+					title: "Crafting Mortars"
+					type: "item"
+				}
+				{
+					id: "61E61970CF11B0EA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_wire_cutters"
+						}
+					}
+					optional_task: true
+					title: "Crafting Wire Cutters"
 					type: "item"
 				}
 			]
@@ -1031,7 +1051,7 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
@@ -1872,7 +1892,14 @@
 			id: "1E25061EB6CCD519"
 			tasks: [{
 				id: "3861685FE6F41D0A"
-				item: "sophisticatedbackpacks:backpack"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "accessories:back"
+					}
+				}
+				title: "Backpack"
 				type: "item"
 			}]
 			x: 4.0d
@@ -2708,24 +2735,6 @@
 			title: "Copper Things"
 			x: 0.5d
 			y: -1.5d
-		}
-		{
-			dependencies: ["5D86113FD3732735"]
-			description: ["Break Leaves 3x3."]
-			id: "2336AC6FCEF9FAB2"
-			tasks: [{
-				id: "557EA23700F18CCF"
-				item: {
-					Count: 1
-					id: "projectred_exploration:iron_sickle"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 2.19047619047619d
-			y: -4.946428571428569d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]

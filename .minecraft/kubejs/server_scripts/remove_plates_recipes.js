@@ -56,4 +56,7 @@ ServerEvents.recipes(event => {
     event.remove({id: "crusty_chunks:hammering_3"});
     event.remove({id: "crusty_chunks:hammering_4"});
 
+    event.remove({id: "gtceu:shapeless/dust_bronze"});
+    event.remove({id: "electrodynamics:dust_bronze"});
+
 })

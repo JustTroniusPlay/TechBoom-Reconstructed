@@ -27,20 +27,21 @@ ServerEvents.recipes(event => {
   
   tools.forEach(tool =>
     {
+      const tooldel = 'gtceu:bronze_' + tool;
       event.shaped(
       Item.of('mekanismtools:bronze_' + tool, 1), // arg 1: output
       [
-        'C D',
+        '   ',
         'BAB', // arg 2: the shape (array of strings)
         '   '
       ],
       {
         A: 'gtceu:bronze_' + tool,
         B: '#forge:plates/bronze',  //arg 3: the mapping object
-        C: '#gtceu:tools/crafting_hammers',
-        D: '#gtceu:tools/crafting_files'
+        //C: '#gtceu:tools/crafting_hammers',
+        //D: '#gtceu:tools/crafting_files'
       }
-    )
+    ).damageIngredient(tooldel, 9999)
     })
 
     vanilla.forEach(res => {
@@ -58,8 +59,8 @@ ServerEvents.recipes(event => {
         C: 'gtceu:' + res + '_shovel',
         D: '#forge:rods/wooden'
       }
-    )
-    })
+    ).damageIngredient('gtceu:' + res + '_axe', 9999)
+  })
 
     {//Osmium Tools
       

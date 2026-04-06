@@ -350,17 +350,20 @@
 			tasks: [
 				{
 					id: "08E3C05669AAFA6F"
-					item: "gtceu:raw_salt"
+					item: "gtceu:salt_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "5C467BFC7D80C9F2"
 					item: "electrodynamics:crystalhalite"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "002B6F5DFDEE7D19"
 					item: "mekanism:salt"
+					optional_task: true
 					type: "item"
 				}
 			]
