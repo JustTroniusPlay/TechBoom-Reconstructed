@@ -6,12 +6,20 @@
 	icon: "minecraft:crafting_table"
 	id: "0899FBC774E74E99"
 	order_index: 0
-	quest_links: [{
-		id: "0E64812A0919423B"
-		linked_quest: "031595756B809ADC"
-		x: 0.5d
-		y: -5.5d
-	}]
+	quest_links: [
+		{
+			id: "0E64812A0919423B"
+			linked_quest: "031595756B809ADC"
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			id: "7CFDEAFF4927E1C3"
+			linked_quest: "79EF5B4E470ACDB4"
+			x: -7.0d
+			y: -9.0d
+		}
+	]
 	quests: [
 		{
 			description: ["Nothing changed in normal Minecraft progressin. So start with basic blocks for now!"]
@@ -1107,6 +1115,7 @@
 			dependencies: [
 				"156FF337D16F88B3"
 				"319CEF2BDD679CF5"
+				"7DC8D43AB8C12697"
 			]
 			description: ["Lets make some steel! Blast Furnace can use normal coal, but Coke Coal is more effective. "]
 			icon: "gtceu:primitive_blast_furnace"
@@ -1150,13 +1159,14 @@
 		}
 		{
 			dependencies: [
+				"156FF337D16F88B3"
 				"61DA87FD5E45D2BC"
-				"7A0C939E0FE540EC"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Wrought iron is tougher version of vanilla metal. It will be used in low voltage machinery, but for now it can serve you to make stronger tools."
 				""
-				"Its making procces kinda tricky tho. You need to smelt iron nuggets to get wrought iron one and then use alloy smelter with ingot casting mold to get them."
+				"Its making procces kinda tricky tho. You need to smelt iron nuggets to get wrought iron one and then use compressor or alloy smelter with ingot casting mold to get them."
 				""
 				"Additionally if you will use Wrought Iron in Blast Furnace instead of normal one, the blasting speed will increase!"
 			]
@@ -1173,15 +1183,10 @@
 					item: "gtceu:wrought_iron_nugget"
 					type: "item"
 				}
-				{
-					id: "51FC7F65F23E4AB0"
-					item: "gtceu:ingot_casting_mold"
-					type: "item"
-				}
 			]
 			title: "Trained Iron"
-			x: -3.5d
-			y: -7.0d
+			x: -4.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -1334,8 +1339,8 @@
 				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -13.0d
+			x: -4.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -1629,7 +1634,7 @@
 				}
 			]
 			x: -4.5d
-			y: -13.0d
+			y: -12.5d
 		}
 		{
 			dependencies: [
@@ -1674,7 +1679,7 @@
 				}
 			]
 			x: -3.5d
-			y: -8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1717,7 +1722,7 @@
 				}
 			]
 			x: -3.0d
-			y: -11.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -3182,17 +3187,6 @@
 			y: -11.475000000000001d
 		}
 		{
-			dependencies: ["10E87B6699909383"]
-			id: "7EE8A61A6AD0385A"
-			tasks: [{
-				id: "65F914AE21FB4E57"
-				item: "thermal:constantan_ingot"
-				type: "item"
-			}]
-			x: 0.5d
-			y: -10.5d
-		}
-		{
 			dependencies: ["7BFF886E57F3D543"]
 			icon: "thermal:device_tree_extractor"
 			id: "4DE3A5EB02DCDC59"
@@ -3264,7 +3258,7 @@
 		{
 			dependencies: ["6099D2F4EEE9112A"]
 			description: [
-				"Can store additional items, tools and even food. Shift-rightclick to place and pick up it. You can put it into the Tool Belt slots. "
+				"Can store additional items, tools and even food. Shift-rightclick to place and pick up it. You can even put it into the Tool Belt slots. "
 				""
 				"Wiring slots are for IE wires and connectors."
 			]
@@ -3299,6 +3293,126 @@
 			}]
 			x: 6.1377551020408205d
 			y: -10.172959183673463d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			id: "780843C2BC813902"
+			size: 0.7d
+			tasks: [{
+				id: "63DF20CE04CE4282"
+				item: "gtceu:lp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: 0.028911564625850872d
+			y: -10.017857142857153d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			id: "0FCFA77A56C98B28"
+			size: 0.7d
+			tasks: [{
+				id: "250C3DA58D2315F2"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: 0.0051020408163253705d
+			y: -10.68452380952381d
+		}
+		{
+			dependencies: ["34D049FD2BF84E84"]
+			description: [
+				"&lImmersive Geology&r add its own type of veins that can be used to get additional or alternative resources income. But unlike most of GregTech ones you need to crush them manually, compile and then use &oCrude Bloomery&r to get your ingots, at least before you will gate upgraded Blast Furnace."
+				""
+				"Geology ores have variants: poor, normal and rich. The better the gem the more crushed ore you will get."
+				""
+				"{@pagebreak}"
+				"Aside from using Geology normal ways of proccesing ores, with help of &lForge Hammer&r or &lMechanical Press&r you can automate the procces of getting dirty crushing ores. "
+				""
+				"After that with help of &lSteam Separator&r you can convert dirty crushed ores into ready to smelt ones. "
+			]
+			id: "65E0926A806B0CE7"
+			tasks: [
+				{
+					id: "410653CF57F0D340"
+					item: {
+						Count: 1
+						id: "immersivegeology:hammer_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "599F4A4F76B0E513"
+					item: {
+						Count: 1
+						id: "immersivegeology:hammer_bronze"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Crude Ore Harvesting"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["65E0926A806B0CE7"]
+			description: ["Early method to get resources from Geology ores. &oVery ineffective tho&r, use minimum of 2 ores per ingot or even more. But everyone start with something."]
+			icon: "immersivegeology:bloomery"
+			id: "20151FC95EA7B03D"
+			tasks: [
+				{
+					id: "1F2CEC233F74D0AE"
+					item: "immersivegeology:bloomery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "4E4B705A6528A138"
+					item: { Count: 12, id: "immersivegeology:storage_block_refractory_brick" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["65E0926A806B0CE7"]
+			description: ["Will show you what ores are up to 3 max around you in near chunks."]
+			id: "279ADFC8F9F0F9B8"
+			tasks: [{
+				id: "2C97DD25B3532A67"
+				item: {
+					Count: 1
+					id: "immersivegeology:prospector_kit"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["79EF5B4E470ACDB4"]
+			id: "697FDEFDED0990AC"
+			tasks: [{
+				count: 36L
+				id: "1BCE9E2477B7E389"
+				item: { Count: 36, id: "railcraft:blast_furnace_bricks" }
+				type: "item"
+			}]
+			title: "Maximus Blasting"
+			x: -8.0d
+			y: -9.0d
 		}
 	]
 	title: "Start of the journey"

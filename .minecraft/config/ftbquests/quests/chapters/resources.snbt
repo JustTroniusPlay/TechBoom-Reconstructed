@@ -60,6 +60,18 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "47600AAE8F8A64FA"
+					item: "immersivegeology:normal_ore_cuprite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "70EDDF75B779B1FF"
+					item: "immersivegeology:normal_ore_copper"
+					optional_task: true
+					type: "item"
+				}
 			]
 			x: 0.0d
 			y: 5.0d
@@ -120,6 +132,18 @@
 				{
 					id: "549E6DD7BF415046"
 					item: "gtceu:raw_goethite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "154792D066FA7296"
+					item: "immersivegeology:normal_ore_magnetite"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "50B54569E24B1AEB"
+					item: "immersivegeology:normal_ore_hematite"
 					optional_task: true
 					type: "item"
 				}
@@ -301,8 +325,14 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "4BD3632539BDFEF9"
+					item: "electrodynamics:orealuminum"
+					optional_task: true
+					type: "item"
+				}
 			]
-			title: "Aluminum"
+			title: "Aluminium"
 			x: 3.0d
 			y: 3.5d
 		}
@@ -421,6 +451,12 @@
 				{
 					id: "04AC3F39636BA650"
 					item: "thermal:raw_tin"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4F65CBBDA84896E2"
+					item: "immersivegeology:normal_ore_cassiterite"
 					optional_task: true
 					type: "item"
 				}

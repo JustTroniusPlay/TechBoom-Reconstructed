@@ -59,4 +59,39 @@ ServerEvents.recipes(event => {
     event.remove({id: "gtceu:shapeless/dust_bronze"});
     event.remove({id: "electrodynamics:dust_bronze"});
 
+     event.shaped(
+        Item.of('immersiveengineering:stick_aluminum', 1), // arg 1: output
+        [
+            'A  ',
+            ' B ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            A: '#gtceu:tools/crafting_files',
+            B: 'immersiveengineering:ingot_aluminum',  //arg 3: the mapping object
+        })
+     event.shaped(
+        Item.of('immersiveengineering:stick_aluminum', 1), // arg 1: output
+        [
+            '  A',
+            ' B ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            A: '#gtceu:tools/crafting_files',
+            B: 'immersiveengineering:ingot_aluminum',  //arg 3: the mapping object
+        })
+
+    event.shaped(
+        Item.of('immersiveengineering:plate_aluminum', 1), // arg 1: output
+        [
+            ' A ',
+            ' B ', // arg 2: the shape (array of strings)
+            ' B '
+        ],
+        {
+            A: '#gtceu:tools/crafting_hammers',
+            B: 'immersiveengineering:ingot_aluminum',  //arg 3: the mapping object
+        })
+
 })

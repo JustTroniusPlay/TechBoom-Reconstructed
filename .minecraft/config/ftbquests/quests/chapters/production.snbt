@@ -335,7 +335,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["1A155790CD83B2A7"]
+			dependencies: [
+				"1A155790CD83B2A7"
+				"3D1CCF8E85981E52"
+			]
 			icon: "create:deployer"
 			id: "37FAA3D4CF96E9EE"
 			tasks: [{
@@ -435,18 +438,11 @@
 			]
 			icon: "create:wrench"
 			id: "7F493483338AF21E"
-			tasks: [
-				{
-					id: "733F4F8FF9018E48"
-					item: "create:wrench"
-					type: "item"
-				}
-				{
-					id: "385235578CAD7CD7"
-					item: "create:goggles"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "733F4F8FF9018E48"
+				item: "create:wrench"
+				type: "item"
+			}]
 			x: -6.0d
 			y: 2.0d
 		}
@@ -548,7 +544,7 @@
 		}
 		{
 			dependencies: ["7F493483338AF21E"]
-			description: ["Toolbox can hold up to 8 tools inside that you can take from it remotely using a keybind (ALT bu default). Its range not infinite, so consider putting it closer to you workplace. "]
+			description: ["Toolbox can hold up to 8 items inside that you can take from it remotely using a keybind (ALT bu default). Its range not infinite, so consider putting it closer to you workplace. "]
 			id: "0DE96BB04654485F"
 			size: 0.7d
 			tasks: [{
@@ -1894,13 +1890,23 @@
 		}
 		{
 			dependencies: ["3CD05E2E5661246B"]
+			icon: "immersiveengineering:blast_furnace"
 			id: "79EF5B4E470ACDB4"
-			tasks: [{
-				count: 27L
-				id: "4539E419960B6A2B"
-				item: { Count: 27, id: "immersiveengineering:blastbrick" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 27L
+					id: "4539E419960B6A2B"
+					item: { Count: 27, id: "immersiveengineering:blastbrick" }
+					type: "item"
+				}
+				{
+					id: "6D40633FABDBF406"
+					item: "immersiveengineering:blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Better Blasting"
 			x: -12.5d
 			y: 8.0d
 		}
@@ -1938,18 +1944,6 @@
 			]
 			x: -11.5d
 			y: 7.5d
-		}
-		{
-			dependencies: ["79EF5B4E470ACDB4"]
-			id: "697FDEFDED0990AC"
-			tasks: [{
-				count: 36L
-				id: "1BCE9E2477B7E389"
-				item: { Count: 36, id: "railcraft:blast_furnace_bricks" }
-				type: "item"
-			}]
-			x: -12.5d
-			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -2065,8 +2059,8 @@
 				item: "create_factory_logistics:fluid_mechanism"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -3.0d
+			x: -10.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3D1CCF8E85981E52"]
@@ -3670,6 +3664,18 @@
 			title: "Steel plated Coke Oven"
 			x: -11.5d
 			y: 8.5d
+		}
+		{
+			dependencies: ["7F493483338AF21E"]
+			id: "1C9C2BDF0492D3E9"
+			size: 0.7d
+			tasks: [{
+				id: "2B89C1CAFE83DBD7"
+				item: "create:goggles"
+				type: "item"
+			}]
+			x: -5.964285714285708d
+			y: 1.1773809523809575d
 		}
 	]
 	title: "Production"

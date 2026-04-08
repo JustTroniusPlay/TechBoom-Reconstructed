@@ -21,6 +21,7 @@
 				{
 					id: "2DFF1719790CAAEA"
 					item: "create:linked_controller"
+					optional_task: true
 					type: "item"
 				}
 			]

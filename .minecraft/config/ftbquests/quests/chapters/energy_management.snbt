@@ -131,12 +131,19 @@
 		{
 			dependencies: ["69DB58E1CD20ED2B"]
 			id: "32532A558BC7C731"
-			tasks: [{
-				count: 2L
-				id: "7649875CF5210992"
-				item: { Count: 2, id: "createaddition:connector" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 2L
+					id: "7649875CF5210992"
+					item: { Count: 2, id: "createaddition:connector" }
+					type: "item"
+				}
+				{
+					id: "28E05A29A66D77B6"
+					item: "createaddition:copper_spool"
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: -1.5d
 		}

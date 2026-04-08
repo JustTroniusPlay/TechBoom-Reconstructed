@@ -46,6 +46,7 @@
 				"5A3BFC118141DC5C"
 				"332E6B2C638AE656"
 			]
+			description: ["Mechanical Pump can get water from water sources like normal 2x2 puddle."]
 			id: "72304D7D63A87E7A"
 			rewards: [{
 				count: 7
@@ -158,15 +159,27 @@
 			y: -3.3d
 		}
 		{
-			dependencies: ["4885642010185D62"]
+			dependencies: [
+				"4885642010185D62"
+				"332E6B2C638AE656"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Simple water generator. Unlike Primitive Pump can't auto-output liquids by itself."]
 			id: "0B9E46B8967F33B0"
-			size: 0.6d
-			tasks: [{
-				count: 26L
-				id: "1FA4DE9CB92AC078"
-				item: { Count: 26, id: "railcraft:water_tank_siding" }
+			rewards: [{
+				count: 13
+				id: "48B60CC257943FF1"
+				item: "railcraft:water_tank_siding"
 				type: "item"
 			}]
+			size: 0.6d
+			tasks: [{
+				count: 13L
+				id: "1FA4DE9CB92AC078"
+				item: "railcraft:water_tank_siding"
+				type: "item"
+			}]
+			title: "Water Tank Siding"
 			x: 1.3142857142857167d
 			y: -4.0857142857142925d
 		}
@@ -290,23 +303,27 @@
 					count: 4L
 					id: "7193899BAC76DB7C"
 					item: "create:fluid_pipe"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "034E126ECB509CDB"
-					item: { Count: 8, id: "immersiveengineering:fluid_pipe" }
+					item: "immersiveengineering:fluid_pipe"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "5395229CCDE0BE95"
 					item: "gtceu:copper_normal_fluid_pipe"
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "3718609297BC697E"
 					item: "thermal:fluid_duct"
+					optional_task: true
 					type: "item"
 				}
 			]

@@ -12,15 +12,23 @@
 	}
 	id: "13E0E7C3F28FFF40"
 	order_index: 1
-	quest_links: [{
-		id: "4929F8A1F5008F26"
-		linked_quest: "32FCC9DCD937E066"
-		x: -3.5d
-		y: 5.5d
-	}]
+	quest_links: [
+		{
+			id: "4929F8A1F5008F26"
+			linked_quest: "32FCC9DCD937E066"
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			id: "77AC45D87964A5C6"
+			linked_quest: "362FE530374D058F"
+			x: 2.5d
+			y: 5.5d
+		}
+	]
 	quests: [
 		{
-			dependencies: ["542363BD0341A56C"]
+			dependencies: ["362FE530374D058F"]
 			icon: "create:item_vault"
 			id: "2B605F8F5C28FCAD"
 			rewards: [{
@@ -53,40 +61,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["34D049FD2BF84E84"]
-			description: [
-				"You can upgrade some vanilla storage containers to hold more items and even give them special features in the future!"
-				""
-				"But fow now lets just make simple metal upgrades."
-			]
-			id: "542363BD0341A56C"
-			rewards: [{
-				count: 6
-				id: "6F23DB51CF4889E4"
-				item: "sophisticatedstorage:basic_tier_upgrade"
-				type: "item"
-			}]
-			subtitle: "More space for my mess!"
-			tasks: [
-				{
-					id: "1E38A9BD0D3F1765"
-					item: "sophisticatedstorage:basic_to_copper_tier_upgrade"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "477F5D98209BBCA8"
-					item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Storage Upgrade"
-			x: 2.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["542363BD0341A56C"]
+			dependencies: ["362FE530374D058F"]
 			id: "3B872B9D66E36739"
 			tasks: [{
 				id: "1CCC7ECC82DEBE48"
@@ -150,7 +125,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["542363BD0341A56C"]
+			dependencies: ["362FE530374D058F"]
 			id: "7A722F4E1BB2DF66"
 			tasks: [{
 				id: "7D585E691EC4060E"
@@ -337,7 +312,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["542363BD0341A56C"]
+			dependencies: ["362FE530374D058F"]
 			icon: "gtceu:tin_small_item_pipe"
 			id: "7E43DE8E8F0F36A6"
 			rewards: [{
@@ -426,7 +401,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["542363BD0341A56C"]
 			id: "566F5CF387C7F261"
 			tasks: [
 				{

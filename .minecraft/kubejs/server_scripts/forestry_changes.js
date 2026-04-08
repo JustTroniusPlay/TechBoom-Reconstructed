@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     )
 
     event.replaceInput(
-        {id: "forestry:engine_clockwork"},
+        {id: "forestry:engine_biogas"},
         "minecraft:glass",
         "gtceu:small_bronze_gear"
     )

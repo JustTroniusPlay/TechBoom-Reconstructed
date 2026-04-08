@@ -17,8 +17,8 @@
 			id: "4A9DF2D9298A82A6"
 			linked_quest: "3862A47C6FC3972D"
 			size: 1.3d
-			x: 1.3d
-			y: -5.8500000000000005d
+			x: 1.85d
+			y: -6.95d
 		}
 		{
 			id: "578CDBD5A4EC1AC5"
@@ -113,26 +113,54 @@
 			tasks: [
 				{
 					id: "2015BA237C104C5E"
-					item: "smallships:oak_cog"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "smallships:cogs"
+						}
+					}
 					optional_task: true
+					title: "Cogs"
 					type: "item"
 				}
 				{
 					id: "4EAA5801D99F4ACB"
-					item: "smallships:oak_galley"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "smallships:galleys"
+						}
+					}
 					optional_task: true
+					title: "Galleys"
 					type: "item"
 				}
 				{
 					id: "32AEF09BF5E49BD6"
-					item: "smallships:oak_drakkar"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "smallships:drakkars"
+						}
+					}
 					optional_task: true
+					title: "Drakkars"
 					type: "item"
 				}
 				{
 					id: "29E8B1643C5E9421"
-					item: "smallships:oak_brigg"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "smallships:briggs"
+						}
+					}
 					optional_task: true
+					title: "Briggs"
 					type: "item"
 				}
 			]
@@ -230,7 +258,7 @@
 				item: "immersive_machinery:copperfin"
 				type: "item"
 			}]
-			title: "I am under the water"
+			title: "I am under the wathar"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -357,7 +385,7 @@
 			y: -2.930952380952455d
 		}
 		{
-			dependencies: ["16550070AD851335"]
+			dependencies: ["6C63FA3003078E6E"]
 			icon: "create:railway_casing"
 			id: "1FD927A625974E13"
 			rewards: [{
@@ -389,30 +417,39 @@
 				}
 			]
 			title: "Big Trains"
-			x: -1.4928571428571402d
-			y: -5.8d
+			x: -0.7d
+			y: -7.0d
 		}
 		{
-			dependencies: ["1FD927A625974E13"]
+			dependencies: ["16550070AD851335"]
+			description: [""]
 			id: "6C63FA3003078E6E"
-			tasks: [{
-				id: "2225FC3D2346C00A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "create:tracks"
+			tasks: [
+				{
+					id: "2225FC3D2346C00A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:tracks"
+						}
 					}
+					title: "Custom tracks"
+					type: "item"
 				}
-				title: "Custom tracks"
-				type: "item"
-			}]
-			title: "Different tracks"
-			x: -1.6928571428571404d
-			y: -7.7d
+				{
+					id: "3133D1DC0503D061"
+					item: "railways:handcar"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Bigger train tracks"
+			x: -5.952380952436442E-4d
+			y: -3.779761904761898d
 		}
 		{
-			dependencies: ["1FD927A625974E13"]
+			dependencies: ["6C63FA3003078E6E"]
 			id: "17F666967F6842EB"
 			tasks: [
 				{
@@ -431,8 +468,8 @@
 					type: "item"
 				}
 			]
-			x: -2.6928571428571404d
-			y: -7.2d
+			x: -1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -473,25 +510,15 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["1FD927A625974E13"]
+			dependencies: ["6C63FA3003078E6E"]
 			id: "7AB9E83008828C4B"
 			tasks: [{
 				id: "142DF6D9960F7C17"
 				item: "railways:track_monorail"
 				type: "item"
 			}]
-			x: -0.6928571428571404d
-			y: -7.2d
-		}
-		{
-			id: "2248A8F04107E461"
-			tasks: [{
-				id: "19F4CA988A814719"
-				item: "valkyrien_warium:vehicular_wrench"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -4.5d
+			x: 0.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["0F8F079CC7B24363"]
@@ -541,8 +568,8 @@
 				item: "create:schedule"
 				type: "item"
 			}]
-			x: -1.8357142857142819d
-			y: -4.828571428571429d
+			x: -1.05d
+			y: -5.95d
 		}
 		{
 			dependencies: ["1FD927A625974E13"]
@@ -560,8 +587,8 @@
 				}
 			]
 			title: "Train fuel"
-			x: -3.0d
-			y: -6.0d
+			x: -2.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1FD927A625974E13"]
@@ -595,7 +622,7 @@
 			]
 			title: "Train road logistics"
 			x: 0.0d
-			y: -6.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["3CB5B9B7BD3751EC"]
@@ -620,7 +647,7 @@
 			y: -2.201530612244902d
 		}
 		{
-			dependencies: ["1FD927A625974E13"]
+			dependencies: ["6C63FA3003078E6E"]
 			id: "0A2EE98E4F0F6E55"
 			size: 0.7d
 			tasks: [{
@@ -632,8 +659,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.4499999999999997d
-			y: -5.25d
+			x: -1.05d
+			y: -4.2d
 		}
 		{
 			dependencies: [
@@ -646,8 +673,8 @@
 				item: "create_interactive:buffer_stop"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.5d
+			x: 0.5500000000000003d
+			y: -6.6d
 		}
 		{
 			dependencies: [
