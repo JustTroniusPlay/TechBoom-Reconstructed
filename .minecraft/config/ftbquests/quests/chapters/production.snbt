@@ -84,7 +84,7 @@
 		}
 		{
 			dependencies: ["5D5A08D782C68D01"]
-			hide_dependent_lines: true
+			icon: "createoreexcavation:drilling_machine"
 			id: "746BED2E65591E76"
 			tasks: [
 				{
@@ -2781,7 +2781,7 @@
 		{
 			dependencies: [
 				"420669759AE11743"
-				"746BED2E65591E76"
+				"757887491266FA38"
 			]
 			dependency_requirement: "one_completed"
 			id: "120ED2BF66C46BE9"
@@ -3676,6 +3676,19 @@
 			}]
 			x: -5.964285714285708d
 			y: 1.1773809523809575d
+		}
+		{
+			dependencies: ["746BED2E65591E76"]
+			hide_dependent_lines: true
+			id: "757887491266FA38"
+			size: 0.7d
+			tasks: [{
+				id: "7A5360473CD53AB9"
+				item: "createoreexcavation:extractor"
+				type: "item"
+			}]
+			x: -16.45d
+			y: -9.799999999999999d
 		}
 	]
 	title: "Production"

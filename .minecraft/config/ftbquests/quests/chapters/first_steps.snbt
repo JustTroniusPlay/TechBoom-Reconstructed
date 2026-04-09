@@ -1965,6 +1965,7 @@
 				{
 					id: "0ECAF735F30DBD27"
 					item: "sophisticatedbackpacks:smelting_upgrade"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3328,7 +3329,7 @@
 				"{@pagebreak}"
 				"Aside from using Geology normal ways of proccesing ores, with help of &lForge Hammer&r or &lMechanical Press&r you can automate the procces of getting dirty crushing ores. "
 				""
-				"After that with help of &lSteam Separator&r you can convert dirty crushed ores into ready to smelt ones. "
+				"After that with help of &lSteam Separator&r or simple mixer you can convert dirty crushed ores into ready to smelt ones which you can put into &lTinker's Smeltery&r."
 			]
 			id: "65E0926A806B0CE7"
 			tasks: [
