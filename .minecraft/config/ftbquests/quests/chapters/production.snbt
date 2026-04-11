@@ -2669,7 +2669,10 @@
 			y: 1.4d
 		}
 		{
-			dependencies: ["1A155790CD83B2A7"]
+			dependencies: [
+				"1A155790CD83B2A7"
+				"69DB58E1CD20ED2B"
+			]
 			hide_dependent_lines: true
 			id: "006F0DFB4E9FE795"
 			tasks: [{
@@ -2677,6 +2680,7 @@
 				item: "createaddition:modular_accumulator"
 				type: "item"
 			}]
+			title: "Custom Accumulator"
 			x: -9.0d
 			y: -3.5d
 		}
@@ -2868,6 +2872,7 @@
 		}
 		{
 			dependencies: ["420669759AE11743"]
+			description: ["With help of Pyrolyzer you can get Enriched Coke. Using it in Induction Smeltery with iron you can get new source of Steel."]
 			icon: "thermal:coal_coke"
 			id: "6BA3BF805371E239"
 			tasks: [

@@ -3127,7 +3127,7 @@
 			y: -1.6607142857142847d
 		}
 		{
-			dependencies: ["3809893D00C74388"]
+			dependencies: ["031595756B809ADC"]
 			description: ["Cans can store fluids as a item. One tin can = 1 bucket. But you can't put liquid in the world like buckets."]
 			id: "784AEC9BF8755F95"
 			tasks: [{
@@ -3136,8 +3136,8 @@
 				type: "item"
 			}]
 			title: "Stackable Liquids"
-			x: 5.326530612244916d
-			y: -4.568877551020407d
+			x: 0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [

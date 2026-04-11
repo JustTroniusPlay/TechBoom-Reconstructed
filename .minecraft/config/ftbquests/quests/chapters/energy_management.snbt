@@ -11,7 +11,7 @@
 			id: "7668476A3236014C"
 			linked_quest: "644DA6D29FB50DA8"
 			x: -0.5d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			id: "13DF990FC49D788F"
@@ -21,12 +21,25 @@
 			x: 1.0d
 			y: -0.5d
 		}
+		{
+			id: "7385056AFB4C6B16"
+			linked_quest: "006F0DFB4E9FE795"
+			title: "Custom Accumulator"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			id: "6F977D2B7482E7EE"
+			linked_quest: "1C59476B07336B42"
+			x: -3.0d
+			y: 1.0d
+		}
 	]
 	quests: [
 		{
 			dependencies: [
 				"56766749439CD7E0"
-				"69DB58E1CD20ED2B"
+				"32532A558BC7C731"
 			]
 			id: "2444CBFAA8471EE0"
 			tasks: [
@@ -42,14 +55,14 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 0.5d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"56766749439CD7E0"
 				"156FF337D16F88B3"
-				"69DB58E1CD20ED2B"
+				"32532A558BC7C731"
 			]
 			id: "3CADA01B0663BC89"
 			rewards: [
@@ -90,7 +103,7 @@
 				}
 			]
 			x: 1.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -118,6 +131,7 @@
 				"56766749439CD7E0"
 				"7A0C939E0FE540EC"
 				"3E885ACD84B8FF4F"
+				"006F0DFB4E9FE795"
 			]
 			id: "0646482B8B0DF2D2"
 			tasks: [{
@@ -144,8 +158,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: -1.5d
+			x: 1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["32532A558BC7C731"]
@@ -156,30 +170,54 @@
 				item: "createaddition:redstone_relay"
 				type: "item"
 			}]
-			x: -1.05d
-			y: -2.1d
+			x: 0.0d
+			y: -2.4499999999999997d
 		}
 		{
 			dependencies: ["3CADA01B0663BC89"]
 			id: "443EFDB717391CAB"
-			tasks: [{
-				id: "0B88A8A05FEF191E"
-				item: "immersiveengineering:wirecoil_electrum"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0B88A8A05FEF191E"
+					item: "immersiveengineering:wirecoil_electrum"
+					type: "item"
+				}
+				{
+					id: "5120B380C4C9C929"
+					item: "immersiveengineering:connector_mv"
+					type: "item"
+				}
+				{
+					id: "7C72828B9FB47964"
+					item: "immersiveengineering:connector_mv_relay"
+					type: "item"
+				}
+			]
 			x: 1.0d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["443EFDB717391CAB"]
 			id: "468F39E388EFC1E2"
-			tasks: [{
-				id: "30A6C1613E1F7FC9"
-				item: "immersiveengineering:wirecoil_steel"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "30A6C1613E1F7FC9"
+					item: "immersiveengineering:wirecoil_steel"
+					type: "item"
+				}
+				{
+					id: "53701133EAC5D2A7"
+					item: "immersiveengineering:connector_hv"
+					type: "item"
+				}
+				{
+					id: "7E5CF1A1680D02F6"
+					item: "immersiveengineering:connector_hv_relay"
+					type: "item"
+				}
+			]
 			x: 1.0d
-			y: -6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["3CADA01B0663BC89"]
@@ -190,7 +228,7 @@
 				type: "item"
 			}]
 			x: 2.221428571428568d
-			y: -3.142857142857146d
+			y: -5.142857142857146d
 		}
 		{
 			dependencies: ["443EFDB717391CAB"]
@@ -201,7 +239,54 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["69DB58E1CD20ED2B"]
+			id: "10D646BACACC9E61"
+			tasks: [{
+				id: "6018217242A7F1DA"
+				item: "immersiveengineering:capacitor_lv"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["10D646BACACC9E61"]
+			id: "2DC0C89F91D2AE1D"
+			tasks: [{
+				id: "02ADADBFE73A2C8D"
+				item: "immersiveengineering:capacitor_mv"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1C59476B07336B42"
+				"69DB58E1CD20ED2B"
+			]
+			id: "519BBDF241E4F105"
+			tasks: [{
+				id: "096916A1F72A3003"
+				item: "gtceu:tin_single_cable"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["519BBDF241E4F105"]
+			id: "087AF217702B1FE9"
+			tasks: [{
+				id: "5090B9E591786C86"
+				item: "gtceu:lv_1a_energy_converter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
 		}
 	]
 	title: "Energy Management"
