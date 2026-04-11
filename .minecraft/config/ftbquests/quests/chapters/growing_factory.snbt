@@ -1,0 +1,54 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "growing_factory"
+	group: "495B816819C83ED9"
+	icon: "tfmg:coke_oven"
+	id: "6A23E798E34A45A8"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"25951FDCB7908145"
+			]
+			id: "2D5E5EAF4F278A1C"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4C4B2BDD6CDC2221"
+				item: "tfmg:electricians_wrench"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2D5E5EAF4F278A1C"]
+			icon: "tfmg:coke_oven"
+			id: "74DFE4CD2E792D2E"
+			tasks: [
+				{
+					id: "685FFFCA7072F40C"
+					item: "createdeco:industrial_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "7B1FE17F2BE49CBC"
+					item: "tfmg:cast_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "2653B9FDF01320D3"
+					item: "tfmg:coke_oven"
+					type: "item"
+				}
+			]
+			title: "Another Coke Oven"
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+	title: "Growing Factory"
+}

@@ -421,6 +421,12 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "5D0297F989B5A70A"
+					item: "tfmg:galena"
+					optional_task: true
+					type: "item"
+				}
 			]
 			title: "Lead"
 			x: -1.0d

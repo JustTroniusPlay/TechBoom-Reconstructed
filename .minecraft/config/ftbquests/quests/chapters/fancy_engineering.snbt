@@ -1,0 +1,392 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fancy_engineering"
+	group: "495B816819C83ED9"
+	icon: "immersiveengineering:advanced_blast_furnace"
+	id: "1F4BE2C27FDFFE99"
+	order_index: 6
+	quest_links: [{
+		id: "0D37DA266658503C"
+		linked_quest: "7A0C939E0FE540EC"
+		shape: "octagon"
+		size: 1.5d
+		x: -0.75d
+		y: 3.35d
+	}]
+	quests: [
+		{
+			dependencies: ["3CD05E2E5661246B"]
+			icon: "immersiveengineering:blast_furnace"
+			id: "79EF5B4E470ACDB4"
+			tasks: [
+				{
+					count: 27L
+					id: "4539E419960B6A2B"
+					item: { Count: 27, id: "immersiveengineering:blastbrick" }
+					type: "item"
+				}
+				{
+					id: "6D40633FABDBF406"
+					item: "immersiveengineering:blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Better Blasting"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"79EF5B4E470ACDB4"
+				"7A0C939E0FE540EC"
+			]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "745A282BA4A843D5"
+			rewards: [{
+				id: "0CE7ADC1EA15951B"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 27L
+					id: "68CFC7DD9D063B7B"
+					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "592251313E28E9FF"
+					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
+				{
+					id: "40CEA24B000E795E"
+					item: "immersiveengineering:advanced_blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Improved blasting"
+			x: -2.452380952380956d
+			y: 3.366071428571427d
+		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"4DB042DAF83D7A0A"
+			]
+			id: "48BC04D05B89C7EA"
+			tasks: [{
+				id: "4C2630267ED5A26F"
+				item: "railcraft:powered_rolling_machine"
+				type: "item"
+			}]
+			x: -0.7857142857142847d
+			y: 1.225000000000005d
+		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"3CADA01B0663BC89"
+			]
+			id: "644DA6D29FB50DA8"
+			tasks: [{
+				id: "62222DF3CA4498D7"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Some complex machinery require you to build a structure from multiple blocks which are present here. "]
+			id: "0729C937DEFF1E0B"
+			size: 1.3d
+			tasks: [
+				{
+					id: "425EB8C1F747EA83"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "6779EA038CC99BBC"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "6EB38F7733151E22"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "7C839D26FE9093D0"
+					item: "immersiveengineering:generator"
+					type: "item"
+				}
+				{
+					id: "0E741B8A6732DEA6"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+			]
+			title: "Multiblocks components"
+			x: -0.10000000000000142d
+			y: 13.500000000000002d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 21
+					}
+				}
+				id: "immersiveengineering:revolver"
+			}
+			id: "164EFF8B7B80321D"
+			rewards: [{
+				count: 24
+				id: "754EF7A50F5522EA"
+				item: "immersiveengineering:casull"
+				type: "item"
+			}]
+			size: 1.4d
+			tasks: [
+				{
+					id: "42BD6E2AA624C098"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 21
+							}
+						}
+						id: "immersiveengineering:revolver"
+					}
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "662F62ED3C7DB189"
+					item: { Count: 6, id: "immersiveengineering:casull" }
+					type: "item"
+				}
+			]
+			title: "Wild Weapon"
+			x: 2.0d
+			y: 9.899999999999999d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			id: "4C8C44388703BD22"
+			tasks: [{
+				count: 3L
+				id: "77B2B70E6B74701B"
+				item: "immersiveengineering:watermill"
+				type: "item"
+			}]
+			title: "Water Energy"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["164EFF8B7B80321D"]
+			id: "652C9178E27A233E"
+			rewards: [{
+				count: 4
+				id: "196504B9658EA0C7"
+				item: "immersiveengineering:stick_steel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E4FA0AA72B42EB3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 3
+						}
+					}
+					id: "immersiveengineering:railgun"
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.6d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			icon: "immersivetechnology:advanced_coke_oven"
+			id: "37659341AAB207BF"
+			rewards: [{
+				id: "2F672DC8998FF637"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 12L
+					id: "55293C72AFEA3416"
+					item: "immersivetechnology:reinforced_coke_brick"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5EC104707890A538"
+					item: { Count: 6, id: "thermal:steel_block" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "753F31BF9E101B47"
+					item: { Count: 9, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					id: "7A9953884436904E"
+					item: "immersivetechnology:advanced_coke_oven"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Steel plated Coke Oven"
+			x: 0.9785714285714207d
+			y: 3.3232142857142897d
+		}
+		{
+			dependencies: [
+				"4423C396B2C5D34D"
+				"164EFF8B7B80321D"
+			]
+			dependency_requirement: "one_completed"
+			id: "09919FCD6E63DF42"
+			tasks: [
+				{
+					id: "611436010390C138"
+					item: "immersiveengineering:turret_chem"
+					type: "item"
+				}
+				{
+					id: "72186F65EC4CC792"
+					item: "immersiveengineering:turret_gun"
+					type: "item"
+				}
+			]
+			title: "Industrial Turrets"
+			x: 13.0d
+			y: 13.6d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			id: "4423C396B2C5D34D"
+			tasks: [{
+				id: "62CB93AFF9971747"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 4
+						}
+					}
+					id: "immersiveengineering:chemthrower"
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 13.6d
+		}
+		{
+			dependencies: ["55C78E5A9D06111B"]
+			icon: "immersiveengineering:diesel_generator"
+			id: "0375476849A35537"
+			tasks: [
+				{
+					id: "7252B7A65F54D22A"
+					item: "immersiveengineering:diesel_generator"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "76466423B89F92A6"
+					item: { Count: 5, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "45D90017AB1EF5C6"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "54BDC3C3BD26FC59"
+					item: { Count: 4, id: "immersiveengineering:generator" }
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "00D8751DD8C50BC5"
+					item: { Count: 13, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "0DFD6C30AC29C5C0"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "0BC3DA00EF531E1A"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["09349E61D7AF0C55"]
+			id: "55C78E5A9D06111B"
+			tasks: [{
+				id: "33022D811112F1B3"
+				item: "immersiveengineering:biodiesel_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["16FA4B48AB337396"]
+			id: "09349E61D7AF0C55"
+			tasks: [{
+				id: "7E5C1336FEA69EEB"
+				item: "immersiveengineering:refinery"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			id: "16FA4B48AB337396"
+			tasks: [{
+				id: "21BFDA0BE9062973"
+				item: "immersiveengineering:fermenter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+	]
+	title: "Fancy Engineering"
+}

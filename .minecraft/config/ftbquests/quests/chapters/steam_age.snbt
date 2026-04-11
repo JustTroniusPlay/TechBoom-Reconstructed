@@ -1,0 +1,630 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam_age"
+	group: "495B816819C83ED9"
+	icon: "gtceu:lp_steam_solid_boiler"
+	id: "394C51FF4CC2793B"
+	order_index: 0
+	quest_links: [
+		{
+			id: "71474757EDAFDEB7"
+			linked_quest: "15C30310B03E4F79"
+			shape: "hexagon"
+			size: 1.5d
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			id: "18906C42BDADA8BD"
+			linked_quest: "5361A9865C6547F4"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			id: "7CFDEAFF4927E1C3"
+			linked_quest: "79EF5B4E470ACDB4"
+			x: -3.0d
+			y: -1.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"15C30310B03E4F79"
+				"10E87B6699909383"
+			]
+			description: ["Aside from making alloys it can work with steel molds to create some components, blocks or nuggets from ingots.  "]
+			id: "61DA87FD5E45D2BC"
+			tasks: [{
+				id: "4A05A522EC33C3F6"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"61DA87FD5E45D2BC"
+				"319CEF2BDD679CF5"
+			]
+			description: ["Multiblock version of alloy smeltery."]
+			icon: "steamadditions:steam_foundry"
+			id: "5303D30192D7463A"
+			tasks: [
+				{
+					id: "56271D842D9CAE50"
+					item: "steamadditions:steam_foundry"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "149822B64B40C2F0"
+					item: { Count: 14, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6B3339F967A54540"
+					item: { Count: 8, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "4430020089784574"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "7D2B3DD453DD806E"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "668D5129E65D681A"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: [
+				"Many Gregtech multiblocks can share walls. Thats mean you can save resources and space if you put them between intersecting casings. &oJust remember&r that inputs and outputs busses must not connect to two specific machines. At the same time Steam Input Hatches can fuel both multiblocks."
+				""
+				"You can add more than 1 input or output busses if you want."
+			]
+			hide_dependent_lines: true
+			icon: "gtceu:steam_machine_casing"
+			id: "319CEF2BDD679CF5"
+			tasks: [{
+				id: "00B3AF4C6DEC8483"
+				title: "Wall Sharing!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: [""]
+			id: "156FF337D16F88B3"
+			tasks: [{
+				id: "41FA3EBCCC16C424"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Can grind things into dusts. Most notable use to grind down raw ores and getting two times more. "]
+			id: "7DC8D43AB8C12697"
+			tasks: [{
+				id: "33565194B1EBDA18"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7DC8D43AB8C12697"
+				"319CEF2BDD679CF5"
+			]
+			description: ["Can grind multiplie items at the same time."]
+			icon: "gtceu:steam_grinder"
+			id: "6D95B9D2E5EB331E"
+			tasks: [
+				{
+					id: "59D2D09C3865912F"
+					item: "gtceu:steam_grinder"
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "30684FC8DA21D96C"
+					item: { Count: 22, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "43A4F4D56BD15C2C"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "293ECE2DD8DA5D0C"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "189B12E1D7A435B8"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"15C30310B03E4F79"
+				"319CEF2BDD679CF5"
+			]
+			description: [
+				"Some grinded dusts, for example Redstone, need to be washed after grind proccesing to become useful or smelted to get ingots."
+				""
+				"You also can throw them into the cauldron with water manually."
+			]
+			icon: "steamadditions:steam_separator"
+			id: "37EE9AB51014DCBA"
+			tasks: [
+				{
+					id: "505700760D3382BA"
+					item: "steamadditions:steam_separator"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "096F0F372F25D6F0"
+					item: { Count: 18, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "295D5313CA587714"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "3871FF62E82FC2ED"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "2E5CA82252505532"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			id: "625BBC103C7A0FCE"
+			tasks: [{
+				id: "3CB972427251F8DE"
+				item: "gtceu:lp_steam_furnace"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"625BBC103C7A0FCE"
+				"319CEF2BDD679CF5"
+			]
+			description: ["Can smelt 8 items at a time using Steam. "]
+			hide_dependent_lines: true
+			icon: "gtceu:steam_oven"
+			id: "35DDCEC2CECEF4D6"
+			tasks: [
+				{
+					id: "25EE2E50D1FC18AA"
+					item: "gtceu:steam_oven"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6867920997B1C73B"
+					item: { Count: 8, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7611FEC59679D87E"
+					item: { Count: 8, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "369B11FA5A189D8E"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "349D34F3BE728D80"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "6C9BAC375188D361"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			id: "793ABF03A8827044"
+			tasks: [{
+				id: "6AF61FE6D49FBB10"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			id: "0FCFA77A56C98B28"
+			size: 0.7d
+			tasks: [{
+				id: "250C3DA58D2315F2"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: 2.4499999999999997d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			id: "780843C2BC813902"
+			size: 0.7d
+			tasks: [{
+				id: "63DF20CE04CE4282"
+				item: "gtceu:lp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: 2.1d
+			y: -0.7d
+		}
+		{
+			dependencies: [
+				"15C30310B03E4F79"
+				"4B31C89E0FA58CE0"
+			]
+			description: ["Will convert any steam into Forge Energy units and by itself not generate pollution."]
+			id: "4EC3B664D62760BE"
+			size: 0.7d
+			tasks: [{
+				id: "12A8DDB8EEE3B3E8"
+				item: "systeams:steam_dynamo"
+				type: "item"
+			}]
+			x: 1.05d
+			y: -0.7d
+		}
+		{
+			dependencies: ["4A33371DB94DFD62"]
+			description: [
+				"This type of boilers have different variations depending on its size. Maximum amount fireboxes are 3x3. With each size level amount of minimum boilers grows. You can start with 1 firebox and boiler."
+				""
+				"They much more efficent than bronze and high pressure ones, but need fuel and &lconstant supply of WATER.&r If you will not provide it and boiler get too heated, trying adding more will make it EXPLODE. "
+			]
+			icon: "railcraft:solid_fueled_firebox"
+			id: "6AF4C17E9C8FF9DC"
+			tasks: [
+				{
+					id: "5257950F383FFE22"
+					item: "railcraft:solid_fueled_firebox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "215F0749F2FEB357"
+					item: "railcraft:low_pressure_steam_boiler_tank"
+					type: "item"
+				}
+				{
+					id: "3026ABFD8257B6E0"
+					item: "railcraft:high_pressure_steam_boiler_tank"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Modular Boilers"
+			x: -3.754761904761935d
+			y: -3.1154761904761976d
+		}
+		{
+			dependencies: ["6AF4C17E9C8FF9DC"]
+			description: ["Uses lava and creosote oil instead of solid fuel."]
+			id: "311D638942ACCDBD"
+			size: 0.6d
+			tasks: [{
+				id: "35AF971D08CA0D94"
+				item: "railcraft:fluid_fueled_firebox"
+				type: "item"
+			}]
+			x: -2.954761904761945d
+			y: -3.115476190476201d
+		}
+		{
+			dependencies: ["156FF337D16F88B3"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Wrought iron is tougher version of vanilla metal. It will be used in low voltage machinery, but for now it can serve you to make stronger tools."
+				""
+				"Its making procces kinda tricky tho. You need to smelt iron nuggets to get wrought iron one and then use compressor or alloy smelter with ingot casting mold to get them."
+				""
+				"Additionally if you will use Wrought Iron in Blast Furnace instead of normal one, the blasting speed will increase!"
+			]
+			icon: "gtceu:wrought_iron_ingot"
+			id: "5C4DA67C07C8E9B7"
+			tasks: [
+				{
+					id: "26166249294BE433"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "0357158F497C7E3E"
+					item: "gtceu:wrought_iron_nugget"
+					type: "item"
+				}
+			]
+			title: "Trained Iron"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"156FF337D16F88B3"
+				"319CEF2BDD679CF5"
+				"7DC8D43AB8C12697"
+			]
+			description: ["Lets make some steel! Blast Furnace can use normal coal, but Coke Coal is more effective. "]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "3CD05E2E5661246B"
+			rewards: [{
+				count: 16
+				id: "0312BB4628AC0288"
+				item: "gtceu:firebricks"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "761327595B2D9F9E"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "25F5560C4D42E378"
+					item: { Count: 16, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			title: "Steel Pipeline"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3CD05E2E5661246B"]
+			id: "7A0C939E0FE540EC"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "6EA4E40B4C5F24B0"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			title: "Industrialization"
+			x: -3.750000000000057d
+			y: 0.5714285714285623d
+		}
+		{
+			dependencies: ["156FF337D16F88B3"]
+			id: "193EDD7B079CF150"
+			subtitle: "No zombies on my lawn!"
+			tasks: [{
+				id: "32547714D137833C"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "5771754309EAFB99"
+			size: 1.2d
+			tasks: [{
+				id: "712CC7E813185EC5"
+				item: "gtceu:lp_steam_extractor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.6d
+		}
+		{
+			dependencies: ["5771754309EAFB99"]
+			icon: "gtceu:rubber_ingot"
+			id: "330BBBA861A594E7"
+			tasks: [
+				{
+					id: "19FF362339F51DE9"
+					item: "gtceu:raw_rubber_dust"
+					type: "item"
+				}
+				{
+					id: "3EC92BCB8E5CD1AF"
+					item: "gtceu:rubber_ingot"
+					type: "item"
+				}
+			]
+			title: "Refined Rubber"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"5361A9865C6547F4"
+				"330BBBA861A594E7"
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "1C59476B07336B42"
+			rewards: [{
+				count: 5
+				id: "1A521DF0F4AC5D7D"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "298BFE41EAE4BE11"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "471926DD4EB9A9DA"
+					item: "gtceu:resistor"
+					type: "item"
+				}
+				{
+					id: "7B9A40F294EFAA93"
+					item: "gtceu:vacuum_tube"
+					type: "item"
+				}
+				{
+					id: "3EBD5A265A15E71B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/red_alloy"
+						}
+					}
+					title: "Red Alloy"
+					type: "item"
+				}
+			]
+			title: "Low Voltage"
+			x: -3.7380952380952692d
+			y: 7.947321428571421d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			id: "17598FE2FF7FBD46"
+			size: 0.5d
+			tasks: [{
+				id: "166F200772DAA0EF"
+				item: "gtceu:lp_steam_miner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.25d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			id: "41D287C2BC7CF3E8"
+			size: 0.5d
+			tasks: [{
+				id: "14D8490D6ECB3D8E"
+				item: "gtceu:lp_steam_rock_crusher"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.25d
+		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"35DDCEC2CECEF4D6"
+			]
+			description: ["Upgrade to steam oven with steel. Use less space, accepts items and steam from all directions and have bigger items internal buffer. Will smelt 9 items at a time."]
+			id: "6103B2A9C790E8EF"
+			tasks: [{
+				id: "793CF622DA144ED2"
+				item: "railcraft:steam_oven"
+				type: "item"
+			}]
+			title: "Steel Steam Oven"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Every previous type of boiler can be upgraded with steel."]
+			id: "4A33371DB94DFD62"
+			size: 0.7d
+			tasks: [{
+				id: "5AFF08EF595FA079"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -3.7642857142857338d
+			y: -0.7285714285714349d
+		}
+		{
+			dependencies: ["79EF5B4E470ACDB4"]
+			id: "697FDEFDED0990AC"
+			tasks: [{
+				count: 36L
+				id: "1BCE9E2477B7E389"
+				item: { Count: 36, id: "railcraft:blast_furnace_bricks" }
+				type: "item"
+			}]
+			title: "Maximus Blasting"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6AF4C17E9C8FF9DC"]
+			icon: "railcraft:steam_turbine"
+			id: "3C16D1C6847306F8"
+			tasks: [
+				{
+					count: 12L
+					id: "73A0DCEEB3B5ACB8"
+					item: "railcraft:steam_turbine"
+					type: "item"
+				}
+				{
+					id: "359B30460ED1307D"
+					item: {
+						Count: 1
+						id: "railcraft:turbine_rotor"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Steam Turbine"
+			x: -3.785714285714313d
+			y: -4.843452380952385d
+		}
+	]
+	title: "Steam Age"
+}

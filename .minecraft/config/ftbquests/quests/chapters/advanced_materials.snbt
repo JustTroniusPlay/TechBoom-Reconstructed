@@ -1,0 +1,64 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "advanced_materials"
+	group: "495B816819C83ED9"
+	icon: "mekanism:alloy_infused"
+	id: "514529C4F39E6ACB"
+	order_index: 7
+	quest_links: [{
+		id: "3699CE0C026189E1"
+		linked_quest: "5169668687940129"
+		shape: "rsquare"
+		size: 1.5d
+		x: 2.5d
+		y: -1.5d
+	}]
+	quests: [
+		{
+			dependencies: ["5169668687940129"]
+			id: "4252FD2C3076FC2E"
+			tasks: [{
+				id: "6331E20345C82C18"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4252FD2C3076FC2E"]
+			id: "43A2DDA0E123E8D0"
+			tasks: [{
+				id: "4455D4C4BCE7ECDF"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5169668687940129"]
+			id: "1EA14587D11D38CE"
+			tasks: [{
+				id: "2BEF1448BC6EC577"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5169668687940129"]
+			id: "27E0F81FE63D2E85"
+			tasks: [{
+				id: "648C61E6740F0E1E"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+	]
+	title: "Advanced Materials"
+}

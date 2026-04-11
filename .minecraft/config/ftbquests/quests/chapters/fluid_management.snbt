@@ -328,8 +328,8 @@
 				}
 			]
 			title: "Pick your hydration"
-			x: 2.2333333333333343d
-			y: -5.983333333333341d
+			x: 2.221428571428575d
+			y: -6.142857142857146d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -340,7 +340,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -632,6 +632,49 @@
 			title: "Fancy Tank"
 			x: 1.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["724160D9F6565F29"]
+			id: "700959DF1F947ACE"
+			size: 0.7d
+			tasks: [{
+				id: "7D000EE7599B47F8"
+				item: "ulvcovm:ulv_fluid_regulator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -9.1d
+		}
+		{
+			dependencies: ["332E6B2C638AE656"]
+			icon: "gtceu:potin_ingot"
+			id: "03E9DB5463FD4FFA"
+			rewards: [{
+				count: 16
+				id: "206A117075E86499"
+				item: "gtceu:potin_normal_fluid_pipe"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5E2895C294F8FC21"
+					item: "gtceu:potin_dust"
+					type: "item"
+				}
+				{
+					id: "75EED74812874531"
+					item: "gtceu:potin_ingot"
+					type: "item"
+				}
+				{
+					id: "59A683DFCCDE4660"
+					item: "gtceu:potin_normal_fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Potin Alloy"
+			x: 3.25d
+			y: -8.114285714285707d
 		}
 	]
 	title: "Fluid Management"

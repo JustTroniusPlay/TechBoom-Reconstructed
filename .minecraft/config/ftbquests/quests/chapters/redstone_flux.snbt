@@ -1,0 +1,633 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "redstone_flux"
+	group: "495B816819C83ED9"
+	icon: {
+		Count: 1
+		id: "thermal:energy_cell"
+		tag: {
+			BlockEntityTag: {
+				Energy: 0
+				EnergyMax: 1000000
+				EnergyRecv: 1000
+				EnergySend: 1000
+			}
+		}
+	}
+	id: "45EECEB7C05F8905"
+	order_index: 4
+	quest_links: [
+		{
+			id: "183BD844B51E68E0"
+			linked_quest: "2798CCE5B1DE21DA"
+			shape: "hexagon"
+			size: 1.5d
+			x: 2.499999999999999d
+			y: -0.8499999999999996d
+		}
+		{
+			id: "088304EF00FB61C8"
+			linked_quest: "43943D53B8603D29"
+			size: 0.6d
+			x: -0.7000000000000002d
+			y: 0.5999999999999996d
+		}
+		{
+			id: "28C7B746F4C22299"
+			linked_quest: "757887491266FA38"
+			size: 0.7d
+			x: 0.35d
+			y: 3.15d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			hide_dependent_lines: true
+			id: "766AF1AE840A63FD"
+			tasks: [{
+				id: "1F9BC542641DB9E1"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: -0.7000000000000002d
+			y: -3.6999999999999993d
+		}
+		{
+			dependencies: [
+				"43943D53B8603D29"
+				"3155C182FC72865E"
+			]
+			id: "0D808399A2E281BC"
+			tasks: [{
+				id: "5E8A531F5ED2B677"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
+			}]
+			x: -0.7000000000000002d
+			y: -0.1999999999999993d
+		}
+		{
+			dependencies: ["0D808399A2E281BC"]
+			id: "4AD162D4214DFACB"
+			tasks: [{
+				id: "462CF174CED05F6C"
+				item: "thermal:upgrade_augment_3"
+				type: "item"
+			}]
+			x: 0.2999999999999998d
+			y: -0.1999999999999993d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "3155C182FC72865E"
+			tasks: [{
+				id: "741F7FE453646B65"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: -1.7000000000000002d
+			y: -0.6999999999999997d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			icon: "thermal:machine_refinery"
+			id: "0324FC7EAE1601BA"
+			tasks: [{
+				id: "7A41E04A88A84541"
+				item: "thermal:machine_refinery"
+				type: "item"
+			}]
+			x: 0.7999999999999998d
+			y: 0.8000000000000007d
+		}
+		{
+			dependencies: ["0AF793828ADDBE71"]
+			id: "420669759AE11743"
+			tasks: [
+				{
+					id: "2088683BEF5729F3"
+					item: "thermal:oil_sand"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "32E9B1241308C7B2"
+					item: "thermal:oil_red_sand"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "06A845F27E02725A"
+					item: "thermal:bitumen"
+					type: "item"
+				}
+			]
+			title: "Oil in the soil"
+			x: 1.7999999999999998d
+			y: 2.8000000000000007d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "0AF793828ADDBE71"
+			tasks: [{
+				id: "53B60082ECC3713D"
+				item: "thermal:machine_centrifuge"
+				type: "item"
+			}]
+			x: 1.7999999999999998d
+			y: 1.3000000000000007d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "5B9B2FD0295FF131"
+			size: 1.3d
+			tasks: [{
+				id: "12026B543DBAE1EF"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: 2.5095238095238086d
+			y: -2.722448979591857d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "42EE9B0972E68F0D"
+			tasks: [{
+				id: "38D3463798C8B544"
+				item: "thermal:machine_sawmill"
+				type: "item"
+			}]
+			x: -0.7000000000000002d
+			y: -2.1999999999999997d
+		}
+		{
+			dependencies: [
+				"420669759AE11743"
+				"757887491266FA38"
+			]
+			dependency_requirement: "one_completed"
+			id: "120ED2BF66C46BE9"
+			tasks: [{
+				id: "28FA1AFE565966DA"
+				item: "thermal:crude_oil_bucket"
+				type: "item"
+			}]
+			x: 0.2999999999999998d
+			y: 2.3000000000000007d
+		}
+		{
+			dependencies: [
+				"120ED2BF66C46BE9"
+				"0324FC7EAE1601BA"
+			]
+			icon: "thermal:refined_fuel_bucket"
+			id: "46DF54F9A3A6645F"
+			tasks: [
+				{
+					id: "7DACF52D38C903C4"
+					item: "thermal:heavy_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "2815E70D6C860B13"
+					item: "thermal:light_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "4AF19D587BE60463"
+					item: "thermal:refined_fuel_bucket"
+					type: "item"
+				}
+			]
+			title: "Refined Oil"
+			x: -0.20000000000000018d
+			y: 1.3000000000000007d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "1425D94DC58182E5"
+			tasks: [{
+				id: "1B62D4ED538A6F70"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			x: 4.8d
+			y: -2.1999999999999997d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "030F34B864E08816"
+			tasks: [{
+				id: "7F5DB119F6C0BC89"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			x: 0.7999999999999998d
+			y: -3.6999999999999993d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "4F3810AFE024D92E"
+			tasks: [{
+				id: "00ED23394CFB1C4E"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			title: "Industrial Smeting"
+			x: 4.3d
+			y: 2.3000000000000007d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "2ABA250ADE658FF3"
+			tasks: [{
+				id: "502E9403F1EC58BD"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: 3.3d
+			y: 1.8000000000000007d
+		}
+		{
+			dependencies: ["420669759AE11743"]
+			description: ["With help of Pyrolyzer you can get Enriched Coke. Using it in Induction Smeltery with iron you can get new source of Steel."]
+			icon: "thermal:coal_coke"
+			id: "6BA3BF805371E239"
+			tasks: [
+				{
+					id: "421DDC903B9F6AE0"
+					item: "thermal:machine_pyrolyzer"
+					type: "item"
+				}
+				{
+					id: "2920FB65B24B44D4"
+					item: "thermal:coal_coke"
+					type: "item"
+				}
+			]
+			title: "Enriched Coke Coal"
+			x: 1.7999999999999998d
+			y: 4.300000000000001d
+		}
+		{
+			dependencies: ["5B9B2FD0295FF131"]
+			description: ["You can convert rotten flesh to leather in Redstone Furnace."]
+			icon: "minecraft:leather"
+			id: "187D904C784986DE"
+			tasks: [
+				{
+					count: 4L
+					id: "1FD14CB4300EBC2E"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "68D563CB10586ACA"
+					item: "minecraft:leather"
+					type: "item"
+				}
+			]
+			title: "Another Leather Recipe"
+			x: 3.8d
+			y: -2.6999999999999997d
+		}
+		{
+			dependencies: ["3155C182FC72865E"]
+			id: "1553365BB32E7666"
+			size: 1.2d
+			tasks: [{
+				id: "0AA2C62668AC3827"
+				item: "thermal:obsidian_glass"
+				type: "item"
+			}]
+			x: -1.7000000000000002d
+			y: 3.3000000000000007d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "2B05CC4B1B1A5914"
+			tasks: [{
+				id: "67033ADFE66C1124"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: 4.514285714285715d
+			y: 1.1112244897959194d
+		}
+		{
+			dependencies: [
+				"2798CCE5B1DE21DA"
+				"1553365BB32E7666"
+			]
+			icon: "thermal:machine_crystallizer"
+			id: "3751A61EDD08EF41"
+			tasks: [
+				{
+					id: "6A005F1EEABC8C01"
+					item: "thermal:machine_crystallizer"
+					type: "item"
+				}
+				{
+					id: "01EC653EFE34E479"
+					item: "ae2:certus_quartz_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "00DD9BBC58E8E0BC"
+					item: "ae2:charged_certus_quartz_crystal"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.7d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3155C182FC72865E"]
+			id: "52563AE115ACBF51"
+			tasks: [{
+				id: "1BF835186BF38E32"
+				item: "thermal:signalum_ingot"
+				type: "item"
+			}]
+			x: -2.7d
+			y: 0.8000000000000007d
+		}
+		{
+			dependencies: ["3155C182FC72865E"]
+			id: "4D475C5C6D1FF754"
+			tasks: [{
+				id: "116D655695EC2B63"
+				item: "thermal:lumium_ingot"
+				type: "item"
+			}]
+			x: -4.2d
+			y: 0.8000000000000007d
+		}
+		{
+			dependencies: ["3155C182FC72865E"]
+			id: "57C04ECC73C4EAD3"
+			tasks: [{
+				id: "3707DC8DE82D445F"
+				item: "thermal:enderium_ingot"
+				type: "item"
+			}]
+			x: -5.7d
+			y: 0.8000000000000007d
+		}
+		{
+			dependencies: [
+				"1553365BB32E7666"
+				"52563AE115ACBF51"
+			]
+			id: "21F9764D362E05BD"
+			tasks: [{
+				id: "2940ACD23DC02DBE"
+				item: "thermal:signalum_glass"
+				type: "item"
+			}]
+			x: -2.7d
+			y: 1.8000000000000007d
+		}
+		{
+			dependencies: [
+				"1553365BB32E7666"
+				"4D475C5C6D1FF754"
+			]
+			id: "1CF740E2938F462A"
+			tasks: [{
+				id: "0168FA658DCB0628"
+				item: "thermal:lumium_glass"
+				type: "item"
+			}]
+			x: -4.2d
+			y: 1.8000000000000007d
+		}
+		{
+			dependencies: [
+				"1553365BB32E7666"
+				"57C04ECC73C4EAD3"
+			]
+			id: "4624968B64822373"
+			tasks: [{
+				id: "122D40204096A9B9"
+				item: "thermal:enderium_glass"
+				type: "item"
+			}]
+			x: -5.7d
+			y: 1.8000000000000007d
+		}
+		{
+			dependencies: ["1553365BB32E7666"]
+			id: "199167CF567E26BB"
+			tasks: [{
+				id: "6DD4D5B639F82401"
+				item: "systeams:boiler_pipe"
+				type: "item"
+			}]
+			x: -1.7000000000000002d
+			y: 4.800000000000001d
+		}
+		{
+			dependencies: ["1553365BB32E7666"]
+			id: "08F0E06F30471E3E"
+			tasks: [{
+				id: "54255A04237FA5AC"
+				item: {
+					Count: 1
+					id: "thermal:fluid_cell"
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								Amount: 0
+								Capacity: 32000
+								FluidName: "minecraft:empty"
+								Tank: 0b
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -0.20000000000000018d
+			y: 4.800000000000001d
+		}
+		{
+			dependencies: ["08F0E06F30471E3E"]
+			id: "7AE82FECE43A0323"
+			size: 0.7d
+			tasks: [{
+				id: "6AD621CCBF572A3C"
+				item: "thermal:fluid_tank_augment"
+				type: "item"
+			}]
+			x: -0.20000000000000728d
+			y: 3.907142857142855d
+		}
+		{
+			dependencies: [
+				"7BF7C8E5AFC2EE6A"
+				"030F34B864E08816"
+			]
+			description: ["Behind the weird name hides a way to convert metals into energy. "]
+			id: "12E8CE069EDE3C56"
+			size: 0.7d
+			subtitle: "Capitalistic generator!"
+			tasks: [{
+				id: "2635907355B0E210"
+				item: "thermal:dynamo_numismatic"
+				type: "item"
+			}]
+			x: 1.4000000000000012d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3751A61EDD08EF41"]
+			description: ["You can grow certus quarts inside Crystalizer with full tank of water and charged crystal. It is more convinient and efficent way."]
+			id: "73593A2A2EF304AC"
+			tasks: [{
+				id: "2830AA48A04F1399"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			title: "Crystalization"
+			x: -3.7d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "1A6E6CC618DD8F57"
+			tasks: [{
+				id: "56253D279396132E"
+				item: "thermal:machine_crafter"
+				type: "item"
+			}]
+			x: 5.3d
+			y: 0.3000000000000007d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "6C266F8B01ED6B4D"
+			tasks: [{
+				id: "539A4920B4C741D2"
+				item: "thermal:machine_brewer"
+				type: "item"
+			}]
+			x: 5.3d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "7BFF886E57F3D543"
+			tasks: [
+				{
+					id: "03F71DC4A5E1A1BD"
+					item: "thermal:rubber"
+					type: "item"
+				}
+				{
+					id: "56A9CEBC3806830D"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+			]
+			title: "Manual Rubber"
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"7BFF886E57F3D543"
+				"10D646BACACC9E61"
+			]
+			id: "518089C9998EBFF8"
+			tasks: [{
+				id: "7F8CAB3D92F12540"
+				item: {
+					Count: 1
+					id: "thermal:energy_cell"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 1000000
+							EnergyRecv: 1000
+							EnergySend: 1000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7BFF886E57F3D543"]
+			id: "423F84ADDE1CC9ED"
+			tasks: [{
+				id: "5718A24DF83ECC71"
+				item: {
+					Count: 1
+					id: "thermal:potion_infuser"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7BFF886E57F3D543"]
+			id: "7067FCA367EB961F"
+			tasks: [{
+				id: "07095F1ED998BA9C"
+				item: {
+					Count: 1
+					id: "thermal:fluid_reservoir"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7BFF886E57F3D543"]
+			id: "5E8C6076F2C33137"
+			tasks: [{
+				id: "4FD3CE150526A9D4"
+				item: {
+					Count: 1
+					id: "thermal:potion_quiver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7BFF886E57F3D543"]
+			icon: "thermal:device_tree_extractor"
+			id: "4DE3A5EB02DCDC59"
+			tasks: [
+				{
+					id: "4E67081F5752155F"
+					item: "thermal:device_tree_extractor"
+					type: "item"
+				}
+				{
+					id: "7D3376A6FE7DB162"
+					item: "thermal:latex_bucket"
+					type: "item"
+				}
+			]
+			title: "Latex"
+			x: 7.0d
+			y: 0.5d
+		}
+	]
+	title: "Redstone Machines"
+}

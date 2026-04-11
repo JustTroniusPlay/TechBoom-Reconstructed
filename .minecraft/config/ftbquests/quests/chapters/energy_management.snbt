@@ -34,6 +34,12 @@
 			x: -3.0d
 			y: 1.0d
 		}
+		{
+			id: "7E16D6E0D25025A2"
+			linked_quest: "518089C9998EBFF8"
+			x: -0.5d
+			y: 2.0d
+		}
 	]
 	quests: [
 		{
@@ -55,8 +61,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: -3.0d
+			x: 2.4102040816326564d
+			y: -2.433673469387756d
 		}
 		{
 			dependencies: [
@@ -109,7 +115,7 @@
 			dependencies: [
 				"56766749439CD7E0"
 				"5361A9865C6547F4"
-				"69DB58E1CD20ED2B"
+				"32532A558BC7C731"
 			]
 			id: "3E885ACD84B8FF4F"
 			rewards: [{
@@ -124,7 +130,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -139,8 +145,8 @@
 				item: "mekanism:basic_universal_cable"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.5d
+			x: 2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["69DB58E1CD20ED2B"]
@@ -176,6 +182,7 @@
 		{
 			dependencies: ["3CADA01B0663BC89"]
 			id: "443EFDB717391CAB"
+			size: 0.7d
 			tasks: [
 				{
 					id: "0B88A8A05FEF191E"
@@ -193,12 +200,13 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -6.0d
+			x: 0.35d
+			y: -3.5d
 		}
 		{
 			dependencies: ["443EFDB717391CAB"]
 			id: "468F39E388EFC1E2"
+			size: 0.7d
 			tasks: [
 				{
 					id: "30A6C1613E1F7FC9"
@@ -216,30 +224,28 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -8.0d
+			x: -0.7d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3CADA01B0663BC89"]
 			id: "76433BADB401CAC9"
-			tasks: [{
-				id: "1D5E547DDFA8B3F3"
-				item: "immersiveengineering:wirecoil_copper_ins"
-				type: "item"
-			}]
-			x: 2.221428571428568d
-			y: -5.142857142857146d
-		}
-		{
-			dependencies: ["443EFDB717391CAB"]
-			id: "586779209CF96852"
-			tasks: [{
-				id: "1FEAF5D8BB464E3A"
-				item: "immersiveengineering:wirecoil_electrum_ins"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -7.0d
+			size: 0.7d
+			tasks: [
+				{
+					id: "1D5E547DDFA8B3F3"
+					item: "immersiveengineering:wirecoil_copper_ins"
+					type: "item"
+				}
+				{
+					id: "730C39230E622119"
+					item: "immersiveengineering:wirecoil_electrum_ins"
+					type: "item"
+				}
+			]
+			title: "Insulation"
+			x: -0.19999999999998863d
+			y: -4.200000000000003d
 		}
 		{
 			dependencies: ["69DB58E1CD20ED2B"]

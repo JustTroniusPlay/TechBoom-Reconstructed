@@ -11,13 +11,19 @@
 			id: "0E64812A0919423B"
 			linked_quest: "031595756B809ADC"
 			x: 0.5d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
-			id: "7CFDEAFF4927E1C3"
-			linked_quest: "79EF5B4E470ACDB4"
-			x: -7.0d
-			y: -9.0d
+			id: "3D33B9AA5FFA5932"
+			linked_quest: "4EC3B664D62760BE"
+			x: 4.0d
+			y: -14.0d
+		}
+		{
+			id: "0F18B64A5167B803"
+			linked_quest: "7BFF886E57F3D543"
+			x: -2.0d
+			y: -6.0d
 		}
 	]
 	quests: [
@@ -679,6 +685,7 @@
 			dependencies: [
 				"61DA87FD5E45D2BC"
 				"7A0C939E0FE540EC"
+				"15C30310B03E4F79"
 			]
 			icon: "gtceu:glass_dust"
 			id: "5361A9865C6547F4"
@@ -696,6 +703,7 @@
 					type: "item"
 				}
 			]
+			size: 1.2d
 			tasks: [
 				{
 					id: "2A1BA25DA1C88106"
@@ -714,23 +722,8 @@
 				}
 			]
 			title: "Getting glassed"
-			x: -2.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"15C30310B03E4F79"
-				"10E87B6699909383"
-			]
-			description: ["Aside from making alloys it can work with steel molds to create some components, blocks or nuggets from ingots.  "]
-			id: "61DA87FD5E45D2BC"
-			tasks: [{
-				id: "4A05A522EC33C3F6"
-				item: "gtceu:lp_steam_alloy_smelter"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -8.0d
+			x: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7D3FA2BBD1033FE9"]
@@ -745,6 +738,7 @@
 				"Unfotunately they can't auto-output or input items by themselves. You need to use additional means like hoppers or other ways. Starting with Low Voltage machinery or some other Redstone Flux machines it not gonna be a problem anymore."
 			]
 			id: "15C30310B03E4F79"
+			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
 				id: "6E73CC1F8E9C461D"
@@ -752,8 +746,8 @@
 				type: "item"
 			}]
 			title: "Start of steam age!"
-			x: -1.5d
-			y: -10.5d
+			x: -0.9353741496598644d
+			y: -11.029761904761898d
 		}
 		{
 			dependencies: [
@@ -761,8 +755,9 @@
 				"1843506F57D72661"
 			]
 			description: ["Alloy Kiln can create alloys easily by just using burnabel solid fuel. build 4x4 cube and click with Engineer's Hammer to activate it."]
-			icon: "immersiveengineering:alloybrick"
+			icon: "immersiveengineering:alloy_smelter"
 			id: "10E87B6699909383"
+			size: 1.3d
 			subtitle: "No more dusts!(for now)"
 			tasks: [
 				{
@@ -816,8 +811,8 @@
 				}
 			]
 			title: "First Coke Oven"
-			x: 4.5d
-			y: -7.5d
+			x: 5.80442176870748d
+			y: -7.85d
 		}
 		{
 			dependencies: ["51D2A2A99A671311"]
@@ -847,8 +842,8 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: -8.0d
+			x: 6.80442176870748d
+			y: -8.35d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -903,45 +898,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["4EC3B664D62760BE"]
-			description: [
-				"By charging normal compass you can seek for fallen meteors. "
-				""
-				"Inside one of them you will find presses and certus quartz to start making components for your first digital storage system."
-				""
-				"Press 'G' on Certus Quarts Cluster to read important info about the buddings."
-			]
-			icon: "ae2:sky_stone_block"
-			id: "4879433BBEEF8352"
-			tasks: [
-				{
-					id: "19ED3647BB91E7C8"
-					item: "ae2:charger"
-					type: "item"
-				}
-				{
-					id: "051424CB82D92F48"
-					item: "ae2:meteorite_compass"
-					type: "item"
-				}
-				{
-					id: "33EDB4874960F550"
-					item: "ae2:certus_quartz_crystal"
-					type: "item"
-				}
-				{
-					id: "1F189006AD4FE158"
-					item: "ae2:quartz_cluster"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Celestial Objects"
-			x: 3.5d
-			y: -13.5d
-		}
-		{
-			dependencies: ["34D049FD2BF84E84"]
+			dependencies: ["10E87B6699909383"]
 			description: [
 				"Andesite Alloy used in all early Create machines and kinetical components."
 				""
@@ -963,8 +920,8 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 6.75d
-			y: -1.5d
+			x: 1.5d
+			y: -13.5d
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
@@ -1108,85 +1065,8 @@
 				}
 			]
 			title: "Little upgrades"
-			x: 3.4071428571428584d
+			x: 3.5d
 			y: -6.5d
-		}
-		{
-			dependencies: [
-				"156FF337D16F88B3"
-				"319CEF2BDD679CF5"
-				"7DC8D43AB8C12697"
-			]
-			description: ["Lets make some steel! Blast Furnace can use normal coal, but Coke Coal is more effective. "]
-			icon: "gtceu:primitive_blast_furnace"
-			id: "3CD05E2E5661246B"
-			rewards: [{
-				count: 16
-				id: "0312BB4628AC0288"
-				item: "gtceu:firebricks"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "761327595B2D9F9E"
-					item: "gtceu:primitive_blast_furnace"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "25F5560C4D42E378"
-					item: { Count: 16, id: "gtceu:firebricks" }
-					type: "item"
-				}
-			]
-			title: "Steel Pipeline"
-			x: -5.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["3CD05E2E5661246B"]
-			id: "7A0C939E0FE540EC"
-			shape: "octagon"
-			size: 1.5d
-			tasks: [{
-				id: "6EA4E40B4C5F24B0"
-				item: "thermal:steel_ingot"
-				type: "item"
-			}]
-			title: "Industrialization"
-			x: -5.25d
-			y: -6.75d
-		}
-		{
-			dependencies: [
-				"156FF337D16F88B3"
-				"61DA87FD5E45D2BC"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"Wrought iron is tougher version of vanilla metal. It will be used in low voltage machinery, but for now it can serve you to make stronger tools."
-				""
-				"Its making procces kinda tricky tho. You need to smelt iron nuggets to get wrought iron one and then use compressor or alloy smelter with ingot casting mold to get them."
-				""
-				"Additionally if you will use Wrought Iron in Blast Furnace instead of normal one, the blasting speed will increase!"
-			]
-			icon: "gtceu:wrought_iron_ingot"
-			id: "5C4DA67C07C8E9B7"
-			tasks: [
-				{
-					id: "26166249294BE433"
-					item: "gtceu:wrought_iron_ingot"
-					type: "item"
-				}
-				{
-					id: "0357158F497C7E3E"
-					item: "gtceu:wrought_iron_nugget"
-					type: "item"
-				}
-			]
-			title: "Trained Iron"
-			x: -4.0d
-			y: -8.5d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -1209,8 +1089,8 @@
 				type: "item"
 			}]
 			title: "Mining Hammer"
-			x: 4.407142857142858d
-			y: -4.5d
+			x: 4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7B81DDC0AA14EF81"]
@@ -1234,7 +1114,7 @@
 				type: "item"
 			}]
 			title: "Simple multitool"
-			x: 5.0d
+			x: 5.5d
 			y: -6.5d
 		}
 		{
@@ -1315,43 +1195,8 @@
 				title: "Manual for engineering"
 				type: "checkmark"
 			}]
-			x: 6.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["15C30310B03E4F79"]
-			description: [""]
-			id: "156FF337D16F88B3"
-			tasks: [{
-				id: "41FA3EBCCC16C424"
-				item: "gtceu:lp_steam_compressor"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["15C30310B03E4F79"]
-			description: ["Can grind things into dusts. Most notable use to grind down raw ores and getting two times more. "]
-			id: "7DC8D43AB8C12697"
-			tasks: [{
-				id: "33565194B1EBDA18"
-				item: "gtceu:lp_steam_macerator"
-				type: "item"
-			}]
-			x: -4.5d
-			y: -11.5d
-		}
-		{
-			dependencies: ["15C30310B03E4F79"]
-			id: "793ABF03A8827044"
-			tasks: [{
-				id: "6AF61FE6D49FBB10"
-				item: "gtceu:lp_steam_forge_hammer"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -13.0d
+			x: 4.30442176870748d
+			y: -8.35d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -1390,8 +1235,8 @@
 				item: "forestry:engine_biogas"
 				type: "item"
 			}]
-			x: 2.1496598639455655d
-			y: -8.801020408163268d
+			x: 3.454081632653046d
+			y: -9.151020408163268d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -1416,22 +1261,22 @@
 				}
 			]
 			title: "Kinetic clean energy"
-			x: 5.5d
-			y: -9.5d
+			x: 6.80442176870748d
+			y: -9.85d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
 			description: ["Material for advacned Create components."]
 			id: "1A155790CD83B2A7"
 			shape: "rsquare"
-			size: 1.5d
+			size: 1.2d
 			tasks: [{
 				id: "73761126A3FD8814"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: 0.75d
-			y: -15.0d
+			x: 0.0d
+			y: -12.6d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -1443,8 +1288,8 @@
 				type: "item"
 			}]
 			title: "Creosote to energy"
-			x: 4.435374149659857d
-			y: -9.188775510204081d
+			x: 5.739795918367338d
+			y: -9.538775510204081d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -1476,8 +1321,8 @@
 				item: "thermal:invar_ingot"
 				type: "item"
 			}]
-			x: 2.55d
-			y: -11.049999999999999d
+			x: 3.4d
+			y: -12.75d
 		}
 		{
 			dependencies: [
@@ -1491,49 +1336,8 @@
 				item: "thermal:dynamo_magmatic"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -10.0d
-		}
-		{
-			dependencies: [
-				"15C30310B03E4F79"
-				"4B31C89E0FA58CE0"
-			]
-			description: ["Will convert any steam into Forge Energy units. And by itself not generate pollution."]
-			id: "4EC3B664D62760BE"
-			tasks: [{
-				id: "12A8DDB8EEE3B3E8"
-				item: "systeams:steam_dynamo"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -12.5d
-		}
-		{
-			dependencies: ["4EC3B664D62760BE"]
-			description: [
-				"This type of boilers have different variations depending on its size. Maximum amount fireboxes are 3x3. With each size level amount of minimum boilers grows. You can start with 1 firebox and boiler."
-				""
-				"They much more efficent than bronze and high pressure ones, but need fuel and &lconstant supply of WATER.&r If you will not provide it and boiler get too heated, trying adding more will make it EXPLODE. "
-			]
-			icon: "railcraft:solid_fueled_firebox"
-			id: "6AF4C17E9C8FF9DC"
-			tasks: [
-				{
-					id: "5257950F383FFE22"
-					item: "railcraft:solid_fueled_firebox"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "215F0749F2FEB357"
-					item: "railcraft:low_pressure_steam_boiler_tank"
-					type: "item"
-				}
-			]
-			title: "Modular Boilers"
-			x: 4.5d
-			y: -12.5d
+			x: 3.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
@@ -1581,222 +1385,8 @@
 					type: "item"
 				}
 			]
-			x: -2.25d
-			y: 2.25d
-		}
-		{
-			dependencies: ["6AF4C17E9C8FF9DC"]
-			description: ["Uses lava and creosote oil instead of solid fuel."]
-			id: "311D638942ACCDBD"
-			size: 0.6d
-			tasks: [{
-				id: "35AF971D08CA0D94"
-				item: "railcraft:fluid_fueled_firebox"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -11.7d
-		}
-		{
-			dependencies: [
-				"7DC8D43AB8C12697"
-				"319CEF2BDD679CF5"
-			]
-			description: ["Can grind multiplie items at the same time."]
-			icon: "gtceu:steam_grinder"
-			id: "6D95B9D2E5EB331E"
-			tasks: [
-				{
-					id: "59D2D09C3865912F"
-					item: "gtceu:steam_grinder"
-					type: "item"
-				}
-				{
-					count: 22L
-					id: "30684FC8DA21D96C"
-					item: { Count: 22, id: "gtceu:steam_machine_casing" }
-					type: "item"
-				}
-				{
-					id: "43A4F4D56BD15C2C"
-					item: "gtceu:steam_input_hatch"
-					type: "item"
-				}
-				{
-					id: "293ECE2DD8DA5D0C"
-					item: "gtceu:steam_output_bus"
-					type: "item"
-				}
-				{
-					id: "189B12E1D7A435B8"
-					item: "gtceu:steam_input_bus"
-					type: "item"
-				}
-			]
-			x: -4.5d
-			y: -12.5d
-		}
-		{
-			dependencies: [
-				"61DA87FD5E45D2BC"
-				"319CEF2BDD679CF5"
-			]
-			description: ["Multiblock version of alloy smeltery."]
-			icon: "steamadditions:steam_foundry"
-			id: "5303D30192D7463A"
-			tasks: [
-				{
-					id: "56271D842D9CAE50"
-					item: "steamadditions:steam_foundry"
-					type: "item"
-				}
-				{
-					count: 14L
-					id: "149822B64B40C2F0"
-					item: { Count: 14, id: "gtceu:steam_machine_casing" }
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "6B3339F967A54540"
-					item: { Count: 8, id: "gtceu:bronze_firebox_casing" }
-					type: "item"
-				}
-				{
-					id: "4430020089784574"
-					item: "gtceu:steam_input_hatch"
-					type: "item"
-				}
-				{
-					id: "7D2B3DD453DD806E"
-					item: "gtceu:steam_input_bus"
-					type: "item"
-				}
-				{
-					id: "668D5129E65D681A"
-					item: "gtceu:steam_output_bus"
-					type: "item"
-				}
-			]
-			x: -3.5d
-			y: -7.5d
-		}
-		{
-			dependencies: [
-				"15C30310B03E4F79"
-				"319CEF2BDD679CF5"
-			]
-			description: [
-				"Some grinded dusts, for example Redstone, need to be washed after grind proccesing to become useful or smelted to get ingots."
-				""
-				"You also can throw them into the cauldron with water manually."
-			]
-			icon: "steamadditions:steam_separator"
-			id: "37EE9AB51014DCBA"
-			tasks: [
-				{
-					id: "505700760D3382BA"
-					item: "steamadditions:steam_separator"
-					type: "item"
-				}
-				{
-					count: 18L
-					id: "096F0F372F25D6F0"
-					item: { Count: 18, id: "gtceu:steam_machine_casing" }
-					type: "item"
-				}
-				{
-					id: "295D5313CA587714"
-					item: "gtceu:steam_input_hatch"
-					type: "item"
-				}
-				{
-					id: "3871FF62E82FC2ED"
-					item: "gtceu:steam_input_bus"
-					type: "item"
-				}
-				{
-					id: "2E5CA82252505532"
-					item: "gtceu:steam_output_bus"
-					type: "item"
-				}
-			]
-			x: -3.0d
-			y: -12.0d
-		}
-		{
-			dependencies: ["15C30310B03E4F79"]
-			id: "625BBC103C7A0FCE"
-			tasks: [{
-				id: "3CB972427251F8DE"
-				item: "gtceu:lp_steam_furnace"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -12.0d
-		}
-		{
-			dependencies: [
-				"625BBC103C7A0FCE"
-				"319CEF2BDD679CF5"
-			]
-			description: ["Can smelt 8 items at a time using Steam. "]
-			icon: "gtceu:steam_oven"
-			id: "35DDCEC2CECEF4D6"
-			tasks: [
-				{
-					id: "25EE2E50D1FC18AA"
-					item: "gtceu:steam_oven"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "6867920997B1C73B"
-					item: { Count: 8, id: "gtceu:steam_machine_casing" }
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "7611FEC59679D87E"
-					item: { Count: 8, id: "gtceu:bronze_firebox_casing" }
-					type: "item"
-				}
-				{
-					id: "369B11FA5A189D8E"
-					item: "gtceu:steam_input_hatch"
-					type: "item"
-				}
-				{
-					id: "349D34F3BE728D80"
-					item: "gtceu:steam_input_bus"
-					type: "item"
-				}
-				{
-					id: "6C9BAC375188D361"
-					item: "gtceu:steam_output_bus"
-					type: "item"
-				}
-			]
-			x: -1.5d
-			y: -13.0d
-		}
-		{
-			dependencies: ["15C30310B03E4F79"]
-			description: [
-				"Many Gregtech multiblocks can share walls. Thats mean you can save resources and space if you put them between intersecting casings. &oJust remember&r that inputs and outputs busses must not connect to two specific machines. At the same time Steam Input Hatches can fuel both multiblocks."
-				""
-				"You can add more than 1 input or output busses if you want."
-			]
-			hide_dependent_lines: true
-			icon: "gtceu:steam_machine_casing"
-			id: "319CEF2BDD679CF5"
-			tasks: [{
-				id: "00B3AF4C6DEC8483"
-				title: "Wall Sharing!"
-				type: "checkmark"
-			}]
-			x: -3.0d
-			y: -9.5d
+			x: -3.75d
+			y: 0.75d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -1853,8 +1443,8 @@
 				}
 			]
 			title: "Multiblock Tank"
-			x: 7.153061224489811d
-			y: -8.0d
+			x: 8.457482993197292d
+			y: -8.35d
 		}
 		{
 			dependencies: ["173F0498DAC0D9CB"]
@@ -2048,8 +1638,8 @@
 				item: "thermal:machine_frame"
 				type: "item"
 			}]
-			x: -4.564625850340143d
-			y: -0.4285714285714235d
+			x: -3.75d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7B81DDC0AA14EF81"]
@@ -2098,15 +1688,15 @@
 			y: -5.568877551020414d
 		}
 		{
-			dependencies: ["56766749439CD7E0"]
+			dependencies: ["69DB58E1CD20ED2B"]
 			id: "1BB3AB8685428FB7"
 			tasks: [{
 				id: "08EAFEAA5BE16F17"
 				item: "thermal:tinker_bench"
 				type: "item"
 			}]
-			x: 7.6530612244897895d
-			y: -4.977040816326529d
+			x: 6.80442176870748d
+			y: -12.85d
 		}
 		{
 			dependencies: ["1BB3AB8685428FB7"]
@@ -2120,8 +1710,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.6530612244897895d
-			y: -5.977040816326529d
+			x: 6.30442176870748d
+			y: -14.35d
 		}
 		{
 			dependencies: ["1BB3AB8685428FB7"]
@@ -2135,8 +1725,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.6530612244897895d
-			y: -5.477040816326529d
+			x: 7.30442176870748d
+			y: -14.35d
 		}
 		{
 			dependencies: ["1BB3AB8685428FB7"]
@@ -2161,8 +1751,8 @@
 					type: "item"
 				}
 			]
-			x: 7.6530612244897895d
-			y: -3.9770408163265287d
+			x: 8.304421768707481d
+			y: -12.85d
 		}
 		{
 			dependencies: ["56D8B89369ABF606"]
@@ -2180,8 +1770,8 @@
 					type: "item"
 				}
 			]
-			x: 8.65306122448979d
-			y: -5.477040816326529d
+			x: 9.304421768707481d
+			y: -13.35d
 		}
 		{
 			dependencies: ["56D8B89369ABF606"]
@@ -2191,8 +1781,8 @@
 				item: "thermal:upgrade_augment_1"
 				type: "item"
 			}]
-			x: 8.65306122448979d
-			y: -4.477040816326529d
+			x: 8.304421768707481d
+			y: -13.85d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -2284,8 +1874,8 @@
 				title: "Energy Management"
 				type: "checkmark"
 			}]
-			x: 4.035714285714285d
-			y: -10.653571428571425d
+			x: 5.340136054421765d
+			y: -11.003571428571425d
 		}
 		{
 			dependencies: ["1836959FBE9CC719"]
@@ -2376,41 +1966,6 @@
 			y: -3.6527210884353494d
 		}
 		{
-			dependencies: ["61DA87FD5E45D2BC"]
-			id: "193EDD7B079CF150"
-			subtitle: "No zombies on my lawn!"
-			tasks: [{
-				id: "32547714D137833C"
-				item: "torchmaster:megatorch"
-				type: "item"
-			}]
-			x: -0.49829931972789154d
-			y: -6.570578231292508d
-		}
-		{
-			dependencies: ["193EDD7B079CF150"]
-			id: "08772C8BA5BE9DB8"
-			tasks: [{
-				id: "322C360866FB990B"
-				item: "torchmaster:dreadlamp"
-				type: "item"
-			}]
-			x: -0.4880952380952408d
-			y: -5.624999999999993d
-		}
-		{
-			dependencies: ["193EDD7B079CF150"]
-			id: "0B87BE74ACF8791E"
-			subtitle: "And here comes the sun!"
-			tasks: [{
-				id: "7BD176196E10776F"
-				item: "torchmaster:feral_flare_lantern"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -7.5d
-		}
-		{
 			dependencies: ["25951FDCB7908145"]
 			description: [""]
 			id: "49BFD7BD22B74CBD"
@@ -2439,8 +1994,8 @@
 				}
 			]
 			title: "Going underwater."
-			x: 7.5d
-			y: -3.0d
+			x: 1.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["49BFD7BD22B74CBD"]
@@ -2470,8 +2025,8 @@
 					type: "item"
 				}
 			]
-			x: 7.7d
-			y: -2.1d
+			x: 0.7d
+			y: -16.099999999999998d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -2626,8 +2181,8 @@
 				}
 			]
 			title: "Zinc Things"
-			x: 6.2959183673469425d
-			y: -2.5459183673469354d
+			x: 0.5d
+			y: -14.5d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2763,8 +2318,8 @@
 				type: "item"
 			}]
 			title: "Bane of Endermans"
-			x: 4.499999999999993d
-			y: -5.446428571428569d
+			x: 2.285714285714292d
+			y: -5.0d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2869,26 +2424,8 @@
 				}
 			]
 			title: "Portable crates"
-			x: 4.047619047619037d
-			y: -8.331632653061227d
-		}
-		{
-			dependencies: ["69DB58E1CD20ED2B"]
-			id: "32EB398D4A9D6EAB"
-			tasks: [
-				{
-					id: "5AA90B81E6BA9291"
-					item: "littlelogistics:vessel_charger"
-					type: "item"
-				}
-				{
-					id: "04854315B685597D"
-					item: "littlelogistics:energy_tug"
-					type: "item"
-				}
-			]
-			x: 5.5d
-			y: -11.0d
+			x: 5.352040816326517d
+			y: -8.681632653061227d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -2905,21 +2442,6 @@
 			}]
 			x: 2.3520408163265287d
 			y: -5.877210884353715d
-		}
-		{
-			dependencies: ["7BFF886E57F3D543"]
-			id: "7067FCA367EB961F"
-			tasks: [{
-				id: "07095F1ED998BA9C"
-				item: {
-					Count: 1
-					id: "thermal:fluid_reservoir"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -5.5d
-			y: -4.0d
 		}
 		{
 			dependencies: ["49BFD7BD22B74CBD"]
@@ -2978,11 +2500,470 @@
 				}
 			]
 			title: "Diving Suit"
-			x: 8.5d
+			x: 1.5d
+			y: -17.0d
+		}
+		{
+			dependencies: ["3129F95624CBEDD4"]
+			id: "4619627EEEE566A4"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5057F8074A16534B"
+				item: "forestry:carpenter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["031595756B809ADC"]
+			description: ["Cans can store fluids as a item. One tin can = 1 bucket. But you can't put liquid in the world like buckets."]
+			id: "784AEC9BF8755F95"
+			tasks: [{
+				id: "5180B590AD80BFD9"
+				item: "forestry:can"
+				type: "item"
+			}]
+			title: "Stackable Liquids"
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"7BF7C8E5AFC2EE6A"
+				"04A0F70827AA6155"
+			]
+			id: "123053D8EB9279CF"
+			tasks: [{
+				id: "70021680F9844739"
+				item: "thermal:dynamo_lapidary"
+				type: "item"
+			}]
+			x: -0.8928571428571459d
+			y: -1.6785714285714306d
+		}
+		{
+			dependencies: [
+				"25B2030958956699"
+				"7A0C939E0FE540EC"
+			]
+			id: "5169668687940129"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "6EB7A50C08AEA2E0"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["4B31C89E0FA58CE0"]
+			description: [
+				"Work as automatic stone blocks type farm. "
+				""
+				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
+			]
+			id: "016889850869B51A"
+			size: 0.7d
+			tasks: [{
+				id: "1AFF19B5C1CD91F1"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			title: "Stone farming"
+			x: 4.2d
+			y: -11.9d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: ["Have additional storage inside to keep some items and components."]
+			id: "69057739C5B7EB11"
+			tasks: [{
+				id: "50CBFA6876FEF895"
+				item: "immersiveengineering:craftingtable"
+				type: "item"
+			}]
+			x: 8.804421768707481d
+			y: -9.85d
+		}
+		{
+			dependencies: ["69057739C5B7EB11"]
+			id: "5CED0B2F5E3DE3B1"
+			tasks: [{
+				id: "33D8A249D8783B83"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			x: 8.304421768707481d
+			y: -10.85d
+		}
+		{
+			dependencies: ["69057739C5B7EB11"]
+			id: "169058626B01552F"
+			tasks: [{
+				id: "3BEEF1CB8C255FDE"
+				item: "immersiveengineering:circuit_table"
+				type: "item"
+			}]
+			x: 9.304421768707481d
+			y: -10.85d
+		}
+		{
+			dependencies: [
+				"5CED0B2F5E3DE3B1"
+				"69DB58E1CD20ED2B"
+			]
+			id: "6E68DB6406FB4D3F"
+			tasks: [{
+				id: "2989E62548390D70"
+				item: "immersiveengineering:charging_station"
+				type: "item"
+			}]
+			x: 8.804421768707481d
+			y: -11.85d
+		}
+		{
+			dependencies: ["6099D2F4EEE9112A"]
+			description: [
+				"Can store additional items, tools and even food. Shift-rightclick to place and pick up it. You can even put it into the Tool Belt slots. "
+				""
+				"Wiring slots are for IE wires and connectors."
+			]
+			id: "797391FB5DEDC3D1"
+			size: 0.7d
+			tasks: [{
+				id: "16B54E554582D684"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 23
+						}
+					}
+					id: "immersiveengineering:toolbox"
+				}
+				type: "item"
+			}]
+			x: 4.80442176870748d
+			y: -9.35d
+		}
+		{
+			dependencies: ["521B2505E5C81E16"]
+			description: ["You can upgrade your windmills by clicking them with tough fabric."]
+			id: "50BA9C41804AE9A2"
+			size: 0.7d
+			tasks: [{
+				id: "462801C5FA1E27FA"
+				item: "immersiveengineering:hemp_fabric"
+				type: "item"
+			}]
+			x: 7.442176870748301d
+			y: -10.522959183673462d
+		}
+		{
+			dependencies: ["34D049FD2BF84E84"]
+			description: [
+				"&lImmersive Geology&r add its own type of veins that can be used to get additional or alternative resources income. But unlike most of GregTech ones you need to crush them manually, compile and then use &oCrude Bloomery&r to get your ingots, at least before you will gate upgraded Blast Furnace."
+				""
+				"Geology ores have variants: poor, normal and rich. The better the gem the more crushed ore you will get."
+				""
+				"{@pagebreak}"
+				"Aside from using Geology normal ways of proccesing ores, with help of &lForge Hammer&r or &lMechanical Press&r you can automate the procces of getting dirty crushing ores. "
+				""
+				"After that with help of &lSteam Separator&r or simple mixer you can convert dirty crushed ores into ready to smelt ones which you can put into &lTinker's Smeltery&r."
+			]
+			id: "65E0926A806B0CE7"
+			tasks: [
+				{
+					id: "410653CF57F0D340"
+					item: {
+						Count: 1
+						id: "immersivegeology:hammer_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "599F4A4F76B0E513"
+					item: {
+						Count: 1
+						id: "immersivegeology:hammer_bronze"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Crude Ore Harvesting"
+			x: 4.5d
 			y: -2.0d
 		}
 		{
-			dependencies: ["49BFD7BD22B74CBD"]
+			dependencies: ["65E0926A806B0CE7"]
+			description: ["Early method to get resources from Geology ores. &oVery ineffective tho&r, use minimum of 2 ores per ingot or even more. But everyone start with something."]
+			icon: "immersivegeology:bloomery"
+			id: "20151FC95EA7B03D"
+			tasks: [
+				{
+					id: "1F2CEC233F74D0AE"
+					item: "immersivegeology:bloomery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "4E4B705A6528A138"
+					item: { Count: 12, id: "immersivegeology:storage_block_refractory_brick" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["65E0926A806B0CE7"]
+			description: ["Will show you what ores are up to 3 max around you in near chunks."]
+			id: "279ADFC8F9F0F9B8"
+			tasks: [{
+				id: "2C97DD25B3532A67"
+				item: {
+					Count: 1
+					id: "immersivegeology:prospector_kit"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["69DB58E1CD20ED2B"]
+			description: [
+				"By charging normal compass you can seek for fallen meteors. "
+				""
+				"Inside one of them you will find presses and certus quartz to start making components for your first digital storage system."
+				""
+				"Press 'G' on Certus Quarts Cluster to read important info about the buddings."
+			]
+			icon: "ae2:sky_stone_block"
+			id: "4879433BBEEF8352"
+			tasks: [
+				{
+					id: "19ED3647BB91E7C8"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					id: "051424CB82D92F48"
+					item: "ae2:meteorite_compass"
+					type: "item"
+				}
+				{
+					id: "33EDB4874960F550"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "1F189006AD4FE158"
+					item: "ae2:quartz_cluster"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Celestial Objects"
+			x: 5.3797619047619065d
+			y: -13.386734693877564d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "08772C8BA5BE9DB8"
+			tasks: [{
+				id: "322C360866FB990B"
+				item: "torchmaster:dreadlamp"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "0B87BE74ACF8791E"
+			subtitle: "And here comes the sun!"
+			tasks: [{
+				id: "7BD176196E10776F"
+				item: "torchmaster:feral_flare_lantern"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["51D2A2A99A671311"]
+			icon: "gtceu:coke_oven"
+			id: "49EAA9A6F41A7551"
+			tasks: [
+				{
+					id: "06A693B62FDAE319"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "0CBC08D5914738D8"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7CD3A054FEF6769C"
+					item: "gtceu:coke_oven_hatch"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 6.823639455782299d
+			y: -7.288095238095245d
+		}
+		{
+			dependencies: ["49EAA9A6F41A7551"]
+			id: "575BDE04271E94D1"
+			tasks: [{
+				count: 27L
+				id: "2F40390FDF8B0340"
+				item: { Count: 27, id: "railcraft:coke_oven_bricks" }
+				type: "item"
+			}]
+			title: "Industrial Coke Oven"
+			x: 6.847448979591832d
+			y: -6.19285714285715d
+		}
+		{
+			dependencies: ["1A155790CD83B2A7"]
+			description: ["Brass armor can protect you from piglins like gold armor."]
+			id: "2DF67CBA16DF2242"
+			tasks: [
+				{
+					id: "04E89917BD3383A9"
+					item: {
+						Count: 1
+						id: "create_sa:brass_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "25952DEDC79C47A2"
+					item: {
+						Count: 1
+						id: "create_sa:brass_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "255D954E82191E80"
+					item: {
+						Count: 1
+						id: "create_sa:brass_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "257B49CF0EFAAACB"
+					item: {
+						Count: 1
+						id: "create_sa:brass_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "06874A7B159EABB8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"undermod:capability_item_life_leech": {
+								power: 1
+							}
+						}
+						id: "create_sa:brass_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "15DB9ED164189460"
+					item: {
+						Count: 1
+						id: "create_sa:brass_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E6A4FCB25B84A37"
+					item: {
+						Count: 1
+						id: "create_sa:brass_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "61AB021D6CB3CA0F"
+					item: {
+						Count: 1
+						id: "create_sa:brass_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "534652793C4E2F78"
+					item: {
+						Count: 1
+						id: "create_sa:brass_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Brass things"
+			x: -1.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["7BFF886E57F3D543"]
 			description: ["Protects againts hazards like fire and even lava. "]
 			icon: {
 				Count: 1
@@ -3039,381 +3020,107 @@
 				}
 			]
 			title: "Hazmat Suit"
-			x: 8.5d
-			y: -3.0d
+			x: -1.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["3129F95624CBEDD4"]
-			id: "4619627EEEE566A4"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "5057F8074A16534B"
-				item: "forestry:carpenter"
-				type: "item"
-			}]
-			x: 2.9251700680271995d
-			y: -7.903061224489797d
-		}
-		{
-			dependencies: ["5361A9865C6547F4"]
-			id: "7BFF886E57F3D543"
+			dependencies: ["4879433BBEEF8352"]
+			icon: "ae2:inscriber"
+			id: "4A8233ADB6406DA9"
 			tasks: [
 				{
-					id: "03F71DC4A5E1A1BD"
-					item: "thermal:rubber"
+					id: "3B43AE49CABA5141"
+					item: "ae2:inscriber"
 					type: "item"
 				}
 				{
-					id: "56A9CEBC3806830D"
-					item: "thermal:cured_rubber"
+					id: "0AA69E31F8CCE46A"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "664C4D46FEDD5789"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "6CEBE4F7B9183079"
+					item: "ae2:engineering_processor"
 					type: "item"
 				}
 			]
-			title: "Manual Rubber"
-			x: -4.5d
-			y: -3.0d
+			x: 5.0d
+			y: -15.0d
 		}
 		{
-			dependencies: ["7BFF886E57F3D543"]
-			id: "423F84ADDE1CC9ED"
-			tasks: [{
-				id: "5718A24DF83ECC71"
-				item: {
-					Count: 1
-					id: "thermal:potion_infuser"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -4.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["7BFF886E57F3D543"]
-			id: "5E8C6076F2C33137"
-			tasks: [{
-				id: "4FD3CE150526A9D4"
-				item: {
-					Count: 1
-					id: "thermal:potion_quiver"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -5.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["7BFF886E57F3D543"]
-			id: "518089C9998EBFF8"
-			tasks: [{
-				id: "7F8CAB3D92F12540"
-				item: {
-					Count: 1
-					id: "thermal:energy_cell"
-					tag: {
-						BlockEntityTag: {
-							Energy: 0
-							EnergyMax: 1000000
-							EnergyRecv: 1000
-							EnergySend: 1000
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -4.5714285714285765d
-			y: -1.6607142857142847d
-		}
-		{
-			dependencies: ["031595756B809ADC"]
-			description: ["Cans can store fluids as a item. One tin can = 1 bucket. But you can't put liquid in the world like buckets."]
-			id: "784AEC9BF8755F95"
-			tasks: [{
-				id: "5180B590AD80BFD9"
-				item: "forestry:can"
-				type: "item"
-			}]
-			title: "Stackable Liquids"
-			x: 0.5d
-			y: -4.5d
-		}
-		{
-			dependencies: [
-				"7BF7C8E5AFC2EE6A"
-				"04A0F70827AA6155"
-			]
-			id: "123053D8EB9279CF"
-			tasks: [{
-				id: "70021680F9844739"
-				item: "thermal:dynamo_lapidary"
-				type: "item"
-			}]
-			x: -0.8928571428571459d
-			y: -1.6785714285714306d
-		}
-		{
-			dependencies: [
-				"25B2030958956699"
-				"7A0C939E0FE540EC"
-			]
-			id: "5169668687940129"
-			shape: "rsquare"
+			dependencies: ["4A8233ADB6406DA9"]
+			icon: "ae2:drive"
+			id: "540D62BE372AE7D1"
+			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				id: "6EB7A50C08AEA2E0"
-				item: "mekanism:metallurgic_infuser"
-				type: "item"
-			}]
-			x: -8.25d
-			y: -1.5d
+			subtitle: "Who needs item sorting?"
+			tasks: [
+				{
+					id: "07BF7D74DD8A3B9B"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "074050C53154702C"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "473F8D6510E53CA6"
+					item: "ae2:terminal"
+					type: "item"
+				}
+				{
+					id: "7229AFD712C4987A"
+					item: "ae2:crafting_terminal"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "09C8561C6B735270"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+			]
+			title: "Digital Storage"
+			x: 5.0d
+			y: -16.5d
 		}
 		{
-			dependencies: ["4B31C89E0FA58CE0"]
-			description: [
-				"Work as automatic stone blocks type farm. "
-				""
-				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
+			dependencies: ["540D62BE372AE7D1"]
+			id: "799F7F64000A3084"
+			tasks: [{
+				id: "7EE3EA9812EAF172"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -16.5d
+		}
+		{
+			dependencies: [
+				"799F7F64000A3084"
+				"0852CB10008D7CDB"
+				"7B289C03327D9227"
 			]
-			id: "016889850869B51A"
+			id: "5B16DA7287A8ABFE"
 			size: 0.7d
 			tasks: [{
-				id: "1AFF19B5C1CD91F1"
-				item: "thermal:device_rock_gen"
-				type: "item"
-			}]
-			title: "Stone farming"
-			x: 1.7999999999999972d
-			y: -11.475000000000001d
-		}
-		{
-			dependencies: ["7BFF886E57F3D543"]
-			icon: "thermal:device_tree_extractor"
-			id: "4DE3A5EB02DCDC59"
-			tasks: [
-				{
-					id: "4E67081F5752155F"
-					item: "thermal:device_tree_extractor"
-					type: "item"
-				}
-				{
-					id: "7D3376A6FE7DB162"
-					item: "thermal:latex_bucket"
-					type: "item"
-				}
-			]
-			title: "Latex"
-			x: -6.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["15B5CF1F309CA82A"]
-			description: ["Have additional storage inside to keep some items and components."]
-			id: "69057739C5B7EB11"
-			tasks: [{
-				id: "50CBFA6876FEF895"
-				item: "immersiveengineering:craftingtable"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["69057739C5B7EB11"]
-			hide_dependent_lines: true
-			id: "5CED0B2F5E3DE3B1"
-			tasks: [{
-				id: "33D8A249D8783B83"
-				item: "immersiveengineering:workbench"
+				id: "2BF870DF77EE4B3D"
+				item: "createappliedkinetics:energy_provider"
 				type: "item"
 			}]
 			x: 7.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["69057739C5B7EB11"]
-			id: "169058626B01552F"
-			tasks: [{
-				id: "3BEEF1CB8C255FDE"
-				item: "immersiveengineering:circuit_table"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -10.5d
-		}
-		{
-			dependencies: [
-				"5361A9865C6547F4"
-				"5CED0B2F5E3DE3B1"
-			]
-			id: "6E68DB6406FB4D3F"
-			tasks: [{
-				id: "2989E62548390D70"
-				item: "immersiveengineering:charging_station"
-				type: "item"
-			}]
-			x: -3.352040816326536d
-			y: -1.3035714285714306d
-		}
-		{
-			dependencies: ["6099D2F4EEE9112A"]
-			description: [
-				"Can store additional items, tools and even food. Shift-rightclick to place and pick up it. You can even put it into the Tool Belt slots. "
-				""
-				"Wiring slots are for IE wires and connectors."
-			]
-			id: "797391FB5DEDC3D1"
-			size: 0.7d
-			tasks: [{
-				id: "16B54E554582D684"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 23
-						}
-					}
-					id: "immersiveengineering:toolbox"
-				}
-				type: "item"
-			}]
-			x: 3.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["521B2505E5C81E16"]
-			description: ["You can upgrade your windmills by clicking them with tough fabric."]
-			id: "50BA9C41804AE9A2"
-			size: 0.7d
-			tasks: [{
-				id: "462801C5FA1E27FA"
-				item: "immersiveengineering:hemp_fabric"
-				type: "item"
-			}]
-			x: 6.1377551020408205d
-			y: -10.172959183673463d
-		}
-		{
-			dependencies: ["15C30310B03E4F79"]
-			id: "780843C2BC813902"
-			size: 0.7d
-			tasks: [{
-				id: "63DF20CE04CE4282"
-				item: "gtceu:lp_steam_solar_boiler"
-				type: "item"
-			}]
-			x: 0.028911564625850872d
-			y: -10.017857142857153d
-		}
-		{
-			dependencies: ["15C30310B03E4F79"]
-			id: "0FCFA77A56C98B28"
-			size: 0.7d
-			tasks: [{
-				id: "250C3DA58D2315F2"
-				item: "gtceu:lp_steam_liquid_boiler"
-				type: "item"
-			}]
-			x: 0.0051020408163253705d
-			y: -10.68452380952381d
-		}
-		{
-			dependencies: ["34D049FD2BF84E84"]
-			description: [
-				"&lImmersive Geology&r add its own type of veins that can be used to get additional or alternative resources income. But unlike most of GregTech ones you need to crush them manually, compile and then use &oCrude Bloomery&r to get your ingots, at least before you will gate upgraded Blast Furnace."
-				""
-				"Geology ores have variants: poor, normal and rich. The better the gem the more crushed ore you will get."
-				""
-				"{@pagebreak}"
-				"Aside from using Geology normal ways of proccesing ores, with help of &lForge Hammer&r or &lMechanical Press&r you can automate the procces of getting dirty crushing ores. "
-				""
-				"After that with help of &lSteam Separator&r or simple mixer you can convert dirty crushed ores into ready to smelt ones which you can put into &lTinker's Smeltery&r."
-			]
-			id: "65E0926A806B0CE7"
-			tasks: [
-				{
-					id: "410653CF57F0D340"
-					item: {
-						Count: 1
-						id: "immersivegeology:hammer_stone"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "599F4A4F76B0E513"
-					item: {
-						Count: 1
-						id: "immersivegeology:hammer_bronze"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Crude Ore Harvesting"
-			x: 6.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["65E0926A806B0CE7"]
-			description: ["Early method to get resources from Geology ores. &oVery ineffective tho&r, use minimum of 2 ores per ingot or even more. But everyone start with something."]
-			icon: "immersivegeology:bloomery"
-			id: "20151FC95EA7B03D"
-			tasks: [
-				{
-					id: "1F2CEC233F74D0AE"
-					item: "immersivegeology:bloomery"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "4E4B705A6528A138"
-					item: { Count: 12, id: "immersivegeology:storage_block_refractory_brick" }
-					type: "item"
-				}
-			]
-			x: 8.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["65E0926A806B0CE7"]
-			description: ["Will show you what ores are up to 3 max around you in near chunks."]
-			id: "279ADFC8F9F0F9B8"
-			tasks: [{
-				id: "2C97DD25B3532A67"
-				item: {
-					Count: 1
-					id: "immersivegeology:prospector_kit"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 6.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["79EF5B4E470ACDB4"]
-			id: "697FDEFDED0990AC"
-			tasks: [{
-				count: 36L
-				id: "1BCE9E2477B7E389"
-				item: { Count: 36, id: "railcraft:blast_furnace_bricks" }
-				type: "item"
-			}]
-			title: "Maximus Blasting"
-			x: -8.0d
-			y: -9.0d
+			y: -15.75d
 		}
 	]
 	title: "Start of the journey"

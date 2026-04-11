@@ -25,6 +25,14 @@
 			x: 2.5d
 			y: 5.5d
 		}
+		{
+			id: "62BF56F8CD280A77"
+			linked_quest: "540D62BE372AE7D1"
+			shape: "gear"
+			size: 1.5d
+			x: 4.5d
+			y: 5.25d
+		}
 	]
 	quests: [
 		{
@@ -76,7 +84,7 @@
 			}]
 			title: "Limited Barrels"
 			x: 4.5d
-			y: 5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -208,8 +216,8 @@
 				item: "expandingtechnologies:item_vacuum"
 				type: "item"
 			}]
-			x: -0.797619047619051d
-			y: 4.511904761904759d
+			x: -0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5829B229883C5738"]
@@ -374,8 +382,8 @@
 				}
 			]
 			title: "Fancy Silos"
-			x: 4.5d
-			y: 4.0d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -516,8 +524,52 @@
 				item: "immersiveengineering:electromagnet"
 				type: "item"
 			}]
-			x: -0.3214285714285694d
-			y: 3.488095238095241d
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7E43DE8E8F0F36A6"]
+			id: "1B95E7F9A5CBDBE8"
+			tasks: [{
+				id: "615F1CABE2328BB8"
+				item: "ulvcovm:ulv_conveyor_module"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1B95E7F9A5CBDBE8"]
+			id: "5E561FBFF8104A9C"
+			tasks: [{
+				id: "5A094BE96546CD0A"
+				item: "ulvcovm:ulv_robot_arm"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["540D62BE372AE7D1"]
+			id: "5B215272B25D0591"
+			tasks: [{
+				id: "21C242BAD99D561A"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["540D62BE372AE7D1"]
+			id: "71094588853AD9EB"
+			tasks: [{
+				id: "615CCDAA2C08FE34"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.5d
 		}
 	]
 	title: "Storage Solutions"

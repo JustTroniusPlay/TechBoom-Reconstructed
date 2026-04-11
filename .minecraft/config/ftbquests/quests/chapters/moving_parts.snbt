@@ -1,73 +1,40 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "production"
-	group: ""
-	icon: "thermal:machine_pulverizer"
-	id: "4289A20A871DC7D0"
-	order_index: 2
+	filename: "moving_parts"
+	group: "495B816819C83ED9"
+	icon: "create:steam_engine"
+	id: "694F800726287F7C"
+	order_index: 1
 	quest_links: [
 		{
 			id: "706C6771133466D1"
 			linked_quest: "25951FDCB7908145"
 			shape: "diamond"
 			size: 1.5d
-			x: -6.75d
-			y: 3.0d
+			x: 4.25d
+			y: 4.0d
 		}
 		{
 			id: "567528A927199C37"
 			linked_quest: "1A155790CD83B2A7"
 			shape: "rsquare"
 			size: 1.5d
-			x: -10.0d
-			y: -0.75d
-		}
-		{
-			id: "183BD844B51E68E0"
-			linked_quest: "2798CCE5B1DE21DA"
-			shape: "hexagon"
-			size: 1.5d
-			x: -24.8d
-			y: 0.15000000000000036d
-		}
-		{
-			id: "0D37DA266658503C"
-			linked_quest: "7A0C939E0FE540EC"
-			shape: "octagon"
-			size: 1.5d
-			x: -9.75d
-			y: 6.75d
-		}
-		{
-			id: "088304EF00FB61C8"
-			linked_quest: "43943D53B8603D29"
-			size: 0.6d
-			x: -28.0d
-			y: 1.6d
+			x: 1.0d
+			y: 0.25d
 		}
 		{
 			id: "07F748B62276EB96"
 			linked_quest: "1EC45844AE9357C0"
 			size: 0.7d
-			x: -1.0d
-			y: 1.0d
+			x: 10.0d
+			y: 2.0d
 		}
 		{
-			id: "275A575F5F19A334"
-			linked_quest: "4619627EEEE566A4"
-			shape: "hexagon"
-			size: 1.5d
-			x: -20.25d
-			y: 5.25d
-		}
-		{
-			id: "3699CE0C026189E1"
-			linked_quest: "5169668687940129"
-			shape: "rsquare"
-			size: 1.5d
-			x: -15.0d
-			y: 7.0d
+			id: "5C1D148877E2D7AB"
+			linked_quest: "5B16DA7287A8ABFE"
+			x: -2.5d
+			y: -10.5d
 		}
 	]
 	quests: [
@@ -79,8 +46,8 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: -16.5d
-			y: -7.0d
+			x: -5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5D5A08D782C68D01"]
@@ -99,8 +66,8 @@
 					type: "item"
 				}
 			]
-			x: -16.5d
-			y: -9.0d
+			x: -5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -115,8 +82,8 @@
 				item: "createoreexcavation:sample_drill"
 				type: "item"
 			}]
-			x: -17.5d
-			y: -8.5d
+			x: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2EF4C6591798F00E"]
@@ -132,8 +99,8 @@
 				title: "Infinite ores"
 				type: "checkmark"
 			}]
-			x: -18.5d
-			y: -8.0d
+			x: -7.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -154,20 +121,8 @@
 				title: "Molten Vents"
 				type: "checkmark"
 			}]
-			x: -16.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			hide_dependent_lines: true
-			id: "766AF1AE840A63FD"
-			tasks: [{
-				id: "1F9BC542641DB9E1"
-				item: "thermal:machine_pulverizer"
-				type: "item"
-			}]
-			x: -28.0d
-			y: -2.6999999999999997d
+			x: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["691DD9FDCE3E58DA"]
@@ -178,8 +133,8 @@
 				item: "create:water_wheel"
 				type: "item"
 			}]
-			x: -2.75d
-			y: 3.0d
+			x: 8.25d
+			y: 4.0d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -190,8 +145,8 @@
 				item: "create:large_water_wheel"
 				type: "item"
 			}]
-			x: -2.1d
-			y: 1.05d
+			x: 8.899999999999999d
+			y: 2.0500000000000007d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -202,8 +157,8 @@
 				item: "create_new_age:stirling_engine"
 				type: "item"
 			}]
-			x: -2.75d
-			y: 6.0d
+			x: 8.25d
+			y: 7.0d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -221,8 +176,8 @@
 					type: "item"
 				}
 			]
-			x: -3.323469387755104d
-			y: 1.5394557823129063d
+			x: 7.676530612244896d
+			y: 2.5394557823129063d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -232,8 +187,8 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 4.0d
+			x: 7.25d
+			y: 5.0d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -244,8 +199,8 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: -1.75d
-			y: 2.0d
+			x: 9.25d
+			y: 3.0d
 		}
 		{
 			dependencies: ["108C99B4F1FE705F"]
@@ -278,8 +233,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.5d
+			x: 12.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["621E6E9756E60D93"]
@@ -290,8 +245,8 @@
 				item: "create:nozzle"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.75d
+			x: 10.0d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -314,8 +269,8 @@
 				}
 			]
 			title: "Crank Wheels"
-			x: -5.25d
-			y: 3.6d
+			x: 5.75d
+			y: 4.6d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -331,8 +286,8 @@
 				item: "create:hand_crank"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 3.0d
+			x: 6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -346,12 +301,14 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -4.0d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3D1CCF8E85981E52"]
 			id: "7B289C03327D9227"
+			shape: "diamond"
+			size: 1.5d
 			tasks: [{
 				count: 9L
 				id: "50C021836BABC536"
@@ -359,47 +316,8 @@
 				type: "item"
 			}]
 			title: "Mechanical Crafters"
-			x: -16.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			icon: "gtceu:coke_oven"
-			id: "49EAA9A6F41A7551"
-			tasks: [
-				{
-					id: "06A693B62FDAE319"
-					item: "gtceu:coke_oven"
-					type: "item"
-				}
-				{
-					count: 25L
-					id: "0CBC08D5914738D8"
-					item: "gtceu:coke_oven_bricks"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "7CD3A054FEF6769C"
-					item: "gtceu:coke_oven_hatch"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -7.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			id: "4A33371DB94DFD62"
-			size: 0.7d
-			tasks: [{
-				id: "5AFF08EF595FA079"
-				item: "gtceu:hp_steam_solid_boiler"
-				type: "item"
-			}]
-			x: -10.85d
-			y: 6.3d
+			x: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2381B310EA56A896"]
@@ -410,8 +328,8 @@
 				item: "createoreexcavation:vein_finder"
 				type: "item"
 			}]
-			x: -18.5d
-			y: -9.0d
+			x: -7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["529C35B3C2D42687"]
@@ -426,8 +344,8 @@
 				item: "createoreexcavation:vein_atlas"
 				type: "item"
 			}]
-			x: -17.5d
-			y: -9.5d
+			x: -6.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -443,8 +361,8 @@
 				item: "create:wrench"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.0d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -455,8 +373,8 @@
 				item: "create:wand_of_symmetry"
 				type: "item"
 			}]
-			x: -19.25d
-			y: -6.25d
+			x: -8.25d
+			y: -5.25d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -473,8 +391,8 @@
 				}
 				type: "item"
 			}]
-			x: -19.023469387755092d
-			y: -5.075510204081617d
+			x: -8.023469387755092d
+			y: -4.075510204081617d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -485,11 +403,12 @@
 				item: "fluid:baton"
 				type: "item"
 			}]
-			x: -17.75d
-			y: -7.75d
+			x: -6.75d
+			y: -6.75d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
+			description: ["With help of Mechanical Press you now can get plates with 1 to 1 ratio. No more wasted metals!"]
 			icon: "create:mechanical_press"
 			id: "1A3BA4BEFD861942"
 			size: 1.2d
@@ -505,8 +424,8 @@
 					type: "item"
 				}
 			]
-			x: -2.739285714285721d
-			y: 0.41904761904761756d
+			x: 8.260714285714279d
+			y: 1.4190476190476176d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -539,8 +458,8 @@
 				}
 			]
 			title: "Create Filters"
-			x: -7.5d
-			y: 2.0d
+			x: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7F493483338AF21E"]
@@ -552,8 +471,8 @@
 				item: "create:brown_toolbox"
 				type: "item"
 			}]
-			x: -6.6499999999999995d
-			y: 1.4d
+			x: 4.350000000000001d
+			y: 2.4000000000000004d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -566,8 +485,8 @@
 				item: "createdieselgenerators:oil_scanner"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.0d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -585,8 +504,8 @@
 					type: "item"
 				}
 			]
-			x: -21.0d
-			y: -6.0d
+			x: -10.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["2D24B69CEABE3F73"]
@@ -596,8 +515,8 @@
 				item: "create_sa:vault_component"
 				type: "item"
 			}]
-			x: -20.0d
-			y: -7.0d
+			x: -9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2D24B69CEABE3F73"]
@@ -607,8 +526,8 @@
 				item: "create_sa:fan_component"
 				type: "item"
 			}]
-			x: -20.0d
-			y: -5.0d
+			x: -9.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2D24B69CEABE3F73"]
@@ -618,8 +537,8 @@
 				item: "create_sa:brass_drill_head"
 				type: "item"
 			}]
-			x: -22.0d
-			y: -5.0d
+			x: -11.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2D24B69CEABE3F73"]
@@ -629,44 +548,8 @@
 				item: "create_sa:copper_magnet"
 				type: "item"
 			}]
-			x: -22.0d
-			y: -7.0d
-		}
-		{
-			dependencies: [
-				"43943D53B8603D29"
-				"3155C182FC72865E"
-			]
-			id: "0D808399A2E281BC"
-			tasks: [{
-				id: "5E8A531F5ED2B677"
-				item: "thermal:upgrade_augment_2"
-				type: "item"
-			}]
-			x: -28.0d
-			y: 0.8000000000000003d
-		}
-		{
-			dependencies: ["0D808399A2E281BC"]
-			id: "4AD162D4214DFACB"
-			tasks: [{
-				id: "462CF174CED05F6C"
-				item: "thermal:upgrade_augment_3"
-				type: "item"
-			}]
-			x: -27.0d
-			y: 0.8000000000000003d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "3155C182FC72865E"
-			tasks: [{
-				id: "741F7FE453646B65"
-				item: "thermal:machine_smelter"
-				type: "item"
-			}]
-			x: -29.0d
-			y: 0.30000000000000027d
+			x: -11.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -699,22 +582,8 @@
 				}
 			]
 			title: "Schematics"
-			x: -7.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"7A0C939E0FE540EC"
-				"25951FDCB7908145"
-			]
-			id: "2D5E5EAF4F278A1C"
-			tasks: [{
-				id: "4C4B2BDD6CDC2221"
-				item: "tfmg:electricians_wrench"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 6.0d
+			x: 3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["1A3BA4BEFD861942"]
@@ -745,8 +614,8 @@
 					type: "item"
 				}
 			]
-			x: -2.732142857142861d
-			y: -1.642857142857146d
+			x: 8.267857142857139d
+			y: -0.6428571428571459d
 		}
 		{
 			dependencies: [
@@ -781,8 +650,8 @@
 					type: "item"
 				}
 			]
-			x: -13.5d
-			y: -6.0d
+			x: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["188E10C139F48264"]
@@ -829,8 +698,8 @@
 				}
 			]
 			title: "Filling Tanks"
-			x: -3.3d
-			y: -1.2d
+			x: 7.699999999999999d
+			y: -0.1999999999999993d
 		}
 		{
 			dependencies: [
@@ -864,8 +733,8 @@
 					type: "item"
 				}
 			]
-			x: -13.5d
-			y: -7.0d
+			x: -2.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -895,8 +764,8 @@
 				}
 			]
 			title: "Slime Cloth"
-			x: -8.0d
-			y: 3.0d
+			x: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -920,8 +789,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 3.0d
+			x: 12.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["108C99B4F1FE705F"]
@@ -951,8 +820,8 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
-			y: 2.0d
+			x: 11.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3D1CCF8E85981E52"]
@@ -962,8 +831,8 @@
 				item: "create:clockwork_bearing"
 				type: "item"
 			}]
-			x: -16.0d
-			y: 0.0d
+			x: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["691DD9FDCE3E58DA"]
@@ -973,8 +842,8 @@
 				item: "create_new_age:basic_motor"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 0.5d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -988,8 +857,8 @@
 				item: "create_new_age:basic_motor_extension"
 				type: "item"
 			}]
-			x: -3.85d
-			y: -0.35d
+			x: 7.149999999999999d
+			y: 0.6500000000000004d
 		}
 		{
 			dependencies: ["6E605D41A0CFDD7E"]
@@ -1000,8 +869,8 @@
 				item: "create_new_age:advanced_motor_extension"
 				type: "item"
 			}]
-			x: -6.3d
-			y: -1.05d
+			x: 4.699999999999999d
+			y: -0.05000000000000071d
 		}
 		{
 			dependencies: ["18BF6D22CDB7509D"]
@@ -1012,8 +881,8 @@
 				item: "create_new_age:advanced_motor"
 				type: "item"
 			}]
-			x: -5.6d
-			y: -0.7d
+			x: 5.399999999999999d
+			y: 0.3000000000000007d
 		}
 		{
 			dependencies: ["4EF6BA6A14C473DA"]
@@ -1024,8 +893,8 @@
 				item: "create_new_age:reinforced_motor"
 				type: "item"
 			}]
-			x: -5.6d
-			y: -1.75d
+			x: 5.399999999999999d
+			y: -0.75d
 		}
 		{
 			dependencies: ["108C99B4F1FE705F"]
@@ -1049,8 +918,8 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
-			y: 4.0d
+			x: 11.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["108C99B4F1FE705F"]
@@ -1069,8 +938,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 2.0d
+			x: 13.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -1081,8 +950,8 @@
 				item: "create:elevator_pulley"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -2.0d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["108C99B4F1FE705F"]
@@ -1104,8 +973,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 4.0d
+			x: 13.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1127,8 +996,8 @@
 				}
 			]
 			title: "Making a contact"
-			x: 1.5d
-			y: 5.0d
+			x: 12.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["108C99B4F1FE705F"]
@@ -1138,8 +1007,8 @@
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 3.0d
+			x: 16.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -1149,8 +1018,8 @@
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			x: -1.7119047619047407d
-			y: 3.9047619047619264d
+			x: 9.28809523809526d
+			y: 4.904761904761926d
 		}
 		{
 			dependencies: ["17304F0AA96C369E"]
@@ -1161,8 +1030,8 @@
 				item: "create:mechanical_drill"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 5.0d
+			x: 10.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1175,8 +1044,8 @@
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
-			x: 2.1404761904761784d
-			y: 6.595238095238081d
+			x: 13.140476190476178d
+			y: 7.595238095238081d
 		}
 		{
 			dependencies: ["5BCF22055EDA1850"]
@@ -1186,8 +1055,8 @@
 				item: "create:mechanical_plough"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 14.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["54661956247869DD"]
@@ -1198,8 +1067,8 @@
 				item: "create:steam_engine"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 0.5d
+			x: 16.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["54661956247869DD"]
@@ -1209,19 +1078,20 @@
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.0d
+			x: 15.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["54661956247869DD"]
+			description: ["Use Forge Energy to heat things. "]
 			id: "5CD12AC552AA4061"
 			tasks: [{
 				id: "117966985BB1862C"
 				item: "moreburners:electric_burner"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.0d
+			x: 15.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["54661956247869DD"]
@@ -1231,8 +1101,8 @@
 				item: "create_new_age:heater"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 2.0d
+			x: 17.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["54661956247869DD"]
@@ -1248,8 +1118,8 @@
 				item: "createdieselgenerators:burner"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 4.0d
+			x: 17.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5CD12AC552AA4061"]
@@ -1260,8 +1130,8 @@
 				item: "moreburners:heat_upgrade"
 				type: "item"
 			}]
-			x: 3.9d
-			y: 3.5999999999999996d
+			x: 14.899999999999999d
+			y: 4.6d
 		}
 		{
 			dependencies: ["5B4C38C2E2CA7441"]
@@ -1272,8 +1142,8 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			x: 3.9d
-			y: 2.4d
+			x: 14.899999999999999d
+			y: 3.4000000000000004d
 		}
 		{
 			dependencies: ["18BF6D22CDB7509D"]
@@ -1291,8 +1161,8 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
-			y: -1.0d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5ECEF02D7431A68F"]
@@ -1303,8 +1173,8 @@
 				item: "create_new_age:advanced_energiser"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -1.7999999999999998d
+			x: 6.5d
+			y: -0.8000000000000007d
 		}
 		{
 			dependencies: ["0316B642B81524B4"]
@@ -1315,8 +1185,8 @@
 				item: "create_new_age:reinforced_energiser"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -2.4d
+			x: 6.5d
+			y: -1.4000000000000004d
 		}
 		{
 			dependencies: ["52FD5BFF07C6D698"]
@@ -1348,8 +1218,8 @@
 				}
 			]
 			title: "Heat Pipes"
-			x: -3.5d
-			y: 7.0d
+			x: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["52FD5BFF07C6D698"]
@@ -1359,8 +1229,8 @@
 				item: "create_new_age:basic_solar_heating_plate"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 6.0d
+			x: 7.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["54661956247869DD"]
@@ -1394,8 +1264,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 3.0d
+			x: 18.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1408,8 +1278,8 @@
 				item: "vs_clockwork:gas_engine"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.5d
+			x: 18.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1445,8 +1315,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 7.5d
+			x: 12.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1476,8 +1346,8 @@
 				}
 			]
 			title: "Oil Proccesing"
-			x: 5.535714285714292d
-			y: 7.464285714285708d
+			x: 16.535714285714292d
+			y: 8.464285714285708d
 		}
 		{
 			dependencies: ["043F7FFDC6430B34"]
@@ -1502,8 +1372,8 @@
 				}
 			]
 			title: "Thematical containment"
-			x: 4.8999999999999995d
-			y: 6.6499999999999995d
+			x: 15.899999999999999d
+			y: 7.649999999999999d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -1513,8 +1383,8 @@
 				item: "createdieselgenerators:diesel_engine"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -1.0d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7863C9BC39A7F9D8"]
@@ -1531,8 +1401,8 @@
 				type: "item"
 			}]
 			title: "Ecological replacement"
-			x: -7.5d
-			y: 0.0d
+			x: 3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2185592369B7D5FC"]
@@ -1543,8 +1413,8 @@
 				item: "createdieselgenerators:basin_lid"
 				type: "item"
 			}]
-			x: -3.445918367346934d
-			y: 2.5598639455782077d
+			x: 7.554081632653066d
+			y: 3.5598639455782077d
 		}
 		{
 			dependencies: ["7863C9BC39A7F9D8"]
@@ -1554,8 +1424,8 @@
 				item: "createdieselgenerators:large_diesel_engine"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.0d
+			x: 3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["54661956247869DD"]
@@ -1570,8 +1440,8 @@
 				item: "createdieselgenerators:bulk_fermenter"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 5.5d
+			x: 15.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["40B9ECFB3C0DB31F"]
@@ -1582,8 +1452,8 @@
 				item: "createdieselgenerators:huge_diesel_engine"
 				type: "item"
 			}]
-			x: 5.484693877551024d
-			y: -1.3707482993197289d
+			x: 16.484693877551024d
+			y: -0.37074829931972886d
 		}
 		{
 			dependencies: ["7863C9BC39A7F9D8"]
@@ -1603,8 +1473,8 @@
 				}
 			]
 			title: "Engine Upgrades"
-			x: -8.1d
-			y: -1.5d
+			x: 2.9000000000000004d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -1630,8 +1500,8 @@
 					type: "item"
 				}
 			]
-			x: -19.5d
-			y: -3.0d
+			x: -8.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["35EFF8146D90FE18"]
@@ -1654,19 +1524,21 @@
 				}
 			]
 			title: "Hans bring the flammenwerfer"
-			x: -21.0d
-			y: -3.0d
+			x: -10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["37FAA3D4CF96E9EE"]
 			id: "0852CB10008D7CDB"
+			shape: "pentagon"
+			size: 1.2d
 			tasks: [{
 				id: "15140B4F56F7A582"
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -10.0d
+			x: -0.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
@@ -1676,8 +1548,8 @@
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -8.5d
+			x: -1.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
@@ -1692,8 +1564,8 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			x: -12.141836734693868d
-			y: -7.54081632653061d
+			x: -1.141836734693868d
+			y: -6.54081632653061d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -1703,8 +1575,8 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -2.0d
+			x: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3D1CCF8E85981E52"]
@@ -1715,8 +1587,8 @@
 				item: "vintageimprovements:belt_grinder"
 				type: "item"
 			}]
-			x: -12.487414965986375d
-			y: -1.0795918367346786d
+			x: -1.4874149659863747d
+			y: -0.07959183673467862d
 		}
 		{
 			dependencies: [
@@ -1744,8 +1616,8 @@
 					type: "item"
 				}
 			]
-			x: -12.899999999999999d
-			y: -7.8d
+			x: -1.8999999999999986d
+			y: -6.8d
 		}
 		{
 			dependencies: ["59DE400FAB603D8A"]
@@ -1755,8 +1627,8 @@
 				item: "create_new_age:redstone_magnet"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.5d
+			x: 11.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["59DE400FAB603D8A"]
@@ -1766,8 +1638,8 @@
 				item: "create_new_age:layered_magnet"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: 11.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["59DE400FAB603D8A"]
@@ -1777,8 +1649,8 @@
 				item: "create_new_age:fluxuated_magnetite"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.5d
+			x: 11.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["59DE400FAB603D8A"]
@@ -1788,8 +1660,8 @@
 				item: "create_new_age:netherite_magnet"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.5d
+			x: 14.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["34A4F350D3CE0400"]
@@ -1815,8 +1687,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -4.5d
+			x: 12.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -1827,8 +1699,8 @@
 				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			x: -17.428571428571423d
-			y: -3.6071428571428683d
+			x: -6.4285714285714235d
+			y: -2.6071428571428683d
 		}
 		{
 			dependencies: ["3238F7E1DF448006"]
@@ -1838,9 +1710,9 @@
 				item: "create_better_motors:starter_motor"
 				type: "item"
 			}]
-			title: "Even More power"
-			x: -17.5d
-			y: -2.5d
+			title: "More than enough SU"
+			x: -6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -1851,8 +1723,8 @@
 				item: "createaddition:alternator"
 				type: "item"
 			}]
-			x: -15.714285714285708d
-			y: -3.6071428571428683d
+			x: -4.714285714285708d
+			y: -2.6071428571428683d
 		}
 		{
 			dependencies: ["600DDB0FDB97CFFA"]
@@ -1862,8 +1734,9 @@
 				item: "create_better_motors:andesite_alternator"
 				type: "item"
 			}]
-			x: -15.714285714285708d
-			y: -2.500000000000014d
+			title: "Even More Power"
+			x: -4.714285714285708d
+			y: -1.5000000000000142d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
@@ -1873,91 +1746,8 @@
 				item: "create_connected:kinetic_battery"
 				type: "item"
 			}]
-			x: -10.827551020408151d
-			y: -7.569387755102042d
-		}
-		{
-			dependencies: ["49EAA9A6F41A7551"]
-			id: "575BDE04271E94D1"
-			tasks: [{
-				count: 27L
-				id: "2F40390FDF8B0340"
-				item: { Count: 27, id: "railcraft:coke_oven_bricks" }
-				type: "item"
-			}]
-			x: -6.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["3CD05E2E5661246B"]
-			icon: "immersiveengineering:blast_furnace"
-			id: "79EF5B4E470ACDB4"
-			tasks: [
-				{
-					count: 27L
-					id: "4539E419960B6A2B"
-					item: { Count: 27, id: "immersiveengineering:blastbrick" }
-					type: "item"
-				}
-				{
-					id: "6D40633FABDBF406"
-					item: "immersiveengineering:blast_furnace"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Better Blasting"
-			x: -12.5d
-			y: 8.0d
-		}
-		{
-			dependencies: [
-				"79EF5B4E470ACDB4"
-				"7A0C939E0FE540EC"
-			]
-			icon: "immersiveengineering:blastbrick_reinforced"
-			id: "745A282BA4A843D5"
-			rewards: [{
-				id: "0CE7ADC1EA15951B"
-				item: "minecraft:hopper"
-				type: "item"
-			}]
-			tasks: [
-				{
-					count: 27L
-					id: "68CFC7DD9D063B7B"
-					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "592251313E28E9FF"
-					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
-					type: "item"
-				}
-				{
-					id: "40CEA24B000E795E"
-					item: "immersiveengineering:advanced_blast_furnace"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -11.5d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"7A0C939E0FE540EC"
-				"4DB042DAF83D7A0A"
-			]
-			id: "48BC04D05B89C7EA"
-			tasks: [{
-				id: "4C2630267ED5A26F"
-				item: "railcraft:powered_rolling_machine"
-				type: "item"
-			}]
-			x: -5.20714285714287d
-			y: 6.760714285714293d
+			x: 0.17244897959184868d
+			y: -6.569387755102042d
 		}
 		{
 			dependencies: [
@@ -1980,8 +1770,8 @@
 				}
 			]
 			title: "Cardboard"
-			x: -3.75d
-			y: 0.5d
+			x: 7.25d
+			y: 1.5d
 		}
 		{
 			dependencies: ["67A60A92B37AEADD"]
@@ -2048,8 +1838,8 @@
 				}
 			]
 			title: "Not! That is not a Solid Snake!"
-			x: -3.2010204081632594d
-			y: -0.5013605442176967d
+			x: 7.798979591836741d
+			y: 0.4986394557823033d
 		}
 		{
 			dependencies: ["37FAA3D4CF96E9EE"]
@@ -2059,8 +1849,8 @@
 				item: "create_factory_logistics:fluid_mechanism"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -4.0d
+			x: 0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3D1CCF8E85981E52"]
@@ -2070,8 +1860,8 @@
 				item: "create:content_observer"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -2.5d
+			x: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -2084,8 +1874,8 @@
 				item: "create:attribute_filter"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 0.0d
+			x: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6CB66A8B5CA50E79"]
@@ -2095,8 +1885,8 @@
 				item: "create:sticker"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 5.0d
+			x: 14.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5BCF22055EDA1850"]
@@ -2106,8 +1896,8 @@
 				item: "create:contraption_controls"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 5.0d
+			x: 11.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5BCF22055EDA1850"]
@@ -2117,8 +1907,8 @@
 				item: "create:mechanical_roller"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: 13.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1A3BA4BEFD861942"]
@@ -2160,8 +1950,8 @@
 				}
 			]
 			title: "Additional Molds"
-			x: -1.5642857142857096d
-			y: 0.3857142857142861d
+			x: 9.43571428571429d
+			y: 1.3857142857142861d
 		}
 		{
 			dependencies: ["2185592369B7D5FC"]
@@ -2174,8 +1964,8 @@
 				item: "createdieselgenerators:gray_cement_bucket"
 				type: "item"
 			}]
-			x: -3.9765306122448933d
-			y: 2.090476190476174d
+			x: 7.023469387755107d
+			y: 3.090476190476174d
 		}
 		{
 			dependencies: ["7ED421A21A7BB90C"]
@@ -2222,8 +2012,8 @@
 				}
 			]
 			title: "Fueling Tanks"
-			x: -14.166326530612238d
-			y: -6.238775510204064d
+			x: -3.1663265306122383d
+			y: -5.238775510204064d
 		}
 		{
 			dependencies: ["75D2966F919D360B"]
@@ -2234,8 +2024,8 @@
 				item: "create:experience_nugget"
 				type: "item"
 			}]
-			x: -15.75d
-			y: -7.35d
+			x: -4.758503401360528d
+			y: -6.993197278911573d
 		}
 		{
 			dependencies: ["031B519BF4D06C79"]
@@ -2291,8 +2081,8 @@
 					type: "item"
 				}
 			]
-			x: -15.541836734693874d
-			y: -8.197959183673454d
+			x: -4.452380952380928d
+			y: -8.64625850340137d
 		}
 		{
 			dependencies: ["7ED421A21A7BB90C"]
@@ -2308,8 +2098,8 @@
 				}
 				type: "item"
 			}]
-			x: -12.5d
-			y: -4.0d
+			x: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0E0B2F4801CE1F38"]
@@ -2323,8 +2113,8 @@
 				}
 				type: "item"
 			}]
-			x: -13.5d
-			y: -8.5d
+			x: -2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["7ED421A21A7BB90C"]
@@ -2340,8 +2130,8 @@
 				}
 				type: "item"
 			}]
-			x: -13.5d
-			y: -4.0d
+			x: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -2398,122 +2188,8 @@
 				}
 			]
 			title: "Gilded Tools"
-			x: -20.1704081632653d
-			y: -3.7979591836734556d
-		}
-		{
-			dependencies: ["1A155790CD83B2A7"]
-			description: ["Brass armor can protect you from piglins like gold armor."]
-			id: "2DF67CBA16DF2242"
-			tasks: [
-				{
-					id: "04E89917BD3383A9"
-					item: {
-						Count: 1
-						id: "create_sa:brass_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "25952DEDC79C47A2"
-					item: {
-						Count: 1
-						id: "create_sa:brass_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "255D954E82191E80"
-					item: {
-						Count: 1
-						id: "create_sa:brass_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "257B49CF0EFAAACB"
-					item: {
-						Count: 1
-						id: "create_sa:brass_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "06874A7B159EABB8"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"undermod:capability_item_life_leech": {
-								power: 1
-							}
-						}
-						id: "create_sa:brass_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "15DB9ED164189460"
-					item: {
-						Count: 1
-						id: "create_sa:brass_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1E6A4FCB25B84A37"
-					item: {
-						Count: 1
-						id: "create_sa:brass_axe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "61AB021D6CB3CA0F"
-					item: {
-						Count: 1
-						id: "create_sa:brass_shovel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "534652793C4E2F78"
-					item: {
-						Count: 1
-						id: "create_sa:brass_hoe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Brass things"
-			x: -11.5d
-			y: 0.0d
+			x: -9.1704081632653d
+			y: -2.7979591836734556d
 		}
 		{
 			dependencies: ["0E0B2F4801CE1F38"]
@@ -2528,8 +2204,8 @@
 				}
 				type: "item"
 			}]
-			x: -12.6d
-			y: -6.6499999999999995d
+			x: -1.5999999999999996d
+			y: -5.6499999999999995d
 		}
 		{
 			dependencies: ["2185592369B7D5FC"]
@@ -2587,8 +2263,8 @@
 				}
 			]
 			title: "Blazing Tools"
-			x: -4.5d
-			y: 0.6d
+			x: 6.5d
+			y: 1.5999999999999996d
 		}
 		{
 			dependencies: ["108C99B4F1FE705F"]
@@ -2598,8 +2274,8 @@
 				item: "create_interactive:propagator_bearing"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: 11.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["56393CE986C95C0E"]
@@ -2610,8 +2286,8 @@
 				item: "create_interactive:disjointed_propagator_bearing"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.05d
+			x: 11.0d
+			y: 2.0500000000000007d
 		}
 		{
 			dependencies: ["108C99B4F1FE705F"]
@@ -2631,8 +2307,8 @@
 				}
 			]
 			title: "Interaction"
-			x: 2.69285714285715d
-			y: -0.12857142857143344d
+			x: 13.69285714285715d
+			y: 0.8714285714285666d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -2642,8 +2318,8 @@
 				item: "createaddition:tesla_coil"
 				type: "item"
 			}]
-			x: -16.59285714285714d
-			y: -2.9285714285714306d
+			x: -5.592857142857142d
+			y: -1.9285714285714306d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -2653,8 +2329,8 @@
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.0d
+			x: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5B4C38C2E2CA7441"]
@@ -2665,8 +2341,8 @@
 				item: "createaddition:straw"
 				type: "item"
 			}]
-			x: 3.85d
-			y: 1.4d
+			x: 14.850000000000001d
+			y: 2.4000000000000004d
 		}
 		{
 			dependencies: [
@@ -2681,8 +2357,8 @@
 				type: "item"
 			}]
 			title: "Custom Accumulator"
-			x: -9.0d
-			y: -3.5d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -2695,8 +2371,8 @@
 				item: "createaddition:portable_energy_interface"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 6.0d
+			x: 11.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6157725B6CC022A4"]
@@ -2707,360 +2383,8 @@
 				item: "createaddition:barbed_wire"
 				type: "item"
 			}]
-			x: -4.2d
-			y: 4.8d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			icon: "thermal:machine_refinery"
-			id: "0324FC7EAE1601BA"
-			tasks: [{
-				id: "7A41E04A88A84541"
-				item: "thermal:machine_refinery"
-				type: "item"
-			}]
-			x: -26.5d
-			y: 1.8000000000000003d
-		}
-		{
-			dependencies: ["0AF793828ADDBE71"]
-			id: "420669759AE11743"
-			tasks: [
-				{
-					id: "2088683BEF5729F3"
-					item: "thermal:oil_sand"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "32E9B1241308C7B2"
-					item: "thermal:oil_red_sand"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "06A845F27E02725A"
-					item: "thermal:bitumen"
-					type: "item"
-				}
-			]
-			title: "Oil in the soil"
-			x: -25.5d
-			y: 3.8000000000000003d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "0AF793828ADDBE71"
-			tasks: [{
-				id: "53B60082ECC3713D"
-				item: "thermal:machine_centrifuge"
-				type: "item"
-			}]
-			x: -25.5d
-			y: 2.3000000000000003d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "5B9B2FD0295FF131"
-			size: 1.3d
-			tasks: [{
-				id: "12026B543DBAE1EF"
-				item: "thermal:machine_furnace"
-				type: "item"
-			}]
-			x: -24.79047619047619d
-			y: -1.722448979591857d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "42EE9B0972E68F0D"
-			tasks: [{
-				id: "38D3463798C8B544"
-				item: "thermal:machine_sawmill"
-				type: "item"
-			}]
-			x: -28.0d
-			y: -1.1999999999999997d
-		}
-		{
-			dependencies: [
-				"420669759AE11743"
-				"757887491266FA38"
-			]
-			dependency_requirement: "one_completed"
-			id: "120ED2BF66C46BE9"
-			tasks: [{
-				id: "28FA1AFE565966DA"
-				item: "thermal:crude_oil_bucket"
-				type: "item"
-			}]
-			x: -27.0d
-			y: 3.3000000000000003d
-		}
-		{
-			dependencies: [
-				"120ED2BF66C46BE9"
-				"0324FC7EAE1601BA"
-			]
-			icon: "thermal:refined_fuel_bucket"
-			id: "46DF54F9A3A6645F"
-			tasks: [
-				{
-					id: "7DACF52D38C903C4"
-					item: "thermal:heavy_oil_bucket"
-					type: "item"
-				}
-				{
-					id: "2815E70D6C860B13"
-					item: "thermal:light_oil_bucket"
-					type: "item"
-				}
-				{
-					id: "4AF19D587BE60463"
-					item: "thermal:refined_fuel_bucket"
-					type: "item"
-				}
-			]
-			title: "Refined Oil"
-			x: -27.5d
-			y: 2.3000000000000003d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "1425D94DC58182E5"
-			tasks: [{
-				id: "1B62D4ED538A6F70"
-				item: "thermal:machine_insolator"
-				type: "item"
-			}]
-			x: -22.5d
-			y: -1.1999999999999997d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "030F34B864E08816"
-			tasks: [{
-				id: "7F5DB119F6C0BC89"
-				item: "thermal:machine_press"
-				type: "item"
-			}]
-			x: -26.5d
-			y: -2.6999999999999997d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "4F3810AFE024D92E"
-			tasks: [{
-				id: "00ED23394CFB1C4E"
-				item: "thermal:machine_crucible"
-				type: "item"
-			}]
-			title: "Industrial Smeting"
-			x: -23.0d
-			y: 3.3000000000000003d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "2ABA250ADE658FF3"
-			tasks: [{
-				id: "502E9403F1EC58BD"
-				item: "thermal:machine_chiller"
-				type: "item"
-			}]
-			x: -24.0d
-			y: 2.8000000000000003d
-		}
-		{
-			dependencies: ["420669759AE11743"]
-			description: ["With help of Pyrolyzer you can get Enriched Coke. Using it in Induction Smeltery with iron you can get new source of Steel."]
-			icon: "thermal:coal_coke"
-			id: "6BA3BF805371E239"
-			tasks: [
-				{
-					id: "421DDC903B9F6AE0"
-					item: "thermal:machine_pyrolyzer"
-					type: "item"
-				}
-				{
-					id: "2920FB65B24B44D4"
-					item: "thermal:coal_coke"
-					type: "item"
-				}
-			]
-			title: "Enriched Coke Coal"
-			x: -25.5d
-			y: 5.300000000000001d
-		}
-		{
-			dependencies: ["5B9B2FD0295FF131"]
-			description: ["You can convert rotten flesh to leather in Redstone Furnace."]
-			icon: "minecraft:leather"
-			id: "187D904C784986DE"
-			tasks: [
-				{
-					count: 4L
-					id: "1FD14CB4300EBC2E"
-					item: "minecraft:rotten_flesh"
-					type: "item"
-				}
-				{
-					id: "68D563CB10586ACA"
-					item: "minecraft:leather"
-					type: "item"
-				}
-			]
-			title: "Another Leather Recipe"
-			x: -23.5d
-			y: -1.6999999999999997d
-		}
-		{
-			dependencies: ["3155C182FC72865E"]
-			id: "1553365BB32E7666"
-			size: 1.2d
-			tasks: [{
-				id: "0AA2C62668AC3827"
-				item: "thermal:obsidian_glass"
-				type: "item"
-			}]
-			x: -29.0d
-			y: 4.300000000000001d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "2B05CC4B1B1A5914"
-			tasks: [{
-				id: "67033ADFE66C1124"
-				item: "thermal:machine_bottler"
-				type: "item"
-			}]
-			x: -22.785714285714285d
-			y: 2.111224489795919d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "6C266F8B01ED6B4D"
-			tasks: [{
-				id: "539A4920B4C741D2"
-				item: "thermal:machine_brewer"
-				type: "item"
-			}]
-			x: -22.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"2798CCE5B1DE21DA"
-				"1553365BB32E7666"
-			]
-			icon: "thermal:machine_crystallizer"
-			id: "3751A61EDD08EF41"
-			tasks: [
-				{
-					id: "6A005F1EEABC8C01"
-					item: "thermal:machine_crystallizer"
-					type: "item"
-				}
-				{
-					id: "01EC653EFE34E479"
-					item: "ae2:certus_quartz_dust"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "00DD9BBC58E8E0BC"
-					item: "ae2:charged_certus_quartz_crystal"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -30.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			id: "1A6E6CC618DD8F57"
-			tasks: [{
-				id: "56253D279396132E"
-				item: "thermal:machine_crafter"
-				type: "item"
-			}]
-			x: -22.0d
-			y: 1.3000000000000003d
-		}
-		{
-			dependencies: ["3155C182FC72865E"]
-			id: "52563AE115ACBF51"
-			tasks: [{
-				id: "1BF835186BF38E32"
-				item: "thermal:signalum_ingot"
-				type: "item"
-			}]
-			x: -30.0d
-			y: 1.8000000000000003d
-		}
-		{
-			dependencies: ["3155C182FC72865E"]
-			id: "4D475C5C6D1FF754"
-			tasks: [{
-				id: "116D655695EC2B63"
-				item: "thermal:lumium_ingot"
-				type: "item"
-			}]
-			x: -31.5d
-			y: 1.8000000000000003d
-		}
-		{
-			dependencies: ["3155C182FC72865E"]
-			id: "57C04ECC73C4EAD3"
-			tasks: [{
-				id: "3707DC8DE82D445F"
-				item: "thermal:enderium_ingot"
-				type: "item"
-			}]
-			x: -33.0d
-			y: 1.8000000000000003d
-		}
-		{
-			dependencies: [
-				"1553365BB32E7666"
-				"52563AE115ACBF51"
-			]
-			id: "21F9764D362E05BD"
-			tasks: [{
-				id: "2940ACD23DC02DBE"
-				item: "thermal:signalum_glass"
-				type: "item"
-			}]
-			x: -30.0d
-			y: 2.8000000000000003d
-		}
-		{
-			dependencies: [
-				"1553365BB32E7666"
-				"4D475C5C6D1FF754"
-			]
-			id: "1CF740E2938F462A"
-			tasks: [{
-				id: "0168FA658DCB0628"
-				item: "thermal:lumium_glass"
-				type: "item"
-			}]
-			x: -31.5d
-			y: 2.8000000000000003d
-		}
-		{
-			dependencies: [
-				"1553365BB32E7666"
-				"57C04ECC73C4EAD3"
-			]
-			id: "4624968B64822373"
-			tasks: [{
-				id: "122D40204096A9B9"
-				item: "thermal:enderium_glass"
-				type: "item"
-			}]
-			x: -33.0d
-			y: 2.8000000000000003d
+			x: 6.800000000000001d
+			y: 5.800000000000001d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
@@ -3071,8 +2395,8 @@
 				item: "vintageimprovements:laser"
 				type: "item"
 			}]
-			x: -12.6d
-			y: -9.299999999999999d
+			x: -1.5999999999999996d
+			y: -8.299999999999999d
 		}
 		{
 			dependencies: [
@@ -3085,8 +2409,8 @@
 				item: "vintageimprovements:lathe"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -9.5d
+			x: -2.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -3096,8 +2420,8 @@
 				item: "vintageimprovements:helve_hammer"
 				type: "item"
 			}]
-			x: -14.42755102040816d
-			y: -7.226530612244886d
+			x: -3.42755102040816d
+			y: -6.226530612244886d
 		}
 		{
 			dependencies: ["769E68032FC9806D"]
@@ -3107,8 +2431,8 @@
 				item: "vintageimprovements:curving_press"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -10.5d
+			x: -2.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -3118,8 +2442,8 @@
 				item: "vintageimprovements:centrifuge"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 5.0d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2185592369B7D5FC"]
@@ -3130,8 +2454,8 @@
 				item: "vintageimprovements:vacuum_chamber"
 				type: "item"
 			}]
-			x: -4.55d
-			y: 1.4d
+			x: 6.449999999999999d
+			y: 2.4000000000000004d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -3142,8 +2466,8 @@
 				item: "vintageimprovements:spring_coiling_machine"
 				type: "item"
 			}]
-			x: -1.2581632653061234d
-			y: 2.6030612244898066d
+			x: 9.741836734693877d
+			y: 3.6030612244898066d
 		}
 		{
 			dependencies: ["311F17E0AB89A1B2"]
@@ -3153,8 +2477,8 @@
 				item: "vintageimprovements:vibrating_table"
 				type: "item"
 			}]
-			x: -0.4214285714285779d
-			y: 2.4193877551020506d
+			x: 10.578571428571422d
+			y: 3.4193877551020506d
 		}
 		{
 			dependencies: ["1DB745BC4D6EDCA5"]
@@ -3165,201 +2489,44 @@
 				item: "vintageimprovements:redstone_module"
 				type: "item"
 			}]
-			x: -0.4418367346938794d
-			y: 1.6030612244898066d
+			x: 10.55816326530612d
+			y: 2.6030612244898066d
 		}
 		{
-			dependencies: ["1553365BB32E7666"]
-			id: "199167CF567E26BB"
-			tasks: [{
-				id: "6DD4D5B639F82401"
-				item: "systeams:boiler_pipe"
-				type: "item"
-			}]
-			x: -29.0d
-			y: 5.800000000000001d
-		}
-		{
-			dependencies: ["1553365BB32E7666"]
-			id: "08F0E06F30471E3E"
-			tasks: [{
-				id: "54255A04237FA5AC"
-				item: {
-					Count: 1
-					id: "thermal:fluid_cell"
-					tag: {
-						BlockEntityTag: {
-							TankInv: [{
-								Amount: 0
-								Capacity: 32000
-								FluidName: "minecraft:empty"
-								Tank: 0b
-							}]
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -27.5d
-			y: 5.800000000000001d
-		}
-		{
-			dependencies: ["08F0E06F30471E3E"]
-			id: "7AE82FECE43A0323"
+			dependencies: ["115F76F055B5EB09"]
+			id: "416F4CC8D57BAF00"
 			size: 0.7d
 			tasks: [{
-				id: "6AD621CCBF572A3C"
-				item: "thermal:fluid_tank_augment"
+				id: "63408CE7D7C442FB"
+				item: "ae2:charged_certus_quartz_crystal"
 				type: "item"
 			}]
-			x: -27.500000000000007d
-			y: 4.907142857142855d
+			x: -5.605102040816327d
+			y: -0.9127551020408191d
 		}
 		{
-			id: "09E41832773146F4"
-			tasks: [{
-				id: "538305270B07FB36"
-				item: "tfmg:simple_large_engine"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 10.5d
-		}
-		{
-			id: "6FDCA019B5DD1C8C"
-			tasks: [{
-				id: "65BD2106E6810780"
-				item: "tfmg:engine_gearbox"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 11.5d
-		}
-		{
-			id: "7855B49FE76C8688"
-			tasks: [{
-				id: "2AE8D6BBB08AEF5E"
-				item: "tfmg:large_engine"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 10.5d
-		}
-		{
-			id: "11A4BC034E377900"
-			tasks: [{
-				id: "0C9BED316B1A8283"
-				item: "tfmg:regular_engine"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 11.5d
-		}
-		{
-			id: "6C1230404AC891BB"
-			tasks: [{
-				id: "44E3C70906064561"
-				item: "tfmg:turbine_engine"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 11.5d
-		}
-		{
-			id: "02330D444E578283"
-			tasks: [{
-				id: "434DE2DD2DC0C5F8"
-				item: "tfmg:radial_engine"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 10.5d
-		}
-		{
-			dependencies: [
-				"7A0C939E0FE540EC"
-				"3CADA01B0663BC89"
-			]
-			id: "644DA6D29FB50DA8"
-			tasks: [{
-				id: "62222DF3CA4498D7"
-				item: "immersiveengineering:thermoelectric_generator"
-				type: "item"
-			}]
-			x: -9.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["5169668687940129"]
-			id: "27E0F81FE63D2E85"
-			tasks: [{
-				id: "648C61E6740F0E1E"
-				item: "mekanismgenerators:wind_generator"
-				type: "item"
-			}]
-			x: -17.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["5169668687940129"]
-			id: "4252FD2C3076FC2E"
-			tasks: [{
-				id: "6331E20345C82C18"
-				item: "mekanismgenerators:solar_generator"
-				type: "item"
-			}]
-			x: -16.5d
-			y: 10.0d
-		}
-		{
-			dependencies: ["4252FD2C3076FC2E"]
-			id: "43A2DDA0E123E8D0"
-			tasks: [{
-				id: "4455D4C4BCE7ECDF"
-				item: "mekanismgenerators:advanced_solar_generator"
-				type: "item"
-			}]
-			x: -18.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["5169668687940129"]
-			id: "1EA14587D11D38CE"
-			tasks: [{
-				id: "2BEF1448BC6EC577"
-				item: "mekanismgenerators:gas_burning_generator"
-				type: "item"
-			}]
-			x: -15.0d
-			y: 9.5d
-		}
-		{
-			dependencies: [
-				"7BF7C8E5AFC2EE6A"
-				"030F34B864E08816"
-			]
-			description: ["Behind the weird name hides a way to convert metals into energy. "]
-			id: "12E8CE069EDE3C56"
+			dependencies: ["7F493483338AF21E"]
+			id: "1C9C2BDF0492D3E9"
 			size: 0.7d
-			subtitle: "Capitalistic generator!"
 			tasks: [{
-				id: "2635907355B0E210"
-				item: "thermal:dynamo_numismatic"
+				id: "2B89C1CAFE83DBD7"
+				item: "create:goggles"
 				type: "item"
 			}]
-			x: -25.9d
-			y: -3.5d
+			x: 5.035714285714292d
+			y: 2.1773809523809575d
 		}
 		{
-			dependencies: ["26F7DA43C2FE94AB"]
-			id: "0846DDA488B481DB"
+			dependencies: ["746BED2E65591E76"]
+			id: "757887491266FA38"
+			size: 0.7d
 			tasks: [{
-				id: "3CE72493234599E9"
-				item: "forestry:engine_peat"
+				id: "7A5360473CD53AB9"
+				item: "createoreexcavation:extractor"
 				type: "item"
 			}]
-			x: -21.5d
-			y: 7.0d
+			x: -5.535714285714285d
+			y: -9.039285714285711d
 		}
 		{
 			dependencies: [
@@ -3376,325 +2543,9 @@
 				type: "item"
 			}]
 			title: "Rails Time!"
-			x: -5.25d
-			y: 5.25d
-		}
-		{
-			dependencies: ["3751A61EDD08EF41"]
-			description: ["You can grow certus quarts inside Crystalizer with full tank of water and charged crystal. It is more convinient and efficent way."]
-			id: "73593A2A2EF304AC"
-			tasks: [{
-				id: "2830AA48A04F1399"
-				item: "ae2:certus_quartz_crystal"
-				type: "item"
-			}]
-			title: "Crystalization"
-			x: -31.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["4619627EEEE566A4"]
-			description: ["You can use carpenter to automate creation of wooden ties for your railroads."]
-			id: "4C7E5BEF0E29D6F3"
-			size: 0.7d
-			tasks: [{
-				id: "4B49A1C5DB4AA5D3"
-				item: "railcraft:wooden_tie"
-				type: "item"
-			}]
-			x: -19.25d
-			y: 6.3d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Upgrade to steam oven with steel. Use less space, accepts items and steam from all directions and have bigger items internal buffer. Will smelt 9 items at a time."]
-			id: "6103B2A9C790E8EF"
-			tasks: [{
-				id: "793CF622DA144ED2"
-				item: "railcraft:steam_oven"
-				type: "item"
-			}]
-			title: "Steel Steam Oven"
-			x: -10.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			icon: "gtceu:basic_electronic_circuit"
-			id: "1C59476B07336B42"
-			size: 1.3d
-			tasks: [
-				{
-					id: "298BFE41EAE4BE11"
-					item: "gtceu:basic_electronic_circuit"
-					type: "item"
-				}
-				{
-					id: "471926DD4EB9A9DA"
-					item: "gtceu:resistor"
-					type: "item"
-				}
-				{
-					id: "7B9A40F294EFAA93"
-					item: "gtceu:vacuum_tube"
-					type: "item"
-				}
-				{
-					id: "3EBD5A265A15E71B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/red_alloy"
-						}
-					}
-					title: "Redd Alloy"
-					type: "item"
-				}
-			]
-			x: -18.200000000000003d
-			y: 20.8d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Some complex machinery require you to build a structure from multiple blocks which are present here. "]
-			id: "0729C937DEFF1E0B"
-			size: 1.3d
-			tasks: [
-				{
-					id: "425EB8C1F747EA83"
-					item: "immersiveengineering:light_engineering"
-					type: "item"
-				}
-				{
-					id: "6779EA038CC99BBC"
-					item: "immersiveengineering:heavy_engineering"
-					type: "item"
-				}
-				{
-					id: "6EB38F7733151E22"
-					item: "immersiveengineering:rs_engineering"
-					type: "item"
-				}
-				{
-					id: "7C839D26FE9093D0"
-					item: "immersiveengineering:generator"
-					type: "item"
-				}
-				{
-					id: "0E741B8A6732DEA6"
-					item: "immersiveengineering:radiator"
-					type: "item"
-				}
-			]
-			title: "Multiblocks components"
-			x: -9.100000000000001d
-			y: 16.900000000000002d
-		}
-		{
-			dependencies: ["115F76F055B5EB09"]
-			id: "416F4CC8D57BAF00"
-			size: 0.7d
-			tasks: [{
-				id: "63408CE7D7C442FB"
-				item: "ae2:charged_certus_quartz_crystal"
-				type: "item"
-			}]
-			x: -16.605102040816327d
-			y: -1.912755102040819d
-		}
-		{
-			dependencies: [
-				"4423C396B2C5D34D"
-				"164EFF8B7B80321D"
-			]
-			dependency_requirement: "one_completed"
-			id: "09919FCD6E63DF42"
-			tasks: [
-				{
-					id: "611436010390C138"
-					item: "immersiveengineering:turret_chem"
-					type: "item"
-				}
-				{
-					id: "72186F65EC4CC792"
-					item: "immersiveengineering:turret_gun"
-					type: "item"
-				}
-			]
-			title: "Industrial Turrets"
-			x: 4.0d
-			y: 17.0d
-		}
-		{
-			dependencies: ["0729C937DEFF1E0B"]
-			id: "4423C396B2C5D34D"
-			tasks: [{
-				id: "62CB93AFF9971747"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 4
-						}
-					}
-					id: "immersiveengineering:chemthrower"
-				}
-				type: "item"
-			}]
-			x: 1.5d
-			y: 17.0d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					Parent: {
-						Items: [ ]
-						Size: 21
-					}
-				}
-				id: "immersiveengineering:revolver"
-			}
-			id: "164EFF8B7B80321D"
-			rewards: [{
-				count: 24
-				id: "754EF7A50F5522EA"
-				item: "immersiveengineering:casull"
-				type: "item"
-			}]
-			size: 1.4d
-			tasks: [
-				{
-					id: "42BD6E2AA624C098"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								Items: [ ]
-								Size: 21
-							}
-						}
-						id: "immersiveengineering:revolver"
-					}
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "662F62ED3C7DB189"
-					item: { Count: 6, id: "immersiveengineering:casull" }
-					type: "item"
-				}
-			]
-			title: "Wild Weapon"
-			x: -7.0d
-			y: 13.299999999999999d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			id: "4C8C44388703BD22"
-			tasks: [{
-				count: 3L
-				id: "77B2B70E6B74701B"
-				item: "immersiveengineering:watermill"
-				type: "item"
-			}]
-			title: "Water Energy"
-			x: -8.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["164EFF8B7B80321D"]
-			id: "652C9178E27A233E"
-			rewards: [{
-				count: 4
-				id: "196504B9658EA0C7"
-				item: "immersiveengineering:stick_steel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3E4FA0AA72B42EB3"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 3
-						}
-					}
-					id: "immersiveengineering:railgun"
-				}
-				type: "item"
-			}]
-			x: -7.0d
-			y: 15.0d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			icon: "immersivetechnology:advanced_coke_oven"
-			id: "37659341AAB207BF"
-			rewards: [{
-				id: "2F672DC8998FF637"
-				item: "minecraft:hopper"
-				type: "item"
-			}]
-			tasks: [
-				{
-					count: 12L
-					id: "55293C72AFEA3416"
-					item: "immersivetechnology:reinforced_coke_brick"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "5EC104707890A538"
-					item: { Count: 6, id: "thermal:steel_block" }
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "753F31BF9E101B47"
-					item: { Count: 9, id: "immersiveengineering:sheetmetal_steel" }
-					type: "item"
-				}
-				{
-					id: "7A9953884436904E"
-					item: "immersivetechnology:advanced_coke_oven"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Steel plated Coke Oven"
-			x: -11.5d
-			y: 8.5d
-		}
-		{
-			dependencies: ["7F493483338AF21E"]
-			id: "1C9C2BDF0492D3E9"
-			size: 0.7d
-			tasks: [{
-				id: "2B89C1CAFE83DBD7"
-				item: "create:goggles"
-				type: "item"
-			}]
-			x: -5.964285714285708d
-			y: 1.1773809523809575d
-		}
-		{
-			dependencies: ["746BED2E65591E76"]
-			hide_dependent_lines: true
-			id: "757887491266FA38"
-			size: 0.7d
-			tasks: [{
-				id: "7A5360473CD53AB9"
-				item: "createoreexcavation:extractor"
-				type: "item"
-			}]
-			x: -16.45d
-			y: -9.799999999999999d
+			x: 5.75d
+			y: 6.25d
 		}
 	]
-	title: "Production"
+	title: "Moving Parts"
 }

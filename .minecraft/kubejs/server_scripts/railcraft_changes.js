@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
   {
     A: 'thermal:steel_gear',
     B: 'gtceu:lv_electric_piston',  //arg 3: the mapping object
-    C: 'gtceu:lv_forge_hammer',
+    C: 'create:mechanical_press',
     D: 'railcraft:manual_rolling_machine',
     E: 'railcraft:charge_motor'
   }

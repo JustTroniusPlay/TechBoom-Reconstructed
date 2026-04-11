@@ -1,0 +1,28 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "first_complex_electronics"
+	group: "1BFD5ACB45CB2ED0"
+	id: "6DF9E5421743A3EC"
+	order_index: 0
+	quest_links: [{
+		id: "7AA4342B1CC816C1"
+		linked_quest: "1C59476B07336B42"
+		shape: "pentagon"
+		size: 1.5d
+		x: 2.5d
+		y: -0.5d
+	}]
+	quests: [{
+		dependencies: ["1C59476B07336B42"]
+		id: "624171A3B6CEFD0A"
+		tasks: [{
+			id: "4B844042B4DE19DF"
+			item: "gtceu:lv_steam_turbine"
+			type: "item"
+		}]
+		x: 2.5d
+		y: 1.5d
+	}]
+	title: "First Complex Electronics"
+}

@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     event.remove({id: "gtceu:shaped/casing_coke_bricks"});
     event.remove({id: "gtceu:compressor/coke_bricks"});
     event.shaped(
-  Item.of('gtceu:coke_oven_bricks', 3), // arg 1: output
+  Item.of('gtceu:coke_oven_bricks', 6), // arg 1: output
   [
     'ABA',
     'BCB', // arg 2: the shape (array of strings)
@@ -29,12 +29,12 @@ ServerEvents.recipes(event => {
   {
     A: 'gtceu:coke_oven_brick',
     B: 'immersiveengineering:cokebrick',  //arg 3: the mapping object
-    C: 'gtceu:steel_frame'
+    C: 'gtceu:invar_frame'
   }
 )
     event.remove({id: "railcraft:coke_oven_bricks"});
     event.shaped(
-  Item.of('railcraft:coke_oven_bricks', 2), // arg 1: output
+  Item.of('railcraft:coke_oven_bricks', 3), // arg 1: output
   [
     'ABA',
     'BCB', // arg 2: the shape (array of strings)

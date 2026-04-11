@@ -1581,6 +1581,38 @@
 			x: -0.39345238095236823d
 			y: -1.242346938775519d
 		}
+		{
+			dependencies: ["1D1CCBF0E8DBD5B1"]
+			icon: "littlelogistics:energy_tug"
+			id: "32EB398D4A9D6EAB"
+			tasks: [
+				{
+					count: 2L
+					id: "5AA90B81E6BA9291"
+					item: "littlelogistics:vessel_charger"
+					type: "item"
+				}
+				{
+					id: "04854315B685597D"
+					item: "littlelogistics:energy_tug"
+					type: "item"
+				}
+			]
+			title: "Energy Tug"
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["202881A2FA1E9B9D"]
+			id: "1FE4650F8423EEFF"
+			tasks: [{
+				id: "44B4490ACBDCBA6E"
+				item: "littlelogistics:spring"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 4.0d
+		}
 	]
 	title: "Transportation"
 }

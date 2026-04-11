@@ -5,7 +5,7 @@
 	group: ""
 	icon: "interiors:red_chair"
 	id: "64B5FC56C815DD60"
-	order_index: 4
+	order_index: 3
 	quest_links: [
 		{
 			id: "45F19FA923F620A1"

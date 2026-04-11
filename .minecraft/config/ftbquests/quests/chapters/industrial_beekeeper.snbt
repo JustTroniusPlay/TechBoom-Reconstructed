@@ -1,0 +1,44 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industrial_beekeeper"
+	group: "495B816819C83ED9"
+	icon: "forestry:bee_house"
+	id: "1F27CA7EEAD386FD"
+	order_index: 5
+	quest_links: [{
+		id: "275A575F5F19A334"
+		linked_quest: "4619627EEEE566A4"
+		shape: "hexagon"
+		size: 1.5d
+		x: 0.55d
+		y: -2.1d
+	}]
+	quests: [
+		{
+			dependencies: ["26F7DA43C2FE94AB"]
+			id: "0846DDA488B481DB"
+			tasks: [{
+				id: "3CE72493234599E9"
+				item: "forestry:engine_peat"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4619627EEEE566A4"]
+			description: ["You can use carpenter to automate creation of wooden ties for your railroads."]
+			id: "4C7E5BEF0E29D6F3"
+			size: 0.7d
+			tasks: [{
+				id: "4B49A1C5DB4AA5D3"
+				item: "railcraft:wooden_tie"
+				type: "item"
+			}]
+			x: 1.55d
+			y: -1.0500000000000003d
+		}
+	]
+	title: "Industrial Beekeeper"
+}

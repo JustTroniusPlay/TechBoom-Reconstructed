@@ -5,7 +5,7 @@
 	group: ""
 	icon: "mca:villager_editor"
 	id: "67B34152EE2C02BA"
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
