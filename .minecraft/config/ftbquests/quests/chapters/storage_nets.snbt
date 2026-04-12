@@ -22,6 +22,8 @@
 		{
 			id: "77AC45D87964A5C6"
 			linked_quest: "362FE530374D058F"
+			shape: "rsquare"
+			size: 1.2d
 			x: 2.5d
 			y: 5.5d
 		}
@@ -83,7 +85,7 @@
 				type: "item"
 			}]
 			title: "Limited Barrels"
-			x: 4.5d
+			x: 4.0d
 			y: 4.0d
 		}
 		{
@@ -231,15 +233,18 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["721BF9359D5D6E95"]
+			dependencies: [
+				"721BF9359D5D6E95"
+				"540D62BE372AE7D1"
+			]
 			id: "0D6832578FA06AE0"
 			tasks: [{
 				id: "062ED7C68413E8B8"
 				item: "createstockbridge:ae_bridge"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 9.0d
+			x: 5.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["721BF9359D5D6E95"]
@@ -409,6 +414,7 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["362FE530374D058F"]
 			id: "566F5CF387C7F261"
 			tasks: [
 				{
@@ -569,7 +575,66 @@
 				type: "item"
 			}]
 			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["540D62BE372AE7D1"]
+			description: ["ME chest can hold one storage cell at a time."]
+			id: "3325E24B86B597CF"
+			tasks: [{
+				id: "2922E64578BDBC6C"
+				item: "ae2:chest"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["540D62BE372AE7D1"]
+			id: "305DE2EB97E84BC7"
+			tasks: [
+				{
+					id: "327D84372E2CB6F5"
+					item: "more_immersive_wires:ae_relay"
+					type: "item"
+				}
+				{
+					id: "13C66AF2F3EBCB60"
+					item: "more_immersive_wires:ae_connector"
+					type: "item"
+				}
+				{
+					id: "011A87B20583D9CF"
+					item: "more_immersive_wires:ae_coil"
+					type: "item"
+				}
+			]
+			x: 6.5d
 			y: 5.5d
+		}
+		{
+			dependencies: ["305DE2EB97E84BC7"]
+			id: "08E0F0BC34D8B9C0"
+			size: 0.7d
+			tasks: [
+				{
+					id: "0EC000C609546013"
+					item: "more_immersive_wires:ae_dense_coil"
+					type: "item"
+				}
+				{
+					id: "357BC7E553B5FD07"
+					item: "more_immersive_wires:ae_dense_relay"
+					type: "item"
+				}
+				{
+					id: "211FCFD2BD6CF332"
+					item: "more_immersive_wires:ae_dense_connector"
+					type: "item"
+				}
+			]
+			x: 7.35d
+			y: 5.6d
 		}
 	]
 	title: "Storage Solutions"

@@ -22,6 +22,8 @@ ServerEvents.recipes(event => {
     event.remove({id: "regions_unexplored:barley_smoking"});
     event.remove({id: "create:splashing/wheat_flour"});
     event.remove({id: "pamhc2foodcore:bread_dough"});
+    event.remove({id: "mekanism:paper"});
+    event.remove({id: "pamhc2crops:paper_x2_paper_plants"});
 
     event.remove({id: "cybernetic_system:craft_wire_copper"});
     event.shapeless(
@@ -74,4 +76,18 @@ ServerEvents.recipes(event => {
         'gtceu:treated_wood_planks',
         '#forge:treated_wood'
     )
+
+    event.remove({id: "tesseract:tesseract"});
+    event.shaped(
+  Item.of('tesseract:tesseract', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'mekanism:block_refined_obsidian',
+    B: 'thermal:enderium_block',  //arg 3: the mapping object
+    C: 'createutilities:void_steel_block'
+  })
 })

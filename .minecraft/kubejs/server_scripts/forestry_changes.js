@@ -29,7 +29,31 @@ ServerEvents.recipes(event => {
         {id: "forestry:carpenter"},
         "minecraft:glass",
         "gtceu:small_bronze_gear"
-    )    
+    )
+    
+    event.replaceInput(
+        {id: "forestry:centrifuge"},
+        "minecraft:glass",
+        "gtceu:small_copper_gear"
+    )
+
+    event.replaceInput(
+        {id: "forestry:moistener"},
+        "minecraft:glass",
+        "create:copper_sheet"
+    )
+
+    event.replaceInput(
+        {id: "forestry:fermenter"},
+        "minecraft:glass",
+        "thermal:bronze_plate"
+    )
+
+    event.replaceInput(
+        {id: "forestry:squeezer"},
+        "minecraft:glass",
+        "thermal:tin_gear"
+    )
 
 
 const creo = [
@@ -66,7 +90,6 @@ creo.forEach(creo => {
   },
   time: 60
   });
-
-})
+  })
 
 })

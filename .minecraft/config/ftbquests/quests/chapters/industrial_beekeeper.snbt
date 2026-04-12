@@ -5,7 +5,7 @@
 	group: "495B816819C83ED9"
 	icon: "forestry:bee_house"
 	id: "1F27CA7EEAD386FD"
-	order_index: 5
+	order_index: 1
 	quest_links: [{
 		id: "275A575F5F19A334"
 		linked_quest: "4619627EEEE566A4"
@@ -24,7 +24,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]
@@ -38,6 +38,123 @@
 			}]
 			x: 1.55d
 			y: -1.0500000000000003d
+		}
+		{
+			dependencies: [
+				"0F45980EACA70EBA"
+				"05BC74C712E41396"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Biogas Engine use Biomass and lava to produce 50 FE/t. Other forms of fuel like Seed Oil will be 30 and most other only 10."
+				""
+				"Biogas Engine only use fuel to heat itself up. Lava exist as a start up and not gonna be consumed if you not use water or milk as fuel replacement."
+			]
+			id: "26F7DA43C2FE94AB"
+			tasks: [{
+				id: "3EBFECBB41DFA882"
+				item: "forestry:engine_biogas"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4619627EEEE566A4"]
+			icon: "forestry:fermenter"
+			id: "0F45980EACA70EBA"
+			tasks: [
+				{
+					id: "6DBE77846C446867"
+					item: "forestry:fermenter"
+					type: "item"
+				}
+				{
+					id: "75A9D3DEA85B2773"
+					item: "forestry:bucket_biomass"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4619627EEEE566A4"]
+			description: ["With help of Carpenter you can make wood pulp and paper out of it."]
+			icon: "forestry:wood_pulp"
+			id: "2D9254097394383E"
+			size: 0.7d
+			tasks: [
+				{
+					id: "0864A98334B666E2"
+					item: "forestry:wood_pulp"
+					type: "item"
+				}
+				{
+					id: "546DBCB742A97713"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			title: "Piece of paper"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4619627EEEE566A4"]
+			description: ["You can get different liquids with Squeezer. "]
+			icon: "forestry:squeezer"
+			id: "05BC74C712E41396"
+			tasks: [
+				{
+					id: "0565C7776F57AF97"
+					item: "forestry:squeezer"
+					type: "item"
+				}
+				{
+					id: "145D9FC1F445DB3E"
+					item: "forestry:bucket_seed_oil"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0F45980EACA70EBA"]
+			icon: "forestry:still"
+			id: "28AF57B15FD06843"
+			tasks: [
+				{
+					id: "07FBF9E7A550D62A"
+					item: "forestry:still"
+					type: "item"
+				}
+				{
+					id: "3C0756A5630BB7C3"
+					item: "forestry:bucket_bio_ethanol"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4619627EEEE566A4"]
+			description: [
+				"Simple machine that can help create moist blocks. "
+				""
+				"Most notable things you can create are Mycelium or Podzol."
+			]
+			id: "64649C5C66312EDD"
+			size: 0.7d
+			tasks: [{
+				id: "47ECA6A05692F4FB"
+				item: "forestry:moistener"
+				type: "item"
+			}]
+			x: 1.4d
+			y: -3.15d
 		}
 	]
 	title: "Industrial Beekeeper"

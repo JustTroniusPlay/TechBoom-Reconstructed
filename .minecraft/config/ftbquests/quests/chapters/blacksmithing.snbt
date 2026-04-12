@@ -5,7 +5,7 @@
 	group: "495B816819C83ED9"
 	icon: "tconstruct:smeltery_controller"
 	id: "0838F00FC04FDAF9"
-	order_index: 3
+	order_index: 4
 	quest_links: [{
 		id: "73E1BD014B2E05EC"
 		linked_quest: "25B2030958956699"

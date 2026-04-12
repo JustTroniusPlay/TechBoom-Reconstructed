@@ -25,6 +25,13 @@
 			x: -2.0d
 			y: -6.0d
 		}
+		{
+			id: "5966645984A908BB"
+			linked_quest: "29271E54A7DBAF2E"
+			size: 0.7d
+			x: -0.35d
+			y: -5.25d
+		}
 	]
 	quests: [
 		{
@@ -736,6 +743,8 @@
 				"Steam machinery have exhaust vents that need open space beside them to operate. "
 				""
 				"Unfotunately they can't auto-output or input items by themselves. You need to use additional means like hoppers or other ways. Starting with Low Voltage machinery or some other Redstone Flux machines it not gonna be a problem anymore."
+				""
+				"&lContinue in 'Steam Age' tab.&r"
 			]
 			id: "15C30310B03E4F79"
 			shape: "rsquare"
@@ -811,8 +820,8 @@
 				}
 			]
 			title: "First Coke Oven"
-			x: 5.80442176870748d
-			y: -7.85d
+			x: 3.633843537414961d
+			y: -8.239795918367342d
 		}
 		{
 			dependencies: ["51D2A2A99A671311"]
@@ -842,8 +851,8 @@
 					type: "item"
 				}
 			]
-			x: 6.80442176870748d
-			y: -8.35d
+			x: 4.949999999999999d
+			y: -8.261224489795918d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -870,7 +879,7 @@
 			description: [
 				"The most straightforwad way to generate energy by burning solid fuel."
 				""
-				"Heat Generator is easier to make, but it less effective. Its better to use Stirling Dynamo if you found gold already."
+				"Heat Generator is easier to make, but it less effective and fuel hungry. Its better to use Stirling Dynamo if you found gold already."
 			]
 			id: "56766749439CD7E0"
 			rewards: [{
@@ -904,7 +913,7 @@
 				""
 				"Just keep in mind that always good to have more of it so you always can make needed shafts or cogs."
 				""
-				"&lSee more in 'Kinetics' and 'Production' tabs.&r"
+				"&lSee more in 'Kinetics' and 'Moving Parts' tabs.&r"
 			]
 			id: "25951FDCB7908145"
 			rewards: [{
@@ -1195,8 +1204,8 @@
 				title: "Manual for engineering"
 				type: "checkmark"
 			}]
-			x: 4.30442176870748d
-			y: -8.35d
+			x: 2.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -1227,21 +1236,9 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["3129F95624CBEDD4"]
-			description: ["Will generate energy using water and lava. "]
-			id: "26F7DA43C2FE94AB"
-			tasks: [{
-				id: "3EBFECBB41DFA882"
-				item: "forestry:engine_biogas"
-				type: "item"
-			}]
-			x: 3.454081632653046d
-			y: -9.151020408163268d
-		}
-		{
 			dependencies: ["15B5CF1F309CA82A"]
 			description: [
-				"Treated planks can be crafted into Windmills. They will generate energy passively but be affected by varoius conditions: "
+				"Treated planks can be crafted into Windmills. They will generate energy passively."
 				""
 				"Different weather will reduce or decrease energy output of Windmill. Building another Windmill of any type in close proximity (up to 7 blocks in front of it) will reduce its speed."
 			]
@@ -1261,12 +1258,16 @@
 				}
 			]
 			title: "Kinetic clean energy"
-			x: 6.80442176870748d
-			y: -9.85d
+			x: 6.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
-			description: ["Material for advacned Create components."]
+			description: [
+				"Material for advacned Create components."
+				""
+				"&lSee more in 'Moving Parts' tab.&r"
+			]
 			id: "1A155790CD83B2A7"
 			shape: "rsquare"
 			size: 1.2d
@@ -1280,7 +1281,11 @@
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
-			description: ["Compression dynamo can consume creosote and generate Forge Energy units."]
+			description: [
+				"Compression dynamo can consume creosote and generate Forge Energy units. "
+				""
+				"It can be useful way to get a little bit more energy and spend Creosote if you have too much if it. "
+			]
 			id: "1FB9F832D1214239"
 			tasks: [{
 				id: "7DBAE07870657D9A"
@@ -1288,8 +1293,8 @@
 				type: "item"
 			}]
 			title: "Creosote to energy"
-			x: 5.739795918367338d
-			y: -9.538775510204081d
+			x: 5.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -1325,11 +1330,8 @@
 			y: -12.75d
 		}
 		{
-			dependencies: [
-				"26F7DA43C2FE94AB"
-				"4B31C89E0FA58CE0"
-			]
-			description: ["Will use only lava to generate energy. More effective then its predecessor."]
+			dependencies: ["4B31C89E0FA58CE0"]
+			description: ["Will use lava to generate energy."]
 			id: "4972940DA0DA30B4"
 			tasks: [{
 				id: "13E528561DE1E6B5"
@@ -1628,7 +1630,7 @@
 			description: [
 				"Essential component for almost every Thermal machinery."
 				""
-				"&lFollow 'Production' tab for Thermal Machinery.&r"
+				"&lFollow 'Redstone Machinery' tab for Thermal Machinery.&r"
 			]
 			id: "2798CCE5B1DE21DA"
 			shape: "hexagon"
@@ -1862,9 +1864,16 @@
 				"4EC3B664D62760BE"
 				"521B2505E5C81E16"
 				"1FB9F832D1214239"
-				"26F7DA43C2FE94AB"
+				"4972940DA0DA30B4"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"Energy is your way to get any machine working. Now that you have generators to get it its good idea to find how to distribute, direct and overal control it where you need."
+				""
+				"Most of generators use Forge Energy and produce energy in FE/t, where 't' means tick and counts as 1/20 of a second."
+				""
+				"&lSee 'Energy Management' tab for more info.&r"
+			]
 			icon: "thermal:rf_coil"
 			id: "69DB58E1CD20ED2B"
 			shape: "pentagon"
@@ -2424,8 +2433,8 @@
 				}
 			]
 			title: "Portable crates"
-			x: 5.352040816326517d
-			y: -8.681632653061227d
+			x: 4.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -2505,6 +2514,11 @@
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
+			description: [
+				"Machine that can make some special crafts automaticaly. Most of the Forestry related machines made out of simple materials, so they can be made easily."
+				""
+				"&lSee 'Industrial Beekeeper' tab.&r"
+			]
 			id: "4619627EEEE566A4"
 			shape: "hexagon"
 			size: 1.5d
@@ -2535,6 +2549,7 @@
 				"04A0F70827AA6155"
 			]
 			id: "123053D8EB9279CF"
+			subtitle: "Gem Eater"
 			tasks: [{
 				id: "70021680F9844739"
 				item: "thermal:dynamo_lapidary"
@@ -2622,8 +2637,8 @@
 				item: "immersiveengineering:charging_station"
 				type: "item"
 			}]
-			x: 8.804421768707481d
-			y: -11.85d
+			x: 7.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["6099D2F4EEE9112A"]
@@ -2648,21 +2663,21 @@
 				}
 				type: "item"
 			}]
-			x: 4.80442176870748d
-			y: -9.35d
+			x: 3.15d
+			y: -9.1d
 		}
 		{
 			dependencies: ["521B2505E5C81E16"]
-			description: ["You can upgrade your windmills by clicking them with tough fabric."]
+			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail Each blade will need it own Sail upgrade!"]
 			id: "50BA9C41804AE9A2"
 			size: 0.7d
 			tasks: [{
-				id: "462801C5FA1E27FA"
-				item: "immersiveengineering:hemp_fabric"
+				id: "3E02F94201C301A0"
+				item: "immersiveengineering:windmill_sail"
 				type: "item"
 			}]
-			x: 7.442176870748301d
-			y: -10.522959183673462d
+			x: 7.0d
+			y: -9.799999999999999d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2832,8 +2847,8 @@
 					type: "item"
 				}
 			]
-			x: 6.823639455782299d
-			y: -7.288095238095245d
+			x: 4.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["49EAA9A6F41A7551"]
@@ -2845,8 +2860,8 @@
 				type: "item"
 			}]
 			title: "Industrial Coke Oven"
-			x: 6.847448979591832d
-			y: -6.19285714285715d
+			x: 5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -3025,6 +3040,7 @@
 		}
 		{
 			dependencies: ["4879433BBEEF8352"]
+			description: ["To make components and blocks of your future digital storage you need processors. Inscriber is ultimate way to craft them."]
 			icon: "ae2:inscriber"
 			id: "4A8233ADB6406DA9"
 			tasks: [
@@ -3053,7 +3069,23 @@
 			y: -15.0d
 		}
 		{
-			dependencies: ["4A8233ADB6406DA9"]
+			dependencies: [
+				"4A8233ADB6406DA9"
+				"799F7F64000A3084"
+			]
+			description: [
+				"Digital storage use Storage Cells with various properties: Bytes and Types."
+				""
+				"&oTypes&r: means how many different items can cell hold."
+				""
+				"&oBytes&r: show how many items cell can hold. 1 item = 1 bit, so for a byte you need 8 items."
+				""
+				"Put them in ME Drive and connect terminal to it with flux cables. Now you have simple way to store your items in one block!"
+				""
+				"With addition of crafting terminal you now can create things directly from ME system."
+				""
+				"&lFollow 'Storage Solutions' tab for automation.&r"
+			]
 			icon: "ae2:drive"
 			id: "540D62BE372AE7D1"
 			shape: "gear"
@@ -3096,15 +3128,16 @@
 			y: -16.5d
 		}
 		{
-			dependencies: ["540D62BE372AE7D1"]
+			dependencies: ["4A8233ADB6406DA9"]
+			description: ["You will need it to convert any form of energy for your main digital storage network. You can use Fluix Cables to transfer energy between components."]
 			id: "799F7F64000A3084"
 			tasks: [{
 				id: "7EE3EA9812EAF172"
 				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -16.5d
+			x: 6.0d
+			y: -15.5d
 		}
 		{
 			dependencies: [
@@ -3112,6 +3145,7 @@
 				"0852CB10008D7CDB"
 				"7B289C03327D9227"
 			]
+			description: ["Attachment for Energy Acceptor. With it you now can power your ME system with rotational power."]
 			id: "5B16DA7287A8ABFE"
 			size: 0.7d
 			tasks: [{

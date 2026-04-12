@@ -5,7 +5,7 @@
 	group: "495B816819C83ED9"
 	icon: "create:steam_engine"
 	id: "694F800726287F7C"
-	order_index: 1
+	order_index: 2
 	quest_links: [
 		{
 			id: "706C6771133466D1"
@@ -1392,14 +1392,31 @@
 				"Before you get real dieseil you can craft its replacement made from seeds oil and ethanol. How and what way you will choose to create them is up to you."
 				""
 				"With biodisel though your engines will give less SU."
+				""
+				"You can even use Ethanol and Seed Oil by itself to get your engines running, but &odon't expect much&r with this type of fuel. "
 			]
+			icon: "createdieselgenerators:biodiesel_bucket"
 			id: "5C9C2540BA21612F"
 			size: 0.7d
-			tasks: [{
-				id: "27E606CF6F14B22A"
-				item: "createdieselgenerators:biodiesel_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "27E606CF6F14B22A"
+					item: "createdieselgenerators:biodiesel_bucket"
+					type: "item"
+				}
+				{
+					id: "49FA834E1BC5F165"
+					item: "createaddition:seed_oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "56F925702339AAC3"
+					item: "createdieselgenerators:ethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "Ecological replacement"
 			x: 3.5d
 			y: 1.0d

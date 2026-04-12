@@ -342,6 +342,7 @@
 			y: 6.5d
 		}
 		{
+			description: ["With ProjectRed saw you can cut blocks into various shapes. Vertical slabs, panels and sp much more. Almost every blocks can be used!"]
 			id: "3B2B9A664D1EC8D2"
 			tasks: [{
 				id: "6970E5F5257CF081"
@@ -454,6 +455,94 @@
 			}]
 			x: 5.5d
 			y: 9.0d
+		}
+		{
+			description: ["Can be made from various materials and with different colors depending on ingridient."]
+			id: "1C6724E2D84CF97C"
+			tasks: [
+				{
+					id: "1B61A8DC38F681CE"
+					item: "createdeco:yellow_andesite_lamp"
+					type: "item"
+				}
+				{
+					id: "7F97616C817C2452"
+					item: "createdeco:red_brass_lamp"
+					type: "item"
+				}
+				{
+					id: "0D1BD11EE7A092F1"
+					item: "createdeco:green_iron_lamp"
+					type: "item"
+				}
+				{
+					id: "3754F20E00B2928A"
+					item: "createdeco:blue_copper_lamp"
+					type: "item"
+				}
+				{
+					id: "423BC0BF2BDCA4E9"
+					item: "createdeco:yellow_industrial_iron_lamp"
+					type: "item"
+				}
+				{
+					id: "23DFAC2C06506304"
+					item: "createdeco:yellow_zinc_lamp"
+					type: "item"
+				}
+			]
+			title: "Metalic Lamps"
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			id: "0E3CD512D8925E70"
+			tasks: [
+				{
+					id: "1E4D8324AA81762C"
+					item: "immersiveengineering:treated_post"
+					type: "item"
+				}
+				{
+					id: "2D48FA1EA9ECFA44"
+					item: "immersiveengineering:treated_wallmount"
+					type: "item"
+				}
+				{
+					id: "6C6E7A1D0FC4A1DD"
+					item: "immersiveengineering:alu_post"
+					type: "item"
+				}
+				{
+					id: "0C5FF3756E2A5D32"
+					item: "immersiveengineering:alu_wallmount"
+					type: "item"
+				}
+				{
+					id: "413509D00BF7A827"
+					item: "immersiveengineering:steel_post"
+					type: "item"
+				}
+				{
+					id: "4BB81E7AA840FCE5"
+					item: "immersiveengineering:steel_wallmount"
+					type: "item"
+				}
+			]
+			title: "Posts and Wallmounts"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4CCBE98B5628C77A"]
+			id: "6E89F07804FAACD2"
+			tasks: [{
+				id: "3F22BC386F117324"
+				item: "createaddition:festive_spool"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
 		}
 	]
 	title: "Decor"

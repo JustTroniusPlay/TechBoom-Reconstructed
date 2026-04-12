@@ -36,8 +36,8 @@
 		{
 			id: "7B95BDC607E0AB2F"
 			linked_quest: "08F0E06F30471E3E"
-			x: 4.0d
-			y: -3.0d
+			x: 4.5d
+			y: -3.5d
 		}
 	]
 	quests: [
@@ -675,6 +675,24 @@
 			title: "Potin Alloy"
 			x: 3.25d
 			y: -8.114285714285707d
+		}
+		{
+			dependencies: [
+				"332E6B2C638AE656"
+				"540D62BE372AE7D1"
+			]
+			id: "48A9933056B21984"
+			tasks: [{
+				id: "422A3643AC8CBA5A"
+				item: {
+					Count: 1
+					id: "ae2:fluid_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
 		}
 	]
 	title: "Fluid Management"

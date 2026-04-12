@@ -5,7 +5,7 @@
 	group: "495B816819C83ED9"
 	icon: "immersiveengineering:advanced_blast_furnace"
 	id: "1F4BE2C27FDFFE99"
-	order_index: 6
+	order_index: 3
 	quest_links: [{
 		id: "0D37DA266658503C"
 		linked_quest: "7A0C939E0FE540EC"

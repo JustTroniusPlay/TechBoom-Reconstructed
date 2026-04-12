@@ -5,7 +5,7 @@
 	group: "495B816819C83ED9"
 	icon: "tfmg:coke_oven"
 	id: "6A23E798E34A45A8"
-	order_index: 2
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
