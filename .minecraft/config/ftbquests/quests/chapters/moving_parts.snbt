@@ -226,10 +226,16 @@
 					type: "item"
 				}
 				{
-					count: 8L
 					id: "53F5087CB369FEE1"
-					item: { Count: 8, id: "thermal:white_rockwool" }
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:wool"
+						}
+					}
 					optional_task: true
+					title: "Any #minecraft:wool"
 					type: "item"
 				}
 			]
@@ -655,6 +661,7 @@
 		}
 		{
 			dependencies: ["188E10C139F48264"]
+			dependency_requirement: "all_started"
 			id: "261E072888FAEA04"
 			size: 0.6d
 			tasks: [
@@ -1615,24 +1622,11 @@
 			icon: "fluid:pipette"
 			id: "6B98F8F66130812D"
 			size: 0.6d
-			tasks: [
-				{
-					id: "11A5AD5E6D1E20A1"
-					item: "fluid:pipette"
-					type: "item"
-				}
-				{
-					id: "52DCE31F071A4F1F"
-					item: "fluid:fluid_interface"
-					type: "item"
-				}
-				{
-					id: "094644FFBB5E76FA"
-					item: "fluid:smart_fluid_interface"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "11A5AD5E6D1E20A1"
+				item: "fluid:pipette"
+				type: "item"
+			}]
 			x: -1.8999999999999986d
 			y: -6.8d
 		}
@@ -2311,18 +2305,11 @@
 			icon: "create_interactive:interact_me"
 			id: "3862A47C6FC3972D"
 			size: 1.5d
-			tasks: [
-				{
-					id: "0732F3B5183013FB"
-					item: "create_interactive:interact_me"
-					type: "item"
-				}
-				{
-					id: "4A9E4CA91E992F26"
-					item: "create_interactive:interact_me_not"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0732F3B5183013FB"
+				item: "create_interactive:interact_me"
+				type: "item"
+			}]
 			title: "Interaction"
 			x: 13.69285714285715d
 			y: 0.8714285714285666d
@@ -2364,7 +2351,7 @@
 		{
 			dependencies: [
 				"1A155790CD83B2A7"
-				"69DB58E1CD20ED2B"
+				"2DC0C89F91D2AE1D"
 			]
 			hide_dependent_lines: true
 			id: "006F0DFB4E9FE795"

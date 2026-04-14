@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
   
   event.remove({id: "immersiveengineering:crafting/blastbrick"});
     event.shaped(
-  Item.of('immersiveengineering:blastbrick', 6), // arg 1: output
+  Item.of('immersiveengineering:blastbrick', 3), // arg 1: output
   [
     'ABA',
     'BCB', // arg 2: the shape (array of strings)

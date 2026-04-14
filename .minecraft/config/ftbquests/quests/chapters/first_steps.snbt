@@ -1253,7 +1253,6 @@
 				{
 					id: "483BA109E9968F38"
 					item: "immersiveengineering:windmill"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -1418,7 +1417,7 @@
 					type: "item"
 				}
 				{
-					count: 25L
+					count: 23L
 					id: "545EB99C733995C2"
 					item: "gtceu:wood_wall"
 					type: "item"
@@ -1437,9 +1436,9 @@
 					type: "item"
 				}
 				{
-					count: 25L
+					count: 23L
 					id: "4C2BDB353A99BCA2"
-					item: { Count: 25, id: "gtceu:steam_machine_casing" }
+					item: "gtceu:steam_machine_casing"
 					optional_task: true
 					type: "item"
 				}
@@ -2002,7 +2001,7 @@
 					type: "item"
 				}
 			]
-			title: "Going underwater."
+			title: "Going underwater"
 			x: 1.5d
 			y: -15.5d
 		}
@@ -3080,7 +3079,7 @@
 				""
 				"&oBytes&r: show how many items cell can hold. 1 item = 1 bit, so for a byte you need 8 items."
 				""
-				"Put them in ME Drive and connect terminal to it with flux cables. Now you have simple way to store your items in one block!"
+				"Put them in ME Drive and connect terminal to it with fluix cables. Now you have simple way to store your items in one block!"
 				""
 				"With addition of crafting terminal you now can create things directly from ME system."
 				""

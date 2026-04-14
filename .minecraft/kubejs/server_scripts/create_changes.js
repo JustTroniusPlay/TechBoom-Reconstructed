@@ -46,4 +46,20 @@ event.recipes.create.mechanical_crafting('create_sa:andesite_exoskeleton_chestpl
     F: '#forge:stone'
   })
 
+  event.remove({id: "createaddition:crafting/modular_accumulator_gold"});
+  event.remove({id: "createaddition:crafting/modular_accumulator_electrum"});
+  event.shaped(
+  Item.of('createaddition:modular_accumulator', 1), // arg 1: output
+  [
+    'DAD',
+    'EBE', // arg 2: the shape (array of strings)
+    'DCD'
+  ],
+  {
+    A: '#forge:rods/gold',
+    B: 'immersiveengineering:capacitor_mv',  //arg 3: the mapping object
+    C: 'immersiveengineering:wire_electrum',
+    D: 'create:brass_sheet',
+    E: 'tfmg:capacitor_item'
+  })
 })

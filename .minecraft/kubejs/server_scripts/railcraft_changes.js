@@ -70,4 +70,26 @@ event.replaceInput(
         'railcraft:blast_furnace_bricks',
         'railcraft:solid_fueled_firebox'
     )
+
+  event.custom({
+  "type": "railcraft:rolling",
+  "key": {
+    "a": {
+      "tag": "forge:ingots/osmium"
+    },
+    "b": {
+      "tag": "forge:ingots/osmium"
+    }
+  },
+  "pattern": [
+    "a b",
+    "a b",
+    "a b"
+  ],
+  "result": {
+    "count": 12,
+    "item": "railcraft:standard_rail"
+  }
+  });
+
 })

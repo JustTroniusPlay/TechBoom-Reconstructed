@@ -26,7 +26,7 @@
 			linked_quest: "006F0DFB4E9FE795"
 			title: "Custom Accumulator"
 			x: 2.5d
-			y: 0.5d
+			y: 3.5d
 		}
 		{
 			id: "6F977D2B7482E7EE"
@@ -282,7 +282,7 @@
 		{
 			dependencies: ["69DB58E1CD20ED2B"]
 			description: [
-				"With help of small connector you can transfer energy around your base. Unfortunately simplicity comes with a cost: Small connectors don't have any power loss, but can't be too far away for each other. Connectors need to be max 4 blocks from each other. "
+				"With help of small connector you can transfer energy around your base. Unfortunately simplicity comes with a cost: Small connectors don't have any power loss, but can't be too far away for each other. Connectors need to be max 4 blocks from each other and can't support more than 4 connections on one."
 				""
 				"Not bad for small starter base, but really will not fit huge industrial production."
 				""
