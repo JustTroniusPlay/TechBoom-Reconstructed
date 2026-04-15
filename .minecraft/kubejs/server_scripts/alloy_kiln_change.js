@@ -72,6 +72,12 @@ ServerEvents.recipes(event => {
     "create:zinc_nugget",1,
     60)
 
+    kiln(
+    "projectred_core:red_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:redstone",8,
+    100)
+
 
 
 })

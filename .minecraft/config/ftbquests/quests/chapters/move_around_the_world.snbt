@@ -1533,12 +1533,27 @@
 		}
 		{
 			dependencies: ["4DB042DAF83D7A0A"]
+			icon: "immersive_machinery:tunnel_digger"
 			id: "740A845F94D5D8AA"
-			tasks: [{
-				id: "544F30E8FDAEBCAB"
-				item: "immersive_machinery:tunnel_digger"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "544F30E8FDAEBCAB"
+					item: "immersive_machinery:tunnel_digger"
+					type: "item"
+				}
+				{
+					id: "0FDA0FB9F04C6519"
+					item: "immersive_machinery:diamond_drill"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1C9F9924AD4D3EDC"
+					item: "immersive_machinery:netherite_drill"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -2.5d
 			y: -1.5d
 		}

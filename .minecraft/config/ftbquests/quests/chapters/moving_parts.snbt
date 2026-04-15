@@ -662,6 +662,7 @@
 		{
 			dependencies: ["188E10C139F48264"]
 			dependency_requirement: "all_started"
+			description: ["You can put Filling and Fueling tanks into the Charm slot in your accessories. Your Jetpacks and Exoskeletons will use their fuel first."]
 			id: "261E072888FAEA04"
 			size: 0.6d
 			tasks: [
@@ -1980,6 +1981,7 @@
 		}
 		{
 			dependencies: ["7ED421A21A7BB90C"]
+			description: ["You can put Filling and Fueling tanks into the Charm slot in your accessories. Your Jetpacks and Exoskeletons will use their fuel first."]
 			id: "3768363D8D069FD0"
 			size: 0.6d
 			tasks: [

@@ -499,7 +499,7 @@
 			y: -2.0238095238095326d
 		}
 		{
-			dependencies: ["5186990A391ADB8D"]
+			dependencies: ["37506D0DC482AAA8"]
 			description: [
 				"Sheetmetal tank is 3x3 blocks wide structure that can store big amount of fluid. The limit is around 512 buckets. It will store more fluid then copper tank of similar size, but it can't be expanded."
 				""
@@ -724,7 +724,7 @@
 				}
 			]
 			x: 3.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [

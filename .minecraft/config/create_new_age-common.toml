@@ -10,7 +10,7 @@ maxCoils = 8
 maxRodsInDirection = 32
 #Multiplier of wire conductivity
 #Range: 0.0 ~ 1.7976931348623157E308
-conductivityMultiplier = 0.2
+conductivityMultiplier = 0.25
 #Maximum depth of network pathfinding
 #Range: > 1
 maxPathfindingDepth = 32

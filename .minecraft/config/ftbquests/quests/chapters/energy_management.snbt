@@ -353,7 +353,7 @@
 			description: [
 				"A simple alternative or even a upgrade to your connectors. "
 				""
-				"With familiar simplicity now you can transfer energy a little bit further, 12 blocks. Plus this connector is universal and only things that matters are wires: they define max energy transfer, input and output capacity."
+				"With familiar simplicity now you can transfer energy a little bit further, 12 blocks. Plus this connector is universal and only things that matters are wires: they define max energy transfer."
 				"{@pagebreak}"
 				"Electrical Connector will distribute energy equally between consumers in the network if you connect them to one. The same thing applies to just connecting connectors together. So be careful with your network distribution priority."
 			]

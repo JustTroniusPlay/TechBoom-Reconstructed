@@ -1975,7 +1975,7 @@
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
-			description: [""]
+			description: ["Backtanks can be put in your body accessory slot while diving helmet need to be in helmet slot, but can be stored in head accessory slot when you don't use it."]
 			id: "49BFD7BD22B74CBD"
 			tasks: [
 				{
@@ -3152,8 +3152,8 @@
 				item: "createappliedkinetics:energy_provider"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -15.75d
+			x: 6.3d
+			y: -16.45d
 		}
 	]
 	title: "Start of the journey"
