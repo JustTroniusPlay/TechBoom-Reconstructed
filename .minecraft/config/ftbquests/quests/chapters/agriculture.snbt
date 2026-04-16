@@ -18,7 +18,7 @@
 		{
 			id: "421021CACED07DF3"
 			linked_quest: "0B61ED63E8F8E7D2"
-			x: 2.5d
+			x: 3.0d
 			y: 5.5d
 		}
 		{
@@ -49,8 +49,8 @@
 				type: "item"
 			}]
 			title: "Crops collector"
-			x: -1.5d
-			y: 5.0d
+			x: -2.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["27D02A3ECE518CCE"]
@@ -60,8 +60,8 @@
 				item: "thermal:dynamo_gourmand"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 6.0d
+			x: -2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["27D02A3ECE518CCE"]
@@ -1809,6 +1809,110 @@
 			}]
 			x: 0.5d
 			y: 7.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1C1D81F06BD20F18"]
+			dependency_requirement: "all_started"
+			description: ["Contains information about your diet, what foods you eat and how many."]
+			icon: "solringopie:food_book"
+			id: "079BFE1131DD2994"
+			rewards: [{
+				id: "59A7DC279CBCC7C6"
+				item: "solringopie:food_book"
+				type: "item"
+			}]
+			subtitle: "Everything about healthy life"
+			tasks: [{
+				id: "0C78303EC299A231"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["27D02A3ECE518CCE"]
+			description: ["Trying diverse diet can really hit your inventory management, so of course good idea to store all your edibles in one place."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 9
+					}
+				}
+				id: "solringopie:lunchbox"
+			}
+			id: "1C1D81F06BD20F18"
+			subtitle: "Storing food efficently"
+			tasks: [
+				{
+					id: "0D52FA2188701B91"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "solringopie:lunchbag"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "778F25FC1FD84426"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 9
+							}
+						}
+						id: "solringopie:lunchbox"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "78D8C2B531D7E59D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 14
+							}
+						}
+						id: "solringopie:golden_lunchbox"
+					}
+					type: "item"
+				}
+			]
+			title: "Lunchbox"
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["27F8C60B477DB460"]
+			description: ["Reliable way to get most out from your farm animals."]
+			id: "30E7A35B0F1C5797"
+			tasks: [{
+				id: "190ABF803C608448"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/butchery_knives"
+					}
+				}
+				title: "Butchery Knife"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
 		}
 	]
 	title: "Agriculture and Edibles"

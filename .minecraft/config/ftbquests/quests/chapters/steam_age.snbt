@@ -625,6 +625,26 @@
 			x: -3.785714285714313d
 			y: -4.843452380952385d
 		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Sift Mallet can diactivate Gregtech machinery."]
+			id: "5E79D5EED8FFB37C"
+			size: 0.7d
+			tasks: [{
+				id: "0D14DD23595429CA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:tools/crafting_mallets"
+					}
+				}
+				title: "Soft Mallet"
+				type: "item"
+			}]
+			x: 1.4999999999999716d
+			y: -1.2754464285714278d
+		}
 	]
 	title: "Steam Age"
 }
