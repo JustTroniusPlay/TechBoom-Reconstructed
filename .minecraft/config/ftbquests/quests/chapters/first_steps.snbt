@@ -3064,8 +3064,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: -15.0d
+			x: 4.8999999999999995d
+			y: -16.349999999999998d
 		}
 		{
 			dependencies: [
@@ -3123,8 +3123,8 @@
 				}
 			]
 			title: "Digital Storage"
-			x: 5.0d
-			y: -16.5d
+			x: 4.8999999999999995d
+			y: -17.849999999999998d
 		}
 		{
 			dependencies: ["4A8233ADB6406DA9"]
@@ -3135,8 +3135,8 @@
 				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -15.5d
+			x: 5.8999999999999995d
+			y: -16.849999999999998d
 		}
 		{
 			dependencies: [
@@ -3152,8 +3152,30 @@
 				item: "createappliedkinetics:energy_provider"
 				type: "item"
 			}]
-			x: 6.3d
-			y: -16.45d
+			x: 6.199999999999999d
+			y: -17.799999999999997d
+		}
+		{
+			dependencies: ["4879433BBEEF8352"]
+			description: ["In the depths of the Nether you can find ore veins containing certus quartz native to hellish landscape. It can be used in some crafting recipe instead of one you farm in meteors."]
+			icon: "gtceu:certus_quartz_gem"
+			id: "7E322C0C7CE5B091"
+			size: 0.7d
+			tasks: [
+				{
+					id: "53D6CF29C5CC2C9A"
+					item: "gtceu:raw_certus_quartz"
+					type: "item"
+				}
+				{
+					id: "4F9072AEF24597BF"
+					item: "gtceu:certus_quartz_gem"
+					type: "item"
+				}
+			]
+			title: "Hellish Replacement"
+			x: 4.55d
+			y: -15.4d
 		}
 	]
 	title: "Start of the journey"

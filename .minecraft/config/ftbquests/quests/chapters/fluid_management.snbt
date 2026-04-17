@@ -242,6 +242,7 @@
 		}
 		{
 			dependencies: ["5186990A391ADB8D"]
+			description: ["Just variants for decoration or to designation of different fluids."]
 			id: "597FD4AD71F0A0E0"
 			size: 0.5d
 			tasks: [
