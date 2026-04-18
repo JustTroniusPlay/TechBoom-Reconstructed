@@ -78,6 +78,12 @@ ServerEvents.recipes(event => {
     "minecraft:redstone",8,
     100)
 
+    kiln(
+      "minecraft:glass_pane",
+      "gtceu:quartz_sand_dust",
+      "gtceu:tiny_flint_dust",1,
+      100)
+
 
 
 })

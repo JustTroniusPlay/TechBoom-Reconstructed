@@ -630,16 +630,15 @@
 		{
 			dependencies: [
 				"7F1D22C969F965A6"
-				"5361A9865C6547F4"
+				"34D049FD2BF84E84"
 			]
 			description: [
-				"Seared melter is first iteration of getting molten metals for your custom tools. But most metals require higher temperatures and Melter can't create alloys, so you need to upgrade to bigger smeltery."
+				"Seared melter is first iteration of getting molten metals. Right now it can help get additional resource income. Simple and common ores can give additional 3 nuggets when using smeltery. Some metals require higher temperatures, so you need to upgrade to bigger smeltery later. You can't make alloys in small smeltery."
 				""
-				"To build melter put it on the Heater, then attach Faucets to it and put casting table or basin under them. Fuel it with coal."
+				"{@pagebreak}"
+				"To build melter put it on the Heater, then attach Faucet to it and put basin under for molten metals to flow. Fuel it with coal or any other solid fuel. Right-click Faucet to pour your liquids into the basin and create resource blocks. "
 				""
-				"To get ingots or various tool parts you need to craft casts. If you already found some gold you can get permanent way to cast parts."
-				""
-				"Put any metal ingot or tool part on Casting Table, right-click faucet and pour gold from melter to get a cast."
+				"You can automate process with hoppers and alike blocks. You can give Faucet a redstone signal (like putting lever near) to automatically pour out of Smeltery."
 			]
 			icon: "tconstruct:seared_melter"
 			id: "0A47F74F64457575"
@@ -656,32 +655,14 @@
 					type: "item"
 				}
 				{
-					count: 2L
 					id: "3DFA7AA745240C03"
 					item: "tconstruct:seared_faucet"
-					type: "item"
-				}
-				{
-					id: "75D15E9086EFE892"
-					item: "tconstruct:seared_table"
 					type: "item"
 				}
 				{
 					id: "0ABD7AFB37752F95"
 					item: "tconstruct:seared_basin"
 					optional_task: true
-					type: "item"
-				}
-				{
-					id: "16B4401DD740C423"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "tconstruct:casts/gold"
-						}
-					}
-					title: "Casts"
 					type: "item"
 				}
 			]
@@ -999,8 +980,8 @@
 				}
 			]
 			title: "Storage Upgrade"
-			x: -1.2d
-			y: -3.0d
+			x: -1.888945578231315d
+			y: -3.2962585034013614d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -1341,9 +1322,13 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["0A47F74F64457575"]
+			dependencies: [
+				"0A47F74F64457575"
+				"5361A9865C6547F4"
+			]
 			description: [
 				"To build a Smeltery you need to create a closed enclosure with floor and wals from seared blocks with controller, fuel tank, chutes and drains. The quest requires you to craft minimal amount, but you can always expand the smeltery in all directions which give it more storage and slots for simultaneous smelting."
+				""
 				"{@pagebreak}"
 				"Smeltery use lava as fuel to melt any resources down. Put it in &oFuel Tank&r."
 				""
@@ -1351,7 +1336,10 @@
 				""
 				"After they become liquids you can click on them in the UI to change their order. Those at the very bottom will get poured out of the &oDrain&r, but only if there Faucet on them and Casting Table or Basin to pour."
 				""
-				"You can give Faucet a redstone signal (like putting lever near) to automatically pour out of Smeltery. "
+				"{@pagebreak}"
+				"If you short on gold and kinda desparate you can use sand casts instead of gold ones. To create gold cast pour gold onto the tool component or ingot."
+				""
+				"&lFollow 'Blacksimthing' tab for custom tools, armor and metal work.&r"
 			]
 			icon: "tconstruct:smeltery_controller"
 			id: "25B2030958956699"
@@ -1383,6 +1371,36 @@
 					count: 8L
 					id: "34B56298262F8E82"
 					item: { Count: 8, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+				{
+					id: "3429DE6CCDFD9006"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "267393B015A6CEB2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tconstruct:casts/gold"
+						}
+					}
+					title: "Gold Cast"
+					type: "item"
+				}
+				{
+					id: "1DDAE40254BBC1E5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tconstruct:casts/single_use"
+						}
+					}
+					optional_task: true
+					title: "Sand Cast"
 					type: "item"
 				}
 			]
@@ -1625,7 +1643,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0A47F74F64457575"]
+			dependencies: ["25B2030958956699"]
 			description: [
 				"Essential component for almost every Thermal machinery."
 				""
@@ -1639,8 +1657,8 @@
 				item: "thermal:machine_frame"
 				type: "item"
 			}]
-			x: -3.75d
-			y: -1.5d
+			x: -6.0d
+			y: 0.75d
 		}
 		{
 			dependencies: ["7B81DDC0AA14EF81"]
@@ -1953,7 +1971,7 @@
 				}
 			]
 			title: "Ziplines"
-			x: -1.3d
+			x: -1.9500000000000002d
 			y: -4.550000000000001d
 		}
 		{
@@ -2302,8 +2320,8 @@
 				}
 			]
 			title: "Copper Things"
-			x: 0.5d
-			y: -1.5d
+			x: 0.7760204081632551d
+			y: -4.042857142857137d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -2407,8 +2425,8 @@
 				}
 			]
 			title: "Gem Tools and Armor"
-			x: -0.0714285714285694d
-			y: -2.2857142857142847d
+			x: -0.6275510204081627d
+			y: -2.252380952380939d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -2554,8 +2572,8 @@
 				item: "thermal:dynamo_lapidary"
 				type: "item"
 			}]
-			x: -0.8928571428571459d
-			y: -1.6785714285714306d
+			x: -1.9370748299319729d
+			y: -2.204761904761895d
 		}
 		{
 			dependencies: [
@@ -2571,7 +2589,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 2.25d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4B31C89E0FA58CE0"]
@@ -2723,7 +2741,7 @@
 		}
 		{
 			dependencies: ["65E0926A806B0CE7"]
-			description: ["Early method to get resources from Geology ores. &oVery ineffective tho&r, use minimum of 2 ores per ingot or even more. But everyone start with something."]
+			description: ["Early method to get resources from Geology ores. &oVery ineffective tho&r, use minimum of 2 ores per ingot or even more. Everyone start with something, but good to find alternative as soon as possible."]
 			icon: "immersivegeology:bloomery"
 			id: "20151FC95EA7B03D"
 			tasks: [
@@ -3176,6 +3194,32 @@
 			title: "Hellish Replacement"
 			x: 4.55d
 			y: -15.4d
+		}
+		{
+			dependencies: ["10E87B6699909383"]
+			description: ["You can make glass panels with help of alloy kiln. It is not much but will do it for now."]
+			id: "330180412AC025EA"
+			size: 0.7d
+			tasks: [{
+				id: "3F7E4A2F4D66A0C8"
+				item: "minecraft:glass_pane"
+				type: "item"
+			}]
+			title: "Glass alloying"
+			x: 0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0A47F74F64457575"]
+			id: "0E9DFA836D20D6D4"
+			size: 0.7d
+			tasks: [{
+				id: "6A7BC4FE3CA18D45"
+				item: "tconstruct:copper_can"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
 		}
 	]
 	title: "Start of the journey"

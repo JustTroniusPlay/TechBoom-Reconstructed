@@ -5,56 +5,38 @@ ServerEvents.recipes(event => {
   Item.of('forestry:can', 4), // arg 1: output
   [
     ' B ',
-    'A A', // arg 2: the shape (array of strings)
+    'ACA', // arg 2: the shape (array of strings)
     ' B '
   ],
   {
     A: 'gtceu:double_osmium_plate',
-    B: 'gtceu:osmium_plate'  //arg 3: the mapping object
+    B: 'gtceu:osmium_plate',  //arg 3: the mapping object
+    C: '#forge:glass_panes'
   })
 
-    event.replaceInput(
+  event.replaceInput(
         {id: "forestry:engine_clockwork"},
         "minecraft:glass",
         "gtceu:small_bronze_gear"
     )
 
-    event.replaceInput(
-        {id: "forestry:engine_biogas"},
+  const fmachines = 
+  [
+    "forestry:engine_biogas",
+    "forestry:carpenter",
+    "forestry:centrifuge",
+    "forestry:moistener",
+    "forestry:fermenter",
+    "forestry:squeezer"
+  ];
+  fmachines.forEach(machine => 
+    {
+      event.replaceInput(
+      {id: machine},
         "minecraft:glass",
-        "gtceu:small_bronze_gear"
+        "#forge:glass_panes"
     )
-
-    event.replaceInput(
-        {id: "forestry:carpenter"},
-        "minecraft:glass",
-        "gtceu:small_bronze_gear"
-    )
-    
-    event.replaceInput(
-        {id: "forestry:centrifuge"},
-        "minecraft:glass",
-        "gtceu:small_copper_gear"
-    )
-
-    event.replaceInput(
-        {id: "forestry:moistener"},
-        "minecraft:glass",
-        "create:copper_sheet"
-    )
-
-    event.replaceInput(
-        {id: "forestry:fermenter"},
-        "minecraft:glass",
-        "thermal:bronze_plate"
-    )
-
-    event.replaceInput(
-        {id: "forestry:squeezer"},
-        "minecraft:glass",
-        "thermal:tin_gear"
-    )
-
+    })
 
 const creo = [
   'tfmg:creosote',

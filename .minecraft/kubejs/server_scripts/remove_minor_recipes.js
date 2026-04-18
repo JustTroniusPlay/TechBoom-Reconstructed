@@ -1,6 +1,11 @@
 ServerEvents.tags('item', event => {
 
     event.add('forge:slimeballs','gtceu:sticky_resin');
+    
+    event.add('forge:ethanol','forestry:bio_ethanol');
+    
+    event.add('forge:plantoil','forestry:seed_oil');
+    event.add('forge:plantoil','gtceu:seed_oil');
 
 })
 
@@ -24,6 +29,7 @@ ServerEvents.recipes(event => {
     event.remove({id: "pamhc2foodcore:bread_dough"});
     event.remove({id: "mekanism:paper"});
     event.remove({id: "pamhc2crops:paper_x2_paper_plants"});
+    event.remove({id: "gm_construct:smeltery/casting/metal/malachite/block"});
 
     event.remove({id: "cybernetic_system:craft_wire_copper"});
     event.shapeless(
