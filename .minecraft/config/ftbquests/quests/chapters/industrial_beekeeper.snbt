@@ -23,8 +23,8 @@
 				item: "forestry:engine_peat"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 1.0d
+			x: -4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]
@@ -56,8 +56,8 @@
 				item: "forestry:engine_biogas"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.0d
+			x: -3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]
@@ -75,8 +75,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -2.0d
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]
@@ -117,8 +117,8 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
-			y: -0.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0F45980EACA70EBA"]
@@ -136,8 +136,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -4.0d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]
@@ -155,6 +155,138 @@
 			}]
 			x: 1.4d
 			y: -3.15d
+		}
+		{
+			dependencies: ["4619627EEEE566A4"]
+			description: [
+				"Before you can start to care about little bugs you should find them in the wild!"
+				""
+				"Beehives exist all over the world and contains different drones and princesses."
+				""
+				"Brake hives with the Scoop. You will get damaged while in the procces (because I mean they surely don't like that right?), but it will not gonna be enough to kill you at &ofull health&r. If you want to escape stinging of little bugs you can use Smoker on the bee hive to calm them down."
+			]
+			icon: {
+				Count: 1
+				id: "forestry:scoop"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3F3FC863FA058BDF"
+			tasks: [
+				{
+					id: "3C599D936254CBE8"
+					item: {
+						Count: 1
+						id: "forestry:scoop"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1394DB691A46E0BC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forestry:bees"
+						}
+					}
+					title: "Bees"
+					type: "item"
+				}
+				{
+					id: "51C86B9B85DD7B9A"
+					item: "forestry:smoker"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Catching Bugs"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3F3FC863FA058BDF"]
+			icon: "forestry:foresters_manual"
+			id: "3A992BAB2BD9A2DB"
+			rewards: [{
+				id: "426FB786DF6549F0"
+				item: "forestry:foresters_manual"
+				type: "item"
+			}]
+			size: 0.7d
+			tasks: [{
+				id: "4A84AC7EA26F5EC5"
+				type: "checkmark"
+			}]
+			title: "Beekeeper reading"
+			x: 1.5464285714285708d
+			y: -4.050000000000008d
+		}
+		{
+			dependencies: ["3F3FC863FA058BDF"]
+			description: [
+				"New house for your bees where they will produce honey combs. To start place Drone and Princess in left slots so Queen can be created."
+				""
+				"Bee Queen will die overtime, producing resources in Bee House. In the end she will leave drones and another princesses, so you can expand your bee garden."
+			]
+			id: "693B43DD699B1707"
+			tasks: [{
+				id: "23C6242FF14C56C0"
+				item: "forestry:bee_house"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"05BC74C712E41396"
+				"693B43DD699B1707"
+			]
+			id: "358648885908CF2F"
+			tasks: [{
+				id: "263BD6F8ACFB8517"
+				item: "forestry:apiary"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["693B43DD699B1707"]
+			id: "0A1E7B5B3F0D9F74"
+			tasks: [{
+				id: "1CE2078C5ED64FF9"
+				item: "forestry:centrifuge"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["693B43DD699B1707"]
+			id: "2C30E1268B84535A"
+			size: 0.7d
+			tasks: [{
+				id: "3ECC31CA05A842F0"
+				item: {
+					Count: 1
+					id: "forestry:portable_alyzer"
+					tag: {
+						Charges: 0
+						Slots: { }
+						UID: 1994975654
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.5d
 		}
 	]
 	title: "Industrial Beekeeper"

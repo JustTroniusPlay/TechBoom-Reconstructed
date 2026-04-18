@@ -858,9 +858,22 @@
 		{
 			dependencies: ["34D049FD2BF84E84"]
 			description: [
-				"The most straightforwad way to generate energy by burning solid fuel."
+				"The most straightforwad way to generate energy by burning solid fuel. There three types of solid fuel generators you can make now."
 				""
-				"Heat Generator is easier to make, but it less effective and fuel hungry. Its better to use Stirling Dynamo if you found gold already."
+				"{@pagebreak}"
+				"&lHeat Generator&r is hybrid gen that easier to make. It can convert solid fuels or even lava into internal fuel capacity to generate some amount of energy in quick succession, but it's fuel efficiency left much to be desired."
+				""
+				"One of hiden talants of HG is to convert thermal heat of adjacent lava sources into very small amount of energy per seconds. "
+				""
+				"{@pagebreak}"
+				"&lCoal Generator&r is fuel efficient and will more slowly burn out fuel unlike it's relatives, but its energy output is rather slow. In theory it can generate more energy in the long run while your network is in congestion. "
+				""
+				"It will stop burning fuel and even freeze burning timer if it can't output."
+				""
+				"{@pagebreak}"
+				"&lStirling Dynamo&r optimal in generating a moderate amount of energy with average fuel consumption. It's output based on local demand: it will output less energy if network have abundance of it, but will still burn fuel. "
+				""
+				"If no fuel is provided and energy don't go anywhere, dynamo will loose stored amount very slowly overtime. "
 			]
 			id: "56766749439CD7E0"
 			rewards: [{
@@ -871,14 +884,20 @@
 			}]
 			tasks: [
 				{
-					id: "00515CC7E927066E"
-					item: "thermal:dynamo_stirling"
+					id: "75C75C1490AB3E0C"
+					item: "mekanismgenerators:heat_generator"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "306A061A57D9FD21"
-					item: "mekanismgenerators:heat_generator"
+					id: "5476B07FF0EC880F"
+					item: "ad_astra:coal_generator"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D3F8FCBB88F979C"
+					item: "thermal:dynamo_stirling"
 					optional_task: true
 					type: "item"
 				}
@@ -2089,6 +2108,12 @@
 				"&oThis can be very useful in crafting of many Gregtech components.&r"
 			]
 			id: "191FA67C7B17BB2F"
+			rewards: [{
+				count: 3
+				id: "3D813210376394C7"
+				item: "create:crafting_blueprint"
+				type: "item"
+			}]
 			tasks: [{
 				id: "25352884A04226B2"
 				item: "create:crafting_blueprint"
@@ -2100,6 +2125,7 @@
 		{
 			dependencies: ["25951FDCB7908145"]
 			id: "1815FBFC46636B24"
+			size: 0.7d
 			tasks: [
 				{
 					id: "498A8BDC1DBFDEA0"
@@ -2207,12 +2233,13 @@
 				}
 			]
 			title: "Zinc Things"
-			x: 0.5d
-			y: -14.5d
+			x: 0.35d
+			y: -14.35d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
 			id: "18C2D479B1DCB99B"
+			size: 0.7d
 			tasks: [
 				{
 					id: "2C01016B13312A99"
@@ -2350,6 +2377,7 @@
 		{
 			dependencies: ["34D049FD2BF84E84"]
 			id: "04A0F70827AA6155"
+			size: 0.7d
 			tasks: [
 				{
 					id: "1853B9DFE4C69D32"
@@ -2425,8 +2453,8 @@
 				}
 			]
 			title: "Gem Tools and Armor"
-			x: -0.6275510204081627d
-			y: -2.252380952380939d
+			x: 0.0d
+			y: -2.4499999999999997d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -2572,8 +2600,8 @@
 				item: "thermal:dynamo_lapidary"
 				type: "item"
 			}]
-			x: -1.9370748299319729d
-			y: -2.204761904761895d
+			x: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -2884,6 +2912,7 @@
 			dependencies: ["1A155790CD83B2A7"]
 			description: ["Brass armor can protect you from piglins like gold armor."]
 			id: "2DF67CBA16DF2242"
+			size: 0.7d
 			tasks: [
 				{
 					id: "04E89917BD3383A9"
@@ -2991,8 +3020,8 @@
 				}
 			]
 			title: "Brass things"
-			x: -1.0d
-			y: -13.5d
+			x: 0.35d
+			y: -13.65d
 		}
 		{
 			dependencies: ["7BFF886E57F3D543"]
@@ -3206,8 +3235,8 @@
 				type: "item"
 			}]
 			title: "Glass alloying"
-			x: 0.5d
-			y: -10.0d
+			x: 2.4700680272108926d
+			y: -9.985714285714273d
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
@@ -3220,6 +3249,88 @@
 			}]
 			x: -1.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["3129F95624CBEDD4"]
+			id: "6A1419E66988511D"
+			size: 0.7d
+			tasks: [
+				{
+					id: "211B0B1846B39F51"
+					item: {
+						Count: 1
+						id: "mekanismtools:bronze_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FAFC40B10873034"
+					item: {
+						Count: 1
+						id: "mekanismtools:bronze_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23FF4E70CEE902E1"
+					item: {
+						Count: 1
+						id: "mekanismtools:bronze_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D27CCBCDE14C688"
+					item: {
+						Count: 1
+						id: "mekanismtools:bronze_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "516042017086DEDF"
+					item: {
+						Count: 1
+						id: "mekanismtools:bronze_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bronze Equipment"
+			x: 2.0414965986394478d
+			y: -7.785714285714278d
+		}
+		{
+			dependencies: ["191FA67C7B17BB2F"]
+			description: [
+				"Can remember up to 9 recipes after crafting. By right-clicking on the recipe on the right it will not be overwritten by different crafting recipe. "
+				""
+				"Worktable is useful to when you craft something frequently and get rid of need to check the recipes constantly."
+			]
+			id: "1C31C068991CC116"
+			tasks: [{
+				id: "1D887C29DCACCEF9"
+				item: "forestry:worktable"
+				type: "item"
+			}]
+			title: "Personal recipe book"
+			x: 0.24149659863946482d
+			y: -10.042857142857137d
 		}
 	]
 	title: "Start of the journey"

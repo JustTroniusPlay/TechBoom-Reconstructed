@@ -11,6 +11,11 @@ event.remove({id: "mekanism:metallurgic_infuser"});
         "minecraft:bucket",
         'thermal:obsidian_glass'
     )
+    event.replaceInput(
+        {id: "mekanismgenerators:generator/heat"},
+        "mekanism:ingot_osmium",
+        "minecraft:copper_ingot"
+    )
 
     event.shaped(
   Item.of('mekanism:metallurgic_infuser', 1), // arg 1: output

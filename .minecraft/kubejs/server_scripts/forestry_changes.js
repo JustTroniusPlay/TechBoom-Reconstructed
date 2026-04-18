@@ -74,4 +74,19 @@ creo.forEach(creo => {
   });
   })
 
+  event.remove({id: "forestry:worktable"});
+    event.shaped(
+  Item.of('forestry:worktable', 1), // arg 1: output
+  [
+    'DAD',
+    'EBE', // arg 2: the shape (array of strings)
+    'DCD'
+  ],
+  {
+    A: 'minecraft:writable_book',
+    B: 'immersiveengineering:craftingtable',  //arg 3: the mapping object
+    C: 'create:crafting_blueprint',
+    D: '#forge:plates/bronze',
+    E: '#forge:gears/bronze'
+  })
 })
