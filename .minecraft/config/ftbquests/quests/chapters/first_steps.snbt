@@ -22,8 +22,8 @@
 		{
 			id: "0F18B64A5167B803"
 			linked_quest: "7BFF886E57F3D543"
-			x: -2.0d
-			y: -6.0d
+			x: -3.0d
+			y: -5.0d
 		}
 		{
 			id: "5966645984A908BB"
@@ -31,6 +31,12 @@
 			size: 0.7d
 			x: -0.35d
 			y: -5.25d
+		}
+		{
+			id: "1235250E2EBFAE61"
+			linked_quest: "22BE527D08C5B64D"
+			x: -2.5d
+			y: -6.5d
 		}
 	]
 	quests: [
@@ -560,20 +566,13 @@
 					id: "3441E82E0A23B046"
 					item: {
 						Count: 1
-						id: "gtceu:flint_mortar"
+						id: "itemfilters:tag"
 						tag: {
-							Damage: 0
-							DisallowContainerItem: 0b
-							GT.Behaviours: { }
-							GT.Tool: {
-								DefaultEnchantments: [ ]
-								Enchantability: 5
-								MaxDamage: 63
-							}
-							HideFlags: 2
+							value: "gtceu:tools/crafting_mortars"
 						}
 					}
 					optional_task: true
+					title: "Mortars"
 					type: "item"
 				}
 			]
@@ -631,6 +630,7 @@
 			dependencies: [
 				"7F1D22C969F965A6"
 				"34D049FD2BF84E84"
+				"330180412AC025EA"
 			]
 			description: [
 				"Seared melter is first iteration of getting molten metals. Right now it can help get additional resource income. Simple and common ores can give additional 3 nuggets when using smeltery. Some metals require higher temperatures, so you need to upgrade to bigger smeltery later. You can't make alloys in small smeltery."
@@ -999,8 +999,8 @@
 				}
 			]
 			title: "Storage Upgrade"
-			x: -1.888945578231315d
-			y: -3.2962585034013614d
+			x: -1.9421768707482983d
+			y: -2.588435374149668d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -1990,8 +1990,8 @@
 				}
 			]
 			title: "Ziplines"
-			x: -1.9500000000000002d
-			y: -4.550000000000001d
+			x: -1.3d
+			y: -3.9000000000000004d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -2453,8 +2453,8 @@
 				}
 			]
 			title: "Gem Tools and Armor"
-			x: 0.0d
-			y: -2.4499999999999997d
+			x: -0.35d
+			y: -2.1d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -2573,7 +2573,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -7.5d
+			y: -8.25d
 		}
 		{
 			dependencies: ["031595756B809ADC"]
@@ -2600,8 +2600,8 @@
 				item: "thermal:dynamo_lapidary"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -3081,8 +3081,8 @@
 				}
 			]
 			title: "Hazmat Suit"
-			x: -1.0d
-			y: -6.0d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4879433BBEEF8352"]
@@ -3227,6 +3227,7 @@
 		{
 			dependencies: ["10E87B6699909383"]
 			description: ["You can make glass panels with help of alloy kiln. It is not much but will do it for now."]
+			hide_dependent_lines: true
 			id: "330180412AC025EA"
 			size: 0.7d
 			tasks: [{
@@ -3331,6 +3332,49 @@
 			title: "Personal recipe book"
 			x: 0.24149659863946482d
 			y: -10.042857142857137d
+		}
+		{
+			dependencies: [
+				"16550070AD851335"
+				"3129F95624CBEDD4"
+			]
+			description: ["Manual way to make rails and other simple components."]
+			id: "4DB042DAF83D7A0A"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "19BA601086193C7D"
+				item: "railcraft:manual_rolling_machine"
+				type: "item"
+			}]
+			title: "Rails Time!"
+			x: -1.2823129251700607d
+			y: -6.7047619047619165d
+		}
+		{
+			dependencies: ["4DB042DAF83D7A0A"]
+			description: [
+				"Very cheap batteries that store energy. Chemical properties give them full charge after crafting."
+				""
+				"Sounds wonderful, isn't it? Well there is a problem. Made out of simple materials they will loose their energy capacity overtime and if there no energy stored in them they will brake!"
+			]
+			id: "332A1EB91726C2C0"
+			tasks: [
+				{
+					id: "6A544699456536A4"
+					item: "railcraft:zinc_carbon_battery"
+					type: "item"
+				}
+				{
+					id: "550AF761F7E01C15"
+					item: "railcraft:zinc_silver_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Unreliable batteries"
+			x: -2.0d
+			y: -5.5d
 		}
 	]
 	title: "Start of the journey"

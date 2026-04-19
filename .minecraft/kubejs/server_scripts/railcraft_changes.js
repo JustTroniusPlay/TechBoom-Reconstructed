@@ -11,7 +11,11 @@ ServerEvents.recipes(event => {
 
   
 
-    event.remove({id: "railcraft:manual_rolling_machine"});
+  event.replaceInput({id:"railcraft:manual_rolling_machine"},
+    "minecraft:crafting_table",
+    "gtceu:bronze_gearbox"
+  )
+    /*event.remove({id: "railcraft:manual_rolling_machine"});
     event.shaped(
   Item.of('railcraft:manual_rolling_machine', 1), // arg 1: output
   [
@@ -25,7 +29,7 @@ ServerEvents.recipes(event => {
     D: 'gtceu:bronze_gearbox',
     E: 'create:hand_crank'
   }
-)
+)*/
 
     event.remove({id: "railcraft:powered_rolling_machine"});
     event.shaped(

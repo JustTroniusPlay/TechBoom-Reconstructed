@@ -123,4 +123,9 @@ event.recipes.create.mechanical_crafting('create_sa:andesite_exoskeleton_chestpl
     C: 'create:andesite_alloy',
     D: 'minecraft:smooth_basalt'
   })
+
+  event.replaceInput({id: "tfmg:crafting/kinetics/accumulatorfrom_lithium"},
+    "tfmg:industrial_aluminum_casing",
+    ["tfmg:industrial_aluminum_casing","immersiveengineering:capacitor_lv"]
+  )
 })

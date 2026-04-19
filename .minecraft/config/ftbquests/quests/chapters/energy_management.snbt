@@ -24,21 +24,35 @@
 		{
 			id: "7385056AFB4C6B16"
 			linked_quest: "006F0DFB4E9FE795"
-			title: "Custom Accumulator"
+			title: "Brass Accumulator"
 			x: 2.5d
 			y: 3.5d
 		}
 		{
 			id: "6F977D2B7482E7EE"
 			linked_quest: "1C59476B07336B42"
-			x: -3.0d
-			y: 1.0d
+			size: 0.5d
+			x: -2.75d
+			y: 0.2607142857142861d
 		}
 		{
 			id: "7E16D6E0D25025A2"
 			linked_quest: "518089C9998EBFF8"
 			x: -0.5d
 			y: 2.0d
+		}
+		{
+			id: "6934C4180CCE1CB8"
+			linked_quest: "332A1EB91726C2C0"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "792420F3FC228E88"
+			linked_quest: "799F7F64000A3084"
+			size: 0.7d
+			x: 2.5d
+			y: 0.5d
 		}
 	]
 	quests: [
@@ -102,7 +116,11 @@
 				"5361A9865C6547F4"
 				"3CADA01B0663BC89"
 			]
-			description: ["Block type energy transfer. Unlike wires with connectors every cable need to be lay down block by block and will transfer fixed amount of energy. Have internal energy buffer."]
+			description: [
+				"Block type energy transfer. Unlike wires with connectors every cable need to be lay down block by block and will transfer fixed amount of energy. Have internal energy buffer."
+				""
+				"You can use wrench-like tools to control how they connect to each other."
+			]
 			id: "3E885ACD84B8FF4F"
 			rewards: [{
 				count: 16
@@ -226,7 +244,7 @@
 				item: "gtceu:tin_single_cable"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.721428571428568d
 			y: -0.5d
 		}
 		{
@@ -237,7 +255,7 @@
 				item: "gtceu:lv_1a_energy_converter"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.721428571428568d
 			y: -2.5d
 		}
 		{
@@ -443,6 +461,110 @@
 			]
 			x: -0.46071428571429185d
 			y: -2.7285714285714304d
+		}
+		{
+			dependencies: ["10D646BACACC9E61"]
+			description: ["Special accumulator that can be stucked to store more energy. Unfortunately have problems with extracting. Use simple connectors or any other means that can get energy from storage."]
+			id: "5BA274B04F72DEA6"
+			tasks: [{
+				id: "44DD5F956C04E1BB"
+				item: {
+					Count: 1
+					id: "tfmg:accumulator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Lithium Accumulator"
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2DC0C89F91D2AE1D"]
+			id: "23D3B96F9602A310"
+			tasks: [{
+				id: "7E09A20AA756BCD3"
+				item: "immersiveengineering:capacitor_hv"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["332A1EB91726C2C0"]
+			description: ["Made out of different materials. Can't output by itself."]
+			id: "22BE527D08C5B64D"
+			tasks: [
+				{
+					id: "6493FB786EE56F80"
+					item: "railcraft:nickel_iron_battery"
+					type: "item"
+				}
+				{
+					id: "6CE0E22304118C89"
+					item: "railcraft:nickel_zinc_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Nickel Batteries"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["799F7F64000A3084"]
+			id: "4ED512F235419F02"
+			tasks: [{
+				id: "61A2095431D4376A"
+				item: {
+					Count: 1
+					id: "ae2:energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4ED512F235419F02"]
+			id: "2C8F8F3287B71164"
+			tasks: [{
+				id: "5CDDD40074356611"
+				item: {
+					Count: 1
+					id: "ae2:dense_energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["518089C9998EBFF8"]
+			id: "4C2020D018DB7410"
+			size: 0.7d
+			tasks: [
+				{
+					id: "14F4C2960A171CFB"
+					item: "thermal:rf_coil_storage_augment"
+					type: "item"
+				}
+				{
+					id: "0329AD7E5495AE05"
+					item: "thermal:rf_coil_augment"
+					type: "item"
+				}
+				{
+					id: "08D19C4B0E68CC09"
+					item: "thermal:rf_coil_xfer_augment"
+					type: "item"
+				}
+			]
+			title: "RF Upgrades"
+			x: -0.5d
+			y: 3.0d
 		}
 	]
 	title: "Energy Management"

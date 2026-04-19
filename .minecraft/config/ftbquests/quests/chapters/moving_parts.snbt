@@ -2362,7 +2362,7 @@
 				item: "createaddition:modular_accumulator"
 				type: "item"
 			}]
-			title: "Custom Accumulator"
+			title: "Brass Accumulator"
 			x: 2.0d
 			y: -2.5d
 		}
@@ -2533,24 +2533,6 @@
 			}]
 			x: -5.535714285714285d
 			y: -9.039285714285711d
-		}
-		{
-			dependencies: [
-				"16550070AD851335"
-				"691DD9FDCE3E58DA"
-			]
-			description: ["Manual way to make rails components."]
-			id: "4DB042DAF83D7A0A"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "19BA601086193C7D"
-				item: "railcraft:manual_rolling_machine"
-				type: "item"
-			}]
-			title: "Rails Time!"
-			x: 5.75d
-			y: 6.25d
 		}
 	]
 	title: "Moving Parts"
