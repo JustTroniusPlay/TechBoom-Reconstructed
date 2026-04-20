@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.remove({id: "immersiveengineering:crafting/alloybrick"});
     event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick"});
     
-    event.shaped(
+  event.shaped(
   Item.of('immersiveengineering:alloybrick', 2), // arg 1: output
   [
     ' A ',

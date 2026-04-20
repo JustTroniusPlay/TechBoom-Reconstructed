@@ -20,12 +20,6 @@
 			y: -14.0d
 		}
 		{
-			id: "0F18B64A5167B803"
-			linked_quest: "7BFF886E57F3D543"
-			x: -3.0d
-			y: -5.0d
-		}
-		{
 			id: "5966645984A908BB"
 			linked_quest: "29271E54A7DBAF2E"
 			size: 0.7d
@@ -33,10 +27,10 @@
 			y: -5.25d
 		}
 		{
-			id: "1235250E2EBFAE61"
-			linked_quest: "22BE527D08C5B64D"
-			x: -2.5d
-			y: -6.5d
+			id: "7F9754840726B892"
+			linked_quest: "4DE3A5EB02DCDC59"
+			x: -3.0d
+			y: -5.0d
 		}
 	]
 	quests: [
@@ -528,8 +522,8 @@
 				}
 			]
 			title: "Engineering Tools"
-			x: 3.4071428571428584d
-			y: -5.5d
+			x: 3.3017006802721056d
+			y: -5.044897959183658d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -852,8 +846,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.4071428571428584d
-			y: -4.5d
+			x: 3.3017006802721056d
+			y: -4.044897959183658d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -1025,8 +1019,8 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 0.8414965986394591d
+			y: -1.471428571428575d
 		}
 		{
 			dependencies: [
@@ -1075,7 +1069,7 @@
 			]
 			title: "Little upgrades"
 			x: 3.5d
-			y: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -1098,8 +1092,8 @@
 				type: "item"
 			}]
 			title: "Mining Hammer"
-			x: 4.5d
-			y: -5.0d
+			x: 4.394557823129247d
+			y: -4.544897959183658d
 		}
 		{
 			dependencies: ["7B81DDC0AA14EF81"]
@@ -1123,7 +1117,7 @@
 				type: "item"
 			}]
 			title: "Simple multitool"
-			x: 5.5d
+			x: 4.5d
 			y: -6.5d
 		}
 		{
@@ -1311,8 +1305,8 @@
 				item: "forestry:engine_clockwork"
 				type: "item"
 			}]
-			x: 3.5357142857142847d
-			y: -3.775170068027194d
+			x: 4.2d
+			y: -2.6999999999999997d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
@@ -1722,8 +1716,8 @@
 				}
 			]
 			title: "Osmium Tools"
-			x: 5.408163265306136d
-			y: -5.568877551020414d
+			x: 4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["69DB58E1CD20ED2B"]
@@ -2007,8 +2001,8 @@
 				type: "item"
 			}]
 			title: "Free furnaces"
-			x: 2.7806122448979593d
-			y: -3.6527210884353494d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -2371,8 +2365,8 @@
 				type: "item"
 			}]
 			title: "Bane of Endermans"
-			x: 2.285714285714292d
-			y: -5.0d
+			x: 2.2081632653061334d
+			y: -4.671428571428571d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2494,8 +2488,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.3520408163265287d
-			y: -5.877210884353715d
+			x: 2.386734693877564d
+			y: -5.671428571428571d
 		}
 		{
 			dependencies: ["49BFD7BD22B74CBD"]
@@ -3081,8 +3075,8 @@
 				}
 			]
 			title: "Hazmat Suit"
-			x: -3.0d
-			y: -4.0d
+			x: 5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4879433BBEEF8352"]
@@ -3373,8 +3367,43 @@
 				}
 			]
 			title: "Unreliable batteries"
-			x: -2.0d
-			y: -5.5d
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["34D049FD2BF84E84"]
+			id: "7BFF886E57F3D543"
+			tasks: [
+				{
+					id: "03F71DC4A5E1A1BD"
+					item: "thermal:rubber"
+					type: "item"
+				}
+				{
+					id: "56A9CEBC3806830D"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+			]
+			title: "Manual Rubber"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7BFF886E57F3D543"]
+			id: "512D08F4FA99BE90"
+			size: 0.7d
+			tasks: [{
+				id: "7F2F949C17AD4418"
+				item: {
+					Count: 1
+					id: "thermal:rf_potato"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.9700680272108855d
+			y: -1.2666666666666728d
 		}
 	]
 	title: "Start of the journey"

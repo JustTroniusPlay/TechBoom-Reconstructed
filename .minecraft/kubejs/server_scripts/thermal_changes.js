@@ -1,7 +1,22 @@
 ServerEvents.recipes(event => {
 
-    event.remove({id: "thermal:machine_frame"});
-    event.shaped(
+  event.remove({id: "thermal:machines/smelter/smelter_alloy_enderium"});
+
+  event.remove({id: "thermal:rf_coil"});
+  event.shaped(
+  Item.of('thermal:rf_coil', 1), // arg 1: output
+  [
+    ' B ',
+    'BAB', // arg 2: the shape (array of strings)
+    ' B '
+  ],
+  {
+    A: 'gtceu:long_gold_rod',
+    B: 'immersiveengineering:wirecoil_redstone'  //arg 3: the mapping object
+  })
+
+  event.remove({id: "thermal:machine_frame"});
+  event.shaped(
   Item.of('thermal:machine_frame', 1), // arg 1: output
   [
     'DBD',
@@ -15,8 +30,8 @@ ServerEvents.recipes(event => {
     D: 'mekanism:ingot_osmium'
   })
 
-   event.remove({id: "thermal:machine_smelter"});
-    event.shaped(
+  event.remove({id: "thermal:machine_smelter"});
+  event.shaped(
   Item.of('thermal:machine_smelter', 1), // arg 1: output
   [
     ' A ',
@@ -39,7 +54,6 @@ ServerEvents.recipes(event => {
     "minecraft:cobblestone",
     "gtceu:wrought_iron_gear"
   )
-
   event.remove({id: "thermal:machine_pulverizer"});
     event.shaped(
   Item.of('thermal:machine_pulverizer', 1), // arg 1: output
@@ -62,7 +76,7 @@ ServerEvents.recipes(event => {
     "minecraft:crafting_table",
     "gtceu:lv_assembler"
   )
-   event.replaceInput(
+  event.replaceInput(
 
     {id: "thermal:machine_crafter"},
     "thermal:copper_gear",
@@ -95,7 +109,7 @@ ServerEvents.recipes(event => {
     event.remove({id: 'thermal:fire_charge/' + metal + '_ingot_3'});
     event.remove({id: 'thermal:fire_charge/' + metal + '_ingot_4'});
     event.remove({id: "thermal_processing:crafting/" + metal + "_ingot_from_dust"});
-
+    event.remove({id: "thermal_processing:crafting/rods/" + metal});
   })
 
   event.remove({id: "thermal:crafting/rose_gold_ingot_with_dust"});
@@ -105,9 +119,7 @@ ServerEvents.recipes(event => {
   event.remove({id: 'thermal:fire_charge/enderium_glass_2'});
   event.remove({id: 'thermal:fire_charge/lumium_glass_2'});
 
-
-
-   event.custom({
+  event.custom({
         "type": "thermal:crystallizer",
         "ingredients": [
           {
@@ -128,9 +140,9 @@ ServerEvents.recipes(event => {
           "energy": 500
     })
 
-    event.replaceInput(
-    {id: "thermal:machine_press"},
-    "minecraft:iron_block",
-    "gtceu:lv_bender"
+  event.replaceInput(
+  {id: "thermal:machine_press"},
+  "minecraft:iron_block",
+  "gtceu:lv_bender"
   )
 })

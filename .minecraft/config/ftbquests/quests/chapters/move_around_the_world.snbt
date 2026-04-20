@@ -21,13 +21,6 @@
 			y: -6.95d
 		}
 		{
-			id: "578CDBD5A4EC1AC5"
-			linked_quest: "4D475C5C6D1FF754"
-			size: 0.7d
-			x: -4.349999999999998d
-			y: 1.319047619047545d
-		}
-		{
 			id: "474A4F30B171898A"
 			linked_quest: "4DB042DAF83D7A0A"
 			size: 1.5d
@@ -40,6 +33,12 @@
 			size: 0.7d
 			x: -1.05d
 			y: -1.75d
+		}
+		{
+			id: "25CC9A8A3CA31828"
+			linked_quest: "52563AE115ACBF51"
+			x: -4.0d
+			y: 1.5d
 		}
 	]
 	quests: [
@@ -678,8 +677,8 @@
 		}
 		{
 			dependencies: [
-				"4D475C5C6D1FF754"
 				"7DD34728381D1555"
+				"52563AE115ACBF51"
 			]
 			description: ["Glow in the dark."]
 			id: "51F27E0987380337"

@@ -148,8 +148,8 @@
 				item: "thermal:machine_furnace"
 				type: "item"
 			}]
-			x: 2.5095238095238086d
-			y: -2.722448979591857d
+			x: 2.4544217687074763d
+			y: -4.029421768707461d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -213,8 +213,8 @@
 				item: "thermal:machine_insolator"
 				type: "item"
 			}]
-			x: 4.8d
-			y: -2.1999999999999997d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -247,8 +247,8 @@
 				item: "thermal:machine_chiller"
 				type: "item"
 			}]
-			x: 3.3d
-			y: 1.8000000000000007d
+			x: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["420669759AE11743"]
@@ -290,8 +290,8 @@
 				}
 			]
 			title: "Another Leather Recipe"
-			x: 3.8d
-			y: -2.6999999999999997d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3155C182FC72865E"]
@@ -313,14 +313,11 @@
 				item: "thermal:machine_bottler"
 				type: "item"
 			}]
-			x: 4.514285714285715d
-			y: 1.1112244897959194d
+			x: 5.0d
+			y: 1.5d
 		}
 		{
-			dependencies: [
-				"2798CCE5B1DE21DA"
-				"1553365BB32E7666"
-			]
+			dependencies: ["2798CCE5B1DE21DA"]
 			icon: "thermal:machine_crystallizer"
 			id: "3751A61EDD08EF41"
 			tasks: [
@@ -348,35 +345,27 @@
 		{
 			dependencies: ["3155C182FC72865E"]
 			id: "52563AE115ACBF51"
-			tasks: [{
-				id: "1BF835186BF38E32"
-				item: "thermal:signalum_ingot"
-				type: "item"
-			}]
-			x: -2.7d
-			y: 0.8000000000000007d
-		}
-		{
-			dependencies: ["3155C182FC72865E"]
-			id: "4D475C5C6D1FF754"
-			tasks: [{
-				id: "116D655695EC2B63"
-				item: "thermal:lumium_ingot"
-				type: "item"
-			}]
-			x: -4.2d
-			y: 0.8000000000000007d
-		}
-		{
-			dependencies: ["3155C182FC72865E"]
-			id: "57C04ECC73C4EAD3"
-			tasks: [{
-				id: "3707DC8DE82D445F"
-				item: "thermal:enderium_ingot"
-				type: "item"
-			}]
-			x: -5.7d
-			y: 0.8000000000000007d
+			size: 1.5d
+			tasks: [
+				{
+					id: "1BF835186BF38E32"
+					item: "thermal:signalum_ingot"
+					type: "item"
+				}
+				{
+					id: "7BD34F4926C53C9D"
+					item: "thermal:lumium_ingot"
+					type: "item"
+				}
+				{
+					id: "574EC3860731C8CD"
+					item: "thermal:enderium_ingot"
+					type: "item"
+				}
+			]
+			title: "Charged Alloys"
+			x: -3.0d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -384,41 +373,27 @@
 				"52563AE115ACBF51"
 			]
 			id: "21F9764D362E05BD"
-			tasks: [{
-				id: "2940ACD23DC02DBE"
-				item: "thermal:signalum_glass"
-				type: "item"
-			}]
-			x: -2.7d
-			y: 1.8000000000000007d
-		}
-		{
-			dependencies: [
-				"1553365BB32E7666"
-				"4D475C5C6D1FF754"
+			size: 0.7d
+			tasks: [
+				{
+					id: "2940ACD23DC02DBE"
+					item: "thermal:signalum_glass"
+					type: "item"
+				}
+				{
+					id: "0F8A4C235DFC1FE1"
+					item: "thermal:lumium_glass"
+					type: "item"
+				}
+				{
+					id: "6B9ED47752F5EDA2"
+					item: "thermal:enderium_glass"
+					type: "item"
+				}
 			]
-			id: "1CF740E2938F462A"
-			tasks: [{
-				id: "0168FA658DCB0628"
-				item: "thermal:lumium_glass"
-				type: "item"
-			}]
-			x: -4.2d
-			y: 1.8000000000000007d
-		}
-		{
-			dependencies: [
-				"1553365BB32E7666"
-				"57C04ECC73C4EAD3"
-			]
-			id: "4624968B64822373"
-			tasks: [{
-				id: "122D40204096A9B9"
-				item: "thermal:enderium_glass"
-				type: "item"
-			}]
-			x: -5.7d
-			y: 1.8000000000000007d
+			title: "Infused glass"
+			x: -2.968367346938777d
+			y: 2.7086734693877474d
 		}
 		{
 			dependencies: ["1553365BB32E7666"]
@@ -428,8 +403,8 @@
 				item: "systeams:boiler_pipe"
 				type: "item"
 			}]
-			x: -1.7000000000000002d
-			y: 4.800000000000001d
+			x: -1.7210884353741491d
+			y: 5.909353741496616d
 		}
 		{
 			dependencies: [
@@ -519,34 +494,18 @@
 				item: "thermal:machine_brewer"
 				type: "item"
 			}]
-			x: 5.3d
+			x: 5.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["5361A9865C6547F4"]
-			id: "7BFF886E57F3D543"
-			tasks: [
-				{
-					id: "03F71DC4A5E1A1BD"
-					item: "thermal:rubber"
-					type: "item"
-				}
-				{
-					id: "56A9CEBC3806830D"
-					item: "thermal:cured_rubber"
-					type: "item"
-				}
-			]
-			title: "Manual Rubber"
-			x: 8.0d
-			y: -0.5d
-		}
-		{
 			dependencies: [
-				"7BFF886E57F3D543"
 				"10D646BACACC9E61"
+				"4DE3A5EB02DCDC59"
+				"22BE527D08C5B64D"
 			]
+			dependency_requirement: "one_completed"
 			id: "518089C9998EBFF8"
+			size: 1.5d
 			tasks: [{
 				id: "7F8CAB3D92F12540"
 				item: {
@@ -563,11 +522,11 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.5d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["7BFF886E57F3D543"]
+			dependencies: ["4DE3A5EB02DCDC59"]
 			id: "423F84ADDE1CC9ED"
 			tasks: [{
 				id: "5718A24DF83ECC71"
@@ -579,10 +538,10 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["7BFF886E57F3D543"]
+			dependencies: ["4DE3A5EB02DCDC59"]
 			id: "7067FCA367EB961F"
 			tasks: [{
 				id: "07095F1ED998BA9C"
@@ -597,7 +556,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["7BFF886E57F3D543"]
+			dependencies: ["4DE3A5EB02DCDC59"]
 			id: "5E8C6076F2C33137"
 			tasks: [{
 				id: "4FD3CE150526A9D4"
@@ -609,10 +568,10 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["7BFF886E57F3D543"]
+			dependencies: ["5361A9865C6547F4"]
 			icon: "thermal:device_tree_extractor"
 			id: "4DE3A5EB02DCDC59"
 			tasks: [
@@ -628,8 +587,148 @@
 				}
 			]
 			title: "Latex"
-			x: 7.0d
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1553365BB32E7666"]
+			id: "602A267ADD5E2093"
+			size: 0.7d
+			tasks: [{
+				id: "5503F2682E501C40"
+				item: "thermal:dynamo_fuel_augment"
+				type: "item"
+			}]
+			x: -3.15d
+			y: 4.8999999999999995d
+		}
+		{
+			dependencies: ["1553365BB32E7666"]
+			id: "43BC77D07FAEA8E0"
+			size: 0.7d
+			tasks: [{
+				id: "4631EB67D242CA9F"
+				item: "thermal:dynamo_output_augment"
+				type: "item"
+			}]
+			x: -3.15d
+			y: 4.2d
+		}
+		{
+			dependencies: ["52563AE115ACBF51"]
+			id: "4E8AD6D8D54A1799"
+			tasks: [
+				{
+					id: "657257912C9A0FEE"
+					item: "thermal:item_filter_augment"
+					type: "item"
+				}
+				{
+					id: "5290A9A31C9881FC"
+					item: "thermal:fluid_filter_augment"
+					type: "item"
+				}
+			]
+			title: "Machines Filters"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["52563AE115ACBF51"]
+			id: "4F14661A1C327A5F"
+			size: 0.7d
+			tasks: [{
+				id: "76C57A66CDA3D730"
+				item: "thermal:machine_efficiency_augment"
+				type: "item"
+			}]
+			x: -4.55d
+			y: 1.4d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "35FF2B9F76137416"
+			size: 0.7d
+			tasks: [{
+				id: "5E250FE15E9C7986"
+				item: "thermal:machine_speed_augment"
+				type: "item"
+			}]
+			title: "Speed Up"
+			x: 1.1778911564625716d
+			y: -0.24710884353741136d
+		}
+		{
+			dependencies: ["1553365BB32E7666"]
+			id: "2E055CE4D5C28A6E"
+			size: 0.7d
+			tasks: [{
+				id: "2409CF7381073E29"
+				item: "thermal:potion_amplifier_augment"
+				type: "item"
+			}]
+			x: -3.15d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1553365BB32E7666"]
+			id: "445381E8DA0B4AED"
+			size: 0.7d
+			tasks: [{
+				id: "6F32051F1C5294F1"
+				item: "thermal:potion_duration_augment"
+				type: "item"
+			}]
+			x: -2.4499999999999997d
+			y: 4.8999999999999995d
+		}
+		{
+			dependencies: ["52563AE115ACBF51"]
+			id: "50C949669F5EA14D"
+			size: 0.7d
+			tasks: [{
+				id: "67D85DAAF4455A14"
+				item: "thermal:machine_cycle_augment"
+				type: "item"
+			}]
+			x: -4.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "03F6555E77AF2889"
+			size: 0.7d
+			tasks: [{
+				id: "633E0DD0954E9402"
+				item: "thermal:machine_output_augment"
+				type: "item"
+			}]
+			x: 3.016326530612247d
+			y: -2.2675170068027057d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "7EEE707B42E1A4E8"
+			size: 0.7d
+			tasks: [{
+				id: "02844D589A950455"
+				item: "thermal:machine_catalyst_augment"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "25710F929BEF2C99"
+			size: 0.7d
+			tasks: [{
+				id: "6B5DB53DA5930BAD"
+				item: "thermal:machine_null_augment"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
 		}
 	]
 	title: "Redstone Machines"

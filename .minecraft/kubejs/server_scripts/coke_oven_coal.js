@@ -45,4 +45,35 @@ ServerEvents.recipes(event => {
     B: 'minecraft:bricks',  //arg 3: the mapping object
     C: 'gtceu:coke_oven_bricks'
   })
+
+  const coke = 
+  [
+    'tfmg:coal_coke',
+    'railcraft:coal_coke',
+    'electrodynamics:coalcoke',
+    'gtceu:coke_gem'
+  ]
+
+  coke.forEach(coal =>{
+    event.replaceInput(
+      {input: coal},
+      coal,
+      'immersiveengineering:coal_coke'
+    )
+
+    event.replaceOutput(
+      {output: coal},
+      coal,
+      'immersiveengineering:coal_coke'
+    )
+  })
+  event.replaceOutput(
+      {id: "railcraft:coke_oven/coal_coke"},
+      'railcraft:coke_coal',
+      'immersiveengineering:coal_coke'
+    )
+    
+  event.remove({id: "thermal:storage/coal_coke_block"});
+  event.remove({id: "railcraft:coal_coke_block_from_coal_coke"});
+  event.remove({id: "thermal:machines/press/unpacking/press_coal_coke_unpacking"});
 })

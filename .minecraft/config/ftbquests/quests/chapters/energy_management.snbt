@@ -44,8 +44,8 @@
 		{
 			id: "6934C4180CCE1CB8"
 			linked_quest: "332A1EB91726C2C0"
-			x: 0.0d
-			y: 1.0d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			id: "792420F3FC228E88"
@@ -491,7 +491,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["332A1EB91726C2C0"]
+			dependencies: [
+				"332A1EB91726C2C0"
+				"69DB58E1CD20ED2B"
+			]
 			description: ["Made out of different materials. Can't output by itself."]
 			id: "22BE527D08C5B64D"
 			tasks: [
@@ -508,8 +511,8 @@
 				}
 			]
 			title: "Nickel Batteries"
-			x: -2.0d
-			y: 1.5d
+			x: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["799F7F64000A3084"]
@@ -565,6 +568,18 @@
 			title: "RF Upgrades"
 			x: -0.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["69DB58E1CD20ED2B"]
+			id: "0073EAB8E0A299DC"
+			size: 0.7d
+			tasks: [{
+				id: "030EC3CEF619E7BD"
+				item: "thermal:dynamo_throttle_augment"
+				type: "item"
+			}]
+			x: 1.8297619047619023d
+			y: -1.2916666666666714d
 		}
 	]
 	title: "Energy Management"
