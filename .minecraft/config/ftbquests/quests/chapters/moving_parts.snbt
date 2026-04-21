@@ -593,6 +593,7 @@
 		}
 		{
 			dependencies: ["1A3BA4BEFD861942"]
+			description: ["(P.S. Jetpack unfortunately will use fuel when you on Immersive Aircraft transport. Be careful!)"]
 			icon: "create_sa:hydraulic_engine"
 			id: "188E10C139F48264"
 			tasks: [

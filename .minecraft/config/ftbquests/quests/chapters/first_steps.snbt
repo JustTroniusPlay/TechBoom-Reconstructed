@@ -2721,7 +2721,9 @@
 		{
 			dependencies: ["34D049FD2BF84E84"]
 			description: [
-				"&lImmersive Geology&r add its own type of veins that can be used to get additional or alternative resources income. But unlike most of GregTech ones you need to crush them manually, compile and then use &oCrude Bloomery&r to get your ingots, at least before you will gate upgraded Blast Furnace."
+				"&lImmersive Geology&r add its own type of veins that can be used to get additional or alternative resources income. But unlike most of GregTech ones you need to crush them manually, compile and then use &oCrude Bloomery&r to get your ingots, at least before you will gate upgraded Blast Furnace. "
+				""
+				"Bloomery &overy ineffective tho&r, it uses minimum of 2 ores per ingot or even more. Everyone start with something, but good to find alternative as soon as possible."
 				""
 				"Geology ores have variants: poor, normal and rich. The better the gem the more crushed ore you will get."
 				""
@@ -2730,6 +2732,7 @@
 				""
 				"After that with help of &lSteam Separator&r or simple mixer you can convert dirty crushed ores into ready to smelt ones which you can put into &lTinker's Smeltery&r."
 			]
+			icon: "immersivegeology:bloomery"
 			id: "65E0926A806B0CE7"
 			tasks: [
 				{
@@ -2756,31 +2759,15 @@
 					optional_task: true
 					type: "item"
 				}
-			]
-			title: "Crude Ore Harvesting"
-			x: 4.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["65E0926A806B0CE7"]
-			description: ["Early method to get resources from Geology ores. &oVery ineffective tho&r, use minimum of 2 ores per ingot or even more. Everyone start with something, but good to find alternative as soon as possible."]
-			icon: "immersivegeology:bloomery"
-			id: "20151FC95EA7B03D"
-			tasks: [
 				{
-					id: "1F2CEC233F74D0AE"
+					id: "187E62150E57BE0C"
 					item: "immersivegeology:bloomery"
 					optional_task: true
 					type: "item"
 				}
-				{
-					count: 12L
-					id: "4E4B705A6528A138"
-					item: { Count: 12, id: "immersivegeology:storage_block_refractory_brick" }
-					type: "item"
-				}
 			]
-			x: 5.5d
+			title: "Crude Ore Harvesting"
+			x: 4.5d
 			y: -2.0d
 		}
 		{
@@ -3315,7 +3302,7 @@
 			description: [
 				"Can remember up to 9 recipes after crafting. By right-clicking on the recipe on the right it will not be overwritten by different crafting recipe. "
 				""
-				"Worktable is useful to when you craft something frequently and get rid of need to check the recipes constantly."
+				"Worktable is useful to when you craft something frequently and get rid of need for checking recipes constantly."
 			]
 			id: "1C31C068991CC116"
 			tasks: [{
@@ -3404,6 +3391,20 @@
 			}]
 			x: 2.9700680272108855d
 			y: -1.2666666666666728d
+		}
+		{
+			dependencies: ["4A8233ADB6406DA9"]
+			description: ["Presses can be coppied with iron block and coresponding press."]
+			icon: "minecraft:iron_block"
+			id: "2F3E8A2C8A46E941"
+			size: 0.5d
+			tasks: [{
+				id: "07F74B626CCB2A6A"
+				title: "Press Recreation"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -15.75d
 		}
 	]
 	title: "Start of the journey"

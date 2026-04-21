@@ -129,4 +129,29 @@ ServerEvents.recipes(event => {
   "minecraft:iron_block",
   "gtceu:lv_bender"
   )
+
+  event.custom({"type": "thermal:crystallizer",
+        "ingredients": [
+          {
+            "fluid": "minecraft:water",
+            "amount": 1000
+          },
+          {
+            "item": "ae2:fluix_dust"
+          },
+          {"item": "ae2:charged_certus_quartz_crystal"}
+        ],
+        "result": [
+          {
+            count: 1,
+            "item": "ae2:fluix_crystal"
+          }
+        ],
+          "energy": 500
+    })
+
+  event.replaceInput({id: "thermal:machine_press"},
+  "minecraft:iron_block",
+  "gtceu:lv_bender"
+  )
 })

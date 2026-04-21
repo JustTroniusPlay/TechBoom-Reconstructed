@@ -1,11 +1,6 @@
 ServerEvents.tags('item', event => {
 
     event.add('forge:slimeballs','gtceu:sticky_resin');
-    
-    event.add('forge:ethanol','forestry:bio_ethanol');
-    
-    event.add('forge:plantoil','forestry:seed_oil');
-    event.add('forge:plantoil','gtceu:seed_oil');
 
     event.add('forge:creosot_bucket', 'immersiveengineering:creosote_bucket');
     event.add('forge:creosot_bucket', 'railcraft:creosote_bucket');
@@ -13,6 +8,14 @@ ServerEvents.tags('item', event => {
     event.add('forge:creosot_bucket', 'gtceu:creosote_bucket');
     event.add('forge:creosot_bucket', 'thermal:creosote_bucket');
   
+})
+
+ServerEvents.tags('fluid', event => {
+
+  event.add('forge:ethanol','forestry:bio_ethanol');
+    
+  event.add('forge:plantoil','forestry:seed_oil');
+  event.add('forge:plantoil','gtceu:seed_oil');
 })
 
 ServerEvents.recipes(event => {

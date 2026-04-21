@@ -246,4 +246,13 @@ ServerEvents.recipes(event => {
         F: file_
       })
     }
+
+    event.shapeless(Item.of('mekanismtools:steel_sword', 1),
+    [
+      'gtceu:steel_sword'
+    ])
+    event.replaceInput({id: 'tfmg:crafting/kinetics/lithium_blade'},
+      "tfmg:steel_sword",
+      "mekanismtools:steel_sword"
+    )
 })
