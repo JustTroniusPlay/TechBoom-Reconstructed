@@ -1,7 +1,6 @@
 ServerEvents.recipes(event => {
 
-  //Mekanism Tanks
-  {
+  {//Mekanism Tanks
   event.remove({id: "mekanism:fluid_tank/basic"});
     event.shaped(
   Item.of('mekanism:basic_fluid_tank', 1), // arg 1: output
@@ -115,11 +114,8 @@ ServerEvents.recipes(event => {
   })
 
   }
-
   
-
-  //Iron Tank
-{
+  {//Iron Tank
     event.remove({id: "railcraft:iron_tank_gauge"});
     event.shaped(
   Item.of('railcraft:white_iron_tank_gauge', 12), // arg 1: output
@@ -160,10 +156,9 @@ ServerEvents.recipes(event => {
     B: 'gtceu:double_iron_plate',  //arg 3: the mapping object
     C: 'create:fluid_tank'
   })
-}
+  }
 
-//Steel Tank
-{
+  {//Steel Tank
   event.remove({id: "railcraft:steel_tank_gauge"});
     event.shaped(
   Item.of('railcraft:white_steel_tank_gauge', 12), // arg 1: output
@@ -204,10 +199,9 @@ ServerEvents.recipes(event => {
     B: 'gtceu:double_steel_plate',  //arg 3: the mapping object
     C: 'create:fluid_tank'
   })
-}
+  }
 
-//Mekanism Dynamic Tank
-{
+  {//Mekanism Dynamic Tank
     event.remove({id: "mekanism:dynamic_tank"});
     event.remove({id: "mekanism:dynamic_valve"});
     event.remove({id: "mekanism:structural_glass"});
@@ -250,6 +244,52 @@ ServerEvents.recipes(event => {
     B: 'gtceu:double_tungsten_steel_plate',  //arg 3: the mapping object
     C: 'mekanism:ultimate_fluid_tank'
   })
-}
+  }
 
+  {//Create Tanks
+  event.remove({id: "create:crafting/kinetics/fluid_tank"});
+  event.remove({id: "create_connected:crafting/kinetics/fluid_vessel"});
+  event.shaped(
+  Item.of('create:fluid_tank', 1), // arg 1: output
+  [
+    ' A ',
+    'BCB', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'create:copper_sheet',
+    B: '#forge:glass_panes',  //arg 3: the mapping object
+    C: 'immersiveengineering:wooden_barrel'
+  })
+  event.shaped(
+  Item.of('create_connected:fluid_vessel', 1), // arg 1: output
+  [
+    ' B ',
+    'ACA', // arg 2: the shape (array of strings)
+    ' B '
+  ],
+  {
+    A: 'create:copper_sheet',
+    B: '#forge:glass_panes',  //arg 3: the mapping object
+    C: 'immersiveengineering:wooden_barrel'
+  })
+
+  var fluid_tanks = ['aluminum', 'cast_iron', 'steel']
+  fluid_tanks.forEach(tank =>
+    {
+      event.remove({id: "tfmg:crafting/kinetics/" + tank + "_fluid_tank"});
+      event.shaped(
+      Item.of('tfmg:' + tank +'_fluid_tank', 1), // arg 1: output
+      [
+        ' A ',
+        'BCB', // arg 2: the shape (array of strings)
+        ' A '
+      ],
+      {
+        A: '#forge:plates/' + tank,
+        B: '#forge:glass_panes',  //arg 3: the mapping object
+        C: 'immersiveengineering:wooden_barrel'
+      })
+    })
+  }
 })

@@ -1,6 +1,9 @@
 ServerEvents.recipes(event => {
 
-    event.remove({output: "electrodynamics:coalcoke"});
+    //event.remove({output: "electrodynamics:coalcoke"});
+    //event.remove({id: "thermal:storage/coal_coke_block"});
+    //event.remove({id: "railcraft:coal_coke_block_from_coal_coke"});
+    //event.remove({id: "thermal:machines/press/unpacking/press_coal_coke_unpacking"});
 
     event.remove({id: "immersiveengineering:crafting/cokebrick"});
     event.shaped(
@@ -73,7 +76,5 @@ ServerEvents.recipes(event => {
       'immersiveengineering:coal_coke'
     )
     
-  event.remove({id: "thermal:storage/coal_coke_block"});
-  event.remove({id: "railcraft:coal_coke_block_from_coal_coke"});
-  event.remove({id: "thermal:machines/press/unpacking/press_coal_coke_unpacking"});
+  
 })

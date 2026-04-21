@@ -1,6 +1,12 @@
 ServerEvents.recipes(event => {
 
+  event.remove({id: "thermal:machines/pyrolyzer/pyrolyzer_coal"});
   event.remove({id: "thermal:machines/smelter/smelter_alloy_enderium"});
+  
+  event.remove({id: 'thermal:fire_charge/obsidian_glass_2'});
+  event.remove({id: 'thermal:fire_charge/signalum_glass_2'});
+  event.remove({id: 'thermal:fire_charge/enderium_glass_2'});
+  event.remove({id: 'thermal:fire_charge/lumium_glass_2'});
 
   event.remove({id: "thermal:rf_coil"});
   event.shaped(
@@ -45,9 +51,9 @@ ServerEvents.recipes(event => {
     D: 'thermal:invar_gear',
     E: 'thermal:rf_coil',
     F: 'steamadditions:steam_foundry'
-  }
-)
+  })
 
+  {//Pulverizer
   event.replaceInput(
 
     {id: "crusty_chunks:iron_gear_recipe"},
@@ -69,9 +75,10 @@ ServerEvents.recipes(event => {
     D: 'thermal:copper_gear',
     E: 'thermal:rf_coil'
   })
+  }
 
+  {//Fabricator
   event.replaceInput(
-
     {id: "thermal:machine_crafter"},
     "minecraft:crafting_table",
     "gtceu:lv_assembler"
@@ -82,45 +89,23 @@ ServerEvents.recipes(event => {
     "thermal:copper_gear",
     "create:mechanical_crafter"
   )
+  }
 
-  event.replaceInput(
-
+  {//Pyrolyzer
+    event.replaceInput(
     {id: "thermal:machine_pyrolyzer"},
     "minecraft:nether_bricks",
     "immersiveengineering:blastbrick"
   )
    event.replaceInput(
-
     {id: "thermal:machine_pyrolyzer"},
     "minecraft:blaze_rod",
     "create:blaze_burner"
   )
+  }
 
-   const metals = [
-        'signalum', 'enderium', 'lumium',
-        'constantan','bronze','electrum',
-        'manyullyn','invar','rose',
-        'brass','rose_gold'
-    ]
-  metals.forEach(metal =>
-  {
-    event.remove({id: 'thermal_processing:crafting/' + metal + '_ingot'});
-    event.remove({id: 'thermal:fire_charge/' + metal + '_ingot_2'});
-    event.remove({id: 'thermal:fire_charge/' + metal + '_ingot_3'});
-    event.remove({id: 'thermal:fire_charge/' + metal + '_ingot_4'});
-    event.remove({id: "thermal_processing:crafting/" + metal + "_ingot_from_dust"});
-    event.remove({id: "thermal_processing:crafting/rods/" + metal});
-  })
-
-  event.remove({id: "thermal:crafting/rose_gold_ingot_with_dust"});
- 
-  event.remove({id: 'thermal:fire_charge/obsidian_glass_2'});
-  event.remove({id: 'thermal:fire_charge/signalum_glass_2'});
-  event.remove({id: 'thermal:fire_charge/enderium_glass_2'});
-  event.remove({id: 'thermal:fire_charge/lumium_glass_2'});
-
-  event.custom({
-        "type": "thermal:crystallizer",
+  //Certus in Crystallizer
+  event.custom({"type": "thermal:crystallizer",
         "ingredients": [
           {
             "fluid": "minecraft:water",
@@ -140,8 +125,7 @@ ServerEvents.recipes(event => {
           "energy": 500
     })
 
-  event.replaceInput(
-  {id: "thermal:machine_press"},
+  event.replaceInput({id: "thermal:machine_press"},
   "minecraft:iron_block",
   "gtceu:lv_bender"
   )

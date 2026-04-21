@@ -1,16 +1,6 @@
-ServerEvents.tags('item', event => {
-
-  event.add('forge:creosot_bucket', 'immersiveengineering:creosote_bucket');
-  event.add('forge:creosot_bucket', 'railcraft:creosote_bucket');
-  event.add('forge:creosot_bucket', 'tfmg:creosote_bucket');
-  event.add('forge:creosot_bucket', 'gtceu:creosote_bucket');
-  event.add('forge:creosot_bucket', 'thermal:creosote_bucket');
-})
-
 ServerEvents.recipes(event => {
 
-  
-
+  {//Rolling machines
   event.replaceInput({id:"railcraft:manual_rolling_machine"},
     "minecraft:crafting_table",
     "gtceu:bronze_gearbox"
@@ -47,12 +37,41 @@ ServerEvents.recipes(event => {
     E: 'railcraft:charge_motor'
   }
 )
+}
 
-event.replaceInput(
-        {id: "railcraft:wooden_tie"},
-        'railcraft:creosote_bucket',
-        '#forge:creosot_bucket'
-    )
+{//Boilers
+  event.remove({id: "railcraft:fluid_fueled_firebox"});
+    event.shaped(
+  Item.of('railcraft:fluid_fueled_firebox', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'AEA'
+  ],
+  {
+    A: '#forge:plates/invar',
+    B: 'gtceu:steel_firebox_casing',  //arg 3: the mapping object
+    C: 'minecraft:iron_bars',
+    D: 'gtceu:invar_frame',
+    E: 'gtceu:hp_steam_liquid_boiler'
+  })
+
+  event.remove({id: "railcraft:solid_fueled_firebox"});
+    event.shaped(
+  Item.of('railcraft:solid_fueled_firebox', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'AEA'
+  ],
+  {
+    A: 'tconstruct:seared_brick',
+    B: 'gtceu:steel_firebox_casing',  //arg 3: the mapping object
+    C: '#forge:plates/invar',
+    D: 'gtceu:invar_frame',
+    E: 'gtceu:hp_steam_solid_boiler'
+  })
+}
 
    event.remove({id: "railcraft:steam_oven"});
     event.shaped(
@@ -70,10 +89,27 @@ event.replaceInput(
 )
 
 event.replaceInput(
+        {id: "railcraft:wooden_tie"},
+        'railcraft:creosote_bucket',
+        '#forge:creosot_bucket'
+    )
+
+event.replaceInput(
         {id: "railcraft:steam_locomotive"},
         'railcraft:blast_furnace_bricks',
         'railcraft:solid_fueled_firebox'
     )
+
+event.replaceInput(
+        {id: "railcraft:feed_station"},
+        'thermal:steel_plate',
+        'thermal:bronze_gear'
+    )
+event.replaceInput(
+        {id: "railcraft:feed_station"},
+        'minecraft:golden_carrot',
+        'minecraft:wheat'
+    ) 
 
   event.custom({
   "type": "railcraft:rolling",
@@ -96,15 +132,4 @@ event.replaceInput(
   }
   });
 
-  event.replaceInput(
-        {id: "railcraft:feed_station"},
-        'thermal:steel_plate',
-        'thermal:bronze_gear'
-    )
-
-   event.replaceInput(
-        {id: "railcraft:feed_station"},
-        'minecraft:golden_carrot',
-        'minecraft:wheat'
-    ) 
 })

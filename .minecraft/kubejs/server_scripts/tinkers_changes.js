@@ -1,5 +1,18 @@
 ServerEvents.recipes(event => {
 
+  event.remove({id: "tconstruct:smeltery/copper_can"});
+  event.shaped(
+  Item.of('tconstruct:copper_can', 3), // arg 1: output
+  [
+    '   ',
+    'ABA', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'create:copper_sheet',
+    B: '#gtceu:tools/crafting_hammers'
+  })
+
   event.remove({id: "tconstruct:smeltery/seared/table"});
   event.shaped(
   Item.of('tconstruct:seared_table', 1), // arg 1: output
@@ -26,6 +39,7 @@ ServerEvents.recipes(event => {
     B: '#forge:glass_panes'
   })
 
+  {//Glass rebalance
   event.remove({id: "tconstruct:smeltery/melting/glass/pane"});
   event.remove({id: "tconstruct:smeltery/melting/glass/sand"});
   event.remove({id: "tconstruct:smeltery/melting/glass/sand_cast"});
@@ -109,18 +123,6 @@ ServerEvents.recipes(event => {
   "temperature": 1000,
   "time": 59
   })
-
-  event.remove({id: "tconstruct:smeltery/copper_can"});
-  event.shaped(
-  Item.of('tconstruct:copper_can', 3), // arg 1: output
-  [
-    '   ',
-    'ABA', // arg 2: the shape (array of strings)
-    ' A '
-  ],
-  {
-    A: 'create:copper_sheet',
-    B: '#gtceu:tools/crafting_hammers'
-  })
+  }
 
 })

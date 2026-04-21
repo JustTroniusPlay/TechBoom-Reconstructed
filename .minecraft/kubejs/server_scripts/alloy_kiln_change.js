@@ -2,6 +2,8 @@ ServerEvents.recipes(event => {
 
     event.remove({id: "immersiveengineering:crafting/alloybrick"});
     event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick"});
+    //Replace with deployer two step recipe
+    event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick_using_deployer"});
     
   event.shaped(
   Item.of('immersiveengineering:alloybrick', 2), // arg 1: output
@@ -16,17 +18,6 @@ ServerEvents.recipes(event => {
     C: '#forge:sandstone'
   }
 )
-    //Replace with deployer two step recipe
-    event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick_using_deployer"});
-
-    event.remove({id: "create:mixing/andesite_alloy"});
-    event.remove({id: "create:mixing/andesite_alloy_from_zinc"});
-    event.remove({id: "create:crafting/materials/andesite_alloy_from_zinc"});
-    event.remove({id: "create:crafting/materials/andesite_alloy"});
-
-    event.remove({id: "common_ore_library:ingot_to_nugget/zinc"});
-    event.remove({id: "common_ore_library:block_to_ingot/zinc"});
-    event.remove({id: "immersivegeology:crafting/zinc_get_ingots_from_block"});
 
     let kiln = (output, Input1, Input2, count, time) => 
     {
@@ -82,7 +73,7 @@ ServerEvents.recipes(event => {
       "minecraft:glass_pane",
       "gtceu:quartz_sand_dust",
       "gtceu:tiny_flint_dust",1,
-      100)
+    100)
 
 
 

@@ -27,8 +27,8 @@ ServerEvents.recipes(event => {
     A: 'thermal:steel_plate',
     B: 'minecraft:smooth_stone' , //arg 3: the mapping object
     D: 'thermal:dynamo_stirling',
-    C: 'gtceu:steel_gearbox',
-    E: 'rftoolsbase:machine_frame'
+    C: 'ad_astra:coal_generator',
+    E: 'thermal:machine_frame'
   })
 
 })

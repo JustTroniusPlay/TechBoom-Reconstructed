@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    event.remove({id: "railcraft:bronze_gear"});
     const metals = ['copper','iron', 'bronze', 
       'gold','invar','electrum',
       'signalum','lead',
@@ -11,8 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({id: "common_ore_library:crafting/gear/tungsten"});
     event.remove({id: "common_ore_library:crafting/gear/iridium"});
 
-    metals.forEach(metal =>
-        {
+    metals.forEach(metal => {
             const ids = [
                 "common_ore_library:crafting/gear/" + metal,
                 "thermal:parts/" + metal + "_gear",

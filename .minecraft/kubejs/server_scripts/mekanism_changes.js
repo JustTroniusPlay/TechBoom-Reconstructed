@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 event.remove({id: "mekanism:metallurgic_infuser"});
+event.remove({id: "mekanism:rails"});
+event.remove({id: "mekanism:paper"});
 
   event.replaceInput(
         {id: "mekanism:transmitter/mechanical_pipe/basic"},

@@ -15,7 +15,6 @@ ServerEvents.recipes(event => {
   }
 )
 
-
     event.remove({id: "railcraft:blast_furnace_bricks"});
     event.shaped(
   Item.of('railcraft:blast_furnace_bricks', 6), // arg 1: output

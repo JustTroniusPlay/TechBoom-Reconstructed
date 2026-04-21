@@ -703,8 +703,8 @@
 				item: "thermal:machine_output_augment"
 				type: "item"
 			}]
-			x: 3.016326530612247d
-			y: -2.2675170068027057d
+			x: 2.0142857142857196d
+			y: -2.616751700680261d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -729,6 +729,17 @@
 			}]
 			x: 3.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "0B9322FD2037AEB3"
+			tasks: [{
+				id: "4644B9612C1340C7"
+				item: "rftoolspower:coalgenerator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
 		}
 	]
 	title: "Redstone Machines"

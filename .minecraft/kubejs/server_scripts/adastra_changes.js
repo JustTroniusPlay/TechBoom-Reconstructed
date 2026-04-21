@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
     E: 'gtceu:lv_forge_hammer'
   })
 
+  {//Fuel Refinery
   event.replaceInput(
   {id: "ad_astra:fuel_refinery"},
   "minecraft:furnace",
@@ -28,7 +29,9 @@ ServerEvents.recipes(event => {
   "minecraft:bucket",
   "immersivetechnology:barrel_steel"
   )
+  }
 
+  {//NASA Workbench
   event.replaceInput(
   {id: "ad_astra:nasa_workbench"},
   "immersiveengineering:stick_iron",
@@ -49,7 +52,9 @@ ServerEvents.recipes(event => {
   "thermal:steel_block",
   'gtceu:steel_gearbox'
   )
+  }
 
+  {//Coal Gen
   event.replaceInput(
   {id: "ad_astra:coal_generator"},
   "minecraft:coal_block",
@@ -60,5 +65,5 @@ ServerEvents.recipes(event => {
   "minecraft:iron_ingot",
   "create:iron_sheet"
   )
-  
+  }
 })

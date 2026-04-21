@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
   const metals = [
-    'steel', 'bronze', 'iron', 'gold', 'diamond', 'osmium', 'aluminum'
+    'steel', 'bronze', 'iron', 'gold', 'diamond', 'osmium'
 
   ]
   const tools = [
@@ -25,7 +25,8 @@ ServerEvents.recipes(event => {
         
     })
   
-  tools.forEach(tool =>
+    {//gtceu bronze tools upgrade to mekanism
+    tools.forEach(tool =>
     {
       const tooldel = 'gtceu:bronze_' + tool;
       event.shaped(
@@ -43,7 +44,9 @@ ServerEvents.recipes(event => {
       }
     ).damageIngredient(tooldel, 9999)
     })
+    }
 
+    {//Paxels with GTCEU
     vanilla.forEach(res => {
       event.remove({id: "mekanismtools:" + res + "_paxel"});
       event.shaped(
@@ -60,7 +63,8 @@ ServerEvents.recipes(event => {
         D: '#forge:rods/wooden'
       }
     ).damageIngredient('gtceu:' + res + '_axe', 9999)
-  })
+    })
+    }
 
     {//Osmium Tools
       
@@ -143,6 +147,103 @@ ServerEvents.recipes(event => {
         D: 'gtceu:iron_ring',
         E: '#gtceu:tools/crafting_hammers',
         F: '#gtceu:tools/crafting_files',
+      })
+    }
+
+    {//Aluminium tools
+      let stick_ = '#forge:rods/wooden'
+      let plate_ = 'immersiveengineering:plate_aluminum'
+      let ingot_ = 'immersiveengineering:ingot_aluminum'
+      let hammer_ = '#gtceu:tools/crafting_hammers'
+      let file_ = '#gtceu:tools/crafting_files'
+
+      let alum_tools = 
+      [
+        'tfmg:crafting/kinetics/aluminum_sword',
+        'tfmg:crafting/kinetics/aluminum_pickaxe',
+        'tfmg:crafting/kinetics/aluminum_axe',
+        'tfmg:crafting/kinetics/aluminum_shovel',
+        'tfmg:crafting/kinetics/aluminum_hoe'
+      ]
+
+      alum_tools.forEach(alum =>
+        {
+          event.remove({id: alum});
+        })
+
+      event.shaped(
+      Item.of('tfmg:aluminum_sword', 1), // arg 1: output
+      [
+        ' P ',
+        'FPH', // arg 2: the shape (array of strings)
+        ' S '
+      ],
+      {
+        S: stick_,
+        //arg 3: the mapping object
+        P: plate_,
+        H: hammer_,
+        F: file_
+      })
+
+      event.shaped(
+      Item.of('tfmg:aluminum_pickaxe', 1), // arg 1: output
+      [
+        'PII',
+        'FSH', // arg 2: the shape (array of strings)
+        ' S '
+      ],
+      {
+        S: stick_,
+        I: ingot_,  //arg 3: the mapping object
+        P: plate_,
+        H: hammer_,
+        F: file_
+      })
+
+      event.shaped(
+      Item.of('tfmg:aluminum_axe', 1), // arg 1: output
+      [
+        'PIH',
+        'PS ', // arg 2: the shape (array of strings)
+        'FS '
+      ],
+      {
+        S: stick_,
+        I: ingot_,  //arg 3: the mapping object
+        P: plate_,
+        H: hammer_,
+        F: file_
+      })
+
+      event.shaped(
+      Item.of('tfmg:aluminum_shovel', 1), // arg 1: output
+      [
+        'FPH',
+        ' S ', // arg 2: the shape (array of strings)
+        ' S '
+      ],
+      {
+        S: stick_,
+          //arg 3: the mapping object
+        P: plate_,
+        H: hammer_,
+        F: file_
+      })
+
+      event.shaped(
+      Item.of('tfmg:aluminum_hoe', 1), // arg 1: output
+      [
+        'PIH',
+        'FS ', // arg 2: the shape (array of strings)
+        ' S '
+      ],
+      {
+        S: stick_,
+        I: ingot_,  //arg 3: the mapping object
+        P: plate_,
+        H: hammer_,
+        F: file_
       })
     }
 })
