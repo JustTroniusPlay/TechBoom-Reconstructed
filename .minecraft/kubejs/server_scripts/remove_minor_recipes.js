@@ -21,6 +21,7 @@ ServerEvents.tags('fluid', event => {
 ServerEvents.recipes(event => {
     event.remove({id: "gtceu:compressor/compress_plate_dust_obsidian"});
     event.remove({id: "gm_construct:smeltery/casting/metal/malachite/block"});
+    event.remove({id: "tconstruct:compat/create/andesite_alloy_iron"});
 
     event.remove({id: "cybernetic_system:craft_wire_copper"});
     event.shapeless(

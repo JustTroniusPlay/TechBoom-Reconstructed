@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
             },
             {
             "item": "railcraft:charge_spool_medium",
-            "chance": 2.0
+            "chance": 1.0
             },
             {
             "item": "railcraft:slag",

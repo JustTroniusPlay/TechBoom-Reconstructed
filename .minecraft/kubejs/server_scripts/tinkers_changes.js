@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     B: '#gtceu:tools/crafting_hammers'
   })
 
-  event.remove({id: "tconstruct:smeltery/seared/table"});
+  /*event.remove({id: "tconstruct:smeltery/seared/table"});
   event.shaped(
   Item.of('tconstruct:seared_table', 1), // arg 1: output
   [
@@ -24,9 +24,9 @@ ServerEvents.recipes(event => {
   {
     A: 'tconstruct:seared_brick',
     B: 'thermal:steel_plate'
-  })
+  })*/
 
-  event.remove({id: "tconstruct:smeltery/seared/melter"});
+  //event.remove({id: "tconstruct:smeltery/seared/melter"});
   event.shaped(
   Item.of('tconstruct:seared_melter', 1), // arg 1: output
   [
@@ -37,6 +37,19 @@ ServerEvents.recipes(event => {
   {
     A: 'tconstruct:seared_brick',
     B: '#forge:glass_panes'
+  })
+
+  event.remove({id: "tconstruct:tables/tinkers_anvil"});
+  event.shaped(
+  Item.of('tconstruct:tinkers_anvil', 1), // arg 1: output
+  [
+    'AAA',
+    ' B ', // arg 2: the shape (array of strings)
+    'BBB'
+  ],
+  {
+    A: 'thermal:steel_block',
+    B: '#tconstruct:seared_blocks'
   })
 
   {//Glass rebalance
