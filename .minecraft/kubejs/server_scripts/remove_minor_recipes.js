@@ -47,6 +47,12 @@ ServerEvents.recipes(event => {
         '#forge:treated_wood'
     )
 
+    event.replaceInput(
+        {id: "railcraft:water_tank_siding"},
+        'minecraft:slime_ball',
+        '#forge:slimeballs'
+    )
+
     event.remove({id: "tesseract:tesseract"});
     event.shaped(
   Item.of('tesseract:tesseract', 1), // arg 1: output
@@ -60,4 +66,13 @@ ServerEvents.recipes(event => {
     B: 'thermal:enderium_block',  //arg 3: the mapping object
     C: 'createutilities:void_steel_block'
   })
+
+  event.shapeless(
+    Item.of('gtceu:treated_wood_planks',1),
+    'immersiveengineering:treated_wood_horizontal'
+  )
+  event.shapeless(
+    Item.of('immersiveengineering:treated_wood_horizontal',1),
+    'gtceu:treated_wood_planks'
+  )
 })

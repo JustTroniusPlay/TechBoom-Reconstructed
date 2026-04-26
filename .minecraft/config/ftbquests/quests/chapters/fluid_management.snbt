@@ -46,7 +46,7 @@
 				"5A3BFC118141DC5C"
 				"332E6B2C638AE656"
 			]
-			description: ["Mechanical Pump can get water from water sources like normal 2x2 puddle."]
+			description: [""]
 			id: "72304D7D63A87E7A"
 			rewards: [{
 				count: 7
@@ -118,6 +118,11 @@
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
+			description: [
+				"Will consume FE energy to pump and need redstone signal to work."
+				""
+				"Use Engineer's Hammer to configure input and output sides."
+			]
 			id: "62F294152390992E"
 			tasks: [{
 				id: "380D784BB1E618E7"
@@ -172,7 +177,7 @@
 				item: "railcraft:water_tank_siding"
 				type: "item"
 			}]
-			size: 0.6d
+			size: 0.7d
 			tasks: [{
 				count: 13L
 				id: "1FA4DE9CB92AC078"
@@ -180,8 +185,8 @@
 				type: "item"
 			}]
 			title: "Water Tank Siding"
-			x: 1.3142857142857167d
-			y: -4.0857142857142925d
+			x: 1.75d
+			y: -4.55d
 		}
 		{
 			dependencies: ["5186990A391ADB8D"]
@@ -272,6 +277,41 @@
 				"7D3FA2BBD1033FE9"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"You have different options to transfer liquids around with various benefits and drawbacks. "
+				""
+				"{@pagebreak}"
+				"&lCopper Fluid Pipes&r are simpliest to make, but by themselves they can't extract any fluids and will not get any fluid throught them without Mechanical Pump."
+				""
+				"Unlike other pipes, they can put source blocks in the world."
+				""
+				"By clicking on straight pipes with any wrench-like tool you transform them into glass like pipe that now show you what liquid go through system. "
+				""
+				"You can use &oCopper Casing&r to save pipe connections and forbid it from connecting to other pipes."
+				""
+				"{@pagebreak}"
+				"&lIron Fluid Pipes&r are more sophisticated in terms of control. They can't extract fluids, but if any machinery output them by themselves, Iron pipes will transfer fluids without issue. "
+				""
+				"Using &oEngineer's Hammer&r you can control their connections to blocks and other pipes. "
+				""
+				"Using fluid pumps you can speed up liquids transfer."
+				""
+				"{@pagebreak}"
+				"&lGregTech Pipes&r don't extract without help of covers or pumps if machines can't output fluids. "
+				""
+				"They most notable benefits are internal buffer and ability to control their connections with any wrench-like tool. Additionally you can put block &oCovers on them to hide pipes in the walls&r."
+				""
+				"You can craft pipes from wide variety of materials and with different sizes. This all will determine how much pipe can transfer &ominibuckets per tick&r. The result depends on how much materials you wish to spend."
+				""
+				"&oSome big variants can even transfer more than one fluid!&r "
+				""
+				"{@pagebreak}"
+				"&lFluiducts&r can transfer fluids pretty fast and even have some internal buffer to store fluids. But they kinda detrimental with how they sometimes refuse to connect to some machines. "
+				""
+				"They can be tricky to use and need some other pipes or pumps if your machines can't output by itself or if pipes can't connect."
+				""
+				"With help of any wrench-like tool you can control their connections."
+			]
 			id: "332E6B2C638AE656"
 			rewards: [
 				{
@@ -334,6 +374,7 @@
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
+			description: ["Work only with GregTech pipes."]
 			id: "724160D9F6565F29"
 			tasks: [{
 				id: "0C26B01F98328560"
@@ -553,13 +594,15 @@
 		}
 		{
 			dependencies: ["62F294152390992E"]
+			description: ["Can put fluids in the world. Configure with Engineer's Hammer. Using redstone signal will block output."]
 			id: "2CC6FA9A969ECBCA"
+			size: 0.7d
 			tasks: [{
 				id: "0D3061FF4C4301EE"
 				item: "immersiveengineering:fluid_placer"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 4.55d
 			y: -7.0d
 		}
 		{
@@ -586,6 +629,11 @@
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
+			description: [
+				"Helps with fluids filtering in pipes system. "
+				""
+				"Use bucket with fluid in the UI to configure what liquid will go where."
+			]
 			id: "3C8A526DF1557AE8"
 			tasks: [{
 				id: "48F362149289D355"
@@ -654,6 +702,7 @@
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
+			description: ["Potin alloy can make good pipes."]
 			icon: "gtceu:potin_ingot"
 			id: "03E9DB5463FD4FFA"
 			rewards: [{
@@ -688,6 +737,7 @@
 				"332E6B2C638AE656"
 				"540D62BE372AE7D1"
 			]
+			description: ["Give ME system a way to store fluids."]
 			id: "48A9933056B21984"
 			tasks: [{
 				id: "422A3643AC8CBA5A"
@@ -750,6 +800,44 @@
 			]
 			x: 0.35d
 			y: -3.85d
+		}
+		{
+			dependencies: [
+				"724160D9F6565F29"
+				"1B95E7F9A5CBDBE8"
+			]
+			dependency_requirement: "one_completed"
+			id: "1042CC5D3176F2A3"
+			size: 0.7d
+			tasks: [
+				{
+					id: "7812320F4CDD1055"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_screwdrivers"
+						}
+					}
+					title: "Screwdrivers"
+					type: "item"
+				}
+				{
+					id: "0E60A3218E870AC7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_crowbars"
+						}
+					}
+					title: "GregTech Crowbars"
+					type: "item"
+				}
+			]
+			title: "Cover Control"
+			x: 2.5d
+			y: -10.0d
 		}
 	]
 	title: "Fluid Management"

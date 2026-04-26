@@ -1074,24 +1074,54 @@
 		{
 			dependencies: ["5D86113FD3732735"]
 			description: [
-				"Mining Hammers can mine 3x3 by default (When you mine with pressing Shift you brake only 1 block). "
+				"GregTech adds some useful tools to help you get resources in bulk."
+				""
+				"Mining Hammers and Spades can &omine 3x3 area by default&r (When you mine with pressing Shift you brake only 1 block) of stone and dirt related blocks respectfully. "
 				""
 				"They very convenient to mine large resource veins and have great durability."
+				""
+				"Saws needed to make some components, but additionally with it you can get &o6 planks from 1 log&r."
 			]
 			id: "0F21BFC7B6C7D51D"
-			tasks: [{
-				id: "3E9DB28735E84107"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/mining_hammers"
+			tasks: [
+				{
+					id: "3E9DB28735E84107"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mining_hammers"
+						}
 					}
+					title: "Mining Hammers"
+					type: "item"
 				}
-				title: "Any #forge:tools/mining_hammers"
-				type: "item"
-			}]
-			title: "Mining Hammer"
+				{
+					id: "2D621465C3AD8349"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/spades"
+						}
+					}
+					title: "Spades"
+					type: "item"
+				}
+				{
+					id: "03F03345EC6730F0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_saws"
+						}
+					}
+					title: "Saws"
+					type: "item"
+				}
+			]
+			title: "Gregic Tools"
 			x: 4.394557823129247d
 			y: -4.544897959183658d
 		}

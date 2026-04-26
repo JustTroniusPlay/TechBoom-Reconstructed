@@ -104,6 +104,19 @@ ServerEvents.recipes(event => {
   )
   }
 
+  {//Fluiduct
+    event.replaceInput(
+    {id: "thermal:fluid_duct_4"},
+    "thermal:bronze_ingot",
+    "gtceu:double_bronze_plate"
+  )
+    event.replaceInput(
+    {id: "thermal:fluid_duct_4"},
+    "thermal:lead_ingot",
+    "thermal:lead_gear"
+  )
+  }
+
   //Certus in Crystallizer
   event.custom({"type": "thermal:crystallizer",
         "ingredients": [

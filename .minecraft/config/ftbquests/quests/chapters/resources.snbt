@@ -9,6 +9,8 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["39B74A03DA98661C"]
+			hide_dependency_lines: true
 			id: "3F0F17AD293B8B8F"
 			tasks: [{
 				count: 16L
@@ -16,7 +18,7 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 7.0d
 			y: 6.5d
 		}
 		{
@@ -169,8 +171,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: 3.5d
+			x: 4.0d
+			y: 5.0d
 		}
 		{
 			icon: "minecraft:coal"
@@ -190,10 +192,15 @@
 				}
 			]
 			title: "Coal"
-			x: 1.0d
-			y: 3.5d
+			x: 6.0d
+			y: 5.0d
 		}
 		{
+			dependencies: [
+				"04D9645A3F78682C"
+				"0AB65D0E517F2F9E"
+			]
+			hide_dependency_lines: true
 			id: "5CDE13F097EC8781"
 			tasks: [
 				{
@@ -212,8 +219,8 @@
 				}
 			]
 			title: "Cast Iron"
-			x: 5.0d
-			y: 8.5d
+			x: 4.0d
+			y: 8.0d
 		}
 		{
 			id: "28B14F276350912F"
@@ -232,9 +239,16 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					count: 16L
+					id: "13B0E9D757D1F3BD"
+					item: "thermal:sulfur"
+					optional_task: true
+					type: "item"
+				}
 			]
 			title: "Sulfur"
-			x: 9.0d
+			x: 7.0d
 			y: 3.5d
 		}
 		{
@@ -261,10 +275,15 @@
 				}
 			]
 			title: "Zinc"
-			x: 6.0d
-			y: 5.0d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
+			dependencies: [
+				"5038C6347E1253ED"
+				"39B74A03DA98661C"
+			]
+			hide_dependency_lines: true
 			id: "4122E674728CDD25"
 			tasks: [{
 				count: 16L
@@ -273,10 +292,12 @@
 				type: "item"
 			}]
 			title: "Brass"
-			x: 0.0d
-			y: 8.5d
+			x: 1.0d
+			y: 6.5d
 		}
 		{
+			dependencies: ["640EE33E02A43DB7"]
+			hide_dependency_lines: true
 			id: "53A2FA4D0E38D477"
 			tasks: [{
 				id: "799BDD2485C0C776"
@@ -287,13 +308,15 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["53A2FA4D0E38D477"]
+			hide_dependency_lines: true
 			id: "156CBEF77AAAF530"
 			tasks: [{
 				id: "03D2C5399CBA3D8F"
 				item: "createutilities:void_steel_ingot"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.0d
 			y: 11.5d
 		}
 		{
@@ -337,6 +360,11 @@
 			y: 3.5d
 		}
 		{
+			dependencies: [
+				"28B14F276350912F"
+				"42E0BB0DB56E20DF"
+			]
+			hide_dependency_lines: true
 			id: "1342293BBB112D9A"
 			tasks: [{
 				count: 16L
@@ -346,7 +374,7 @@
 			}]
 			title: "Alumisulfate"
 			x: 7.0d
-			y: 8.5d
+			y: 8.0d
 		}
 		{
 			icon: "thermal:nickel_ingot"
@@ -384,10 +412,15 @@
 				}
 			]
 			title: "Nickel"
-			x: 4.0d
-			y: 5.0d
+			x: 1.0d
+			y: 3.5d
 		}
 		{
+			dependencies: [
+				"04D9645A3F78682C"
+				"1DB2F5D1FFB80972"
+			]
+			hide_dependency_lines: true
 			id: "60AD67675990CD77"
 			tasks: [{
 				count: 16L
@@ -396,8 +429,8 @@
 				type: "item"
 			}]
 			title: "Steel"
-			x: 1.0d
-			y: 6.5d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			icon: "thermal:lead_ingot"
@@ -472,6 +505,12 @@
 			y: 5.0d
 		}
 		{
+			dependencies: [
+				"57555B7CC23F264F"
+				"5038C6347E1253ED"
+			]
+			description: [""]
+			hide_dependency_lines: true
 			id: "7E4193485C2ED192"
 			tasks: [{
 				count: 16L
@@ -484,14 +523,33 @@
 			y: 6.5d
 		}
 		{
+			dependencies: [
+				"04D9645A3F78682C"
+				"76501E1A279E0C2D"
+			]
+			hide_dependency_lines: true
 			icon: "thermal:invar_ingot"
 			id: "22B7147BADC4FF68"
 			tasks: [{
+				count: 16L
 				id: "47D7F01A677BB5DD"
 				item: "thermal:invar_ingot"
 				type: "item"
 			}]
 			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0AB65D0E517F2F9E"]
+			hide_dependency_lines: true
+			id: "1DB2F5D1FFB80972"
+			tasks: [{
+				count: 16L
+				id: "30B0420F40168C1C"
+				item: { Count: 16, id: "immersiveengineering:coal_coke" }
+				type: "item"
+			}]
+			x: 5.0d
 			y: 6.5d
 		}
 	]

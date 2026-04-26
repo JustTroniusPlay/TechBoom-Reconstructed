@@ -2535,6 +2535,47 @@
 			x: -5.535714285714285d
 			y: -9.039285714285711d
 		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			description: ["Simple chunk loader that use rotational power. Catch ghast by clicking it with empty one!"]
+			icon: "create_power_loader:andesite_chunk_loader"
+			id: "242CE134590880BD"
+			size: 1.2d
+			tasks: [
+				{
+					id: "620FF69151ADD48F"
+					item: "create_power_loader:empty_andesite_chunk_loader"
+					type: "item"
+				}
+				{
+					id: "2C636304F5A3EDC4"
+					item: "create_power_loader:andesite_chunk_loader"
+					type: "item"
+				}
+			]
+			title: "Ghast Chunk Loader"
+			x: 10.464285714285715d
+			y: 4.685204081632648d
+		}
+		{
+			dependencies: ["0852CB10008D7CDB"]
+			icon: "create_power_loader:brass_chunk_loader"
+			id: "43DC6334943F14C6"
+			tasks: [
+				{
+					id: "21623579CD8926B0"
+					item: "create_power_loader:empty_brass_chunk_loader"
+					type: "item"
+				}
+				{
+					id: "764AC632E584B490"
+					item: "create_power_loader:brass_chunk_loader"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -7.5d
+		}
 	]
 	title: "Moving Parts"
 }
