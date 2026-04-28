@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
         "rate": "metal",
         "result": 
         {
-        "amount": 72,
+        "amount": 44,
         "tag": "forge:molten_aluminum" 
         },
         "temperature": 425,

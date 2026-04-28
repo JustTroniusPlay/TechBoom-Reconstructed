@@ -630,9 +630,11 @@
 				"Seared melter is first iteration of getting molten metals. Right now it can help get additional resource income. Simple and common ores can give additional 3 nuggets when using smeltery. Some metals require higher temperatures, so you need to upgrade to bigger smeltery later. You can't make alloys in small smeltery."
 				""
 				"{@pagebreak}"
-				"To build melter put it on the Heater, then attach Faucet to it and put basin under for molten metals to flow. Fuel it with coal or any other solid fuel. Right-click Faucet to pour your liquids into the basin and create resource blocks. "
+				"To build melter put it on the Heater, then attach Faucet to it and put basin or seared table with cast under for molten metals to flow. Fuel it with coal or any other solid fuel. Right-click Faucet to pour your liquids into the basin and create resource blocks. "
 				""
 				"You can automate process with hoppers and alike blocks. You can give Faucet a redstone signal (like putting lever near) to automatically pour out of Smeltery."
+				""
+				"If you short on gold and kinda desparate you can use sand casts instead of gold ones. To create gold cast pour gold onto the tool component or ingot."
 			]
 			icon: "tconstruct:seared_melter"
 			id: "0A47F74F64457575"
@@ -657,6 +659,31 @@
 					id: "0ABD7AFB37752F95"
 					item: "tconstruct:seared_basin"
 					optional_task: true
+					type: "item"
+				}
+				{
+					id: "77AFEC9DC3AE410B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tconstruct:casts/multi_use"
+						}
+					}
+					title: "Gold Casts"
+					type: "item"
+				}
+				{
+					id: "3466B877E64E05C1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tconstruct:casts/single_use"
+						}
+					}
+					optional_task: true
+					title: "Sand Casts"
 					type: "item"
 				}
 			]
@@ -1321,7 +1348,7 @@
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
-			description: ["Clockwork Engine is silly way to generate Forge Units manually. Its will change colors signaling how much it charged. "]
+			description: ["Clockwork Engine is silly way to generate Forge Energy manually. It will change colors signaling how much it charged. "]
 			id: "65616A1695F0648D"
 			rewards: [{
 				count: 4
@@ -1379,9 +1406,6 @@
 				""
 				"After they become liquids you can click on them in the UI to change their order. Those at the very bottom will get poured out of the &oDrain&r, but only if there Faucet on them and Casting Table or Basin to pour."
 				""
-				"{@pagebreak}"
-				"If you short on gold and kinda desparate you can use sand casts instead of gold ones. To create gold cast pour gold onto the tool component or ingot."
-				""
 				"&lFollow 'Blacksimthing' tab for custom tools, armor and metal work.&r"
 			]
 			icon: "tconstruct:smeltery_controller"
@@ -1414,36 +1438,6 @@
 					count: 8L
 					id: "34B56298262F8E82"
 					item: { Count: 8, id: "tconstruct:seared_bricks" }
-					type: "item"
-				}
-				{
-					id: "3429DE6CCDFD9006"
-					item: "tconstruct:seared_table"
-					type: "item"
-				}
-				{
-					id: "267393B015A6CEB2"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "tconstruct:casts/gold"
-						}
-					}
-					title: "Gold Cast"
-					type: "item"
-				}
-				{
-					id: "1DDAE40254BBC1E5"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "tconstruct:casts/single_use"
-						}
-					}
-					optional_task: true
-					title: "Sand Cast"
 					type: "item"
 				}
 			]
@@ -2129,7 +2123,7 @@
 				""
 				"Outside the interface, right click the saved recipe to use available materials to craft the item. Shift right click to craft up to a stack of the item. Left click to delete a crafting recipe. A secondary display slot is available for each slot."
 				""
-				"&oThis can be very useful in crafting of many Gregtech components.&r"
+				"&oThis can be very useful in crafting of many components.&r"
 			]
 			id: "191FA67C7B17BB2F"
 			rewards: [{
@@ -3332,7 +3326,7 @@
 			description: [
 				"Can remember up to 9 recipes after crafting. By right-clicking on the recipe on the right it will not be overwritten by different crafting recipe. "
 				""
-				"Worktable is useful to when you craft something frequently and get rid of need for checking recipes constantly."
+				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly."
 			]
 			id: "1C31C068991CC116"
 			tasks: [{
