@@ -1,7 +1,0 @@
-#A list of (non-)portalable blocks.
-portalable_blocks = []
-#Whether the list of (non-)portalable blocks is for portalable blocks or non-portalable blocks.
-is_whitelist_mode = false
-#The maximum amount blocks can be between two emancipation grid emitters for them to function
-emancipation_grid_emitter_range = 16
-

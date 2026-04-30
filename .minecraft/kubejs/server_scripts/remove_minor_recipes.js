@@ -7,6 +7,9 @@ ServerEvents.tags('item', event => {
     event.add('forge:creosot_bucket', 'tfmg:creosote_bucket');
     event.add('forge:creosot_bucket', 'gtceu:creosote_bucket');
     event.add('forge:creosot_bucket', 'thermal:creosote_bucket');
+
+    event.add('minecraft:bookshelf_books', 'voltaic:guidebook');
+    event.add('minecraft:lectern_books', 'voltaic:guidebook');
   
 })
 

@@ -1,5 +1,8 @@
 ServerEvents.recipes(event => {
 
+  event.remove({id: "forestry:bronze_axe"});
+  event.remove({id: "forestry:bronze_pickaxe"});
+
   const metals = [
     'steel', 'bronze', 'iron', 'gold', 'diamond', 'osmium'
 

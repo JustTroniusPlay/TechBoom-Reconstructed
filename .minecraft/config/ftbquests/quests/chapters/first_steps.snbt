@@ -686,6 +686,11 @@
 					title: "Sand Casts"
 					type: "item"
 				}
+				{
+					id: "64616EF92A4ED94B"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
 			]
 			x: -1.0d
 			y: -0.5d
@@ -972,9 +977,8 @@
 					type: "item"
 				}
 				{
-					count: 4L
 					id: "3449D4CBA0CEBEF3"
-					item: { Count: 4, id: "minecraft:rotten_flesh" }
+					item: "minecraft:rotten_flesh"
 					type: "item"
 				}
 				{
