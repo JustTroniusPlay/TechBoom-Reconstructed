@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
       })
     }
 
-    {//Aluminium tools
+    {/*Aluminium tools
       let stick_ = '#forge:rods/wooden'
       let plate_ = 'immersiveengineering:plate_aluminum'
       let ingot_ = 'immersiveengineering:ingot_aluminum'
@@ -248,6 +248,7 @@ ServerEvents.recipes(event => {
         H: hammer_,
         F: file_
       })
+    */
     }
 
     event.shapeless(Item.of('mekanismtools:steel_sword', 1),

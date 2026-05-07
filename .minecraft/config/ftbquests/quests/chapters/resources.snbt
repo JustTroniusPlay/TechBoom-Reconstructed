@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "resources"
 	group: ""
-	icon: "vs_clockwork:wanderlite_crystal"
+	icon: "minecraft:diamond_ore"
 	id: "12986285C01890E8"
 	order_index: 1
 	quest_links: [{
@@ -241,7 +241,10 @@
 				{
 					count: 16L
 					id: "145178F89BB75C39"
-					item: { Count: 16, id: "createbigcannons:cast_iron_ingot" }
+					item: {
+						Count: 16
+						id: "createbigcannons:cast_iron_ingot"
+					}
 					optional_task: true
 					type: "item"
 				}
@@ -424,7 +427,10 @@
 			tasks: [{
 				count: 16L
 				id: "6DF50E70BA726598"
-				item: { Count: 16, id: "cbc_cw:alumisulfate_ingot" }
+				item: {
+					Count: 16
+					id: "cbc_cw:alumisulfate_ingot"
+				}
 				type: "item"
 			}]
 			title: "Alumisulfate"
@@ -515,6 +521,16 @@
 					id: "5D0297F989B5A70A"
 					item: "tfmg:galena"
 					optional_task: true
+					type: "item"
+				}
+				{
+					id: "719F7BCA8F9BD25E"
+					item: "immersivegeology:normal_ore_lead"
+					type: "item"
+				}
+				{
+					id: "0FC65EF048C9E318"
+					item: "gtceu:raw_lead"
 					type: "item"
 				}
 			]

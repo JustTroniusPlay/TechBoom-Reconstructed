@@ -23,12 +23,19 @@
 			y: -0.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["2CE7CF54B3F0E568"]
+			icon: "mca:book_romance"
 			id: "6206190C1CA030C1"
-			tasks: [{
-				id: "3D076E4F546099BB"
+			rewards: [{
+				id: "30E92D707C864D41"
 				item: "mca:book_romance"
 				type: "item"
+			}]
+			tasks: [{
+				id: "18C4BF697F9145A5"
+				title: "Guide how get along with people"
+				type: "checkmark"
 			}]
 			x: 1.0d
 			y: 1.5d
@@ -62,7 +69,7 @@
 		{
 			dependencies: ["2CE7CF54B3F0E568"]
 			description: [
-				"Sometimes you can encounter villagers recruits. You can hire them with emeralds to protect yourself or a area for you. "
+				"Sometimes you can encounter recruits in villages. You can hire them with emeralds to protect yourself or a area for you. "
 				""
 				"Shift+rightclick to open their inventory. Here you can give the recruit orders, armor and weapons. "
 				""

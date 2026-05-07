@@ -82,7 +82,10 @@
 				{
 					count: 2L
 					id: "2D6B3BFC5A570145"
-					item: { Count: 2, id: "create_hypertube:hypertube_entrance" }
+					item: {
+						Count: 2
+						id: "create_hypertube:hypertube_entrance"
+					}
 					type: "item"
 				}
 				{

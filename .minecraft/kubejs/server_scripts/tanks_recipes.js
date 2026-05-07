@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
     C: 'mekanism:elite_fluid_tank'
   })
 
-  event.remove({id: "mekanism_extras:fluid_tank/absolute"});
+  /*event.remove({id: "mekanism_extras:fluid_tank/absolute"});
     event.shaped(
   Item.of('mekanism_extras:absolute_fluid_tank', 1), // arg 1: output
   [
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
     B: 'gtceu:neutronium_ingot',  //arg 3: the mapping object
     C: 'mekanism_extras:cosmic_fluid_tank'
   })
-
+  */
   }
   
   {//Iron Tank
@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
     C: 'immersiveengineering:wooden_barrel'
   })
 
-  var fluid_tanks = ['aluminum', 'cast_iron', 'steel']
+  /*var fluid_tanks = ['aluminum', 'cast_iron', 'steel']
   fluid_tanks.forEach(tank =>
     {
       event.remove({id: "tfmg:crafting/kinetics/" + tank + "_fluid_tank"});
@@ -290,6 +290,6 @@ ServerEvents.recipes(event => {
         B: '#forge:glass_panes',  //arg 3: the mapping object
         C: 'immersiveengineering:wooden_barrel'
       })
-    })
+    })*/
   }
 })

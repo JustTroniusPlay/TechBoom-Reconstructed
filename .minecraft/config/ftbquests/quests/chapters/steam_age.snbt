@@ -310,7 +310,7 @@
 				"15C30310B03E4F79"
 				"4B31C89E0FA58CE0"
 			]
-			description: ["Will convert any steam into Forge Energy units and by itself not generate pollution."]
+			description: ["Will convert any steam into Forge Energy units and by itself don't generate pollution."]
 			id: "4EC3B664D62760BE"
 			size: 0.7d
 			tasks: [{

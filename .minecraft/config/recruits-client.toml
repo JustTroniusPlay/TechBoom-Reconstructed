@@ -7,6 +7,13 @@
 	#Should the key to open the command screen be toggled instead of held?""
 	#default: false
 	CommandScreenToggle = false
+	#----UpdateMapTiles----
+	#	(takes effect after restart)
+	#	
+	#Should the world map tiles be updated while the map is open?
+	#Disable this if you experience performance issues with the map.""
+	#default: true
+	UpdateMapTiles = true
 	#
 	#----Should Recruits Make Villager "Huh?" sound?----
 	#	(takes effect after restart)

@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
     })
 
 const creo = [
-  'tfmg:creosote',
+  //'tfmg:creosote',
   'thermal:creosote',
   'gtceu:creosote',
   'immersiveengineering:creosote',

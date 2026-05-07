@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+/*ServerEvents.recipes(event => {
 
     event.remove({id: "rftoolsbase:machine_frame"});
     event.shaped(
@@ -31,4 +31,4 @@ ServerEvents.recipes(event => {
     E: 'thermal:machine_frame'
   })
 
-})
+})*/

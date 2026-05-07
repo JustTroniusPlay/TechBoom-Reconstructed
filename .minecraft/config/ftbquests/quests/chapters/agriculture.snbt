@@ -55,6 +55,7 @@
 		{
 			dependencies: ["27D02A3ECE518CCE"]
 			id: "7BF7C8E5AFC2EE6A"
+			subtitle: "Hungry generator"
 			tasks: [{
 				id: "50B177B1D827086E"
 				item: "thermal:dynamo_gourmand"
@@ -521,22 +522,18 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["42240C69EC325829"]
+			dependencies: [
+				"42240C69EC325829"
+				"1D2AA4AB50B19838"
+			]
 			hide_dependent_lines: true
 			icon: "minecraft:bread"
 			id: "0707B09A4B3B5970"
-			tasks: [
-				{
-					id: "73A490369C90AB44"
-					item: "pamhc2foodcore:doughitem"
-					type: "item"
-				}
-				{
-					id: "10DC791EBB1C3703"
-					item: "minecraft:bread"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "10DC791EBB1C3703"
+				item: "minecraft:bread"
+				type: "item"
+			}]
 			x: -0.5d
 			y: -2.0d
 		}
@@ -1544,11 +1541,26 @@
 			dependencies: ["3E0024A5F5C51986"]
 			hide_dependent_lines: true
 			id: "1D2AA4AB50B19838"
-			tasks: [{
-				id: "53D130F08392F440"
-				item: "pamhc2foodcore:doughitem"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "53D130F08392F440"
+					item: "pamhc2foodcore:doughitem"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "16116B2519407B3D"
+					item: "create:dough"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0150CD43E7160AE1"
+					item: "gtceu:dough"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 7.5d
 			y: -4.0d
 		}

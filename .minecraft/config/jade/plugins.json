@@ -51,10 +51,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "compactmachines": {
-    "machine": true,
-    "tunnel": true
-  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -71,22 +67,8 @@
     "locomotive": true,
     "switch_track": true
   },
-  "jadeaddons.mcjtylib": {
-    "jadeaddons": true
-  },
   "mekanismcardboardtooltip": {
     "cardboard_box": true
-  },
-  "mekanismcovers": {
-    "cover_component": true
-  },
-  "pneumaticcraft": {
-    "pneumatic": true,
-    "tube_module": true,
-    "entity": true,
-    "redstone": true,
-    "camo": true,
-    "semiblock": true
   },
   "immersiveengineering": {
     "multiblock_icon": true
@@ -106,6 +88,7 @@
     "recipe_logic_provider": true,
     "maintenance_info": true,
     "machine_mode": true,
+    "battery_info": true,
     "electric_container_provider": true,
     "steam_boiler_info": true,
     "recipe_output_info": true,
@@ -125,14 +108,6 @@
   },
   "balm": {
     "jade": true
-  },
-  "integrateddynamicscompat": {
-    "proxy": true,
-    "mechanical_squeezer": true,
-    "mechanical_drying_basin": true,
-    "drying_basin": true,
-    "part": true,
-    "squeezer": true
   },
   "ae2": {
     "part_icon": true,
@@ -154,10 +129,6 @@
     "ship_angular_velocity": true,
     "block_velocity": true,
     "block_mass": true
-  },
-  "tesseract": {
-    "tesseract": true,
-    "remove_default": true
   },
   "jadeaddons": {
     "equipment_requirement": ""
@@ -185,12 +156,6 @@
     "preservation_chamber": true,
     "milk_jar": true,
     "toaster": true
-  },
-  "securitycraft": {
-    "showowner": true,
-    "showmodules": true,
-    "info": true,
-    "showcustomname": true
   },
   "immersivetechnology": {
     "display": true

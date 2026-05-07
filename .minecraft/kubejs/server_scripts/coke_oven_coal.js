@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
       "item": "minecraft:coal_block"
     },
     "result": {
-      "item": "tfmg:coal_coke_block"
+      "item": "immersiveengineering:coal_coke_block"
     }
     });
 
@@ -124,12 +124,12 @@ ServerEvents.recipes(event => {
     event.replaceInput(
       {input: block},
       block,
-      'tfmg:coal_coke_block'
+      'immersiveengineering:coal_coke_block'
     )
     event.replaceOutput(
       {output: block},
       block,
-      'tfmg:coal_coke_block'
+      'immersiveengineering:coal_coke_block'
     )
   })
 })

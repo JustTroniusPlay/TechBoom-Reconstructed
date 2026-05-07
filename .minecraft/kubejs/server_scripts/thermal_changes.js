@@ -1,7 +1,12 @@
 ServerEvents.recipes(event => {
 
   event.remove({id: "thermal:machines/pyrolyzer/pyrolyzer_coal"});
-  event.remove({id: "thermal:machines/smelter/smelter_alloy_enderium"});
+  //event.remove({id: "thermal:machines/smelter/smelter_alloy_enderium"});
+  event.replaceInput(
+    {id: "thermal:machines/smelter/smelter_alloy_enderium"},
+    "#forge:dusts/diamond",
+    "#forge:ingots/platinum"
+  )
   
   event.remove({id: 'thermal:fire_charge/obsidian_glass_2'});
   event.remove({id: 'thermal:fire_charge/signalum_glass_2'});

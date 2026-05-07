@@ -195,7 +195,10 @@
 				{
 					count: 4L
 					id: "6F27194DEB0FA5C5"
-					item: { Count: 4, id: "createutilities:gearcube" }
+					item: {
+						Count: 4
+						id: "createutilities:gearcube"
+					}
 					optional_task: true
 					type: "item"
 				}
@@ -304,7 +307,10 @@
 			tasks: [{
 				count: 8L
 				id: "5C3789F3003068E1"
-				item: { Count: 8, id: "createutilities:lshaped_gearbox" }
+				item: {
+					Count: 8
+					id: "createutilities:lshaped_gearbox"
+				}
 				type: "item"
 			}]
 			title: "L-shaped Gearbox"
@@ -324,13 +330,19 @@
 				{
 					count: 16L
 					id: "38CCF31E425CF90C"
-					item: { Count: 16, id: "bits_n_bobs:small_flanged_cogwheel" }
+					item: {
+						Count: 16
+						id: "bits_n_bobs:small_flanged_cogwheel"
+					}
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "015D3132C93F6DB0"
-					item: { Count: 16, id: "bits_n_bobs:large_flanged_cogwheel" }
+					item: {
+						Count: 16
+						id: "bits_n_bobs:large_flanged_cogwheel"
+					}
 					type: "item"
 				}
 			]

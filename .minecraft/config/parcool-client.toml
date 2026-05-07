@@ -168,6 +168,9 @@
 	#Damage reduction rate of Breakfall
 	#Range: 0.0 ~ 1.0
 	max_breakfall_damage_reduction_rate = 0.6
+	#coyote time tick (how long tick player can behave like on ground after getting off ledge
+	#Range: 0 ~ 20
+	coyote_time = 3
 
 [Modifier]
 	#How long you can do Horizontal Wall Run

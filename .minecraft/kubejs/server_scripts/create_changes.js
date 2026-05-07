@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
   }
 )
 
-event.recipes.create.mechanical_crafting('create_sa:andesite_exoskeleton_chestplate', 
+/*event.recipes.create.mechanical_crafting('create_sa:andesite_exoskeleton_chestplate', 
   [
   "ABCBA",
   "AADAA",
@@ -48,5 +48,5 @@ event.recipes.create.mechanical_crafting('create_sa:andesite_exoskeleton_chestpl
     D: 'create_sa:heat_engine',
     E: '#c:ingots/zinc',
     F: '#forge:stone'
-  })
+  })*/
 })

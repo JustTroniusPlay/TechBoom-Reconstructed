@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
     B: 'immersiveengineering:capacitor_mv',  //arg 3: the mapping object
     C: 'immersiveengineering:wire_electrum',
     D: 'create:brass_sheet',
-    E: 'tfmg:capacitor_item'
+    E: 'createaddition:capacitor'//'tfmg:capacitor_item'
   })
 
   event.replaceInput({id: "tfmg:crafting/kinetics/accumulatorfrom_lithium"},

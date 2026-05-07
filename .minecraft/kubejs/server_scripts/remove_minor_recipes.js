@@ -29,12 +29,12 @@ ServerEvents.recipes(event => {
     event.remove({id: "common_ore_library:blasting_raw_ore_to_ingot/cobalt"});
     event.remove({id: "tconstruct:common/materials/cobalt_ingot_blasting"});
 
-    event.remove({id: "cybernetic_system:craft_wire_copper"});
+  /*  event.remove({id: "cybernetic_system:craft_wire_copper"});
     event.shapeless(
   Item.of('cybernetic_system:copper_wire', 1), // arg 1: output
   [
     'immersiveengineering:wire_copper',
-  ])
+  ])*/
 
     event.replaceInput(
         {id: "littlelogistics:tug_route"},
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         '#forge:slimeballs'
     )
 
-    event.remove({id: "tesseract:tesseract"});
+  /*  event.remove({id: "tesseract:tesseract"});
     event.shaped(
   Item.of('tesseract:tesseract', 1), // arg 1: output
   [
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     A: 'mekanism:block_refined_obsidian',
     B: 'thermal:enderium_block',  //arg 3: the mapping object
     C: 'createutilities:void_steel_block'
-  })
+  })*/
 
   event.shapeless(
     Item.of('gtceu:treated_wood_planks',1),

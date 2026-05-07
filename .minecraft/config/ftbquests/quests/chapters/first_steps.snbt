@@ -347,18 +347,26 @@
 				"6CF046ABDEF49022"
 				"6C790BA267E29176"
 			]
-			description: ["You can collect pollution that accumulated in the clouds using the small contraption: put a pump block, &opump pipe&r and then hopper on it. By clicking pump pipe with more pipes you will extended and get it to the sky limit. Add vent and another pump with filters on top of it. After powering pumps pollution will get into filters and will create a bioproduct."]
+			description: ["You can collect pollution that accumulated in the clouds using the small contraption: put a pump block, &opump pipe&r on top and then hopper on it. By clicking pump pipe with more pipes you will extended and get it to the sky limit. Now you can move your pollution down and use filters to clear the skies!"]
 			id: "0FD0819C574379AC"
-			rewards: [{
-				id: "1BF2E5A4732B0137"
-				item: "minecraft:hopper"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1BF2E5A4732B0137"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "29094156F49F5183"
+					item: "adchimneys:pipe"
+					type: "item"
+				}
+			]
 			size: 1.3d
 			tasks: [{
-				count: 256L
+				count: 128L
 				id: "3DC3B7EC605B79AE"
-				item: { Count: 256, id: "adchimneys:pipe" }
+				item: "adchimneys:pipe"
 				type: "item"
 			}]
 			title: "Clearing the skies"
@@ -458,7 +466,7 @@
 				""
 				"Hammer can help with making casings, tools and plates for now."
 				""
-				"File can make metal rods, screws and etc."
+				"File can make metal components like rods, screws and similare."
 				""
 				"Mortar can make dusts out of ingots so you can make your first alloys and need as step in making of some other regular materials."
 			]
@@ -863,7 +871,7 @@
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
-			description: ["Engineer's Hammer can activate your multiblock structures. Just click on the center of the builded structure."]
+			description: ["Engineer's Hammer can activate your multiblock structures. Just click on the blocks of the formed structure."]
 			hide_dependent_lines: true
 			id: "1843506F57D72661"
 			subtitle: "Activate the multiblocks!"
@@ -960,7 +968,11 @@
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
-			description: ["Drying Basin is simple way to convert rotten flesh to leather. "]
+			description: [
+				"Drying Basin is simple way to convert rotten flesh to leather. "
+				""
+				"(This quest related to Integration Dynamics mod, as of right now there a possibility in will be included again in the pack. Just getting leather will complete this quest.)"
+			]
 			icon: "integrateddynamics:drying_basin"
 			id: "306F6137CCDFF3C1"
 			rewards: [{
@@ -974,11 +986,13 @@
 				{
 					id: "605010951CFC53C8"
 					item: "integrateddynamics:drying_basin"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "3449D4CBA0CEBEF3"
 					item: "minecraft:rotten_flesh"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1107,7 +1121,7 @@
 			description: [
 				"GregTech adds some useful tools to help you get resources in bulk."
 				""
-				"Mining Hammers and Spades can &omine 3x3 area by default&r (When you mine with pressing Shift you brake only 1 block) of stone and dirt related blocks respectfully. "
+				"Mining Hammers and Spades can &obrake 3x3 block area by default&r (When you mine with pressing Shift you brake only 1 block) of stone and dirt related blocks respectfully. "
 				""
 				"They very convenient to mine large resource veins and have great durability."
 				""
@@ -1371,7 +1385,7 @@
 		}
 		{
 			dependencies: ["10E87B6699909383"]
-			description: ["Heat resistant metal that needed in machinery working with hot things."]
+			description: ["Alloy that needed in some machinery working with hot things."]
 			id: "4B31C89E0FA58CE0"
 			shape: "square"
 			size: 0.85d
@@ -1505,18 +1519,6 @@
 			title: "Multiblock Tank"
 			x: 8.457482993197292d
 			y: -8.35d
-		}
-		{
-			dependencies: ["173F0498DAC0D9CB"]
-			id: "6151D3A6A575EBFF"
-			tasks: [{
-				count: 6L
-				id: "5D3848AF24C1E489"
-				item: "toolbelt:pouch"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["306F6137CCDFF3C1"]
@@ -1703,7 +1705,7 @@
 		}
 		{
 			dependencies: ["7B81DDC0AA14EF81"]
-			description: ["Osmium tools are very durable by having highest durability at this stage of the game.  "]
+			description: ["Osmium tools are very durable at this stage of the game.  "]
 			id: "3809893D00C74388"
 			tasks: [
 				{
@@ -1926,7 +1928,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Energy is your way to get any machine working. Now that you have generators to get it its good idea to find how to distribute, direct and overal control it where you need."
+				"Energy is your way to get any machine working. Now that you have generators its good idea to find how to distribute, direct and overal control it where you need."
 				""
 				"Most of generators use Forge Energy and produce energy in FE/t, where 't' means tick and counts as 1/20 of a second."
 				""
@@ -2097,11 +2099,7 @@
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
-			description: [
-				"While you explore the world you can find weapon blueprints for different guns. They can be modern or rustic ones with various mods themes."
-				""
-				"But additionally guns with certain mod theme can be crafted alternatively using the coresponding mod mechanics (for now only with Create). "
-			]
+			description: ["While you explore the world you can find weapon blueprints for different guns. They can be modern or rustic ones with various mods themes."]
 			icon: {
 				Count: 1
 				id: "taczblueprints:blueprint_pistol"
@@ -2121,7 +2119,7 @@
 		{
 			dependencies: ["3129F95624CBEDD4"]
 			description: [
-				"Crafting Blueprint is a block much like a painting that can be used to save crafting recipes and auto craft them easily. It can cover up to a 3x3 wall area."
+				"Crafting Blueprint can be used to save crafting recipes and auto craft them easily. It can cover up to a 3x3 wall area."
 				""
 				"Right click a slot to open the interface and use items to save a crafting recipe. Filters can also be used to apply multiple potential crafting recipes."
 				""
@@ -2473,6 +2471,10 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "0D846DEF1A3D2B9F"
+					type: "checkmark"
+				}
 			]
 			title: "Gem Tools and Armor"
 			x: -0.35d
@@ -2505,7 +2507,7 @@
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
-			description: ["Can help rotate blocks like stairs and slabs. Useful for building."]
+			description: ["Can help rotate blocks. Useful for building."]
 			id: "1940606A8481B5C7"
 			tasks: [{
 				id: "7F327976FAE8B991"
@@ -2599,7 +2601,7 @@
 		}
 		{
 			dependencies: ["031595756B809ADC"]
-			description: ["Cans can store fluids as a item. One tin can = 1 bucket. But you can't put liquid in the world like buckets."]
+			description: ["Cans can store fluids as a item. One tin can = 1 bucket. But you can't place liquid back in the world."]
 			id: "784AEC9BF8755F95"
 			tasks: [{
 				id: "5180B590AD80BFD9"
@@ -2611,10 +2613,8 @@
 			y: -5.0d
 		}
 		{
-			dependencies: [
-				"7BF7C8E5AFC2EE6A"
-				"04A0F70827AA6155"
-			]
+			dependencies: ["04A0F70827AA6155"]
+			description: ["Will extract energy from some gems. Probably can be way to spend rubies and sapphires at this stage of the game."]
 			id: "123053D8EB9279CF"
 			subtitle: "Gem Eater"
 			tasks: [{
@@ -2679,19 +2679,8 @@
 				item: "immersiveengineering:workbench"
 				type: "item"
 			}]
-			x: 8.304421768707481d
-			y: -10.85d
-		}
-		{
-			dependencies: ["69057739C5B7EB11"]
-			id: "169058626B01552F"
-			tasks: [{
-				id: "3BEEF1CB8C255FDE"
-				item: "immersiveengineering:circuit_table"
-				type: "item"
-			}]
-			x: 9.304421768707481d
-			y: -10.85d
+			x: 8.727210884353745d
+			y: -11.157142857142851d
 		}
 		{
 			dependencies: [
@@ -2800,7 +2789,7 @@
 		}
 		{
 			dependencies: ["65E0926A806B0CE7"]
-			description: ["Will show you what ores are up to 3 max around you in near chunks."]
+			description: ["Will show you what ores around you in near chunks."]
 			id: "279ADFC8F9F0F9B8"
 			tasks: [{
 				id: "2C97DD25B3532A67"
@@ -3328,7 +3317,7 @@
 		{
 			dependencies: ["191FA67C7B17BB2F"]
 			description: [
-				"Can remember up to 9 recipes after crafting. By right-clicking on the recipe on the right it will not be overwritten by different crafting recipe. "
+				"Can remember up to 9 recipes after crafting. By right-clicking on the recipe on the right it will not be overwritten by different recipe. "
 				""
 				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly."
 			]
@@ -3387,6 +3376,7 @@
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
+			description: ["Made out of vines or dandelions. Not cheap, but useful in some equipment."]
 			id: "7BFF886E57F3D543"
 			tasks: [
 				{
