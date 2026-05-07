@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+/*ServerEvents.recipes(event => {
     
     event.custom({
                     "type": "tconstruct:ore_melting",
@@ -73,4 +73,4 @@ ServerEvents.recipes(event => {
         "tfmg:crushed_raw_lithium"
     )
 
-})
+})*/
