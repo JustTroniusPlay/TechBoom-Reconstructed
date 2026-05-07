@@ -29,18 +29,3 @@
 		#The maximum heat value the electric burner can reach after upgraded.
 		upgraded_max_heat = 400.0
 
-	#Pneumatic Craft Compat Configs
-	[parameters.pne_compat]
-		#The minimum temperature required to become seething. (super heating)
-		seething_temp = 1200.0
-		#The minimum temperature required to become kindled. (heating)
-		kindled_temp = 450.0
-		#The minimum temperature required to become fading. (heating)
-		fading_temp = 400.0
-		#The minimum temperature required to become smouldering.
-		smouldering_temp = 200.0
-		#The amount of temperature decreased per tick when using heat device directly.
-		temp_cost = 5.0
-		#The amount of temperature decreased per tick.
-		heat_converter_temp_cost = 2.0
-
