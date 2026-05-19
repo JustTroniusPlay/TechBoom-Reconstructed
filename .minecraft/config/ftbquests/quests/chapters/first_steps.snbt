@@ -3424,6 +3424,55 @@
 			x: 5.5d
 			y: -15.75d
 		}
+		{
+			dependencies: ["15CBA4A7DB0EE055"]
+			description: ["Pressing Shift + Right Click near the entities or chests you can pick them up! It can be useful to transport mobs."]
+			icon: "minecraft:player_head"
+			id: "7801BC4A27AFDE76"
+			tasks: [{
+				id: "0EEA13835614EAFD"
+				title: "Carry On "
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0A47F74F64457575"]
+			description: [
+				"Do you have some unused tool parts? Don't know where to put them? Don't have space in your cluttered storage? Tinker's chests here to help! "
+				""
+				"Part chest can store your unused parts inside without much limitations and it's brother Cast Chest will do the same thing for casts!"
+				""
+				"{@pagebreak}"
+				"Tinker's Chest is additional storage block that have 64 slots, but each slot can only store any 16 items max. At least you can dye them any color you wish!"
+			]
+			icon: "tconstruct:part_chest"
+			id: "5DF65AEF33F86505"
+			size: 0.7d
+			tasks: [
+				{
+					id: "6F0F21F94DADA3BE"
+					item: "tconstruct:part_chest"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F824F8EE4E80A0D"
+					item: "tconstruct:cast_chest"
+					type: "item"
+				}
+				{
+					id: "031B785EC0ADFA7D"
+					item: "tconstruct:tinkers_chest"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Storing Parts for later"
+			x: -1.7156462585033978d
+			y: 0.5428571428571374d
+		}
 	]
 	title: "Start of the journey"
 }

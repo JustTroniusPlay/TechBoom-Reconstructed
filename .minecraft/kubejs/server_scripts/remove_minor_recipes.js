@@ -77,8 +77,14 @@ ServerEvents.recipes(event => {
     Item.of('gtceu:treated_wood_planks',1),
     'immersiveengineering:treated_wood_horizontal'
   )
+  
   event.shapeless(
     Item.of('immersiveengineering:treated_wood_horizontal',1),
     'gtceu:treated_wood_planks'
+  )
+
+  event.shapeless(
+    Item.of('forestry:peat',4),
+    'regions_unexplored:peat_mud'
   )
 })
