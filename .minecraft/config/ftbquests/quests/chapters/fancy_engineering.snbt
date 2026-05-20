@@ -9,7 +9,7 @@
 	quest_links: [{
 		id: "0D37DA266658503C"
 		linked_quest: "7A0C939E0FE540EC"
-		shape: "octagon"
+		shape: "gear"
 		size: 1.5d
 		x: -0.75d
 		y: 3.35d

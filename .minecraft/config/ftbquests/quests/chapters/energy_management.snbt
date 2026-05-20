@@ -25,21 +25,21 @@
 			id: "7385056AFB4C6B16"
 			linked_quest: "006F0DFB4E9FE795"
 			title: "Brass Accumulator"
-			x: 2.5d
-			y: 3.5d
+			x: 2.4994897959183646d
+			y: 4.175000000000004d
 		}
 		{
 			id: "6F977D2B7482E7EE"
 			linked_quest: "1C59476B07336B42"
 			size: 0.5d
-			x: -2.75d
+			x: -3.75d
 			y: 0.2607142857142861d
 		}
 		{
 			id: "7E16D6E0D25025A2"
 			linked_quest: "518089C9998EBFF8"
-			x: -0.5d
-			y: 2.0d
+			x: -0.5005102040816354d
+			y: 2.6750000000000043d
 		}
 		{
 			id: "6934C4180CCE1CB8"
@@ -51,8 +51,46 @@
 			id: "792420F3FC228E88"
 			linked_quest: "799F7F64000A3084"
 			size: 0.7d
-			x: 2.5d
-			y: 0.5d
+			x: -0.35d
+			y: -1.05d
+		}
+		{
+			id: "35FD0723E161CAA4"
+			linked_quest: "4B31C89E0FA58CE0"
+			shape: "hexagon"
+			size: 0.5d
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			id: "1ABDF46B5C427E58"
+			linked_quest: "15C30310B03E4F79"
+			shape: "gear"
+			size: 0.5d
+			x: 8.5d
+			y: -3.25d
+		}
+		{
+			id: "6C5FF9137EEF7836"
+			linked_quest: "15B5CF1F309CA82A"
+			size: 0.5d
+			x: 3.0d
+			y: 1.25d
+		}
+		{
+			id: "1D6BF2DC9359B587"
+			linked_quest: "04A0F70827AA6155"
+			size: 0.5d
+			x: 5.0d
+			y: -3.25d
+		}
+		{
+			id: "6C868A007218CC75"
+			linked_quest: "1C2F6D48F407A95D"
+			shape: "hexagon"
+			size: 0.5d
+			x: 10.5d
+			y: 0.0d
 		}
 	]
 	quests: [
@@ -212,15 +250,18 @@
 			y: -4.4285714285714315d
 		}
 		{
-			dependencies: ["69DB58E1CD20ED2B"]
+			dependencies: [
+				"69DB58E1CD20ED2B"
+				"15B5CF1F309CA82A"
+			]
 			id: "10D646BACACC9E61"
 			tasks: [{
 				id: "6018217242A7F1DA"
 				item: "immersiveengineering:capacitor_lv"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.5d
+			x: 0.9994897959183646d
+			y: 2.1750000000000043d
 		}
 		{
 			dependencies: ["10D646BACACC9E61"]
@@ -230,8 +271,8 @@
 				item: "immersiveengineering:capacitor_mv"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: 2.4994897959183646d
+			y: 2.6750000000000043d
 		}
 		{
 			dependencies: [
@@ -244,7 +285,7 @@
 				item: "gtceu:tin_single_cable"
 				type: "item"
 			}]
-			x: -2.721428571428568d
+			x: -3.721428571428568d
 			y: -0.5d
 		}
 		{
@@ -255,7 +296,7 @@
 				item: "gtceu:lv_1a_energy_converter"
 				type: "item"
 			}]
-			x: -2.721428571428568d
+			x: -3.721428571428568d
 			y: -2.5d
 		}
 		{
@@ -476,8 +517,8 @@
 				type: "item"
 			}]
 			title: "Lithium Accumulator"
-			x: 1.0d
-			y: 3.5d
+			x: 0.9994897959183646d
+			y: 4.175000000000004d
 		}
 		{
 			dependencies: ["2DC0C89F91D2AE1D"]
@@ -487,8 +528,8 @@
 				item: "immersiveengineering:capacitor_hv"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.5d
+			x: 3.9994897959183646d
+			y: 3.1750000000000043d
 		}
 		{
 			dependencies: [
@@ -527,8 +568,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -0.5d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4ED512F235419F02"]
@@ -542,8 +583,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -0.5d
+			x: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["518089C9998EBFF8"]
@@ -567,8 +608,8 @@
 				}
 			]
 			title: "RF Upgrades"
-			x: -0.5d
-			y: 3.0d
+			x: -0.5005102040816354d
+			y: 3.6750000000000043d
 		}
 		{
 			dependencies: ["69DB58E1CD20ED2B"]
@@ -579,8 +620,192 @@
 				item: "thermal:dynamo_throttle_augment"
 				type: "item"
 			}]
-			x: 1.8297619047619023d
-			y: -1.2916666666666714d
+			x: 1.66666666666665d
+			y: -1.4285714285714306d
+		}
+		{
+			dependencies: ["4B31C89E0FA58CE0"]
+			description: ["Will use lava to generate energy."]
+			id: "4972940DA0DA30B4"
+			tasks: [{
+				id: "13E528561DE1E6B5"
+				item: "thermal:dynamo_magmatic"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"15C30310B03E4F79"
+				"4B31C89E0FA58CE0"
+			]
+			description: ["Will convert any steam into Forge Energy units and by itself don't generate pollution."]
+			id: "4EC3B664D62760BE"
+			size: 1.0d
+			tasks: [{
+				id: "12A8DDB8EEE3B3E8"
+				item: "systeams:steam_dynamo"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Compression dynamo can consume creosote and generate Forge Energy units. "
+				""
+				"It can be useful way to get a little bit more energy and spend Creosote if you have too much if it. "
+			]
+			id: "1FB9F832D1214239"
+			tasks: [{
+				id: "7DBAE07870657D9A"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			title: "Creosote to energy"
+			x: 2.2341836734693814d
+			y: 0.7464285714285737d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Treated planks can be crafted into Windmills. They will generate energy passively."
+				""
+				"Different weather will reduce or decrease energy output of Windmill. Building another Windmill of any type in close proximity (up to 7 blocks in front of it) will reduce its speed."
+			]
+			icon: "immersiveengineering:dynamo"
+			id: "521B2505E5C81E16"
+			tasks: [
+				{
+					id: "34BE81DB7F0D00F4"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "483BA109E9968F38"
+					item: "immersiveengineering:windmill"
+					type: "item"
+				}
+			]
+			title: "Kinetic clean energy"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["521B2505E5C81E16"]
+			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail Each blade will need it own Sail upgrade!"]
+			id: "50BA9C41804AE9A2"
+			size: 0.7d
+			tasks: [{
+				id: "3E02F94201C301A0"
+				item: "immersiveengineering:windmill_sail"
+				type: "item"
+			}]
+			x: 3.805612244897958d
+			y: 1.2158163265306214d
+		}
+		{
+			dependencies: [
+				"5CED0B2F5E3DE3B1"
+				"69DB58E1CD20ED2B"
+				"15B5CF1F309CA82A"
+			]
+			id: "6E68DB6406FB4D3F"
+			size: 0.7d
+			tasks: [{
+				id: "2989E62548390D70"
+				item: "immersiveengineering:charging_station"
+				type: "item"
+			}]
+			x: 1.5321428571428584d
+			y: 1.4063775510204124d
+		}
+		{
+			dependencies: [
+				"04A0F70827AA6155"
+				"69DB58E1CD20ED2B"
+			]
+			description: ["Will extract energy from some gems. Probably can be way to spend rubies and sapphires at this stage of the game."]
+			id: "123053D8EB9279CF"
+			subtitle: "Gem Eater"
+			tasks: [{
+				id: "70021680F9844739"
+				item: "thermal:dynamo_lapidary"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"27D02A3ECE518CCE"
+				"69DB58E1CD20ED2B"
+			]
+			id: "7BF7C8E5AFC2EE6A"
+			subtitle: "Hungry generator"
+			tasks: [{
+				id: "50B177B1D827086E"
+				item: "thermal:dynamo_gourmand"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4252FD2C3076FC2E"]
+			id: "43A2DDA0E123E8D0"
+			size: 0.7d
+			tasks: [{
+				id: "4455D4C4BCE7ECDF"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: 10.85d
+			y: 1.05d
+		}
+		{
+			dependencies: [
+				"69DB58E1CD20ED2B"
+				"1C2F6D48F407A95D"
+			]
+			id: "4252FD2C3076FC2E"
+			tasks: [{
+				id: "6331E20345C82C18"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"69DB58E1CD20ED2B"
+				"1C2F6D48F407A95D"
+			]
+			id: "27E0F81FE63D2E85"
+			tasks: [{
+				id: "648C61E6740F0E1E"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"69DB58E1CD20ED2B"
+				"1C2F6D48F407A95D"
+			]
+			id: "1EA14587D11D38CE"
+			tasks: [{
+				id: "2BEF1448BC6EC577"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
 		}
 	]
 	title: "Energy Management"

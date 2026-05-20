@@ -10,7 +10,7 @@
 		{
 			id: "706C6771133466D1"
 			linked_quest: "25951FDCB7908145"
-			shape: "diamond"
+			shape: "hexagon"
 			size: 1.5d
 			x: 4.25d
 			y: 4.0d
@@ -18,7 +18,7 @@
 		{
 			id: "567528A927199C37"
 			linked_quest: "1A155790CD83B2A7"
-			shape: "rsquare"
+			shape: "hexagon"
 			size: 1.5d
 			x: 1.0d
 			y: 0.25d
@@ -464,8 +464,8 @@
 				}
 			]
 			title: "Create Filters"
-			x: 3.5d
-			y: 3.0d
+			x: 3.5357142857142847d
+			y: 2.2464285714285737d
 		}
 		{
 			dependencies: ["7F493483338AF21E"]

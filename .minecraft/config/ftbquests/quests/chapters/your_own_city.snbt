@@ -88,16 +88,6 @@
 			x: 2.5d
 			y: -2.0d
 		}
-		{
-			id: "033561B61F2E0C3E"
-			tasks: [{
-				id: "6EC99FACFA4EF589"
-				item: "trading_floor:trading_depot"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 0.5d
-		}
 	]
 	title: "Your own city"
 }

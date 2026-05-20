@@ -54,19 +54,8 @@
 		}
 		{
 			dependencies: ["27D02A3ECE518CCE"]
-			id: "7BF7C8E5AFC2EE6A"
-			subtitle: "Hungry generator"
-			tasks: [{
-				id: "50B177B1D827086E"
-				item: "thermal:dynamo_gourmand"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["27D02A3ECE518CCE"]
 			id: "27F8C60B477DB460"
+			shape: "diamond"
 			tasks: [{
 				id: "73163C8CF948485D"
 				item: "railcraft:feed_station"
@@ -247,6 +236,8 @@
 		{
 			dependencies: ["27D02A3ECE518CCE"]
 			id: "126BB64B8B0EE7E8"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "301415F8F976D281"
 				item: "pamhc2foodcore:cuttingboarditem"
@@ -258,6 +249,8 @@
 		{
 			dependencies: ["126BB64B8B0EE7E8"]
 			id: "0A94744A5DCA6D10"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "38FAA284F183B0E5"
 				item: "pamhc2foodcore:potitem"
@@ -269,6 +262,8 @@
 		{
 			dependencies: ["126BB64B8B0EE7E8"]
 			id: "036B12E2C338585D"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "19CCDD211BC141FD"
 				item: "pamhc2foodcore:saucepanitem"
@@ -280,6 +275,8 @@
 		{
 			dependencies: ["126BB64B8B0EE7E8"]
 			id: "572485DC499F89EF"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "59A4D04F8A02C793"
 				item: "pamhc2foodcore:skilletitem"
@@ -291,6 +288,8 @@
 		{
 			dependencies: ["27D02A3ECE518CCE"]
 			id: "3E0024A5F5C51986"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "6C4CB805360C4B45"
 				item: "pamhc2foodcore:mixingbowlitem"
@@ -302,6 +301,8 @@
 		{
 			dependencies: ["3E0024A5F5C51986"]
 			id: "17C8A6EE4EABA579"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "5E79CF35F12E4CC4"
 				item: "pamhc2foodcore:grinderitem"
@@ -313,6 +314,8 @@
 		{
 			dependencies: ["3E0024A5F5C51986"]
 			id: "36FE5196B51FA334"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "73C196E825C19A43"
 				item: "pamhc2foodcore:rolleritem"
@@ -324,6 +327,8 @@
 		{
 			dependencies: ["27D02A3ECE518CCE"]
 			id: "4CDF432D890614C1"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "123BAEAF289D63DD"
 				item: "pamhc2foodcore:bakewareitem"
@@ -335,6 +340,8 @@
 		{
 			dependencies: ["27D02A3ECE518CCE"]
 			id: "0657D8CAA907B292"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "36C999B72E2ACAEA"
 				item: "pamhc2foodcore:juiceritem"
@@ -1712,6 +1719,7 @@
 		{
 			dependencies: ["0A94744A5DCA6D10"]
 			id: "11E7DB2211686563"
+			shape: "pentagon"
 			tasks: [{
 				id: "3B93431A87B8BD72"
 				item: "pamhc2foodcore:stockitem"
@@ -1930,6 +1938,7 @@
 			dependencies: ["27D02A3ECE518CCE"]
 			description: ["Versatile farming tool that work as hoe and can collect crops in area while you using Shift. "]
 			id: "004FA47AF62604FF"
+			shape: "diamond"
 			tasks: [{
 				id: "22CCD41549956F11"
 				item: {

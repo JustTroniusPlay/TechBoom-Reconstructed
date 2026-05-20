@@ -10,22 +10,31 @@
 		{
 			id: "71474757EDAFDEB7"
 			linked_quest: "15C30310B03E4F79"
-			shape: "hexagon"
+			shape: "gear"
 			size: 1.5d
 			x: 1.5d
 			y: 0.5d
-		}
-		{
-			id: "18906C42BDADA8BD"
-			linked_quest: "5361A9865C6547F4"
-			x: 0.0d
-			y: 4.5d
 		}
 		{
 			id: "7CFDEAFF4927E1C3"
 			linked_quest: "79EF5B4E470ACDB4"
 			x: -3.0d
 			y: -1.0d
+		}
+		{
+			id: "3D33B9AA5FFA5932"
+			linked_quest: "4EC3B664D62760BE"
+			size: 0.7d
+			x: 0.8214285714285481d
+			y: -1.0016369047619094d
+		}
+		{
+			id: "7F9754840726B892"
+			linked_quest: "4DE3A5EB02DCDC59"
+			shape: "gear"
+			size: 1.2d
+			x: 1.7999999999999998d
+			y: 6.0d
 		}
 	]
 	quests: [
@@ -167,8 +176,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 3.0d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -306,22 +315,6 @@
 			y: -0.7d
 		}
 		{
-			dependencies: [
-				"15C30310B03E4F79"
-				"4B31C89E0FA58CE0"
-			]
-			description: ["Will convert any steam into Forge Energy units and by itself don't generate pollution."]
-			id: "4EC3B664D62760BE"
-			size: 0.7d
-			tasks: [{
-				id: "12A8DDB8EEE3B3E8"
-				item: "systeams:steam_dynamo"
-				type: "item"
-			}]
-			x: 1.05d
-			y: -0.7d
-		}
-		{
 			dependencies: ["4A33371DB94DFD62"]
 			description: [
 				"This type of boilers have different variations depending on its size. Maximum amount fireboxes are 3x3. With each size level amount of minimum boilers grows. You can start with 1 firebox and boiler."
@@ -429,7 +422,7 @@
 		{
 			dependencies: ["3CD05E2E5661246B"]
 			id: "7A0C939E0FE540EC"
-			shape: "octagon"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "6EA4E40B4C5F24B0"
@@ -461,7 +454,7 @@
 				item: "gtceu:lp_steam_extractor"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.2d
 			y: 6.6d
 		}
 		{
@@ -481,7 +474,7 @@
 				}
 			]
 			title: "Refined Rubber"
-			x: 0.0d
+			x: -2.0d
 			y: 8.0d
 		}
 		{
@@ -644,6 +637,73 @@
 			}]
 			x: 1.4999999999999716d
 			y: -1.2754464285714278d
+		}
+		{
+			dependencies: [
+				"61DA87FD5E45D2BC"
+				"7A0C939E0FE540EC"
+			]
+			icon: "gtceu:glass_dust"
+			id: "5361A9865C6547F4"
+			rewards: [
+				{
+					count: 4
+					id: "4E97644868664113"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "466FF922FBD36283"
+					item: "minecraft:glass"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2A1BA25DA1C88106"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+				{
+					id: "7BEC1A813C6A3DA9"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "02A828D3BBC95E60"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Getting glassed"
+			x: -1.2d
+			y: 4.8d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "08772C8BA5BE9DB8"
+			tasks: [{
+				id: "322C360866FB990B"
+				item: "torchmaster:dreadlamp"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "0B87BE74ACF8791E"
+			subtitle: "And here comes the sun!"
+			tasks: [{
+				id: "7BD176196E10776F"
+				item: "torchmaster:feral_flare_lantern"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.5d
 		}
 	]
 	title: "Steam Age"

@@ -22,8 +22,8 @@
 		{
 			id: "77AC45D87964A5C6"
 			linked_quest: "362FE530374D058F"
-			shape: "rsquare"
-			size: 1.2d
+			shape: "pentagon"
+			size: 1.5d
 			x: 2.5d
 			y: 5.5d
 		}
@@ -54,6 +54,8 @@
 				item: "create:item_vault"
 				type: "item"
 			}]
+			shape: "diamond"
+			size: 1.2d
 			tasks: [
 				{
 					count: 4L
@@ -373,6 +375,7 @@
 				item: "immersiveengineering:sheetmetal_iron"
 				type: "item"
 			}]
+			size: 0.7d
 			tasks: [
 				{
 					count: 25L
@@ -394,8 +397,8 @@
 				}
 			]
 			title: "Fancy Silos"
-			x: 4.0d
-			y: 2.5d
+			x: 3.1000000000000085d
+			y: 3.445238095238082d
 		}
 		{
 			dependencies: [

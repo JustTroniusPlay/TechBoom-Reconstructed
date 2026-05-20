@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
 
-    event.remove({id: "immersiveengineering:crafting/alloybrick"});
-    event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick"});
+    //event.remove({id: "immersiveengineering:crafting/alloybrick"});
+    //event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick"});
     //Replace with deployer two step recipe
-    event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick_using_deployer"});
+    //event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick_using_deployer"});
     
-  event.shaped(
+  /*event.shaped(
   Item.of('immersiveengineering:alloybrick', 2), // arg 1: output
   [
     ' A ',
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     B: 'minecraft:brick',  //arg 3: the mapping object
     C: '#forge:sandstone'
   }
-)
+)*/
 
     let kiln = (output, Input1, Input2, count, time) => 
     {

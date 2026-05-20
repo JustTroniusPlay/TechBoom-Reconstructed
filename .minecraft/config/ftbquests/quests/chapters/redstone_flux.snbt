@@ -21,7 +21,7 @@
 		{
 			id: "183BD844B51E68E0"
 			linked_quest: "2798CCE5B1DE21DA"
-			shape: "hexagon"
+			shape: "gear"
 			size: 1.5d
 			x: 2.499999999999999d
 			y: -0.8499999999999996d
@@ -499,12 +499,13 @@
 		}
 		{
 			dependencies: [
-				"10D646BACACC9E61"
 				"4DE3A5EB02DCDC59"
 				"22BE527D08C5B64D"
+				"10D646BACACC9E61"
 			]
 			dependency_requirement: "one_completed"
 			id: "518089C9998EBFF8"
+			shape: "diamond"
 			size: 1.5d
 			tasks: [{
 				id: "7F8CAB3D92F12540"
@@ -572,8 +573,14 @@
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
+			description: [
+				"Latex collector will help you get simple rubber more effectively."
+				""
+				"&lFollow \"Redstone Machinery\" tab next.&r"
+			]
 			icon: "thermal:device_tree_extractor"
 			id: "4DE3A5EB02DCDC59"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "4E67081F5752155F"
@@ -742,5 +749,5 @@
 			y: -3.0d
 		}
 	]
-	title: "Redstone Machines"
+	title: "Redstone Machinery"
 }

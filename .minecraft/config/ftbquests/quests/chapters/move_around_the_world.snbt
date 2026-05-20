@@ -295,6 +295,7 @@
 				"65BA9D00FF643C02"
 				"25BA2070871AE3EA"
 				"6D0457966A524EAE"
+				"740A845F94D5D8AA"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -341,6 +342,7 @@
 				"25BA2070871AE3EA"
 				"6D0457966A524EAE"
 				"65BA9D00FF643C02"
+				"740A845F94D5D8AA"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Engines enchance your aircraft, but have a drawbacks."]
@@ -480,6 +482,7 @@
 				"25BA2070871AE3EA"
 				"6D0457966A524EAE"
 				"65BA9D00FF643C02"
+				"740A845F94D5D8AA"
 			]
 			dependency_requirement: "one_completed"
 			description: [
