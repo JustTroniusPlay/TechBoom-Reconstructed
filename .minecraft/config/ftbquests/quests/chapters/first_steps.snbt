@@ -95,6 +95,7 @@
 				item: "minecraft:torch"
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [{
 				count: 4L
 				id: "2B637A410F13CE22"

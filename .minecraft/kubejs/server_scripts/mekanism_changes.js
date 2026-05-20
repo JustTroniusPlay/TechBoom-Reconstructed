@@ -5,7 +5,7 @@ event.remove({id: "mekanism:paper"});
 
   event.replaceInput(
         {id: "mekanism:transmitter/mechanical_pipe/basic"},
-        "#c:ingots/steel",
+        "#forge:ingots/steel",
         "gtceu:double_steel_plate"
     )
   event.replaceInput(

@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
     event.remove({id: "thermal:storage/coal_coke_from_block"});
     event.remove({id: "immersiveengineering:crafting/coal_coke_to_coke"});
     event.remove({id: "thermal:storage/coal_coke_block"});
+    event.remove({id: "railcraft:coal_coke"});
 
   {//Coke Ovens
     event.remove({id: "immersiveengineering:crafting/cokebrick"});
@@ -41,7 +42,6 @@ ServerEvents.recipes(event => {
     C: 'gtceu:invar_frame'
   }
 )
-
 
     event.remove({id: "railcraft:coke_oven_bricks"});
     event.shaped(
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
       "item": "minecraft:coal_block"
     },
     "result": {
-      "item": "immersiveengineering:coal_coke_block"
+      "item": "thermal:coal_coke_block"
     }
     });
 
@@ -124,12 +124,14 @@ ServerEvents.recipes(event => {
     event.replaceInput(
       {input: block},
       block,
-      'immersiveengineering:coal_coke_block'
+      //'immersiveengineering:coal_coke_block'
+      'thermal:coal_coke_block'
     )
     event.replaceOutput(
       {output: block},
       block,
-      'immersiveengineering:coal_coke_block'
+      //'immersiveengineering:coal_coke_block'
+      'thermal:coal_coke_block'
     )
   })
 })

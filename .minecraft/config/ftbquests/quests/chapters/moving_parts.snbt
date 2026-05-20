@@ -866,8 +866,8 @@
 				item: "create_new_age:basic_motor_extension"
 				type: "item"
 			}]
-			x: 7.149999999999999d
-			y: 0.6500000000000004d
+			x: 6.474489795918366d
+			y: 0.9658163265306072d
 		}
 		{
 			dependencies: ["6E605D41A0CFDD7E"]
