@@ -16,8 +16,8 @@
 		{
 			id: "4929F8A1F5008F26"
 			linked_quest: "32FCC9DCD937E066"
-			x: -3.5d
-			y: 5.5d
+			x: 0.5d
+			y: 9.0d
 		}
 		{
 			id: "77AC45D87964A5C6"
@@ -32,15 +32,15 @@
 			linked_quest: "540D62BE372AE7D1"
 			shape: "gear"
 			size: 1.5d
-			x: 4.5d
+			x: -4.5d
 			y: 5.25d
 		}
 		{
 			id: "6BCC4C890ED38B26"
 			linked_quest: "1042CC5D3176F2A3"
 			size: 0.7d
-			x: 3.4897959183673493d
-			y: 5.653061224489804d
+			x: 3.706802721088465d
+			y: 8.96190476190477d
 		}
 	]
 	quests: [
@@ -82,6 +82,8 @@
 		{
 			dependencies: ["362FE530374D058F"]
 			id: "3B872B9D66E36739"
+			shape: "diamond"
+			size: 1.2d
 			tasks: [{
 				id: "1CCC7ECC82DEBE48"
 				item: {
@@ -95,7 +97,7 @@
 			}]
 			title: "Limited Barrels"
 			x: 4.0d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -104,6 +106,7 @@
 			]
 			icon: "create:andesite_funnel"
 			id: "26041794979A3851"
+			size: 1.2d
 			tasks: [
 				{
 					id: "3C05CAF2814DE9D2"
@@ -117,8 +120,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 5.5d
+			x: 0.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -140,8 +143,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 2.5d
+			x: -1.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["362FE530374D058F"]
@@ -166,7 +169,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -180,18 +183,20 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["32FCC9DCD937E066"]
 			id: "5829B229883C5738"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "043E620411D78B58"
 				item: "create:packager"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: -2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5829B229883C5738"]
@@ -202,8 +207,8 @@
 				item: "create:repackager"
 				type: "item"
 			}]
-			x: -4.2d
-			y: 4.2d
+			x: -1.75d
+			y: 9.799999999999999d
 		}
 		{
 			dependencies: ["5829B229883C5738"]
@@ -213,8 +218,8 @@
 				item: "create:package_frogport"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.5d
+			x: -2.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -233,13 +238,14 @@
 		{
 			dependencies: ["5829B229883C5738"]
 			id: "721BF9359D5D6E95"
+			size: 0.85d
 			tasks: [{
 				id: "567D1DADC515AEB4"
 				item: "create:stock_link"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.0d
+			x: -3.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -247,35 +253,38 @@
 				"540D62BE372AE7D1"
 			]
 			id: "0D6832578FA06AE0"
+			size: 0.85d
 			tasks: [{
 				id: "062ED7C68413E8B8"
 				item: "createstockbridge:ae_bridge"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 2.0d
+			x: -4.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["721BF9359D5D6E95"]
 			id: "14197015F8EAE8BE"
+			size: 0.85d
 			tasks: [{
 				id: "57AB7333EF6DFDB6"
 				item: "create:stock_ticker"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 1.0d
+			x: -4.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["721BF9359D5D6E95"]
 			id: "14540AB6837F226E"
+			size: 0.7d
 			tasks: [{
 				id: "6AA762E113223494"
 				item: "create:redstone_requester"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.0d
+			x: -3.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2E05C5DC65334CCF"]
@@ -286,8 +295,8 @@
 				item: "create_factory_logistics:network_link"
 				type: "item"
 			}]
-			x: 1.25d
-			y: 3.261904761904752d
+			x: 1.488775510204107d
+			y: 3.173809523809517d
 		}
 		{
 			dependencies: ["721BF9359D5D6E95"]
@@ -299,12 +308,13 @@
 				item: "create:factory_gauge"
 				type: "item"
 			}]
-			x: -4.55d
-			y: 3.5d
+			x: -3.5d
+			y: 9.799999999999999d
 		}
 		{
 			dependencies: ["721BF9359D5D6E95"]
 			id: "6957B078ADC132B8"
+			size: 0.5d
 			tasks: [{
 				id: "621F080FCAE503CB"
 				item: {
@@ -318,8 +328,8 @@
 				type: "item"
 			}]
 			title: "Shopkeeper"
-			x: -6.0d
-			y: 1.0d
+			x: -4.066836734693865d
+			y: 9.836734693877546d
 		}
 		{
 			dependencies: ["5829B229883C5738"]
@@ -330,8 +340,8 @@
 				item: "create:package_filter"
 				type: "item"
 			}]
-			x: -2.4499999999999997d
-			y: 3.5d
+			x: -1.75d
+			y: 8.4d
 		}
 		{
 			dependencies: ["362FE530374D058F"]
@@ -343,6 +353,7 @@
 				item: "gtceu:tin_small_item_pipe"
 				type: "item"
 			}]
+			size: 1.2d
 			tasks: [
 				{
 					count: 8L
@@ -357,7 +368,7 @@
 				}
 			]
 			title: "Item Pipes"
-			x: 2.5d
+			x: 4.5d
 			y: 7.5d
 		}
 		{
@@ -397,8 +408,8 @@
 				}
 			]
 			title: "Fancy Silos"
-			x: 3.1000000000000085d
-			y: 3.445238095238082d
+			x: 3.547278911564625d
+			y: 4.0238095238095255d
 		}
 		{
 			dependencies: [
@@ -407,6 +418,7 @@
 			]
 			description: ["GregTech crates can store many items, but considering how other means of storage can be better, you probably can use them more like a decoration."]
 			id: "28AA5C24C1C4BC2C"
+			size: 0.6d
 			tasks: [
 				{
 					id: "37D1534257C58BBE"
@@ -421,11 +433,12 @@
 			]
 			title: "Simple Crates"
 			x: 4.5d
-			y: 7.5d
+			y: 6.6d
 		}
 		{
 			dependencies: ["362FE530374D058F"]
 			id: "566F5CF387C7F261"
+			size: 1.2d
 			tasks: [
 				{
 					id: "39128269FC8E5756"
@@ -464,7 +477,7 @@
 				}
 			]
 			title: "Selfworking conveyor"
-			x: 0.5d
+			x: 2.5d
 			y: 7.5d
 		}
 		{
@@ -476,8 +489,8 @@
 				item: "immersiveengineering:chute_iron"
 				type: "item"
 			}]
-			x: 0.35d
-			y: 6.6499999999999995d
+			x: 1.6034013605442183d
+			y: 7.503401360544224d
 		}
 		{
 			dependencies: ["566F5CF387C7F261"]
@@ -497,8 +510,8 @@
 				}
 			]
 			title: "Covering"
-			x: 1.4d
-			y: 7.7d
+			x: 3.4197278911564553d
+			y: 7.503401360544224d
 		}
 		{
 			dependencies: [
@@ -513,15 +526,11 @@
 				item: "immersiveengineering:sorter"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 9.5d
+			x: 2.5d
+			y: 9.0d
 		}
 		{
-			dependencies: [
-				"566F5CF387C7F261"
-				"26041794979A3851"
-				"7E43DE8E8F0F36A6"
-			]
+			dependencies: ["07DD3A2F452B366A"]
 			dependency_requirement: "one_completed"
 			id: "5E1CC541E65C3D24"
 			tasks: [{
@@ -529,8 +538,8 @@
 				item: "immersiveengineering:item_batcher"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 9.5d
+			x: 2.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["7A722F4E1BB2DF66"]
@@ -540,19 +549,20 @@
 				item: "immersiveengineering:electromagnet"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 4.5d
+			x: -0.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7E43DE8E8F0F36A6"]
 			id: "1B95E7F9A5CBDBE8"
+			size: 0.85d
 			tasks: [{
 				id: "615F1CABE2328BB8"
 				item: "ulvcovm:ulv_conveyor_module"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 6.5d
+			x: 4.478231292517037d
+			y: 8.96190476190477d
 		}
 		{
 			dependencies: ["1B95E7F9A5CBDBE8"]
@@ -562,8 +572,8 @@
 				item: "ulvcovm:ulv_robot_arm"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 6.5d
+			x: 5.506802721088469d
+			y: 8.933333333333344d
 		}
 		{
 			dependencies: ["540D62BE372AE7D1"]
@@ -573,34 +583,37 @@
 				item: "ae2:storage_bus"
 				type: "item"
 			}]
-			x: 6.0d
+			x: -3.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["540D62BE372AE7D1"]
 			id: "71094588853AD9EB"
+			shape: "diamond"
+			size: 1.2d
 			tasks: [{
 				id: "615CCDAA2C08FE34"
 				item: "ae2:controller"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 6.5d
+			x: -4.485204081632638d
+			y: 3.4428571428571537d
 		}
 		{
 			dependencies: ["540D62BE372AE7D1"]
 			description: ["ME chest can hold one storage cell at a time."]
 			id: "3325E24B86B597CF"
+			size: 0.85d
 			tasks: [{
 				id: "2922E64578BDBC6C"
 				item: "ae2:chest"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 4.5d
+			x: -5.675680272108828d
+			y: 5.25238095238096d
 		}
 		{
-			dependencies: ["540D62BE372AE7D1"]
+			dependencies: ["71094588853AD9EB"]
 			id: "305DE2EB97E84BC7"
 			tasks: [
 				{
@@ -619,8 +632,8 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
-			y: 5.5d
+			x: -3.7947278911564553d
+			y: 2.4904761904761976d
 		}
 		{
 			dependencies: ["305DE2EB97E84BC7"]
@@ -643,8 +656,8 @@
 					type: "item"
 				}
 			]
-			x: 7.35d
-			y: 5.6d
+			x: -2.8d
+			y: 2.4499999999999997d
 		}
 	]
 	title: "Storage Solutions"

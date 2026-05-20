@@ -51,7 +51,7 @@ recipes:
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: true
-  hardAdvancedIronRecipes: false
+  hardAdvancedIronRecipes: true
 
   # Whether to make coloring blocks like Concrete or Glass harder.
   # Default: false

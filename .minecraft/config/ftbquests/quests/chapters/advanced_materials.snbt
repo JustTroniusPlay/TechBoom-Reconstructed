@@ -15,7 +15,10 @@
 		y: -1.5d
 	}]
 	quests: [{
-		dependencies: ["5169668687940129"]
+		dependencies: [
+			"5169668687940129"
+			"69DB58E1CD20ED2B"
+		]
 		id: "1C2F6D48F407A95D"
 		tasks: [{
 			id: "3D93AE5B8EB3BCAF"

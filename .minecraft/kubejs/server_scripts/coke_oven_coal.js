@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
   {//Coke Ovens
     event.remove({id: "immersiveengineering:crafting/cokebrick"});
     event.shaped(
-  Item.of('immersiveengineering:cokebrick', 3), // arg 1: output
+  Item.of('immersiveengineering:cokebrick', 6), // arg 1: output
   [
     'ABA',
     'BCB', // arg 2: the shape (array of strings)

@@ -24,6 +24,7 @@
 		{
 			id: "3D33B9AA5FFA5932"
 			linked_quest: "4EC3B664D62760BE"
+			shape: "diamond"
 			size: 0.7d
 			x: 0.8214285714285481d
 			y: -1.0016369047619094d
@@ -33,8 +34,15 @@
 			linked_quest: "4DE3A5EB02DCDC59"
 			shape: "gear"
 			size: 1.2d
-			x: 1.7999999999999998d
-			y: 6.0d
+			x: -0.7071428571428626d
+			y: 4.973873299319699d
+		}
+		{
+			id: "69298028232E244E"
+			linked_quest: "0A47F74F64457575"
+			size: 0.7d
+			x: -1.75d
+			y: 6.6499999999999995d
 		}
 	]
 	quests: [
@@ -45,6 +53,7 @@
 			]
 			description: ["Aside from making alloys it can work with steel molds to create some components, blocks or nuggets from ingots.  "]
 			id: "61DA87FD5E45D2BC"
+			shape: "diamond"
 			tasks: [{
 				id: "4A05A522EC33C3F6"
 				item: "gtceu:lp_steam_alloy_smelter"
@@ -120,6 +129,7 @@
 			dependencies: ["15C30310B03E4F79"]
 			description: [""]
 			id: "156FF337D16F88B3"
+			shape: "diamond"
 			tasks: [{
 				id: "41FA3EBCCC16C424"
 				item: "gtceu:lp_steam_compressor"
@@ -130,8 +140,15 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
-			description: ["Can grind things into dusts. Most notable use to grind down raw ores and getting two times more. "]
+			description: [
+				"Can grind things into dusts. Most notable use to grind down raw ores and getting two times more."
+				""
+				"Some grinded dusts, for example Redstone, need to be washed after grind proccesing to become useful or smelted to get ingots."
+				""
+				"You also can throw them into the cauldron with water manually. "
+			]
 			id: "7DC8D43AB8C12697"
+			shape: "diamond"
 			tasks: [{
 				id: "33565194B1EBDA18"
 				item: "gtceu:lp_steam_macerator"
@@ -176,19 +193,12 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: 2.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
-			dependencies: [
-				"15C30310B03E4F79"
-				"319CEF2BDD679CF5"
-			]
-			description: [
-				"Some grinded dusts, for example Redstone, need to be washed after grind proccesing to become useful or smelted to get ingots."
-				""
-				"You also can throw them into the cauldron with water manually."
-			]
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Will wash your dusts and different items automatically on grand scale."]
 			icon: "steamadditions:steam_separator"
 			id: "37EE9AB51014DCBA"
 			tasks: [
@@ -219,8 +229,8 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 1.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -293,18 +303,20 @@
 		{
 			dependencies: ["15C30310B03E4F79"]
 			id: "0FCFA77A56C98B28"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "250C3DA58D2315F2"
 				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: 2.4499999999999997d
-			y: 0.0d
+			x: 2.654081632653039d
+			y: -0.07816751700682545d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
 			id: "780843C2BC813902"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "63DF20CE04CE4282"
@@ -371,6 +383,7 @@
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "5C4DA67C07C8E9B7"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "26166249294BE433"
@@ -402,6 +415,8 @@
 				item: "gtceu:firebricks"
 				type: "item"
 			}]
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [
 				{
 					id: "761327595B2D9F9E"
@@ -446,43 +461,38 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["5361A9865C6547F4"]
-			id: "5771754309EAFB99"
-			size: 1.2d
-			tasks: [{
-				id: "712CC7E813185EC5"
-				item: "gtceu:lp_steam_extractor"
-				type: "item"
-			}]
-			x: -1.2d
-			y: 6.6d
-		}
-		{
-			dependencies: ["5771754309EAFB99"]
+			dependencies: [
+				"5361A9865C6547F4"
+				"37EE9AB51014DCBA"
+			]
+			dependency_requirement: "one_completed"
 			icon: "gtceu:rubber_ingot"
-			id: "330BBBA861A594E7"
+			id: "5771754309EAFB99"
+			size: 1.0d
 			tasks: [
 				{
-					id: "19FF362339F51DE9"
+					id: "712CC7E813185EC5"
+					item: "gtceu:lp_steam_extractor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AE9B9E498507096"
 					item: "gtceu:raw_rubber_dust"
 					type: "item"
 				}
 				{
-					id: "3EC92BCB8E5CD1AF"
+					id: "02EB1B7EBBEEFC90"
 					item: "gtceu:rubber_ingot"
 					type: "item"
 				}
 			]
 			title: "Refined Rubber"
-			x: -2.0d
-			y: 8.0d
+			x: -5.0d
+			y: 3.5d
 		}
 		{
-			dependencies: [
-				"7A0C939E0FE540EC"
-				"5361A9865C6547F4"
-				"330BBBA861A594E7"
-			]
+			dependencies: ["5771754309EAFB99"]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "1C59476B07336B42"
 			rewards: [{
@@ -491,6 +501,7 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
+			shape: "gear"
 			size: 1.5d
 			tasks: [
 				{
@@ -522,8 +533,8 @@
 				}
 			]
 			title: "Low Voltage"
-			x: -3.7380952380952692d
-			y: 7.947321428571421d
+			x: -6.892857142857153d
+			y: 3.576254251700661d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -562,8 +573,8 @@
 				type: "item"
 			}]
 			title: "Steel Steam Oven"
-			x: -2.0d
-			y: 1.5d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -679,7 +690,7 @@
 				}
 			]
 			title: "Getting glassed"
-			x: -1.2d
+			x: -3.7d
 			y: 4.8d
 		}
 		{
@@ -690,8 +701,8 @@
 				item: "torchmaster:dreadlamp"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
+			x: -4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
@@ -703,7 +714,104 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0A47F74F64457575"
+				"5361A9865C6547F4"
+			]
+			description: [
+				"To build a Smeltery you need to create a closed enclosure with floor and wals from seared blocks with controller, fuel tank, chutes and drains. The quest requires you to craft minimal amount, but you can always expand the smeltery in all directions which give it more storage and slots for simultaneous smelting."
+				""
+				"{@pagebreak}"
+				"Smeltery use lava as fuel to melt any resources down. Put it in &oFuel Tank&r."
+				""
+				"Clicking the Controller will open its UI, where you can put meltable things manually or provide items throught &oChute&r with various means like hoppers. &l!!!BE CAREFUl!!!&r Metals will become alloys automatically after smelting, so look what you put there."
+				""
+				"After they become liquids you can click on them in the UI to change their order. Those at the very bottom will get poured out of the &oDrain&r, but only if there Faucet on them and Casting Table or Basin to pour."
+				""
+				"&lFollow 'Blacksimthing' tab for custom tools, armor and metal work.&r"
+			]
+			icon: "tconstruct:smeltery_controller"
+			id: "25B2030958956699"
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Becoming the blacksmith"
+			tasks: [
+				{
+					id: "5F0E4AC9EF1AC999"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "164208078012D19B"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "58B6BE24808E5EB1"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "2E62C009FEC8340B"
+					item: "tconstruct:seared_chute"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "34B56298262F8E82"
+					item: { Count: 8, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+			]
+			x: -0.75d
+			y: 6.6499999999999995d
+		}
+		{
+			dependencies: ["25B2030958956699"]
+			description: [
+				"Essential component for almost every Thermal machinery."
+				""
+				"&lFollow 'Redstone Machinery' tab for Thermal Machinery.&r"
+			]
+			id: "2798CCE5B1DE21DA"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6B8E234A47BC77E6"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["25B2030958956699"]
+			id: "5169668687940129"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6EB7A50C08AEA2E0"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			id: "719A86D87C805DEB"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				id: "4C5D614C862D962E"
+				item: "tconstruct:tinkers_anvil"
+				type: "item"
+			}]
+			x: -5.3999999999999995d
+			y: 0.6d
 		}
 	]
 	title: "Steam Age"

@@ -36,11 +36,20 @@
 			x: -2.5d
 			y: -10.5d
 		}
+		{
+			id: "7739B672F17CB069"
+			linked_quest: "59DE400FAB603D8A"
+			shape: "rsquare"
+			size: 1.2d
+			x: 12.404761904761912d
+			y: -0.9761904761904745d
+		}
 	]
 	quests: [
 		{
 			dependencies: ["7B289C03327D9227"]
 			id: "75D2966F919D360B"
+			shape: "diamond"
 			tasks: [{
 				id: "1AAB0CDD45820F0D"
 				item: "create:crushing_wheel"
@@ -94,6 +103,7 @@
 			]
 			icon: "createoreexcavation:raw_diamond"
 			id: "2381B310EA56A896"
+			shape: "hexagon"
 			tasks: [{
 				id: "1C903EBAB216FAE0"
 				title: "Infinite ores"
@@ -116,6 +126,7 @@
 			]
 			icon: "molten_vents:dormant_molten_asurine"
 			id: "382680D8EC3065F3"
+			shape: "hexagon"
 			tasks: [{
 				id: "5BF6F2EEB79D532B"
 				title: "Molten Vents"
@@ -128,6 +139,8 @@
 			dependencies: ["691DD9FDCE3E58DA"]
 			description: ["The most simple kinetic power generator you can make."]
 			id: "22BE56C3CA087A04"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "7AFD8D061F48A989"
 				item: "create:water_wheel"
@@ -139,14 +152,15 @@
 		{
 			dependencies: ["22BE56C3CA087A04"]
 			id: "67C1B62B8C68F0F1"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "36F9C8C36842D28F"
 				item: "create:large_water_wheel"
 				type: "item"
 			}]
-			x: 8.899999999999999d
-			y: 2.0500000000000007d
+			x: 8.960884353741498d
+			y: 2.2035714285714363d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -182,6 +196,7 @@
 		{
 			dependencies: ["22BE56C3CA087A04"]
 			id: "567F66C720FFFE6D"
+			shape: "diamond"
 			tasks: [{
 				id: "57F2973B980D99FD"
 				item: "create:millstone"
@@ -212,6 +227,7 @@
 				item: "create:white_sail"
 				type: "item"
 			}]
+			shape: "diamond"
 			size: 1.2d
 			tasks: [
 				{
@@ -313,7 +329,7 @@
 		{
 			dependencies: ["3D1CCF8E85981E52"]
 			id: "7B289C03327D9227"
-			shape: "diamond"
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
 				count: 9L
@@ -362,6 +378,7 @@
 			]
 			icon: "create:wrench"
 			id: "7F493483338AF21E"
+			shape: "rsquare"
 			tasks: [{
 				id: "733F4F8FF9018E48"
 				item: "create:wrench"
@@ -373,14 +390,14 @@
 		{
 			dependencies: ["7B289C03327D9227"]
 			id: "42F2B3DC445CED5F"
-			size: 0.5d
+			size: 1.0d
 			tasks: [{
 				id: "0D204D98A9693D68"
 				item: "create:wand_of_symmetry"
 				type: "item"
 			}]
-			x: -8.25d
-			y: -5.25d
+			x: -8.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -417,6 +434,7 @@
 			description: ["With help of Mechanical Press you now can get plates with 1 to 1 ratio. No more wasted metals!"]
 			icon: "create:mechanical_press"
 			id: "1A3BA4BEFD861942"
+			shape: "rsquare"
 			size: 1.2d
 			tasks: [
 				{
@@ -471,6 +489,7 @@
 			dependencies: ["7F493483338AF21E"]
 			description: ["Toolbox can hold up to 8 items inside that you can take from it remotely using a keybind (ALT bu default). Its range not infinite, so consider putting it closer to you workplace. "]
 			id: "0DE96BB04654485F"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "31D916323BEB89DE"
@@ -485,6 +504,7 @@
 			description: [""]
 			hide_dependent_lines: true
 			id: "3082ACB31EDFB2D1"
+			shape: "rsquare"
 			subtitle: "Hunting the black gold"
 			tasks: [{
 				id: "2BE071B6A294E103"
@@ -498,6 +518,7 @@
 			dependencies: ["7B289C03327D9227"]
 			icon: "create_sa:brass_drone_item"
 			id: "2D24B69CEABE3F73"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "16DA750BAC91D902"
@@ -574,6 +595,7 @@
 					type: "item"
 				}
 			]
+			shape: "diamond"
 			tasks: [
 				{
 					id: "25D1588C95E6BF1C"
@@ -596,6 +618,7 @@
 			description: ["(P.S. Jetpack unfortunately will use fuel when you on Immersive Aircraft transport. Be careful!)"]
 			icon: "create_sa:hydraulic_engine"
 			id: "188E10C139F48264"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "7BB9C943BF725539"
@@ -631,6 +654,7 @@
 			]
 			icon: "create_sa:heat_engine"
 			id: "7ED421A21A7BB90C"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "7B7D00BD48861DCD"
@@ -665,6 +689,7 @@
 			dependency_requirement: "all_started"
 			description: ["You can put Filling and Fueling tanks into the Charm slot in your accessories. Your Jetpacks and Exoskeletons will use their fuel first."]
 			id: "261E072888FAEA04"
+			shape: "diamond"
 			size: 0.6d
 			tasks: [
 				{
@@ -717,6 +742,7 @@
 			]
 			icon: "create_sa:steam_engine"
 			id: "0E0B2F4801CE1F38"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "1A01BC99C57525E4"
@@ -780,6 +806,8 @@
 			dependencies: ["22BE56C3CA087A04"]
 			icon: "create:mechanical_bearing"
 			id: "108C99B4F1FE705F"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [
 				{
 					id: "5BCDB3A286FFDAAD"
@@ -1011,6 +1039,8 @@
 		{
 			dependencies: ["108C99B4F1FE705F"]
 			id: "54661956247869DD"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "75946E4EDDDCAB70"
 				item: "create:empty_blaze_burner"
@@ -1070,6 +1100,7 @@
 		{
 			dependencies: ["54661956247869DD"]
 			id: "40B9ECFB3C0DB31F"
+			shape: "diamond"
 			size: 1.2d
 			tasks: [{
 				id: "51660897DFAD0E55"
@@ -1335,6 +1366,7 @@
 			description: ["The top segment will contain &oGasoline&r and middle one &oDiesel&r."]
 			icon: "createdieselgenerators:crude_oil_bucket"
 			id: "043F7FFDC6430B34"
+			shape: "rsquare"
 			size: 1.2d
 			subtitle: "Simple and easy"
 			tasks: [
@@ -1433,14 +1465,15 @@
 		{
 			dependencies: ["2185592369B7D5FC"]
 			id: "3CD6BF0CF344C8A1"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "20F1151AF5039D7A"
 				item: "createdieselgenerators:basin_lid"
 				type: "item"
 			}]
-			x: 7.554081632653066d
-			y: 3.5598639455782077d
+			x: 7.265306122448976d
+			y: 3.4335034013605465d
 		}
 		{
 			dependencies: ["7863C9BC39A7F9D8"]
@@ -1556,7 +1589,7 @@
 		{
 			dependencies: ["37FAA3D4CF96E9EE"]
 			id: "0852CB10008D7CDB"
-			shape: "pentagon"
+			shape: "hexagon"
 			size: 1.2d
 			tasks: [{
 				id: "15140B4F56F7A582"
@@ -1596,6 +1629,7 @@
 		{
 			dependencies: ["1A155790CD83B2A7"]
 			id: "3D1CCF8E85981E52"
+			shape: "hexagon"
 			tasks: [{
 				id: "09034466495D9971"
 				item: "create:electron_tube"
@@ -1633,77 +1667,6 @@
 			y: -6.8d
 		}
 		{
-			dependencies: ["59DE400FAB603D8A"]
-			id: "0FBD8C5E61338813"
-			tasks: [{
-				id: "27E562EA84E185E1"
-				item: "create_new_age:redstone_magnet"
-				type: "item"
-			}]
-			x: 11.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["59DE400FAB603D8A"]
-			id: "46A13C7F6842C1AE"
-			tasks: [{
-				id: "526ECE3776D213C2"
-				item: "create_new_age:layered_magnet"
-				type: "item"
-			}]
-			x: 11.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["59DE400FAB603D8A"]
-			id: "50FB45708E0B12F5"
-			tasks: [{
-				id: "5DE441D21EB24EE3"
-				item: "create_new_age:fluxuated_magnetite"
-				type: "item"
-			}]
-			x: 11.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["59DE400FAB603D8A"]
-			id: "4DF0DA70E0E5048F"
-			tasks: [{
-				id: "612B2AC75C9138B1"
-				item: "create_new_age:netherite_magnet"
-				type: "item"
-			}]
-			x: 14.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["34A4F350D3CE0400"]
-			icon: "create_new_age:generator_coil"
-			id: "59DE400FAB603D8A"
-			size: 1.5d
-			tasks: [
-				{
-					id: "269949462ECBD686"
-					item: "create_new_age:generator_coil"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "24924A62ABEF622E"
-					item: { Count: 12, id: "create_new_age:magnetite_block" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "1D916F39592C1711"
-					item: "create_new_age:carbon_brushes"
-					type: "item"
-				}
-			]
-			x: 12.5d
-			y: -3.5d
-		}
-		{
 			dependencies: ["7B289C03327D9227"]
 			id: "3238F7E1DF448006"
 			size: 1.3d
@@ -1728,7 +1691,10 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["7B289C03327D9227"]
+			dependencies: [
+				"7B289C03327D9227"
+				"69DB58E1CD20ED2B"
+			]
 			id: "600DDB0FDB97CFFA"
 			size: 1.3d
 			tasks: [{
@@ -1857,6 +1823,7 @@
 		{
 			dependencies: ["37FAA3D4CF96E9EE"]
 			id: "70A43884F1EE4D7A"
+			shape: "rsquare"
 			tasks: [{
 				id: "44897A9AC6CC214E"
 				item: "create_factory_logistics:fluid_mechanism"
@@ -1977,13 +1944,14 @@
 				item: "createdieselgenerators:gray_cement_bucket"
 				type: "item"
 			}]
-			x: 7.023469387755107d
-			y: 3.090476190476174d
+			x: 6.653061224489797d
+			y: 2.964115646258506d
 		}
 		{
 			dependencies: ["7ED421A21A7BB90C"]
 			description: ["You can put Filling and Fueling tanks into the Charm slot in your accessories. Your Jetpacks and Exoskeletons will use their fuel first."]
 			id: "3768363D8D069FD0"
+			shape: "diamond"
 			size: 0.6d
 			tasks: [
 				{
@@ -2026,8 +1994,8 @@
 				}
 			]
 			title: "Fueling Tanks"
-			x: -3.1663265306122383d
-			y: -5.238775510204064d
+			x: -3.113945578231288d
+			y: -4.1991496598639415d
 		}
 		{
 			dependencies: ["75D2966F919D360B"]
@@ -2224,6 +2192,7 @@
 		{
 			dependencies: ["2185592369B7D5FC"]
 			id: "34517076E949A7C5"
+			shape: "diamond"
 			size: 0.6d
 			tasks: [
 				{
@@ -2307,6 +2276,7 @@
 			dependencies: ["108C99B4F1FE705F"]
 			icon: "create_interactive:interact_me"
 			id: "3862A47C6FC3972D"
+			shape: "pentagon"
 			size: 1.5d
 			tasks: [{
 				id: "0732F3B5183013FB"
@@ -2331,6 +2301,7 @@
 		{
 			dependencies: ["22BE56C3CA087A04"]
 			id: "6157725B6CC022A4"
+			shape: "diamond"
 			tasks: [{
 				id: "6C544548BD22602D"
 				item: "createaddition:rolling_mill"
@@ -2461,8 +2432,8 @@
 				item: "vintageimprovements:vacuum_chamber"
 				type: "item"
 			}]
-			x: 6.449999999999999d
-			y: 2.4000000000000004d
+			x: 6.489795918367356d
+			y: 2.2906462585034006d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -2502,6 +2473,7 @@
 		{
 			dependencies: ["115F76F055B5EB09"]
 			id: "416F4CC8D57BAF00"
+			shape: "hexagon"
 			size: 0.7d
 			tasks: [{
 				id: "63408CE7D7C442FB"
@@ -2514,6 +2486,7 @@
 		{
 			dependencies: ["7F493483338AF21E"]
 			id: "1C9C2BDF0492D3E9"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "2B89C1CAFE83DBD7"
@@ -2540,6 +2513,7 @@
 			description: ["Simple chunk loader that use rotational power. Catch ghast by clicking it with empty one!"]
 			icon: "create_power_loader:andesite_chunk_loader"
 			id: "242CE134590880BD"
+			shape: "diamond"
 			size: 1.2d
 			tasks: [
 				{

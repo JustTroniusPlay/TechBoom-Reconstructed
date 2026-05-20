@@ -45,7 +45,7 @@
 			id: "6934C4180CCE1CB8"
 			linked_quest: "332A1EB91726C2C0"
 			x: -1.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			id: "792420F3FC228E88"
@@ -59,38 +59,52 @@
 			linked_quest: "4B31C89E0FA58CE0"
 			shape: "hexagon"
 			size: 0.5d
-			x: 7.5d
-			y: -3.0d
+			x: 6.5d
+			y: -1.5d
 		}
 		{
 			id: "1ABDF46B5C427E58"
 			linked_quest: "15C30310B03E4F79"
 			shape: "gear"
 			size: 0.5d
-			x: 8.5d
-			y: -3.25d
+			x: 7.5d
+			y: -0.75d
 		}
 		{
 			id: "6C5FF9137EEF7836"
 			linked_quest: "15B5CF1F309CA82A"
 			size: 0.5d
-			x: 3.0d
-			y: 1.25d
+			x: 2.209693877551018d
+			y: 1.3961734693877546d
 		}
 		{
 			id: "1D6BF2DC9359B587"
 			linked_quest: "04A0F70827AA6155"
 			size: 0.5d
-			x: 5.0d
-			y: -3.25d
+			x: 6.5d
+			y: -0.75d
 		}
 		{
 			id: "6C868A007218CC75"
 			linked_quest: "1C2F6D48F407A95D"
 			shape: "hexagon"
+			size: 0.85d
+			x: -3.55d
+			y: 1.4d
+		}
+		{
+			id: "2B333327A7D62BA8"
+			linked_quest: "27D02A3ECE518CCE"
+			shape: "pentagon"
 			size: 0.5d
-			x: 10.5d
-			y: 0.0d
+			x: 8.25d
+			y: 2.0d
+		}
+		{
+			id: "0DB3AC2A01014A9A"
+			linked_quest: "600DDB0FDB97CFFA"
+			x: 4.0d
+			y: -0.5d
 		}
 	]
 	quests: [
@@ -554,7 +568,7 @@
 			]
 			title: "Nickel Batteries"
 			x: -0.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["799F7F64000A3084"]
@@ -624,7 +638,10 @@
 			y: -1.4285714285714306d
 		}
 		{
-			dependencies: ["4B31C89E0FA58CE0"]
+			dependencies: [
+				"4B31C89E0FA58CE0"
+				"40C415EF0BDE779C"
+			]
 			description: ["Will use lava to generate energy."]
 			id: "4972940DA0DA30B4"
 			tasks: [{
@@ -632,8 +649,8 @@
 				item: "thermal:dynamo_magmatic"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.5d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -648,11 +665,14 @@
 				item: "systeams:steam_dynamo"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -2.5d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["15B5CF1F309CA82A"]
+			dependencies: [
+				"15B5CF1F309CA82A"
+				"40C415EF0BDE779C"
+			]
 			description: [
 				"Compression dynamo can consume creosote and generate Forge Energy units. "
 				""
@@ -665,11 +685,14 @@
 				type: "item"
 			}]
 			title: "Creosote to energy"
-			x: 2.2341836734693814d
-			y: 0.7464285714285737d
+			x: 6.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["15B5CF1F309CA82A"]
+			dependencies: [
+				"15B5CF1F309CA82A"
+				"69DB58E1CD20ED2B"
+			]
 			description: [
 				"Treated planks can be crafted into Windmills. They will generate energy passively."
 				""
@@ -690,8 +713,8 @@
 				}
 			]
 			title: "Kinetic clean energy"
-			x: 3.5d
-			y: 0.5d
+			x: 2.168877551020408d
+			y: 0.6206632653061277d
 		}
 		{
 			dependencies: ["521B2505E5C81E16"]
@@ -703,29 +726,13 @@
 				item: "immersiveengineering:windmill_sail"
 				type: "item"
 			}]
-			x: 3.805612244897958d
-			y: 1.2158163265306214d
-		}
-		{
-			dependencies: [
-				"5CED0B2F5E3DE3B1"
-				"69DB58E1CD20ED2B"
-				"15B5CF1F309CA82A"
-			]
-			id: "6E68DB6406FB4D3F"
-			size: 0.7d
-			tasks: [{
-				id: "2989E62548390D70"
-				item: "immersiveengineering:charging_station"
-				type: "item"
-			}]
-			x: 1.5321428571428584d
-			y: 1.4063775510204124d
+			x: 1.5566326530612287d
+			y: 1.1308673469387784d
 		}
 		{
 			dependencies: [
 				"04A0F70827AA6155"
-				"69DB58E1CD20ED2B"
+				"40C415EF0BDE779C"
 			]
 			description: ["Will extract energy from some gems. Probably can be way to spend rubies and sapphires at this stage of the game."]
 			id: "123053D8EB9279CF"
@@ -735,13 +742,13 @@
 				item: "thermal:dynamo_lapidary"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"27D02A3ECE518CCE"
-				"69DB58E1CD20ED2B"
+				"40C415EF0BDE779C"
 			]
 			id: "7BF7C8E5AFC2EE6A"
 			subtitle: "Hungry generator"
@@ -750,8 +757,8 @@
 				item: "thermal:dynamo_gourmand"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -2.5d
+			x: 7.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4252FD2C3076FC2E"]
@@ -762,50 +769,142 @@
 				item: "mekanismgenerators:advanced_solar_generator"
 				type: "item"
 			}]
-			x: 10.85d
-			y: 1.05d
+			x: -4.517857142857149d
+			y: 3.0053571428571444d
 		}
 		{
-			dependencies: [
-				"69DB58E1CD20ED2B"
-				"1C2F6D48F407A95D"
-			]
+			dependencies: ["1C2F6D48F407A95D"]
 			id: "4252FD2C3076FC2E"
 			tasks: [{
 				id: "6331E20345C82C18"
 				item: "mekanismgenerators:solar_generator"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 1.0d
+			x: -4.55d
+			y: 2.15d
 		}
 		{
-			dependencies: [
-				"69DB58E1CD20ED2B"
-				"1C2F6D48F407A95D"
-			]
+			dependencies: ["1C2F6D48F407A95D"]
 			id: "27E0F81FE63D2E85"
 			tasks: [{
 				id: "648C61E6740F0E1E"
 				item: "mekanismgenerators:wind_generator"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 0.0d
+			x: -3.55d
+			y: 2.65d
 		}
 		{
-			dependencies: [
-				"69DB58E1CD20ED2B"
-				"1C2F6D48F407A95D"
-			]
+			dependencies: ["1C2F6D48F407A95D"]
 			id: "1EA14587D11D38CE"
 			tasks: [{
 				id: "2BEF1448BC6EC577"
 				item: "mekanismgenerators:gas_burning_generator"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.0d
+			x: -2.55d
+			y: 2.15d
+		}
+		{
+			dependencies: ["69DB58E1CD20ED2B"]
+			id: "40C415EF0BDE779C"
+			tasks: [{
+				id: "2BCE326ADE0D9420"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40C415EF0BDE779C"]
+			id: "11079328782ADE0E"
+			tasks: [{
+				id: "0E66DF131638D455"
+				item: "thermal:dynamo_disenchantment"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"34A4F350D3CE0400"
+				"3CADA01B0663BC89"
+			]
+			icon: "create_new_age:generator_coil"
+			id: "59DE400FAB603D8A"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "269949462ECBD686"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "24924A62ABEF622E"
+					item: { Count: 12, id: "create_new_age:magnetite_block" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1D916F39592C1711"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+			]
+			x: 0.9531462585033976d
+			y: -6.763945578231311d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "0FBD8C5E61338813"
+			size: 0.85d
+			tasks: [{
+				id: "27E562EA84E185E1"
+				item: "create_new_age:redstone_magnet"
+				type: "item"
+			}]
+			x: 0.9171768707483166d
+			y: -7.6892006802721475d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "46A13C7F6842C1AE"
+			size: 0.7d
+			tasks: [{
+				id: "526ECE3776D213C2"
+				item: "create_new_age:layered_magnet"
+				type: "item"
+			}]
+			x: 0.1531462585033978d
+			y: -7.363945578231311d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "50FB45708E0B12F5"
+			size: 0.7d
+			tasks: [{
+				id: "5DE441D21EB24EE3"
+				item: "create_new_age:fluxuated_magnetite"
+				type: "item"
+			}]
+			x: 1.741666666666677d
+			y: -7.3096088435374575d
+		}
+		{
+			dependencies: ["0FBD8C5E61338813"]
+			id: "4DF0DA70E0E5048F"
+			size: 0.7d
+			tasks: [{
+				id: "612B2AC75C9138B1"
+				item: "create_new_age:netherite_magnet"
+				type: "item"
+			}]
+			x: 0.9253401360544258d
+			y: -8.423894557823171d
 		}
 	]
 	title: "Energy Management"

@@ -21,14 +21,6 @@
 			x: -1.4d
 			y: -5.6d
 		}
-		{
-			id: "61B3A9E05BEC2CFD"
-			linked_quest: "5361A9865C6547F4"
-			shape: "hexagon"
-			size: 0.7d
-			x: -4.316496598639446d
-			y: -5.218452380952385d
-		}
 	]
 	quests: [
 		{
@@ -609,6 +601,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			size: 1.2d
 			tasks: [
 				{
 					id: "08B09EFAE1EB1C15"
@@ -635,6 +628,8 @@
 			description: [
 				"Seared melter is first iteration of getting molten metals. Right now it can help get additional resource income. Simple and common ores can give additional 3 nuggets when using smeltery. Some metals require higher temperatures, so you need to upgrade to bigger smeltery later. You can't make alloys in small smeltery."
 				""
+				"&lFollow \"Blacksmithing\" tab for different tools overview.&r"
+				""
 				"{@pagebreak}"
 				"To build melter put it on the Heater, then attach Faucet to it and put basin or seared table with cast under for molten metals to flow. Fuel it with coal or any other solid fuel. Right-click Faucet to pour your liquids into the basin and create resource blocks. "
 				""
@@ -644,8 +639,8 @@
 			]
 			icon: "tconstruct:seared_melter"
 			id: "0A47F74F64457575"
-			shape: "diamond"
-			size: 1.2d
+			shape: "rsquare"
+			size: 1.5d
 			subtitle: "First melting"
 			tasks: [
 				{
@@ -1181,8 +1176,8 @@
 				title: "Materials and You"
 				type: "checkmark"
 			}]
-			x: -0.85d
-			y: 1.275d
+			x: -0.35d
+			y: 1.1627976190476232d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -1322,59 +1317,6 @@
 			}]
 			x: 2.125d
 			y: -6.8d
-		}
-		{
-			dependencies: [
-				"0A47F74F64457575"
-				"5361A9865C6547F4"
-			]
-			description: [
-				"To build a Smeltery you need to create a closed enclosure with floor and wals from seared blocks with controller, fuel tank, chutes and drains. The quest requires you to craft minimal amount, but you can always expand the smeltery in all directions which give it more storage and slots for simultaneous smelting."
-				""
-				"{@pagebreak}"
-				"Smeltery use lava as fuel to melt any resources down. Put it in &oFuel Tank&r."
-				""
-				"Clicking the Controller will open its UI, where you can put meltable things manually or provide items throught &oChute&r with various means like hoppers. &l!!!BE CAREFUl!!!&r Metals will become alloys automatically after smelting, so look what you put there."
-				""
-				"After they become liquids you can click on them in the UI to change their order. Those at the very bottom will get poured out of the &oDrain&r, but only if there Faucet on them and Casting Table or Basin to pour."
-				""
-				"&lFollow 'Blacksimthing' tab for custom tools, armor and metal work.&r"
-			]
-			icon: "tconstruct:smeltery_controller"
-			id: "25B2030958956699"
-			shape: "gear"
-			size: 1.5d
-			subtitle: "Becoming the blacksmith"
-			tasks: [
-				{
-					id: "5F0E4AC9EF1AC999"
-					item: "tconstruct:smeltery_controller"
-					type: "item"
-				}
-				{
-					id: "164208078012D19B"
-					item: "tconstruct:seared_fuel_tank"
-					type: "item"
-				}
-				{
-					id: "58B6BE24808E5EB1"
-					item: "tconstruct:seared_drain"
-					type: "item"
-				}
-				{
-					id: "2E62C009FEC8340B"
-					item: "tconstruct:seared_chute"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "34B56298262F8E82"
-					item: { Count: 8, id: "tconstruct:seared_bricks" }
-					type: "item"
-				}
-			]
-			x: -4.291156462585022d
-			y: -3.957312925170072d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -1607,24 +1549,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["25B2030958956699"]
-			description: [
-				"Essential component for almost every Thermal machinery."
-				""
-				"&lFollow 'Redstone Machinery' tab for Thermal Machinery.&r"
-			]
-			id: "2798CCE5B1DE21DA"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "6B8E234A47BC77E6"
-				item: "thermal:machine_frame"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["5D86113FD3732735"]
 			description: ["Osmium tools are very durable at this stage of the game.  "]
 			id: "3809893D00C74388"
@@ -1843,13 +1767,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"4EC3B664D62760BE"
-				"521B2505E5C81E16"
-				"1FB9F832D1214239"
-				"4972940DA0DA30B4"
-				"56766749439CD7E0"
-			]
+			dependencies: ["56766749439CD7E0"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Energy is your way to get any machine working. Now that you have generators its good idea to find how to distribute, direct and overal control it where you need."
@@ -1889,8 +1807,8 @@
 				type: "item"
 			}]
 			title: "Little Library"
-			x: -0.8579931972789154d
-			y: 2.0805272108843624d
+			x: -0.3321428571428626d
+			y: 0.35d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2083,6 +2001,7 @@
 				item: "create:crafting_blueprint"
 				type: "item"
 			}]
+			shape: "diamond"
 			size: 0.85d
 			tasks: [{
 				id: "25352884A04226B2"
@@ -2352,83 +2271,19 @@
 			size: 0.7d
 			tasks: [
 				{
-					id: "1853B9DFE4C69D32"
-					item: {
-						Count: 1
-						id: "projectred_exploration:ruby_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "20F314295A7B8B19"
-					item: {
-						Count: 1
-						id: "projectred_exploration:sapphire_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "265CB92E3948E95C"
-					item: {
-						Count: 1
-						id: "projectred_exploration:peridot_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "243E3E95EE4FC569"
-					item: {
-						Count: 1
-						id: "projectred_exploration:sapphire_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
 					id: "50C8EDD2D6B9BDEF"
-					item: {
-						Count: 1
-						id: "projectred_exploration:peridot_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "thermal:ruby"
 					optional_task: true
 					type: "item"
 				}
 				{
 					id: "1C7BB987E579657B"
-					item: {
-						Count: 1
-						id: "projectred_exploration:ruby_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "thermal:sapphire"
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "0D846DEF1A3D2B9F"
-					type: "checkmark"
-				}
 			]
-			title: "Gem Tools and Armor"
+			title: "Gems Equipment(WIP)"
 			x: 0.4763605442176697d
 			y: -3.4745748299319814d
 		}
@@ -2568,22 +2423,6 @@
 			title: "Stackable Liquids"
 			x: -0.690986394557811d
 			y: -5.226275510204076d
-		}
-		{
-			dependencies: [
-				"25B2030958956699"
-				"7A0C939E0FE540EC"
-			]
-			id: "5169668687940129"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "6EB7A50C08AEA2E0"
-				item: "mekanism:metallurgic_infuser"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -4.5d
 		}
 		{
 			dependencies: ["4B31C89E0FA58CE0"]
@@ -2794,6 +2633,7 @@
 		{
 			dependencies: ["49EAA9A6F41A7551"]
 			id: "575BDE04271E94D1"
+			shape: "rsquare"
 			size: 0.7d
 			tasks: [{
 				count: 27L
@@ -2802,8 +2642,8 @@
 				type: "item"
 			}]
 			title: "Industrial Coke Oven"
-			x: 0.3392857142857211d
-			y: -10.440051020408177d
+			x: 0.6780612244897952d
+			y: -9.717389455782325d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -3149,8 +2989,8 @@
 				item: "tconstruct:copper_can"
 				type: "item"
 			}]
-			x: -2.862414965986403d
-			y: -3.111309523809524d
+			x: -1.75d
+			y: -4.55d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -3225,7 +3065,7 @@
 				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly."
 			]
 			id: "1C31C068991CC116"
-			shape: "diamond"
+			shape: "rsquare"
 			tasks: [{
 				id: "1D887C29DCACCEF9"
 				item: "forestry:worktable"
@@ -3389,6 +3229,18 @@
 			}]
 			x: 0.85d
 			y: -6.8d
+		}
+		{
+			dependencies: ["5CED0B2F5E3DE3B1"]
+			id: "6E68DB6406FB4D3F"
+			size: 0.7d
+			tasks: [{
+				id: "2989E62548390D70"
+				item: "immersiveengineering:charging_station"
+				type: "item"
+			}]
+			x: -0.7d
+			y: -12.6d
 		}
 	]
 	title: "Start of the journey"

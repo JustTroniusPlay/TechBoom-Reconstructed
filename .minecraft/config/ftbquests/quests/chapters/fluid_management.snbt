@@ -190,6 +190,7 @@
 		}
 		{
 			dependencies: ["5186990A391ADB8D"]
+			description: ["Upgraded iron variant of copper tanks."]
 			icon: "railcraft:white_iron_tank_valve"
 			id: "3E8CD30DEAF3BF95"
 			subtitle: "But Iron"
@@ -339,6 +340,7 @@
 					type: "item"
 				}
 			]
+			shape: "diamond"
 			tasks: [
 				{
 					count: 4L
@@ -407,6 +409,7 @@
 				"7D3FA2BBD1033FE9"
 				"37506D0DC482AAA8"
 			]
+			description: ["Wooden pipes can't transport hot fluids and gases!"]
 			icon: "gtceu:treated_wood_normal_fluid_pipe"
 			id: "6C4F567410AA97A0"
 			size: 0.6d
@@ -711,6 +714,7 @@
 				item: "gtceu:potin_normal_fluid_pipe"
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "5E2895C294F8FC21"

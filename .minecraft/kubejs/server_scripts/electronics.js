@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     'CDC'
   ],
   {
-    A: '#forge:nuggets/silver',
+    A: '#forge:rods/silver',
     B: 'create:copper_sheet',  //arg 3: the mapping object
     C: 'create:andesite_alloy',
     D: 'minecraft:smooth_basalt'

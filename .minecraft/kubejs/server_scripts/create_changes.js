@@ -7,46 +7,27 @@ ServerEvents.recipes(event => {
     "#forge:glass_panes"
   );
 
-    event.remove({id: "create:crafting/kinetics/mechanical_press"});
-    event.shaped(
-  Item.of('create:mechanical_press', 1), // arg 1: output
+  event.replaceInput({id: "create:crafting/kinetics/large_water_wheel"},
+    "#minecraft:planks",
+    '#forge:treated_wood'
+  );
+
+  event.replaceInput({id: "create:crafting/kinetics/mechanical_press"},
+    "minecraft:iron_block",
+    'thermal:steel_block'
+  );
+
+  event.remove({id: "create_new_age:shaped/generator_coil"});
+  event.shaped(
+  Item.of('create_new_age:generator_coil', 1), // arg 1: output
   [
-    ' A ',
-    ' B ', // arg 2: the shape (array of strings)
-    ' C '
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
   ],
   {
-    A: 'create:shaft',
-    B: 'create:andesite_casing',  //arg 3: the mapping object
-    C: 'thermal:steel_block'
-  }
-)
-
-    event.remove({id: "create:crafting/kinetics/large_water_wheel"});
-    event.shaped(
-  Item.of('create:large_water_wheel', 1), // arg 1: output
-  [
-    'AAA',
-    'ABA', // arg 2: the shape (array of strings)
-    'AAA'
-  ],
-  {
-    A: '#forge:treated_wood',
-    B: 'create:water_wheel'  //arg 3: the mapping object
-  }
-)
-
-/*event.recipes.create.mechanical_crafting('create_sa:andesite_exoskeleton_chestplate', 
-  [
-  "ABCBA",
-  "AADAA",
-  "FEAEF"
-  ], {
-    A: 'create:andesite_alloy',
-    B: 'create:shaft',
-    C: 'create:belt_connector',
-    D: 'create_sa:heat_engine',
-    E: '#c:ingots/zinc',
-    F: '#forge:stone'
-  })*/
+    A: 'immersiveengineering:wirecoil_structure_steel',
+    B: 'immersiveengineering:coil_lv',  //arg 3: the mapping object
+    C: 'create:andesite_alloy_block'
+  })
 })
