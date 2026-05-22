@@ -42,6 +42,13 @@
 			x: 3.706802721088465d
 			y: 8.96190476190477d
 		}
+		{
+			id: "28F29F846C54834D"
+			linked_quest: "6F496DC9A766E115"
+			size: 0.85d
+			x: -2.5d
+			y: 10.5d
+		}
 	]
 	quests: [
 		{
@@ -186,7 +193,11 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["32FCC9DCD937E066"]
+			dependencies: [
+				"32FCC9DCD937E066"
+				"6F496DC9A766E115"
+			]
+			dependency_requirement: "one_completed"
 			id: "5829B229883C5738"
 			shape: "rsquare"
 			size: 1.2d

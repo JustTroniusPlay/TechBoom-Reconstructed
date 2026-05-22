@@ -29,6 +29,7 @@
 		{
 			id: "088304EF00FB61C8"
 			linked_quest: "43943D53B8603D29"
+			shape: "diamond"
 			size: 0.6d
 			x: -0.7000000000000002d
 			y: 0.5999999999999996d
@@ -60,6 +61,7 @@
 				"3155C182FC72865E"
 			]
 			id: "0D808399A2E281BC"
+			shape: "diamond"
 			tasks: [{
 				id: "5E8A531F5ED2B677"
 				item: "thermal:upgrade_augment_2"
@@ -71,6 +73,7 @@
 		{
 			dependencies: ["0D808399A2E281BC"]
 			id: "4AD162D4214DFACB"
+			shape: "diamond"
 			tasks: [{
 				id: "462CF174CED05F6C"
 				item: "thermal:upgrade_augment_3"
@@ -82,6 +85,7 @@
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
 			id: "3155C182FC72865E"
+			shape: "rsquare"
 			tasks: [{
 				id: "741F7FE453646B65"
 				item: "thermal:machine_smelter"
@@ -169,6 +173,7 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "120ED2BF66C46BE9"
+			shape: "rsquare"
 			tasks: [{
 				id: "28FA1AFE565966DA"
 				item: "thermal:crude_oil_bucket"
@@ -184,6 +189,7 @@
 			]
 			icon: "thermal:refined_fuel_bucket"
 			id: "46DF54F9A3A6645F"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "7DACF52D38C903C4"
@@ -255,6 +261,7 @@
 			description: ["With help of Pyrolyzer you can get Enriched Coke. Using it in Induction Smeltery with iron you can get new source of Steel."]
 			icon: "thermal:coal_coke"
 			id: "6BA3BF805371E239"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "421DDC903B9F6AE0"
@@ -276,6 +283,7 @@
 			description: ["You can convert rotten flesh to leather in Redstone Furnace."]
 			icon: "minecraft:leather"
 			id: "187D904C784986DE"
+			shape: "hexagon"
 			tasks: [
 				{
 					count: 4L
@@ -296,6 +304,7 @@
 		{
 			dependencies: ["3155C182FC72865E"]
 			id: "1553365BB32E7666"
+			shape: "hexagon"
 			size: 1.2d
 			tasks: [{
 				id: "0AA2C62668AC3827"
@@ -345,6 +354,7 @@
 		{
 			dependencies: ["3155C182FC72865E"]
 			id: "52563AE115ACBF51"
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -373,6 +383,7 @@
 				"52563AE115ACBF51"
 			]
 			id: "21F9764D362E05BD"
+			shape: "hexagon"
 			size: 0.7d
 			tasks: [
 				{
@@ -398,6 +409,7 @@
 		{
 			dependencies: ["1553365BB32E7666"]
 			id: "199167CF567E26BB"
+			shape: "diamond"
 			tasks: [{
 				id: "6DD4D5B639F82401"
 				item: "systeams:boiler_pipe"
@@ -466,6 +478,7 @@
 			dependencies: ["3751A61EDD08EF41"]
 			description: ["You can grow certus quarts inside Crystalizer with full tank of water and charged crystal. It is more convinient and efficent way."]
 			id: "73593A2A2EF304AC"
+			shape: "hexagon"
 			tasks: [{
 				id: "2830AA48A04F1399"
 				item: "ae2:certus_quartz_crystal"
@@ -504,6 +517,7 @@
 				"10D646BACACC9E61"
 			]
 			dependency_requirement: "one_completed"
+			description: ["Universal energy storage cell. Using different upgrades you can change its attributes. It out- and input sides can be configured in the block UI."]
 			id: "518089C9998EBFF8"
 			shape: "diamond"
 			size: 1.5d
@@ -580,7 +594,7 @@
 			]
 			icon: "thermal:device_tree_extractor"
 			id: "4DE3A5EB02DCDC59"
-			shape: "hexagon"
+			shape: "gear"
 			tasks: [
 				{
 					id: "4E67081F5752155F"

@@ -107,6 +107,7 @@
 			]
 			icon: "adchimneys:large_brick_chimney"
 			id: "1A45CB2CCDCAD4DB"
+			shape: "rsquare"
 			subtitle: "Consequences of my inaction"
 			tasks: [{
 				id: "42F84E0C6C8D282D"
@@ -190,6 +191,7 @@
 				}
 			}
 			id: "0232486D4EEE2A9A"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "63CF06A301AB8F52"
@@ -732,6 +734,7 @@
 			description: ["Alloy Kiln can create alloys easily by just using burnabel solid fuel. build 4x4 cube and click with Engineer's Hammer to activate it."]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "10E87B6699909383"
+			shape: "rsquare"
 			size: 1.3d
 			tasks: [
 				{
@@ -872,7 +875,7 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			shape: "diamond"
+			shape: "rsquare"
 			size: 1.2d
 			tasks: [
 				{
@@ -903,7 +906,7 @@
 			description: [
 				"Andesite Alloy being used in all early Create machines and kinetic components."
 				""
-				"Just keep in mind that always good to have more of it so you always can make needed shafts or cogs."
+				"Just keep in mind that it always good to have more of it so you always can make needed shafts or cogs."
 				""
 				"&lSee more in 'Kinetics' and 'Moving Parts' tabs.&r"
 			]
@@ -940,6 +943,7 @@
 				item: "minecraft:leather"
 				type: "item"
 			}]
+			shape: "diamond"
 			subtitle: "Making rotten flesh useful..."
 			tasks: [
 				{
@@ -1301,12 +1305,12 @@
 				item: "forestry:engine_clockwork"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.7999999999999998d
+			x: 4.8d
+			y: -1.5d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
-			description: ["Alloy that needed in some machinery working with hot things."]
+			description: ["Iron and nickel alloy that needed in some machinery working with hot things."]
 			id: "4B31C89E0FA58CE0"
 			shape: "hexagon"
 			size: 0.85d
@@ -1598,6 +1602,7 @@
 		{
 			dependencies: ["69DB58E1CD20ED2B"]
 			id: "1BB3AB8685428FB7"
+			shape: "diamond"
 			tasks: [{
 				id: "08EAFEAA5BE16F17"
 				item: "thermal:tinker_bench"
@@ -1639,6 +1644,7 @@
 		{
 			dependencies: ["1BB3AB8685428FB7"]
 			id: "56D8B89369ABF606"
+			shape: "rsquare"
 			size: 1.2d
 			tasks: [
 				{
@@ -1867,14 +1873,15 @@
 				"Put it next to them and provide with FE."
 			]
 			id: "1D2EA0B12A829837"
+			shape: "diamond"
 			tasks: [{
 				id: "70106F846BC5C2F0"
 				item: "immersiveengineering:furnace_heater"
 				type: "item"
 			}]
 			title: "Free furnaces"
-			x: 4.683163265306128d
-			y: -3.256887755102035d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -2432,7 +2439,8 @@
 				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
 			]
 			id: "016889850869B51A"
-			size: 0.7d
+			shape: "diamond"
+			size: 0.85d
 			tasks: [{
 				id: "1AFF19B5C1CD91F1"
 				item: "thermal:device_rock_gen"
@@ -2912,12 +2920,10 @@
 			y: -6.25d
 		}
 		{
-			dependencies: [
-				"4A8233ADB6406DA9"
-				"69DB58E1CD20ED2B"
-			]
+			dependencies: ["4A8233ADB6406DA9"]
 			description: ["You will need it to convert any form of energy for your main digital storage network. You can use Fluix Cables to transfer energy between components."]
 			id: "799F7F64000A3084"
+			shape: "diamond"
 			tasks: [{
 				id: "7EE3EA9812EAF172"
 				item: "ae2:energy_acceptor"
@@ -2948,6 +2954,7 @@
 			description: ["In the depths of the Nether you can find ore veins containing certus quartz native to hellish landscape. It can be used in some crafting recipe instead of one you farm in meteors."]
 			icon: "gtceu:certus_quartz_gem"
 			id: "7E322C0C7CE5B091"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -3077,7 +3084,11 @@
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
-			description: ["Manual way to make rails and other simple components."]
+			description: [
+				"Manual way to make rails and other simple components."
+				""
+				"&lCheck \"Transportation\" tab.&r"
+			]
 			id: "4DB042DAF83D7A0A"
 			shape: "gear"
 			size: 1.5d
@@ -3121,7 +3132,7 @@
 			description: ["Made out of vines or dandelions. Not cheap, but useful in some equipment."]
 			id: "7BFF886E57F3D543"
 			shape: "hexagon"
-			size: 0.7d
+			size: 0.85d
 			tasks: [
 				{
 					id: "03F71DC4A5E1A1BD"
@@ -3241,6 +3252,20 @@
 			}]
 			x: -0.7d
 			y: -12.6d
+		}
+		{
+			dependencies: ["0A47F74F64457575"]
+			id: "193EDD7B079CF150"
+			shape: "diamond"
+			size: 0.85d
+			subtitle: "No zombies on my lawn!"
+			tasks: [{
+				id: "32547714D137833C"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			x: -2.859013605442172d
+			y: -5.266369047619051d
 		}
 	]
 	title: "Start of the journey"

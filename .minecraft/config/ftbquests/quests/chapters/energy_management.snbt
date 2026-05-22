@@ -8,12 +8,6 @@
 	order_index: 2
 	quest_links: [
 		{
-			id: "7668476A3236014C"
-			linked_quest: "644DA6D29FB50DA8"
-			x: -0.5107142857142919d
-			y: -6.178571428571431d
-		}
-		{
 			id: "13DF990FC49D788F"
 			linked_quest: "69DB58E1CD20ED2B"
 			shape: "pentagon"
@@ -50,6 +44,7 @@
 		{
 			id: "792420F3FC228E88"
 			linked_quest: "799F7F64000A3084"
+			shape: "rsquare"
 			size: 0.7d
 			x: -0.35d
 			y: -1.05d
@@ -73,6 +68,7 @@
 		{
 			id: "6C5FF9137EEF7836"
 			linked_quest: "15B5CF1F309CA82A"
+			shape: "hexagon"
 			size: 0.5d
 			x: 2.209693877551018d
 			y: 1.3961734693877546d
@@ -103,8 +99,17 @@
 		{
 			id: "0DB3AC2A01014A9A"
 			linked_quest: "600DDB0FDB97CFFA"
+			shape: "diamond"
 			x: 4.0d
 			y: -0.5d
+		}
+		{
+			id: "1BC52A2806E4CFC0"
+			linked_quest: "7A0C939E0FE540EC"
+			shape: "gear"
+			size: 0.5d
+			x: 4.035714285714292d
+			y: 1.0446428571428683d
 		}
 	]
 	quests: [
@@ -191,7 +196,6 @@
 		{
 			dependencies: [
 				"56766749439CD7E0"
-				"7A0C939E0FE540EC"
 				"3E885ACD84B8FF4F"
 				"006F0DFB4E9FE795"
 			]
@@ -399,6 +403,7 @@
 			description: ["By using some gold or electrum you can make big brother of small connector. It can transfer two times more energy and by 8 blocks away! "]
 			icon: "createaddition:large_connector"
 			id: "1AB41CA63D607F37"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "171EC6248A57A1D3"
@@ -502,6 +507,7 @@
 		{
 			dependencies: ["0320062681E3AE99"]
 			id: "12B8A0C2A9115587"
+			subtitle: "Forge Energy, roll out!"
 			tasks: [
 				{
 					id: "3AC91B2561C1CDC8"
@@ -834,19 +840,18 @@
 			]
 			icon: "create_new_age:generator_coil"
 			id: "59DE400FAB603D8A"
+			rewards: [{
+				count: 12
+				id: "7D45C659A4498194"
+				item: "create_new_age:magnetite_block"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [
 				{
 					id: "269949462ECBD686"
 					item: "create_new_age:generator_coil"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "24924A62ABEF622E"
-					item: { Count: 12, id: "create_new_age:magnetite_block" }
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -867,8 +872,8 @@
 				item: "create_new_age:redstone_magnet"
 				type: "item"
 			}]
-			x: 0.9171768707483166d
-			y: -7.6892006802721475d
+			x: 0.97312030075188d
+			y: -7.6584698353025615d
 		}
 		{
 			dependencies: ["59DE400FAB603D8A"]
@@ -879,8 +884,8 @@
 				item: "create_new_age:layered_magnet"
 				type: "item"
 			}]
-			x: 0.1531462585033978d
-			y: -7.363945578231311d
+			x: 0.16309523809523796d
+			y: -6.6920537952023125d
 		}
 		{
 			dependencies: ["59DE400FAB603D8A"]
@@ -891,8 +896,8 @@
 				item: "create_new_age:fluxuated_magnetite"
 				type: "item"
 			}]
-			x: 1.741666666666677d
-			y: -7.3096088435374575d
+			x: 1.7630952380952394d
+			y: -6.73014903329755d
 		}
 		{
 			dependencies: ["0FBD8C5E61338813"]
@@ -903,8 +908,37 @@
 				item: "create_new_age:netherite_magnet"
 				type: "item"
 			}]
-			x: 0.9253401360544258d
-			y: -8.423894557823171d
+			x: 0.97312030075188d
+			y: -8.410349534550694d
+		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"521B2505E5C81E16"
+			]
+			description: ["Simple water wheels that convert movement of water into energy. You can put max to 3 wheels on one kinetic dynamo. "]
+			id: "4C8C44388703BD22"
+			tasks: [{
+				count: 3L
+				id: "77B2B70E6B74701B"
+				item: "immersiveengineering:watermill"
+				type: "item"
+			}]
+			title: "Water Energy"
+			x: 3.1986842105263165d
+			y: 0.8227331722162319d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: [""]
+			id: "644DA6D29FB50DA8"
+			tasks: [{
+				id: "62222DF3CA4498D7"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: 4.73251879699248d
+			y: 1.153560239885401d
 		}
 	]
 	title: "Energy Management"

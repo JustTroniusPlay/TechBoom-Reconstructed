@@ -70,6 +70,7 @@
 			description: ["Multiblock version of alloy smeltery."]
 			icon: "steamadditions:steam_foundry"
 			id: "5303D30192D7463A"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "56271D842D9CAE50"
@@ -117,6 +118,7 @@
 			hide_dependent_lines: true
 			icon: "gtceu:steam_machine_casing"
 			id: "319CEF2BDD679CF5"
+			shape: "square"
 			tasks: [{
 				id: "00B3AF4C6DEC8483"
 				title: "Wall Sharing!"
@@ -129,7 +131,7 @@
 			dependencies: ["15C30310B03E4F79"]
 			description: [""]
 			id: "156FF337D16F88B3"
-			shape: "diamond"
+			shape: "rsquare"
 			tasks: [{
 				id: "41FA3EBCCC16C424"
 				item: "gtceu:lp_steam_compressor"
@@ -148,7 +150,7 @@
 				"You also can throw them into the cauldron with water manually. "
 			]
 			id: "7DC8D43AB8C12697"
-			shape: "diamond"
+			shape: "rsquare"
 			tasks: [{
 				id: "33565194B1EBDA18"
 				item: "gtceu:lp_steam_macerator"
@@ -165,6 +167,7 @@
 			description: ["Can grind multiplie items at the same time."]
 			icon: "gtceu:steam_grinder"
 			id: "6D95B9D2E5EB331E"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "59D2D09C3865912F"
@@ -201,6 +204,7 @@
 			description: ["Will wash your dusts and different items automatically on grand scale."]
 			icon: "steamadditions:steam_separator"
 			id: "37EE9AB51014DCBA"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "505700760D3382BA"
@@ -235,6 +239,7 @@
 		{
 			dependencies: ["15C30310B03E4F79"]
 			id: "625BBC103C7A0FCE"
+			shape: "diamond"
 			tasks: [{
 				id: "3CB972427251F8DE"
 				item: "gtceu:lp_steam_furnace"
@@ -252,6 +257,7 @@
 			hide_dependent_lines: true
 			icon: "gtceu:steam_oven"
 			id: "35DDCEC2CECEF4D6"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "25EE2E50D1FC18AA"
@@ -292,6 +298,7 @@
 		{
 			dependencies: ["15C30310B03E4F79"]
 			id: "793ABF03A8827044"
+			shape: "diamond"
 			tasks: [{
 				id: "6AF61FE6D49FBB10"
 				item: "gtceu:lp_steam_forge_hammer"
@@ -335,6 +342,7 @@
 			]
 			icon: "railcraft:solid_fueled_firebox"
 			id: "6AF4C17E9C8FF9DC"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "5257950F383FFE22"
@@ -362,6 +370,7 @@
 			dependencies: ["6AF4C17E9C8FF9DC"]
 			description: ["Uses lava and creosote oil instead of solid fuel."]
 			id: "311D638942ACCDBD"
+			shape: "diamond"
 			size: 0.6d
 			tasks: [{
 				id: "35AF971D08CA0D94"
@@ -375,11 +384,11 @@
 			dependencies: ["156FF337D16F88B3"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Wrought iron is tougher version of vanilla metal. It will be used in low voltage machinery, but for now it can serve you to make stronger tools."
+				"Wrought iron is tougher version of vanilla metal. It will be used in &olow voltage machinery&r, but for now it can serve you &nto make stronger tools&r."
 				""
-				"Its making procces kinda tricky tho. You need to smelt iron nuggets to get wrought iron one and then use compressor or alloy smelter with ingot casting mold to get them."
+				"Its making procces kinda tricky tho. You need to &lsmelt iron nuggets&r to get wrought iron one and then &luse compressor or alloy smelter&r with ingot casting mold to get them."
 				""
-				"Additionally if you will use Wrought Iron in Blast Furnace instead of normal one, the blasting speed will increase!"
+				"Additionally if you will &ouse Wrought Iron in Blast Furnace&r instead of normal one, the &oblasting speed will increase!&r"
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "5C4DA67C07C8E9B7"
@@ -449,18 +458,6 @@
 			y: 0.5714285714285623d
 		}
 		{
-			dependencies: ["156FF337D16F88B3"]
-			id: "193EDD7B079CF150"
-			subtitle: "No zombies on my lawn!"
-			tasks: [{
-				id: "32547714D137833C"
-				item: "torchmaster:megatorch"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -2.0d
-		}
-		{
 			dependencies: [
 				"5361A9865C6547F4"
 				"37EE9AB51014DCBA"
@@ -468,6 +465,7 @@
 			dependency_requirement: "one_completed"
 			icon: "gtceu:rubber_ingot"
 			id: "5771754309EAFB99"
+			shape: "hexagon"
 			size: 1.0d
 			tasks: [
 				{
@@ -567,6 +565,8 @@
 			]
 			description: ["Upgrade to steam oven with steel. Use less space, accepts items and steam from all directions and have bigger items internal buffer. Will smelt 9 items at a time."]
 			id: "6103B2A9C790E8EF"
+			shape: "diamond"
+			size: 1.2d
 			tasks: [{
 				id: "793CF622DA144ED2"
 				item: "railcraft:steam_oven"
@@ -580,6 +580,7 @@
 			dependencies: ["7A0C939E0FE540EC"]
 			description: ["Every previous type of boiler can be upgraded with steel."]
 			id: "4A33371DB94DFD62"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "5AFF08EF595FA079"
@@ -802,8 +803,9 @@
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
+			description: ["With Tinker's Anvil at your disposal now you can make more different custom tools."]
 			id: "719A86D87C805DEB"
-			shape: "diamond"
+			shape: "rsquare"
 			size: 1.2d
 			tasks: [{
 				id: "4C5D614C862D962E"

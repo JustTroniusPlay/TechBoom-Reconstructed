@@ -10,6 +10,7 @@
 		{
 			id: "1F2DAE03F94E9D08"
 			linked_quest: "16550070AD851335"
+			shape: "pentagon"
 			x: 2.0d
 			y: -0.5d
 		}
@@ -23,6 +24,7 @@
 		{
 			id: "474A4F30B171898A"
 			linked_quest: "4DB042DAF83D7A0A"
+			shape: "gear"
 			size: 1.5d
 			x: -1.5d
 			y: -3.0d
@@ -37,6 +39,7 @@
 		{
 			id: "25CC9A8A3CA31828"
 			linked_quest: "52563AE115ACBF51"
+			shape: "hexagon"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -399,6 +402,7 @@
 				item: "create:track_station"
 				type: "item"
 			}]
+			shape: "rsquare"
 			size: 1.4d
 			tasks: [
 				{
@@ -862,7 +866,7 @@
 		{
 			dependencies: ["7DD34728381D1555"]
 			id: "62EFB613F0C8BAA0"
-			shape: "hexagon"
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [
 				{
@@ -1240,6 +1244,7 @@
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
 			id: "1896AD265E453653"
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
 				id: "25F7284557993388"

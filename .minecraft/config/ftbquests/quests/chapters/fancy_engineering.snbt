@@ -12,7 +12,7 @@
 		shape: "gear"
 		size: 1.5d
 		x: -0.75d
-		y: 3.35d
+		y: 3.75d
 	}]
 	quests: [
 		{
@@ -79,6 +79,7 @@
 				"4DB042DAF83D7A0A"
 			]
 			id: "48BC04D05B89C7EA"
+			shape: "rsquare"
 			tasks: [{
 				id: "4C2630267ED5A26F"
 				item: "railcraft:powered_rolling_machine"
@@ -86,20 +87,6 @@
 			}]
 			x: -0.7857142857142847d
 			y: 1.225000000000005d
-		}
-		{
-			dependencies: [
-				"7A0C939E0FE540EC"
-				"3CADA01B0663BC89"
-			]
-			id: "644DA6D29FB50DA8"
-			tasks: [{
-				id: "62222DF3CA4498D7"
-				item: "immersiveengineering:thermoelectric_generator"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 2.0d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -182,19 +169,6 @@
 			title: "Wild Weapon"
 			x: 2.0d
 			y: 9.899999999999999d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			id: "4C8C44388703BD22"
-			tasks: [{
-				count: 3L
-				id: "77B2B70E6B74701B"
-				item: "immersiveengineering:watermill"
-				type: "item"
-			}]
-			title: "Water Energy"
-			x: 0.5d
-			y: 2.0d
 		}
 		{
 			dependencies: ["164EFF8B7B80321D"]
