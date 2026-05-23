@@ -18,6 +18,7 @@
 		{
 			id: "4800D7C6F6EC0B89"
 			linked_quest: "7D3FA2BBD1033FE9"
+			shape: "diamond"
 			x: 3.0d
 			y: -4.5d
 		}
@@ -30,14 +31,23 @@
 		{
 			id: "2116D0F5A7431D33"
 			linked_quest: "784AEC9BF8755F95"
-			x: 4.0d
-			y: -4.5d
+			size: 0.7d
+			x: 3.75d
+			y: -3.25d
 		}
 		{
 			id: "7B95BDC607E0AB2F"
 			linked_quest: "08F0E06F30471E3E"
+			x: 4.75d
+			y: -2.25d
+		}
+		{
+			id: "453D25EC705F69D3"
+			linked_quest: "540D62BE372AE7D1"
+			shape: "gear"
+			size: 0.6d
 			x: 4.5d
-			y: -3.5d
+			y: -3.5999999999999996d
 		}
 	]
 	quests: [
@@ -54,6 +64,7 @@
 				item: "create:mechanical_pump"
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [{
 				id: "0DF17C17F177D4C1"
 				item: "create:mechanical_pump"
@@ -124,6 +135,7 @@
 				"Use Engineer's Hammer to configure input and output sides."
 			]
 			id: "62F294152390992E"
+			shape: "diamond"
 			tasks: [{
 				id: "380D784BB1E618E7"
 				item: "immersiveengineering:fluid_pump"
@@ -340,7 +352,7 @@
 					type: "item"
 				}
 			]
-			shape: "diamond"
+			shape: "rsquare"
 			tasks: [
 				{
 					count: 4L
@@ -378,6 +390,7 @@
 			dependencies: ["332E6B2C638AE656"]
 			description: ["Work only with GregTech pipes."]
 			id: "724160D9F6565F29"
+			shape: "diamond"
 			tasks: [{
 				id: "0C26B01F98328560"
 				item: "ulvcovm:ulv_electric_pump"
@@ -524,8 +537,8 @@
 				}
 			]
 			title: "Better Buckets"
-			x: 3.5d
-			y: -2.0d
+			x: 3.75d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -540,8 +553,8 @@
 				item: "immersiveengineering:metal_barrel"
 				type: "item"
 			}]
-			x: 4.440476190476197d
-			y: -2.0238095238095326d
+			x: 3.75d
+			y: -1.2999999999999998d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -638,6 +651,7 @@
 				"Use bucket with fluid in the UI to configure what liquid will go where."
 			]
 			id: "3C8A526DF1557AE8"
+			shape: "diamond"
 			tasks: [{
 				id: "48F362149289D355"
 				item: "immersiveengineering:fluid_sorter"
@@ -655,8 +669,8 @@
 				item: "immersivetechnology:barrel_steel"
 				type: "item"
 			}]
-			x: 4.75d
-			y: -2.5d
+			x: 3.75d
+			y: -0.75d
 		}
 		{
 			dependencies: ["7931B771167AFDFE"]
@@ -700,8 +714,8 @@
 				item: "ulvcovm:ulv_fluid_regulator"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -9.1d
+			x: 3.2704081632653015d
+			y: -8.974489795918362d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -743,6 +757,7 @@
 			]
 			description: ["Give ME system a way to store fluids."]
 			id: "48A9933056B21984"
+			shape: "diamond"
 			tasks: [{
 				id: "422A3643AC8CBA5A"
 				item: {
@@ -752,8 +767,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -5.0d
+			x: 4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]

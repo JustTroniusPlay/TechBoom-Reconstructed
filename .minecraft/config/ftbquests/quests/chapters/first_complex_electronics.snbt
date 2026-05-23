@@ -8,7 +8,7 @@
 	quest_links: [{
 		id: "7AA4342B1CC816C1"
 		linked_quest: "1C59476B07336B42"
-		shape: "pentagon"
+		shape: "gear"
 		size: 1.5d
 		x: 2.5d
 		y: -0.5d

@@ -5,28 +5,82 @@
 	group: "495B816819C83ED9"
 	icon: "mekanism:alloy_infused"
 	id: "514529C4F39E6ACB"
-	order_index: 6
-	quest_links: [{
-		id: "3699CE0C026189E1"
-		linked_quest: "5169668687940129"
-		shape: "gear"
-		size: 1.5d
-		x: 2.5d
-		y: -1.5d
-	}]
-	quests: [{
-		dependencies: [
-			"5169668687940129"
-			"69DB58E1CD20ED2B"
-		]
-		id: "1C2F6D48F407A95D"
-		tasks: [{
-			id: "3D93AE5B8EB3BCAF"
-			item: "mekanism:alloy_infused"
-			type: "item"
-		}]
-		x: 2.5d
-		y: 0.0d
-	}]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5169668687940129"
+				"69DB58E1CD20ED2B"
+			]
+			id: "1C2F6D48F407A95D"
+			shape: "hexagon"
+			tasks: [{
+				id: "3D93AE5B8EB3BCAF"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25B2030958956699"]
+			id: "5169668687940129"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6EB7A50C08AEA2E0"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 2.5119047619047663d
+			y: -1.321428571428573d
+		}
+		{
+			dependencies: ["1C2F6D48F407A95D"]
+			id: "1EA14587D11D38CE"
+			tasks: [{
+				id: "2BEF1448BC6EC577"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: 3.5119047619047663d
+			y: 0.6785714285714306d
+		}
+		{
+			dependencies: ["1C2F6D48F407A95D"]
+			id: "27E0F81FE63D2E85"
+			tasks: [{
+				id: "648C61E6740F0E1E"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: 2.5119047619047663d
+			y: 1.1785714285714306d
+		}
+		{
+			dependencies: ["1C2F6D48F407A95D"]
+			id: "4252FD2C3076FC2E"
+			tasks: [{
+				id: "6331E20345C82C18"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			x: 1.5119047619047663d
+			y: 0.6785714285714306d
+		}
+		{
+			dependencies: ["4252FD2C3076FC2E"]
+			id: "43A2DDA0E123E8D0"
+			size: 0.7d
+			tasks: [{
+				id: "4455D4C4BCE7ECDF"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: 1.5440476190476176d
+			y: 1.533928571428575d
+		}
+	]
 	title: "Advanced Materials"
 }

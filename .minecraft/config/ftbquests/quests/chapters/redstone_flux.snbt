@@ -16,16 +16,8 @@
 		}
 	}
 	id: "45EECEB7C05F8905"
-	order_index: 5
+	order_index: 4
 	quest_links: [
-		{
-			id: "183BD844B51E68E0"
-			linked_quest: "2798CCE5B1DE21DA"
-			shape: "gear"
-			size: 1.5d
-			x: 2.499999999999999d
-			y: -0.8499999999999996d
-		}
 		{
 			id: "088304EF00FB61C8"
 			linked_quest: "43943D53B8603D29"
@@ -41,19 +33,32 @@
 			x: 0.35d
 			y: 3.15d
 		}
+		{
+			id: "164196E53947B6E2"
+			linked_quest: "382680D8EC3065F3"
+			shape: "hexagon"
+			size: 0.85d
+			x: 0.5102040816326507d
+			y: -3.6632653061224474d
+		}
 	]
 	quests: [
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
-			hide_dependent_lines: true
+			description: [
+				"Will grind down things into dusts with additonal outputs. It will double the outcome if you use ore blocks. "
+				""
+				"Pulverizer can &ogrind down Create resource&r blocks like &oCrushing Wheels&r."
+			]
 			id: "766AF1AE840A63FD"
+			shape: "diamond"
 			tasks: [{
 				id: "1F9BC542641DB9E1"
 				item: "thermal:machine_pulverizer"
 				type: "item"
 			}]
-			x: -0.7000000000000002d
-			y: -3.6999999999999993d
+			x: 0.5d
+			y: -2.8d
 		}
 		{
 			dependencies: [
@@ -84,6 +89,11 @@
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
+			description: [
+				"Specialized in making advanced alloys and getting additional items out of some ores."
+				""
+				"Can even recycle plates and smelt dusts back into ingots. "
+			]
 			id: "3155C182FC72865E"
 			shape: "rsquare"
 			tasks: [{
@@ -145,26 +155,29 @@
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
+			description: ["FE powered furnace and thats about it."]
 			id: "5B9B2FD0295FF131"
-			size: 1.3d
+			size: 1.0d
 			tasks: [{
 				id: "12026B543DBAE1EF"
 				item: "thermal:machine_furnace"
 				type: "item"
 			}]
-			x: 2.4544217687074763d
-			y: -4.029421768707461d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
+			description: ["Tired of getting more wood by hand? Just use sawmill to automate the procces!"]
 			id: "42EE9B0972E68F0D"
+			shape: "diamond"
 			tasks: [{
 				id: "38D3463798C8B544"
 				item: "thermal:machine_sawmill"
 				type: "item"
 			}]
-			x: -0.7000000000000002d
-			y: -2.1999999999999997d
+			x: 0.5d
+			y: -1.7999999999999998d
 		}
 		{
 			dependencies: [
@@ -190,6 +203,7 @@
 			icon: "thermal:refined_fuel_bucket"
 			id: "46DF54F9A3A6645F"
 			shape: "hexagon"
+			size: 1.2d
 			tasks: [
 				{
 					id: "7DACF52D38C903C4"
@@ -208,53 +222,99 @@
 				}
 			]
 			title: "Refined Oil"
-			x: -0.20000000000000018d
-			y: 1.3000000000000007d
+			x: -0.8333333333333357d
+			y: 1.638350340136057d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
-			id: "1425D94DC58182E5"
-			tasks: [{
-				id: "1B62D4ED538A6F70"
-				item: "thermal:machine_insolator"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
+			description: ["Can make plates by default, but with use of different dies can pack and form things."]
+			icon: "thermal:machine_press"
 			id: "030F34B864E08816"
-			tasks: [{
-				id: "7F5DB119F6C0BC89"
-				item: "thermal:machine_press"
-				type: "item"
-			}]
-			x: 0.7999999999999998d
-			y: -3.6999999999999993d
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7F5DB119F6C0BC89"
+					item: "thermal:machine_press"
+					type: "item"
+				}
+				{
+					id: "1F4082946B022DB8"
+					item: "thermal:press_packing_3x3_die"
+					type: "item"
+				}
+				{
+					id: "7795232C3398A9B7"
+					item: "thermal:press_unpacking_die"
+					type: "item"
+				}
+				{
+					id: "46866A3C72AA447B"
+					item: "thermal:press_gear_die"
+					type: "item"
+				}
+				{
+					id: "02772F23BDEED4F1"
+					item: "thermal:press_coin_die"
+					type: "item"
+				}
+				{
+					id: "245005D988487C8E"
+					item: "thermal:press_packing_2x2_die"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -2.3d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
+			description: [
+				"Extract liquids from blocks and items. "
+				""
+				"Most notable uses are getting lava from solid blocks and water from some items. But additionally it is a way to get liquids to alloy &oEnderium&r and &oLumium&r in Tinker's Smeltery."
+			]
 			id: "4F3810AFE024D92E"
+			shape: "diamond"
+			size: 1.2d
 			tasks: [{
 				id: "00ED23394CFB1C4E"
 				item: "thermal:machine_crucible"
 				type: "item"
 			}]
-			title: "Industrial Smeting"
-			x: 4.3d
-			y: 2.3000000000000007d
+			title: "Extracting juices"
+			x: 4.440136054421785d
+			y: -0.9269557823129162d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
+			description: ["Shape your liquids into various shapes!"]
+			icon: "thermal:machine_chiller"
 			id: "2ABA250ADE658FF3"
-			tasks: [{
-				id: "502E9403F1EC58BD"
-				item: "thermal:machine_chiller"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.0d
+			shape: "diamond"
+			tasks: [
+				{
+					id: "502E9403F1EC58BD"
+					item: "thermal:machine_chiller"
+					type: "item"
+				}
+				{
+					id: "2837282FC6D05A74"
+					item: "thermal:chiller_ball_cast"
+					type: "item"
+				}
+				{
+					id: "33EB86358A6EA85F"
+					item: "thermal:chiller_ingot_cast"
+					type: "item"
+				}
+				{
+					id: "423685EEAE037C23"
+					item: "thermal:chiller_rod_cast"
+					type: "item"
+				}
+			]
+			x: 3.940136054421785d
+			y: -0.4269557823129162d
 		}
 		{
 			dependencies: ["420669759AE11743"]
@@ -262,6 +322,7 @@
 			icon: "thermal:coal_coke"
 			id: "6BA3BF805371E239"
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [
 				{
 					id: "421DDC903B9F6AE0"
@@ -298,7 +359,7 @@
 				}
 			]
 			title: "Another Leather Recipe"
-			x: 3.5d
+			x: 2.5d
 			y: -5.0d
 		}
 		{
@@ -316,17 +377,19 @@
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
+			description: ["Can apply liquids to different items or just fill fluid containers."]
 			id: "2B05CC4B1B1A5914"
+			shape: "diamond"
 			tasks: [{
 				id: "67033ADFE66C1124"
 				item: "thermal:machine_bottler"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.5d
+			x: 3.940136054421785d
+			y: -1.4269557823129162d
 		}
 		{
-			dependencies: ["2798CCE5B1DE21DA"]
+			dependencies: ["52563AE115ACBF51"]
 			icon: "thermal:machine_crystallizer"
 			id: "3751A61EDD08EF41"
 			tasks: [
@@ -348,8 +411,8 @@
 					type: "item"
 				}
 			]
-			x: -2.7d
-			y: -2.0d
+			x: -5.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3155C182FC72865E"]
@@ -471,8 +534,8 @@
 				item: "thermal:dynamo_numismatic"
 				type: "item"
 			}]
-			x: 1.4000000000000012d
-			y: -4.5d
+			x: 1.282993197278934d
+			y: -3.0840986394557746d
 		}
 		{
 			dependencies: ["3751A61EDD08EF41"]
@@ -485,30 +548,33 @@
 				type: "item"
 			}]
 			title: "Crystalization"
-			x: -3.7d
-			y: -2.0d
+			x: -6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
 			id: "1A6E6CC618DD8F57"
+			shape: "diamond"
+			size: 1.2d
 			tasks: [{
 				id: "56253D279396132E"
 				item: "thermal:machine_crafter"
 				type: "item"
 			}]
-			x: 5.3d
-			y: 0.3000000000000007d
+			x: 0.0d
+			y: -2.3d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
+			description: ["Autimomatic potion crafter."]
 			id: "6C266F8B01ED6B4D"
 			tasks: [{
 				id: "539A4920B4C741D2"
 				item: "thermal:machine_brewer"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.0d
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -663,12 +729,13 @@
 				item: "thermal:machine_efficiency_augment"
 				type: "item"
 			}]
-			x: -4.55d
-			y: 1.4d
+			x: -3.85d
+			y: 1.75d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
 			id: "35FF2B9F76137416"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "5E250FE15E9C7986"
@@ -676,8 +743,8 @@
 				type: "item"
 			}]
 			title: "Speed Up"
-			x: 1.1778911564625716d
-			y: -0.24710884353741136d
+			x: 3.15d
+			y: 1.0499999999999998d
 		}
 		{
 			dependencies: ["1553365BB32E7666"]
@@ -712,54 +779,92 @@
 				item: "thermal:machine_cycle_augment"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: -3.85d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
 			id: "03F6555E77AF2889"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "633E0DD0954E9402"
 				item: "thermal:machine_output_augment"
 				type: "item"
 			}]
-			x: 2.0142857142857196d
-			y: -2.616751700680261d
+			x: 3.4999999999999996d
+			y: 0.7d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
 			id: "7EEE707B42E1A4E8"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "02844D589A950455"
 				item: "thermal:machine_catalyst_augment"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.5d
+			x: 3.4999999999999996d
+			y: 1.4d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
 			id: "25710F929BEF2C99"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "6B5DB53DA5930BAD"
 				item: "thermal:machine_null_augment"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.0d
+			x: 3.85d
+			y: 1.0499999999999998d
 		}
 		{
-			dependencies: ["2798CCE5B1DE21DA"]
+			dependencies: [
+				"27D02A3ECE518CCE"
+				"52563AE115ACBF51"
+			]
+			id: "1425D94DC58182E5"
+			tasks: [{
+				id: "1B62D4ED538A6F70"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25B2030958956699"]
+			description: [
+				"Essential component for almost every Thermal machinery."
+				""
+				"&lFollow 'Redstone Machinery' tab for Thermal Machinery.&r"
+			]
+			id: "2798CCE5B1DE21DA"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6B8E234A47BC77E6"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: 2.6190476190476204d
+			y: -0.9024659863945388d
+		}
+		{
+			dependencies: [
+				"2798CCE5B1DE21DA"
+				"69DB58E1CD20ED2B"
+			]
 			id: "0B9322FD2037AEB3"
 			tasks: [{
 				id: "4644B9612C1340C7"
 				item: "rftoolspower:coalgenerator"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: -3.0d
 		}
 	]

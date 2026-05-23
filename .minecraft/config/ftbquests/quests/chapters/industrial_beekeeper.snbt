@@ -173,6 +173,7 @@
 				}
 			}
 			id: "3F3FC863FA058BDF"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "3C599D936254CBE8"
@@ -224,15 +225,20 @@
 				type: "checkmark"
 			}]
 			title: "Beekeeper reading"
-			x: 1.5464285714285708d
-			y: -4.050000000000008d
+			x: 1.408163265306115d
+			y: -3.9811224489795976d
 		}
 		{
 			dependencies: ["3F3FC863FA058BDF"]
 			description: [
 				"New house for your bees where they will produce honey combs. To start place Drone and Princess in left slots so Queen can be created."
 				""
-				"Bee Queen will die overtime, producing resources in Bee House. In the end she will leave drones and another princesses, so you can expand your bee garden."
+				"Bee Queen will die overtime, producing resources in Bee House. In the end she will leave drones and another princesses, so you can continue your bee garden."
+				""
+				"{@pagebreak}"
+				"Bee require a suitable nviroment for themselves: fitting biome and flowers around the hive."
+				""
+				"If "
 			]
 			id: "693B43DD699B1707"
 			tasks: [{
@@ -240,7 +246,7 @@
 				item: "forestry:bee_house"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -5.5d
 		}
 		{
@@ -258,34 +264,40 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["693B43DD699B1707"]
+			dependencies: ["3F3FC863FA058BDF"]
+			description: ["After your breaking hives session you get some amount of honeycombs. To procces them use Centrifuge, the resulting materials will be honey drops and beeswax."]
 			id: "0A1E7B5B3F0D9F74"
 			tasks: [{
 				id: "1CE2078C5ED64FF9"
 				item: "forestry:centrifuge"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: -5.5d
 		}
 		{
-			dependencies: ["693B43DD699B1707"]
-			id: "2C30E1268B84535A"
-			size: 0.7d
-			tasks: [{
-				id: "3ECC31CA05A842F0"
-				item: {
-					Count: 1
-					id: "forestry:portable_alyzer"
-					tag: {
-						Charges: 0
-						Slots: { }
-						UID: 1994975654
-					}
+			dependencies: [
+				"0A1E7B5B3F0D9F74"
+				"693B43DD699B1707"
+			]
+			description: ["Will consume Honey Drops to tell you information about bee habitable zones."]
+			icon: "forestry:portable_alyzer"
+			id: "34B155B4FCA71D5A"
+			tasks: [
+				{
+					id: "05958303C47ECD2A"
+					item: "forestry:portable_alyzer"
+					type: "item"
 				}
-				type: "item"
-			}]
-			x: 1.0d
+				{
+					id: "75884E9654A24B2A"
+					item: "forestry:analyzer"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Bee, where you come from?"
+			x: 0.5d
 			y: -6.5d
 		}
 	]

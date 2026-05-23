@@ -42,13 +42,13 @@ ServerEvents.recipes(event => {
   kiln(
     "create:andesite_alloy",
     "minecraft:andesite",
-    "minecraft:iron_nugget", 4,
+    "minecraft:iron_nugget", 2,
     100)
 
   kiln(
     "create:andesite_alloy",
     "minecraft:andesite",
-    "create:zinc_nugget", 2,
+    "create:zinc_nugget", 1,
     60)
 
   kiln(

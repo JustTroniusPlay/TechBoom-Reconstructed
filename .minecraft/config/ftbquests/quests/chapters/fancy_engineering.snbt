@@ -367,6 +367,35 @@
 			x: 0.0d
 			y: 15.0d
 		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"521B2505E5C81E16"
+			]
+			description: ["Simple water wheels that convert movement of water into energy. You can put max to 3 wheels on one kinetic dynamo. "]
+			id: "4C8C44388703BD22"
+			tasks: [{
+				count: 3L
+				id: "77B2B70E6B74701B"
+				item: "immersiveengineering:watermill"
+				type: "item"
+			}]
+			title: "Water Energy"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: [""]
+			id: "644DA6D29FB50DA8"
+			tasks: [{
+				id: "62222DF3CA4498D7"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
 	]
 	title: "Fancy Engineering"
 }

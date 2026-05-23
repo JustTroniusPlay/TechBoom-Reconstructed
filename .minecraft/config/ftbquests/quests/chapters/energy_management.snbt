@@ -46,39 +46,8 @@
 			linked_quest: "799F7F64000A3084"
 			shape: "rsquare"
 			size: 0.7d
-			x: -0.35d
-			y: -1.05d
-		}
-		{
-			id: "35FD0723E161CAA4"
-			linked_quest: "4B31C89E0FA58CE0"
-			shape: "hexagon"
-			size: 0.5d
-			x: 6.5d
-			y: -1.5d
-		}
-		{
-			id: "1ABDF46B5C427E58"
-			linked_quest: "15C30310B03E4F79"
-			shape: "gear"
-			size: 0.5d
-			x: 7.5d
-			y: -0.75d
-		}
-		{
-			id: "6C5FF9137EEF7836"
-			linked_quest: "15B5CF1F309CA82A"
-			shape: "hexagon"
-			size: 0.5d
-			x: 2.209693877551018d
-			y: 1.3961734693877546d
-		}
-		{
-			id: "1D6BF2DC9359B587"
-			linked_quest: "04A0F70827AA6155"
-			size: 0.5d
-			x: 6.5d
-			y: -0.75d
+			x: -1.4d
+			y: 2.8d
 		}
 		{
 			id: "6C868A007218CC75"
@@ -87,29 +56,6 @@
 			size: 0.85d
 			x: -3.55d
 			y: 1.4d
-		}
-		{
-			id: "2B333327A7D62BA8"
-			linked_quest: "27D02A3ECE518CCE"
-			shape: "pentagon"
-			size: 0.5d
-			x: 8.25d
-			y: 2.0d
-		}
-		{
-			id: "0DB3AC2A01014A9A"
-			linked_quest: "600DDB0FDB97CFFA"
-			shape: "diamond"
-			x: 4.0d
-			y: -0.5d
-		}
-		{
-			id: "1BC52A2806E4CFC0"
-			linked_quest: "7A0C939E0FE540EC"
-			shape: "gear"
-			size: 0.5d
-			x: 4.035714285714292d
-			y: 1.0446428571428683d
 		}
 	]
 	quests: [
@@ -588,8 +534,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.5d
+			x: -2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4ED512F235419F02"]
@@ -603,8 +549,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.5d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["518089C9998EBFF8"]
@@ -644,193 +590,14 @@
 			y: -1.4285714285714306d
 		}
 		{
-			dependencies: [
-				"4B31C89E0FA58CE0"
-				"40C415EF0BDE779C"
-			]
-			description: ["Will use lava to generate energy."]
-			id: "4972940DA0DA30B4"
-			tasks: [{
-				id: "13E528561DE1E6B5"
-				item: "thermal:dynamo_magmatic"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"15C30310B03E4F79"
-				"4B31C89E0FA58CE0"
-			]
-			description: ["Will convert any steam into Forge Energy units and by itself don't generate pollution."]
-			id: "4EC3B664D62760BE"
-			size: 1.0d
-			tasks: [{
-				id: "12A8DDB8EEE3B3E8"
-				item: "systeams:steam_dynamo"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"15B5CF1F309CA82A"
-				"40C415EF0BDE779C"
-			]
-			description: [
-				"Compression dynamo can consume creosote and generate Forge Energy units. "
-				""
-				"It can be useful way to get a little bit more energy and spend Creosote if you have too much if it. "
-			]
-			id: "1FB9F832D1214239"
-			tasks: [{
-				id: "7DBAE07870657D9A"
-				item: "thermal:dynamo_compression"
-				type: "item"
-			}]
-			title: "Creosote to energy"
-			x: 6.5d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"15B5CF1F309CA82A"
-				"69DB58E1CD20ED2B"
-			]
-			description: [
-				"Treated planks can be crafted into Windmills. They will generate energy passively."
-				""
-				"Different weather will reduce or decrease energy output of Windmill. Building another Windmill of any type in close proximity (up to 7 blocks in front of it) will reduce its speed."
-			]
-			icon: "immersiveengineering:dynamo"
-			id: "521B2505E5C81E16"
-			tasks: [
-				{
-					id: "34BE81DB7F0D00F4"
-					item: "immersiveengineering:dynamo"
-					type: "item"
-				}
-				{
-					id: "483BA109E9968F38"
-					item: "immersiveengineering:windmill"
-					type: "item"
-				}
-			]
-			title: "Kinetic clean energy"
-			x: 2.168877551020408d
-			y: 0.6206632653061277d
-		}
-		{
-			dependencies: ["521B2505E5C81E16"]
-			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail Each blade will need it own Sail upgrade!"]
-			id: "50BA9C41804AE9A2"
-			size: 0.7d
-			tasks: [{
-				id: "3E02F94201C301A0"
-				item: "immersiveengineering:windmill_sail"
-				type: "item"
-			}]
-			x: 1.5566326530612287d
-			y: 1.1308673469387784d
-		}
-		{
-			dependencies: [
-				"04A0F70827AA6155"
-				"40C415EF0BDE779C"
-			]
-			description: ["Will extract energy from some gems. Probably can be way to spend rubies and sapphires at this stage of the game."]
-			id: "123053D8EB9279CF"
-			subtitle: "Gem Eater"
-			tasks: [{
-				id: "70021680F9844739"
-				item: "thermal:dynamo_lapidary"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"27D02A3ECE518CCE"
-				"40C415EF0BDE779C"
-			]
-			id: "7BF7C8E5AFC2EE6A"
-			subtitle: "Hungry generator"
-			tasks: [{
-				id: "50B177B1D827086E"
-				item: "thermal:dynamo_gourmand"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["4252FD2C3076FC2E"]
-			id: "43A2DDA0E123E8D0"
-			size: 0.7d
-			tasks: [{
-				id: "4455D4C4BCE7ECDF"
-				item: "mekanismgenerators:advanced_solar_generator"
-				type: "item"
-			}]
-			x: -4.517857142857149d
-			y: 3.0053571428571444d
-		}
-		{
-			dependencies: ["1C2F6D48F407A95D"]
-			id: "4252FD2C3076FC2E"
-			tasks: [{
-				id: "6331E20345C82C18"
-				item: "mekanismgenerators:solar_generator"
-				type: "item"
-			}]
-			x: -4.55d
-			y: 2.15d
-		}
-		{
-			dependencies: ["1C2F6D48F407A95D"]
-			id: "27E0F81FE63D2E85"
-			tasks: [{
-				id: "648C61E6740F0E1E"
-				item: "mekanismgenerators:wind_generator"
-				type: "item"
-			}]
-			x: -3.55d
-			y: 2.65d
-		}
-		{
-			dependencies: ["1C2F6D48F407A95D"]
-			id: "1EA14587D11D38CE"
-			tasks: [{
-				id: "2BEF1448BC6EC577"
-				item: "mekanismgenerators:gas_burning_generator"
-				type: "item"
-			}]
-			x: -2.55d
-			y: 2.15d
-		}
-		{
 			dependencies: ["69DB58E1CD20ED2B"]
-			id: "40C415EF0BDE779C"
-			tasks: [{
-				id: "2BCE326ADE0D9420"
-				item: "thermal:rf_coil"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["40C415EF0BDE779C"]
 			id: "11079328782ADE0E"
 			tasks: [{
 				id: "0E66DF131638D455"
 				item: "thermal:dynamo_disenchantment"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 2.0d
 			y: 1.0d
 		}
 		{
@@ -910,35 +677,6 @@
 			}]
 			x: 0.97312030075188d
 			y: -8.410349534550694d
-		}
-		{
-			dependencies: [
-				"7A0C939E0FE540EC"
-				"521B2505E5C81E16"
-			]
-			description: ["Simple water wheels that convert movement of water into energy. You can put max to 3 wheels on one kinetic dynamo. "]
-			id: "4C8C44388703BD22"
-			tasks: [{
-				count: 3L
-				id: "77B2B70E6B74701B"
-				item: "immersiveengineering:watermill"
-				type: "item"
-			}]
-			title: "Water Energy"
-			x: 3.1986842105263165d
-			y: 0.8227331722162319d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			description: [""]
-			id: "644DA6D29FB50DA8"
-			tasks: [{
-				id: "62222DF3CA4498D7"
-				item: "immersiveengineering:thermoelectric_generator"
-				type: "item"
-			}]
-			x: 4.73251879699248d
-			y: 1.153560239885401d
 		}
 	]
 	title: "Energy Management"

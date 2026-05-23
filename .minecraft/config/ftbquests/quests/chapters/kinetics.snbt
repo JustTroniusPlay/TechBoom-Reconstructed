@@ -154,6 +154,7 @@
 		{
 			dependencies: ["5A3BFC118141DC5C"]
 			id: "1B53FA2848ED5392"
+			size: 1.2d
 			tasks: [
 				{
 					count: 8L
@@ -353,6 +354,7 @@
 		{
 			dependencies: ["1B53FA2848ED5392"]
 			id: "0966F994586EED73"
+			size: 1.2d
 			tasks: [{
 				count: 4L
 				id: "4BB6629B9E833827"
@@ -451,6 +453,7 @@
 		{
 			dependencies: ["0966F994586EED73"]
 			id: "11F275436272AE0A"
+			size: 1.2d
 			tasks: [{
 				id: "55C228C7654260A8"
 				item: "create:gearshift"

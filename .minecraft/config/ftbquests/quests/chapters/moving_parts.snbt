@@ -302,6 +302,7 @@
 				"Instead of explaining things quests will say interesting facts. But if there no ponder then quest will still tell you what and how to use thing."
 			]
 			id: "691DD9FDCE3E58DA"
+			shape: "rsquare"
 			subtitle: "Please use Ponder!"
 			tasks: [{
 				id: "2F80DA5183FF4976"
@@ -390,6 +391,7 @@
 		{
 			dependencies: ["7B289C03327D9227"]
 			id: "42F2B3DC445CED5F"
+			shape: "diamond"
 			size: 1.0d
 			tasks: [{
 				id: "0D204D98A9693D68"
@@ -402,6 +404,7 @@
 		{
 			dependencies: ["7B289C03327D9227"]
 			id: "35E21107F56A809E"
+			shape: "diamond"
 			size: 1.0d
 			tasks: [{
 				id: "5CED78FBD31C8589"
@@ -420,14 +423,14 @@
 		{
 			dependencies: ["7B289C03327D9227"]
 			id: "0EF84E4CE1E414B8"
-			size: 0.5d
+			size: 1.0d
 			tasks: [{
 				id: "6470436C90DC56F7"
 				item: "fluid:baton"
 				type: "item"
 			}]
-			x: -6.75d
-			y: -6.75d
+			x: -7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -1602,6 +1605,7 @@
 		{
 			dependencies: ["0852CB10008D7CDB"]
 			id: "11D2F8CDD6C8BE1E"
+			shape: "diamond"
 			tasks: [{
 				id: "35EC02D719243E98"
 				item: "create:mechanical_arm"
@@ -1618,13 +1622,14 @@
 				item: "create:large_cogwheel"
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [{
 				id: "0E38F3B4A6AD1591"
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			x: -1.141836734693868d
-			y: -6.54081632653061d
+			x: 0.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -1657,6 +1662,7 @@
 			]
 			icon: "fluid:pipette"
 			id: "6B98F8F66130812D"
+			shape: "diamond"
 			size: 0.6d
 			tasks: [{
 				id: "11A5AD5E6D1E20A1"
@@ -1720,13 +1726,14 @@
 		{
 			dependencies: ["0852CB10008D7CDB"]
 			id: "43E9C14749BCCDAB"
+			shape: "diamond"
 			tasks: [{
 				id: "1DE9E628F17FF16C"
 				item: "create_connected:kinetic_battery"
 				type: "item"
 			}]
-			x: 0.17244897959184868d
-			y: -6.569387755102042d
+			x: 0.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -1824,6 +1831,7 @@
 			dependencies: ["37FAA3D4CF96E9EE"]
 			id: "70A43884F1EE4D7A"
 			shape: "rsquare"
+			size: 0.7d
 			tasks: [{
 				id: "44897A9AC6CC214E"
 				item: "create_factory_logistics:fluid_mechanism"
@@ -1840,8 +1848,8 @@
 				item: "create:content_observer"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.5d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -2284,8 +2292,8 @@
 				type: "item"
 			}]
 			title: "Interaction"
-			x: 13.69285714285715d
-			y: 0.8714285714285666d
+			x: 13.749659863945581d
+			y: 0.7630952380952465d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -2335,8 +2343,8 @@
 				type: "item"
 			}]
 			title: "Brass Accumulator"
-			x: 2.0d
-			y: -2.5d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -2367,14 +2375,15 @@
 		{
 			dependencies: ["0852CB10008D7CDB"]
 			id: "14EC0F32B3ED3C33"
-			size: 0.6d
+			shape: "diamond"
+			size: 0.85d
 			tasks: [{
 				id: "0F976689CD00F595"
 				item: "vintageimprovements:laser"
 				type: "item"
 			}]
-			x: -1.5999999999999996d
-			y: -8.299999999999999d
+			x: 0.85d
+			y: -8.924999999999999d
 		}
 		{
 			dependencies: [
@@ -2393,6 +2402,7 @@
 		{
 			dependencies: ["7B289C03327D9227"]
 			id: "3F6DF0D28A64980E"
+			size: 0.7d
 			tasks: [{
 				id: "0886E6A8BB4B16CE"
 				item: "vintageimprovements:helve_hammer"
@@ -2535,6 +2545,7 @@
 			dependencies: ["0852CB10008D7CDB"]
 			icon: "create_power_loader:brass_chunk_loader"
 			id: "43DC6334943F14C6"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "21623579CD8926B0"
@@ -2547,8 +2558,8 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -7.5d
+			x: -0.5d
+			y: -10.5d
 		}
 	]
 	title: "Moving Parts"

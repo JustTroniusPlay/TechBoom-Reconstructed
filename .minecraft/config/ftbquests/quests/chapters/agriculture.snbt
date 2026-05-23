@@ -18,8 +18,9 @@
 		{
 			id: "421021CACED07DF3"
 			linked_quest: "0B61ED63E8F8E7D2"
-			x: 1.5d
-			y: 6.5d
+			shape: "diamond"
+			x: -1.5d
+			y: 5.0d
 		}
 		{
 			id: "06F55E2E3B66F5ED"
@@ -32,6 +33,20 @@
 			linked_quest: "7B64D58280611794"
 			x: 3.5d
 			y: 0.5d
+		}
+		{
+			id: "2B3817CF6B004DB0"
+			linked_quest: "1425D94DC58182E5"
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			id: "139D373E1522DC57"
+			linked_quest: "52563AE115ACBF51"
+			shape: "hexagon"
+			size: 0.6d
+			x: 2.25d
+			y: 6.0d
 		}
 	]
 	quests: [
@@ -49,8 +64,8 @@
 				type: "item"
 			}]
 			title: "Crops collector"
-			x: -0.5d
-			y: 6.5d
+			x: 0.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["27D02A3ECE518CCE"]
@@ -1827,8 +1842,8 @@
 				item: "immersiveengineering:cloche"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 7.0d
+			x: -0.5d
+			y: 6.5d
 		}
 		{
 			can_repeat: true
@@ -1954,6 +1969,20 @@
 			title: "Farming Tool"
 			x: -2.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["27D02A3ECE518CCE"]
+			description: ["Will \"eat\" your food to generate energy."]
+			id: "7BF7C8E5AFC2EE6A"
+			shape: "diamond"
+			subtitle: "Hungry generator"
+			tasks: [{
+				id: "50B177B1D827086E"
+				item: "thermal:dynamo_gourmand"
+				type: "item"
+			}]
+			x: 1.597619047619041d
+			y: 0.75d
 		}
 	]
 	title: "Agriculture and Edibles"

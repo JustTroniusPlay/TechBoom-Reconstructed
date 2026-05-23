@@ -92,8 +92,8 @@
 				type: "item"
 			}]
 			title: "Sulfuric Torches"
-			x: 2.1598639455782234d
-			y: -0.9345238095238102d
+			x: 2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -602,7 +602,7 @@
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
-			shape: "diamond"
+			shape: "rsquare"
 			size: 1.2d
 			tasks: [
 				{
@@ -772,7 +772,6 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
-			shape: "diamond"
 			size: 1.2d
 			subtitle: "Better fuel!"
 			tasks: [
@@ -906,6 +905,8 @@
 			description: [
 				"Andesite Alloy being used in all early Create machines and kinetic components."
 				""
+				"It can be created by mixing Iron or Zinc with Andesite blocks."
+				""
 				"Just keep in mind that it always good to have more of it so you always can make needed shafts or cogs."
 				""
 				"&lSee more in 'Kinetics' and 'Moving Parts' tabs.&r"
@@ -1001,8 +1002,8 @@
 				}
 			]
 			title: "Storage Upgrade"
-			x: -1.6542517006802697d
-			y: -1.213010204081634d
+			x: -1.2658163265306186d
+			y: -1.4921768707483025d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -1035,6 +1036,7 @@
 			dependencies: ["3129F95624CBEDD4"]
 			description: ["If you want, you can give your bronze tools some more durability at the cost of adding some plating."]
 			id: "7B81DDC0AA14EF81"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "1CB6D8462A66F9EB"
@@ -1180,7 +1182,7 @@
 				title: "Materials and You"
 				type: "checkmark"
 			}]
-			x: -0.35d
+			x: -0.7d
 			y: 1.1627976190476232d
 		}
 		{
@@ -1813,7 +1815,7 @@
 				type: "item"
 			}]
 			title: "Little Library"
-			x: -0.3321428571428626d
+			x: -0.6821428571428626d
 			y: 0.35d
 		}
 		{
@@ -1862,8 +1864,8 @@
 				}
 			]
 			title: "Ziplines"
-			x: -1.6542517006802626d
-			y: -2.4579081632653086d
+			x: -1.3d
+			y: -2.6d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -1887,6 +1889,7 @@
 			dependencies: ["25951FDCB7908145"]
 			description: ["Backtanks can be put in your body accessory slot while diving helmet need to be in helmet slot, but can be stored in head accessory slot when you don't use it."]
 			id: "49BFD7BD22B74CBD"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -1931,6 +1934,7 @@
 		{
 			dependencies: ["49BFD7BD22B74CBD"]
 			id: "40DAF71D31B80879"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -2291,8 +2295,8 @@
 				}
 			]
 			title: "Gems Equipment(WIP)"
-			x: 0.4763605442176697d
-			y: -3.4745748299319814d
+			x: -0.10255102040817121d
+			y: -3.2064625850340107d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -2302,6 +2306,7 @@
 				"Reinforced variant is more blast resistant."
 			]
 			id: "6099D2F4EEE9112A"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "669D82183AF2E564"
@@ -2347,6 +2352,7 @@
 				}
 			}
 			id: "2B288E2C1DC0AFCB"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "0C04592103CF23B8"
@@ -2395,7 +2401,7 @@
 			]
 			title: "Diving Suit"
 			x: 4.5d
-			y: -9.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -2422,6 +2428,8 @@
 			]
 			description: ["Cans can store fluids as a item. One tin can = 1 bucket. But you can't place liquid back in the world."]
 			id: "784AEC9BF8755F95"
+			shape: "diamond"
+			size: 0.85d
 			tasks: [{
 				id: "5180B590AD80BFD9"
 				item: "forestry:can"
@@ -2447,8 +2455,8 @@
 				type: "item"
 			}]
 			title: "Stone farming"
-			x: 2.135204081632665d
-			y: -7.560629251700675d
+			x: 2.55d
+			y: -8.5d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -2459,8 +2467,8 @@
 				item: "immersiveengineering:craftingtable"
 				type: "item"
 			}]
-			x: -0.010714285714279015d
-			y: -11.940051020408177d
+			x: 1.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["69057739C5B7EB11"]
@@ -2470,8 +2478,8 @@
 				item: "immersiveengineering:workbench"
 				type: "item"
 			}]
-			x: 0.05969387755101252d
-			y: -13.032738095238102d
+			x: 1.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["6099D2F4EEE9112A"]
@@ -2969,8 +2977,8 @@
 				}
 			]
 			title: "Hellish Replacement"
-			x: 8.049999999999999d
-			y: -2.65d
+			x: 7.998129251700682d
+			y: -2.6697704081632736d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
@@ -3243,6 +3251,7 @@
 		}
 		{
 			dependencies: ["5CED0B2F5E3DE3B1"]
+			description: ["Simple charger, just put you item inside!"]
 			id: "6E68DB6406FB4D3F"
 			size: 0.7d
 			tasks: [{
@@ -3250,8 +3259,8 @@
 				item: "immersiveengineering:charging_station"
 				type: "item"
 			}]
-			x: -0.7d
-			y: -12.6d
+			x: 2.1d
+			y: -14.0d
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
@@ -3266,6 +3275,91 @@
 			}]
 			x: -2.859013605442172d
 			y: -5.266369047619051d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Treated planks can be crafted into Windmills. They will generate energy passively."
+				""
+				"Different weather will reduce or decrease energy output of Windmill. Building another Windmill of any type in close proximity (up to 7 blocks in front of it) will reduce its speed."
+			]
+			icon: "immersiveengineering:dynamo"
+			id: "521B2505E5C81E16"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "34BE81DB7F0D00F4"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "483BA109E9968F38"
+					item: "immersiveengineering:windmill"
+					type: "item"
+				}
+			]
+			title: "Kinetic clean energy"
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["521B2505E5C81E16"]
+			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail Each blade will need it own Sail upgrade!"]
+			id: "50BA9C41804AE9A2"
+			size: 0.7d
+			tasks: [{
+				id: "3E02F94201C301A0"
+				item: "immersiveengineering:windmill_sail"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.299999999999999d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Compression dynamo can consume creosote and generate Forge Energy units. "
+				""
+				"It can be useful way to get a little bit more energy and spend Creosote if you have too much if it. "
+			]
+			id: "1FB9F832D1214239"
+			shape: "diamond"
+			tasks: [{
+				id: "7DBAE07870657D9A"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			title: "Creosote to energy"
+			x: -1.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["4B31C89E0FA58CE0"]
+			description: ["Will use lava to generate energy."]
+			id: "4972940DA0DA30B4"
+			shape: "diamond"
+			tasks: [{
+				id: "13E528561DE1E6B5"
+				item: "thermal:dynamo_magmatic"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["04A0F70827AA6155"]
+			description: ["Will extract energy from some gems. Probably can be way to spend rubies and sapphires at this stage of the game."]
+			id: "123053D8EB9279CF"
+			shape: "diamond"
+			size: 0.85d
+			subtitle: "Gem Eater"
+			tasks: [{
+				id: "70021680F9844739"
+				item: "thermal:dynamo_lapidary"
+				type: "item"
+			}]
+			x: 0.6729591836734556d
+			y: -3.737074829931977d
 		}
 	]
 	title: "Start of the journey"

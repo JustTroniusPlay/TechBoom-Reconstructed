@@ -22,14 +22,6 @@
 			y: -1.0d
 		}
 		{
-			id: "3D33B9AA5FFA5932"
-			linked_quest: "4EC3B664D62760BE"
-			shape: "diamond"
-			size: 0.7d
-			x: 0.8214285714285481d
-			y: -1.0016369047619094d
-		}
-		{
 			id: "7F9754840726B892"
 			linked_quest: "4DE3A5EB02DCDC59"
 			shape: "gear"
@@ -43,6 +35,30 @@
 			size: 0.7d
 			x: -1.75d
 			y: 6.6499999999999995d
+		}
+		{
+			id: "183BD844B51E68E0"
+			linked_quest: "2798CCE5B1DE21DA"
+			shape: "gear"
+			size: 1.5d
+			x: 0.75d
+			y: 6.0d
+		}
+		{
+			id: "3699CE0C026189E1"
+			linked_quest: "5169668687940129"
+			shape: "gear"
+			size: 1.5d
+			x: 0.75d
+			y: 7.5d
+		}
+		{
+			id: "1C88D3CDC422080B"
+			linked_quest: "4B31C89E0FA58CE0"
+			shape: "hexagon"
+			size: 0.5d
+			x: 0.8367346938775526d
+			y: -1.591836734693878d
 		}
 	]
 	quests: [
@@ -298,17 +314,17 @@
 		{
 			dependencies: ["15C30310B03E4F79"]
 			id: "793ABF03A8827044"
-			shape: "diamond"
+			size: 0.85d
 			tasks: [{
 				id: "6AF61FE6D49FBB10"
 				item: "gtceu:lp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["15C30310B03E4F79"]
+			dependencies: ["5361A9865C6547F4"]
 			id: "0FCFA77A56C98B28"
 			shape: "diamond"
 			size: 0.7d
@@ -317,11 +333,11 @@
 				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: 2.654081632653039d
-			y: -0.07816751700682545d
+			x: -2.4499999999999997d
+			y: 2.8d
 		}
 		{
-			dependencies: ["15C30310B03E4F79"]
+			dependencies: ["5361A9865C6547F4"]
 			id: "780843C2BC813902"
 			shape: "diamond"
 			size: 0.7d
@@ -330,8 +346,8 @@
 				item: "gtceu:lp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: 2.1d
-			y: -0.7d
+			x: -3.15d
+			y: 2.8d
 		}
 		{
 			dependencies: ["4A33371DB94DFD62"]
@@ -581,7 +597,7 @@
 			description: ["Every previous type of boiler can be upgraded with steel."]
 			id: "4A33371DB94DFD62"
 			shape: "diamond"
-			size: 0.7d
+			size: 0.85d
 			tasks: [{
 				id: "5AFF08EF595FA079"
 				item: "gtceu:hp_steam_solid_boiler"
@@ -607,6 +623,7 @@
 			dependencies: ["6AF4C17E9C8FF9DC"]
 			icon: "railcraft:steam_turbine"
 			id: "3C16D1C6847306F8"
+			shape: "diamond"
 			tasks: [
 				{
 					count: 12L
@@ -627,8 +644,8 @@
 				}
 			]
 			title: "Steam Turbine"
-			x: -3.785714285714313d
-			y: -4.843452380952385d
+			x: -4.760204081632665d
+			y: -3.097746598639457d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -771,37 +788,6 @@
 			y: 6.6499999999999995d
 		}
 		{
-			dependencies: ["25B2030958956699"]
-			description: [
-				"Essential component for almost every Thermal machinery."
-				""
-				"&lFollow 'Redstone Machinery' tab for Thermal Machinery.&r"
-			]
-			id: "2798CCE5B1DE21DA"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "6B8E234A47BC77E6"
-				item: "thermal:machine_frame"
-				type: "item"
-			}]
-			x: 0.75d
-			y: 6.0d
-		}
-		{
-			dependencies: ["25B2030958956699"]
-			id: "5169668687940129"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "6EB7A50C08AEA2E0"
-				item: "mekanism:metallurgic_infuser"
-				type: "item"
-			}]
-			x: 0.75d
-			y: 7.5d
-		}
-		{
 			dependencies: ["7A0C939E0FE540EC"]
 			description: ["With Tinker's Anvil at your disposal now you can make more different custom tools."]
 			id: "719A86D87C805DEB"
@@ -814,6 +800,23 @@
 			}]
 			x: -5.3999999999999995d
 			y: 0.6d
+		}
+		{
+			dependencies: [
+				"15C30310B03E4F79"
+				"4B31C89E0FA58CE0"
+			]
+			description: ["Will convert any steam into Forge Energy units and by itself don't generate pollution."]
+			id: "467322DDC62BF603"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "4E2469CD931206B9"
+				item: "systeams:steam_dynamo"
+				type: "item"
+			}]
+			x: 0.85d
+			y: -0.85d
 		}
 	]
 	title: "Steam Age"

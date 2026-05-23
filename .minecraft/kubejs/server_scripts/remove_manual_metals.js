@@ -55,18 +55,22 @@ ServerEvents.recipes(event => {
             event.remove({id: "common_ore_library:block_to_ingot/" + metal});
             event.remove({id: "immersiveengineering:crafting/storage_" + metal + "_to_ingot_" + metal});
             event.remove({id: "immersivegeology:crafting/" + metal + "_get_ingots_from_block"});
+            event.remove({id: "railcraft:" + metal + "_ingot"});
+            event.remove({id: "crusty_chunks:" + metal + "_block_ore_recipe"});
+            event.remove({id: "forestry:ingot_" + metal + "_from_resource_storage_" + metal});
 
             //Nuggets
             event.remove({id: "immersivegeology:crafting/get_ingot_from_" + metal + "_nuggets"});
             event.remove({id: "immersivegeology:crafting/get_nuggets_from_" + metal + "_ingot"});
             event.remove({id: "ad_astra:" + metal + "_ingot"});
-            event.remove({id:"common_ore_library:ingot_to_nugget/" + metal});
+            event.remove({id: "common_ore_library:ingot_to_nugget/" + metal});
 
             //NuggetsToIngot
             event.remove({id: "immersiveengineering:crafting/nugget_" + metal + "_to_ingot_" + metal});
             event.remove({id: "thermal:storage/" + metal + "_ingot_from_nuggets"});
             event.remove({id: "immersiveengineering:crafting/nugget_" + metal +"_to_" + metal + "_ingot"});
             event.remove({id: "common_ore_library:nugget_to_ingot/" + metal});
+            event.remove({id: "railcraft:"+ metal + "_ingot_from_" + metal + "_nugget"});
 
             //Alloys
             event.remove({id: 'thermal_processing:crafting/' + metal + '_ingot'});
