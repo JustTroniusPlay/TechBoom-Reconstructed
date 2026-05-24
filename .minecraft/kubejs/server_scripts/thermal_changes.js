@@ -7,6 +7,10 @@ ServerEvents.recipes(event => {
     "#forge:dusts/diamond",
     "#forge:ingots/platinum"
   )
+  event.replaceInput({id: "thermal:machine_press"},
+  "minecraft:iron_block",
+  "gtceu:lv_bender"
+  )
   
   event.remove({id: 'thermal:fire_charge/obsidian_glass_2'});
   event.remove({id: 'thermal:fire_charge/signalum_glass_2'});
@@ -122,7 +126,7 @@ ServerEvents.recipes(event => {
   )
   }
 
-  //Certus in Crystallizer
+  {//Certus in Crystallizer
   event.custom({"type": "thermal:crystallizer",
         "ingredients": [
           {
@@ -143,11 +147,6 @@ ServerEvents.recipes(event => {
           "energy": 500
     })
 
-  event.replaceInput({id: "thermal:machine_press"},
-  "minecraft:iron_block",
-  "gtceu:lv_bender"
-  )
-
   event.custom({"type": "thermal:crystallizer",
         "ingredients": [
           {
@@ -167,9 +166,20 @@ ServerEvents.recipes(event => {
         ],
           "energy": 500
     })
+  }
 
-  event.replaceInput({id: "thermal:machine_press"},
-  "minecraft:iron_block",
-  "gtceu:lv_bender"
+  {//Tinker's Workbench
+    event.replaceInput({id: "thermal:tinker_bench"},
+  "#minecraft:planks",
+  "#forge:treated_wood"
   )
+  event.replaceInput({id: "thermal:tinker_bench"},
+  "thermal:rf_coil",
+  "immersiveengineering:charging_station"
+  )
+  event.replaceInput({id: "thermal:tinker_bench"},
+  "minecraft:iron_ingot",
+  "thermal:steel_plate"
+  )
+  }
 })

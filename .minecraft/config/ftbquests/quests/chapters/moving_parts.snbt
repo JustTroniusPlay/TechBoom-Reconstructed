@@ -1422,6 +1422,7 @@
 		{
 			dependencies: ["1A155790CD83B2A7"]
 			id: "7863C9BC39A7F9D8"
+			shape: "diamond"
 			tasks: [{
 				id: "0BE45FEC8B325CAA"
 				item: "createdieselgenerators:diesel_engine"
@@ -1437,7 +1438,9 @@
 				""
 				"With biodisel though your engines will give less SU."
 				""
-				"You can even use Ethanol and Seed Oil by itself to get your engines running, but &odon't expect much&r with this type of fuel. "
+				"You can even use Ethanol and Seed Oil by itself to get your engines running, but &odon't expect much&r with this type of fuel."
+				""
+				"&oYou can use the same liquids from different mods.&r"
 			]
 			icon: "createdieselgenerators:biodiesel_bucket"
 			id: "5C9C2540BA21612F"
@@ -1450,7 +1453,7 @@
 				}
 				{
 					id: "49FA834E1BC5F165"
-					item: "createaddition:seed_oil_bucket"
+					item: "createdieselgenerators:plant_oil_bucket"
 					optional_task: true
 					type: "item"
 				}

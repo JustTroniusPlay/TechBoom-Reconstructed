@@ -60,6 +60,22 @@
 			x: 0.8367346938775526d
 			y: -1.591836734693878d
 		}
+		{
+			id: "7F125D6CCF670BC5"
+			linked_quest: "4AFEE3BCC0DC661B"
+			shape: "hexagon"
+			size: 0.7d
+			x: -4.480357142857159d
+			y: 8.202976190476171d
+		}
+		{
+			id: "035B96C26594770B"
+			linked_quest: "69DB58E1CD20ED2B"
+			shape: "pentagon"
+			size: 0.85d
+			x: -4.25d
+			y: 7.225d
+		}
 	]
 	quests: [
 		{
@@ -817,6 +833,125 @@
 			}]
 			x: 0.85d
 			y: -0.85d
+		}
+		{
+			dependencies: [
+				"5CED0B2F5E3DE3B1"
+				"5361A9865C6547F4"
+				"4AFEE3BCC0DC661B"
+				"69DB58E1CD20ED2B"
+			]
+			description: ["Simple charger, just put you item inside!"]
+			id: "6E68DB6406FB4D3F"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				id: "2989E62548390D70"
+				item: "immersiveengineering:charging_station"
+				type: "item"
+			}]
+			x: -3.6232142857142975d
+			y: 8.231547619047596d
+		}
+		{
+			dependencies: ["6E68DB6406FB4D3F"]
+			id: "49BC12E8322CB378"
+			tasks: [{
+				id: "565D187B97710361"
+				item: {
+					Count: 1
+					id: "thermal:flux_magnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6E68DB6406FB4D3F"]
+			id: "3F84A2143ACABE45"
+			tasks: [{
+				id: "609EC953E3C65D79"
+				item: {
+					Count: 1
+					id: "thermal:flux_capacitor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6E68DB6406FB4D3F"]
+			id: "1BB3AB8685428FB7"
+			shape: "diamond"
+			tasks: [{
+				id: "08EAFEAA5BE16F17"
+				item: "thermal:tinker_bench"
+				type: "item"
+			}]
+			x: -3.6113095238095454d
+			y: 9.14277210884351d
+		}
+		{
+			dependencies: ["1BB3AB8685428FB7"]
+			id: "56D8B89369ABF606"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [
+				{
+					id: "69FBDB8122F8582A"
+					item: {
+						Count: 1
+						id: "thermal:flux_drill"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "04D95D7B901BFE60"
+					item: {
+						Count: 1
+						id: "thermal:flux_saw"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -3.5999999999999996d
+			y: 10.2d
+		}
+		{
+			dependencies: ["56D8B89369ABF606"]
+			id: "43943D53B8603D29"
+			tasks: [{
+				id: "414D6656567D8585"
+				item: "thermal:upgrade_augment_1"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["56D8B89369ABF606"]
+			description: ["Expand the mining radius and stored energy in the tools."]
+			id: "7BA759BE13798919"
+			tasks: [
+				{
+					id: "195D1EBFEA53C9E7"
+					item: "thermal:area_radius_augment"
+					type: "item"
+				}
+				{
+					id: "75E3AAD0A151E534"
+					item: "thermal:rf_coil_augment"
+					type: "item"
+				}
+			]
+			x: -2.6106292517007077d
+			y: 9.527125850340099d
 		}
 	]
 	title: "Steam Age"

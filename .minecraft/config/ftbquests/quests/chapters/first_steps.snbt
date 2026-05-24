@@ -27,6 +27,7 @@
 			description: ["Nothing changed in normal Minecraft progressin. So start with basic blocks for now!"]
 			icon: "minecraft:crafting_table"
 			id: "4EBBAB4B8A99D4A7"
+			shape: "rsquare"
 			size: 1.3d
 			tasks: [
 				{
@@ -128,6 +129,7 @@
 			]
 			icon: "adpother:sulfur"
 			id: "0AA13BC0D2C48B13"
+			shape: "square"
 			tasks: [
 				{
 					id: "56595FBD91AA72B3"
@@ -155,6 +157,7 @@
 			]
 			icon: "adpother:carbon"
 			id: "5D210874EE9C2BD3"
+			shape: "square"
 			tasks: [
 				{
 					id: "661A163BD2C102B0"
@@ -243,6 +246,8 @@
 				"The result of this will be black and yellow dyes and fresh air in your factory!"
 			]
 			id: "6CF046ABDEF49022"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "2711BA5788062CC7"
 				item: "adpother:iron_filter_frame"
@@ -918,7 +923,7 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			shape: "hexagon"
+			shape: "gear"
 			size: 1.5d
 			subtitle: "Kinetic wonders"
 			tasks: [{
@@ -1256,7 +1261,8 @@
 				"Plus you will need it in crafting of some components."
 			]
 			id: "7D3FA2BBD1033FE9"
-			size: 0.7d
+			shape: "pentagon"
+			size: 0.85d
 			tasks: [{
 				id: "6EFCCC7CF2D8BF3C"
 				item: {
@@ -1600,106 +1606,6 @@
 			title: "Osmium Tools"
 			x: 3.85d
 			y: -5.6d
-		}
-		{
-			dependencies: ["69DB58E1CD20ED2B"]
-			id: "1BB3AB8685428FB7"
-			shape: "diamond"
-			tasks: [{
-				id: "08EAFEAA5BE16F17"
-				item: "thermal:tinker_bench"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["1BB3AB8685428FB7"]
-			id: "49BC12E8322CB378"
-			tasks: [{
-				id: "565D187B97710361"
-				item: {
-					Count: 1
-					id: "thermal:flux_magnet"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 6.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["1BB3AB8685428FB7"]
-			id: "3F84A2143ACABE45"
-			tasks: [{
-				id: "609EC953E3C65D79"
-				item: {
-					Count: 1
-					id: "thermal:flux_capacitor"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 7.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1BB3AB8685428FB7"]
-			id: "56D8B89369ABF606"
-			shape: "rsquare"
-			size: 1.2d
-			tasks: [
-				{
-					id: "69FBDB8122F8582A"
-					item: {
-						Count: 1
-						id: "thermal:flux_drill"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "04D95D7B901BFE60"
-					item: {
-						Count: 1
-						id: "thermal:flux_saw"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			x: 9.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["56D8B89369ABF606"]
-			description: ["Expand the mining radius and stored energy in the tools."]
-			id: "7BA759BE13798919"
-			tasks: [
-				{
-					id: "195D1EBFEA53C9E7"
-					item: "thermal:area_radius_augment"
-					type: "item"
-				}
-				{
-					id: "75E3AAD0A151E534"
-					item: "thermal:rf_coil_augment"
-					type: "item"
-				}
-			]
-			x: 9.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["56D8B89369ABF606"]
-			id: "43943D53B8603D29"
-			tasks: [{
-				id: "414D6656567D8585"
-				item: "thermal:upgrade_augment_1"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -2472,7 +2378,14 @@
 		}
 		{
 			dependencies: ["69057739C5B7EB11"]
+			description: [
+				"Primary crafting station for various components."
+				""
+				"&lLook into 'Fancy Engineering' tab to continue.&r"
+			]
 			id: "5CED0B2F5E3DE3B1"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "33D8A249D8783B83"
 				item: "immersiveengineering:workbench"
@@ -2998,6 +2911,7 @@
 		{
 			dependencies: ["0A47F74F64457575"]
 			id: "0E9DFA836D20D6D4"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "6A7BC4FE3CA18D45"
@@ -3250,19 +3164,6 @@
 			y: -6.8d
 		}
 		{
-			dependencies: ["5CED0B2F5E3DE3B1"]
-			description: ["Simple charger, just put you item inside!"]
-			id: "6E68DB6406FB4D3F"
-			size: 0.7d
-			tasks: [{
-				id: "2989E62548390D70"
-				item: "immersiveengineering:charging_station"
-				type: "item"
-			}]
-			x: 2.1d
-			y: -14.0d
-		}
-		{
 			dependencies: ["0A47F74F64457575"]
 			id: "193EDD7B079CF150"
 			shape: "diamond"
@@ -3360,6 +3261,20 @@
 			}]
 			x: 0.6729591836734556d
 			y: -3.737074829931977d
+		}
+		{
+			dependencies: ["51D2A2A99A671311"]
+			description: ["Using charcoal and other resources you can craft gundpowder."]
+			id: "4565506C16FA5FC3"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "6073931AD4F3764E"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: -1.4d
+			y: -8.75d
 		}
 	]
 	title: "Start of the journey"

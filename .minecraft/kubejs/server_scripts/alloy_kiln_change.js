@@ -75,7 +75,23 @@ ServerEvents.recipes(event => {
       "gtceu:tiny_flint_dust",1,
     100)
 
+    const andes = ['minecraft:andesite', /*'gtceu:andesite_dust'*/]
+    const nugget = [/*'minecraft:iron_nugget',*/ 'create:zinc_nugget']
 
-
+    andes.forEach(andesite =>
+      {
+        nugget.forEach(nuggets =>
+          {
+            event.recipes.gtceu.alloy_smelter('techboom:gtceu_andesite_alloy')
+            .itemInputs(
+            '1x ' + andesite,
+            '1x ' + nuggets
+            )
+            .itemOutputs(
+            '1x create:andesite_alloy')
+            .duration(30)
+            .EUt(15)
+          })
+      })
 })
 

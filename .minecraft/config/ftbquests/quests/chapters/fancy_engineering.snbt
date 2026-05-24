@@ -6,14 +6,24 @@
 	icon: "immersiveengineering:advanced_blast_furnace"
 	id: "1F4BE2C27FDFFE99"
 	order_index: 3
-	quest_links: [{
-		id: "0D37DA266658503C"
-		linked_quest: "7A0C939E0FE540EC"
-		shape: "gear"
-		size: 1.5d
-		x: -0.75d
-		y: 3.75d
-	}]
+	quest_links: [
+		{
+			id: "0D37DA266658503C"
+			linked_quest: "7A0C939E0FE540EC"
+			shape: "gear"
+			size: 1.5d
+			x: -0.75d
+			y: 3.75d
+		}
+		{
+			id: "2D222922D088AA2B"
+			linked_quest: "5CED0B2F5E3DE3B1"
+			shape: "gear"
+			size: 1.5d
+			x: 5.25d
+			y: 2.25d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["3CD05E2E5661246B"]
@@ -92,7 +102,8 @@
 			dependencies: ["7A0C939E0FE540EC"]
 			description: ["Some complex machinery require you to build a structure from multiple blocks which are present here. "]
 			id: "0729C937DEFF1E0B"
-			size: 1.3d
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [
 				{
 					id: "425EB8C1F747EA83"
@@ -121,80 +132,8 @@
 				}
 			]
 			title: "Multiblocks components"
-			x: -0.10000000000000142d
-			y: 13.500000000000002d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					Parent: {
-						Items: [ ]
-						Size: 21
-					}
-				}
-				id: "immersiveengineering:revolver"
-			}
-			id: "164EFF8B7B80321D"
-			rewards: [{
-				count: 24
-				id: "754EF7A50F5522EA"
-				item: "immersiveengineering:casull"
-				type: "item"
-			}]
-			size: 1.4d
-			tasks: [
-				{
-					id: "42BD6E2AA624C098"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								Items: [ ]
-								Size: 21
-							}
-						}
-						id: "immersiveengineering:revolver"
-					}
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "662F62ED3C7DB189"
-					item: { Count: 6, id: "immersiveengineering:casull" }
-					type: "item"
-				}
-			]
-			title: "Wild Weapon"
-			x: 2.0d
-			y: 9.899999999999999d
-		}
-		{
-			dependencies: ["164EFF8B7B80321D"]
-			id: "652C9178E27A233E"
-			rewards: [{
-				count: 4
-				id: "196504B9658EA0C7"
-				item: "immersiveengineering:stick_steel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3E4FA0AA72B42EB3"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 3
-						}
-					}
-					id: "immersiveengineering:railgun"
-				}
-				type: "item"
-			}]
-			x: 2.0d
-			y: 11.6d
+			x: -0.7261904761904816d
+			y: 5.906249999999993d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -240,49 +179,6 @@
 			title: "Steel plated Coke Oven"
 			x: 0.9785714285714207d
 			y: 3.3232142857142897d
-		}
-		{
-			dependencies: [
-				"4423C396B2C5D34D"
-				"164EFF8B7B80321D"
-			]
-			dependency_requirement: "one_completed"
-			id: "09919FCD6E63DF42"
-			tasks: [
-				{
-					id: "611436010390C138"
-					item: "immersiveengineering:turret_chem"
-					type: "item"
-				}
-				{
-					id: "72186F65EC4CC792"
-					item: "immersiveengineering:turret_gun"
-					type: "item"
-				}
-			]
-			title: "Industrial Turrets"
-			x: 13.0d
-			y: 13.6d
-		}
-		{
-			dependencies: ["0729C937DEFF1E0B"]
-			id: "4423C396B2C5D34D"
-			tasks: [{
-				id: "62CB93AFF9971747"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 4
-						}
-					}
-					id: "immersiveengineering:chemthrower"
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: 13.6d
 		}
 		{
 			dependencies: ["55C78E5A9D06111B"]
@@ -331,8 +227,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 19.5d
+			x: 1.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["09349E61D7AF0C55"]
@@ -342,8 +238,8 @@
 				item: "immersiveengineering:biodiesel_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 18.0d
+			x: 1.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["16FA4B48AB337396"]
@@ -353,8 +249,8 @@
 				item: "immersiveengineering:refinery"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 16.5d
+			x: 1.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -364,8 +260,8 @@
 				item: "immersiveengineering:fermenter"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 15.0d
+			x: 1.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -395,6 +291,150 @@
 			}]
 			x: 0.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["5CED0B2F5E3DE3B1"]
+			description: ["Blueprint for beautiful Engineering banner paterns."]
+			icon: {
+				Count: 1
+				id: "minecraft:gray_banner"
+				tag: {
+					BlockEntityTag: {
+						Patterns: [{
+							Color: 0
+							Pattern: "ie_twd"
+						}]
+						id: "minecraft:banner"
+					}
+				}
+			}
+			id: "4D8E5F7F17424703"
+			size: 0.6d
+			tasks: [{
+				id: "34B69BEF98093C27"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "bannerpatterns"
+					}
+				}
+				type: "item"
+			}]
+			title: "Industrial Banners"
+			x: 5.285714285714285d
+			y: 0.9696428571428548d
+		}
+		{
+			dependencies: ["5CED0B2F5E3DE3B1"]
+			description: ["Blueprint to craft components: mechanical parts, tubes, electronics and bulbs."]
+			icon: "immersiveengineering:component_iron"
+			id: "4AFEE3BCC0DC661B"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "3D62BC3435EE9A23"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "components"
+					}
+				}
+				type: "item"
+			}]
+			title: "Components"
+			x: 5.273809523809518d
+			y: 5.049107142857139d
+		}
+		{
+			dependencies: ["5CED0B2F5E3DE3B1"]
+			description: ["Molds to use in metal press. Not only for plates, but for other things: gears, rods, wires and even packing items!"]
+			icon: "immersiveengineering:mold_gear"
+			id: "60252A3A1D935245"
+			shape: "diamond"
+			tasks: [{
+				id: "73DEA3797E0B1A17"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "molds"
+					}
+				}
+				type: "item"
+			}]
+			title: "Molds for everything!"
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5CED0B2F5E3DE3B1"]
+			icon: "immersiveengineering:empty_casing"
+			id: "287ACA017CA51588"
+			shape: "diamond"
+			tasks: [{
+				id: "586B50F294D632EE"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "bullet"
+					}
+				}
+				type: "item"
+			}]
+			title: "Bullet-smithing"
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0729C937DEFF1E0B"
+				"60252A3A1D935245"
+			]
+			description: ["Press that use FE energy to procces things. But to work with anything you need different molds!"]
+			icon: "immersiveengineering:metal_press"
+			id: "62EEE8CB1320336E"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "56686C1E4F9D600A"
+					item: "immersiveengineering:metal_press"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6F945B14CFF71579"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "4A56786025A1FC0F"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					id: "4C3D83F15EB115E3"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2AB5D2200FFB7CA7"
+					item: { Count: 2, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1842BA56190D4F35"
+					item: { Count: 2, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+			]
+			x: 1.54999999999999d
+			y: 5.868154761904755d
 		}
 	]
 	title: "Fancy Engineering"
