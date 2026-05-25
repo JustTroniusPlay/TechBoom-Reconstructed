@@ -38,6 +38,7 @@
 		{
 			id: "6BCC4C890ED38B26"
 			linked_quest: "1042CC5D3176F2A3"
+			shape: "diamond"
 			size: 0.7d
 			x: 3.706802721088465d
 			y: 8.96190476190477d
@@ -88,20 +89,64 @@
 		}
 		{
 			dependencies: ["362FE530374D058F"]
+			description: [
+				"Limited Barrels store stacks of items in big quantities up to 4 items per block."
+				""
+				"They can be made out of any vanilla wood."
+			]
 			id: "3B872B9D66E36739"
 			shape: "diamond"
 			size: 1.2d
-			tasks: [{
-				id: "1CCC7ECC82DEBE48"
-				item: {
-					Count: 1
-					id: "sophisticatedstorage:limited_barrel_1"
-					tag: {
-						woodType: "oak"
+			tasks: [
+				{
+					id: "1CCC7ECC82DEBE48"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:limited_barrel_1"
+						tag: {
+							woodType: "oak"
+						}
 					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "1C75AA7F631F9D26"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:limited_barrel_2"
+						tag: {
+							woodType: "oak"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4058611F9E333AA7"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:limited_barrel_3"
+						tag: {
+							woodType: "oak"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3CC24042E1855A23"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:limited_barrel_4"
+						tag: {
+							woodType: "oak"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "Limited Barrels"
 			x: 4.0d
 			y: 5.5d
@@ -237,7 +282,10 @@
 				"7A722F4E1BB2DF66"
 				"621E6E9756E60D93"
 			]
+			description: ["Will attract items using rotational power."]
 			id: "1EC45844AE9357C0"
+			shape: "diamond"
+			size: 0.85d
 			tasks: [{
 				id: "2A4D1043AD3F22C7"
 				item: "expandingtechnologies:item_vacuum"
@@ -356,6 +404,11 @@
 		}
 		{
 			dependencies: ["362FE530374D058F"]
+			description: [
+				"Gregtech item pipes are simple item transporters, but they can't extract items by themselves."
+				""
+				"They come from wide variety of sizes and different materials that affect amount of items and speed tranfer."
+			]
 			icon: "gtceu:tin_small_item_pipe"
 			id: "7E43DE8E8F0F36A6"
 			rewards: [{
@@ -448,6 +501,7 @@
 		}
 		{
 			dependencies: ["362FE530374D058F"]
+			description: ["Moves your items in different ways."]
 			id: "566F5CF387C7F261"
 			size: 1.2d
 			tasks: [
@@ -493,6 +547,7 @@
 		}
 		{
 			dependencies: ["566F5CF387C7F261"]
+			description: ["Can help to direct your items down. Can be configued by Engineer's Hammer."]
 			id: "00184A6D50E0066F"
 			size: 0.7d
 			tasks: [{
@@ -505,6 +560,7 @@
 		}
 		{
 			dependencies: ["566F5CF387C7F261"]
+			description: ["Can be used to over your conveyors. Just click with scaffolding on them!"]
 			id: "29D1656935B85ABD"
 			size: 0.7d
 			tasks: [
@@ -531,6 +587,7 @@
 				"7E43DE8E8F0F36A6"
 			]
 			dependency_requirement: "one_completed"
+			description: ["Simply will route items with its filters in UI. Right-click on it to open and configure what items will go in what colored side."]
 			id: "07DD3A2F452B366A"
 			tasks: [{
 				id: "66F8A0441B19B426"
@@ -554,7 +611,10 @@
 		}
 		{
 			dependencies: ["7A722F4E1BB2DF66"]
+			description: ["Will attract items using electricity,"]
 			id: "22DBC765ABF06217"
+			shape: "diamond"
+			size: 0.85d
 			tasks: [{
 				id: "6718331D52353EAF"
 				item: "immersiveengineering:electromagnet"
@@ -566,6 +626,7 @@
 		{
 			dependencies: ["7E43DE8E8F0F36A6"]
 			id: "1B95E7F9A5CBDBE8"
+			shape: "rsquare"
 			size: 0.85d
 			tasks: [{
 				id: "615F1CABE2328BB8"

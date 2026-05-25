@@ -539,7 +539,7 @@
 					type: "item"
 				}
 			]
-			title: "Universal Replacer"
+			title: "Milk Replacer"
 			x: 2.5d
 			y: -1.0d
 		}
@@ -1863,6 +1863,7 @@
 				id: "0C78303EC299A231"
 				type: "checkmark"
 			}]
+			title: "Food Book"
 			x: 4.0d
 			y: 6.0d
 		}
@@ -1886,7 +1887,6 @@
 						}
 						id: "solringopie:lunchbag"
 					}
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1901,7 +1901,6 @@
 						}
 						id: "solringopie:lunchbox"
 					}
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1916,6 +1915,7 @@
 						}
 						id: "solringopie:golden_lunchbox"
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1945,7 +1945,11 @@
 		}
 		{
 			dependencies: ["27D02A3ECE518CCE"]
-			description: ["Versatile farming tool that work as hoe and can collect crops in area while you using Shift. "]
+			description: [
+				"Versatile farming tool that work as hoe and can collect crops in area."
+				""
+				"Press shift and click to change its area of effect."
+			]
 			id: "004FA47AF62604FF"
 			shape: "diamond"
 			tasks: [{

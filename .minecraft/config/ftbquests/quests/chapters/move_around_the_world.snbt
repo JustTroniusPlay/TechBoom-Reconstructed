@@ -382,6 +382,7 @@
 				item: "minecraft:rail"
 				type: "item"
 			}]
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
 				count: 16L
@@ -1109,6 +1110,7 @@
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
 			id: "4B126C46A6671245"
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
 				id: "5FE9D7425D9813A7"
@@ -1368,7 +1370,17 @@
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
+			description: [
+				"Tunnel bore is simple mining machine that will mine forward until it run out of solid fuel. "
+				""
+				"To expand storage capacity you need link chest minecarts to it."
+				""
+				"Bore can lay tracks automatically as it goes."
+				""
+				"To get around pits supply bore with gravel to build over."
+			]
 			id: "776112F6AA25549A"
+			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
 				id: "1D562EFF387ECE9D"
@@ -1487,6 +1499,7 @@
 		}
 		{
 			dependencies: ["776112F6AA25549A"]
+			description: ["Bores have durability and effectiveness based on material."]
 			id: "1A3BAF37CA44746B"
 			size: 0.7d
 			tasks: [

@@ -953,6 +953,25 @@
 			x: -2.6106292517007077d
 			y: 9.527125850340099d
 		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			description: [
+				"Work as automatic stone blocks type farm. "
+				""
+				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
+			]
+			id: "016889850869B51A"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "1AFF19B5C1CD91F1"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			title: "Stone farming"
+			x: -5.013690476190483d
+			y: 4.830357142857139d
+		}
 	]
 	title: "Steam Age"
 }

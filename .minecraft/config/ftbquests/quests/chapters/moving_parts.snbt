@@ -36,14 +36,6 @@
 			x: -2.5d
 			y: -10.5d
 		}
-		{
-			id: "7739B672F17CB069"
-			linked_quest: "59DE400FAB603D8A"
-			shape: "rsquare"
-			size: 1.2d
-			x: 12.404761904761912d
-			y: -0.9761904761904745d
-		}
 	]
 	quests: [
 		{
@@ -2563,6 +2555,82 @@
 			]
 			x: -0.5d
 			y: -10.5d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "46A13C7F6842C1AE"
+			size: 0.7d
+			tasks: [{
+				id: "526ECE3776D213C2"
+				item: "create_new_age:layered_magnet"
+				type: "item"
+			}]
+			x: 11.73367346938776d
+			y: -1.0372448979591766d
+		}
+		{
+			dependencies: ["34A4F350D3CE0400"]
+			icon: "create_new_age:generator_coil"
+			id: "59DE400FAB603D8A"
+			rewards: [{
+				count: 12
+				id: "7D45C659A4498194"
+				item: "create_new_age:magnetite_block"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "269949462ECBD686"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+				{
+					id: "1D916F39592C1711"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+			]
+			x: 12.52372448979592d
+			y: -0.6153307375581747d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "50FB45708E0B12F5"
+			size: 0.7d
+			tasks: [{
+				id: "5DE441D21EB24EE3"
+				item: "create_new_age:fluxuated_magnetite"
+				type: "item"
+			}]
+			x: 13.299999999999999d
+			y: -1.05d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "0FBD8C5E61338813"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "27E562EA84E185E1"
+				item: "create_new_age:redstone_magnet"
+				type: "item"
+			}]
+			x: 12.543698532044402d
+			y: -1.5098549946294249d
+		}
+		{
+			dependencies: ["0FBD8C5E61338813"]
+			id: "4DF0DA70E0E5048F"
+			size: 0.7d
+			tasks: [{
+				id: "612B2AC75C9138B1"
+				item: "create_new_age:netherite_magnet"
+				type: "item"
+			}]
+			x: 12.543698532044402d
+			y: -2.261734693877557d
 		}
 	]
 	title: "Moving Parts"

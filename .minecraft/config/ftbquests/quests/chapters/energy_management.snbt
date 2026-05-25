@@ -92,6 +92,7 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "214D51E2B8D3177B"
@@ -196,6 +197,7 @@
 			dependencies: ["3CADA01B0663BC89"]
 			description: ["Tired of being shocked? Use tough fabrick to make your wires insulated!"]
 			id: "76433BADB401CAC9"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -599,84 +601,6 @@
 			}]
 			x: 2.0d
 			y: 1.0d
-		}
-		{
-			dependencies: [
-				"34A4F350D3CE0400"
-				"3CADA01B0663BC89"
-			]
-			icon: "create_new_age:generator_coil"
-			id: "59DE400FAB603D8A"
-			rewards: [{
-				count: 12
-				id: "7D45C659A4498194"
-				item: "create_new_age:magnetite_block"
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 1.0d
-			tasks: [
-				{
-					id: "269949462ECBD686"
-					item: "create_new_age:generator_coil"
-					type: "item"
-				}
-				{
-					id: "1D916F39592C1711"
-					item: "create_new_age:carbon_brushes"
-					type: "item"
-				}
-			]
-			x: 0.9531462585033976d
-			y: -6.763945578231311d
-		}
-		{
-			dependencies: ["59DE400FAB603D8A"]
-			id: "0FBD8C5E61338813"
-			size: 0.85d
-			tasks: [{
-				id: "27E562EA84E185E1"
-				item: "create_new_age:redstone_magnet"
-				type: "item"
-			}]
-			x: 0.97312030075188d
-			y: -7.6584698353025615d
-		}
-		{
-			dependencies: ["59DE400FAB603D8A"]
-			id: "46A13C7F6842C1AE"
-			size: 0.7d
-			tasks: [{
-				id: "526ECE3776D213C2"
-				item: "create_new_age:layered_magnet"
-				type: "item"
-			}]
-			x: 0.16309523809523796d
-			y: -6.6920537952023125d
-		}
-		{
-			dependencies: ["59DE400FAB603D8A"]
-			id: "50FB45708E0B12F5"
-			size: 0.7d
-			tasks: [{
-				id: "5DE441D21EB24EE3"
-				item: "create_new_age:fluxuated_magnetite"
-				type: "item"
-			}]
-			x: 1.7630952380952394d
-			y: -6.73014903329755d
-		}
-		{
-			dependencies: ["0FBD8C5E61338813"]
-			id: "4DF0DA70E0E5048F"
-			size: 0.7d
-			tasks: [{
-				id: "612B2AC75C9138B1"
-				item: "create_new_age:netherite_magnet"
-				type: "item"
-			}]
-			x: 0.97312030075188d
-			y: -8.410349534550694d
 		}
 	]
 	title: "Energy Management"

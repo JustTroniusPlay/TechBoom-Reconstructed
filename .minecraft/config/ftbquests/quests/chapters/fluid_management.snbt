@@ -25,8 +25,8 @@
 		{
 			id: "594CC73C5D91EA9C"
 			linked_quest: "6B98F8F66130812D"
-			x: 1.0d
-			y: -5.0d
+			x: 0.9362244897959258d
+			y: -5.163265306122447d
 		}
 		{
 			id: "2116D0F5A7431D33"
@@ -52,10 +52,7 @@
 	]
 	quests: [
 		{
-			dependencies: [
-				"5A3BFC118141DC5C"
-				"332E6B2C638AE656"
-			]
+			dependencies: ["332E6B2C638AE656"]
 			description: [""]
 			id: "72304D7D63A87E7A"
 			rewards: [{
@@ -146,6 +143,7 @@
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
+			description: ["Output water automatically throught Pump Hatch. Output capacity based on biome."]
 			icon: "gtceu:primitive_pump"
 			id: "4885642010185D62"
 			tasks: [
@@ -181,7 +179,11 @@
 				"332E6B2C638AE656"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Simple water generator. Unlike Primitive Pump can't auto-output liquids by itself."]
+			description: [
+				"Simple water generator. Unlike Primitive Pump can't auto-output liquids by itself."
+				""
+				"Varoius weather conditions and biomes will affect the water generation."
+			]
 			id: "0B9E46B8967F33B0"
 			rewards: [{
 				count: 13
@@ -189,7 +191,8 @@
 				item: "railcraft:water_tank_siding"
 				type: "item"
 			}]
-			size: 0.7d
+			shape: "rsquare"
+			size: 1.0d
 			tasks: [{
 				count: 13L
 				id: "1FA4DE9CB92AC078"
@@ -197,8 +200,8 @@
 				type: "item"
 			}]
 			title: "Water Tank Siding"
-			x: 1.75d
-			y: -4.55d
+			x: 1.691326530612237d
+			y: -4.489795918367342d
 		}
 		{
 			dependencies: ["5186990A391ADB8D"]
@@ -294,11 +297,11 @@
 				"You have different options to transfer liquids around with various benefits and drawbacks. "
 				""
 				"{@pagebreak}"
-				"&lCopper Fluid Pipes&r are simpliest to make, but by themselves they can't extract any fluids and will not get any fluid throught them without Mechanical Pump."
+				"&lCopper Fluid Pipes&r are simpliest to make, but by themselves they can't extract any fluids and will not get any fluid throught them without &lMechanical Pump&r."
 				""
 				"Unlike other pipes, they can put source blocks in the world."
 				""
-				"By clicking on straight pipes with any wrench-like tool you transform them into glass like pipe that now show you what liquid go through system. "
+				"By clicking on straight pipes with any wrench-like tool you transform them into windowed pipe that now show you what liquid go through system. "
 				""
 				"You can use &oCopper Casing&r to save pipe connections and forbid it from connecting to other pipes."
 				""
@@ -346,7 +349,7 @@
 					type: "item"
 				}
 				{
-					count: 8
+					count: 4
 					id: "371255B1F8DE8F55"
 					item: "thermal:fluid_duct"
 					type: "item"
@@ -507,7 +510,11 @@
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
-			description: ["Drums can store liquids even when broken. They have output hatch underneath you can activate with Mallets."]
+			description: [
+				"Drums can store liquids even when broken. They have output hatch underneath you can activate with Mallets."
+				""
+				"&oNotable feature of Gold Drums: they can handle acids.&r"
+			]
 			icon: "gtceu:bronze_drum"
 			id: "031595756B809ADC"
 			tasks: [
@@ -826,6 +833,7 @@
 				"1B95E7F9A5CBDBE8"
 			]
 			dependency_requirement: "one_completed"
+			description: ["To configure your covers or disassemble them."]
 			id: "1042CC5D3176F2A3"
 			size: 0.7d
 			tasks: [
