@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
     event.remove({id: "create:cutting/compat/immersiveengineering/wire_copper"});
+    event.remove({id: "createdieselgenerators:crafting/wire_cutters"});
     event.replaceInput(
         {input: "immersiveengineering:wirecutter"},
         "immersiveengineering:wirecutter",

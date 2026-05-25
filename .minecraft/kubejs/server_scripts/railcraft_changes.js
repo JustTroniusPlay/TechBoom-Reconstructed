@@ -73,6 +73,17 @@ ServerEvents.recipes(event => {
   })
 }
 
+{//Bore
+  event.replaceInput({id:"railcraft:tunnel_bore"},
+    "#forge:storage_blocks/steel",
+    "minecraft:iron_block"
+  )
+  event.replaceInput({id:"railcraft:bronze_tunnel_bore_head"},
+    "#forge:ingots/steel",
+    "minecraft:iron_ingot"
+  )
+}
+
    event.remove({id: "railcraft:steam_oven"});
     event.shaped(
   Item.of('railcraft:steam_oven', 8), // arg 1: output

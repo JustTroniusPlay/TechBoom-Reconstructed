@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
   event.remove({id: "create_better_motors:crafting/heavy_connector"});
   event.remove({id: "create_new_age:shaped/electrical_connector_mirrored"});
   event.remove({id: "create_new_age:shaped/electrical_connector"});
+  event.remove({id: "createaddition:crafting/large_connector_gold"});
   event.shaped(
   Item.of('create_new_age:electrical_connector', 2), // arg 1: output
   [

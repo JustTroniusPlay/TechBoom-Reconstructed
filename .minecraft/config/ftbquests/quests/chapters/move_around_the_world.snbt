@@ -695,6 +695,7 @@
 			]
 			description: ["Glow in the dark."]
 			id: "51F27E0987380337"
+			shape: "diamond"
 			size: 1.5d
 			tasks: [{
 				id: "0AF689B60FF8008B"
@@ -776,6 +777,7 @@
 			dependencies: ["7DD34728381D1555"]
 			description: ["Can be put underwater."]
 			id: "63AFBFC47D0B51C1"
+			shape: "diamond"
 			size: 1.5d
 			tasks: [{
 				id: "14F850EAAD057993"
@@ -1380,7 +1382,7 @@
 				"To get around pits supply bore with gravel to build over."
 			]
 			id: "776112F6AA25549A"
-			shape: "rsquare"
+			shape: "diamond"
 			size: 1.3d
 			tasks: [{
 				id: "1D562EFF387ECE9D"

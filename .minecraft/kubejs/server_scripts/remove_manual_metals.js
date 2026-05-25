@@ -64,6 +64,7 @@ ServerEvents.recipes(event => {
             event.remove({id: "immersivegeology:crafting/get_nuggets_from_" + metal + "_ingot"});
             event.remove({id: "ad_astra:" + metal + "_ingot"});
             event.remove({id: "common_ore_library:ingot_to_nugget/" + metal});
+            event.remove({id: "crusty_chunks:" + metal + "_nugget_ingot_recipe"});
 
             //NuggetsToIngot
             event.remove({id: "immersiveengineering:crafting/nugget_" + metal + "_to_ingot_" + metal});
@@ -71,6 +72,7 @@ ServerEvents.recipes(event => {
             event.remove({id: "immersiveengineering:crafting/nugget_" + metal +"_to_" + metal + "_ingot"});
             event.remove({id: "common_ore_library:nugget_to_ingot/" + metal});
             event.remove({id: "railcraft:"+ metal + "_ingot_from_" + metal + "_nugget"});
+            event.remove({id: "crusty_chunks:" + metal + "_ingot_nugget_recipe"});
 
             //Alloys
             event.remove({id: 'thermal_processing:crafting/' + metal + '_ingot'});

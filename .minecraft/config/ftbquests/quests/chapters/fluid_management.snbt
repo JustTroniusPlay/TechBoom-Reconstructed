@@ -49,6 +49,14 @@
 			x: 4.5d
 			y: -3.5999999999999996d
 		}
+		{
+			id: "3AF215A295B43236"
+			linked_quest: "108C99B4F1FE705F"
+			shape: "rsquare"
+			size: 0.6d
+			x: -0.471428571428568d
+			y: -0.7142857142857153d
+		}
 	]
 	quests: [
 		{
@@ -73,6 +81,7 @@
 		{
 			dependencies: ["72304D7D63A87E7A"]
 			id: "1C2524E076D09250"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				count: 4L
@@ -92,6 +101,7 @@
 				item: "create:copper_valve_handle"
 				type: "item"
 			}]
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				count: 4L
@@ -103,19 +113,25 @@
 			y: -7.7d
 		}
 		{
-			dependencies: ["5186990A391ADB8D"]
+			dependencies: [
+				"5186990A391ADB8D"
+				"108C99B4F1FE705F"
+			]
 			id: "11A8EA423A27F25F"
+			shape: "diamond"
+			size: 0.85d
 			tasks: [{
 				id: "659C09D8B97484B1"
 				item: "create:portable_fluid_interface"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -0.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
 			id: "477C63414BE6219A"
+			shape: "rsquare"
 			tasks: [{
 				id: "6F27651D938A8F50"
 				item: "create:hose_pulley"
@@ -132,6 +148,12 @@
 				"Use Engineer's Hammer to configure input and output sides."
 			]
 			id: "62F294152390992E"
+			rewards: [{
+				count: 3
+				id: "5C6938C77845C39A"
+				item: "immersiveengineering:fluid_pump"
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "380D784BB1E618E7"
@@ -146,6 +168,7 @@
 			description: ["Output water automatically throught Pump Hatch. Output capacity based on biome."]
 			icon: "gtceu:primitive_pump"
 			id: "4885642010185D62"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "47C352AFF3F595A0"
@@ -205,7 +228,13 @@
 		}
 		{
 			dependencies: ["5186990A391ADB8D"]
-			description: ["Upgraded iron variant of copper tanks."]
+			description: [
+				"Upgraded iron variant of copper tanks."
+				""
+				"Have bigger sizes and much more capacity, but fairly cost much. You can use Gauge or Walls interchangeably, but &oframe&r of the tank &lalways need to use Walls&r."
+				""
+				"This quest have minimum required blocks you need to make smallest tank."
+			]
 			icon: "railcraft:white_iron_tank_valve"
 			id: "3E8CD30DEAF3BF95"
 			subtitle: "But Iron"
@@ -570,7 +599,7 @@
 				""
 				"Input liquids on the top and output them from the bottom."
 				""
-				"With help of comparator you can see how much liquid is contained."
+				"With help of comparator you can detect how much liquid is contained."
 			]
 			icon: "immersiveengineering:tank"
 			id: "7931B771167AFDFE"
@@ -681,6 +710,7 @@
 		}
 		{
 			dependencies: ["7931B771167AFDFE"]
+			description: ["Hold 2 times more fluids then its iron brother."]
 			icon: "immersivetechnology:steel_sheetmetal_tank"
 			id: "07F4A2373ACBF0D5"
 			rewards: [{
@@ -865,6 +895,48 @@
 			title: "Cover Control"
 			x: 2.5d
 			y: -10.0d
+		}
+		{
+			dependencies: ["0B9E46B8967F33B0"]
+			description: ["Collects water when its raining. To extract it use pumps or connect energy to bottle water."]
+			id: "0F5039D83287789B"
+			size: 0.7d
+			tasks: [{
+				id: "0CBED658D2D0D794"
+				item: "forestry:raintank"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3E8CD30DEAF3BF95"]
+			icon: "railcraft:white_steel_tank_valve"
+			id: "604AD5E9DA61C7DB"
+			size: 0.85d
+			tasks: [
+				{
+					count: 2L
+					id: "5D8727B225430B74"
+					item: "railcraft:white_steel_tank_valve"
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "6B853E12009BF02B"
+					item: { Count: 26, id: "railcraft:white_steel_tank_wall" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7D785C514EF11A42"
+					item: "railcraft:white_steel_tank_gauge"
+					type: "item"
+				}
+			]
+			title: "Steel Modularity"
+			x: -0.9770408163265216d
+			y: -2.892857142857139d
 		}
 	]
 	title: "Fluid Management"

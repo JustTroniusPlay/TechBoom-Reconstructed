@@ -348,7 +348,7 @@
 		}
 		{
 			dependencies: ["4CCBE98B5628C77A"]
-			description: ["By using some gold or electrum you can make big brother of small connector. It can transfer two times more energy and by 8 blocks away! "]
+			description: ["By using electrum you can make big brother of small connector. It can transfer two times more energy and by 8 blocks away! "]
 			icon: "createaddition:large_connector"
 			id: "1AB41CA63D607F37"
 			shape: "diamond"
