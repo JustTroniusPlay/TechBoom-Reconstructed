@@ -472,7 +472,7 @@
 				item: "create:iron_sheet"
 				type: "item"
 			}]
-			shape: "diamond"
+			shape: "rsquare"
 			size: 1.2d
 			subtitle: "Somewhere to start"
 			tasks: [
@@ -740,6 +740,7 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			shape: "rsquare"
 			size: 1.2d
 			subtitle: "Better fuel!"
 			tasks: [
@@ -812,8 +813,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0314625850340065d
-			y: -3.876275510204124d
+			x: 4.257908163265306d
+			y: -3.7525510204081556d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -1209,8 +1210,8 @@
 				title: "Manual for engineering"
 				type: "checkmark"
 			}]
-			x: -1.3144557823129261d
-			y: -9.923894557823125d
+			x: -1.4d
+			y: -10.15d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -1276,8 +1277,8 @@
 				item: "forestry:engine_clockwork"
 				type: "item"
 			}]
-			x: 4.8d
-			y: -1.5d
+			x: 4.5d
+			y: -1.7999999999999998d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
@@ -2008,7 +2009,7 @@
 		{
 			dependencies: ["34D049FD2BF84E84"]
 			id: "18C2D479B1DCB99B"
-			size: 0.7d
+			size: 0.6d
 			tasks: [
 				{
 					id: "2C01016B13312A99"
@@ -2116,8 +2117,8 @@
 				}
 			]
 			title: "Copper Things"
-			x: 2.4499999999999997d
-			y: -4.2d
+			x: 2.339540816326526d
+			y: -2.3852040816326507d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -2141,8 +2142,8 @@
 				type: "item"
 			}]
 			title: "Bane of Endermans"
-			x: 2.929421768707485d
-			y: -4.93750000000005d
+			x: 2.6456632653061263d
+			y: -5.079081632653065d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2500,8 +2501,8 @@
 					type: "item"
 				}
 			]
-			x: -0.010714285714279015d
-			y: -9.740051020408176d
+			x: 0.0d
+			y: -10.15d
 		}
 		{
 			dependencies: ["49EAA9A6F41A7551"]
@@ -2515,8 +2516,8 @@
 				type: "item"
 			}]
 			title: "Industrial Coke Oven"
-			x: 0.6780612244897952d
-			y: -9.717389455782325d
+			x: 0.6887755102040743d
+			y: -10.12733843537415d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -3207,8 +3208,8 @@
 				item: "thermal:dynamo_lapidary"
 				type: "item"
 			}]
-			x: 0.6729591836734556d
-			y: -3.737074829931977d
+			x: 0.6653911564625616d
+			y: -3.7940476190476105d
 		}
 		{
 			dependencies: ["51D2A2A99A671311"]
@@ -3221,8 +3222,217 @@
 				item: "minecraft:gunpowder"
 				type: "item"
 			}]
-			x: -1.4d
-			y: -8.75d
+			x: -1.75d
+			y: -9.1d
+		}
+		{
+			dependencies: ["34D049FD2BF84E84"]
+			description: [
+				"Very cheap, very frail, but still have Gregtech tools abilities."
+				""
+				"&lAll&r Gregtech standart tools have special helpful abilites: axe can chop down whole tree, pickaxes can put torches on right click automatically and others. You always can see them in item description."
+			]
+			id: "7D69A9A746774D60"
+			rewards: [{
+				count: 16
+				id: "409AF7257EB2664B"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 0.85d
+			tasks: [
+				{
+					id: "2D266810284F9200"
+					item: {
+						Count: 1
+						id: "gtceu:flint_axe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 1
+								MaxDamage: 63
+								ToolSpeed: 2.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7EA3BACF555801FC"
+					item: {
+						Count: 1
+						id: "gtceu:flint_sword"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 4.0f
+								AttackSpeed: -2.4f
+								DefaultEnchantments: [{
+									id: "minecraft:fire_aspect"
+									lvl: 1s
+								}]
+								Enchantability: 5
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "19AD65400DD2EB6F"
+					item: {
+						Count: 1
+						id: "gtceu:flint_pickaxe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								TorchPlacing: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 1
+								MaxDamage: 63
+								ToolSpeed: 4.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "11F432838935904E"
+					item: {
+						Count: 1
+						id: "gtceu:flint_shovel"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 1
+								MaxDamage: 63
+								ToolSpeed: 4.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Flint Tools"
+			x: 2.523214285714282d
+			y: -4.3035714285714235d
+		}
+		{
+			dependencies: ["4B31C89E0FA58CE0"]
+			id: "3D3B1B33532FA357"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "003B5AB7C0B47D6D"
+					item: {
+						Count: 1
+						id: "gtceu:invar_pickaxe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								TorchPlacing: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [{
+									id: "minecraft:efficiency"
+									lvl: 1s
+								}]
+								Enchantability: 18
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 8.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4DC0C26046FD6621"
+					item: {
+						Count: 1
+						id: "gtceu:invar_axe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [{
+									id: "minecraft:efficiency"
+									lvl: 1s
+								}]
+								Enchantability: 18
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "309FC78D0448E378"
+					item: {
+						Count: 1
+						id: "gtceu:invar_shovel"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [{
+									id: "minecraft:efficiency"
+									lvl: 1s
+								}]
+								Enchantability: 18
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 8.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Hasty"
+			x: 1.5d
+			y: -7.5d
 		}
 	]
 	title: "Start of the journey"

@@ -40,6 +40,7 @@ ServerEvents.recipes(event => {
             event.remove({id: "ad_astra:" + metal + "_rod"});
             event.remove({id: "common_ore_library:crafting/rod/" + metal});
             event.remove({id: "thermal_processing:crafting/rods/" + metal});
+            event.remove({id: "immersiveengineering:crafting/stick_" + metal});
 
             //Blocks
             event.remove({id: "ad_astra:" + metal + "_block"});
