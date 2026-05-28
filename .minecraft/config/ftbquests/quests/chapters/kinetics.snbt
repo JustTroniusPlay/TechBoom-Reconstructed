@@ -9,10 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"3F0F17AD293B8B8F"
-				"25951FDCB7908145"
-			]
+			dependencies: ["25951FDCB7908145"]
 			description: [
 				"The backbone of Create mod and its systems is &lcogs and shafts&r! They will transfer kinetic energy and power your machines. They can be directly connected with shafts or cogs."
 				""
@@ -414,7 +411,7 @@
 				""
 				"Multimeter is both blocks in form of one!"
 			]
-			icon: "create_better_motors:multimeter"
+			icon: "create:stressometer"
 			id: "3A32F6B5E26895FE"
 			subtitle: "To know how good you do it"
 			tasks: [

@@ -209,7 +209,7 @@
 			]
 			id: "0B9E46B8967F33B0"
 			rewards: [{
-				count: 13
+				count: 14
 				id: "48B60CC257943FF1"
 				item: "railcraft:water_tank_siding"
 				type: "item"
@@ -217,7 +217,7 @@
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
-				count: 13L
+				count: 12L
 				id: "1FA4DE9CB92AC078"
 				item: "railcraft:water_tank_siding"
 				type: "item"

@@ -143,6 +143,7 @@
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
+			description: ["You can change wood type of wheel with clicking planks on it."]
 			id: "67C1B62B8C68F0F1"
 			shape: "diamond"
 			size: 0.7d
