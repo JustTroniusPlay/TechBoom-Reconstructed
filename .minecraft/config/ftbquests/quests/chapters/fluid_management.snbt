@@ -542,7 +542,7 @@
 			description: [
 				"Drums can store liquids even when broken. They have output hatch underneath you can activate with Mallets."
 				""
-				"&oNotable feature of Gold Drums: they can handle acids.&r"
+				"&oNotable feature of Gold Drums: they can handle &lacids.&r"
 			]
 			icon: "gtceu:bronze_drum"
 			id: "031595756B809ADC"
