@@ -17,6 +17,11 @@ ServerEvents.recipes(event => {
     'thermal:steel_block'
   );
 
+  event.replaceInput({id: "create:crafting/kinetics/hose_pulley"},
+    "minecraft:dried_kelp_block",
+    'gtceu:rubber_block'
+  );
+
   event.remove({id: "create_new_age:shaped/generator_coil"});
   event.shaped(
   Item.of('create_new_age:generator_coil', 1), // arg 1: output

@@ -431,6 +431,7 @@
 			dependencies: ["17C8A6EE4EABA579"]
 			hide_dependent_lines: true
 			id: "2CF505E23EB15C4D"
+			shape: "hexagon"
 			tasks: [{
 				id: "7DF5A8E9AC70E00D"
 				item: {
@@ -731,6 +732,7 @@
 			dependencies: ["36FE5196B51FA334"]
 			hide_dependent_lines: true
 			id: "649FFB02AED8C68E"
+			shape: "hexagon"
 			tasks: [{
 				id: "66E6D4E0C17C787C"
 				item: {
@@ -938,6 +940,7 @@
 			dependencies: ["0A94744A5DCA6D10"]
 			hide_dependent_lines: true
 			id: "07D32B706FF93B96"
+			shape: "hexagon"
 			tasks: [{
 				id: "6D239EBC07D0CB75"
 				item: "pamhc2foodcore:vinegaritem"
@@ -1021,6 +1024,7 @@
 			dependencies: ["17C8A6EE4EABA579"]
 			hide_dependent_lines: true
 			id: "24B18CB78C73E272"
+			shape: "hexagon"
 			tasks: [{
 				id: "25DB205C66139185"
 				item: "pamhc2foodextended:blackpepperitem"
@@ -1258,6 +1262,7 @@
 			dependencies: ["17C8A6EE4EABA579"]
 			hide_dependent_lines: true
 			id: "263A38C0862B1708"
+			shape: "hexagon"
 			tasks: [{
 				id: "4F08CFDB8CF187B7"
 				item: "pamhc2foodcore:flouritem"
@@ -1307,6 +1312,7 @@
 			dependencies: ["0A94744A5DCA6D10"]
 			hide_dependent_lines: true
 			id: "18580AFA05B89BCC"
+			shape: "hexagon"
 			tasks: [{
 				id: "2AC95DECB736B467"
 				item: "pamhc2foodcore:butteritem"
@@ -1557,6 +1563,7 @@
 			dependencies: ["3E0024A5F5C51986"]
 			hide_dependent_lines: true
 			id: "1D2AA4AB50B19838"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "53D130F08392F440"
@@ -1728,7 +1735,7 @@
 		{
 			dependencies: ["0A94744A5DCA6D10"]
 			id: "11E7DB2211686563"
-			shape: "pentagon"
+			shape: "hexagon"
 			tasks: [{
 				id: "3B93431A87B8BD72"
 				item: "pamhc2foodcore:stockitem"

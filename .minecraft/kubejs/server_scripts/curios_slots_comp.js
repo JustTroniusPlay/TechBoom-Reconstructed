@@ -13,7 +13,7 @@ ServerEvents.tags('item', event => {
 
     event.add('curios:head', 'create:copper_diving_helmet');
 
-    /*const tanks = ['filling', 'fueling']
+    const tanks = ['filling', 'fueling']
     const _size = ['small','medium','large']
 
     tanks.forEach(tank => 
@@ -25,9 +25,9 @@ ServerEvents.tags('item', event => {
 
                 })
             
-    })*/
+    })
 
-    const toolbox = ['ae2:meteorite_compass','gtceu:wood_mallet','create:super_glue']
+    const toolbox = ['ae2:meteorite_compass','gtceu:wood_mallet','create:super_glue','forestry:scoop']
     toolbox.forEach(tool =>
         {
             event.add('immersiveengineering:toolbox/tools', tool);

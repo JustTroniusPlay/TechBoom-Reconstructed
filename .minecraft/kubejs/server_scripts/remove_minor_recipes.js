@@ -10,6 +10,11 @@ ServerEvents.tags('item', event => {
 
     event.add('minecraft:bookshelf_books', 'voltaic:guidebook');
     event.add('minecraft:lectern_books', 'voltaic:guidebook');
+
+    event.add('minecraft:bookshelf_books', 'cookingforblockheads:crafting_book');
+    event.add('minecraft:bookshelf_books', 'cookingforblockheads:recipe_book');
+    event.add('minecraft:bookshelf_books', 'cookingforblockheads:no_filter_edition');
+    event.add('minecraft:bookshelf_books', 'solringopie:food_book');
   
 })
 
@@ -57,6 +62,12 @@ ServerEvents.recipes(event => {
         {id: "railcraft:water_tank_siding"},
         'minecraft:slime_ball',
         '#forge:slimeballs'
+    )
+
+    event.replaceInput(
+        {id: "cookingforblockheads:crafting_book"},
+        'minecraft:diamond',
+        ['#forge:seeds','#forge:fruits','#forge:vegetables','#forge:crops']
     )
 
   /*  event.remove({id: "tesseract:tesseract"});
