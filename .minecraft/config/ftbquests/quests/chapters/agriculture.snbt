@@ -58,6 +58,12 @@
 				"Redstone sheep will be your best assistent! It can collect crops automatically by using coal as fuel. And you can even put hopper under it home point to get crops into other inventories! "
 			]
 			id: "37713FBD71AF9623"
+			rewards: [{
+				count: 8
+				id: "58B59E8250A61743"
+				item: "minecraft:coal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "13C155956D2EC649"
 				item: "immersive_machinery:redstone_sheep"

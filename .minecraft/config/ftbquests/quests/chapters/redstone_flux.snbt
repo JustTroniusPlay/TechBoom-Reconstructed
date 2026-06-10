@@ -92,7 +92,7 @@
 			description: [
 				"Specialized in making advanced alloys and getting additional items out of some ores."
 				""
-				"Can even recycle plates and smelt dusts back into ingots. "
+				"Can even recycle plates and smelt dusts back into ingots."
 			]
 			id: "3155C182FC72865E"
 			shape: "rsquare"
@@ -389,7 +389,10 @@
 			y: -1.4269557823129162d
 		}
 		{
-			dependencies: ["52563AE115ACBF51"]
+			dependencies: [
+				"52563AE115ACBF51"
+				"1553365BB32E7666"
+			]
 			icon: "thermal:machine_crystallizer"
 			id: "3751A61EDD08EF41"
 			tasks: [
@@ -412,7 +415,7 @@
 				}
 			]
 			x: -5.0d
-			y: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3155C182FC72865E"]
@@ -466,8 +469,8 @@
 				}
 			]
 			title: "Infused glass"
-			x: -2.968367346938777d
-			y: 2.7086734693877474d
+			x: -2.357142857142861d
+			y: 2.046513605442186d
 		}
 		{
 			dependencies: ["1553365BB32E7666"]
@@ -549,7 +552,7 @@
 			}]
 			title: "Crystalization"
 			x: -6.0d
-			y: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -729,8 +732,8 @@
 				item: "thermal:machine_efficiency_augment"
 				type: "item"
 			}]
-			x: -3.85d
-			y: 1.75d
+			x: -3.15d
+			y: 2.1d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -833,7 +836,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["25B2030958956699"]

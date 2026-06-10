@@ -36,6 +36,13 @@
 			x: -2.5d
 			y: -10.5d
 		}
+		{
+			id: "4858949CB9F2FC35"
+			linked_quest: "7B64D58280611794"
+			size: 0.65d
+			x: 9.100000000000001d
+			y: -0.65d
+		}
 	]
 	quests: [
 		{
@@ -108,7 +115,6 @@
 			dependencies: [
 				"766AF1AE840A63FD"
 				"75D2966F919D360B"
-				"4D1A4AA16B63FB77"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -142,7 +148,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["22BE56C3CA087A04"]
+			dependencies: [
+				"22BE56C3CA087A04"
+				"15B5CF1F309CA82A"
+			]
 			description: ["You can change wood type of wheel with clicking planks on it."]
 			id: "67C1B62B8C68F0F1"
 			shape: "diamond"
@@ -152,8 +161,8 @@
 				item: "create:large_water_wheel"
 				type: "item"
 			}]
-			x: 8.960884353741498d
-			y: 2.2035714285714363d
+			x: 8.724489795918359d
+			y: 2.277040816326526d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -426,7 +435,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["22BE56C3CA087A04"]
+			dependencies: [
+				"22BE56C3CA087A04"
+				"7A0C939E0FE540EC"
+			]
 			description: ["With help of Mechanical Press you now can get plates with 1 to 1 ratio. No more wasted metals!"]
 			icon: "create:mechanical_press"
 			id: "1A3BA4BEFD861942"
@@ -610,7 +622,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["1A3BA4BEFD861942"]
+			dependencies: [
+				"1A3BA4BEFD861942"
+				"7B64D58280611794"
+			]
 			description: ["(P.S. Jetpack unfortunately will use fuel when you on Immersive Aircraft transport. Be careful!)"]
 			icon: "create_sa:hydraulic_engine"
 			id: "188E10C139F48264"
@@ -870,6 +885,7 @@
 		{
 			dependencies: ["691DD9FDCE3E58DA"]
 			id: "18BF6D22CDB7509D"
+			shape: "diamond"
 			tasks: [{
 				id: "3E75252022BD8BD2"
 				item: "create_new_age:basic_motor"
@@ -906,7 +922,7 @@
 			y: -0.05000000000000071d
 		}
 		{
-			dependencies: ["18BF6D22CDB7509D"]
+			dependencies: ["5ECEF02D7431A68F"]
 			id: "4EF6BA6A14C473DA"
 			size: 0.7d
 			tasks: [{
@@ -2632,6 +2648,18 @@
 			}]
 			x: 12.543698532044402d
 			y: -2.261734693877557d
+		}
+		{
+			dependencies: ["621E6E9756E60D93"]
+			id: "04DAC545503E54B2"
+			size: 0.65d
+			tasks: [{
+				id: "22EEB87EDF23F9E3"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			x: 9.316326530612237d
+			y: 2.1137755102040714d
 		}
 	]
 	title: "Moving Parts"

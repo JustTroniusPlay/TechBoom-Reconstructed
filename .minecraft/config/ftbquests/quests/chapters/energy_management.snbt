@@ -68,7 +68,7 @@
 				"{@pagebreak}"
 				"IE wires have energy loss. Every 16 blocks they will loose 5% of overal energy pool. Additional loss happen if you will not use full wires carrying capacity."
 				""
-				"LV connectors can input or output max 256 FE to the wires. By combining many connectors into single wire through relays the energy loss can be mitigated. &oLV wires max transfer capacity is 2048 FE/t, going higher will burn your wires.&r"
+				"LV connectors can input or output max 256 FE to the wires. By combining many connectors into single wire through relays the energy loss can be mitigated. &oLV wires max transfer capacity is 2048 FE/t, going higher will &lburn&r &oyour wires.&r"
 			]
 			icon: "immersiveengineering:wirecoil_copper"
 			id: "3CADA01B0663BC89"
@@ -602,6 +602,65 @@
 			}]
 			x: 2.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["3CADA01B0663BC89"]
+			description: [
+				"Any two connectors can go throught any solid block so you don't need to get your wires around them. Put them on opposite sides of your wall and click with Engineer's Hammer. "
+				""
+				"So now you can transfer power directly into the wall!"
+			]
+			icon: "immersiveengineering:connector_mv"
+			id: "6F61E15935E4DD0F"
+			shape: "square"
+			size: 0.65d
+			tasks: [{
+				id: "3A6EF3DDF4CB9189"
+				type: "checkmark"
+			}]
+			title: "Energy in the walls"
+			x: 0.48596938775511234d
+			y: -3.265306122448976d
+		}
+		{
+			dependencies: ["3CADA01B0663BC89"]
+			description: [
+				"Multimeter will show energy loss of two connectors."
+				""
+				"Current Transformer its stationary version that need to be connected between two points."
+				""
+				"To disconnect wires use wire cutter."
+			]
+			id: "23253B96F5BCB012"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "78456692647699BA"
+					item: "immersiveengineering:voltmeter"
+					type: "item"
+				}
+				{
+					id: "7401F69E48F91379"
+					item: "immersiveengineering:current_transformer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3D4AA86312A448E5"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Wiring Tools"
+			x: 2.1d
+			y: -4.2d
 		}
 	]
 	title: "Energy Management"

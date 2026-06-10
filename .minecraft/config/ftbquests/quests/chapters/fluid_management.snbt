@@ -861,6 +861,7 @@
 			dependencies: [
 				"724160D9F6565F29"
 				"1B95E7F9A5CBDBE8"
+				"480641273B63C681"
 			]
 			dependency_requirement: "one_completed"
 			description: ["To configure your covers or disassemble them."]

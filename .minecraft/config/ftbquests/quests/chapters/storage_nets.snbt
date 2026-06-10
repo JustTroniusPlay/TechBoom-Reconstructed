@@ -40,8 +40,8 @@
 			linked_quest: "1042CC5D3176F2A3"
 			shape: "diamond"
 			size: 0.7d
-			x: 3.706802721088465d
-			y: 8.96190476190477d
+			x: 5.155442176870771d
+			y: 8.221428571428579d
 		}
 		{
 			id: "28F29F846C54834D"
@@ -354,8 +354,8 @@
 				item: "create_factory_logistics:network_link"
 				type: "item"
 			}]
-			x: 1.488775510204107d
-			y: 3.173809523809517d
+			x: 1.5244897959183916d
+			y: 4.809523809523814d
 		}
 		{
 			dependencies: ["721BF9359D5D6E95"]
@@ -730,6 +730,67 @@
 			]
 			x: -2.8d
 			y: 2.4499999999999997d
+		}
+		{
+			dependencies: ["2B605F8F5C28FCAD"]
+			id: "784CD20CAEDEC685"
+			tasks: [{
+				id: "0BF7F91018C721C5"
+				item: "create_connected:inventory_access_port"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2B605F8F5C28FCAD"]
+			id: "5763E65E25EBD0E4"
+			tasks: [{
+				id: "6542D05709434A43"
+				item: "create_connected:inventory_bridge"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E43DE8E8F0F36A6"]
+			description: ["Can be put on pipes and later cabels to hide them into walls for better look!"]
+			icon: {
+				Count: 1
+				id: "gtceu:facade_cover"
+				tag: {
+					Facade: {
+						Name: "minecraft:stone"
+					}
+				}
+			}
+			id: "480641273B63C681"
+			size: 0.7d
+			tasks: [
+				{
+					id: "6C442B5CC7E01F12"
+					item: {
+						Count: 1
+						id: "gtceu:facade_cover"
+						tag: {
+							Facade: {
+								Name: "minecraft:stone"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "511DB7DEF0809953"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			title: "UnderCover"
+			x: 5.488775510204107d
+			y: 7.530952380952389d
 		}
 	]
 	title: "Storage Solutions"

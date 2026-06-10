@@ -21,6 +21,21 @@
 			x: -1.4d
 			y: -5.6d
 		}
+		{
+			id: "7A33371FDB0C7959"
+			linked_quest: "4879433BBEEF8352"
+			shape: "rsquare"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			id: "7F316268B078E675"
+			linked_quest: "67C1B62B8C68F0F1"
+			shape: "diamond"
+			size: 0.7d
+			x: -2.0d
+			y: -11.0d
+		}
 	]
 	quests: [
 		{
@@ -248,11 +263,25 @@
 			id: "6CF046ABDEF49022"
 			shape: "rsquare"
 			size: 1.2d
-			tasks: [{
-				id: "2711BA5788062CC7"
-				item: "adpother:iron_filter_frame"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2711BA5788062CC7"
+					item: "adpother:iron_filter_frame"
+					type: "item"
+				}
+				{
+					id: "0F36401C261B2C31"
+					item: "adpother:gold_filter_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "61BF78C016AF2834"
+					item: "adpother:diamond_filter_frame"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "Automatic cleaning"
 			x: 7.199999999999999d
 			y: 4.8d
@@ -603,6 +632,8 @@
 			dependencies: ["330180412AC025EA"]
 			description: [
 				"Seared Melter is first iteration of getting molten metals. Right now it can help get additional resource income. Simple and common ores can give additional 3 nuggets when using smeltery. Some metals require higher temperatures, so you need to upgrade to bigger smeltery later. You can't make alloys in small smeltery."
+				""
+				"&lSome raw ores give less resources in smeltery, sometimes it's better to smelt them the good old way!&r"
 				""
 				"{@pagebreak}"
 				"To build Melter put it on the Heater, then attach Faucet to it and put Basin or Seared Table with Cast under for molten metals to flow. Fuel it with coal or any other solid fuel. Right-click Faucet to pour your liquids into the basin and create resource blocks. "
@@ -1667,8 +1698,8 @@
 				title: "Energy Management"
 				type: "checkmark"
 			}]
-			x: 6.75d
-			y: -2.5d
+			x: 5.574234693877557d
+			y: -2.470238095238095d
 		}
 		{
 			dependencies: ["1836959FBE9CC719"]
@@ -1695,10 +1726,13 @@
 		{
 			dependencies: ["34D049FD2BF84E84"]
 			description: [
-				"Ziplines are useful ways to go down a mountain or any other slopes. Put two zipline hooks at some distance and then click with rope at both of them to connect those points. You can even connect multiplie points to various hooks. Hold right click while on the rope to move along side it."
+				"Ziplines are useful ways to go down a mountain or any other slopes. "
 				""
-				"Additionally if you put hooks at the same height level you can just use them as a way to cross pits and falls freely in both direction."
+				"Put two zipline hooks at some distance and then click with rope at both of them to connect those points. Hold right click while on the rope to move along side it. You can even connect multiplie points to various hooks. "
 				""
+				"Additionally if you put hooks at the same height level you can just use them as a way to cross pits and falls freely in both direction. "
+				""
+				"{@pagebreak}"
 				"Just keep in mind that using hooks will drain your stamina overtime, so don't forget to take a brakes."
 				""
 				"You can change colors of zipline rope by combining it with dyes in crafting grid. Its not limited by just minecraft standart colors."
@@ -2443,45 +2477,12 @@
 			y: -0.7d
 		}
 		{
-			dependencies: ["69DB58E1CD20ED2B"]
-			description: [
-				"By charging normal compass you can seek for fallen meteors. "
-				""
-				"Inside one of them you will find presses and certus quartz to start making components for your first digital storage system."
-				""
-				"Press 'G' on Certus Quarts Cluster to read important info about the buddings."
-			]
-			icon: "ae2:sky_stone_block"
-			id: "4879433BBEEF8352"
-			tasks: [
-				{
-					id: "19ED3647BB91E7C8"
-					item: "ae2:charger"
-					type: "item"
-				}
-				{
-					id: "051424CB82D92F48"
-					item: "ae2:meteorite_compass"
-					type: "item"
-				}
-				{
-					id: "33EDB4874960F550"
-					item: "ae2:certus_quartz_crystal"
-					type: "item"
-				}
-				{
-					id: "1F189006AD4FE158"
-					item: "ae2:quartz_cluster"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Celestial Objects"
-			x: 8.0d
-			y: -3.5d
-		}
-		{
 			dependencies: ["51D2A2A99A671311"]
+			description: [
+				"Upgrade to your Rustic Coke Oven that makes it faster."
+				""
+				"It now will outomatically output items and fluids with its hatches. Multiple Coke Ovens even will share walls with each other!"
+			]
 			icon: "gtceu:coke_oven"
 			id: "49EAA9A6F41A7551"
 			size: 0.7d
@@ -2498,7 +2499,7 @@
 					type: "item"
 				}
 				{
-					count: 3L
+					count: 2L
 					id: "7CD3A054FEF6769C"
 					item: "gtceu:coke_oven_hatch"
 					optional_task: true
@@ -2510,6 +2511,7 @@
 		}
 		{
 			dependencies: ["49EAA9A6F41A7551"]
+			description: ["Fastest Coke Oven version that do things on its own without any additional requirements."]
 			id: "575BDE04271E94D1"
 			shape: "rsquare"
 			size: 0.7d
@@ -2701,148 +2703,6 @@
 			y: -1.2185374149659864d
 		}
 		{
-			dependencies: ["4879433BBEEF8352"]
-			description: ["To make components and blocks of your future digital storage you need processors. Inscriber is ultimate way to craft them."]
-			icon: "ae2:inscriber"
-			id: "4A8233ADB6406DA9"
-			tasks: [
-				{
-					id: "3B43AE49CABA5141"
-					item: "ae2:inscriber"
-					type: "item"
-				}
-				{
-					id: "0AA69E31F8CCE46A"
-					item: "ae2:logic_processor"
-					type: "item"
-				}
-				{
-					id: "664C4D46FEDD5789"
-					item: "ae2:calculation_processor"
-					type: "item"
-				}
-				{
-					id: "6CEBE4F7B9183079"
-					item: "ae2:engineering_processor"
-					type: "item"
-				}
-			]
-			x: 8.0d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"4A8233ADB6406DA9"
-				"799F7F64000A3084"
-			]
-			description: [
-				"Digital storage use Storage Cells with various properties: Bytes and Types."
-				""
-				"&oTypes&r: means how many different items can cell hold."
-				""
-				"&oBytes&r: show how many items cell can hold. 1 item = 1 bit, so for a byte you need 8 items."
-				""
-				"Put them in ME Drive and connect terminal to it with fluix cables. Now you have simple way to store your items in one block!"
-				""
-				"With addition of crafting terminal you now can create things directly from ME system."
-				""
-				"&lFollow 'Storage Solutions' tab next.&r"
-			]
-			icon: "ae2:drive"
-			id: "540D62BE372AE7D1"
-			shape: "gear"
-			size: 1.5d
-			subtitle: "Who needs item sorting?"
-			tasks: [
-				{
-					id: "07BF7D74DD8A3B9B"
-					item: "ae2:drive"
-					type: "item"
-				}
-				{
-					id: "074050C53154702C"
-					item: {
-						Count: 1
-						id: "ae2:item_storage_cell_1k"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "473F8D6510E53CA6"
-					item: "ae2:terminal"
-					type: "item"
-				}
-				{
-					id: "7229AFD712C4987A"
-					item: "ae2:crafting_terminal"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "09C8561C6B735270"
-					item: "ae2:fluix_glass_cable"
-					type: "item"
-				}
-			]
-			title: "Digital Storage"
-			x: 6.75d
-			y: -6.25d
-		}
-		{
-			dependencies: ["4A8233ADB6406DA9"]
-			description: ["You will need it to convert any form of energy for your main digital storage network. You can use Fluix Cables to transfer energy between components."]
-			id: "799F7F64000A3084"
-			shape: "diamond"
-			tasks: [{
-				id: "7EE3EA9812EAF172"
-				item: "ae2:energy_acceptor"
-				type: "item"
-			}]
-			x: 6.749489795918365d
-			y: -4.254846938775515d
-		}
-		{
-			dependencies: [
-				"799F7F64000A3084"
-				"0852CB10008D7CDB"
-				"7B289C03327D9227"
-			]
-			description: ["Attachment for Energy Acceptor. With it you now can power your ME system with rotational power."]
-			id: "5B16DA7287A8ABFE"
-			size: 0.7d
-			tasks: [{
-				id: "2BF870DF77EE4B3D"
-				item: "createappliedkinetics:energy_provider"
-				type: "item"
-			}]
-			x: 7.199829931972779d
-			y: -3.529676870748304d
-		}
-		{
-			dependencies: ["4879433BBEEF8352"]
-			description: ["In the depths of the Nether you can find ore veins containing certus quartz native to hellish landscape. It can be used in some crafting recipe instead of one you farm in meteors."]
-			icon: "gtceu:certus_quartz_gem"
-			id: "7E322C0C7CE5B091"
-			shape: "diamond"
-			size: 0.7d
-			tasks: [
-				{
-					id: "53D6CF29C5CC2C9A"
-					item: "gtceu:raw_certus_quartz"
-					type: "item"
-				}
-				{
-					id: "4F9072AEF24597BF"
-					item: "gtceu:certus_quartz_gem"
-					type: "item"
-				}
-			]
-			title: "Hellish Replacement"
-			x: 7.998129251700682d
-			y: -2.6697704081632736d
-		}
-		{
 			dependencies: ["10E87B6699909383"]
 			description: ["You can make glass panels with help of alloy kiln. It is not much but will do it for now."]
 			id: "330180412AC025EA"
@@ -2938,9 +2798,9 @@
 		{
 			dependencies: ["191FA67C7B17BB2F"]
 			description: [
-				"Can remember up to 9 recipes after crafting. By right-clicking on the recipe on the right it will not be overwritten by different recipe. "
+				"Combination of Blueprint abilities with internal storage of Engineer's Crafting Table. By right-clicking on the recipe on the right in the UI it will not be overwritten by different recipe. "
 				""
-				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly."
+				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly and bring resources out of your chests."
 			]
 			id: "1C31C068991CC116"
 			shape: "rsquare"
@@ -2949,7 +2809,7 @@
 				item: "forestry:worktable"
 				type: "item"
 			}]
-			title: "Personal recipe book"
+			title: "Personal Crafting Book"
 			x: 5.5d
 			y: -5.0d
 		}
@@ -3038,20 +2898,6 @@
 			}]
 			x: 2.9211734693877673d
 			y: -2.1164965986394577d
-		}
-		{
-			dependencies: ["4A8233ADB6406DA9"]
-			description: ["Presses can be coppied with iron block and coresponding press."]
-			icon: "minecraft:iron_block"
-			id: "2F3E8A2C8A46E941"
-			size: 0.5d
-			tasks: [{
-				id: "07F74B626CCB2A6A"
-				title: "Press Recreation"
-				type: "checkmark"
-			}]
-			x: 8.0d
-			y: -5.75d
 		}
 		{
 			dependencies: ["15CBA4A7DB0EE055"]
@@ -3158,7 +3004,7 @@
 		}
 		{
 			dependencies: ["521B2505E5C81E16"]
-			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail Each blade will need it own Sail upgrade!"]
+			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail. Each blade will need it own Sail upgrade!"]
 			id: "50BA9C41804AE9A2"
 			size: 0.7d
 			tasks: [{
