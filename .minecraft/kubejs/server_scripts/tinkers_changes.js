@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+
   {//Casts removed
     event.remove({id: "tconstruct:smeltery/casts/gold/wires"});
     event.remove({id: "tconstruct:smeltery/casts/gold/rods"});
@@ -45,6 +46,7 @@ ServerEvents.recipes(event => {
     B: '#forge:glass_panes'
   })
 
+  event.remove({id: "tconstruct:tables/tinkers_anvil_material"});
   event.remove({id: "tconstruct:tables/tinkers_anvil"});
   event.shaped(
   Item.of('tconstruct:tinkers_anvil', 1), // arg 1: output

@@ -1,4 +1,6 @@
 {
     "block.immersiveengineering.cokebrick":"Rustic Coke Bricks",
-    "item.immersiveengineering.ingot_aluminum":"Impure Aluminium Ingot"
+    "item.immersiveengineering.ingot_aluminum":"Impure Aluminium Ingot",
+    "block.immersiveengineering.fluid_pipe":"Iron Fluid Pipe",
+    "block.immersiveengineering.fluid_pump":"Electrical Fluid Pump"
 }

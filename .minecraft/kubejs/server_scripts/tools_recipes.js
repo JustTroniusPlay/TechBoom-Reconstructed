@@ -3,6 +3,13 @@ ServerEvents.recipes(event => {
   event.remove({id: "forestry:bronze_axe"});
   event.remove({id: "forestry:bronze_pickaxe"});
 
+  /*let tool_recipe = (tool_name, tool_id, material) =>
+    {
+      switch (tool_name):
+        case "pickaxe"
+
+    }*/
+
   const metals = [
     'steel', 'bronze', 'iron', 'gold', 'diamond', 'osmium'
 

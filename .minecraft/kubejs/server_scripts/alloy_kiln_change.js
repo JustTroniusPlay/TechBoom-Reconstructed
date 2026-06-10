@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
 
-    event.remove({id: "immersiveengineering:crafting/alloybrick"});
-    event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick"});
+    //event.remove({id: "immersiveengineering:crafting/alloybrick"});
+    //event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick"});
     //Replace with deployer two step recipe
-    event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick_using_deployer"});
+    //event.remove({id: "createaddition:compat/immersiveengineering/item_application/kiln_brick_using_deployer"});
     
-  event.shaped(
+  /*event.shaped(
   Item.of('immersiveengineering:alloybrick', 2), // arg 1: output
   [
     ' A ',
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     B: 'minecraft:brick',  //arg 3: the mapping object
     C: '#forge:sandstone'
   }
-)
+)*/
 
     let kiln = (output, Input1, Input2, count, time) => 
     {
@@ -42,13 +42,13 @@ ServerEvents.recipes(event => {
   kiln(
     "create:andesite_alloy",
     "minecraft:andesite",
-    "minecraft:iron_nugget", 4,
+    "minecraft:iron_nugget", 2,
     100)
 
   kiln(
     "create:andesite_alloy",
     "minecraft:andesite",
-    "create:zinc_nugget", 2,
+    "create:zinc_nugget", 1,
     60)
 
   kiln(
@@ -75,7 +75,26 @@ ServerEvents.recipes(event => {
       "gtceu:tiny_flint_dust",1,
     100)
 
+    const andes = ['minecraft:andesite', 'gtceu:andesite_dust']
+    const nugget = ['minecraft:iron_nugget', 'create:zinc_nugget']
+    let nl = 1;
 
+    andes.forEach(andesite =>
+      {
+        nugget.forEach(nuggets =>
+          {
+            event.recipes.gtceu.alloy_smelter('techboom:gtceu_andesite_alloy_' + nl)
+            .itemInputs(
+            '1x ' + andesite,
+            '1x ' + nuggets
+            )
+            .itemOutputs(
+            '1x create:andesite_alloy')
+            .duration(30)
+            .EUt(15)
 
+            nl++;
+          })
+      })
 })
 

@@ -10,21 +10,77 @@
 		{
 			id: "71474757EDAFDEB7"
 			linked_quest: "15C30310B03E4F79"
-			shape: "hexagon"
+			shape: "gear"
 			size: 1.5d
 			x: 1.5d
 			y: 0.5d
 		}
 		{
-			id: "18906C42BDADA8BD"
-			linked_quest: "5361A9865C6547F4"
-			x: 0.0d
-			y: 4.5d
-		}
-		{
 			id: "7CFDEAFF4927E1C3"
 			linked_quest: "79EF5B4E470ACDB4"
-			x: -3.0d
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			id: "7F9754840726B892"
+			linked_quest: "4DE3A5EB02DCDC59"
+			shape: "gear"
+			size: 1.2d
+			x: -0.7071428571428626d
+			y: 4.973873299319699d
+		}
+		{
+			id: "69298028232E244E"
+			linked_quest: "0A47F74F64457575"
+			size: 0.7d
+			x: -1.75d
+			y: 6.6499999999999995d
+		}
+		{
+			id: "183BD844B51E68E0"
+			linked_quest: "2798CCE5B1DE21DA"
+			shape: "gear"
+			size: 1.5d
+			x: 0.75d
+			y: 6.0d
+		}
+		{
+			id: "3699CE0C026189E1"
+			linked_quest: "5169668687940129"
+			shape: "gear"
+			size: 1.5d
+			x: 0.75d
+			y: 7.5d
+		}
+		{
+			id: "1C88D3CDC422080B"
+			linked_quest: "4B31C89E0FA58CE0"
+			shape: "hexagon"
+			size: 0.5d
+			x: 0.8367346938775526d
+			y: -1.591836734693878d
+		}
+		{
+			id: "7F125D6CCF670BC5"
+			linked_quest: "4AFEE3BCC0DC661B"
+			shape: "hexagon"
+			size: 0.7d
+			x: -4.480357142857159d
+			y: 8.202976190476171d
+		}
+		{
+			id: "035B96C26594770B"
+			linked_quest: "69DB58E1CD20ED2B"
+			shape: "pentagon"
+			size: 0.85d
+			x: -4.25d
+			y: 7.225d
+		}
+		{
+			id: "3B38ACB3D7E7FB08"
+			linked_quest: "1A3BA4BEFD861942"
+			shape: "rsquare"
+			x: -5.0d
 			y: -1.0d
 		}
 	]
@@ -36,6 +92,7 @@
 			]
 			description: ["Aside from making alloys it can work with steel molds to create some components, blocks or nuggets from ingots.  "]
 			id: "61DA87FD5E45D2BC"
+			shape: "diamond"
 			tasks: [{
 				id: "4A05A522EC33C3F6"
 				item: "gtceu:lp_steam_alloy_smelter"
@@ -49,9 +106,10 @@
 				"61DA87FD5E45D2BC"
 				"319CEF2BDD679CF5"
 			]
-			description: ["Multiblock version of alloy smeltery."]
+			description: ["Multiblock version of alloy smeltery to procces multiple recipes at a same time."]
 			icon: "steamadditions:steam_foundry"
 			id: "5303D30192D7463A"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "56271D842D9CAE50"
@@ -99,6 +157,7 @@
 			hide_dependent_lines: true
 			icon: "gtceu:steam_machine_casing"
 			id: "319CEF2BDD679CF5"
+			shape: "square"
 			tasks: [{
 				id: "00B3AF4C6DEC8483"
 				title: "Wall Sharing!"
@@ -109,8 +168,9 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
-			description: [""]
+			description: ["As the name suggest will compress items: can create ingots from nuggets, some items into blocks and other such things."]
 			id: "156FF337D16F88B3"
+			shape: "rsquare"
 			tasks: [{
 				id: "41FA3EBCCC16C424"
 				item: "gtceu:lp_steam_compressor"
@@ -121,8 +181,15 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
-			description: ["Can grind things into dusts. Most notable use to grind down raw ores and getting two times more. "]
+			description: [
+				"Can grind things into dusts. Most notable use to grind down raw ores and getting two times more."
+				""
+				"Some grinded dusts, for example Redstone, need to be washed after grind proccesing to become useful or smelted to get ingots."
+				""
+				"You also can throw them into the cauldron with water manually. "
+			]
 			id: "7DC8D43AB8C12697"
+			shape: "rsquare"
 			tasks: [{
 				id: "33565194B1EBDA18"
 				item: "gtceu:lp_steam_macerator"
@@ -136,9 +203,14 @@
 				"7DC8D43AB8C12697"
 				"319CEF2BDD679CF5"
 			]
-			description: ["Can grind multiplie items at the same time."]
+			description: [
+				"Can grind multiplie items at the same time."
+				""
+				"Very useful to start ore grinding business."
+			]
 			icon: "gtceu:steam_grinder"
 			id: "6D95B9D2E5EB331E"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "59D2D09C3865912F"
@@ -171,17 +243,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"15C30310B03E4F79"
-				"319CEF2BDD679CF5"
-			]
-			description: [
-				"Some grinded dusts, for example Redstone, need to be washed after grind proccesing to become useful or smelted to get ingots."
-				""
-				"You also can throw them into the cauldron with water manually."
-			]
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Will wash your dusts and different items automatically on grand scale."]
 			icon: "steamadditions:steam_separator"
 			id: "37EE9AB51014DCBA"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "505700760D3382BA"
@@ -210,12 +276,14 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 1.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
+			description: ["Juste smelt anything with heat of steam."]
 			id: "625BBC103C7A0FCE"
+			shape: "diamond"
 			tasks: [{
 				id: "3CB972427251F8DE"
 				item: "gtceu:lp_steam_furnace"
@@ -229,10 +297,11 @@
 				"625BBC103C7A0FCE"
 				"319CEF2BDD679CF5"
 			]
-			description: ["Can smelt 8 items at a time using Steam. "]
+			description: ["Can smelt 8 items at a time using steam. "]
 			hide_dependent_lines: true
 			icon: "gtceu:steam_oven"
 			id: "35DDCEC2CECEF4D6"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "25EE2E50D1FC18AA"
@@ -272,54 +341,42 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
+			description: ["Can crush gem blocks into items and create plates a little bit cheaper."]
 			id: "793ABF03A8827044"
+			size: 0.85d
 			tasks: [{
 				id: "6AF61FE6D49FBB10"
 				item: "gtceu:lp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["15C30310B03E4F79"]
+			dependencies: ["5361A9865C6547F4"]
 			id: "0FCFA77A56C98B28"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "250C3DA58D2315F2"
 				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: 2.4499999999999997d
-			y: 0.0d
+			x: -2.4499999999999997d
+			y: 2.8d
 		}
 		{
-			dependencies: ["15C30310B03E4F79"]
+			dependencies: ["5361A9865C6547F4"]
 			id: "780843C2BC813902"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "63DF20CE04CE4282"
 				item: "gtceu:lp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: 2.1d
-			y: -0.7d
-		}
-		{
-			dependencies: [
-				"15C30310B03E4F79"
-				"4B31C89E0FA58CE0"
-			]
-			description: ["Will convert any steam into Forge Energy units and by itself don't generate pollution."]
-			id: "4EC3B664D62760BE"
-			size: 0.7d
-			tasks: [{
-				id: "12A8DDB8EEE3B3E8"
-				item: "systeams:steam_dynamo"
-				type: "item"
-			}]
-			x: 1.05d
-			y: -0.7d
+			x: -3.15d
+			y: 2.8d
 		}
 		{
 			dependencies: ["4A33371DB94DFD62"]
@@ -330,6 +387,7 @@
 			]
 			icon: "railcraft:solid_fueled_firebox"
 			id: "6AF4C17E9C8FF9DC"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "5257950F383FFE22"
@@ -357,6 +415,7 @@
 			dependencies: ["6AF4C17E9C8FF9DC"]
 			description: ["Uses lava and creosote oil instead of solid fuel."]
 			id: "311D638942ACCDBD"
+			shape: "diamond"
 			size: 0.6d
 			tasks: [{
 				id: "35AF971D08CA0D94"
@@ -370,14 +429,16 @@
 			dependencies: ["156FF337D16F88B3"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Wrought iron is tougher version of vanilla metal. It will be used in low voltage machinery, but for now it can serve you to make stronger tools."
+				"Wrought iron is tougher version of vanilla metal. It will be used in &olow voltage machinery&r or to upgrade ypur steam machines, but more early it can serve you &nto make stronger tools&r."
 				""
-				"Its making procces kinda tricky tho. You need to smelt iron nuggets to get wrought iron one and then use compressor or alloy smelter with ingot casting mold to get them."
+				"Its making procces kinda tricky tho. You need to &lsmelt iron nuggets&r to get wrought iron one and then &luse compressor or alloy smelter with ingot casting mold&r to get them."
 				""
-				"Additionally if you will use Wrought Iron in Blast Furnace instead of normal one, the blasting speed will increase!"
+				"Additionally if you will &ouse Wrought Iron in Blast Furnace&r instead of normal one, the &oblasting speed will increase!&r"
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "5C4DA67C07C8E9B7"
+			shape: "diamond"
+			subtitle: "Proccesing veteran"
 			tasks: [
 				{
 					id: "26166249294BE433"
@@ -391,7 +452,7 @@
 				}
 			]
 			title: "Trained Iron"
-			x: -2.0d
+			x: -1.5d
 			y: -1.0d
 		}
 		{
@@ -400,7 +461,7 @@
 				"319CEF2BDD679CF5"
 				"7DC8D43AB8C12697"
 			]
-			description: ["Lets make some steel! Blast Furnace can use normal coal, but Coke Coal is more effective. "]
+			description: ["Lets make some steel! Blast Furnace can use normal coal, but Coke Coal is more effective."]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "3CD05E2E5661246B"
 			rewards: [{
@@ -409,6 +470,8 @@
 				item: "gtceu:firebricks"
 				type: "item"
 			}]
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [
 				{
 					id: "761327595B2D9F9E"
@@ -428,8 +491,13 @@
 		}
 		{
 			dependencies: ["3CD05E2E5661246B"]
+			description: [
+				"Essential metal to reach indutrial age. Most complex machines will gonna need it."
+				""
+				"&lCheck 'Fancy Engineering' tab to continue.&r"
+			]
 			id: "7A0C939E0FE540EC"
-			shape: "octagon"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "6EA4E40B4C5F24B0"
@@ -441,55 +509,39 @@
 			y: 0.5714285714285623d
 		}
 		{
-			dependencies: ["156FF337D16F88B3"]
-			id: "193EDD7B079CF150"
-			subtitle: "No zombies on my lawn!"
-			tasks: [{
-				id: "32547714D137833C"
-				item: "torchmaster:megatorch"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["5361A9865C6547F4"]
-			id: "5771754309EAFB99"
-			size: 1.2d
-			tasks: [{
-				id: "712CC7E813185EC5"
-				item: "gtceu:lp_steam_extractor"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 6.6d
-		}
-		{
-			dependencies: ["5771754309EAFB99"]
+			dependencies: [
+				"5361A9865C6547F4"
+				"37EE9AB51014DCBA"
+			]
+			dependency_requirement: "one_completed"
 			icon: "gtceu:rubber_ingot"
-			id: "330BBBA861A594E7"
+			id: "5771754309EAFB99"
+			shape: "hexagon"
+			size: 1.0d
 			tasks: [
 				{
-					id: "19FF362339F51DE9"
+					id: "712CC7E813185EC5"
+					item: "gtceu:lp_steam_extractor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AE9B9E498507096"
 					item: "gtceu:raw_rubber_dust"
 					type: "item"
 				}
 				{
-					id: "3EC92BCB8E5CD1AF"
+					id: "02EB1B7EBBEEFC90"
 					item: "gtceu:rubber_ingot"
 					type: "item"
 				}
 			]
 			title: "Refined Rubber"
-			x: 0.0d
-			y: 8.0d
+			x: -5.0d
+			y: 3.5d
 		}
 		{
-			dependencies: [
-				"7A0C939E0FE540EC"
-				"5361A9865C6547F4"
-				"330BBBA861A594E7"
-			]
+			dependencies: ["5771754309EAFB99"]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "1C59476B07336B42"
 			rewards: [{
@@ -498,6 +550,7 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
+			shape: "gear"
 			size: 1.5d
 			tasks: [
 				{
@@ -529,8 +582,8 @@
 				}
 			]
 			title: "Low Voltage"
-			x: -3.7380952380952692d
-			y: 7.947321428571421d
+			x: -6.892857142857153d
+			y: 3.576254251700661d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -563,27 +616,30 @@
 			]
 			description: ["Upgrade to steam oven with steel. Use less space, accepts items and steam from all directions and have bigger items internal buffer. Will smelt 9 items at a time."]
 			id: "6103B2A9C790E8EF"
+			shape: "diamond"
+			size: 1.2d
 			tasks: [{
 				id: "793CF622DA144ED2"
 				item: "railcraft:steam_oven"
 				type: "item"
 			}]
 			title: "Steel Steam Oven"
-			x: -2.0d
-			y: 1.5d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Every previous type of boiler can be upgraded with steel."]
+			description: ["Every previous type of boiler or single block bronze machine can be upgraded with steel."]
 			id: "4A33371DB94DFD62"
-			size: 0.7d
+			shape: "diamond"
+			size: 1.2d
 			tasks: [{
 				id: "5AFF08EF595FA079"
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -3.7642857142857338d
-			y: -0.7285714285714349d
+			x: -3.729581207483001d
+			y: -1.467261904761905d
 		}
 		{
 			dependencies: ["79EF5B4E470ACDB4"]
@@ -595,13 +651,14 @@
 				type: "item"
 			}]
 			title: "Maximus Blasting"
-			x: -3.0d
+			x: -2.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["6AF4C17E9C8FF9DC"]
 			icon: "railcraft:steam_turbine"
 			id: "3C16D1C6847306F8"
+			shape: "diamond"
 			tasks: [
 				{
 					count: 12L
@@ -622,8 +679,8 @@
 				}
 			]
 			title: "Steam Turbine"
-			x: -3.785714285714313d
-			y: -4.843452380952385d
+			x: -4.760204081632665d
+			y: -3.097746598639457d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -644,6 +701,544 @@
 			}]
 			x: 1.4999999999999716d
 			y: -1.2754464285714278d
+		}
+		{
+			dependencies: [
+				"61DA87FD5E45D2BC"
+				"7A0C939E0FE540EC"
+			]
+			icon: "gtceu:glass_dust"
+			id: "5361A9865C6547F4"
+			rewards: [
+				{
+					count: 4
+					id: "4E97644868664113"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "466FF922FBD36283"
+					item: "minecraft:glass"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2A1BA25DA1C88106"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+				{
+					id: "7BEC1A813C6A3DA9"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "02A828D3BBC95E60"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Getting glassed"
+			x: -3.7d
+			y: 4.8d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "08772C8BA5BE9DB8"
+			tasks: [{
+				id: "322C360866FB990B"
+				item: "torchmaster:dreadlamp"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "0B87BE74ACF8791E"
+			subtitle: "And here comes the sun!"
+			tasks: [{
+				id: "7BD176196E10776F"
+				item: "torchmaster:feral_flare_lantern"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0A47F74F64457575"
+				"5361A9865C6547F4"
+			]
+			description: [
+				"To build a Smeltery you need to create a closed enclosure with floor and wals from seared blocks with controller, fuel tank, chutes and drains. The quest requires you to craft minimal amount, but you can always expand the smeltery in all directions which give it more storage and slots for simultaneous smelting."
+				""
+				"{@pagebreak}"
+				"Smeltery use lava as fuel to melt any resources down. Put it in &oFuel Tank&r."
+				""
+				"Clicking the Controller will open its UI, where you can put meltable things manually or provide items throught &oChute&r with various means like hoppers. &l!!!BE CAREFUl!!!&r Metals will become alloys automatically after smelting, so look what you put there."
+				""
+				"After they become liquids you can click on them in the UI to change their order. Those at the very bottom will get poured out of the &oDrain&r, but only if there Faucet on them and Casting Table or Basin to pour."
+				""
+				"&lFollow 'Blacksimthing' tab for custom tools, armor and metal work.&r"
+			]
+			icon: "tconstruct:smeltery_controller"
+			id: "25B2030958956699"
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Becoming the blacksmith"
+			tasks: [
+				{
+					id: "5F0E4AC9EF1AC999"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "164208078012D19B"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "58B6BE24808E5EB1"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "2E62C009FEC8340B"
+					item: "tconstruct:seared_chute"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "34B56298262F8E82"
+					item: { Count: 8, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+			]
+			x: -0.75d
+			y: 6.6499999999999995d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["With Tinker's Anvil at your disposal now you can make more different custom tools."]
+			id: "719A86D87C805DEB"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				id: "4C5D614C862D962E"
+				item: "tconstruct:tinkers_anvil"
+				type: "item"
+			}]
+			x: -5.3999999999999995d
+			y: 0.6d
+		}
+		{
+			dependencies: [
+				"15C30310B03E4F79"
+				"4B31C89E0FA58CE0"
+			]
+			description: ["Will convert any steam into Forge Energy units and by itself don't generate pollution."]
+			id: "467322DDC62BF603"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "4E2469CD931206B9"
+				item: "systeams:steam_dynamo"
+				type: "item"
+			}]
+			x: 0.85d
+			y: -0.85d
+		}
+		{
+			dependencies: [
+				"5CED0B2F5E3DE3B1"
+				"5361A9865C6547F4"
+				"4AFEE3BCC0DC661B"
+				"69DB58E1CD20ED2B"
+			]
+			description: ["Simple charger, just put you item inside!"]
+			id: "6E68DB6406FB4D3F"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				id: "2989E62548390D70"
+				item: "immersiveengineering:charging_station"
+				type: "item"
+			}]
+			x: -3.6232142857142975d
+			y: 8.231547619047596d
+		}
+		{
+			dependencies: ["6E68DB6406FB4D3F"]
+			id: "49BC12E8322CB378"
+			tasks: [{
+				id: "565D187B97710361"
+				item: {
+					Count: 1
+					id: "thermal:flux_magnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6E68DB6406FB4D3F"]
+			id: "3F84A2143ACABE45"
+			tasks: [{
+				id: "609EC953E3C65D79"
+				item: {
+					Count: 1
+					id: "thermal:flux_capacitor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6E68DB6406FB4D3F"]
+			id: "1BB3AB8685428FB7"
+			shape: "diamond"
+			tasks: [{
+				id: "08EAFEAA5BE16F17"
+				item: "thermal:tinker_bench"
+				type: "item"
+			}]
+			x: -3.6113095238095454d
+			y: 9.14277210884351d
+		}
+		{
+			dependencies: ["1BB3AB8685428FB7"]
+			id: "56D8B89369ABF606"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [
+				{
+					id: "69FBDB8122F8582A"
+					item: {
+						Count: 1
+						id: "thermal:flux_drill"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "04D95D7B901BFE60"
+					item: {
+						Count: 1
+						id: "thermal:flux_saw"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Powered by Flux"
+			x: -3.5999999999999996d
+			y: 10.2d
+		}
+		{
+			dependencies: ["56D8B89369ABF606"]
+			id: "43943D53B8603D29"
+			shape: "diamond"
+			tasks: [{
+				id: "414D6656567D8585"
+				item: "thermal:upgrade_augment_1"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["56D8B89369ABF606"]
+			description: ["Expand the mining radius and stored energy in the tools."]
+			id: "7BA759BE13798919"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "195D1EBFEA53C9E7"
+					item: "thermal:area_radius_augment"
+					type: "item"
+				}
+				{
+					id: "75E3AAD0A151E534"
+					item: "thermal:rf_coil_augment"
+					type: "item"
+				}
+			]
+			x: -2.6106292517007077d
+			y: 9.527125850340099d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			description: [
+				"Work as automatic stone blocks type farm. "
+				""
+				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
+			]
+			id: "016889850869B51A"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "1AFF19B5C1CD91F1"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			title: "Stone farming"
+			x: -1.9436862244898094d
+			y: 3.558928571428538d
+		}
+		{
+			dependencies: ["4879433BBEEF8352"]
+			description: ["In the depths of the Nether you can find ore veins containing certus quartz native to hellish landscape. It can be used in some crafting recipe instead of one you farm in meteors."]
+			icon: "gtceu:certus_quartz_gem"
+			id: "7E322C0C7CE5B091"
+			shape: "hexagon"
+			size: 0.7d
+			tasks: [
+				{
+					id: "53D6CF29C5CC2C9A"
+					item: "gtceu:raw_certus_quartz"
+					type: "item"
+				}
+				{
+					id: "4F9072AEF24597BF"
+					item: "gtceu:certus_quartz_gem"
+					type: "item"
+				}
+			]
+			title: "Hellish Replacement"
+			x: -5.528720238095254d
+			y: 6.406547619047586d
+		}
+		{
+			dependencies: ["69DB58E1CD20ED2B"]
+			description: [
+				"By charging normal compass you can seek for fallen meteors. "
+				""
+				"Inside one of them you will find presses and certus quartz to start making components for your first digital storage system in the future."
+				""
+				"Press 'G' on Certus Quarts Cluster to read important info about the buddings."
+			]
+			icon: "ae2:sky_stone_block"
+			id: "4879433BBEEF8352"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "19ED3647BB91E7C8"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					id: "051424CB82D92F48"
+					item: "ae2:meteorite_compass"
+					type: "item"
+				}
+				{
+					id: "33EDB4874960F550"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "1F189006AD4FE158"
+					item: "ae2:quartz_cluster"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Celestial Objects"
+			x: -5.53892431972789d
+			y: 7.233078231292488d
+		}
+		{
+			dependencies: ["4879433BBEEF8352"]
+			description: ["To make components and blocks of your future digital storage you need processors. Inscriber is ultimate way to craft them."]
+			icon: "ae2:inscriber"
+			id: "4A8233ADB6406DA9"
+			tasks: [
+				{
+					id: "3B43AE49CABA5141"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+				{
+					id: "0AA69E31F8CCE46A"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "664C4D46FEDD5789"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "6CEBE4F7B9183079"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			x: -7.282121598639478d
+			y: 8.87355442176868d
+		}
+		{
+			dependencies: ["4A8233ADB6406DA9"]
+			description: ["Presses can be coppied with iron block and coresponding press."]
+			icon: "minecraft:iron_block"
+			id: "2F3E8A2C8A46E941"
+			size: 0.5d
+			tasks: [{
+				id: "07F74B626CCB2A6A"
+				title: "Press Recreation"
+				type: "checkmark"
+			}]
+			x: -7.305931122449003d
+			y: 8.159268707482958d
+		}
+		{
+			dependencies: [
+				"799F7F64000A3084"
+				"76422C026A6749CA"
+				"4A8233ADB6406DA9"
+			]
+			description: [
+				"Digital storage use Storage Cells with various properties: Bytes and Types."
+				""
+				"&oTypes&r: means how many different items can cell hold."
+				""
+				"&oBytes&r: show how many items cell can hold. 1 item = 1 bit, so for a byte you need 8 items."
+				""
+				"Put them in ME Drive and connect terminal to it with fluix cables. Now you have simple way to store your items in one block!"
+				""
+				"With addition of crafting terminal you now can create things directly from ME system."
+				""
+				"&lFollow 'Storage Solutions' tab next.&r"
+			]
+			icon: "ae2:drive"
+			id: "540D62BE372AE7D1"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Who needs item sorting?"
+			tasks: [
+				{
+					id: "07BF7D74DD8A3B9B"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "074050C53154702C"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "473F8D6510E53CA6"
+					item: "ae2:terminal"
+					type: "item"
+				}
+				{
+					id: "7229AFD712C4987A"
+					item: "ae2:crafting_terminal"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "09C8561C6B735270"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+			]
+			title: "Digital Storage"
+			x: -8.800829081632664d
+			y: 7.311309523809484d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			description: ["You will need it to convert any form of energy for your main digital storage network. You can use Fluix Cables to transfer energy between components."]
+			id: "799F7F64000A3084"
+			shape: "diamond"
+			tasks: [{
+				id: "7EE3EA9812EAF172"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: -7.324638605442161d
+			y: 5.416071428571399d
+		}
+		{
+			dependencies: [
+				"799F7F64000A3084"
+				"0852CB10008D7CDB"
+				"7B289C03327D9227"
+			]
+			description: ["Attachment for Energy Acceptor. With it you now can power your ME system with rotational power."]
+			id: "5B16DA7287A8ABFE"
+			size: 0.7d
+			tasks: [{
+				id: "2BF870DF77EE4B3D"
+				item: "createappliedkinetics:energy_provider"
+				type: "item"
+			}]
+			x: -6.578571428571423d
+			y: 5.847619047619041d
+		}
+		{
+			dependencies: ["4879433BBEEF8352"]
+			description: ["Fluix crystals are essential in the creation of most of AE2 blocks and components."]
+			id: "76422C026A6749CA"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "1BD37126F7CBFA84"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: -7.324638605442161d
+			y: 7.249404761904735d
+		}
+		{
+			dependencies: [
+				"76422C026A6749CA"
+				"799F7F64000A3084"
+			]
+			id: "09BD3CED744A51DB"
+			size: 0.65d
+			tasks: [{
+				id: "462BC67A712946FE"
+				item: "ae2:vibration_chamber"
+				type: "item"
+			}]
+			x: -7.324638605442161d
+			y: 6.273214285714268d
+		}
+		{
+			dependencies: ["76422C026A6749CA"]
+			icon: "ae2:growth_accelerator"
+			id: "4C18C52168A5F91D"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1B3C573B8080D192"
+					item: "ae2:growth_accelerator"
+					type: "item"
+				}
+				{
+					id: "6A16C7FE47F7A93D"
+					item: "ae2:crank"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -6.550829081632678d
+			y: 6.628656462585006d
 		}
 	]
 	title: "Steam Age"

@@ -10,27 +10,31 @@
 		{
 			id: "0E64812A0919423B"
 			linked_quest: "031595756B809ADC"
-			x: 0.5d
-			y: -6.0d
-		}
-		{
-			id: "3D33B9AA5FFA5932"
-			linked_quest: "4EC3B664D62760BE"
-			x: 4.0d
-			y: -14.0d
+			shape: "diamond"
+			x: -0.7113945578231125d
+			y: -6.226275510204083d
 		}
 		{
 			id: "5966645984A908BB"
 			linked_quest: "29271E54A7DBAF2E"
 			size: 0.7d
-			x: -0.35d
-			y: -5.25d
+			x: -1.4d
+			y: -5.6d
 		}
 		{
-			id: "7F9754840726B892"
-			linked_quest: "4DE3A5EB02DCDC59"
-			x: -3.0d
-			y: -5.0d
+			id: "7A33371FDB0C7959"
+			linked_quest: "4879433BBEEF8352"
+			shape: "rsquare"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			id: "7F316268B078E675"
+			linked_quest: "67C1B62B8C68F0F1"
+			shape: "diamond"
+			size: 0.7d
+			x: -2.0d
+			y: -11.0d
 		}
 	]
 	quests: [
@@ -38,6 +42,7 @@
 			description: ["Nothing changed in normal Minecraft progressin. So start with basic blocks for now!"]
 			icon: "minecraft:crafting_table"
 			id: "4EBBAB4B8A99D4A7"
+			shape: "rsquare"
 			size: 1.3d
 			tasks: [
 				{
@@ -103,8 +108,8 @@
 				type: "item"
 			}]
 			title: "Sulfuric Torches"
-			x: 2.1598639455782234d
-			y: -0.9345238095238102d
+			x: 2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -118,6 +123,7 @@
 			]
 			icon: "adchimneys:large_brick_chimney"
 			id: "1A45CB2CCDCAD4DB"
+			shape: "rsquare"
 			subtitle: "Consequences of my inaction"
 			tasks: [{
 				id: "42F84E0C6C8D282D"
@@ -138,6 +144,7 @@
 			]
 			icon: "adpother:sulfur"
 			id: "0AA13BC0D2C48B13"
+			shape: "square"
 			tasks: [
 				{
 					id: "56595FBD91AA72B3"
@@ -165,6 +172,7 @@
 			]
 			icon: "adpother:carbon"
 			id: "5D210874EE9C2BD3"
+			shape: "square"
 			tasks: [
 				{
 					id: "661A163BD2C102B0"
@@ -201,6 +209,7 @@
 				}
 			}
 			id: "0232486D4EEE2A9A"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "63CF06A301AB8F52"
@@ -241,7 +250,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["0232486D4EEE2A9A"]
+			dependencies: ["6C790BA267E29176"]
 			description: [
 				"Cleaning pollution can be tiring and time consuming, so you want to automate the proccess somehow."
 				""
@@ -252,14 +261,30 @@
 				"The result of this will be black and yellow dyes and fresh air in your factory!"
 			]
 			id: "6CF046ABDEF49022"
-			tasks: [{
-				id: "2711BA5788062CC7"
-				item: "adpother:iron_filter_frame"
-				type: "item"
-			}]
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [
+				{
+					id: "2711BA5788062CC7"
+					item: "adpother:iron_filter_frame"
+					type: "item"
+				}
+				{
+					id: "0F36401C261B2C31"
+					item: "adpother:gold_filter_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "61BF78C016AF2834"
+					item: "adpother:diamond_filter_frame"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "Automatic cleaning"
-			x: 8.0d
-			y: 3.5d
+			x: 7.199999999999999d
+			y: 4.8d
 		}
 		{
 			dependencies: ["1A45CB2CCDCAD4DB"]
@@ -344,10 +369,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"6CF046ABDEF49022"
-				"6C790BA267E29176"
-			]
+			dependencies: ["6CF046ABDEF49022"]
 			description: ["You can collect pollution that accumulated in the clouds using the small contraption: put a pump block, &opump pipe&r on top and then hopper on it. By clicking pump pipe with more pipes you will extended and get it to the sky limit. Now you can move your pollution down and use filters to clear the skies!"]
 			id: "0FD0819C574379AC"
 			rewards: [
@@ -363,6 +385,7 @@
 					type: "item"
 				}
 			]
+			shape: "diamond"
 			size: 1.3d
 			tasks: [{
 				count: 128L
@@ -371,8 +394,8 @@
 				type: "item"
 			}]
 			title: "Clearing the skies"
-			x: 7.15d
-			y: 4.550000000000001d
+			x: 7.898129251700681d
+			y: 3.510714285714286d
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
@@ -381,9 +404,13 @@
 				""
 				"Ore veins very useful in getting massive amounts of resources and they are fairly common!"
 				""
+				"{@pagebreak}"
 				"Find varoius dusts on the surface that indicate that ore vein underground. You can use your map to see where they are too! Just click a &lore icon&r in the low left corner. Additionaly you can see what type of ores are in the vein."
 				""
 				"If you not ready to dig underground just collect some dusts from the ground to get metals early."
+				""
+				"{@pagebreak}"
+				"Some ores still spawn as smaller ore patches undeground, so some cave exploration needed, but you probably encounter them on your way to ddig ore veins."
 				""
 				"&lYou can check 'Resources' tab to see how to get various resources.&r"
 			]
@@ -467,9 +494,9 @@
 				""
 				"Hammer can help with making casings, tools and plates for now."
 				""
-				"File can make metal components like rods, screws and similare."
+				"File can make metal components like rods, screws and others."
 				""
-				"Mortar can make dusts out of ingots so you can make your first alloys and need as step in making of some other regular materials."
+				"Mortar can grind materials down into dusts to use them in future procceses or to simply make alloys manually! "
 			]
 			id: "5D86113FD3732735"
 			rewards: [{
@@ -478,6 +505,8 @@
 				item: "create:iron_sheet"
 				type: "item"
 			}]
+			shape: "rsquare"
+			size: 1.2d
 			subtitle: "Somewhere to start"
 			tasks: [
 				{
@@ -531,57 +560,25 @@
 				}
 			]
 			title: "Engineering Tools"
-			x: 3.3017006802721056d
-			y: -5.044897959183658d
+			x: 3.522108843537403d
+			y: -4.465306122448965d
 		}
 		{
-			dependencies: ["34D049FD2BF84E84"]
-			description: ["Bronze is one of the first alloys that used in early machinery."]
+			dependencies: ["10E87B6699909383"]
+			description: ["Made out of copper and tin, Bronze is one of the first alloys that used in early machinery."]
 			icon: "thermal:bronze_ingot"
 			id: "3129F95624CBEDD4"
-			rewards: [{
-				count: 6
-				id: "4C2784C935E08A7B"
-				item: "thermal:bronze_dust"
-				type: "item"
-			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "Classical alloy"
-			tasks: [
-				{
-					count: 3L
-					id: "3DEBD767B65229CE"
-					item: { Count: 3, id: "create:crushed_raw_copper" }
-					type: "item"
-				}
-				{
-					id: "343385904F56D269"
-					item: "create:crushed_raw_tin"
-					type: "item"
-				}
-				{
-					id: "79219B7E4DC4A536"
-					item: "thermal:bronze_ingot"
-					type: "item"
-				}
-				{
-					id: "3441E82E0A23B046"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "gtceu:tools/crafting_mortars"
-						}
-					}
-					optional_task: true
-					title: "Mortars"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "79219B7E4DC4A536"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
 			title: "Bronze Age"
-			x: 1.5d
-			y: -6.75d
+			x: -0.75d
+			y: -7.5d
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
@@ -608,6 +605,8 @@
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [
 				{
 					id: "08B09EFAE1EB1C15"
@@ -627,19 +626,17 @@
 			]
 			title: "Custom tools"
 			x: 0.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
-			dependencies: [
-				"7F1D22C969F965A6"
-				"34D049FD2BF84E84"
-				"330180412AC025EA"
-			]
+			dependencies: ["330180412AC025EA"]
 			description: [
-				"Seared melter is first iteration of getting molten metals. Right now it can help get additional resource income. Simple and common ores can give additional 3 nuggets when using smeltery. Some metals require higher temperatures, so you need to upgrade to bigger smeltery later. You can't make alloys in small smeltery."
+				"Seared Melter is first iteration of getting molten metals. Right now it can help get additional resource income. Simple and common ores can give additional 3 nuggets when using smeltery. Some metals require higher temperatures, so you need to upgrade to bigger smeltery later. You can't make alloys in small smeltery."
+				""
+				"&lSome raw ores give less resources in smeltery, sometimes it's better to smelt them the good old way!&r"
 				""
 				"{@pagebreak}"
-				"To build melter put it on the Heater, then attach Faucet to it and put basin or seared table with cast under for molten metals to flow. Fuel it with coal or any other solid fuel. Right-click Faucet to pour your liquids into the basin and create resource blocks. "
+				"To build Melter put it on the Heater, then attach Faucet to it and put Basin or Seared Table with Cast under for molten metals to flow. Fuel it with coal or any other solid fuel. Right-click Faucet to pour your liquids into the basin and create resource blocks. "
 				""
 				"You can automate process with hoppers and alike blocks. You can give Faucet a redstone signal (like putting lever near) to automatically pour out of Smeltery."
 				""
@@ -647,6 +644,8 @@
 			]
 			icon: "tconstruct:seared_melter"
 			id: "0A47F74F64457575"
+			shape: "rsquare"
+			size: 1.5d
 			subtitle: "First melting"
 			tasks: [
 				{
@@ -701,52 +700,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -0.5d
-		}
-		{
-			dependencies: [
-				"61DA87FD5E45D2BC"
-				"7A0C939E0FE540EC"
-				"15C30310B03E4F79"
-			]
-			icon: "gtceu:glass_dust"
-			id: "5361A9865C6547F4"
-			rewards: [
-				{
-					count: 4
-					id: "4E97644868664113"
-					item: "gtceu:glass_dust"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "466FF922FBD36283"
-					item: "minecraft:glass"
-					type: "item"
-				}
-			]
-			size: 1.2d
-			tasks: [
-				{
-					id: "2A1BA25DA1C88106"
-					item: "gtceu:glass_dust"
-					type: "item"
-				}
-				{
-					id: "7BEC1A813C6A3DA9"
-					item: "minecraft:glass"
-					type: "item"
-				}
-				{
-					id: "02A828D3BBC95E60"
-					item: "gtceu:block_casting_mold"
-					type: "item"
-				}
-			]
-			title: "Getting glassed"
-			x: -4.0d
-			y: -6.0d
+			x: -2.8828231292517117d
+			y: -3.968452380952378d
 		}
 		{
 			dependencies: ["7D3FA2BBD1033FE9"]
@@ -763,27 +718,27 @@
 				"&lContinue in 'Steam Age' tab.&r"
 			]
 			id: "15C30310B03E4F79"
-			shape: "rsquare"
-			size: 1.3d
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "6E73CC1F8E9C461D"
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
 			title: "Start of steam age!"
-			x: -0.9353741496598644d
-			y: -11.029761904761898d
+			x: -2.8d
+			y: -10.15d
 		}
 		{
 			dependencies: [
-				"3129F95624CBEDD4"
 				"1843506F57D72661"
+				"34D049FD2BF84E84"
 			]
 			description: ["Alloy Kiln can create alloys easily by just using burnabel solid fuel. build 4x4 cube and click with Engineer's Hammer to activate it."]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "10E87B6699909383"
+			shape: "rsquare"
 			size: 1.3d
-			subtitle: "No more dusts!(for now)"
 			tasks: [
 				{
 					count: 8L
@@ -798,9 +753,9 @@
 					type: "item"
 				}
 			]
-			title: "Alloys with ingots"
-			x: 1.5d
-			y: -10.0d
+			title: "Alloys"
+			x: 1.515306122448969d
+			y: -4.657142857142873d
 		}
 		{
 			dependencies: [
@@ -820,6 +775,8 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			shape: "rsquare"
+			size: 1.2d
 			subtitle: "Better fuel!"
 			tasks: [
 				{
@@ -836,8 +793,8 @@
 				}
 			]
 			title: "First Coke Oven"
-			x: 3.633843537414961d
-			y: -8.239795918367342d
+			x: -0.7403061224489775d
+			y: -9.280357142857149d
 		}
 		{
 			dependencies: ["51D2A2A99A671311"]
@@ -854,6 +811,8 @@
 				item: "immersiveengineering:treated_wood_horizontal"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [
 				{
 					id: "6B35BA0BBC89FCC8"
@@ -867,15 +826,17 @@
 					type: "item"
 				}
 			]
-			x: 4.949999999999999d
-			y: -8.261224489795918d
+			x: -0.7688775510204096d
+			y: -11.023214285714289d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
 			description: ["Engineer's Hammer can activate your multiblock structures. Just click on the blocks of the formed structure."]
 			hide_dependent_lines: true
 			id: "1843506F57D72661"
-			subtitle: "Activate the multiblocks!"
+			shape: "diamond"
+			size: 0.7d
+			subtitle: "Activate the multiblock!"
 			tasks: [{
 				id: "4A4378B44737C81E"
 				item: {
@@ -887,8 +848,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.3017006802721056d
-			y: -4.044897959183658d
+			x: 4.257908163265306d
+			y: -3.7525510204081556d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -917,6 +878,8 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [
 				{
 					id: "75C75C1490AB3E0C"
@@ -938,15 +901,17 @@
 				}
 			]
 			title: "Primitive energy"
-			x: 3.5d
-			y: -3.0d
+			x: 3.9d
+			y: -2.5d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
 			description: [
-				"Andesite Alloy used in all early Create machines and kinetical components."
+				"Andesite Alloy being used in all early Create machines and kinetic components."
 				""
-				"Just keep in mind that always good to have more of it so you always can make needed shafts or cogs."
+				"It can be created by mixing Iron or Zinc with Andesite blocks."
+				""
+				"Just keep in mind that it always good to have more of it so you always can make needed shafts or cogs."
 				""
 				"&lSee more in 'Kinetics' and 'Moving Parts' tabs.&r"
 			]
@@ -957,15 +922,16 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			shape: "diamond"
+			shape: "gear"
 			size: 1.5d
+			subtitle: "Kinetic wonders"
 			tasks: [{
 				id: "2E766F55C780349C"
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -13.5d
+			x: 3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
@@ -982,6 +948,7 @@
 				item: "minecraft:leather"
 				type: "item"
 			}]
+			shape: "diamond"
 			subtitle: "Making rotten flesh useful..."
 			tasks: [
 				{
@@ -1021,7 +988,7 @@
 				item: "sophisticatedstorage:basic_tier_upgrade"
 				type: "item"
 			}]
-			shape: "rsquare"
+			shape: "pentagon"
 			size: 1.2d
 			subtitle: "More space for my mess!"
 			tasks: [
@@ -1039,8 +1006,8 @@
 				}
 			]
 			title: "Storage Upgrade"
-			x: -1.9421768707482983d
-			y: -2.588435374149668d
+			x: -1.2658163265306186d
+			y: -1.4921768707483025d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -1060,21 +1027,20 @@
 					type: "item"
 				}
 			]
+			size: 0.7d
 			tasks: [{
 				id: "1FB58147487F8171"
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: 0.8414965986394591d
-			y: -1.471428571428575d
+			x: 1.05d
+			y: -1.4d
 		}
 		{
-			dependencies: [
-				"5D86113FD3732735"
-				"3129F95624CBEDD4"
-			]
+			dependencies: ["3129F95624CBEDD4"]
 			description: ["If you want, you can give your bronze tools some more durability at the cost of adding some plating."]
 			id: "7B81DDC0AA14EF81"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "1CB6D8462A66F9EB"
@@ -1114,8 +1080,8 @@
 				}
 			]
 			title: "Little upgrades"
-			x: 3.5d
-			y: -6.0d
+			x: 0.35d
+			y: -8.4d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -1126,9 +1092,11 @@
 				""
 				"They very convenient to mine large resource veins and have great durability."
 				""
-				"Saws needed to make some components, but additionally with it you can get &o6 planks from 1 log&r."
+				"Saws needed to make some components, but additionally with it you can get &o6 planks from 1 log&r or &osome get metal nuggets early&r."
 			]
 			id: "0F21BFC7B6C7D51D"
+			shape: "diamond"
+			size: 0.7d
 			tasks: [
 				{
 					id: "3E9DB28735E84107"
@@ -1168,11 +1136,11 @@
 				}
 			]
 			title: "Gregic Tools"
-			x: 4.394557823129247d
-			y: -4.544897959183658d
+			x: 4.55d
+			y: -5.25d
 		}
 		{
-			dependencies: ["7B81DDC0AA14EF81"]
+			dependencies: ["34D049FD2BF84E84"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Paxels combine axe, pickaxe and shovel into one item. "
@@ -1180,6 +1148,7 @@
 				"You can craft them from most vanilla and some modded materials."
 			]
 			id: "5CE8A9C33E887C8C"
+			shape: "diamond"
 			tasks: [{
 				id: "58CF016DE67DEFF5"
 				item: {
@@ -1193,8 +1162,8 @@
 				type: "item"
 			}]
 			title: "Simple multitool"
-			x: 4.5d
-			y: -6.5d
+			x: 3.135714285714279d
+			y: -3.3515306122448862d
 		}
 		{
 			can_repeat: true
@@ -1202,7 +1171,7 @@
 			description: [
 				"About materials you can use in tools and its modifiers, weakneses and other stats."
 				""
-				"This quest will repeat itself for you to get book if you will lost it."
+				"This quest will repeat itself if you will lost this book."
 			]
 			icon: "tconstruct:materials_and_you"
 			id: "1836959FBE9CC719"
@@ -1211,13 +1180,14 @@
 				item: "tconstruct:materials_and_you"
 				type: "item"
 			}]
+			size: 0.85d
 			tasks: [{
 				id: "5D9AD1968C170253"
 				title: "Materials and You"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: -0.7d
+			y: 1.1627976190476232d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -1260,7 +1230,7 @@
 			description: [
 				"Everything about Immersive Engineering to get more detailed info."
 				""
-				"This quest will repeat itself for you to get book if you will lost it."
+				"This quest will repeat itself if you will lost this book."
 			]
 			icon: "immersiveengineering:manual"
 			id: "1EF7AEE6B0AA5B8E"
@@ -1269,13 +1239,14 @@
 				item: "immersiveengineering:manual"
 				type: "item"
 			}]
+			size: 0.7d
 			tasks: [{
 				id: "4B79CD381E408817"
 				title: "Manual for engineering"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: -8.5d
+			x: -1.4d
+			y: -10.15d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -1289,6 +1260,8 @@
 				"Plus you will need it in crafting of some components."
 			]
 			id: "7D3FA2BBD1033FE9"
+			shape: "pentagon"
+			size: 0.85d
 			tasks: [{
 				id: "6EFCCC7CF2D8BF3C"
 				item: {
@@ -1302,68 +1275,26 @@
 				type: "item"
 			}]
 			title: "Work Wrenches"
-			x: -1.0d
-			y: -9.5d
+			x: -2.797448979591834d
+			y: -9.023554421768726d
 		}
 		{
-			dependencies: ["15B5CF1F309CA82A"]
+			dependencies: ["25951FDCB7908145"]
 			description: [
-				"Treated planks can be crafted into Windmills. They will generate energy passively."
-				""
-				"Different weather will reduce or decrease energy output of Windmill. Building another Windmill of any type in close proximity (up to 7 blocks in front of it) will reduce its speed."
-			]
-			icon: "immersiveengineering:dynamo"
-			id: "521B2505E5C81E16"
-			tasks: [
-				{
-					id: "34BE81DB7F0D00F4"
-					item: "immersiveengineering:dynamo"
-					type: "item"
-				}
-				{
-					id: "483BA109E9968F38"
-					item: "immersiveengineering:windmill"
-					type: "item"
-				}
-			]
-			title: "Kinetic clean energy"
-			x: 6.0d
-			y: -9.5d
-		}
-		{
-			dependencies: ["10E87B6699909383"]
-			description: [
-				"Material for advacned Create components."
+				"Mix of Zinc and Copper. Material for advanced Create components."
 				""
 				"&lSee more in 'Moving Parts' tab.&r"
 			]
 			id: "1A155790CD83B2A7"
-			shape: "rsquare"
-			size: 1.2d
+			shape: "hexagon"
+			size: 1.0d
 			tasks: [{
 				id: "73761126A3FD8814"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -12.6d
-		}
-		{
-			dependencies: ["15B5CF1F309CA82A"]
-			description: [
-				"Compression dynamo can consume creosote and generate Forge Energy units. "
-				""
-				"It can be useful way to get a little bit more energy and spend Creosote if you have too much if it. "
-			]
-			id: "1FB9F832D1214239"
-			tasks: [{
-				id: "7DBAE07870657D9A"
-				item: "thermal:dynamo_compression"
-				type: "item"
-			}]
-			title: "Creosote to energy"
-			x: 5.0d
-			y: -9.5d
+			x: 4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -1381,87 +1312,22 @@
 				item: "forestry:engine_clockwork"
 				type: "item"
 			}]
-			x: 4.2d
-			y: -2.6999999999999997d
+			x: 4.5d
+			y: -1.7999999999999998d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
-			description: ["Alloy that needed in some machinery working with hot things."]
+			description: ["Iron and nickel alloy that needed in some machinery working with hot things."]
 			id: "4B31C89E0FA58CE0"
-			shape: "square"
+			shape: "hexagon"
 			size: 0.85d
 			tasks: [{
 				id: "0A27C55499D9B6EA"
 				item: "thermal:invar_ingot"
 				type: "item"
 			}]
-			x: 3.4d
-			y: -12.75d
-		}
-		{
-			dependencies: ["4B31C89E0FA58CE0"]
-			description: ["Will use lava to generate energy."]
-			id: "4972940DA0DA30B4"
-			tasks: [{
-				id: "13E528561DE1E6B5"
-				item: "thermal:dynamo_magmatic"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -11.0d
-		}
-		{
-			dependencies: [
-				"0A47F74F64457575"
-				"5361A9865C6547F4"
-			]
-			description: [
-				"To build a Smeltery you need to create a closed enclosure with floor and wals from seared blocks with controller, fuel tank, chutes and drains. The quest requires you to craft minimal amount, but you can always expand the smeltery in all directions which give it more storage and slots for simultaneous smelting."
-				""
-				"{@pagebreak}"
-				"Smeltery use lava as fuel to melt any resources down. Put it in &oFuel Tank&r."
-				""
-				"Clicking the Controller will open its UI, where you can put meltable things manually or provide items throught &oChute&r with various means like hoppers. &l!!!BE CAREFUl!!!&r Metals will become alloys automatically after smelting, so look what you put there."
-				""
-				"After they become liquids you can click on them in the UI to change their order. Those at the very bottom will get poured out of the &oDrain&r, but only if there Faucet on them and Casting Table or Basin to pour."
-				""
-				"&lFollow 'Blacksimthing' tab for custom tools, armor and metal work.&r"
-			]
-			icon: "tconstruct:smeltery_controller"
-			id: "25B2030958956699"
-			shape: "gear"
-			size: 1.5d
-			subtitle: "Becoming the blacksmith"
-			tasks: [
-				{
-					id: "5F0E4AC9EF1AC999"
-					item: "tconstruct:smeltery_controller"
-					type: "item"
-				}
-				{
-					id: "164208078012D19B"
-					item: "tconstruct:seared_fuel_tank"
-					type: "item"
-				}
-				{
-					id: "58B6BE24808E5EB1"
-					item: "tconstruct:seared_drain"
-					type: "item"
-				}
-				{
-					id: "2E62C009FEC8340B"
-					item: "tconstruct:seared_chute"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "34B56298262F8E82"
-					item: { Count: 8, id: "tconstruct:seared_bricks" }
-					type: "item"
-				}
-			]
-			x: -3.75d
-			y: 0.75d
+			x: 2.125d
+			y: -6.8d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -1476,7 +1342,7 @@
 			]
 			icon: "gtceu:wooden_multiblock_tank"
 			id: "37506D0DC482AAA8"
-			shape: "gear"
+			shape: "pentagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -1518,8 +1384,8 @@
 				}
 			]
 			title: "Multiblock Tank"
-			x: 8.457482993197292d
-			y: -8.35d
+			x: 1.489285714285721d
+			y: -11.190051020408177d
 		}
 		{
 			dependencies: ["306F6137CCDFF3C1"]
@@ -1531,14 +1397,16 @@
 				item: "toolbelt:pouch"
 				type: "item"
 			}]
+			shape: "diamond"
+			size: 1.2d
 			tasks: [{
 				id: "60439C50FF0153E0"
 				item: "toolbelt:belt"
 				type: "item"
 			}]
 			title: "Additional Hands"
-			x: 3.5d
-			y: 1.5d
+			x: 4.010034013605448d
+			y: 1.5624999999999574d
 		}
 		{
 			dependencies: ["306F6137CCDFF3C1"]
@@ -1548,6 +1416,8 @@
 				"Press 'N' button to open it in your inventory without need to placing."
 			]
 			id: "1E25061EB6CCD519"
+			shape: "diamond"
+			size: 1.3d
 			tasks: [{
 				id: "3861685FE6F41D0A"
 				item: {
@@ -1577,6 +1447,7 @@
 				item: "sophisticatedbackpacks:upgrade_base"
 				type: "item"
 			}]
+			size: 0.7d
 			tasks: [
 				{
 					id: "3416D561494A5BC2"
@@ -1596,8 +1467,8 @@
 				}
 			]
 			title: "Storing more than items"
-			x: 3.0d
-			y: -0.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1E25061EB6CCD519"]
@@ -1609,6 +1480,7 @@
 				item: "sophisticatedbackpacks:upgrade_base"
 				type: "item"
 			}]
+			size: 0.7d
 			tasks: [
 				{
 					id: "0E18EED31330E47E"
@@ -1653,12 +1525,13 @@
 				}
 			]
 			title: "Basic needs in a pocket"
-			x: 4.0d
-			y: -0.5d
+			x: 4.02704081632654d
+			y: -0.3949829931973241d
 		}
 		{
 			dependencies: ["1E25061EB6CCD519"]
 			id: "44FC1001F32F805C"
+			size: 0.7d
 			tasks: [
 				{
 					id: "05B1603A3ED5925B"
@@ -1683,31 +1556,14 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
+			x: 4.55d
 			y: 0.0d
 		}
 		{
-			dependencies: ["25B2030958956699"]
-			description: [
-				"Essential component for almost every Thermal machinery."
-				""
-				"&lFollow 'Redstone Machinery' tab for Thermal Machinery.&r"
-			]
-			id: "2798CCE5B1DE21DA"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "6B8E234A47BC77E6"
-				item: "thermal:machine_frame"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 0.75d
-		}
-		{
-			dependencies: ["7B81DDC0AA14EF81"]
+			dependencies: ["5D86113FD3732735"]
 			description: ["Osmium tools are very durable at this stage of the game.  "]
 			id: "3809893D00C74388"
+			size: 0.7d
 			tasks: [
 				{
 					id: "4BC2EE6CA3A99DC7"
@@ -1747,105 +1603,8 @@
 				}
 			]
 			title: "Osmium Tools"
-			x: 4.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["69DB58E1CD20ED2B"]
-			id: "1BB3AB8685428FB7"
-			tasks: [{
-				id: "08EAFEAA5BE16F17"
-				item: "thermal:tinker_bench"
-				type: "item"
-			}]
-			x: 6.80442176870748d
-			y: -12.85d
-		}
-		{
-			dependencies: ["1BB3AB8685428FB7"]
-			id: "49BC12E8322CB378"
-			tasks: [{
-				id: "565D187B97710361"
-				item: {
-					Count: 1
-					id: "thermal:flux_magnet"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 6.30442176870748d
-			y: -14.35d
-		}
-		{
-			dependencies: ["1BB3AB8685428FB7"]
-			id: "3F84A2143ACABE45"
-			tasks: [{
-				id: "609EC953E3C65D79"
-				item: {
-					Count: 1
-					id: "thermal:flux_capacitor"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 7.30442176870748d
-			y: -14.35d
-		}
-		{
-			dependencies: ["1BB3AB8685428FB7"]
-			id: "56D8B89369ABF606"
-			tasks: [
-				{
-					id: "69FBDB8122F8582A"
-					item: {
-						Count: 1
-						id: "thermal:flux_drill"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "04D95D7B901BFE60"
-					item: {
-						Count: 1
-						id: "thermal:flux_saw"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			x: 8.304421768707481d
-			y: -12.85d
-		}
-		{
-			dependencies: ["56D8B89369ABF606"]
-			description: ["Expand the mining radius and stored energy in the tools."]
-			id: "7BA759BE13798919"
-			tasks: [
-				{
-					id: "195D1EBFEA53C9E7"
-					item: "thermal:area_radius_augment"
-					type: "item"
-				}
-				{
-					id: "75E3AAD0A151E534"
-					item: "thermal:rf_coil_augment"
-					type: "item"
-				}
-			]
-			x: 9.304421768707481d
-			y: -13.35d
-		}
-		{
-			dependencies: ["56D8B89369ABF606"]
-			id: "43943D53B8603D29"
-			tasks: [{
-				id: "414D6656567D8585"
-				item: "thermal:upgrade_augment_1"
-				type: "item"
-			}]
-			x: 8.304421768707481d
-			y: -13.85d
+			x: 3.85d
+			y: -5.6d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -1921,12 +1680,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"4EC3B664D62760BE"
-				"521B2505E5C81E16"
-				"1FB9F832D1214239"
-				"4972940DA0DA30B4"
-			]
+			dependencies: ["56766749439CD7E0"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Energy is your way to get any machine working. Now that you have generators its good idea to find how to distribute, direct and overal control it where you need."
@@ -1944,8 +1698,8 @@
 				title: "Energy Management"
 				type: "checkmark"
 			}]
-			x: 5.340136054421765d
-			y: -11.003571428571425d
+			x: 5.574234693877557d
+			y: -2.470238095238095d
 		}
 		{
 			dependencies: ["1836959FBE9CC719"]
@@ -1966,16 +1720,19 @@
 				type: "item"
 			}]
 			title: "Little Library"
-			x: -0.2142857142857153d
-			y: 0.9285714285714377d
+			x: -0.6821428571428626d
+			y: 0.35d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
 			description: [
-				"Ziplines are useful ways to go down a mountain or any other slopes. Put two zipline hooks at some distance and then click with rope at both of them to connect those points. You can even connect multiplie points to various hooks. Hold right click while on the rope to move along side it."
+				"Ziplines are useful ways to go down a mountain or any other slopes. "
 				""
-				"Additionally if you put hooks at the same height level you can just use them as a way to cross pits and falls freely in both direction."
+				"Put two zipline hooks at some distance and then click with rope at both of them to connect those points. Hold right click while on the rope to move along side it. You can even connect multiplie points to various hooks. "
 				""
+				"Additionally if you put hooks at the same height level you can just use them as a way to cross pits and falls freely in both direction. "
+				""
+				"{@pagebreak}"
 				"Just keep in mind that using hooks will drain your stamina overtime, so don't forget to take a brakes."
 				""
 				"You can change colors of zipline rope by combining it with dyes in crafting grid. Its not limited by just minecraft standart colors."
@@ -1998,7 +1755,7 @@
 					type: "item"
 				}
 			]
-			shape: "square"
+			shape: "pentagon"
 			size: 1.3d
 			subtitle: "Fast way down!"
 			tasks: [
@@ -2016,7 +1773,7 @@
 			]
 			title: "Ziplines"
 			x: -1.3d
-			y: -3.9000000000000004d
+			y: -2.6d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -2026,19 +1783,22 @@
 				"Put it next to them and provide with FE."
 			]
 			id: "1D2EA0B12A829837"
+			shape: "diamond"
 			tasks: [{
 				id: "70106F846BC5C2F0"
 				item: "immersiveengineering:furnace_heater"
 				type: "item"
 			}]
 			title: "Free furnaces"
-			x: 4.5d
+			x: 5.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
 			description: ["Backtanks can be put in your body accessory slot while diving helmet need to be in helmet slot, but can be stored in head accessory slot when you don't use it."]
 			id: "49BFD7BD22B74CBD"
+			shape: "diamond"
+			size: 0.7d
 			tasks: [
 				{
 					id: "5FA683A1AA176A82"
@@ -2062,14 +1822,27 @@
 					}
 					type: "item"
 				}
+				{
+					id: "0A31707AA21860FB"
+					item: {
+						Count: 1
+						id: "create:copper_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
 			]
 			title: "Going underwater"
-			x: 1.5d
-			y: -15.5d
+			x: 4.2d
+			y: -8.4d
 		}
 		{
 			dependencies: ["49BFD7BD22B74CBD"]
 			id: "40DAF71D31B80879"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -2094,9 +1867,21 @@
 					}
 					type: "item"
 				}
+				{
+					id: "3BB675CBFF46B87C"
+					item: {
+						Count: 1
+						id: "create:netherite_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
 			]
-			x: 0.7d
-			y: -16.099999999999998d
+			x: 4.8999999999999995d
+			y: -8.4d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -2118,9 +1903,9 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["3129F95624CBEDD4"]
+			dependencies: ["5D86113FD3732735"]
 			description: [
-				"Crafting Blueprint can be used to save crafting recipes and auto craft them easily. It can cover up to a 3x3 wall area."
+				"Crafting Blueprint can be used to save crafting recipes and auto craft them easily. It can cover up to a 3x3 wall area, where each block its own recipe."
 				""
 				"Right click a slot to open the interface and use items to save a crafting recipe. Filters can also be used to apply multiple potential crafting recipes."
 				""
@@ -2135,13 +1920,15 @@
 				item: "create:crafting_blueprint"
 				type: "item"
 			}]
+			shape: "diamond"
+			size: 0.85d
 			tasks: [{
 				id: "25352884A04226B2"
 				item: "create:crafting_blueprint"
 				type: "item"
 			}]
-			x: 0.6275510204081769d
-			y: -8.792517006802719d
+			x: 4.733503401360558d
+			y: -4.397704081632654d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -2254,13 +2041,13 @@
 				}
 			]
 			title: "Zinc Things"
-			x: 0.35d
-			y: -14.35d
+			x: 4.566156462585035d
+			y: -7.455867346938824d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
 			id: "18C2D479B1DCB99B"
-			size: 0.7d
+			size: 0.6d
 			tasks: [
 				{
 					id: "2C01016B13312A99"
@@ -2368,13 +2155,14 @@
 				}
 			]
 			title: "Copper Things"
-			x: 0.7760204081632551d
-			y: -4.042857142857137d
+			x: 2.339540816326526d
+			y: -2.3852040816326507d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
 			description: ["Deals 25 (Heart × 12.5) points of damage when attacking Endermen and 1 (Half Heart) damage when attacking any other mob."]
 			id: "62FDFA213337537A"
+			size: 0.7d
 			tasks: [{
 				id: "6A96D68FF474238C"
 				item: {
@@ -2392,94 +2180,31 @@
 				type: "item"
 			}]
 			title: "Bane of Endermans"
-			x: 2.2081632653061334d
-			y: -4.671428571428571d
+			x: 2.6456632653061263d
+			y: -5.079081632653065d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
+			icon: "thermal:sapphire"
 			id: "04A0F70827AA6155"
 			size: 0.7d
 			tasks: [
 				{
-					id: "1853B9DFE4C69D32"
-					item: {
-						Count: 1
-						id: "projectred_exploration:ruby_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "20F314295A7B8B19"
-					item: {
-						Count: 1
-						id: "projectred_exploration:sapphire_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "265CB92E3948E95C"
-					item: {
-						Count: 1
-						id: "projectred_exploration:peridot_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "243E3E95EE4FC569"
-					item: {
-						Count: 1
-						id: "projectred_exploration:sapphire_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
 					id: "50C8EDD2D6B9BDEF"
-					item: {
-						Count: 1
-						id: "projectred_exploration:peridot_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "thermal:ruby"
 					optional_task: true
 					type: "item"
 				}
 				{
 					id: "1C7BB987E579657B"
-					item: {
-						Count: 1
-						id: "projectred_exploration:ruby_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "thermal:sapphire"
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "0D846DEF1A3D2B9F"
-					type: "checkmark"
-				}
 			]
-			title: "Gem Tools and Armor"
-			x: -0.35d
-			y: -2.1d
+			title: "Gems Equipment(WIP)"
+			x: -0.10255102040817121d
+			y: -3.2064625850340107d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -2489,6 +2214,7 @@
 				"Reinforced variant is more blast resistant."
 			]
 			id: "6099D2F4EEE9112A"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "669D82183AF2E564"
@@ -2503,13 +2229,15 @@
 				}
 			]
 			title: "Portable crates"
-			x: 4.0d
-			y: -9.5d
+			x: -2.010714285714279d
+			y: -11.940051020408177d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
 			description: ["Can help rotate blocks. Useful for building."]
 			id: "1940606A8481B5C7"
+			shape: "diamond"
+			size: 0.7d
 			tasks: [{
 				id: "7F327976FAE8B991"
 				item: {
@@ -2519,8 +2247,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.386734693877564d
-			y: -5.671428571428571d
+			x: 3.15d
+			y: -5.6d
 		}
 		{
 			dependencies: ["49BFD7BD22B74CBD"]
@@ -2532,6 +2260,7 @@
 				}
 			}
 			id: "2B288E2C1DC0AFCB"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "0C04592103CF23B8"
@@ -2579,8 +2308,8 @@
 				}
 			]
 			title: "Diving Suit"
-			x: 1.5d
-			y: -17.0d
+			x: 4.5691326530612315d
+			y: -8.946428571428584d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -2590,75 +2319,33 @@
 				"&lSee 'Industrial Beekeeper' tab.&r"
 			]
 			id: "4619627EEEE566A4"
-			shape: "hexagon"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "5057F8074A16534B"
 				item: "forestry:carpenter"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -8.25d
+			x: -4.179761904761904d
+			y: -6.804166666666646d
 		}
 		{
-			dependencies: ["031595756B809ADC"]
-			description: ["Cans can store fluids as a item. One tin can = 1 bucket. But you can't place liquid back in the world."]
+			dependencies: [
+				"031595756B809ADC"
+				"330180412AC025EA"
+			]
+			description: ["Cans can store fluids as a item and will stack to 64. One tin can = 1 bucket. But you can't place liquid back in the world."]
 			id: "784AEC9BF8755F95"
+			shape: "diamond"
+			size: 0.85d
 			tasks: [{
 				id: "5180B590AD80BFD9"
 				item: "forestry:can"
 				type: "item"
 			}]
 			title: "Stackable Liquids"
-			x: 0.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["04A0F70827AA6155"]
-			description: ["Will extract energy from some gems. Probably can be way to spend rubies and sapphires at this stage of the game."]
-			id: "123053D8EB9279CF"
-			subtitle: "Gem Eater"
-			tasks: [{
-				id: "70021680F9844739"
-				item: "thermal:dynamo_lapidary"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"25B2030958956699"
-				"7A0C939E0FE540EC"
-			]
-			id: "5169668687940129"
-			shape: "rsquare"
-			size: 1.5d
-			tasks: [{
-				id: "6EB7A50C08AEA2E0"
-				item: "mekanism:metallurgic_infuser"
-				type: "item"
-			}]
-			x: -3.75d
-			y: 3.0d
-		}
-		{
-			dependencies: ["4B31C89E0FA58CE0"]
-			description: [
-				"Work as automatic stone blocks type farm. "
-				""
-				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
-			]
-			id: "016889850869B51A"
-			size: 0.7d
-			tasks: [{
-				id: "1AFF19B5C1CD91F1"
-				item: "thermal:device_rock_gen"
-				type: "item"
-			}]
-			title: "Stone farming"
-			x: 4.2d
-			y: -11.9d
+			x: -0.690986394557811d
+			y: -5.226275510204076d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -2669,33 +2356,26 @@
 				item: "immersiveengineering:craftingtable"
 				type: "item"
 			}]
-			x: 8.804421768707481d
-			y: -9.85d
+			x: 1.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["69057739C5B7EB11"]
+			description: [
+				"Primary crafting station for various components."
+				""
+				"&lLook into 'Fancy Engineering' tab to continue.&r"
+			]
 			id: "5CED0B2F5E3DE3B1"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "33D8A249D8783B83"
 				item: "immersiveengineering:workbench"
 				type: "item"
 			}]
-			x: 8.727210884353745d
-			y: -11.157142857142851d
-		}
-		{
-			dependencies: [
-				"5CED0B2F5E3DE3B1"
-				"69DB58E1CD20ED2B"
-			]
-			id: "6E68DB6406FB4D3F"
-			tasks: [{
-				id: "2989E62548390D70"
-				item: "immersiveengineering:charging_station"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -12.0d
+			x: 1.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["6099D2F4EEE9112A"]
@@ -2720,26 +2400,13 @@
 				}
 				type: "item"
 			}]
-			x: 3.15d
-			y: -9.1d
-		}
-		{
-			dependencies: ["521B2505E5C81E16"]
-			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail Each blade will need it own Sail upgrade!"]
-			id: "50BA9C41804AE9A2"
-			size: 0.7d
-			tasks: [{
-				id: "3E02F94201C301A0"
-				item: "immersiveengineering:windmill_sail"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -9.799999999999999d
+			x: -1.9938775510204039d
+			y: -12.741496598639468d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
 			description: [
-				"&lImmersive Geology&r add its own type of veins that can be used to get additional or alternative resources income. But unlike most of GregTech ones you need to crush them manually, compile and then use &oCrude Bloomery&r to get your ingots, at least before you will gate upgraded Blast Furnace. "
+				"&lImmersive Geology&r add its own type of veins that can be used to get additional or alternative resources income. But unlike most of GregTech ones you need to crush them manually, compile and then use &oCrude Bloomery&r to get your ingots, at least before you will get upgraded Blast Furnace. "
 				""
 				"Bloomery &overy ineffective tho&r, it uses minimum of 2 ores per ingot or even more. Everyone start with something, but good to find alternative as soon as possible."
 				""
@@ -2748,10 +2415,12 @@
 				"{@pagebreak}"
 				"Aside from using Geology normal ways of proccesing ores, with help of &lForge Hammer&r or &lMechanical Press&r you can automate the procces of getting dirty crushing ores. "
 				""
-				"After that with help of &lSteam Separator&r or simple mixer you can convert dirty crushed ores into ready to smelt ones which you can put into &lTinker's Smeltery&r."
+				"After that with help of &lSteam Separator&r or &lsimple Create mixer&r you can convert dirty crushed ores into ready to smelt ones which you can put into &lTinker's Smeltery&r."
 			]
 			icon: "immersivegeology:bloomery"
 			id: "65E0926A806B0CE7"
+			shape: "diamond"
+			size: 1.2d
 			tasks: [
 				{
 					id: "410653CF57F0D340"
@@ -2785,13 +2454,14 @@
 				}
 			]
 			title: "Crude Ore Harvesting"
-			x: 4.5d
-			y: -2.0d
+			x: 0.21921768707481704d
+			y: -1.5602891156462562d
 		}
 		{
 			dependencies: ["65E0926A806B0CE7"]
 			description: ["Will show you what ores around you in near chunks."]
 			id: "279ADFC8F9F0F9B8"
+			size: 0.7d
 			tasks: [{
 				id: "2C97DD25B3532A67"
 				item: {
@@ -2803,74 +2473,19 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["69DB58E1CD20ED2B"]
-			description: [
-				"By charging normal compass you can seek for fallen meteors. "
-				""
-				"Inside one of them you will find presses and certus quartz to start making components for your first digital storage system."
-				""
-				"Press 'G' on Certus Quarts Cluster to read important info about the buddings."
-			]
-			icon: "ae2:sky_stone_block"
-			id: "4879433BBEEF8352"
-			tasks: [
-				{
-					id: "19ED3647BB91E7C8"
-					item: "ae2:charger"
-					type: "item"
-				}
-				{
-					id: "051424CB82D92F48"
-					item: "ae2:meteorite_compass"
-					type: "item"
-				}
-				{
-					id: "33EDB4874960F550"
-					item: "ae2:certus_quartz_crystal"
-					type: "item"
-				}
-				{
-					id: "1F189006AD4FE158"
-					item: "ae2:quartz_cluster"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Celestial Objects"
-			x: 5.3797619047619065d
-			y: -13.386734693877564d
-		}
-		{
-			dependencies: ["5361A9865C6547F4"]
-			id: "08772C8BA5BE9DB8"
-			tasks: [{
-				id: "322C360866FB990B"
-				item: "torchmaster:dreadlamp"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["5361A9865C6547F4"]
-			id: "0B87BE74ACF8791E"
-			subtitle: "And here comes the sun!"
-			tasks: [{
-				id: "7BD176196E10776F"
-				item: "torchmaster:feral_flare_lantern"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -5.5d
+			x: -0.35d
+			y: -0.7d
 		}
 		{
 			dependencies: ["51D2A2A99A671311"]
+			description: [
+				"Upgrade to your Rustic Coke Oven that makes it faster."
+				""
+				"It now will outomatically output items and fluids with its hatches. Multiple Coke Ovens even will share walls with each other!"
+			]
 			icon: "gtceu:coke_oven"
 			id: "49EAA9A6F41A7551"
+			size: 0.7d
 			tasks: [
 				{
 					id: "06A693B62FDAE319"
@@ -2884,19 +2499,22 @@
 					type: "item"
 				}
 				{
-					count: 3L
+					count: 2L
 					id: "7CD3A054FEF6769C"
 					item: "gtceu:coke_oven_hatch"
 					optional_task: true
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: -7.5d
+			x: 0.0d
+			y: -10.15d
 		}
 		{
 			dependencies: ["49EAA9A6F41A7551"]
+			description: ["Fastest Coke Oven version that do things on its own without any additional requirements."]
 			id: "575BDE04271E94D1"
+			shape: "rsquare"
+			size: 0.7d
 			tasks: [{
 				count: 27L
 				id: "2F40390FDF8B0340"
@@ -2904,8 +2522,8 @@
 				type: "item"
 			}]
 			title: "Industrial Coke Oven"
-			x: 5.5d
-			y: -7.5d
+			x: 0.6887755102040743d
+			y: -10.12733843537415d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -3019,8 +2637,8 @@
 				}
 			]
 			title: "Brass things"
-			x: 0.35d
-			y: -13.65d
+			x: 3.6804421768707556d
+			y: -6.484438775510249d
 		}
 		{
 			dependencies: ["7BFF886E57F3D543"]
@@ -3033,6 +2651,7 @@
 				}
 			}
 			id: "6F1BCAB0F06CCF86"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "34916D5DDC6B8A18"
@@ -3080,175 +2699,36 @@
 				}
 			]
 			title: "Hazmat Suit"
-			x: 5.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["4879433BBEEF8352"]
-			description: ["To make components and blocks of your future digital storage you need processors. Inscriber is ultimate way to craft them."]
-			icon: "ae2:inscriber"
-			id: "4A8233ADB6406DA9"
-			tasks: [
-				{
-					id: "3B43AE49CABA5141"
-					item: "ae2:inscriber"
-					type: "item"
-				}
-				{
-					id: "0AA69E31F8CCE46A"
-					item: "ae2:logic_processor"
-					type: "item"
-				}
-				{
-					id: "664C4D46FEDD5789"
-					item: "ae2:calculation_processor"
-					type: "item"
-				}
-				{
-					id: "6CEBE4F7B9183079"
-					item: "ae2:engineering_processor"
-					type: "item"
-				}
-			]
-			x: 4.8999999999999995d
-			y: -16.349999999999998d
-		}
-		{
-			dependencies: [
-				"4A8233ADB6406DA9"
-				"799F7F64000A3084"
-			]
-			description: [
-				"Digital storage use Storage Cells with various properties: Bytes and Types."
-				""
-				"&oTypes&r: means how many different items can cell hold."
-				""
-				"&oBytes&r: show how many items cell can hold. 1 item = 1 bit, so for a byte you need 8 items."
-				""
-				"Put them in ME Drive and connect terminal to it with fluix cables. Now you have simple way to store your items in one block!"
-				""
-				"With addition of crafting terminal you now can create things directly from ME system."
-				""
-				"&lFollow 'Storage Solutions' tab for automation.&r"
-			]
-			icon: "ae2:drive"
-			id: "540D62BE372AE7D1"
-			shape: "gear"
-			size: 1.5d
-			subtitle: "Who needs item sorting?"
-			tasks: [
-				{
-					id: "07BF7D74DD8A3B9B"
-					item: "ae2:drive"
-					type: "item"
-				}
-				{
-					id: "074050C53154702C"
-					item: {
-						Count: 1
-						id: "ae2:item_storage_cell_1k"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "473F8D6510E53CA6"
-					item: "ae2:terminal"
-					type: "item"
-				}
-				{
-					id: "7229AFD712C4987A"
-					item: "ae2:crafting_terminal"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "09C8561C6B735270"
-					item: "ae2:fluix_glass_cable"
-					type: "item"
-				}
-			]
-			title: "Digital Storage"
-			x: 4.8999999999999995d
-			y: -17.849999999999998d
-		}
-		{
-			dependencies: ["4A8233ADB6406DA9"]
-			description: ["You will need it to convert any form of energy for your main digital storage network. You can use Fluix Cables to transfer energy between components."]
-			id: "799F7F64000A3084"
-			tasks: [{
-				id: "7EE3EA9812EAF172"
-				item: "ae2:energy_acceptor"
-				type: "item"
-			}]
-			x: 5.8999999999999995d
-			y: -16.849999999999998d
-		}
-		{
-			dependencies: [
-				"799F7F64000A3084"
-				"0852CB10008D7CDB"
-				"7B289C03327D9227"
-			]
-			description: ["Attachment for Energy Acceptor. With it you now can power your ME system with rotational power."]
-			id: "5B16DA7287A8ABFE"
-			size: 0.7d
-			tasks: [{
-				id: "2BF870DF77EE4B3D"
-				item: "createappliedkinetics:energy_provider"
-				type: "item"
-			}]
-			x: 6.199999999999999d
-			y: -17.799999999999997d
-		}
-		{
-			dependencies: ["4879433BBEEF8352"]
-			description: ["In the depths of the Nether you can find ore veins containing certus quartz native to hellish landscape. It can be used in some crafting recipe instead of one you farm in meteors."]
-			icon: "gtceu:certus_quartz_gem"
-			id: "7E322C0C7CE5B091"
-			size: 0.7d
-			tasks: [
-				{
-					id: "53D6CF29C5CC2C9A"
-					item: "gtceu:raw_certus_quartz"
-					type: "item"
-				}
-				{
-					id: "4F9072AEF24597BF"
-					item: "gtceu:certus_quartz_gem"
-					type: "item"
-				}
-			]
-			title: "Hellish Replacement"
-			x: 4.55d
-			y: -15.4d
+			x: 3.349744897959198d
+			y: -1.2185374149659864d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
 			description: ["You can make glass panels with help of alloy kiln. It is not much but will do it for now."]
-			hide_dependent_lines: true
 			id: "330180412AC025EA"
-			size: 0.7d
+			shape: "hexagon"
+			size: 1.2d
 			tasks: [{
 				id: "3F7E4A2F4D66A0C8"
 				item: "minecraft:glass_pane"
 				type: "item"
 			}]
 			title: "Glass alloying"
-			x: 2.4700680272108926d
-			y: -9.985714285714273d
+			x: -0.6379251700680442d
+			y: -3.9480442176870767d
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
 			id: "0E9DFA836D20D6D4"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "6A7BC4FE3CA18D45"
 				item: "tconstruct:copper_can"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.5d
+			x: -1.75d
+			y: -4.55d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -3312,32 +2792,34 @@
 				}
 			]
 			title: "Bronze Equipment"
-			x: 2.0414965986394478d
-			y: -7.785714285714278d
+			x: 0.3525510204081641d
+			y: -7.563350340136061d
 		}
 		{
 			dependencies: ["191FA67C7B17BB2F"]
 			description: [
-				"Can remember up to 9 recipes after crafting. By right-clicking on the recipe on the right it will not be overwritten by different recipe. "
+				"Combination of Blueprint abilities with internal storage of Engineer's Crafting Table. By right-clicking on the recipe on the right in the UI it will not be overwritten by different recipe. "
 				""
-				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly."
+				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly and bring resources out of your chests."
 			]
 			id: "1C31C068991CC116"
+			shape: "rsquare"
 			tasks: [{
 				id: "1D887C29DCACCEF9"
 				item: "forestry:worktable"
 				type: "item"
 			}]
-			title: "Personal recipe book"
-			x: 0.24149659863946482d
-			y: -10.042857142857137d
+			title: "Personal Crafting Book"
+			x: 5.5d
+			y: -5.0d
 		}
 		{
-			dependencies: [
-				"16550070AD851335"
-				"3129F95624CBEDD4"
+			dependencies: ["3129F95624CBEDD4"]
+			description: [
+				"Manual way to make rails and other simple components."
+				""
+				"&lCheck \"Transportation\" tab.&r"
 			]
-			description: ["Manual way to make rails and other simple components."]
 			id: "4DB042DAF83D7A0A"
 			shape: "gear"
 			size: 1.5d
@@ -3347,8 +2829,8 @@
 				type: "item"
 			}]
 			title: "Rails Time!"
-			x: -1.2823129251700607d
-			y: -6.7047619047619165d
+			x: -4.282312925170061d
+			y: -8.5d
 		}
 		{
 			dependencies: ["4DB042DAF83D7A0A"]
@@ -3358,6 +2840,7 @@
 				"Sounds wonderful, isn't it? Well there is a problem. Made out of simple materials they will loose their energy capacity overtime and if there no energy stored in them they will brake!"
 			]
 			id: "332A1EB91726C2C0"
+			size: 0.7d
 			tasks: [
 				{
 					id: "6A544699456536A4"
@@ -3372,13 +2855,15 @@
 				}
 			]
 			title: "Unreliable batteries"
-			x: -2.5d
-			y: -6.0d
+			x: -4.274999999999999d
+			y: -9.732738095238076d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
-			description: ["Made out of vines or dandelions. Not cheap, but useful in some equipment."]
+			description: ["Made out of vines or dandelions. Not cheap right now, but useful in some equipment."]
 			id: "7BFF886E57F3D543"
+			shape: "hexagon"
+			size: 0.85d
 			tasks: [
 				{
 					id: "03F71DC4A5E1A1BD"
@@ -3392,11 +2877,14 @@
 				}
 			]
 			title: "Manual Rubber"
-			x: 2.5d
-			y: -2.0d
+			x: 2.125d
+			y: -1.7d
 		}
 		{
-			dependencies: ["7BFF886E57F3D543"]
+			dependencies: [
+				"7BFF886E57F3D543"
+				"56766749439CD7E0"
+			]
 			id: "512D08F4FA99BE90"
 			size: 0.7d
 			tasks: [{
@@ -3408,22 +2896,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.9700680272108855d
-			y: -1.2666666666666728d
-		}
-		{
-			dependencies: ["4A8233ADB6406DA9"]
-			description: ["Presses can be coppied with iron block and coresponding press."]
-			icon: "minecraft:iron_block"
-			id: "2F3E8A2C8A46E941"
-			size: 0.5d
-			tasks: [{
-				id: "07F74B626CCB2A6A"
-				title: "Press Recreation"
-				type: "checkmark"
-			}]
-			x: 5.5d
-			y: -15.75d
+			x: 2.9211734693877673d
+			y: -2.1164965986394577d
 		}
 		{
 			dependencies: ["15CBA4A7DB0EE055"]
@@ -3439,7 +2913,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["0A47F74F64457575"]
+			dependencies: ["7F1D22C969F965A6"]
 			description: [
 				"Do you have some unused tool parts? Don't know where to put them? Don't have space in your cluttered storage? Tinker's chests here to help! "
 				""
@@ -3450,12 +2924,12 @@
 			]
 			icon: "tconstruct:part_chest"
 			id: "5DF65AEF33F86505"
-			size: 0.7d
+			shape: "diamond"
+			size: 0.85d
 			tasks: [
 				{
 					id: "6F0F21F94DADA3BE"
 					item: "tconstruct:part_chest"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -3471,8 +2945,345 @@
 				}
 			]
 			title: "Storing Parts for later"
-			x: -1.7156462585033978d
-			y: 0.5428571428571374d
+			x: 0.5093537414965965d
+			y: -0.5113095238095156d
+		}
+		{
+			dependencies: ["10E87B6699909383"]
+			description: ["Silver and gold give quite conductive metal."]
+			id: "1C1AF1DA2760DB59"
+			shape: "hexagon"
+			size: 0.85d
+			tasks: [{
+				id: "48829E6B7093C19E"
+				item: "thermal:electrum_ingot"
+				type: "item"
+			}]
+			x: 0.85d
+			y: -6.8d
+		}
+		{
+			dependencies: ["0A47F74F64457575"]
+			id: "193EDD7B079CF150"
+			shape: "diamond"
+			size: 0.85d
+			subtitle: "No zombies on my lawn!"
+			tasks: [{
+				id: "32547714D137833C"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			x: -2.859013605442172d
+			y: -5.266369047619051d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Treated planks can be crafted into Windmills. They will generate energy passively."
+				""
+				"Different weather will reduce or decrease energy output of Windmill. Building another Windmill of any type in close proximity (up to 7 blocks in front of it) will reduce its speed."
+			]
+			icon: "immersiveengineering:dynamo"
+			id: "521B2505E5C81E16"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "34BE81DB7F0D00F4"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "483BA109E9968F38"
+					item: "immersiveengineering:windmill"
+					type: "item"
+				}
+			]
+			title: "Kinetic clean energy"
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["521B2505E5C81E16"]
+			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail. Each blade will need it own Sail upgrade!"]
+			id: "50BA9C41804AE9A2"
+			size: 0.7d
+			tasks: [{
+				id: "3E02F94201C301A0"
+				item: "immersiveengineering:windmill_sail"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.299999999999999d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Compression dynamo can consume creosote and generate Forge Energy units. "
+				""
+				"It can be useful way to get a little bit more energy and spend Creosote if you have too much if it. "
+			]
+			id: "1FB9F832D1214239"
+			shape: "diamond"
+			tasks: [{
+				id: "7DBAE07870657D9A"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			title: "Creosote to energy"
+			x: -1.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["4B31C89E0FA58CE0"]
+			description: ["Will use lava to generate energy."]
+			id: "4972940DA0DA30B4"
+			shape: "diamond"
+			tasks: [{
+				id: "13E528561DE1E6B5"
+				item: "thermal:dynamo_magmatic"
+				type: "item"
+			}]
+			x: 2.1354591836734826d
+			y: -7.7372448979591795d
+		}
+		{
+			dependencies: ["04A0F70827AA6155"]
+			description: ["Will extract energy from some gems. Probably can be way to spend rubies and sapphires at this stage of the game."]
+			id: "123053D8EB9279CF"
+			shape: "diamond"
+			size: 0.85d
+			subtitle: "Gem Eater"
+			tasks: [{
+				id: "70021680F9844739"
+				item: "thermal:dynamo_lapidary"
+				type: "item"
+			}]
+			x: 0.6653911564625616d
+			y: -3.7940476190476105d
+		}
+		{
+			dependencies: ["51D2A2A99A671311"]
+			description: ["Using charcoal and other resources you can craft gundpowder."]
+			id: "4565506C16FA5FC3"
+			shape: "hexagon"
+			size: 0.7d
+			tasks: [{
+				id: "6073931AD4F3764E"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: -1.75d
+			y: -9.1d
+		}
+		{
+			dependencies: ["34D049FD2BF84E84"]
+			description: [
+				"Very cheap, very frail, but still have Gregtech tools abilities."
+				""
+				"&lAll&r Gregtech standart tools have special helpful abilites: axe can chop down whole tree, pickaxes can put torches on right click automatically and others. You always can see them in item description."
+			]
+			id: "7D69A9A746774D60"
+			rewards: [{
+				count: 16
+				id: "409AF7257EB2664B"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 0.85d
+			tasks: [
+				{
+					id: "2D266810284F9200"
+					item: {
+						Count: 1
+						id: "gtceu:flint_axe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 1
+								MaxDamage: 63
+								ToolSpeed: 2.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7EA3BACF555801FC"
+					item: {
+						Count: 1
+						id: "gtceu:flint_sword"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 4.0f
+								AttackSpeed: -2.4f
+								DefaultEnchantments: [{
+									id: "minecraft:fire_aspect"
+									lvl: 1s
+								}]
+								Enchantability: 5
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "19AD65400DD2EB6F"
+					item: {
+						Count: 1
+						id: "gtceu:flint_pickaxe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								TorchPlacing: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 1
+								MaxDamage: 63
+								ToolSpeed: 4.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "11F432838935904E"
+					item: {
+						Count: 1
+						id: "gtceu:flint_shovel"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 1
+								MaxDamage: 63
+								ToolSpeed: 4.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Flint Tools"
+			x: 2.523214285714282d
+			y: -4.3035714285714235d
+		}
+		{
+			dependencies: ["4B31C89E0FA58CE0"]
+			description: ["Invar tools comes with Efficiency after crafting."]
+			id: "3D3B1B33532FA357"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "003B5AB7C0B47D6D"
+					item: {
+						Count: 1
+						id: "gtceu:invar_pickaxe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								TorchPlacing: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [{
+									id: "minecraft:efficiency"
+									lvl: 1s
+								}]
+								Enchantability: 18
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 8.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4DC0C26046FD6621"
+					item: {
+						Count: 1
+						id: "gtceu:invar_axe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [{
+									id: "minecraft:efficiency"
+									lvl: 1s
+								}]
+								Enchantability: 18
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "309FC78D0448E378"
+					item: {
+						Count: 1
+						id: "gtceu:invar_shovel"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [{
+									id: "minecraft:efficiency"
+									lvl: 1s
+								}]
+								Enchantability: 18
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 8.0f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Hasty"
+			x: 1.5d
+			y: -7.5d
 		}
 	]
 	title: "Start of the journey"

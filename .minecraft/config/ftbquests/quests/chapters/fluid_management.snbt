@@ -18,34 +18,49 @@
 		{
 			id: "4800D7C6F6EC0B89"
 			linked_quest: "7D3FA2BBD1033FE9"
+			shape: "diamond"
 			x: 3.0d
 			y: -4.5d
 		}
 		{
 			id: "594CC73C5D91EA9C"
 			linked_quest: "6B98F8F66130812D"
-			x: 1.0d
-			y: -5.0d
+			x: 0.9362244897959258d
+			y: -5.163265306122447d
 		}
 		{
 			id: "2116D0F5A7431D33"
 			linked_quest: "784AEC9BF8755F95"
-			x: 4.0d
-			y: -4.5d
+			size: 0.7d
+			x: 3.75d
+			y: -3.25d
 		}
 		{
 			id: "7B95BDC607E0AB2F"
 			linked_quest: "08F0E06F30471E3E"
+			x: 4.75d
+			y: -2.25d
+		}
+		{
+			id: "453D25EC705F69D3"
+			linked_quest: "540D62BE372AE7D1"
+			shape: "gear"
+			size: 0.6d
 			x: 4.5d
-			y: -3.5d
+			y: -3.5999999999999996d
+		}
+		{
+			id: "3AF215A295B43236"
+			linked_quest: "108C99B4F1FE705F"
+			shape: "rsquare"
+			size: 0.6d
+			x: -0.471428571428568d
+			y: -0.7142857142857153d
 		}
 	]
 	quests: [
 		{
-			dependencies: [
-				"5A3BFC118141DC5C"
-				"332E6B2C638AE656"
-			]
+			dependencies: ["332E6B2C638AE656"]
 			description: [""]
 			id: "72304D7D63A87E7A"
 			rewards: [{
@@ -54,6 +69,7 @@
 				item: "create:mechanical_pump"
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [{
 				id: "0DF17C17F177D4C1"
 				item: "create:mechanical_pump"
@@ -65,6 +81,7 @@
 		{
 			dependencies: ["72304D7D63A87E7A"]
 			id: "1C2524E076D09250"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				count: 4L
@@ -84,6 +101,7 @@
 				item: "create:copper_valve_handle"
 				type: "item"
 			}]
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				count: 4L
@@ -95,19 +113,25 @@
 			y: -7.7d
 		}
 		{
-			dependencies: ["5186990A391ADB8D"]
+			dependencies: [
+				"5186990A391ADB8D"
+				"108C99B4F1FE705F"
+			]
 			id: "11A8EA423A27F25F"
+			shape: "diamond"
+			size: 0.85d
 			tasks: [{
 				id: "659C09D8B97484B1"
 				item: "create:portable_fluid_interface"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -0.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
 			id: "477C63414BE6219A"
+			shape: "rsquare"
 			tasks: [{
 				id: "6F27651D938A8F50"
 				item: "create:hose_pulley"
@@ -124,6 +148,13 @@
 				"Use Engineer's Hammer to configure input and output sides."
 			]
 			id: "62F294152390992E"
+			rewards: [{
+				count: 3
+				id: "5C6938C77845C39A"
+				item: "immersiveengineering:fluid_pump"
+				type: "item"
+			}]
+			shape: "diamond"
 			tasks: [{
 				id: "380D784BB1E618E7"
 				item: "immersiveengineering:fluid_pump"
@@ -134,8 +165,10 @@
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
+			description: ["Output water automatically throught Pump Hatch. Output capacity based on biome."]
 			icon: "gtceu:primitive_pump"
 			id: "4885642010185D62"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "47C352AFF3F595A0"
@@ -169,27 +202,39 @@
 				"332E6B2C638AE656"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Simple water generator. Unlike Primitive Pump can't auto-output liquids by itself."]
+			description: [
+				"Simple water generator. Unlike Primitive Pump can't auto-output liquids by itself."
+				""
+				"Varoius weather conditions and biomes will affect the water generation."
+			]
 			id: "0B9E46B8967F33B0"
 			rewards: [{
-				count: 13
+				count: 14
 				id: "48B60CC257943FF1"
 				item: "railcraft:water_tank_siding"
 				type: "item"
 			}]
-			size: 0.7d
+			shape: "rsquare"
+			size: 1.0d
 			tasks: [{
-				count: 13L
+				count: 12L
 				id: "1FA4DE9CB92AC078"
 				item: "railcraft:water_tank_siding"
 				type: "item"
 			}]
 			title: "Water Tank Siding"
-			x: 1.75d
-			y: -4.55d
+			x: 1.691326530612237d
+			y: -4.489795918367342d
 		}
 		{
 			dependencies: ["5186990A391ADB8D"]
+			description: [
+				"Upgraded iron variant of copper tanks."
+				""
+				"Have bigger sizes and much more capacity, but fairly cost much. You can use Gauge or Walls interchangeably, but &oframe&r of the tank &lalways need to use Walls&r."
+				""
+				"This quest have minimum required blocks you need to make smallest tank."
+			]
 			icon: "railcraft:white_iron_tank_valve"
 			id: "3E8CD30DEAF3BF95"
 			subtitle: "But Iron"
@@ -281,11 +326,11 @@
 				"You have different options to transfer liquids around with various benefits and drawbacks. "
 				""
 				"{@pagebreak}"
-				"&lCopper Fluid Pipes&r are simpliest to make, but by themselves they can't extract any fluids and will not get any fluid throught them without Mechanical Pump."
+				"&lCopper Fluid Pipes&r are simpliest to make, but by themselves they can't extract any fluids and will not get any fluid throught them without &lMechanical Pump&r."
 				""
 				"Unlike other pipes, they can put source blocks in the world."
 				""
-				"By clicking on straight pipes with any wrench-like tool you transform them into glass like pipe that now show you what liquid go through system. "
+				"By clicking on straight pipes with any wrench-like tool you transform them into windowed pipe that now show you what liquid go through system. "
 				""
 				"You can use &oCopper Casing&r to save pipe connections and forbid it from connecting to other pipes."
 				""
@@ -333,12 +378,13 @@
 					type: "item"
 				}
 				{
-					count: 8
+					count: 4
 					id: "371255B1F8DE8F55"
 					item: "thermal:fluid_duct"
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			tasks: [
 				{
 					count: 4L
@@ -376,6 +422,7 @@
 			dependencies: ["332E6B2C638AE656"]
 			description: ["Work only with GregTech pipes."]
 			id: "724160D9F6565F29"
+			shape: "diamond"
 			tasks: [{
 				id: "0C26B01F98328560"
 				item: "ulvcovm:ulv_electric_pump"
@@ -407,6 +454,7 @@
 				"7D3FA2BBD1033FE9"
 				"37506D0DC482AAA8"
 			]
+			description: ["Wooden pipes can't transport hot fluids and gases!"]
 			icon: "gtceu:treated_wood_normal_fluid_pipe"
 			id: "6C4F567410AA97A0"
 			size: 0.6d
@@ -491,7 +539,11 @@
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
-			description: ["Drums can store liquids even when broken. They have output hatch underneath you can activate with Mallets."]
+			description: [
+				"Drums can store liquids even when broken. They have output hatch underneath you can activate with Mallets."
+				""
+				"&oNotable feature of Gold Drums: they can handle &lacids.&r"
+			]
 			icon: "gtceu:bronze_drum"
 			id: "031595756B809ADC"
 			tasks: [
@@ -521,8 +573,8 @@
 				}
 			]
 			title: "Better Buckets"
-			x: 3.5d
-			y: -2.0d
+			x: 3.75d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -537,8 +589,8 @@
 				item: "immersiveengineering:metal_barrel"
 				type: "item"
 			}]
-			x: 4.440476190476197d
-			y: -2.0238095238095326d
+			x: 3.75d
+			y: -1.2999999999999998d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -547,7 +599,7 @@
 				""
 				"Input liquids on the top and output them from the bottom."
 				""
-				"With help of comparator you can see how much liquid is contained."
+				"With help of comparator you can detect how much liquid is contained."
 			]
 			icon: "immersiveengineering:tank"
 			id: "7931B771167AFDFE"
@@ -635,6 +687,7 @@
 				"Use bucket with fluid in the UI to configure what liquid will go where."
 			]
 			id: "3C8A526DF1557AE8"
+			shape: "diamond"
 			tasks: [{
 				id: "48F362149289D355"
 				item: "immersiveengineering:fluid_sorter"
@@ -652,11 +705,12 @@
 				item: "immersivetechnology:barrel_steel"
 				type: "item"
 			}]
-			x: 4.75d
-			y: -2.5d
+			x: 3.75d
+			y: -0.75d
 		}
 		{
 			dependencies: ["7931B771167AFDFE"]
+			description: ["Hold 2 times more fluids then its iron brother."]
 			icon: "immersivetechnology:steel_sheetmetal_tank"
 			id: "07F4A2373ACBF0D5"
 			rewards: [{
@@ -697,8 +751,8 @@
 				item: "ulvcovm:ulv_fluid_regulator"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -9.1d
+			x: 3.2704081632653015d
+			y: -8.974489795918362d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -711,6 +765,7 @@
 				item: "gtceu:potin_normal_fluid_pipe"
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "5E2895C294F8FC21"
@@ -739,6 +794,7 @@
 			]
 			description: ["Give ME system a way to store fluids."]
 			id: "48A9933056B21984"
+			shape: "diamond"
 			tasks: [{
 				id: "422A3643AC8CBA5A"
 				item: {
@@ -748,8 +804,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -5.0d
+			x: 4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -805,8 +861,10 @@
 			dependencies: [
 				"724160D9F6565F29"
 				"1B95E7F9A5CBDBE8"
+				"480641273B63C681"
 			]
 			dependency_requirement: "one_completed"
+			description: ["To configure your covers or disassemble them."]
 			id: "1042CC5D3176F2A3"
 			size: 0.7d
 			tasks: [
@@ -838,6 +896,48 @@
 			title: "Cover Control"
 			x: 2.5d
 			y: -10.0d
+		}
+		{
+			dependencies: ["0B9E46B8967F33B0"]
+			description: ["Collects water when its raining. To extract it use pumps or connect energy to bottle water."]
+			id: "0F5039D83287789B"
+			size: 0.7d
+			tasks: [{
+				id: "0CBED658D2D0D794"
+				item: "forestry:raintank"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3E8CD30DEAF3BF95"]
+			icon: "railcraft:white_steel_tank_valve"
+			id: "604AD5E9DA61C7DB"
+			size: 0.85d
+			tasks: [
+				{
+					count: 2L
+					id: "5D8727B225430B74"
+					item: "railcraft:white_steel_tank_valve"
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "6B853E12009BF02B"
+					item: { Count: 26, id: "railcraft:white_steel_tank_wall" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7D785C514EF11A42"
+					item: "railcraft:white_steel_tank_gauge"
+					type: "item"
+				}
+			]
+			title: "Steel Modularity"
+			x: -0.9770408163265216d
+			y: -2.892857142857139d
 		}
 	]
 	title: "Fluid Management"

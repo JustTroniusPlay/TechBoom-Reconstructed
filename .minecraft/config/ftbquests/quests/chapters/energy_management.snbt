@@ -8,12 +8,6 @@
 	order_index: 2
 	quest_links: [
 		{
-			id: "7668476A3236014C"
-			linked_quest: "644DA6D29FB50DA8"
-			x: -0.5107142857142919d
-			y: -6.178571428571431d
-		}
-		{
 			id: "13DF990FC49D788F"
 			linked_quest: "69DB58E1CD20ED2B"
 			shape: "pentagon"
@@ -25,34 +19,43 @@
 			id: "7385056AFB4C6B16"
 			linked_quest: "006F0DFB4E9FE795"
 			title: "Brass Accumulator"
-			x: 2.5d
-			y: 3.5d
+			x: 2.4994897959183646d
+			y: 4.175000000000004d
 		}
 		{
 			id: "6F977D2B7482E7EE"
 			linked_quest: "1C59476B07336B42"
 			size: 0.5d
-			x: -2.75d
+			x: -3.75d
 			y: 0.2607142857142861d
 		}
 		{
 			id: "7E16D6E0D25025A2"
 			linked_quest: "518089C9998EBFF8"
-			x: -0.5d
-			y: 2.0d
+			x: -0.5005102040816354d
+			y: 2.6750000000000043d
 		}
 		{
 			id: "6934C4180CCE1CB8"
 			linked_quest: "332A1EB91726C2C0"
 			x: -1.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			id: "792420F3FC228E88"
 			linked_quest: "799F7F64000A3084"
+			shape: "rsquare"
 			size: 0.7d
-			x: 2.5d
-			y: 0.5d
+			x: -1.4d
+			y: 2.8d
+		}
+		{
+			id: "6C868A007218CC75"
+			linked_quest: "1C2F6D48F407A95D"
+			shape: "hexagon"
+			size: 0.85d
+			x: -3.55d
+			y: 1.4d
 		}
 	]
 	quests: [
@@ -65,7 +68,7 @@
 				"{@pagebreak}"
 				"IE wires have energy loss. Every 16 blocks they will loose 5% of overal energy pool. Additional loss happen if you will not use full wires carrying capacity."
 				""
-				"LV connectors can input or output max 256 FE to the wires. By combining many connectors into single wire through relays the energy loss can be mitigated. &oLV wires max transfer capacity is 2048 FE/t, going higher will burn your wires.&r"
+				"LV connectors can input or output max 256 FE to the wires. By combining many connectors into single wire through relays the energy loss can be mitigated. &oLV wires max transfer capacity is 2048 FE/t, going higher will &lburn&r &oyour wires.&r"
 			]
 			icon: "immersiveengineering:wirecoil_copper"
 			id: "3CADA01B0663BC89"
@@ -89,6 +92,7 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "214D51E2B8D3177B"
@@ -139,7 +143,6 @@
 		{
 			dependencies: [
 				"56766749439CD7E0"
-				"7A0C939E0FE540EC"
 				"3E885ACD84B8FF4F"
 				"006F0DFB4E9FE795"
 			]
@@ -194,6 +197,7 @@
 			dependencies: ["3CADA01B0663BC89"]
 			description: ["Tired of being shocked? Use tough fabrick to make your wires insulated!"]
 			id: "76433BADB401CAC9"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -212,15 +216,18 @@
 			y: -4.4285714285714315d
 		}
 		{
-			dependencies: ["69DB58E1CD20ED2B"]
+			dependencies: [
+				"69DB58E1CD20ED2B"
+				"15B5CF1F309CA82A"
+			]
 			id: "10D646BACACC9E61"
 			tasks: [{
 				id: "6018217242A7F1DA"
 				item: "immersiveengineering:capacitor_lv"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.5d
+			x: 0.9994897959183646d
+			y: 2.1750000000000043d
 		}
 		{
 			dependencies: ["10D646BACACC9E61"]
@@ -230,8 +237,8 @@
 				item: "immersiveengineering:capacitor_mv"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: 2.4994897959183646d
+			y: 2.6750000000000043d
 		}
 		{
 			dependencies: [
@@ -244,7 +251,7 @@
 				item: "gtceu:tin_single_cable"
 				type: "item"
 			}]
-			x: -2.721428571428568d
+			x: -3.721428571428568d
 			y: -0.5d
 		}
 		{
@@ -255,7 +262,7 @@
 				item: "gtceu:lv_1a_energy_converter"
 				type: "item"
 			}]
-			x: -2.721428571428568d
+			x: -3.721428571428568d
 			y: -2.5d
 		}
 		{
@@ -300,11 +307,12 @@
 		{
 			dependencies: ["69DB58E1CD20ED2B"]
 			description: [
-				"With help of small connector you can transfer energy around your base. Unfortunately simplicity comes with a cost: Small connectors don't have any power loss, but can't be too far away for each other. Connectors need to be max 4 blocks from each other and can't support more than 4 connections on one."
+				"With help of small connector you can transfer energy around your base. "
 				""
-				"Not bad for small starter base, but really will not fit huge industrial production."
+				"Unfortunately simplicity comes with a cost: Small connectors don't have any power loss, but can't be too far away for each other. Connectors need to be max 4 blocks from each other and can't support more than 4 connections on one. Not bad for small starter base, but really will not fit huge industrial production."
 				""
-				"Connectors will only get maximum of 64 FE/t from energy sources and give 256 FE/t on receiving end. They will change behaviour automaticaly if there input or output, but if this didn't happen connectors can be configurate by any wrench to push, pull or do nothing."
+				"{@pagebreak}"
+				"Connectors will only get maximum of 64 FE/t from energy sources and give 256 FE/t on receiving end. They will change behaviour automaticaly if there input or output, but if this didn't happen connectors can be configurate by &lany wrench&r to &opush, pull or do nothing&r."
 			]
 			icon: "createaddition:connector"
 			id: "4CCBE98B5628C77A"
@@ -341,9 +349,10 @@
 		}
 		{
 			dependencies: ["4CCBE98B5628C77A"]
-			description: ["By using some gold or electrum you can make big brother of small connector. It can transfer two times more energy and by 8 blocks away! "]
+			description: ["By using electrum you can make big brother of small connector. It can transfer two times more energy and by 8 blocks away! "]
 			icon: "createaddition:large_connector"
 			id: "1AB41CA63D607F37"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "171EC6248A57A1D3"
@@ -447,6 +456,7 @@
 		{
 			dependencies: ["0320062681E3AE99"]
 			id: "12B8A0C2A9115587"
+			subtitle: "Forge Energy, roll out!"
 			tasks: [
 				{
 					id: "3AC91B2561C1CDC8"
@@ -476,8 +486,8 @@
 				type: "item"
 			}]
 			title: "Lithium Accumulator"
-			x: 1.0d
-			y: 3.5d
+			x: 0.9994897959183646d
+			y: 4.175000000000004d
 		}
 		{
 			dependencies: ["2DC0C89F91D2AE1D"]
@@ -487,8 +497,8 @@
 				item: "immersiveengineering:capacitor_hv"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.5d
+			x: 3.9994897959183646d
+			y: 3.1750000000000043d
 		}
 		{
 			dependencies: [
@@ -513,7 +523,7 @@
 			]
 			title: "Nickel Batteries"
 			x: -0.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["799F7F64000A3084"]
@@ -527,8 +537,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -0.5d
+			x: -2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4ED512F235419F02"]
@@ -542,8 +552,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -0.5d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["518089C9998EBFF8"]
@@ -567,8 +577,8 @@
 				}
 			]
 			title: "RF Upgrades"
-			x: -0.5d
-			y: 3.0d
+			x: -0.5005102040816354d
+			y: 3.6750000000000043d
 		}
 		{
 			dependencies: ["69DB58E1CD20ED2B"]
@@ -579,8 +589,78 @@
 				item: "thermal:dynamo_throttle_augment"
 				type: "item"
 			}]
-			x: 1.8297619047619023d
-			y: -1.2916666666666714d
+			x: 1.66666666666665d
+			y: -1.4285714285714306d
+		}
+		{
+			dependencies: ["69DB58E1CD20ED2B"]
+			id: "11079328782ADE0E"
+			tasks: [{
+				id: "0E66DF131638D455"
+				item: "thermal:dynamo_disenchantment"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3CADA01B0663BC89"]
+			description: [
+				"Any two connectors can go throught any solid block so you don't need to get your wires around them. Put them on opposite sides of your wall and click with Engineer's Hammer. "
+				""
+				"So now you can transfer power directly into the wall!"
+			]
+			icon: "immersiveengineering:connector_mv"
+			id: "6F61E15935E4DD0F"
+			shape: "square"
+			size: 0.65d
+			tasks: [{
+				id: "3A6EF3DDF4CB9189"
+				type: "checkmark"
+			}]
+			title: "Energy in the walls"
+			x: 0.48596938775511234d
+			y: -3.265306122448976d
+		}
+		{
+			dependencies: ["3CADA01B0663BC89"]
+			description: [
+				"Multimeter will show energy loss of two connectors."
+				""
+				"Current Transformer its stationary version that need to be connected between two points."
+				""
+				"To disconnect wires use wire cutter."
+			]
+			id: "23253B96F5BCB012"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "78456692647699BA"
+					item: "immersiveengineering:voltmeter"
+					type: "item"
+				}
+				{
+					id: "7401F69E48F91379"
+					item: "immersiveengineering:current_transformer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3D4AA86312A448E5"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Wiring Tools"
+			x: 2.1d
+			y: -4.2d
 		}
 	]
 	title: "Energy Management"

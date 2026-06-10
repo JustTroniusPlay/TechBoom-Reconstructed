@@ -9,10 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"3F0F17AD293B8B8F"
-				"25951FDCB7908145"
-			]
+			dependencies: ["25951FDCB7908145"]
 			description: [
 				"The backbone of Create mod and its systems is &lcogs and shafts&r! They will transfer kinetic energy and power your machines. They can be directly connected with shafts or cogs."
 				""
@@ -154,6 +151,7 @@
 		{
 			dependencies: ["5A3BFC118141DC5C"]
 			id: "1B53FA2848ED5392"
+			size: 1.2d
 			tasks: [
 				{
 					count: 8L
@@ -314,7 +312,7 @@
 				type: "item"
 			}]
 			title: "L-shaped Gearbox"
-			x: 5.0d
+			x: 5.5d
 			y: -1.5d
 		}
 		{
@@ -353,6 +351,7 @@
 		{
 			dependencies: ["1B53FA2848ED5392"]
 			id: "0966F994586EED73"
+			size: 1.2d
 			tasks: [{
 				count: 4L
 				id: "4BB6629B9E833827"
@@ -412,7 +411,7 @@
 				""
 				"Multimeter is both blocks in form of one!"
 			]
-			icon: "create_better_motors:multimeter"
+			icon: "create:stressometer"
 			id: "3A32F6B5E26895FE"
 			subtitle: "To know how good you do it"
 			tasks: [
@@ -451,6 +450,7 @@
 		{
 			dependencies: ["0966F994586EED73"]
 			id: "11F275436272AE0A"
+			size: 1.2d
 			tasks: [{
 				id: "55C228C7654260A8"
 				item: "create:gearshift"
@@ -458,6 +458,52 @@
 			}]
 			x: 7.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["1B53FA2848ED5392"]
+			id: "3B83E316E4AA515A"
+			size: 0.85d
+			tasks: [{
+				id: "0A5F8D7E317F1F27"
+				item: "create_connected:cross_connector"
+				type: "item"
+			}]
+			x: 4.54999999999999d
+			y: -1.4132653061224474d
+		}
+		{
+			dependencies: ["5A3BFC118141DC5C"]
+			id: "64C0EE616C6B1045"
+			tasks: [{
+				id: "2C65A42D20EABDFC"
+				item: "create_connected:shear_pin"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["072634110D7A6027"]
+			id: "6532A4194CFBF08A"
+			tasks: [{
+				id: "6664EB1A10BB6674"
+				item: "create_connected:brake"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["072634110D7A6027"]
+			id: "139BFA1FD353C0A9"
+			size: 1.2d
+			tasks: [{
+				id: "4D271158523B9BB7"
+				item: "create_connected:kinetic_bridge"
+				type: "item"
+			}]
+			x: 1.2d
+			y: 1.7999999999999998d
 		}
 	]
 	title: "Kinetics"

@@ -27,7 +27,8 @@ ServerEvents.recipes(event => {
     "forestry:centrifuge",
     "forestry:moistener",
     "forestry:fermenter",
-    "forestry:squeezer"
+    "forestry:squeezer",
+    "forestry:raintank"
   ];
   fmachines.forEach(machine => 
     {

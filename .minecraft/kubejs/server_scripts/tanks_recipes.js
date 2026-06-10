@@ -273,6 +273,10 @@ ServerEvents.recipes(event => {
     B: '#forge:glass_panes',  //arg 3: the mapping object
     C: 'immersiveengineering:wooden_barrel'
   })
+  event.replaceInput({id: "createdieselgenerators:crafting/oil_barrel"},
+    "#forge:barrels/wooden",
+    "create:fluid_tank"
+  );
 
   /*var fluid_tanks = ['aluminum', 'cast_iron', 'steel']
   fluid_tanks.forEach(tank =>

@@ -153,6 +153,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["34D049FD2BF84E84"]
 			id: "074857E8BD03F22B"
 			tasks: [
 				{
@@ -192,6 +193,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["074857E8BD03F22B"]
 			id: "075BE885F4845BF5"
 			tasks: [{
 				id: "0A65ED82EACEAE5A"
@@ -200,6 +202,17 @@
 			}]
 			x: 5.5d
 			y: -0.5d
+		}
+		{
+			dependencies: ["0818099B59A9110B"]
+			id: "6B2AFFE81CAE147F"
+			tasks: [{
+				id: "3B20C068A355DCBD"
+				item: "create_connected:sequenced_pulse_generator"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
 		}
 	]
 	title: "Redstone"

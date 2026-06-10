@@ -1,3 +1,8 @@
+ServerEvents.tags('item', event => {
+
+    event.add("forge:raw_materials/aluminum","gtceu:raw_bauxite");
+})
+
 ServerEvents.recipes(event => {
 
     event.replaceOutput(
@@ -14,8 +19,14 @@ ServerEvents.recipes(event => {
     event.smelting('immersiveengineering:ingot_aluminum', 'gtceu:bauxite_dust');
     event.blasting('immersiveengineering:ingot_aluminum', 'gtceu:bauxite_dust');
 
-    event.custom({
+    /*event.custom({
         "type": "tconstruct:ore_melting",
+        "byproducts": 
+        [{
+            "amount": 90,
+            "rate": "metal",
+            "tag": "forge:molten_aluminum"
+        }],
         "ingredient": 
         {
             "item": 'gtceu:raw_bauxite'
@@ -23,10 +34,12 @@ ServerEvents.recipes(event => {
         "rate": "metal",
         "result": 
         {
-        "amount": 44,
+        "amount": 90,
         "tag": "forge:molten_aluminum" 
         },
         "temperature": 425,
         "time": 17
-        })
+        })*/
+
+        //"forge:raw_materials/aluminum"
 })

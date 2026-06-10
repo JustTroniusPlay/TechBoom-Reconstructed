@@ -10,6 +10,7 @@
 		{
 			id: "1F2DAE03F94E9D08"
 			linked_quest: "16550070AD851335"
+			shape: "pentagon"
 			x: 2.0d
 			y: -0.5d
 		}
@@ -23,6 +24,7 @@
 		{
 			id: "474A4F30B171898A"
 			linked_quest: "4DB042DAF83D7A0A"
+			shape: "gear"
 			size: 1.5d
 			x: -1.5d
 			y: -3.0d
@@ -37,6 +39,7 @@
 		{
 			id: "25CC9A8A3CA31828"
 			linked_quest: "52563AE115ACBF51"
+			shape: "hexagon"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -295,6 +298,7 @@
 				"65BA9D00FF643C02"
 				"25BA2070871AE3EA"
 				"6D0457966A524EAE"
+				"740A845F94D5D8AA"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -341,6 +345,7 @@
 				"25BA2070871AE3EA"
 				"6D0457966A524EAE"
 				"65BA9D00FF643C02"
+				"740A845F94D5D8AA"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Engines enchance your aircraft, but have a drawbacks."]
@@ -377,6 +382,7 @@
 				item: "minecraft:rail"
 				type: "item"
 			}]
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
 				count: 16L
@@ -397,6 +403,7 @@
 				item: "create:track_station"
 				type: "item"
 			}]
+			shape: "rsquare"
 			size: 1.4d
 			tasks: [
 				{
@@ -480,6 +487,7 @@
 				"25BA2070871AE3EA"
 				"6D0457966A524EAE"
 				"65BA9D00FF643C02"
+				"740A845F94D5D8AA"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -687,6 +695,7 @@
 			]
 			description: ["Glow in the dark."]
 			id: "51F27E0987380337"
+			shape: "diamond"
 			size: 1.5d
 			tasks: [{
 				id: "0AF689B60FF8008B"
@@ -768,6 +777,7 @@
 			dependencies: ["7DD34728381D1555"]
 			description: ["Can be put underwater."]
 			id: "63AFBFC47D0B51C1"
+			shape: "diamond"
 			size: 1.5d
 			tasks: [{
 				id: "14F850EAAD057993"
@@ -859,7 +869,7 @@
 		{
 			dependencies: ["7DD34728381D1555"]
 			id: "62EFB613F0C8BAA0"
-			shape: "hexagon"
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [
 				{
@@ -1102,6 +1112,7 @@
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
 			id: "4B126C46A6671245"
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
 				id: "5FE9D7425D9813A7"
@@ -1237,6 +1248,7 @@
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
 			id: "1896AD265E453653"
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
 				id: "25F7284557993388"
@@ -1360,7 +1372,17 @@
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
+			description: [
+				"Tunnel bore is simple mining machine that will mine forward until it run out of solid fuel. "
+				""
+				"To expand storage capacity you need link chest minecarts to it."
+				""
+				"Bore can lay tracks automatically as it goes."
+				""
+				"To get around pits supply bore with gravel to build over."
+			]
 			id: "776112F6AA25549A"
+			shape: "diamond"
 			size: 1.3d
 			tasks: [{
 				id: "1D562EFF387ECE9D"
@@ -1479,6 +1501,7 @@
 		}
 		{
 			dependencies: ["776112F6AA25549A"]
+			description: ["Bores have durability and effectiveness based on material."]
 			id: "1A3BAF37CA44746B"
 			size: 0.7d
 			tasks: [
