@@ -91,21 +91,6 @@
 			y: 3.366071428571427d
 		}
 		{
-			dependencies: [
-				"7A0C939E0FE540EC"
-				"4DB042DAF83D7A0A"
-			]
-			id: "48BC04D05B89C7EA"
-			shape: "rsquare"
-			tasks: [{
-				id: "4C2630267ED5A26F"
-				item: "railcraft:powered_rolling_machine"
-				type: "item"
-			}]
-			x: -0.7857142857142847d
-			y: 1.225000000000005d
-		}
-		{
 			dependencies: ["7A0C939E0FE540EC"]
 			description: ["Some complex machinery require you to build a structure from multiple blocks which are present here. "]
 			id: "0729C937DEFF1E0B"

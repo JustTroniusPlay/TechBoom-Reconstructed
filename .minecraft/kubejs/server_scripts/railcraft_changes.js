@@ -1,5 +1,28 @@
 ServerEvents.recipes(event => {
 
+  event.replaceInput({id:"railcraft:steam_locomotive"},
+    "railcraft:solid_fueled_firebox",
+    "gtceu:bronze_firebox_casing"
+  )
+
+  {//Locomotives
+    event.remove({id: "railcraft:steam_locomotive"});
+    event.shaped(
+  Item.of('railcraft:steam_locomotive', 1), // arg 1: output
+  [
+    'AAB',
+    'AAB', // arg 2: the shape (array of strings)
+    'CDD'
+  ],
+  {
+    A: '#railcraft:iron_tank_wall',
+    B: ["gtceu:bronze_firebox_casing","gtceu:steel_firebox_casing"],  //arg 3: the mapping object
+    C: 'minecraft:iron_bars',
+    D: 'minecraft:minecart',
+  }
+)
+  }
+
   {//Rolling machines
   event.replaceInput({id:"railcraft:manual_rolling_machine"},
     "minecraft:crafting_table",

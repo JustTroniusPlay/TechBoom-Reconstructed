@@ -244,7 +244,11 @@
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Will wash your dusts and different items automatically on grand scale."]
+			description: [
+				"Will wash your dusts and different items automatically on grand scale."
+				""
+				"Can help get rubber pulps as alternative to Extractor."
+			]
 			icon: "steamadditions:steam_separator"
 			id: "37EE9AB51014DCBA"
 			shape: "diamond"
@@ -398,6 +402,7 @@
 				{
 					id: "215F0749F2FEB357"
 					item: "railcraft:low_pressure_steam_boiler_tank"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -706,6 +711,11 @@
 			dependencies: [
 				"61DA87FD5E45D2BC"
 				"7A0C939E0FE540EC"
+			]
+			description: [
+				"With help of block mold you now can create proper glass blocks. No more small makeshift panels, now proper glass industry! "
+				""
+				"Put Glass Dust with Mold into Steam Alloy Smeltery to get your first actual glass."
 			]
 			icon: "gtceu:glass_dust"
 			id: "5361A9865C6547F4"
@@ -1061,6 +1071,26 @@
 			description: ["To make components and blocks of your future digital storage you need processors. Inscriber is ultimate way to craft them."]
 			icon: "ae2:inscriber"
 			id: "4A8233ADB6406DA9"
+			rewards: [
+				{
+					count: 3
+					id: "691BF866CD14A702"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "47D5A77B463D0ABD"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1A30DFDDE0B615A1"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "3B43AE49CABA5141"
@@ -1209,6 +1239,7 @@
 				"76422C026A6749CA"
 				"799F7F64000A3084"
 			]
+			description: ["Generate energy natively for Applied Energistic network and &oonly&r for it."]
 			id: "09BD3CED744A51DB"
 			size: 0.65d
 			tasks: [{
@@ -1239,6 +1270,21 @@
 			]
 			x: -6.550829081632678d
 			y: 6.628656462585006d
+		}
+		{
+			dependencies: [
+				"4DB042DAF83D7A0A"
+				"5771754309EAFB99"
+			]
+			id: "48BC04D05B89C7EA"
+			shape: "rsquare"
+			tasks: [{
+				id: "4C2630267ED5A26F"
+				item: "railcraft:powered_rolling_machine"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
 		}
 	]
 	title: "Steam Age"

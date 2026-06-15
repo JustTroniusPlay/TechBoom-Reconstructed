@@ -164,9 +164,30 @@ ServerEvents.recipes(event => {
             "item": "ae2:fluix_crystal"
           }
         ],
-          "energy": 500
+          "energy": 250
+    })
+
+    event.custom({"type": "thermal:crystallizer",
+        "ingredients": [
+          {
+            "fluid": "minecraft:water",
+            "amount": 8000
+          },
+          {
+            "item": "ae2:sky_dust"
+          },
+          {"item": "ae2:charged_certus_quartz_crystal"}
+        ],
+        "result": [
+          {
+            count: 1,
+            "item": "ae2:fluix_crystal"
+          }
+        ],
+          "energy": 2000
     })
   }
+
 
   {//Tinker's Workbench
     event.replaceInput({id: "thermal:tinker_bench"},
@@ -181,5 +202,52 @@ ServerEvents.recipes(event => {
   "minecraft:iron_ingot",
   "thermal:steel_plate"
   )
+  }
+
+  {//Lapidary dynamo expanded
+
+    //40.000
+    let low_gems = 
+    [
+      'yellow_garnet', 'grossular', 'apatite',
+      'red_garnet', 'spessartine', 'pyrope',
+      'olivine', 'almandine', 'sodalite',
+      'lazurite'
+    ]
+    low_gems.forEach(gem => {
+      event.recipes.thermal.lapidary_fuel("#forge:gems/" + gem).energy(40000)
+    });
+
+    //125.000
+    let good_gems = 
+    [
+      'opal', 'malachite', 'blue_topaz', 
+      'certus_quartz', 'cinnabar', 'monazite',
+      'quartzite', 'realgar'
+    ]
+    good_gems.forEach(gem => {
+      event.recipes.thermal.lapidary_fuel("#forge:gems/" + gem).energy(125000)
+    });
+
+    //500.000
+    let high_gems = 
+    [
+      'topaz', 'green_sapphire'
+    ]
+    high_gems.forEach(gem => {
+      event.recipes.thermal.lapidary_fuel("#forge:gems/" + gem).energy(500000)
+    });
+
+    //1.000.000
+    let excep_gems = 
+    [
+      'rutile', 'andradite', 'uvarovite'
+    ]
+    excep_gems.forEach(gem => {
+      event.recipes.thermal.lapidary_fuel("#forge:gems/" + gem).energy(1000000)
+    });
+
+    
+    
   }
 })

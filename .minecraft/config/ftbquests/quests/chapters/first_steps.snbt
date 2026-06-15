@@ -410,7 +410,7 @@
 				"If you not ready to dig underground just collect some dusts from the ground to get metals early."
 				""
 				"{@pagebreak}"
-				"Some ores still spawn as smaller ore patches undeground, so some cave exploration needed, but you probably encounter them on your way to ddig ore veins."
+				"Some ores still spawn as smaller ore patches undeground, so some cave exploration needed, but you probably encounter them on your way to dig ore veins."
 				""
 				"&lYou can check 'Resources' tab to see how to get various resources.&r"
 			]
@@ -2185,26 +2185,40 @@
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
-			icon: "thermal:sapphire"
+			description: [
+				"You can find gems almost everywhere in the world, mostly mining ore veins. Some of them can look kinda useless for you without high quallity proccessing, but Lapidary dynamo here to help you! It can extract Forge Energy from different gems. "
+				""
+				"Gems have quiality that depends mostly on how hard to get them. Those that you can get mostly easy will give less energy."
+				""
+				"&lP.S.&r &oNot all gems in the list actually can be used in dynamo, but for convenience sake was used common tag for gems.&r "
+			]
+			icon: "thermal:dynamo_lapidary"
 			id: "04A0F70827AA6155"
 			size: 0.7d
+			subtitle: "Gem eater"
 			tasks: [
 				{
 					id: "50C8EDD2D6B9BDEF"
-					item: "thermal:ruby"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems"
+						}
+					}
 					optional_task: true
+					title: "Gems"
 					type: "item"
 				}
 				{
-					id: "1C7BB987E579657B"
-					item: "thermal:sapphire"
-					optional_task: true
+					id: "4CF35721AE3A75EE"
+					item: "thermal:dynamo_lapidary"
 					type: "item"
 				}
 			]
-			title: "Gems Equipment(WIP)"
-			x: -0.10255102040817121d
-			y: -3.2064625850340107d
+			title: "Gems Application"
+			x: 0.35d
+			y: -3.5d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -3045,21 +3059,6 @@
 			}]
 			x: 2.1354591836734826d
 			y: -7.7372448979591795d
-		}
-		{
-			dependencies: ["04A0F70827AA6155"]
-			description: ["Will extract energy from some gems. Probably can be way to spend rubies and sapphires at this stage of the game."]
-			id: "123053D8EB9279CF"
-			shape: "diamond"
-			size: 0.85d
-			subtitle: "Gem Eater"
-			tasks: [{
-				id: "70021680F9844739"
-				item: "thermal:dynamo_lapidary"
-				type: "item"
-			}]
-			x: 0.6653911564625616d
-			y: -3.7940476190476105d
 		}
 		{
 			dependencies: ["51D2A2A99A671311"]

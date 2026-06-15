@@ -54,6 +54,7 @@
 	quests: [
 		{
 			dependencies: ["362FE530374D058F"]
+			description: ["Can store large amount of items an modular!"]
 			icon: "create:item_vault"
 			id: "2B605F8F5C28FCAD"
 			rewards: [{
@@ -156,6 +157,7 @@
 				"25951FDCB7908145"
 				"7A722F4E1BB2DF66"
 			]
+			description: ["Will help extract, insert or even split items."]
 			icon: "create:andesite_funnel"
 			id: "26041794979A3851"
 			size: 1.2d
@@ -200,6 +202,7 @@
 		}
 		{
 			dependencies: ["362FE530374D058F"]
+			description: ["Simple alternative to hopper."]
 			id: "7A722F4E1BB2DF66"
 			tasks: [{
 				id: "7D585E691EC4060E"
@@ -214,6 +217,7 @@
 				"3D1CCF8E85981E52"
 				"2B605F8F5C28FCAD"
 			]
+			description: ["Will detect things for you in various storages."]
 			id: "2E05C5DC65334CCF"
 			tasks: [{
 				id: "450872BAD605C6D5"
@@ -407,7 +411,7 @@
 			description: [
 				"Gregtech item pipes are simple item transporters, but they can't extract items by themselves."
 				""
-				"They come from wide variety of sizes and different materials that affect amount of items and speed tranfer."
+				"They come from wide variety of sizes and different materials that affect amount of items and speed transfer."
 			]
 			icon: "gtceu:tin_small_item_pipe"
 			id: "7E43DE8E8F0F36A6"

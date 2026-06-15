@@ -76,6 +76,7 @@ ServerEvents.recipes(event => {
             event.remove({id: "common_ore_library:nugget_to_ingot/" + metal});
             event.remove({id: "railcraft:"+ metal + "_ingot_from_" + metal + "_nugget"});
             event.remove({id: "crusty_chunks:" + metal + "_ingot_nugget_recipe"});
+            event.remove({id:'createaddition:crafting/'+ metal +'_ingot'});
 
             //Alloys
             event.remove({id: 'thermal_processing:crafting/' + metal + '_ingot'});

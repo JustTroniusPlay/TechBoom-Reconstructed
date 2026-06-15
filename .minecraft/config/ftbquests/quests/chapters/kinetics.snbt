@@ -390,6 +390,7 @@
 				"5A3BFC118141DC5C"
 				"26041794979A3851"
 			]
+			description: ["Will transfer rotational power and items. Can be colored with dye!"]
 			id: "32FCC9DCD937E066"
 			tasks: [{
 				id: "429E8F991FC3C015"

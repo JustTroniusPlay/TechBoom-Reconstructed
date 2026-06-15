@@ -3,16 +3,19 @@ ServerEvents.recipes(event => {
   event.remove({id: "forestry:bronze_axe"});
   event.remove({id: "forestry:bronze_pickaxe"});
 
-  /*let tool_recipe = (tool_name, tool_id, material) =>
-    {
-      switch (tool_name):
-        case "pickaxe"
-
-    }*/
+ toolset_recipes(
+  [
+    'create_sa:brass_sword',
+    'create_sa:brass_pickaxe',
+    'create_sa:brass_axe',
+    'create_sa:brass_shovel',
+    'create_sa:brass_hoe',
+  ], 'create:brass_ingot', 'create:brass_sheet')
 
   const metals = [
-    'steel', 'bronze', 'iron', 'gold', 'diamond', 'osmium'
-
+    'steel', 'bronze', 'iron', 
+    'gold', 'diamond', 'osmium',
+    'brass'
   ]
   const tools = [
     'pickaxe', 'sword', 'axe', 'shovel', 'hoe'
@@ -29,6 +32,7 @@ ServerEvents.recipes(event => {
           event.remove({id: "immersiveengineering:crafting/" + tool + "_" + metal});
           event.remove({id: "tfmg:crafting/kinetics/" + metal + "_" + tool});
           event.remove({id: "minecraft:" + metal + "_" + tool});
+          event.remove({id: "create_sa:" + metal + "_" + tool + '_recipe'});
 
         })
 
@@ -266,4 +270,182 @@ ServerEvents.recipes(event => {
       "tfmg:steel_sword",
       "mekanismtools:steel_sword"
     )
+
+    function tool_recipe(tool_name, tool_id, ingot_id, plate_id){
+      let hammer_ = '#gtceu:tools/crafting_hammers';
+      let file_ = '#gtceu:tools/crafting_files';
+      let stick_ = '#forge:rods/wooden';
+      event.remove({id: tool_id});
+
+      switch (tool_name)
+      {
+        case "sword":
+          event.shaped(
+          Item.of(tool_id, 1), 
+          [
+            ' P ',
+            'FPH',
+            ' S '
+          ],
+          {
+            S: stick_,
+            P: plate_id,
+            H: hammer_,
+            F: file_
+          })
+          break;
+
+        case "pickaxe":
+
+          event.shaped(
+          Item.of(tool_id, 1), 
+          [
+            'PII',
+            'FSH', 
+            ' S '
+          ],
+          {
+            S: stick_,
+            I: ingot_id,
+            P: plate_id,
+            H: hammer_,
+            F: file_
+          })
+          break;
+
+        case "axe":
+          event.shaped(
+          Item.of(tool_id, 1), 
+          [
+            'PIH',
+            'PS ',
+            'FS '
+          ],
+          {
+            S: stick_,
+            I: ingot_id,
+            P: plate_id,
+            H: hammer_,
+            F: file_
+          })
+          break;
+
+        case "shovel":
+          event.shaped(
+          Item.of(tool_id, 1), 
+          [
+            'FPH',
+            ' S ', 
+            ' S '
+          ],
+          {
+            S: stick_,
+            P: plate_id,
+            H: hammer_,
+            F: file_
+          })
+          break;
+
+        case "hoe":
+          event.shaped(
+          Item.of(tool_id, 1), 
+          [
+            'PIH',
+            'FS ',
+            ' S '
+          ],
+          {
+            S: stick_,
+            I: ingot_id,
+            P: plate_id,
+            H: hammer_,
+            F: file_
+          })
+          break;
+
+        default:
+      }
+    }
+
+    function toolset_recipes(tools_ids, ingot_id, plate_id){
+      let hammer_ = '#gtceu:tools/crafting_hammers';
+      let file_ = '#gtceu:tools/crafting_files';
+      let stick_ = '#forge:rods/wooden';
+
+      //sword
+      event.shaped(
+          Item.of(tools_ids[0], 1), 
+          [
+            ' P ',
+            'FPH',
+            ' S '
+          ],
+          {
+            S: stick_,
+            P: plate_id,
+            H: hammer_,
+            F: file_
+          })
+      //pickaxe
+          event.shaped(
+          Item.of(tools_ids[1], 1), 
+          [
+            'PII',
+            'FSH', 
+            ' S '
+          ],
+          {
+            S: stick_,
+            I: ingot_id,
+            P: plate_id,
+            H: hammer_,
+            F: file_
+          })
+      //axe
+          event.shaped(
+          Item.of(tools_ids[2], 1), 
+          [
+            'PIH',
+            'PS ',
+            'FS '
+          ],
+          {
+            S: stick_,
+            I: ingot_id,
+            P: plate_id,
+            H: hammer_,
+            F: file_
+          })
+      //shovel
+           event.shaped(
+          Item.of(tools_ids[3], 1), 
+          [
+            'FPH',
+            ' S ', 
+            ' S '
+          ],
+          {
+            S: stick_,
+            P: plate_id,
+            H: hammer_,
+            F: file_
+          })
+      //hoe
+      event.shaped(
+          Item.of(tools_ids[4], 1),
+          [
+            'PIH',
+            'FS ',
+            ' S '
+          ],
+          {
+            S: stick_,
+            I: ingot_id,
+            P: plate_id,
+            H: hammer_,
+            F: file_
+          })
+    }
+
 })
+
