@@ -1157,7 +1157,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["54661956247869DD"]
+			dependencies: [
+				"54661956247869DD"
+				"043F7FFDC6430B34"
+			]
 			description: ["The most effective fuel for Burner is &lGasoline&r. It is only one which allow it to reach &osuperheated&r state."]
 			id: "036AB4BD3B27FB1B"
 			rewards: [{
@@ -1340,7 +1343,7 @@
 			]
 			id: "0D95F54AC91C2DF0"
 			rewards: [{
-				count: 64
+				count: 128
 				id: "2CDD15D8E47C8B90"
 				item: "create:fluid_pipe"
 				type: "item"

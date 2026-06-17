@@ -186,6 +186,26 @@ ServerEvents.recipes(event => {
         ],
           "energy": 2000
     })
+
+    event.custom({"type": "thermal:crystallizer",
+        "ingredients": [
+          {
+            "fluid": "minecraft:water",
+            "amount": 2000
+          },
+          {
+            "item": "create:rose_quartz"
+          },
+          {"item": "ae2:charged_certus_quartz_crystal"}
+        ],
+        "result": [
+          {
+            count: 4,
+            "item": "ae2:fluix_crystal"
+          }
+        ],
+          "energy": 500
+    })
   }
 
 

@@ -393,27 +393,14 @@
 				"52563AE115ACBF51"
 				"1553365BB32E7666"
 			]
+			description: ["Grow various gem dusts back into crystals."]
 			icon: "thermal:machine_crystallizer"
 			id: "3751A61EDD08EF41"
-			tasks: [
-				{
-					id: "6A005F1EEABC8C01"
-					item: "thermal:machine_crystallizer"
-					type: "item"
-				}
-				{
-					id: "01EC653EFE34E479"
-					item: "ae2:certus_quartz_dust"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "00DD9BBC58E8E0BC"
-					item: "ae2:charged_certus_quartz_crystal"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6A005F1EEABC8C01"
+				item: "thermal:machine_crystallizer"
+				type: "item"
+			}]
 			x: -5.0d
 			y: 2.5d
 		}
@@ -542,14 +529,21 @@
 		}
 		{
 			dependencies: ["3751A61EDD08EF41"]
-			description: ["You can grow certus quarts inside Crystalizer with full tank of water and charged crystal. It is more convinient and efficent way."]
+			description: ["You can grow certus quarts and fluix crystals inside Crystalizer with full tank of water and charged crystals. It is more convinient and efficent way."]
 			id: "73593A2A2EF304AC"
 			shape: "hexagon"
-			tasks: [{
-				id: "2830AA48A04F1399"
-				item: "ae2:certus_quartz_crystal"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2830AA48A04F1399"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "135FB52F4A849E31"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+			]
 			title: "Crystalization"
 			x: -6.0d
 			y: 2.5d

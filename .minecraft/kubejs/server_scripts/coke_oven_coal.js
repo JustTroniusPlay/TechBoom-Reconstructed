@@ -38,8 +38,8 @@ ServerEvents.recipes(event => {
   ],
   {
     A: 'gtceu:coke_oven_brick',
-    B: 'immersiveengineering:cokebrick',  //arg 3: the mapping object
-    C: 'gtceu:invar_frame'
+    B: '#forge:rods/invar',  //arg 3: the mapping object
+    C: 'immersiveengineering:cokebrick'
   }
 )
 

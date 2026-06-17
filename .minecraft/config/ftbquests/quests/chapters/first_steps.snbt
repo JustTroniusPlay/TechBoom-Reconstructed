@@ -2499,6 +2499,12 @@
 			]
 			icon: "gtceu:coke_oven"
 			id: "49EAA9A6F41A7551"
+			rewards: [{
+				count: 31
+				id: "384E2A2D05A73339"
+				item: "gtceu:coke_oven_bricks"
+				type: "item"
+			}]
 			size: 0.7d
 			tasks: [
 				{

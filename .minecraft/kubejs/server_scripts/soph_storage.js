@@ -1,14 +1,31 @@
 ServerEvents.recipes(event => {
 
-    event.replaceInput(
-        {output: "sophisticatedbackpacks:tank_upgrade"},
-        "#forge:glass",
-        "#forge:glass_panes"
-    )
+    event.remove({id: "sophisticatedbackpacks:tank_upgrade"})
+        event.shaped(
+        Item.of('sophisticatedbackpacks:tank_upgrade', 1), // arg 1: output
+        [
+            "GGG",
+            "GBG",
+            "GGG"
+        ],
+        {
+            G: '#forge:glass_panes',
+            B: 'sophisticatedbackpacks:upgrade_base',
+        })
 
-    event.replaceInput(
-        {output: "sophisticatedbackpacks:pump_upgrade"},
-        "#forge:glass",
-        "#forge:glass_panes"
-    )
+    event.remove({id: "sophisticatedbackpacks:pump_upgrade"})
+    event.shaped(
+    Item.of('sophisticatedbackpacks:pump_upgrade', 1), // arg 1: output
+    [
+        'GUG',
+        'PBS', // arg 2: the shape (array of strings)
+        'GUG'
+    ],
+    {
+        G: '#forge:glass_panes',
+        U: 'minecraft:bucket',
+        P: 'minecraft:piston',
+        B: 'sophisticatedbackpacks:upgrade_base',
+        S: 'minecraft:sticky_piston',
+    })
 })
