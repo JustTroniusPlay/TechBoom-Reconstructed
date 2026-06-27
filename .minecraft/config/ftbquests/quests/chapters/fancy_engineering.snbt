@@ -16,19 +16,20 @@
 			y: 3.75d
 		}
 		{
-			id: "2D222922D088AA2B"
-			linked_quest: "5CED0B2F5E3DE3B1"
-			shape: "gear"
-			size: 1.5d
-			x: 5.25d
-			y: 2.25d
+			id: "7F316268B078E675"
+			linked_quest: "67C1B62B8C68F0F1"
+			shape: "diamond"
+			size: 0.7d
+			x: 6.3d
+			y: 1.05d
 		}
 		{
-			id: "439F2375741EB475"
-			linked_quest: "521B2505E5C81E16"
-			size: 0.7d
-			x: -2.0d
-			y: 1.0d
+			id: "709A36C731158048"
+			linked_quest: "51D2A2A99A671311"
+			shape: "gear"
+			size: 1.5d
+			x: 5.178571428571438d
+			y: 0.3642857142857139d
 		}
 	]
 	quests: [
@@ -51,8 +52,8 @@
 				}
 			]
 			title: "Better Blasting"
-			x: -3.5d
-			y: 2.5d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -87,8 +88,8 @@
 				}
 			]
 			title: "Improved blasting"
-			x: -2.452380952380956d
-			y: 3.366071428571427d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -169,8 +170,8 @@
 				}
 			]
 			title: "Steel plated Coke Oven"
-			x: 0.9785714285714207d
-			y: 3.3232142857142897d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["55C78E5A9D06111B"]
@@ -219,8 +220,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 12.0d
+			x: -0.7142857142857153d
+			y: 12.864285714285707d
 		}
 		{
 			dependencies: ["09349E61D7AF0C55"]
@@ -230,8 +231,8 @@
 				item: "immersiveengineering:biodiesel_bucket"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 10.5d
+			x: -0.7142857142857153d
+			y: 11.364285714285707d
 		}
 		{
 			dependencies: ["16FA4B48AB337396"]
@@ -241,8 +242,8 @@
 				item: "immersiveengineering:refinery"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 9.0d
+			x: -0.7142857142857153d
+			y: 9.864285714285707d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -252,8 +253,8 @@
 				item: "immersiveengineering:fermenter"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 7.5d
+			x: -0.7142857142857153d
+			y: 8.364285714285707d
 		}
 		{
 			dependencies: [
@@ -269,8 +270,8 @@
 				type: "item"
 			}]
 			title: "Water Energy"
-			x: -2.0d
-			y: 2.0d
+			x: 2.142857142857153d
+			y: 2.685714285714276d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -281,11 +282,11 @@
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.0d
+			x: -2.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["5CED0B2F5E3DE3B1"]
+			dependencies: ["11CAA0BF384301E3"]
 			description: ["Blueprint for beautiful Engineering banner paterns."]
 			icon: {
 				Count: 1
@@ -314,11 +315,11 @@
 				type: "item"
 			}]
 			title: "Industrial Banners"
-			x: 5.285714285714285d
-			y: 0.9696428571428548d
+			x: 6.821428571428591d
+			y: 5.7928571428571445d
 		}
 		{
-			dependencies: ["5CED0B2F5E3DE3B1"]
+			dependencies: ["11CAA0BF384301E3"]
 			description: ["Blueprint to craft components: mechanical parts, tubes, electronics and bulbs."]
 			icon: "immersiveengineering:component_iron"
 			id: "4AFEE3BCC0DC661B"
@@ -336,11 +337,11 @@
 				type: "item"
 			}]
 			title: "Components"
-			x: 5.273809523809518d
-			y: 5.049107142857139d
+			x: 5.148809523809533d
+			y: 8.02857142857144d
 		}
 		{
-			dependencies: ["5CED0B2F5E3DE3B1"]
+			dependencies: ["11CAA0BF384301E3"]
 			description: ["Molds to use in metal press. Not only for plates, but for other things: gears, rods, wires and even packing items!"]
 			icon: "immersiveengineering:mold_gear"
 			id: "60252A3A1D935245"
@@ -357,11 +358,11 @@
 				type: "item"
 			}]
 			title: "Molds for everything!"
-			x: 3.5d
-			y: 4.0d
+			x: 3.285714285714292d
+			y: 5.899999999999999d
 		}
 		{
-			dependencies: ["5CED0B2F5E3DE3B1"]
+			dependencies: ["11CAA0BF384301E3"]
 			icon: "immersiveengineering:empty_casing"
 			id: "287ACA017CA51588"
 			shape: "diamond"
@@ -377,8 +378,8 @@
 				type: "item"
 			}]
 			title: "Bullet-smithing"
-			x: 7.0d
-			y: 4.0d
+			x: 6.8214285714285765d
+			y: 7.071428571428569d
 		}
 		{
 			dependencies: [
@@ -427,6 +428,367 @@
 			]
 			x: 1.54999999999999d
 			y: 5.868154761904755d
+		}
+		{
+			dependencies: ["51D2A2A99A671311"]
+			description: ["Using charcoal and other resources you can craft gundpowder."]
+			id: "4565506C16FA5FC3"
+			shape: "hexagon"
+			size: 0.7d
+			tasks: [{
+				id: "6073931AD4F3764E"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: 4.2d
+			y: -0.7d
+		}
+		{
+			can_repeat: true
+			dependencies: ["51D2A2A99A671311"]
+			description: [
+				"Everything about Immersive Engineering to get more detailed info."
+				""
+				"This quest will repeat itself if you will lost this book."
+			]
+			icon: "immersiveengineering:manual"
+			id: "1EF7AEE6B0AA5B8E"
+			rewards: [{
+				id: "6B79B81EFE4D16C6"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.7d
+			tasks: [{
+				id: "4B79CD381E408817"
+				title: "Manual for engineering"
+				type: "checkmark"
+			}]
+			x: 6.3d
+			y: -0.7d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Crates can store items even if broken."
+				""
+				"Reinforced variant is more blast resistant."
+			]
+			id: "6099D2F4EEE9112A"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "669D82183AF2E564"
+					item: "immersiveengineering:crate"
+					type: "item"
+				}
+				{
+					id: "7EDE3FED12DEFFED"
+					item: "immersiveengineering:reinforced_crate"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Portable crates"
+			x: 6.321428571428584d
+			y: 3.6857142857142833d
+		}
+		{
+			dependencies: ["6099D2F4EEE9112A"]
+			description: [
+				"Can store additional items, tools and even food. Shift-rightclick to place and pick up it. You can even put it into the Tool Belt slots. "
+				""
+				"Wiring slots are for IE wires and connectors."
+			]
+			id: "797391FB5DEDC3D1"
+			size: 0.7d
+			tasks: [{
+				id: "16B54E554582D684"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 23
+						}
+					}
+					id: "immersiveengineering:toolbox"
+				}
+				type: "item"
+			}]
+			x: 6.321428571428584d
+			y: 4.5428571428571445d
+		}
+		{
+			dependencies: ["51D2A2A99A671311"]
+			description: [
+				"Creosot is essential to make treated planks that you can use in some mechanisms."
+				""
+				"And it can be used as fuel for some generators."
+			]
+			icon: "immersiveengineering:treated_wood_horizontal"
+			id: "15B5CF1F309CA82A"
+			rewards: [{
+				count: 8
+				id: "4469E52FA1977540"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6B35BA0BBC89FCC8"
+					item: "immersiveengineering:creosote_bucket"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2722D0C47AD4802C"
+					item: { Count: 8, id: "immersiveengineering:treated_wood_horizontal" }
+					type: "item"
+				}
+			]
+			x: 5.142857142857153d
+			y: 2.5071428571428456d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Compression dynamo can consume creosote and generate Forge Energy units. "
+				""
+				"It can be useful way to get a little bit more energy and spend Creosote if you have too much if it. "
+			]
+			id: "1FB9F832D1214239"
+			shape: "diamond"
+			tasks: [{
+				id: "7DBAE07870657D9A"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			title: "Creosote to energy"
+			x: 3.150000000000007d
+			y: 1.75d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Treated planks can be crafted into Windmills. They will generate energy passively."
+				""
+				"Different weather will reduce or decrease energy output of Windmill. Building another Windmill of any type in close proximity (up to 7 blocks in front of it) will reduce its speed."
+			]
+			icon: "immersiveengineering:dynamo"
+			id: "521B2505E5C81E16"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "34BE81DB7F0D00F4"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "483BA109E9968F38"
+					item: "immersiveengineering:windmill"
+					type: "item"
+				}
+			]
+			title: "Kinetic clean energy"
+			x: 3.15d
+			y: 2.6357142857143003d
+		}
+		{
+			dependencies: ["521B2505E5C81E16"]
+			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail. Each blade will need it own Sail upgrade!"]
+			id: "50BA9C41804AE9A2"
+			size: 0.7d
+			tasks: [{
+				id: "3E02F94201C301A0"
+				item: "immersiveengineering:windmill_sail"
+				type: "item"
+			}]
+			x: 3.150000000000007d
+			y: 3.4285714285714306d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: ["Have additional storage inside to keep some items and components."]
+			id: "69057739C5B7EB11"
+			tasks: [{
+				id: "50CBFA6876FEF895"
+				item: "immersiveengineering:craftingtable"
+				type: "item"
+			}]
+			x: 5.142857142857153d
+			y: 4.328571428571422d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Using treated planks you can make big tank to store liquids! "
+				""
+				"Just be aware that wooden tank &ocan't store&r gases and hot liquids. For that you should use metal ones."
+				""
+				"Multiblock tanks auto-output when one of their valves look down or you can use pumps."
+				""
+				"&lLook into 'Fluid Management' tab.&r  "
+			]
+			icon: "gtceu:wooden_multiblock_tank"
+			id: "37506D0DC482AAA8"
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4229ACD319299404"
+					item: "gtceu:wooden_multiblock_tank"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0D56842C82DFE996"
+					item: { Count: 2, id: "gtceu:wooden_tank_valve" }
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "545EB99C733995C2"
+					item: "gtceu:wood_wall"
+					type: "item"
+				}
+				{
+					id: "3B81E908A6AB3AD8"
+					item: "gtceu:bronze_multiblock_tank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "298E6598ACBC0524"
+					item: "gtceu:bronze_tank_valve"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "4C2BDB353A99BCA2"
+					item: "gtceu:steam_machine_casing"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Multiblock Tank"
+			x: 7.357142857142875d
+			y: 2.50714285714286d
+		}
+		{
+			dependencies: ["49EAA9A6F41A7551"]
+			description: ["Fastest Coke Oven version that do things on its own without any additional requirements."]
+			id: "575BDE04271E94D1"
+			shape: "rsquare"
+			size: 0.7d
+			tasks: [{
+				count: 27L
+				id: "2F40390FDF8B0340"
+				item: { Count: 27, id: "railcraft:coke_oven_bricks" }
+				type: "item"
+			}]
+			title: "Industrial Coke Oven"
+			x: 5.214285714285744d
+			y: -1.528571428571425d
+		}
+		{
+			dependencies: ["51D2A2A99A671311"]
+			description: [
+				"Upgrade to your Rustic Coke Oven that makes it faster."
+				""
+				"It now will outomatically output items and fluids with its hatches. Multiple Coke Ovens even will share walls with each other!"
+			]
+			icon: "gtceu:coke_oven"
+			id: "49EAA9A6F41A7551"
+			rewards: [{
+				count: 31
+				id: "384E2A2D05A73339"
+				item: "gtceu:coke_oven_bricks"
+				type: "item"
+			}]
+			size: 0.7d
+			tasks: [
+				{
+					id: "06A693B62FDAE319"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "0CBC08D5914738D8"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7CD3A054FEF6769C"
+					item: "gtceu:coke_oven_hatch"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 5.178571428571459d
+			y: -0.7071428571428484d
+		}
+		{
+			dependencies: ["69057739C5B7EB11"]
+			description: ["Primary crafting station for various components."]
+			id: "11CAA0BF384301E3"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				id: "58F653ABADDA7700"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			x: 5.129591836734704d
+			y: 5.86530612244897d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			dependency_requirement: "one_started"
+			description: ["Nether opens you a way to get great amount of new resources."]
+			id: "4647FBAA99333197"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "32EE79113BC817D7"
+				item: "crusty_chunks:blast_clay"
+				type: "item"
+			}]
+			title: "Hellish materials"
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4647FBAA99333197"]
+			id: "0E72E4B73D245BA0"
+			tasks: [
+				{
+					id: "251AAB20974D1ADD"
+					item: "crusty_chunks:firebox"
+					type: "item"
+				}
+				{
+					id: "230FFCDE961B8F19"
+					item: "crusty_chunks:electric_firebox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "001D5F54EAEF8EE1"
+					item: "crusty_chunks:oil_firebox"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 3.5d
 		}
 	]
 	title: "Fancy Engineering"

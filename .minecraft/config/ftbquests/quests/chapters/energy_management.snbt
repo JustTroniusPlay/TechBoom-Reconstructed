@@ -582,18 +582,6 @@
 		}
 		{
 			dependencies: ["69DB58E1CD20ED2B"]
-			id: "0073EAB8E0A299DC"
-			size: 0.7d
-			tasks: [{
-				id: "030EC3CEF619E7BD"
-				item: "thermal:dynamo_throttle_augment"
-				type: "item"
-			}]
-			x: 1.66666666666665d
-			y: -1.4285714285714306d
-		}
-		{
-			dependencies: ["69DB58E1CD20ED2B"]
 			id: "11079328782ADE0E"
 			tasks: [{
 				id: "0E66DF131638D455"

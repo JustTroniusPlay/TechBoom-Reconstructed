@@ -63,12 +63,12 @@ ServerEvents.recipes(event => {
   })
 
   {//Pulverizer
-  event.replaceInput(
+  /*event.replaceInput(
 
     {id: "crusty_chunks:iron_gear_recipe"},
     "minecraft:cobblestone",
     "gtceu:wrought_iron_gear"
-  )
+  )*/
   event.remove({id: "thermal:machine_pulverizer"});
     event.shaped(
   Item.of('thermal:machine_pulverizer', 1), // arg 1: output

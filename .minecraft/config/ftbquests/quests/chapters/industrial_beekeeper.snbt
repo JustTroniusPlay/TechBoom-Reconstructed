@@ -27,19 +27,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["4619627EEEE566A4"]
-			description: ["You can use carpenter to automate creation of wooden ties for your railroads."]
-			id: "4C7E5BEF0E29D6F3"
-			size: 0.7d
-			tasks: [{
-				id: "4B49A1C5DB4AA5D3"
-				item: "railcraft:wooden_tie"
-				type: "item"
-			}]
-			x: 1.55d
-			y: -1.0500000000000003d
-		}
-		{
 			dependencies: [
 				"0F45980EACA70EBA"
 				"05BC74C712E41396"
@@ -77,28 +64,6 @@
 			]
 			x: -1.5d
 			y: -0.5d
-		}
-		{
-			dependencies: ["4619627EEEE566A4"]
-			description: ["With help of Carpenter you can make wood pulp and paper out of it."]
-			icon: "forestry:wood_pulp"
-			id: "2D9254097394383E"
-			size: 0.7d
-			tasks: [
-				{
-					id: "0864A98334B666E2"
-					item: "forestry:wood_pulp"
-					type: "item"
-				}
-				{
-					id: "546DBCB742A97713"
-					item: "minecraft:paper"
-					type: "item"
-				}
-			]
-			title: "Piece of paper"
-			x: 2.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]

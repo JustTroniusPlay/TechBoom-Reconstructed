@@ -412,6 +412,11 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "087DA014816C042A"
+					item: "crusty_chunks:bauxite"
+					type: "item"
+				}
 			]
 			title: "Aluminium"
 			x: 1.0d
