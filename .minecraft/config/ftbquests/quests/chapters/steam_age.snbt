@@ -16,12 +16,6 @@
 			y: 0.5d
 		}
 		{
-			id: "7CFDEAFF4927E1C3"
-			linked_quest: "79EF5B4E470ACDB4"
-			x: -2.5d
-			y: -1.0d
-		}
-		{
 			id: "7F9754840726B892"
 			linked_quest: "4DE3A5EB02DCDC59"
 			shape: "gear"
@@ -499,7 +493,7 @@
 			description: [
 				"Essential metal to reach indutrial age. Most complex machines will gonna need it."
 				""
-				"&lCheck 'Fancy Engineering' tab to continue.&r"
+				"&lCheck 'Fancy Engineering' tab.&r"
 			]
 			id: "7A0C939E0FE540EC"
 			shape: "gear"
@@ -645,19 +639,6 @@
 			}]
 			x: -3.729581207483001d
 			y: -1.467261904761905d
-		}
-		{
-			dependencies: ["79EF5B4E470ACDB4"]
-			id: "697FDEFDED0990AC"
-			tasks: [{
-				count: 36L
-				id: "1BCE9E2477B7E389"
-				item: { Count: 36, id: "railcraft:blast_furnace_bricks" }
-				type: "item"
-			}]
-			title: "Maximus Blasting"
-			x: -2.5d
-			y: -2.0d
 		}
 		{
 			dependencies: ["6AF4C17E9C8FF9DC"]

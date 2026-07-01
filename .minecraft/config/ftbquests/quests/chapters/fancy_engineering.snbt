@@ -34,7 +34,10 @@
 	]
 	quests: [
 		{
-			dependencies: ["3CD05E2E5661246B"]
+			dependencies: [
+				"3CD05E2E5661246B"
+				"4647FBAA99333197"
+			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "79EF5B4E470ACDB4"
 			tasks: [
@@ -789,6 +792,19 @@
 			]
 			x: -3.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["79EF5B4E470ACDB4"]
+			id: "697FDEFDED0990AC"
+			tasks: [{
+				count: 36L
+				id: "1BCE9E2477B7E389"
+				item: { Count: 36, id: "railcraft:blast_furnace_bricks" }
+				type: "item"
+			}]
+			title: "Maximus Blasting"
+			x: -3.5d
+			y: 2.0d
 		}
 	]
 	title: "Fancy Engineering"

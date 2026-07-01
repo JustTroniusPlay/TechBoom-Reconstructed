@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
   ],
   {
     A: 'minecraft:nether_bricks',
-    B: 'gtceu:firebricks',  //arg 3: the mapping object
+    B: 'crusty_chunks:blast_furnace_brick',  //arg 3: the mapping object
     C: 'gtceu:invar_frame'
   }
 )

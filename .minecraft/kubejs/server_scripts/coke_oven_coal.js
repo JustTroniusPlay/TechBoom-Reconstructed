@@ -30,15 +30,15 @@ ServerEvents.recipes(event => {
     event.remove({id: "gtceu:shaped/casing_coke_bricks"});
     event.remove({id: "gtceu:compressor/coke_bricks"});
     event.shaped(
-  Item.of('gtceu:coke_oven_bricks', 6), // arg 1: output
+  Item.of('gtceu:coke_oven_bricks', 9), // arg 1: output
   [
     'ABA',
-    'BCB', // arg 2: the shape (array of strings)
+    'ACA', // arg 2: the shape (array of strings)
     'ABA'
   ],
   {
     A: 'gtceu:coke_oven_brick',
-    B: '#forge:rods/invar',  //arg 3: the mapping object
+    B: 'gtceu:invar_frame', 
     C: 'immersiveengineering:cokebrick'
   }
 )
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
   ],
   {
     A: 'tconstruct:scorched_bricks',
-    B: 'minecraft:bricks',  //arg 3: the mapping object
+    B: 'immersiveengineering:slag_brick',  //arg 3: the mapping object
     C: 'gtceu:coke_oven_bricks'
   })
   }
