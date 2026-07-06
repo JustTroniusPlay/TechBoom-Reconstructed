@@ -47,9 +47,11 @@
 	quests: [
 		{
 			dependencies: ["7B289C03327D9227"]
+			description: ["Grind things down and destroy items that don't have any output!"]
 			id: "75D2966F919D360B"
 			shape: "diamond"
 			tasks: [{
+				count: 2L
 				id: "1AAB0CDD45820F0D"
 				item: "create:crushing_wheel"
 				type: "item"
@@ -59,6 +61,7 @@
 		}
 		{
 			dependencies: ["5D5A08D782C68D01"]
+			description: ["Complex station that will harvest resources in ore vein chunk using rotational power and sometimes lava if needed."]
 			icon: "createoreexcavation:drilling_machine"
 			id: "746BED2E65591E76"
 			tasks: [
@@ -73,12 +76,29 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "28062FBFD67FF084"
+					item: "createoreexcavation:diamond_drill"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "06516CC0A43E9063"
+					item: "createoreexcavation:netherite_drill"
+					optional_task: true
+					type: "item"
+				}
 			]
 			x: -5.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
+			description: [
+				"To mark chunks with infinite ore veins."
+				""
+				"Need Air Tank on top to work."
+			]
 			id: "2EF4C6591798F00E"
 			rewards: [{
 				id: "0BC17D80EE89CEDD"
@@ -135,7 +155,7 @@
 		}
 		{
 			dependencies: ["691DD9FDCE3E58DA"]
-			description: ["The most simple kinetic power generator you can make."]
+			description: ["The most simple kinetic power generator you can make. "]
 			id: "22BE56C3CA087A04"
 			shape: "rsquare"
 			size: 1.2d
@@ -166,6 +186,7 @@
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
+			description: ["Rotational power by consuming heat."]
 			id: "52FD5BFF07C6D698"
 			subtitle: "Rotation of heat"
 			tasks: [{
@@ -178,6 +199,7 @@
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
+			description: [""]
 			icon: "create:mechanical_mixer"
 			id: "2185592369B7D5FC"
 			tasks: [
@@ -197,6 +219,7 @@
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
+			description: ["Grinds some low tier items."]
 			id: "567F66C720FFFE6D"
 			shape: "diamond"
 			tasks: [{
@@ -209,6 +232,7 @@
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
+			description: ["Create air stream that push or pull things around. Can use different catalysts to proccess items."]
 			id: "621E6E9756E60D93"
 			subtitle: "Blown away!"
 			tasks: [{
@@ -221,6 +245,7 @@
 		}
 		{
 			dependencies: ["108C99B4F1FE705F"]
+			description: ["Generate rotation with power of wind, but pretty slow."]
 			icon: "create:windmill_bearing"
 			id: "34A4F350D3CE0400"
 			rewards: [{
@@ -319,6 +344,7 @@
 				"1A155790CD83B2A7"
 				"3D1CCF8E85981E52"
 			]
+			description: ["Apply items to other items to craft things or can use tools like a player!"]
 			icon: "create:deployer"
 			id: "37FAA3D4CF96E9EE"
 			tasks: [{
@@ -331,6 +357,7 @@
 		}
 		{
 			dependencies: ["3D1CCF8E85981E52"]
+			description: ["Capable of craft things right in the world!"]
 			id: "7B289C03327D9227"
 			shape: "rsquare"
 			size: 1.5d
@@ -405,6 +432,7 @@
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
+			description: [""]
 			id: "35E21107F56A809E"
 			shape: "diamond"
 			size: 1.0d
@@ -524,6 +552,7 @@
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
+			description: ["Little silly companion with modular abilities!"]
 			icon: "create_sa:brass_drone_item"
 			id: "2D24B69CEABE3F73"
 			shape: "rsquare"
@@ -544,6 +573,7 @@
 		}
 		{
 			dependencies: ["2D24B69CEABE3F73"]
+			description: ["Additional storage for your drone!"]
 			id: "1D6381AA70C87A0E"
 			tasks: [{
 				id: "0C4D4AB1C4FFC13F"
@@ -555,6 +585,7 @@
 		}
 		{
 			dependencies: ["2D24B69CEABE3F73"]
+			description: ["Push items!"]
 			id: "2071E54E3C20E9B0"
 			tasks: [{
 				id: "141DDDE49F857406"
@@ -566,6 +597,7 @@
 		}
 		{
 			dependencies: ["2D24B69CEABE3F73"]
+			description: ["Give drone ability to break blocks."]
 			id: "0524C6A3A4051DAC"
 			tasks: [{
 				id: "7B51DF1E3282AFE1"
@@ -577,6 +609,7 @@
 		}
 		{
 			dependencies: ["2D24B69CEABE3F73"]
+			description: ["Can pick up blocks or entities and move them around! Attracks items too!"]
 			id: "37DC8B98BD8A2989"
 			tasks: [{
 				id: "599FE90366E31732"
@@ -588,6 +621,7 @@
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
+			description: ["Save your contraptions and builds to reuse later!"]
 			id: "786AE8A849CD860F"
 			rewards: [
 				{
@@ -815,6 +849,7 @@
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
+			description: ["First steps in the world of moving contraptions."]
 			icon: "create:mechanical_bearing"
 			id: "108C99B4F1FE705F"
 			shape: "rsquare"
@@ -842,6 +877,7 @@
 		}
 		{
 			dependencies: ["108C99B4F1FE705F"]
+			description: [""]
 			icon: "create:mechanical_piston"
 			id: "131F6E41A7F8D902"
 			rewards: [{
@@ -874,6 +910,7 @@
 		{
 			dependencies: ["3D1CCF8E85981E52"]
 			id: "01F0CE0956D6A361"
+			subtitle: "Clock out of blocks!"
 			tasks: [{
 				id: "6248A70F71D52EB6"
 				item: "create:clockwork_bearing"
@@ -884,6 +921,7 @@
 		}
 		{
 			dependencies: ["691DD9FDCE3E58DA"]
+			description: ["Generate fixed amount of stress by consuming energy."]
 			id: "18BF6D22CDB7509D"
 			shape: "diamond"
 			tasks: [{
@@ -962,6 +1000,7 @@
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "514A3E1A10C4B51A"
 					item: "create:gantry_shaft"
 					type: "item"
@@ -1022,6 +1061,7 @@
 					type: "item"
 				}
 			]
+			title: "Chassis"
 			x: 13.5d
 			y: 5.0d
 		}
@@ -1063,6 +1103,7 @@
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
+			description: ["Cut blocks infront and proccess items like stonecutter."]
 			id: "17304F0AA96C369E"
 			tasks: [{
 				id: "1CBC9D7B52E79AD5"
@@ -1074,6 +1115,7 @@
 		}
 		{
 			dependencies: ["17304F0AA96C369E"]
+			description: ["Drill blocks infront of it."]
 			hide_dependent_lines: true
 			id: "4D1A4AA16B63FB77"
 			tasks: [{
@@ -1124,6 +1166,7 @@
 		}
 		{
 			dependencies: ["54661956247869DD"]
+			description: ["Standart heater that use &mslavery&r help of Nether citizens!"]
 			id: "5B4C38C2E2CA7441"
 			tasks: [{
 				id: "05952F8B7DB80B45"
@@ -1147,6 +1190,7 @@
 		}
 		{
 			dependencies: ["54661956247869DD"]
+			description: ["Consume heat system that get generated by solar heating plates or nuclear reactors."]
 			id: "0DB76665DD848A9A"
 			tasks: [{
 				id: "49DC50BF84CA042D"
@@ -1178,6 +1222,7 @@
 		}
 		{
 			dependencies: ["5CD12AC552AA4061"]
+			description: ["Allow energy heater get superheated state. Apply it on the block as upgrade."]
 			id: "1DA15BD0E020EBB9"
 			size: 0.6d
 			tasks: [{
@@ -1341,6 +1386,7 @@
 				"3082ACB31EDFB2D1"
 				"5BCF22055EDA1850"
 			]
+			description: ["Machine fot oil harvesting."]
 			id: "0D95F54AC91C2DF0"
 			rewards: [{
 				count: 128
@@ -1433,6 +1479,7 @@
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
+			description: ["Create rotational power by using various fuels."]
 			id: "7863C9BC39A7F9D8"
 			shape: "diamond"
 			tasks: [{
@@ -1482,6 +1529,7 @@
 		}
 		{
 			dependencies: ["2185592369B7D5FC"]
+			description: [""]
 			id: "3CD6BF0CF344C8A1"
 			shape: "diamond"
 			size: 0.7d
@@ -1495,6 +1543,7 @@
 		}
 		{
 			dependencies: ["7863C9BC39A7F9D8"]
+			description: ["Can be combined together."]
 			id: "5B4C03560857B7FA"
 			tasks: [{
 				id: "79801EA3EA2F45FB"
@@ -1606,6 +1655,7 @@
 		}
 		{
 			dependencies: ["37FAA3D4CF96E9EE"]
+			description: ["Complex little thing for complex mechanisms."]
 			id: "0852CB10008D7CDB"
 			shape: "hexagon"
 			size: 1.2d
@@ -1619,8 +1669,10 @@
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
+			description: ["Move items around where it was talled to."]
 			id: "11D2F8CDD6C8BE1E"
 			shape: "diamond"
+			subtitle: "Need a helping hand?"
 			tasks: [{
 				id: "35EC02D719243E98"
 				item: "create:mechanical_arm"
@@ -1631,6 +1683,7 @@
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
+			description: ["Control speed of yout kinetic network!"]
 			id: "305B85EBEB9776A3"
 			rewards: [{
 				id: "5A49412929F2A366"
@@ -1648,6 +1701,7 @@
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
+			description: ["Advanced Create component."]
 			id: "3D1CCF8E85981E52"
 			shape: "hexagon"
 			tasks: [{
@@ -1689,6 +1743,7 @@
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
+			description: ["Consume energy to generate stress. "]
 			id: "3238F7E1DF448006"
 			size: 1.3d
 			tasks: [{
@@ -1716,6 +1771,7 @@
 				"7B289C03327D9227"
 				"69DB58E1CD20ED2B"
 			]
+			description: ["Generate energy based on rotational input."]
 			id: "600DDB0FDB97CFFA"
 			size: 1.3d
 			tasks: [{
@@ -1740,6 +1796,7 @@
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
+			description: ["Stores kinetic.. energy? Yea, I thinks thats.. right?"]
 			id: "43E9C14749BCCDAB"
 			shape: "diamond"
 			tasks: [{
@@ -2045,6 +2102,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2056,6 +2114,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2067,6 +2126,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2083,6 +2143,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2323,6 +2384,7 @@
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
+			description: ["Can make wires and rods."]
 			id: "6157725B6CC022A4"
 			shape: "diamond"
 			tasks: [{
@@ -2350,7 +2412,11 @@
 				"1A155790CD83B2A7"
 				"2DC0C89F91D2AE1D"
 			]
-			description: ["Upgrade of MV accumulator that stores 2X more energy, but its actual benefit comes from modularity - combining multiple blocks into one big battery!"]
+			description: [
+				"Upgrade of MV accumulator that stores 2X more energy, but its actual benefit comes from modularity - combining multiple blocks into one big battery!"
+				""
+				"Brass accumulator will auto output energy from top and bottom."
+			]
 			hide_dependent_lines: true
 			id: "006F0DFB4E9FE795"
 			rewards: [{
@@ -2396,6 +2462,7 @@
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
+			description: ["Simply craft more glass panes from one glass block."]
 			id: "14EC0F32B3ED3C33"
 			shape: "diamond"
 			size: 0.85d
@@ -2423,6 +2490,7 @@
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
+			description: ["Automated Smithing Table."]
 			id: "3F6DF0D28A64980E"
 			size: 0.7d
 			tasks: [{
@@ -2446,6 +2514,7 @@
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
+			description: ["Can help separate some items with spinning force."]
 			id: "0DAACB42DF4A9056"
 			tasks: [{
 				id: "504F7EAC0B8A2901"
@@ -2530,6 +2599,7 @@
 		}
 		{
 			dependencies: ["746BED2E65591E76"]
+			description: ["Brother of Drilling Machine that capable of extracting fluids: water or oil."]
 			id: "757887491266FA38"
 			size: 0.7d
 			tasks: [{
@@ -2565,6 +2635,7 @@
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
+			description: ["Better version of Andesite Chunk Loader. "]
 			icon: "create_power_loader:brass_chunk_loader"
 			id: "43DC6334943F14C6"
 			shape: "diamond"
@@ -2597,6 +2668,7 @@
 		}
 		{
 			dependencies: ["34A4F350D3CE0400"]
+			description: ["Will generate energy based on Rotation Per Minute and magnetic blocks used around the coil."]
 			icon: "create_new_age:generator_coil"
 			id: "59DE400FAB603D8A"
 			rewards: [{
