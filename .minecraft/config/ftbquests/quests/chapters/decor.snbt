@@ -342,7 +342,7 @@
 			y: 6.5d
 		}
 		{
-			description: ["With ProjectRed saw you can cut blocks into various shapes. Vertical slabs, panels and sp much more. Almost every blocks can be used!"]
+			description: ["With ProjectRed saw you can cut blocks into various shapes. Vertical slabs, panels and so much more. Almost every blocks can be used!"]
 			id: "3B2B9A664D1EC8D2"
 			tasks: [{
 				id: "6970E5F5257CF081"

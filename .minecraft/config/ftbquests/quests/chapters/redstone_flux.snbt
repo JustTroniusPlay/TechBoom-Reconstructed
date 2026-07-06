@@ -48,7 +48,7 @@
 			description: [
 				"Will grind down things into dusts with additonal outputs. It will double the outcome if you use ore blocks. "
 				""
-				"Pulverizer can &ogrind down Create resource&r blocks like &oCrushing Wheels&r."
+				"Pulverizer can &ogrind down Create resource blocks like &oCrushing Wheels&r."
 			]
 			id: "766AF1AE840A63FD"
 			shape: "diamond"
@@ -106,6 +106,7 @@
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
+			description: ["Machine to procces fluids into different things."]
 			icon: "thermal:machine_refinery"
 			id: "0324FC7EAE1601BA"
 			tasks: [{
@@ -144,6 +145,11 @@
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
+			description: [
+				"As name suggests can separate items into its original item components or new resources. "
+				""
+				"Its main use case can be getting oil from blocks."
+			]
 			id: "0AF793828ADDBE71"
 			tasks: [{
 				id: "53B60082ECC3713D"
@@ -185,6 +191,11 @@
 				"757887491266FA38"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"Black gold of Thermal Expansion. "
+				""
+				"Can be proccessed into powerful fuel. "
+			]
 			id: "120ED2BF66C46BE9"
 			shape: "rsquare"
 			tasks: [{
@@ -200,6 +211,7 @@
 				"120ED2BF66C46BE9"
 				"0324FC7EAE1601BA"
 			]
+			description: [""]
 			icon: "thermal:refined_fuel_bucket"
 			id: "46DF54F9A3A6645F"
 			shape: "hexagon"
@@ -287,7 +299,7 @@
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
-			description: ["Shape your liquids into various shapes!"]
+			description: ["Shape your liquids into various things!"]
 			icon: "thermal:machine_chiller"
 			id: "2ABA250ADE658FF3"
 			shape: "diamond"
@@ -406,6 +418,7 @@
 		}
 		{
 			dependencies: ["3155C182FC72865E"]
+			description: ["Made in Induction Smeltery, this weird alloys give more possibilities."]
 			id: "52563AE115ACBF51"
 			shape: "hexagon"
 			size: 1.5d
@@ -461,6 +474,7 @@
 		}
 		{
 			dependencies: ["1553365BB32E7666"]
+			description: ["Boilers will generate steam instead of energy using their respective methods."]
 			id: "199167CF567E26BB"
 			shape: "diamond"
 			tasks: [{
@@ -476,6 +490,7 @@
 				"1553365BB32E7666"
 				"031595756B809ADC"
 			]
+			description: ["Fluid tank that can be expanded with upgrades and have configurable sides."]
 			id: "08F0E06F30471E3E"
 			tasks: [{
 				id: "54255A04237FA5AC"
@@ -550,6 +565,7 @@
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
+			description: ["Automatic crafting table."]
 			id: "1A6E6CC618DD8F57"
 			shape: "diamond"
 			size: 1.2d
@@ -653,7 +669,7 @@
 			description: [
 				"Latex collector will help you get simple rubber more effectively."
 				""
-				"&lFollow \"Redstone Machinery\" tab next.&r"
+				"&lFollow 'Redstone Machinery' tab next.&r"
 			]
 			icon: "thermal:device_tree_extractor"
 			id: "4DE3A5EB02DCDC59"
@@ -819,23 +835,11 @@
 			y: 1.0499999999999998d
 		}
 		{
-			dependencies: [
-				"27D02A3ECE518CCE"
-				"52563AE115ACBF51"
-			]
-			id: "1425D94DC58182E5"
-			tasks: [{
-				id: "1B62D4ED538A6F70"
-				item: "thermal:machine_insolator"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["25B2030958956699"]
 			description: [
 				"Essential component for almost every Thermal machinery."
+				""
+				"All machines have configurable sides for in- and output.  "
 				""
 				"&lFollow 'Redstone Machinery' tab for Thermal Machinery.&r"
 			]

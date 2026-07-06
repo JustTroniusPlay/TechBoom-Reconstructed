@@ -25,9 +25,15 @@
 		}
 		{
 			dependencies: ["25B2030958956699"]
+			description: [
+				"&lUnfortunately Mekanism quest line is not finished in current patch&r. "
+				""
+				"&oPlease don't expect much changes to its recipes, but if you have good ideas what and how to tweak I will greatly appreciate this.&r"
+			]
 			id: "5169668687940129"
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Work In Progress"
 			tasks: [{
 				id: "6EB7A50C08AEA2E0"
 				item: "mekanism:metallurgic_infuser"

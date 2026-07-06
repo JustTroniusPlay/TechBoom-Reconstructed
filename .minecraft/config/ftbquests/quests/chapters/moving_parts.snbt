@@ -2350,8 +2350,15 @@
 				"1A155790CD83B2A7"
 				"2DC0C89F91D2AE1D"
 			]
+			description: ["Upgrade of MV accumulator that stores 2X more energy, but its actual benefit comes from modularity - combining multiple blocks into one big battery!"]
 			hide_dependent_lines: true
 			id: "006F0DFB4E9FE795"
+			rewards: [{
+				count: 3
+				id: "770B574F68E1A1F8"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6C31D6E55511897C"
 				item: "createaddition:modular_accumulator"

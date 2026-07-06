@@ -48,6 +48,7 @@
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]
+			description: ["Primary way to get Biomass."]
 			icon: "forestry:fermenter"
 			id: "0F45980EACA70EBA"
 			tasks: [
@@ -87,6 +88,7 @@
 		}
 		{
 			dependencies: ["0F45980EACA70EBA"]
+			description: ["Simple machine that convert biomass into Ethanol."]
 			icon: "forestry:still"
 			id: "28AF57B15FD06843"
 			tasks: [
@@ -201,9 +203,9 @@
 				"Bee Queen will die overtime, producing resources in Bee House. In the end she will leave drones and another princesses, so you can continue your bee garden."
 				""
 				"{@pagebreak}"
-				"Bee require a suitable nviroment for themselves: fitting biome and flowers around the hive."
+				"Bee require a suitable enviroment for themselves: fitting biome and flowers around the hive."
 				""
-				"If "
+				"The wrong biome will halt any bee work. The same can be said about conditions like rain."
 			]
 			id: "693B43DD699B1707"
 			tasks: [{
@@ -219,6 +221,7 @@
 				"05BC74C712E41396"
 				"693B43DD699B1707"
 			]
+			description: [""]
 			id: "358648885908CF2F"
 			tasks: [{
 				id: "263BD6F8ACFB8517"

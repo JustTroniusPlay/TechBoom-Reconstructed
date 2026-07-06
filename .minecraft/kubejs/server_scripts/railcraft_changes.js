@@ -111,14 +111,16 @@ ServerEvents.recipes(event => {
     event.shaped(
   Item.of('railcraft:steam_oven', 8), // arg 1: output
   [
-    'ABA',
-    'BCB', // arg 2: the shape (array of strings)
-    'ABA'
+    'ACA',
+    'DED', // arg 2: the shape (array of strings)
+    'BCB'
   ],
   {
     A: 'immersiveengineering:sheetmetal_steel',
-    B: 'thermal:steel_plate',  //arg 3: the mapping object
-    C: 'gtceu:steam_oven',
+    B: 'gtceu:steel_machine_casing', //'thermal:steel_plate', 
+    C: 'gtceu:steel_pipe_casing',
+    D: 'gtceu:steel_firebox_casing',
+    E: 'gtceu:steam_oven',
   }
 )
 

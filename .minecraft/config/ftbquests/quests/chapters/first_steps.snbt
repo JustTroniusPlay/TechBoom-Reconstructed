@@ -629,7 +629,7 @@
 				"&lSome raw ores give less resources in smeltery, sometimes it's better to smelt them the good old way!&r"
 				""
 				"{@pagebreak}"
-				"To build Melter put it on the Heater, then attach Faucet to it and put Basin or Seared Table with Cast under for molten metals to flow. Fuel it with coal or any other solid fuel. Right-click Faucet to pour your liquids into the basin and create resource blocks. "
+				"To build Melter put it on the Heater, then attach Faucet to it and put Basin or Seared Table with Cast under for molten metals to flow. Fuel it with coal or any other solid fuel. Right-click Faucet to pour your liquids into the basin or seared table with a cast."
 				""
 				"You can automate process with hoppers and alike blocks. You can give Faucet a redstone signal (like putting lever near) to automatically pour out of Smeltery."
 				""
@@ -1576,7 +1576,7 @@
 			description: [
 				"Energy is your way to get any machine working. Now that you have generators its good idea to find how to distribute, direct and overal control it where you need."
 				""
-				"Most of generators use Forge Energy and produce energy in FE/t, where 't' means tick and counts as 1/20 of a second."
+				"Most of generators use Forge Energy and produce energy in FE/t, where 't' means &ltick&r and counts as 1/20 of a second."
 				""
 				"&lSee 'Energy Management' tab for more info.&r"
 			]
@@ -1836,6 +1836,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1847,6 +1848,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1858,6 +1860,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1869,6 +1872,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1880,6 +1884,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1891,6 +1896,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1907,6 +1913,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1918,6 +1925,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1929,6 +1937,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2322,6 +2331,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2333,6 +2343,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2344,6 +2355,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2355,6 +2367,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2371,6 +2384,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2382,6 +2396,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2393,6 +2408,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2404,6 +2420,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2415,6 +2432,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2513,6 +2531,7 @@
 			y: -7.224787414965974d
 		}
 		{
+			dependencies: ["7B81DDC0AA14EF81"]
 			dependency_requirement: "one_started"
 			id: "6A1419E66988511D"
 			shape: "diamond"
@@ -2527,6 +2546,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2538,6 +2558,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2549,6 +2570,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2560,6 +2582,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2571,6 +2594,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2705,7 +2729,7 @@
 				"Part chest can store your unused parts inside without much limitations and it's brother Cast Chest will do the same thing for casts!"
 				""
 				"{@pagebreak}"
-				"Tinker's Chest is additional storage block that have 64 slots, but each slot can only store any 16 items max. At least you can dye them any color you wish!"
+				"&lTinker's Chest&r is additional storage block that have 64 slots, but each slot can only store any 16 items max. At least you can dye them any color you wish!"
 			]
 			icon: "tconstruct:part_chest"
 			id: "5DF65AEF33F86505"
@@ -2752,12 +2776,12 @@
 			id: "193EDD7B079CF150"
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "No zombies on my lawn!"
 			tasks: [{
 				id: "32547714D137833C"
 				item: "torchmaster:megatorch"
 				type: "item"
 			}]
+			title: "No zombies on my lawn!"
 			x: -4.610161564625841d
 			y: -8.175085034013591d
 		}
@@ -2980,7 +3004,7 @@
 					type: "item"
 				}
 			]
-			title: "Hasty"
+			title: "Hasty!"
 			x: 1.65097257653062d
 			y: -13.403220663265316d
 		}
@@ -3073,6 +3097,7 @@
 				"56766749439CD7E0"
 				"1C1AF1DA2760DB59"
 			]
+			description: ["Makes dynamos not loose stored energy!"]
 			id: "0073EAB8E0A299DC"
 			size: 0.7d
 			tasks: [{

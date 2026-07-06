@@ -49,14 +49,6 @@
 			x: -1.4d
 			y: 2.8d
 		}
-		{
-			id: "6C868A007218CC75"
-			linked_quest: "1C2F6D48F407A95D"
-			shape: "hexagon"
-			size: 0.85d
-			x: -3.55d
-			y: 1.4d
-		}
 	]
 	quests: [
 		{
@@ -220,6 +212,11 @@
 				"69DB58E1CD20ED2B"
 				"15B5CF1F309CA82A"
 			]
+			description: [
+				"Stores 100k FE."
+				""
+				"Sides can be configured with Engineer's Hammer to change output and input."
+			]
 			id: "10D646BACACC9E61"
 			tasks: [{
 				id: "6018217242A7F1DA"
@@ -231,6 +228,7 @@
 		}
 		{
 			dependencies: ["10D646BACACC9E61"]
+			description: ["Stores 1 million FE."]
 			id: "2DC0C89F91D2AE1D"
 			tasks: [{
 				id: "02ADADBFE73A2C8D"
@@ -245,7 +243,15 @@
 				"1C59476B07336B42"
 				"69DB58E1CD20ED2B"
 			]
+			description: [""]
 			id: "519BBDF241E4F105"
+			rewards: [{
+				count: 8
+				id: "2B53888434D25669"
+				item: "gtceu:tin_single_cable"
+				type: "item"
+			}]
+			subtitle: "Work In Progress"
 			tasks: [{
 				id: "096916A1F72A3003"
 				item: "gtceu:tin_single_cable"
@@ -455,6 +461,7 @@
 		}
 		{
 			dependencies: ["0320062681E3AE99"]
+			description: ["Transformers will convert energy of their respective voltage to lower variants."]
 			id: "12B8A0C2A9115587"
 			subtitle: "Forge Energy, roll out!"
 			tasks: [
@@ -491,6 +498,7 @@
 		}
 		{
 			dependencies: ["2DC0C89F91D2AE1D"]
+			description: ["Stores 4 million FE."]
 			id: "23D3B96F9602A310"
 			tasks: [{
 				id: "7E09A20AA756BCD3"
@@ -527,6 +535,7 @@
 		}
 		{
 			dependencies: ["799F7F64000A3084"]
+			description: ["Will store energy for ME network."]
 			id: "4ED512F235419F02"
 			tasks: [{
 				id: "61A2095431D4376A"
@@ -607,8 +616,8 @@
 				type: "checkmark"
 			}]
 			title: "Energy in the walls"
-			x: 0.48596938775511234d
-			y: -3.265306122448976d
+			x: 0.5071624803767705d
+			y: -3.197802197802197d
 		}
 		{
 			dependencies: ["3CADA01B0663BC89"]

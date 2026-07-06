@@ -38,6 +38,11 @@
 				"3CD05E2E5661246B"
 				"4647FBAA99333197"
 			]
+			description: [
+				"Better version of Blast Furnace from Nether resources!"
+				""
+				"Makes steel faster and can proccess Geology ores better then other ways."
+			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "79EF5B4E470ACDB4"
 			tasks: [
@@ -62,6 +67,13 @@
 			dependencies: [
 				"79EF5B4E470ACDB4"
 				"7A0C939E0FE540EC"
+			]
+			description: [
+				"With some steel plating and energy you can boost production of this industrial metal."
+				""
+				"Place Preheaters on the sides of the Blast Furnace and give them power. &oFront side&r will output &oSlag&r, while &lback side&r will output &lsteel&r itself."
+				""
+				"Top part is items input."
 			]
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "745A282BA4A843D5"
@@ -132,7 +144,17 @@
 			y: 5.906249999999993d
 		}
 		{
-			dependencies: ["7A0C939E0FE540EC"]
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"51D2A2A99A671311"
+			]
+			description: [
+				"Alternative upgrade to coke oven that use energy to boost its proccesses. "
+				""
+				"Place Baseheaters on the side and power them. &lFront side&r wil output &lcoke coal&r or other items, while &oback side&r will output &ocreosote&r."
+				""
+				"Top part is items input."
+			]
 			icon: "immersivetechnology:advanced_coke_oven"
 			id: "37659341AAB207BF"
 			rewards: [{
@@ -173,8 +195,8 @@
 				}
 			]
 			title: "Steel plated Coke Oven"
-			x: 0.0d
-			y: 2.0d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["55C78E5A9D06111B"]
@@ -251,6 +273,7 @@
 		{
 			dependencies: ["0729C937DEFF1E0B"]
 			id: "16FA4B48AB337396"
+			subtitle: "WORK IN PROGRESS"
 			tasks: [{
 				id: "21BFDA0BE9062973"
 				item: "immersiveengineering:fermenter"
@@ -278,7 +301,7 @@
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
-			description: [""]
+			description: ["Generate energy based on temperature difference between adjusted blocks, for example like lava and ice."]
 			id: "644DA6D29FB50DA8"
 			tasks: [{
 				id: "62222DF3CA4498D7"
@@ -500,7 +523,7 @@
 		{
 			dependencies: ["6099D2F4EEE9112A"]
 			description: [
-				"Can store additional items, tools and even food. Shift-rightclick to place and pick up it. You can even put it into the Tool Belt slots. "
+				"Can store additional items, tools and even food. Shift-rightclick to place and pick up it. &oYou can even put it into the Tool Belt slots!&r"
 				""
 				"Wiring slots are for IE wires and connectors."
 			]
@@ -565,14 +588,15 @@
 			]
 			id: "1FB9F832D1214239"
 			shape: "diamond"
+			size: 0.7d
 			tasks: [{
 				id: "7DBAE07870657D9A"
 				item: "thermal:dynamo_compression"
 				type: "item"
 			}]
 			title: "Creosote to energy"
-			x: 3.150000000000007d
-			y: 1.75d
+			x: 3.1454081632653015d
+			y: 1.9105867346938723d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -771,6 +795,7 @@
 		{
 			dependencies: ["4647FBAA99333197"]
 			id: "0E72E4B73D245BA0"
+			subtitle: "Work In Progress"
 			tasks: [
 				{
 					id: "251AAB20974D1ADD"
@@ -795,6 +820,7 @@
 		}
 		{
 			dependencies: ["79EF5B4E470ACDB4"]
+			description: ["Best standalone version of steel creating furnace."]
 			id: "697FDEFDED0990AC"
 			tasks: [{
 				count: 36L
