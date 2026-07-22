@@ -968,8 +968,8 @@
 				}
 			]
 			title: "Storage Upgrade"
-			x: -1.462973001700675d
-			y: -3.950786564625865d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]

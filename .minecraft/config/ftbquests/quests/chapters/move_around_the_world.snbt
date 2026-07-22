@@ -646,6 +646,7 @@
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
+			description: ["Create custom moving contraptions with this!"]
 			id: "1D4B87A4156E14A0"
 			shape: "rsquare"
 			tasks: [{
@@ -706,7 +707,7 @@
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
-			description: ["Speed up your carts!"]
+			description: ["Speed up your carts! Just give it redstone signal!"]
 			id: "3CB5B9B7BD3751EC"
 			size: 1.0d
 			tasks: [{

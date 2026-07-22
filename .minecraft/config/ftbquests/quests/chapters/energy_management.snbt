@@ -257,6 +257,7 @@
 				item: "gtceu:tin_single_cable"
 				type: "item"
 			}]
+			title: "Cables"
 			x: -3.721428571428568d
 			y: -0.5d
 		}

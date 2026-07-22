@@ -26,6 +26,7 @@
 			subtitle: "Battle ocean rig!"
 			tasks: [
 				{
+					icon: "crusty_chunks:structural_concrete"
 					id: "5B48AA0598F83BD6"
 					structure: "crusty_chunks:sea_base"
 					title: "Towers of Old war"
@@ -34,6 +35,7 @@
 				{
 					id: "21CC6B92E377C27E"
 					item: "crusty_chunks:rusty_block"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -67,7 +69,7 @@
 				""
 				"&lBut be aware&r that those buildings are guarded by mobs of &overy strong caliber&r. They will tear appart any unwelcomed guests if they not gonna be prepared enough for a fight. Or if they not gonna be smart and not careful enough to barg right into the heat of battle."
 				""
-				"I think at least getting some strong protection and way to shoot bullets can help greatly."
+				"At least getting some strong protection and way to shoot bullets can help greatly."
 			]
 			icon: "minecraft:cyan_terracotta"
 			id: "470D889050A766B1"

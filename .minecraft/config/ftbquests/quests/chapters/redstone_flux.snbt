@@ -252,26 +252,31 @@
 				{
 					id: "1F4082946B022DB8"
 					item: "thermal:press_packing_3x3_die"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7795232C3398A9B7"
 					item: "thermal:press_unpacking_die"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "46866A3C72AA447B"
 					item: "thermal:press_gear_die"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "02772F23BDEED4F1"
 					item: "thermal:press_coin_die"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "245005D988487C8E"
 					item: "thermal:press_packing_2x2_die"
+					optional_task: true
 					type: "item"
 				}
 			]
