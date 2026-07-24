@@ -16,12 +16,6 @@
 			y: 0.5d
 		}
 		{
-			id: "7CFDEAFF4927E1C3"
-			linked_quest: "79EF5B4E470ACDB4"
-			x: -2.5d
-			y: -1.0d
-		}
-		{
 			id: "7F9754840726B892"
 			linked_quest: "4DE3A5EB02DCDC59"
 			shape: "gear"
@@ -81,7 +75,7 @@
 			linked_quest: "1A3BA4BEFD861942"
 			shape: "rsquare"
 			x: -5.0d
-			y: -1.0d
+			y: -1.5d
 		}
 	]
 	quests: [
@@ -152,7 +146,7 @@
 			description: [
 				"Many Gregtech multiblocks can share walls. Thats mean you can save resources and space if you put them between intersecting casings. &oJust remember&r that inputs and outputs busses must not connect to two specific machines. At the same time Steam Input Hatches can fuel both multiblocks."
 				""
-				"You can add more than 1 input or output busses if you want."
+				"Additionally you can add more than 1 input or output busses to your multiblock machines if you want."
 			]
 			hide_dependent_lines: true
 			icon: "gtceu:steam_machine_casing"
@@ -169,32 +163,46 @@
 		{
 			dependencies: ["15C30310B03E4F79"]
 			description: ["As the name suggest will compress items: can create ingots from nuggets, some items into blocks and other such things."]
+			icon: "gtceu:lp_steam_compressor"
 			id: "156FF337D16F88B3"
 			shape: "rsquare"
-			tasks: [{
-				id: "41FA3EBCCC16C424"
-				item: "gtceu:lp_steam_compressor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "41FA3EBCCC16C424"
+					item: "gtceu:lp_steam_compressor"
+					type: "item"
+				}
+				{
+					id: "4DC618BA3A7F09E4"
+					item: "gtceu:compressed_fireclay"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
 			description: [
-				"Can grind things into dusts. Most notable use to grind down raw ores and getting two times more."
+				"Can grind things into dusts. Most notable use to &ogrind down raw ores and getting two times more!&r"
 				""
-				"Some grinded dusts, for example Redstone, need to be washed after grind proccesing to become useful or smelted to get ingots."
-				""
-				"You also can throw them into the cauldron with water manually. "
+				"Some grinded dusts, for example Redstone, need to be washed after grind proccesing to become useful or smelted to get ingots. But you also can throw them into the cauldron with water manually. "
 			]
+			icon: "gtceu:lp_steam_macerator"
 			id: "7DC8D43AB8C12697"
 			shape: "rsquare"
-			tasks: [{
-				id: "33565194B1EBDA18"
-				item: "gtceu:lp_steam_macerator"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "33565194B1EBDA18"
+					item: "gtceu:lp_steam_macerator"
+					type: "item"
+				}
+				{
+					id: "2D18480C363B70D8"
+					item: "gtceu:fireclay_dust"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 2.0d
 		}
@@ -285,7 +293,7 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
-			description: ["Juste smelt anything with heat of steam."]
+			description: ["Juste smelts anything with heat of steam."]
 			id: "625BBC103C7A0FCE"
 			shape: "diamond"
 			tasks: [{
@@ -358,27 +366,47 @@
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
+			description: ["Consumes Lava or Creosote to heat itself and create Steam."]
 			id: "0FCFA77A56C98B28"
 			shape: "diamond"
 			size: 0.7d
-			tasks: [{
-				id: "250C3DA58D2315F2"
-				item: "gtceu:lp_steam_liquid_boiler"
-				type: "item"
-			}]
-			x: -2.4499999999999997d
-			y: 2.8d
+			tasks: [
+				{
+					id: "250C3DA58D2315F2"
+					item: "gtceu:lp_steam_liquid_boiler"
+					type: "item"
+				}
+				{
+					id: "5CCCB9A31D7FE942"
+					item: "gtceu:hp_steam_liquid_boiler"
+					type: "item"
+				}
+			]
+			title: "Liquid Boilers"
+			x: -2.413254676870764d
+			y: 2.9392006802721014d
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
+			description: ["Generate steam with the power of the SUN!"]
 			id: "780843C2BC813902"
 			shape: "diamond"
 			size: 0.7d
-			tasks: [{
-				id: "63DF20CE04CE4282"
-				item: "gtceu:lp_steam_solar_boiler"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "63DF20CE04CE4282"
+					item: "gtceu:lp_steam_solar_boiler"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "03505657C39A335C"
+					item: "gtceu:hp_steam_solar_boiler"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Solar Boilers"
 			x: -3.15d
 			y: 2.8d
 		}
@@ -413,8 +441,8 @@
 				}
 			]
 			title: "Modular Boilers"
-			x: -3.754761904761935d
-			y: -3.1154761904761976d
+			x: -3.7003295068027384d
+			y: -3.014880952380949d
 		}
 		{
 			dependencies: ["6AF4C17E9C8FF9DC"]
@@ -427,8 +455,8 @@
 				item: "railcraft:fluid_fueled_firebox"
 				type: "item"
 			}]
-			x: -2.954761904761945d
-			y: -3.115476190476201d
+			x: -2.9003295068027484d
+			y: -3.0148809523809526d
 		}
 		{
 			dependencies: ["156FF337D16F88B3"]
@@ -457,8 +485,8 @@
 				}
 			]
 			title: "Trained Iron"
-			x: -1.5d
-			y: -1.0d
+			x: -1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -499,7 +527,7 @@
 			description: [
 				"Essential metal to reach indutrial age. Most complex machines will gonna need it."
 				""
-				"&lCheck 'Fancy Engineering' tab to continue.&r"
+				"&lCheck 'Fancy Engineering' tab.&r"
 			]
 			id: "7A0C939E0FE540EC"
 			shape: "gear"
@@ -519,6 +547,7 @@
 				"37EE9AB51014DCBA"
 			]
 			dependency_requirement: "one_completed"
+			description: ["With help of Extractor you now get first proper rubber."]
 			icon: "gtceu:rubber_ingot"
 			id: "5771754309EAFB99"
 			shape: "hexagon"
@@ -547,6 +576,13 @@
 		}
 		{
 			dependencies: ["5771754309EAFB99"]
+			description: [
+				"Low Voltage circuit opens you a path to complex electronic machines."
+				""
+				"Its always better to make as much of them as possible, because of quite annoying recipes chain."
+				""
+				"&l&oGregTech Low Voltage questline not finished in current patch, sorry :(&r"
+			]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "1C59476B07336B42"
 			rewards: [{
@@ -629,8 +665,8 @@
 				type: "item"
 			}]
 			title: "Steel Steam Oven"
-			x: -1.5d
-			y: 2.5d
+			x: -2.4d
+			y: 1.7999999999999998d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -647,23 +683,11 @@
 			y: -1.467261904761905d
 		}
 		{
-			dependencies: ["79EF5B4E470ACDB4"]
-			id: "697FDEFDED0990AC"
-			tasks: [{
-				count: 36L
-				id: "1BCE9E2477B7E389"
-				item: { Count: 36, id: "railcraft:blast_furnace_bricks" }
-				type: "item"
-			}]
-			title: "Maximus Blasting"
-			x: -2.5d
-			y: -2.0d
-		}
-		{
 			dependencies: ["6AF4C17E9C8FF9DC"]
 			icon: "railcraft:steam_turbine"
 			id: "3C16D1C6847306F8"
 			shape: "diamond"
+			subtitle: "Work In Progress"
 			tasks: [
 				{
 					count: 12L
@@ -684,13 +708,14 @@
 				}
 			]
 			title: "Steam Turbine"
-			x: -4.760204081632665d
-			y: -3.097746598639457d
+			x: -4.705771683673468d
+			y: -2.9971513605442084d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
 			description: ["Sift Mallet can diactivate Gregtech machinery."]
 			id: "5E79D5EED8FFB37C"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "0D14DD23595429CA"
@@ -844,7 +869,7 @@
 				type: "item"
 			}]
 			x: -5.3999999999999995d
-			y: 0.6d
+			y: 1.2d
 		}
 		{
 			dependencies: [
@@ -865,7 +890,6 @@
 		}
 		{
 			dependencies: [
-				"5CED0B2F5E3DE3B1"
 				"5361A9865C6547F4"
 				"4AFEE3BCC0DC661B"
 				"69DB58E1CD20ED2B"
@@ -1252,6 +1276,7 @@
 		}
 		{
 			dependencies: ["76422C026A6749CA"]
+			description: ["Will boost grow of crystal like blocks or plants adjusted to it. Power it with AE energy or use wooden crank."]
 			icon: "ae2:growth_accelerator"
 			id: "4C18C52168A5F91D"
 			shape: "diamond"
@@ -1276,6 +1301,7 @@
 				"4DB042DAF83D7A0A"
 				"5771754309EAFB99"
 			]
+			description: ["Upgraded version that use energy."]
 			id: "48BC04D05B89C7EA"
 			shape: "rsquare"
 			tasks: [{
@@ -1283,8 +1309,8 @@
 				item: "railcraft:powered_rolling_machine"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.0d
+			x: -5.777200255102052d
+			y: 2.47797619047617d
 		}
 	]
 	title: "Steam Age"

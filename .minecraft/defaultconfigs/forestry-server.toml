@@ -3,7 +3,7 @@ enable_backpack_resupply = true
 #Whether Tin Ore veins generate naturally in the Overworld.
 spawn_tin_ore = false
 #Whether Apatite Ore veins generate naturally in the Overworld.
-spawn_apatite_ore = false
+spawn_apatite_ore = true
 #Multiplies the chance of a reward from winning escritoire game(does not affect mutation notes)
 #Range: 0.0 ~ 1000.0
 escritoire_bounty_multiplier = 1.0

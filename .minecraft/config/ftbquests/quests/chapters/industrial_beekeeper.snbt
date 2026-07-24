@@ -27,19 +27,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["4619627EEEE566A4"]
-			description: ["You can use carpenter to automate creation of wooden ties for your railroads."]
-			id: "4C7E5BEF0E29D6F3"
-			size: 0.7d
-			tasks: [{
-				id: "4B49A1C5DB4AA5D3"
-				item: "railcraft:wooden_tie"
-				type: "item"
-			}]
-			x: 1.55d
-			y: -1.0500000000000003d
-		}
-		{
 			dependencies: [
 				"0F45980EACA70EBA"
 				"05BC74C712E41396"
@@ -61,6 +48,7 @@
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]
+			description: ["Primary way to get Biomass."]
 			icon: "forestry:fermenter"
 			id: "0F45980EACA70EBA"
 			tasks: [
@@ -77,28 +65,6 @@
 			]
 			x: -1.5d
 			y: -0.5d
-		}
-		{
-			dependencies: ["4619627EEEE566A4"]
-			description: ["With help of Carpenter you can make wood pulp and paper out of it."]
-			icon: "forestry:wood_pulp"
-			id: "2D9254097394383E"
-			size: 0.7d
-			tasks: [
-				{
-					id: "0864A98334B666E2"
-					item: "forestry:wood_pulp"
-					type: "item"
-				}
-				{
-					id: "546DBCB742A97713"
-					item: "minecraft:paper"
-					type: "item"
-				}
-			]
-			title: "Piece of paper"
-			x: 2.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]
@@ -122,6 +88,7 @@
 		}
 		{
 			dependencies: ["0F45980EACA70EBA"]
+			description: ["Simple machine that convert biomass into Ethanol."]
 			icon: "forestry:still"
 			id: "28AF57B15FD06843"
 			tasks: [
@@ -236,9 +203,9 @@
 				"Bee Queen will die overtime, producing resources in Bee House. In the end she will leave drones and another princesses, so you can continue your bee garden."
 				""
 				"{@pagebreak}"
-				"Bee require a suitable nviroment for themselves: fitting biome and flowers around the hive."
+				"Bee require a suitable enviroment for themselves: fitting biome and flowers around the hive."
 				""
-				"If "
+				"The wrong biome will halt any bee work. The same can be said about conditions like rain."
 			]
 			id: "693B43DD699B1707"
 			tasks: [{
@@ -254,6 +221,7 @@
 				"05BC74C712E41396"
 				"693B43DD699B1707"
 			]
+			description: [""]
 			id: "358648885908CF2F"
 			tasks: [{
 				id: "263BD6F8ACFB8517"

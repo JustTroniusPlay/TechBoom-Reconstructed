@@ -47,14 +47,14 @@
 			id: "28F29F846C54834D"
 			linked_quest: "6F496DC9A766E115"
 			size: 0.85d
-			x: -2.5d
-			y: 10.5d
+			x: -2.4755102040816084d
+			y: 7.030952380952382d
 		}
 	]
 	quests: [
 		{
 			dependencies: ["362FE530374D058F"]
-			description: ["Can store large amount of items an modular!"]
+			description: ["Can store large amount of items and modular!"]
 			icon: "create:item_vault"
 			id: "2B605F8F5C28FCAD"
 			rewards: [{
@@ -182,6 +182,7 @@
 				"26041794979A3851"
 				"3D1CCF8E85981E52"
 			]
+			description: ["Brass version that now have filters and some more abilities!"]
 			icon: "create:brass_funnel"
 			id: "09A3CBAAEEA779DA"
 			tasks: [
@@ -232,6 +233,7 @@
 				"3D1CCF8E85981E52"
 				"7A722F4E1BB2DF66"
 			]
+			description: ["Upgraded chute with redstone control and filter capabilities."]
 			id: "6260FB2B98C9ABE6"
 			tasks: [{
 				id: "2488955CF7022E31"
@@ -242,11 +244,9 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"32FCC9DCD937E066"
-				"6F496DC9A766E115"
-			]
+			dependencies: ["32FCC9DCD937E066"]
 			dependency_requirement: "one_completed"
+			description: ["Can put items into packages. Mostly need as a start for simple supply network."]
 			id: "5829B229883C5738"
 			shape: "rsquare"
 			size: 1.2d
@@ -271,8 +271,17 @@
 			y: 9.799999999999999d
 		}
 		{
-			dependencies: ["5829B229883C5738"]
+			dependencies: [
+				"5829B229883C5738"
+				"6F496DC9A766E115"
+			]
+			description: ["Place packages on chains for transfer."]
 			id: "2F69960DFCAC5C3C"
+			rewards: [{
+				id: "6BFE8C4022DF7630"
+				item: "create:package_frogport"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0EDFD24FF65FBD28"
 				item: "create:package_frogport"
@@ -300,6 +309,7 @@
 		}
 		{
 			dependencies: ["5829B229883C5738"]
+			description: ["Special detector to work with your supply network."]
 			id: "721BF9359D5D6E95"
 			size: 0.85d
 			tasks: [{
@@ -604,6 +614,7 @@
 		{
 			dependencies: ["07DD3A2F452B366A"]
 			dependency_requirement: "one_completed"
+			description: ["Stop inputed items and output them in configured amount. In basic mod will output items only &owhen all filters are satisfied&r."]
 			id: "5E1CC541E65C3D24"
 			tasks: [{
 				id: "44174784C133F210"
@@ -629,6 +640,7 @@
 		}
 		{
 			dependencies: ["7E43DE8E8F0F36A6"]
+			description: ["Can be put on pipe side to extract or input items."]
 			id: "1B95E7F9A5CBDBE8"
 			shape: "rsquare"
 			size: 0.85d
@@ -653,6 +665,7 @@
 		}
 		{
 			dependencies: ["540D62BE372AE7D1"]
+			description: ["Can connect other storages to your ME system."]
 			id: "5B215272B25D0591"
 			tasks: [{
 				id: "21C242BAD99D561A"
@@ -664,6 +677,13 @@
 		}
 		{
 			dependencies: ["540D62BE372AE7D1"]
+			description: [
+				"The Heart of advanced ME system. "
+				""
+				"Every side of this block can support 32 channels aka connections to various components."
+				""
+				"One ME network can't have two separate controllers, but you can make a multiblock controller using multiple."
+			]
 			id: "71094588853AD9EB"
 			shape: "diamond"
 			size: 1.2d
@@ -690,6 +710,7 @@
 		}
 		{
 			dependencies: ["71094588853AD9EB"]
+			description: ["Alternatives for simple cables in form of wires! "]
 			id: "305DE2EB97E84BC7"
 			tasks: [
 				{
@@ -737,6 +758,7 @@
 		}
 		{
 			dependencies: ["2B605F8F5C28FCAD"]
+			description: ["Extend access to various storages."]
 			id: "784CD20CAEDEC685"
 			tasks: [{
 				id: "0BF7F91018C721C5"
@@ -748,6 +770,7 @@
 		}
 		{
 			dependencies: ["2B605F8F5C28FCAD"]
+			description: ["Give access to two inventories at the same time."]
 			id: "5763E65E25EBD0E4"
 			tasks: [{
 				id: "6542D05709434A43"
@@ -795,6 +818,28 @@
 			title: "UnderCover"
 			x: 5.488775510204107d
 			y: 7.530952380952389d
+		}
+		{
+			dependencies: ["1B95E7F9A5CBDBE8"]
+			description: ["Can be applied to filter incoming items."]
+			icon: "gtceu:item_filter"
+			id: "6D7DC0259FECAF27"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "649F8AF469C2AD4D"
+					item: "gtceu:item_filter"
+					type: "item"
+				}
+				{
+					id: "39EAE3B23FF519B6"
+					item: "gtceu:item_smart_filter"
+					type: "item"
+				}
+			]
+			x: 3.6673469387755375d
+			y: 8.928273809523834d
 		}
 	]
 	title: "Storage Solutions"

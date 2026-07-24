@@ -25,43 +25,45 @@
 		{
 			id: "594CC73C5D91EA9C"
 			linked_quest: "6B98F8F66130812D"
-			x: 0.9362244897959258d
-			y: -5.163265306122447d
-		}
-		{
-			id: "2116D0F5A7431D33"
-			linked_quest: "784AEC9BF8755F95"
-			size: 0.7d
-			x: 3.75d
-			y: -3.25d
+			x: -2.0972789115646293d
+			y: -6.117346938775469d
 		}
 		{
 			id: "7B95BDC607E0AB2F"
 			linked_quest: "08F0E06F30471E3E"
-			x: 4.75d
-			y: -2.25d
+			shape: "diamond"
+			size: 1.2d
+			x: 7.629591836734676d
+			y: -6.0784013605442055d
 		}
 		{
 			id: "453D25EC705F69D3"
 			linked_quest: "540D62BE372AE7D1"
 			shape: "gear"
 			size: 0.6d
-			x: 4.5d
-			y: -3.5999999999999996d
+			x: 4.2129251700680115d
+			y: -5.007142857142803d
 		}
 		{
 			id: "3AF215A295B43236"
 			linked_quest: "108C99B4F1FE705F"
 			shape: "rsquare"
 			size: 0.6d
-			x: -0.471428571428568d
-			y: -0.7142857142857153d
+			x: -3.4185374149660035d
+			y: -1.4712585034013586d
+		}
+		{
+			id: "742950AE7664DB07"
+			linked_quest: "7AE82FECE43A0323"
+			size: 0.7d
+			x: 8.4d
+			y: -7.0d
 		}
 	]
 	quests: [
 		{
 			dependencies: ["332E6B2C638AE656"]
-			description: [""]
+			description: ["Use rotational power to pump liquids."]
 			id: "72304D7D63A87E7A"
 			rewards: [{
 				count: 7
@@ -75,28 +77,34 @@
 				item: "create:mechanical_pump"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -7.0d
+			x: -2.0999999999999996d
+			y: -8.9d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
+			description: ["Filters for copper pipes."]
 			id: "1C2524E076D09250"
+			rewards: [{
+				count: 4
+				id: "759CFFFD6F08756D"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
 			shape: "diamond"
 			size: 0.7d
 			tasks: [{
-				count: 4L
 				id: "2638355BF5726249"
 				item: "create:smart_fluid_pipe"
 				type: "item"
 			}]
-			x: 1.4d
-			y: -7.7d
+			x: -1.4986394557823104d
+			y: -9.782312925170071d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
+			description: ["Help to block off liquids getting through pipes. Use rotation of valve."]
 			id: "4AD6B16A03ED9014"
 			rewards: [{
-				count: 4
 				id: "44D7C89593A943D4"
 				item: "create:copper_valve_handle"
 				type: "item"
@@ -104,19 +112,19 @@
 			shape: "diamond"
 			size: 0.7d
 			tasks: [{
-				count: 4L
 				id: "42300471C2A25051"
-				item: { Count: 4, id: "create:fluid_valve" }
+				item: "create:fluid_valve"
 				type: "item"
 			}]
-			x: 0.7d
-			y: -7.7d
+			x: -2.621088435374155d
+			y: -9.782312925170068d
 		}
 		{
 			dependencies: [
 				"5186990A391ADB8D"
 				"108C99B4F1FE705F"
 			]
+			description: ["Communication between moving Create contraptions or Trains and stationaty places. "]
 			id: "11A8EA423A27F25F"
 			shape: "diamond"
 			size: 0.85d
@@ -125,11 +133,16 @@
 				item: "create:portable_fluid_interface"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.5d
+			x: -3.438945578231305d
+			y: -2.165136054421758d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
+			description: [
+				"Can be lowered to get liquids below you."
+				""
+				"Most notable feature of Pulley to pump &oinfinite&r amount of &lwater or lava&r from large bodies of respective liquids."
+			]
 			id: "477C63414BE6219A"
 			shape: "rsquare"
 			tasks: [{
@@ -137,8 +150,8 @@
 				item: "create:hose_pulley"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -8.0d
+			x: -2.0700680272108727d
+			y: -10.35374149659864d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -160,8 +173,8 @@
 				item: "immersiveengineering:fluid_pump"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -7.0d
+			x: 7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -193,8 +206,8 @@
 					type: "item"
 				}
 			]
-			x: 1.3000000000000003d
-			y: -3.3d
+			x: 0.14761904761904532d
+			y: -3.7744897959183277d
 		}
 		{
 			dependencies: [
@@ -223,11 +236,14 @@
 				type: "item"
 			}]
 			title: "Water Tank Siding"
-			x: 1.691326530612237d
-			y: -4.489795918367342d
+			x: 0.1680272108843468d
+			y: -4.7336734693877105d
 		}
 		{
-			dependencies: ["5186990A391ADB8D"]
+			dependencies: [
+				"5186990A391ADB8D"
+				"11A8EA423A27F25F"
+			]
 			description: [
 				"Upgraded iron variant of copper tanks."
 				""
@@ -259,14 +275,15 @@
 				}
 			]
 			title: "Modular Tank"
-			x: -0.028571428571432023d
-			y: -2.9142857142857252d
+			x: -2.948809523809544d
+			y: -2.9078231292516676d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
+			description: ["Modular copper tank that can be expanded dynamically."]
 			id: "5186990A391ADB8D"
 			rewards: [{
-				count: 5
+				count: 4
 				id: "44F851FD22347AAE"
 				item: "create:fluid_tank"
 				type: "item"
@@ -287,8 +304,8 @@
 				}
 			]
 			title: "Modular Tanks"
-			x: 0.7714285714285722d
-			y: -2.20000000000001d
+			x: -2.1488095238095397d
+			y: -2.1935374149659523d
 		}
 		{
 			dependencies: ["5186990A391ADB8D"]
@@ -313,13 +330,14 @@
 				}
 			]
 			title: "Variations"
-			x: 0.5d
-			y: -1.5d
+			x: -2.420238095238112d
+			y: -1.4935374149659424d
 		}
 		{
 			dependencies: [
 				"37506D0DC482AAA8"
 				"7D3FA2BBD1033FE9"
+				"031595756B809ADC"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -385,6 +403,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.5d
 			tasks: [
 				{
 					count: 4L
@@ -420,7 +439,7 @@
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
-			description: ["Work only with GregTech pipes."]
+			description: ["Can be put on GregTech pipes sides to extract or insert fluids."]
 			id: "724160D9F6565F29"
 			shape: "diamond"
 			tasks: [{
@@ -428,8 +447,8 @@
 				item: "ulvcovm:ulv_electric_pump"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -9.0d
+			x: 2.198639455782299d
+			y: -10.1877551020408d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -446,8 +465,8 @@
 				item: "mekanism:basic_mechanical_pipe"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -10.0d
+			x: 0.5d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -458,11 +477,20 @@
 			icon: "gtceu:treated_wood_normal_fluid_pipe"
 			id: "6C4F567410AA97A0"
 			size: 0.6d
-			tasks: [{
-				id: "10ED1745F41877F2"
-				item: "gtceu:treated_wood_normal_fluid_pipe"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "10ED1745F41877F2"
+					item: "gtceu:treated_wood_normal_fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "44CBFE60D004DDC8"
+					item: "gtceu:wood_normal_fluid_pipe"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Wood Pipes"
 			x: 3.0d
 			y: -3.0d
 		}
@@ -477,8 +505,8 @@
 				item: "create_factory_logistics:jar_packager"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: -4.621088435374148d
+			y: -6.823129251700678d
 		}
 		{
 			dependencies: [
@@ -493,19 +521,20 @@
 				item: "create_factory_logistics:factory_fluid_gauge"
 				type: "item"
 			}]
-			x: 1.05d
-			y: -5.95d
+			x: -4.723129251700676d
+			y: -10.068027210884352d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
+			description: ["Used to apply liquids to various things or fill some containers."]
 			id: "7B64D58280611794"
 			tasks: [{
 				id: "49AA13685907BE91"
 				item: "create:spout"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -5.0d
+			x: -2.070068027210887d
+			y: -7.925170068027214d
 		}
 		{
 			dependencies: ["7B64D58280611794"]
@@ -516,8 +545,8 @@
 				item: "create_things_and_misc:spout_gun"
 				type: "item"
 			}]
-			x: -0.6d
-			y: -4.2d
+			x: -1.7999999999999998d
+			y: -7.199999999999999d
 		}
 		{
 			dependencies: ["7B64D58280611794"]
@@ -534,18 +563,22 @@
 				}
 				type: "item"
 			}]
-			x: -1.4d
-			y: -4.2d
+			x: -2.4d
+			y: -7.199999999999999d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
 			description: [
-				"Drums can store liquids even when broken. They have output hatch underneath you can activate with Mallets."
+				"Drums can store liquids even when picked up. They have output hatch underneath you can activate with Mallets."
 				""
 				"&oNotable feature of Gold Drums: they can handle &lacids.&r"
+				""
+				"&lLook into 'Fluid Management' tab.&r  "
 			]
 			icon: "gtceu:bronze_drum"
 			id: "031595756B809ADC"
+			shape: "pentagon"
+			size: 1.5d
 			tasks: [
 				{
 					id: "245EC16FFDD91042"
@@ -573,8 +606,8 @@
 				}
 			]
 			title: "Better Buckets"
-			x: 3.75d
-			y: -2.25d
+			x: 6.10578231292515d
+			y: -6.073639455782299d
 		}
 		{
 			dependencies: [
@@ -589,8 +622,8 @@
 				item: "immersiveengineering:metal_barrel"
 				type: "item"
 			}]
-			x: 3.75d
-			y: -1.2999999999999998d
+			x: 6.134353741496582d
+			y: -4.845068027210878d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -641,12 +674,12 @@
 				item: "fluid:centrifugal_pump"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -7.0d
+			x: -4.702721088435375d
+			y: -9.006802721088434d
 		}
 		{
 			dependencies: ["62F294152390992E"]
-			description: ["Can put fluids in the world. Configure with Engineer's Hammer. Using redstone signal will block output."]
+			description: ["Can put fluids out in the world. Configure with Engineer's Hammer. Using redstone signal will block output."]
 			id: "2CC6FA9A969ECBCA"
 			size: 0.7d
 			tasks: [{
@@ -654,8 +687,8 @@
 				item: "immersiveengineering:fluid_placer"
 				type: "item"
 			}]
-			x: 4.55d
-			y: -7.0d
+			x: 7.0d
+			y: -9.799999999999999d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
@@ -665,8 +698,8 @@
 				item: "fluid:gutter_outlet"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -6.0d
+			x: -4.682312925170066d
+			y: -7.904761904761905d
 		}
 		{
 			dependencies: ["3493D38BC8F5E5BE"]
@@ -676,8 +709,8 @@
 				item: "fluid:smart_gutter_outlet"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.0d
+			x: -5.682312925170066d
+			y: -7.904761904761905d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -694,7 +727,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -6.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["29271E54A7DBAF2E"]
@@ -705,8 +738,8 @@
 				item: "immersivetechnology:barrel_steel"
 				type: "item"
 			}]
-			x: 3.75d
-			y: -0.75d
+			x: 6.134353741496582d
+			y: -4.216496598639445d
 		}
 		{
 			dependencies: ["7931B771167AFDFE"]
@@ -751,8 +784,8 @@
 				item: "ulvcovm:ulv_fluid_regulator"
 				type: "item"
 			}]
-			x: 3.2704081632653015d
-			y: -8.974489795918362d
+			x: 2.9690476190476005d
+			y: -10.162244897959162d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -784,8 +817,8 @@
 				}
 			]
 			title: "Potin Alloy"
-			x: 3.25d
-			y: -8.114285714285707d
+			x: 2.1843537414965866d
+			y: -8.492857142857098d
 		}
 		{
 			dependencies: [
@@ -804,8 +837,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: -4.5d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -854,8 +887,8 @@
 					type: "item"
 				}
 			]
-			x: 0.35d
-			y: -3.85d
+			x: -2.1217687074829996d
+			y: -3.0030612244897554d
 		}
 		{
 			dependencies: [
@@ -894,8 +927,8 @@
 				}
 			]
 			title: "Cover Control"
-			x: 2.5d
-			y: -10.0d
+			x: 2.198639455782299d
+			y: -11.1877551020408d
 		}
 		{
 			dependencies: ["0B9E46B8967F33B0"]
@@ -907,8 +940,8 @@
 				item: "forestry:raintank"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: 1.05d
+			y: -4.2d
 		}
 		{
 			dependencies: ["3E8CD30DEAF3BF95"]
@@ -936,8 +969,69 @@
 				}
 			]
 			title: "Steel Modularity"
-			x: -0.9770408163265216d
-			y: -2.892857142857139d
+			x: -3.8972789115646336d
+			y: -2.886394557823081d
+		}
+		{
+			dependencies: [
+				"031595756B809ADC"
+				"330180412AC025EA"
+			]
+			description: ["Cans can store fluids as a item and will stack to 64. One tin can = 1 bucket. But you can't place liquid back in the world."]
+			id: "784AEC9BF8755F95"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "5180B590AD80BFD9"
+				item: "forestry:can"
+				type: "item"
+			}]
+			title: "Stackable Liquids"
+			x: 6.134353741496589d
+			y: -7.245068027210877d
+		}
+		{
+			dependencies: ["62F294152390992E"]
+			description: ["Delete liquids that you pump into it."]
+			id: "4F71FD7DF00823B6"
+			size: 0.7d
+			tasks: [{
+				id: "70FE554D4BE27C75"
+				item: "immersivetechnology:trash_fluid"
+				type: "item"
+			}]
+			x: 7.7d
+			y: -9.45d
+		}
+		{
+			dependencies: ["62F294152390992E"]
+			description: [
+				"Can limit amount of fluid going throught it and change state with redstone signal. You can still change it manually with &oshift + rightclick&r."
+				""
+				"Just remember that &oblue side is input&r and &lorange one is output&r."
+			]
+			id: "6073987A68586854"
+			size: 0.7d
+			tasks: [{
+				id: "1DE80BFF3F75DCAB"
+				item: "immersivetechnology:valve_fluid"
+				type: "item"
+			}]
+			x: 6.3d
+			y: -9.45d
+		}
+		{
+			dependencies: ["724160D9F6565F29"]
+			description: ["Can be applied to filter incoming fluids."]
+			id: "6D8C12459FC126FD"
+			size: 0.7d
+			tasks: [{
+				id: "437C9F471E66FD81"
+				item: "gtceu:fluid_filter"
+				type: "item"
+			}]
+			x: 1.4d
+			y: -10.15d
 		}
 	]
 	title: "Fluid Management"
