@@ -116,8 +116,8 @@ ServerEvents.recipes(event => {
     'BCB'
   ],
   {
-    A: 'immersiveengineering:sheetmetal_steel',
-    B: 'gtceu:steel_machine_casing', //'thermal:steel_plate', 
+    A: 'gtceu:steel_machine_casing',
+    B: 'gtceu:solid_machine_casing', //'thermal:steel_plate', 
     C: 'gtceu:steel_pipe_casing',
     D: 'gtceu:steel_firebox_casing',
     E: 'gtceu:steam_oven',

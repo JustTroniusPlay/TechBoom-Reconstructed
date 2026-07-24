@@ -119,6 +119,7 @@
 		}
 		{
 			dependencies: ["0AF793828ADDBE71"]
+			description: ["Found in deserts and contains some oil."]
 			id: "420669759AE11743"
 			tasks: [
 				{
@@ -211,7 +212,7 @@
 				"120ED2BF66C46BE9"
 				"0324FC7EAE1601BA"
 			]
-			description: [""]
+			description: ["Refined Fuel can be used in Compression Dynamo to generate energy and feed Blaze Burners to reach Superheated state."]
 			icon: "thermal:refined_fuel_bucket"
 			id: "46DF54F9A3A6645F"
 			shape: "hexagon"
@@ -335,7 +336,7 @@
 		}
 		{
 			dependencies: ["420669759AE11743"]
-			description: ["With help of Pyrolyzer you can get Enriched Coke. Using it in Induction Smeltery with iron you can get new source of Steel."]
+			description: ["With help of Pyrolyzer you can get Enriched Coke. Using it in Induction Smeltery with iron you can get &lnew source of Steel!&r"]
 			icon: "thermal:coal_coke"
 			id: "6BA3BF805371E239"
 			shape: "hexagon"

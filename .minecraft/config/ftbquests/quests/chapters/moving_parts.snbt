@@ -56,6 +56,7 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
+			title: "Crushing Wheels"
 			x: -5.5d
 			y: -6.0d
 		}
@@ -2599,7 +2600,7 @@
 		}
 		{
 			dependencies: ["746BED2E65591E76"]
-			description: ["Brother of Drilling Machine that capable of extracting fluids: water or oil."]
+			description: ["Brother of Drilling Machine that capable of extracting fluids: water, oil or lava."]
 			id: "757887491266FA38"
 			size: 0.7d
 			tasks: [{

@@ -74,7 +74,7 @@
 		{
 			dependencies: ["29EE940649C3AE38"]
 			description: [
-				"Finding coal can be difficult sometimes and you can't get charcoal easily. But there a other solutions! Sulfur or Sticky resin! You can use it as replacement for coal to craft torches!"
+				"Aside from finding coal there a other ways to craft torches: Sulfur or Sticky resin! You can use it as replacement for coal to craft torches!"
 				""
 				"You can get &lSticky Resin&r from chopping down &oGregtech Rubber Trees.&r"
 				""
@@ -387,19 +387,19 @@
 		{
 			dependencies: ["29EE940649C3AE38"]
 			description: [
-				"Ore veins added by Gregtech replace normal vanilla ore generation and aditionally spawn some other ores like tin, nickel, lead and etc."
+				"Ore veins added by Gregtech create large resource deposits. They are very useful in getting massive amounts of resources and fairly common around!"
 				""
-				"Ore veins very useful in getting massive amounts of resources and they are fairly common!"
+				"But big twist with them how veins are biome dependant: various resources like different climates!"
 				""
-				"{@pagebreak}"
-				"Find varoius dusts on the surface that indicate that ore vein underground. You can use your map to see where they are too! Just click a &lore icon&r in the low left corner. Additionaly you can see what type of ores are in the vein."
-				""
-				"If you not ready to dig underground just collect some dusts from the ground to get metals early."
+				"&lYou can check 'Resources' tab to see how to get and find various resources.&r"
 				""
 				"{@pagebreak}"
-				"Some ores still spawn as smaller ore patches undeground, so some cave exploration needed, but you probably encounter them on your way to dig ore veins."
+				"Find dusts on the surface that indicate that ore vein underground. You can use your map to see where they are too! Just click a &lore icon&r in the low left corner. Additionaly you can see what type of ores are in the vein."
 				""
-				"&lYou can check 'Resources' tab to see how to get various resources.&r"
+				"If you not ready to dig underground just collect some dusts from the ground to get some metals early."
+				""
+				"{@pagebreak}"
+				"Normal ores still spawn as smaller ore patches undeground, so some cave exploration needed if you can't find ore vein you need. "
 			]
 			icon: "gtceu:chalcopyrite_ore"
 			id: "34D049FD2BF84E84"

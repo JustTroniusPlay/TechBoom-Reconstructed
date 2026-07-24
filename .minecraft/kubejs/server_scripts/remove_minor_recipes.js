@@ -33,6 +33,8 @@ ServerEvents.recipes(event => {
     event.remove({id: "common_ore_library:smelting_raw_ore_to_ingot/cobalt"});
     event.remove({id: "common_ore_library:blasting_raw_ore_to_ingot/cobalt"});
     event.remove({id: "tconstruct:common/materials/cobalt_ingot_blasting"});
+    event.remove({id: "regions_unexplored:redstone_from_blasting_raw_redstone_block"});
+    event.remove({id: "regions_unexplored:redstone_from_smelting_raw_redstone_block"});
 
   /*  event.remove({id: "cybernetic_system:craft_wire_copper"});
     event.shapeless(

@@ -12,7 +12,7 @@
 			description: ["What a city without citizens? Your next step in building lively place to live is finding them! Look for villagers around the world and either live along side them and share your tech wonders or get them to your place."]
 			id: "2CE7CF54B3F0E568"
 			tasks: [{
-				advancement: "morevillagers:first_village"
+				advancement: "mca:root"
 				criterion: ""
 				icon: "mca:villager_editor"
 				id: "3BA5CF0BB8B1FAAC"
