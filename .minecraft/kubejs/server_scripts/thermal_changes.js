@@ -63,12 +63,17 @@ ServerEvents.recipes(event => {
   })
 
   {//Pulverizer
-  /*event.replaceInput(
-
+    event.replaceInput(
     {id: "crusty_chunks:iron_gear_recipe"},
     "minecraft:cobblestone",
-    "gtceu:wrought_iron_gear"
-  )*/
+    "#forge:small_gears/iron"
+    )
+    event.replaceInput(
+    {id: "crusty_chunks:iron_gear_recipe"},
+    "minecraft:iron_ingot",
+    "#forge:rods/iron"
+    )
+
   event.remove({id: "thermal:machine_pulverizer"});
     event.shaped(
   Item.of('thermal:machine_pulverizer', 1), // arg 1: output
@@ -195,6 +200,25 @@ ServerEvents.recipes(event => {
           },
           {
             "item": "create:rose_quartz"
+          },
+          {"item": "ae2:charged_certus_quartz_crystal"}
+        ],
+        "result": [
+          {
+            count: 4,
+            "item": "ae2:fluix_crystal"
+          }
+        ],
+          "energy": 500
+    })
+    event.custom({"type": "thermal:crystallizer",
+        "ingredients": [
+          {
+            "fluid": "immersiveengineering:redstone_acid",
+            "amount": 4000
+          },
+          {
+            "item": "minecraft:quartz"
           },
           {"item": "ae2:charged_certus_quartz_crystal"}
         ],

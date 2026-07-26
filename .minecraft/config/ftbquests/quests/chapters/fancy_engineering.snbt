@@ -61,7 +61,7 @@
 			]
 			title: "Better Blasting"
 			x: -2.5d
-			y: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -104,7 +104,7 @@
 			]
 			title: "Improved blasting"
 			x: -1.5d
-			y: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -140,8 +140,8 @@
 				}
 			]
 			title: "Multiblocks components"
-			x: -0.7261904761904816d
-			y: 5.906249999999993d
+			x: -0.7321428571428541d
+			y: 10.81428571428571d
 		}
 		{
 			dependencies: [
@@ -195,7 +195,7 @@
 				}
 			]
 			title: "Steel plated Coke Oven"
-			x: 1.0d
+			x: 0.0d
 			y: 0.5d
 		}
 		{
@@ -245,8 +245,8 @@
 					type: "item"
 				}
 			]
-			x: -0.7142857142857153d
-			y: 12.864285714285707d
+			x: -0.7202380952380878d
+			y: 17.772321428571423d
 		}
 		{
 			dependencies: ["09349E61D7AF0C55"]
@@ -256,31 +256,50 @@
 				item: "immersiveengineering:biodiesel_bucket"
 				type: "item"
 			}]
-			x: -0.7142857142857153d
-			y: 11.364285714285707d
+			x: -0.7202380952380878d
+			y: 16.272321428571423d
 		}
 		{
 			dependencies: ["16FA4B48AB337396"]
+			icon: "immersiveengineering:refinery"
 			id: "09349E61D7AF0C55"
-			tasks: [{
-				id: "7E5C1336FEA69EEB"
-				item: "immersiveengineering:refinery"
-				type: "item"
-			}]
-			x: -0.7142857142857153d
-			y: 9.864285714285707d
+			tasks: [
+				{
+					id: "7E5C1336FEA69EEB"
+					item: "immersiveengineering:refinery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2BC668885EC120AB"
+					item: "immersiveengineering:phenolic_resin_bucket"
+					type: "item"
+				}
+			]
+			x: -0.7202380952380878d
+			y: 14.772321428571423d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
+			description: ["Fermenter oxidize different plants to get &lEthanol&r - one of elements to get Diesel or Phenolic Resin."]
+			icon: "immersiveengineering:fermenter"
 			id: "16FA4B48AB337396"
 			subtitle: "WORK IN PROGRESS"
-			tasks: [{
-				id: "21BFDA0BE9062973"
-				item: "immersiveengineering:fermenter"
-				type: "item"
-			}]
-			x: -0.7142857142857153d
-			y: 8.364285714285707d
+			tasks: [
+				{
+					id: "21BFDA0BE9062973"
+					item: "immersiveengineering:fermenter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "246418F83AFAB20E"
+					item: "immersiveengineering:ethanol_bucket"
+					type: "item"
+				}
+			]
+			x: -0.7202380952380878d
+			y: 13.272321428571423d
 		}
 		{
 			dependencies: [
@@ -303,13 +322,15 @@
 			dependencies: ["7A0C939E0FE540EC"]
 			description: ["Generate energy based on temperature difference between adjusted blocks, for example like lava and ice."]
 			id: "644DA6D29FB50DA8"
+			shape: "diamond"
+			size: 0.7d
 			tasks: [{
 				id: "62222DF3CA4498D7"
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: 2.148809523809504d
+			y: 3.518303571428568d
 		}
 		{
 			dependencies: ["11CAA0BF384301E3"]
@@ -341,8 +362,8 @@
 				type: "item"
 			}]
 			title: "Industrial Banners"
-			x: 6.821428571428591d
-			y: 5.7928571428571445d
+			x: 3.9d
+			y: 4.8d
 		}
 		{
 			dependencies: ["11CAA0BF384301E3"]
@@ -782,7 +803,7 @@
 			description: ["Nether opens you a way to get great amount of new resources."]
 			id: "4647FBAA99333197"
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.2d
 			tasks: [{
 				id: "32EE79113BC817D7"
 				item: "crusty_chunks:blast_clay"
@@ -815,7 +836,7 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
+			x: -4.0d
 			y: 3.5d
 		}
 		{
@@ -829,8 +850,164 @@
 				type: "item"
 			}]
 			title: "Maximus Blasting"
-			x: -3.5d
-			y: 2.0d
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: [
+				"Immersive Engineering adds its own deep ore veins that can be extracted only by using complex machines. But before that you should find them!"
+				""
+				"{@pagebreak}"
+				"&lMineral Survey Tools&r will help you understand what type of vein exist in the area. Just click on the soil related blocks and with each research you will get more information about veins around."
+				""
+				"&oHold your rightclick until you get message&r about existing ore vein. To get better understanding of current position of the vein you need to &ogo around the area and collect more samples&r."
+				""
+				"{@pagebreak}"
+				"Next step will give you precise data what things exist in the vein and how rich it is."
+				""
+				"&lCore Sample Drill&r will give you a so called core sample to get vein saturation and exactly what it contains. it needs 40 RF/t to operate, so bring some energy with you!"
+				""
+				"{@pagebreak}"
+				"There a diverce amount of deep ore veins in the pack so it is hard to list them here. Look into &oEngineer's manual -> &lMineral Deposits&r &opage&r if you want to see them all."
+			]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:survey_tools"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5D42522665506478"
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Do you see ore veins? No. Well they here actually."
+			tasks: [
+				{
+					id: "63D0CBBD1BE9CA1C"
+					item: {
+						Count: 1
+						id: "immersiveengineering:survey_tools"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "39175FB4B324646F"
+					item: "immersiveengineering:sample_drill"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Unseen veins"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5D42522665506478"
+				"0729C937DEFF1E0B"
+			]
+			description: [
+				"Powerfull digging machine that will extract deep ore veins. it consist of two parts: &lExcavator engine and Bucket wheel&r. &oConsult to Engineer's Manual to see how they connect&r."
+				""
+				"Put it as close as possible to the veins center. Putting it far away increase the chance of getting spoil blocks instead of ore. "
+				""
+				"&oKeep in mind&r that some &lore veins can overlap&r so sometimes you can sacrifice efficency for collecting multiple veins."
+				""
+				"{@pagebreak}"
+				"The side of Excavator with black spots - energy input. While back of the machine have redstone control to deactivate it with signal and output hatch to get items."
+			]
+			icon: "immersiveengineering:excavator"
+			id: "349E3A39938B8B33"
+			tasks: [
+				{
+					id: "75F3F7EF48D2940B"
+					item: "immersiveengineering:excavator"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7F367CE8CFE93DDC"
+					item: "immersiveengineering:bucket_wheel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "4ACD4E47D5E432B1"
+					item: { Count: 26, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "06BF7EB1B78A74F6"
+					item: { Count: 9, id: "thermal:steel_block" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0270288E4D133BE0"
+					item: { Count: 16, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "5F9FB8BA90BDBB6E"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "0FD5F5D5511E212D"
+					item: { Count: 16, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "258C300B47772E3A"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "25A52EBB540B3CA5"
+					item: { Count: 4, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			id: "268EC5D708C8C75D"
+			tasks: [{
+				id: "0C0F2F37F6969734"
+				item: "immersiveengineering:mixer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"09349E61D7AF0C55"
+				"62EEE8CB1320336E"
+				"4AFEE3BCC0DC661B"
+			]
+			description: ["Used in creation of Circuit Backplanes and Advanced Components."]
+			id: "44DC54BD41EB3A08"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "564FC8212E117198"
+				item: "immersiveengineering:plate_duroplast"
+				type: "item"
+			}]
+			x: 5.184523809523803d
+			y: 11.482589285714283d
 		}
 	]
 	title: "Fancy Engineering"

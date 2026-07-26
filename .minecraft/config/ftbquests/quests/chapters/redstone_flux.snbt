@@ -30,8 +30,8 @@
 			id: "28C7B746F4C22299"
 			linked_quest: "757887491266FA38"
 			size: 0.7d
-			x: 0.35d
-			y: 3.15d
+			x: 1.75d
+			y: 4.55d
 		}
 		{
 			id: "164196E53947B6E2"
@@ -114,8 +114,8 @@
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
-			x: 0.7999999999999998d
-			y: 0.8000000000000007d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0AF793828ADDBE71"]
@@ -141,8 +141,8 @@
 				}
 			]
 			title: "Oil in the soil"
-			x: 1.7999999999999998d
-			y: 2.8000000000000007d
+			x: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -157,8 +157,8 @@
 				item: "thermal:machine_centrifuge"
 				type: "item"
 			}]
-			x: 1.7999999999999998d
-			y: 1.3000000000000007d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -204,8 +204,8 @@
 				item: "thermal:crude_oil_bucket"
 				type: "item"
 			}]
-			x: 0.2999999999999998d
-			y: 2.3000000000000007d
+			x: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -235,8 +235,8 @@
 				}
 			]
 			title: "Refined Oil"
-			x: -0.8333333333333357d
-			y: 1.638350340136057d
+			x: 4.2d
+			y: 3.5999999999999996d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -354,8 +354,8 @@
 				}
 			]
 			title: "Enriched Coke Coal"
-			x: 1.7999999999999998d
-			y: 4.300000000000001d
+			x: 0.75d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5B9B2FD0295FF131"]
@@ -414,6 +414,8 @@
 			description: ["Grow various gem dusts back into crystals."]
 			icon: "thermal:machine_crystallizer"
 			id: "3751A61EDD08EF41"
+			shape: "diamond"
+			size: 1.2d
 			tasks: [{
 				id: "6A005F1EEABC8C01"
 				item: "thermal:machine_crystallizer"
@@ -528,15 +530,15 @@
 				item: "thermal:fluid_tank_augment"
 				type: "item"
 			}]
-			x: -0.20000000000000728d
-			y: 3.907142857142855d
+			x: -0.1785714285714306d
+			y: 5.62134353741498d
 		}
 		{
 			dependencies: [
 				"7BF7C8E5AFC2EE6A"
 				"030F34B864E08816"
 			]
-			description: ["Behind the weird name hides a way to convert metals into energy. "]
+			description: ["Behind the weird name hides a way to convert metals into energy: consumes coins made by Multiservo Press or forged from Tinker's Smeltery."]
 			id: "12E8CE069EDE3C56"
 			size: 0.7d
 			subtitle: "Capitalistic generator!"
@@ -673,7 +675,7 @@
 		{
 			dependencies: ["5361A9865C6547F4"]
 			description: [
-				"Latex collector will help you get simple rubber more effectively."
+				"&lArboreal Extractor&r will help you get &osimple rubber&r more effectively and other liquids from trees like &oResin and Sap&r."
 				""
 				"&lFollow 'Redstone Machinery' tab next.&r"
 			]
@@ -762,8 +764,8 @@
 				type: "item"
 			}]
 			title: "Speed Up"
-			x: 3.15d
-			y: 1.0499999999999998d
+			x: 0.7d
+			y: 0.6999999999999998d
 		}
 		{
 			dependencies: ["1553365BB32E7666"]
@@ -811,8 +813,8 @@
 				item: "thermal:machine_output_augment"
 				type: "item"
 			}]
-			x: 3.4999999999999996d
-			y: 0.7d
+			x: 1.0499999999999996d
+			y: 0.35d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -824,8 +826,8 @@
 				item: "thermal:machine_catalyst_augment"
 				type: "item"
 			}]
-			x: 3.4999999999999996d
-			y: 1.4d
+			x: 1.0499999999999996d
+			y: 1.0499999999999998d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -837,8 +839,8 @@
 				item: "thermal:machine_null_augment"
 				type: "item"
 			}]
-			x: 3.85d
-			y: 1.0499999999999998d
+			x: 1.4000000000000001d
+			y: 0.6999999999999998d
 		}
 		{
 			dependencies: ["25B2030958956699"]
@@ -873,6 +875,51 @@
 			}]
 			x: 4.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["2B05CC4B1B1A5914"]
+			description: ["Tiny ball shaped fluid containers that can be throwned!"]
+			id: "0989D5668ECC1464"
+			size: 0.5d
+			tasks: [{
+				id: "7FC163915B13B8CE"
+				item: {
+					Count: 1
+					id: "thermal:florb"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.94047619047619d
+			y: -2.0929421768707357d
+		}
+		{
+			dependencies: [
+				"4DE3A5EB02DCDC59"
+				"0324FC7EAE1601BA"
+			]
+			description: [
+				"&oProcess Resin in the Fractionating Still&r to get &lRosin&r - a &oalternative to Sticky Resin&r that can be used in GregTech related recipes!"
+				""
+				"As a bonus you will get some Tree Oil to use as fuel to Compression Dynamo and Blaze Burners."
+			]
+			icon: "thermal:rosin"
+			id: "5F5BD2FE29B57757"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "36390B120C63C921"
+					item: "thermal:rosin"
+					type: "item"
+				}
+				{
+					id: "4BA1E60DAC01C7AE"
+					item: "thermal:tree_oil_bucket"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
 		}
 	]
 	title: "Redstone Machinery"

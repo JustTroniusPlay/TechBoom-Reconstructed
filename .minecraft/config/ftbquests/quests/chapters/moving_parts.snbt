@@ -1744,7 +1744,7 @@
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
-			description: ["Consume energy to generate stress. "]
+			description: ["Consumes energy to generate stress. "]
 			id: "3238F7E1DF448006"
 			size: 1.3d
 			tasks: [{
@@ -1752,20 +1752,8 @@
 				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			x: -6.4285714285714235d
-			y: -2.6071428571428683d
-		}
-		{
-			dependencies: ["3238F7E1DF448006"]
-			id: "0D94E3F4B5743A8F"
-			tasks: [{
-				id: "1F332663789FD80B"
-				item: "create_better_motors:starter_motor"
-				type: "item"
-			}]
-			title: "More than enough SU"
-			x: -6.5d
-			y: -1.5d
+			x: -6.500000000000001d
+			y: -2.6d
 		}
 		{
 			dependencies: [
@@ -1780,20 +1768,8 @@
 				item: "createaddition:alternator"
 				type: "item"
 			}]
-			x: -4.714285714285708d
-			y: -2.6071428571428683d
-		}
-		{
-			dependencies: ["600DDB0FDB97CFFA"]
-			id: "42CC6B90C412D25F"
-			tasks: [{
-				id: "1D846205CE76CE8D"
-				item: "create_better_motors:andesite_alternator"
-				type: "item"
-			}]
-			title: "Even More Power"
-			x: -4.714285714285708d
-			y: -1.5000000000000142d
+			x: -4.550000000000001d
+			y: -2.6d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
@@ -2374,14 +2350,22 @@
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
+			description: ["Can help you charge Certus Quartz and get Channeling Enchantment."]
 			id: "115F76F055B5EB09"
-			tasks: [{
-				id: "436FB829F5275F40"
-				item: "createaddition:tesla_coil"
-				type: "item"
-			}]
-			x: -5.592857142857142d
-			y: -1.9285714285714306d
+			tasks: [
+				{
+					id: "436FB829F5275F40"
+					item: "createaddition:tesla_coil"
+					type: "item"
+				}
+				{
+					id: "001537BFB3BF4A44"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -2571,19 +2555,6 @@
 			}]
 			x: 10.55816326530612d
 			y: 2.6030612244898066d
-		}
-		{
-			dependencies: ["115F76F055B5EB09"]
-			id: "416F4CC8D57BAF00"
-			shape: "hexagon"
-			size: 0.7d
-			tasks: [{
-				id: "63408CE7D7C442FB"
-				item: "ae2:charged_certus_quartz_crystal"
-				type: "item"
-			}]
-			x: -5.605102040816327d
-			y: -0.9127551020408191d
 		}
 		{
 			dependencies: ["7F493483338AF21E"]

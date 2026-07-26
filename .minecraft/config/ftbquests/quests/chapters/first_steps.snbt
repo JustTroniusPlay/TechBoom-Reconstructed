@@ -74,7 +74,7 @@
 		{
 			dependencies: ["29EE940649C3AE38"]
 			description: [
-				"Aside from finding coal there a other ways to craft torches: Sulfur or Sticky resin! You can use it as replacement for coal to craft torches!"
+				"Aside from finding coal there a other ways to craft torches: Sulfur or Sticky resin! You can use it as replacement!"
 				""
 				"You can get &lSticky Resin&r from chopping down &oGregtech Rubber Trees.&r"
 				""
@@ -3107,6 +3107,20 @@
 			}]
 			x: 6.120360331632661d
 			y: -9.648118622448983d
+		}
+		{
+			dependencies: ["031595756B809ADC"]
+			description: ["Water sources is not infinite anymore. To get unlimited amount of water you should use pumps from &lFluid Management&r chapter!"]
+			icon: "minecraft:water_bucket"
+			id: "3B94AC16A5495D07"
+			shape: "square"
+			tasks: [{
+				id: "76D25B49966BD15E"
+				title: "Water is not infinite!!!!"
+				type: "checkmark"
+			}]
+			x: -0.5279389880952294d
+			y: -10.846077806122452d
 		}
 	]
 	title: "Start of the journey"

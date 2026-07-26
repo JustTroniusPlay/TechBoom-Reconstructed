@@ -74,8 +74,9 @@
 			id: "3B38ACB3D7E7FB08"
 			linked_quest: "1A3BA4BEFD861942"
 			shape: "rsquare"
-			x: -5.0d
-			y: -1.5d
+			size: 1.5d
+			x: -5.25d
+			y: -0.75d
 		}
 	]
 	quests: [
@@ -374,11 +375,13 @@
 				{
 					id: "250C3DA58D2315F2"
 					item: "gtceu:lp_steam_liquid_boiler"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "5CCCB9A31D7FE942"
 					item: "gtceu:hp_steam_liquid_boiler"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -670,7 +673,7 @@
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Every previous type of boiler or single block bronze machine can be upgraded with steel."]
+			description: ["Every previous type of boiler or single block bronze machine can be made with steel."]
 			id: "4A33371DB94DFD62"
 			shape: "diamond"
 			size: 1.2d
