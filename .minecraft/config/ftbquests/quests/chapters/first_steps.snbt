@@ -1273,7 +1273,11 @@
 		}
 		{
 			dependencies: ["306F6137CCDFF3C1"]
-			description: ["With so many tools at your disposal for building your factory, you really run out of handful inventory slots. But don't worry! Tool Belt here to help with your inventory management! It can be upgraded on anvil with pouches to get more slots up to 8 max."]
+			description: [
+				"With so many tools at your disposal for building your factory, you really run out of handful inventory slots. But don't worry! Tool Belt here to help with your inventory management! "
+				""
+				"&lIt can be upgraded on anvil with pouches to get more slots up to 8 max.&r"
+			]
 			id: "173F0498DAC0D9CB"
 			rewards: [{
 				count: 2
@@ -1799,6 +1803,7 @@
 			description: [
 				"Crafting Blueprint can be used to save crafting recipes and auto craft them easily. It can cover up to a 3x3 wall area, where each block its own recipe."
 				""
+				"{@pagebreak}"
 				"Right click a slot to open the interface and use items to save a crafting recipe. Filters can also be used to apply multiple potential crafting recipes."
 				""
 				"Outside the interface, right click the saved recipe to use available materials to craft the item. Shift right click to craft up to a stack of the item. Left click to delete a crafting recipe. A secondary display slot is available for each slot."
@@ -2080,7 +2085,7 @@
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
-			description: ["Deals 25 (Heart × 12.5) points of damage when attacking Endermen and 1 (Half Heart) damage when attacking any other mob."]
+			description: ["Deals huge damage when attacking Endermen and 1 damage when attacking any other mob."]
 			id: "62FDFA213337537A"
 			size: 0.7d
 			tasks: [{
@@ -3054,8 +3059,8 @@
 				}
 			]
 			title: "Manual doubling"
-			x: 5.887659438775557d
-			y: -5.5924744897959044d
+			x: 5.917639243197286d
+			y: -5.9195471938775555d
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]

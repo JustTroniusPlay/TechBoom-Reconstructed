@@ -1033,6 +1033,22 @@
 			x: 1.4d
 			y: -10.15d
 		}
+		{
+			dependencies: ["0B9E46B8967F33B0"]
+			description: [
+				"Use two water sources to create new ones."
+				""
+				"But you probably need some good luck to get it!"
+			]
+			id: "0FC22D30E0F736AF"
+			tasks: [{
+				id: "41CE82DDF26BCB75"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			x: -0.7875850340136026d
+			y: -4.2688775510204024d
+		}
 	]
 	title: "Fluid Management"
 }

@@ -16,17 +16,6 @@
 	}]
 	quests: [
 		{
-			dependencies: ["26F7DA43C2FE94AB"]
-			id: "0846DDA488B481DB"
-			tasks: [{
-				id: "3CE72493234599E9"
-				item: "forestry:engine_peat"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -0.5d
-		}
-		{
 			dependencies: [
 				"0F45980EACA70EBA"
 				"05BC74C712E41396"

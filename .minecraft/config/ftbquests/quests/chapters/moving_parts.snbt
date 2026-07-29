@@ -1111,8 +1111,8 @@
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			x: 9.28809523809526d
-			y: 4.904761904761926d
+			x: 10.445238095238096d
+			y: 3.396428571428558d
 		}
 		{
 			dependencies: ["17304F0AA96C369E"]
@@ -1124,8 +1124,8 @@
 				item: "create:mechanical_drill"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 6.0d
+			x: 10.42142857142857d
+			y: 0.944047619047609d
 		}
 		{
 			dependencies: [
@@ -1421,10 +1421,7 @@
 			y: 8.5d
 		}
 		{
-			dependencies: [
-				"0D95F54AC91C2DF0"
-				"54661956247869DD"
-			]
+			dependencies: ["0D95F54AC91C2DF0"]
 			description: ["The top segment will contain &oGasoline&r and middle one &oDiesel&r."]
 			icon: "createdieselgenerators:crude_oil_bucket"
 			id: "043F7FFDC6430B34"
@@ -1789,6 +1786,7 @@
 				"2185592369B7D5FC"
 				"1A3BA4BEFD861942"
 			]
+			description: ["With help of cardboard you can make nametags and use it for books or item frames."]
 			icon: "create:cardboard"
 			id: "67A60A92B37AEADD"
 			size: 0.5d
@@ -2498,7 +2496,7 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["22BE56C3CA087A04"]
+			dependencies: ["311F17E0AB89A1B2"]
 			description: ["Can help separate some items with spinning force."]
 			id: "0DAACB42DF4A9056"
 			tasks: [{
@@ -2530,8 +2528,8 @@
 				item: "vintageimprovements:spring_coiling_machine"
 				type: "item"
 			}]
-			x: 9.741836734693877d
-			y: 3.6030612244898066d
+			x: 9.299999999999999d
+			y: 4.8d
 		}
 		{
 			dependencies: ["311F17E0AB89A1B2"]
@@ -2541,8 +2539,8 @@
 				item: "vintageimprovements:vibrating_table"
 				type: "item"
 			}]
-			x: 10.578571428571422d
-			y: 3.4193877551020506d
+			x: 10.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1DB745BC4D6EDCA5"]
@@ -2553,8 +2551,8 @@
 				item: "vintageimprovements:redstone_module"
 				type: "item"
 			}]
-			x: 10.55816326530612d
-			y: 2.6030612244898066d
+			x: 9.969047619047608d
+			y: 6.396428571428565d
 		}
 		{
 			dependencies: ["7F493483338AF21E"]

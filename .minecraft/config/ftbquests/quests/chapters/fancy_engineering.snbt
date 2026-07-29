@@ -12,8 +12,8 @@
 			linked_quest: "7A0C939E0FE540EC"
 			shape: "gear"
 			size: 1.5d
-			x: -0.75d
-			y: 3.75d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			id: "7F316268B078E675"
@@ -42,6 +42,8 @@
 				"Better version of Blast Furnace from Nether resources!"
 				""
 				"Makes steel faster and can proccess Geology ores better then other ways."
+				""
+				"Just remember to clear Slag out of it!"
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "79EF5B4E470ACDB4"
@@ -60,14 +62,11 @@
 				}
 			]
 			title: "Better Blasting"
-			x: -2.5d
-			y: 0.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
-			dependencies: [
-				"79EF5B4E470ACDB4"
-				"7A0C939E0FE540EC"
-			]
+			dependencies: ["79EF5B4E470ACDB4"]
 			description: [
 				"With some steel plating and energy you can boost production of this industrial metal."
 				""
@@ -103,8 +102,8 @@
 				}
 			]
 			title: "Improved blasting"
-			x: -1.5d
-			y: 0.5d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -131,11 +130,13 @@
 				{
 					id: "7C839D26FE9093D0"
 					item: "immersiveengineering:generator"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0E741B8A6732DEA6"
 					item: "immersiveengineering:radiator"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -281,10 +282,9 @@
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
-			description: ["Fermenter oxidize different plants to get &lEthanol&r - one of elements to get Diesel or Phenolic Resin."]
+			description: ["Fermenter oxidize different plants to get in mass &lEthanol&r - one of elements to get Diesel or Phenolic Resin."]
 			icon: "immersiveengineering:fermenter"
 			id: "16FA4B48AB337396"
-			subtitle: "WORK IN PROGRESS"
 			tasks: [
 				{
 					id: "21BFDA0BE9062973"
@@ -329,8 +329,8 @@
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
-			x: 2.148809523809504d
-			y: 3.518303571428568d
+			x: -2.1d
+			y: 2.8d
 		}
 		{
 			dependencies: ["11CAA0BF384301E3"]
@@ -362,8 +362,8 @@
 				type: "item"
 			}]
 			title: "Industrial Banners"
-			x: 3.9d
-			y: 4.8d
+			x: 6.3d
+			y: 6.8999999999999995d
 		}
 		{
 			dependencies: ["11CAA0BF384301E3"]
@@ -388,7 +388,10 @@
 			y: 8.02857142857144d
 		}
 		{
-			dependencies: ["11CAA0BF384301E3"]
+			dependencies: [
+				"11CAA0BF384301E3"
+				"62EEE8CB1320336E"
+			]
 			description: ["Molds to use in metal press. Not only for plates, but for other things: gears, rods, wires and even packing items!"]
 			icon: "immersiveengineering:mold_gear"
 			id: "60252A3A1D935245"
@@ -405,8 +408,8 @@
 				type: "item"
 			}]
 			title: "Molds for everything!"
-			x: 3.285714285714292d
-			y: 5.899999999999999d
+			x: 3.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["11CAA0BF384301E3"]
@@ -425,14 +428,11 @@
 				type: "item"
 			}]
 			title: "Bullet-smithing"
-			x: 6.8214285714285765d
-			y: 7.071428571428569d
+			x: 7.0d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"0729C937DEFF1E0B"
-				"60252A3A1D935245"
-			]
+			dependencies: ["0729C937DEFF1E0B"]
 			description: ["Press that use FE energy to procces things. But to work with anything you need different molds!"]
 			icon: "immersiveengineering:metal_press"
 			id: "62EEE8CB1320336E"
@@ -473,8 +473,8 @@
 					type: "item"
 				}
 			]
-			x: 1.54999999999999d
-			y: 5.868154761904755d
+			x: 1.2d
+			y: 9.0d
 		}
 		{
 			dependencies: ["51D2A2A99A671311"]
@@ -729,11 +729,11 @@
 			y: 2.50714285714286d
 		}
 		{
-			dependencies: ["49EAA9A6F41A7551"]
+			dependencies: ["37392944F830DC3E"]
 			description: ["Fastest Coke Oven version that do things on its own without any additional requirements."]
 			id: "575BDE04271E94D1"
 			shape: "rsquare"
-			size: 0.7d
+			size: 0.85d
 			tasks: [{
 				count: 27L
 				id: "2F40390FDF8B0340"
@@ -741,8 +741,8 @@
 				type: "item"
 			}]
 			title: "Industrial Coke Oven"
-			x: 5.214285714285744d
-			y: -1.528571428571425d
+			x: -0.9708333333333101d
+			y: 6.350446428571416d
 		}
 		{
 			dependencies: ["51D2A2A99A671311"]
@@ -809,9 +809,9 @@
 				item: "crusty_chunks:blast_clay"
 				type: "item"
 			}]
-			title: "Hellish materials"
-			x: -2.5d
-			y: 3.5d
+			title: "Hellish Materials"
+			x: 0.0d
+			y: 3.5999999999999996d
 		}
 		{
 			dependencies: ["4647FBAA99333197"]
@@ -836,8 +836,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: 3.5d
+			x: -1.2916666666666359d
+			y: 3.6552083333333343d
 		}
 		{
 			dependencies: ["79EF5B4E470ACDB4"]
@@ -850,8 +850,8 @@
 				type: "item"
 			}]
 			title: "Maximus Blasting"
-			x: -2.0d
-			y: -0.5d
+			x: 1.9077380952381162d
+			y: 5.036160714285714d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -902,8 +902,8 @@
 				}
 			]
 			title: "Unseen veins"
-			x: -2.5d
-			y: 5.0d
+			x: -3.5059523809523583d
+			y: 9.333779761904765d
 		}
 		{
 			dependencies: [
@@ -977,8 +977,8 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
-			y: 8.0d
+			x: -3.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -986,6 +986,7 @@
 			tasks: [{
 				id: "0C0F2F37F6969734"
 				item: "immersiveengineering:mixer"
+				optional_task: true
 				type: "item"
 			}]
 			x: -2.5d
@@ -994,20 +995,277 @@
 		{
 			dependencies: [
 				"09349E61D7AF0C55"
-				"62EEE8CB1320336E"
 				"4AFEE3BCC0DC661B"
+				"1DED6CBFB9327179"
 			]
-			description: ["Used in creation of Circuit Backplanes and Advanced Components."]
+			description: ["Used in creation of Circuit Backplanes and Advanced Components or as replacement for terracotta in connectors recipes."]
 			id: "44DC54BD41EB3A08"
 			shape: "hexagon"
 			size: 1.2d
+			tasks: [
+				{
+					id: "564FC8212E117198"
+					item: "immersiveengineering:plate_duroplast"
+					type: "item"
+				}
+				{
+					id: "6523ADAE150D4846"
+					item: "immersiveengineering:duroplast"
+					type: "item"
+				}
+			]
+			title: "Duroplast"
+			x: 5.220238095238095d
+			y: 14.689732142857132d
+		}
+		{
+			dependencies: ["11CAA0BF384301E3"]
+			description: [""]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:graphite_electrode"
+				tag: {
+					graphDmg: 0
+				}
+			}
+			id: "188646189318B493"
+			tasks: [
+				{
+					id: "57A02E9333FA6CA2"
+					item: {
+						Count: 1
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "electrode"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "092EADDA316BD013"
+					item: {
+						Count: 1
+						id: "immersiveengineering:graphite_electrode"
+						tag: {
+							graphDmg: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Electrodes"
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			description: ["Fills things with liquids or procces them using molds!"]
+			id: "1DED6CBFB9327179"
 			tasks: [{
-				id: "564FC8212E117198"
-				item: "immersiveengineering:plate_duroplast"
+				id: "6A5C926AE5FC206C"
+				item: "immersiveengineering:bottling_machine"
+				optional_task: true
 				type: "item"
 			}]
-			x: 5.184523809523803d
-			y: 11.482589285714283d
+			x: 1.8869047619047663d
+			y: 10.762351190476195d
+		}
+		{
+			dependencies: [
+				"09349E61D7AF0C55"
+				"36F0492E4EA28759"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Made out of wooden dusts can be used in replacement for planks in recipes."]
+			id: "31FC10A01A0DFBDD"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "5F091056170D3FFE"
+				item: "immersiveengineering:fiberboard"
+				type: "item"
+			}]
+			title: "Repurposing wastes"
+			x: 1.2d
+			y: 13.799999999999999d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			description: [
+				"Procces wood to get more planks or just break down other wooden things."
+				""
+				"Another source of wood sawmill that used in creation of fiberboard."
+			]
+			id: "36F0492E4EA28759"
+			tasks: [{
+				id: "368236EDE37E6A04"
+				item: "immersiveengineering:sawmill"
+				optional_task: true
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["79EF5B4E470ACDB4"]
+			description: [
+				"&lSlag&r that you get as waste can be repurposed into different things."
+				""
+				"Slag Gravel boost grow of water based plants."
+				""
+				"Slag Glass can work as insulator for HV relays."
+				""
+				"Slag Bricks have blast resistance."
+			]
+			id: "37392944F830DC3E"
+			tasks: [
+				{
+					id: "5DC071CF057CAC30"
+					item: "immersiveengineering:slag_brick"
+					type: "item"
+				}
+				{
+					id: "2771DF363D784788"
+					item: "immersiveengineering:slag_gravel"
+					type: "item"
+				}
+				{
+					id: "51E112E6F288D153"
+					item: "immersiveengineering:slag_glass"
+					type: "item"
+				}
+			]
+			title: "Slag Wonders"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			description: ["Getting Plant Oil in mass and to create HOP graphite for Arc Furnace!"]
+			icon: "immersiveengineering:squeezer"
+			id: "5FDD4C98C139F016"
+			tasks: [
+				{
+					id: "41D20D898B4D7561"
+					item: "immersiveengineering:squeezer"
+					type: "item"
+				}
+				{
+					id: "48460ECFE244A923"
+					item: "immersiveengineering:ingot_hop_graphite"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"188646189318B493"
+				"5FDD4C98C139F016"
+				"60252A3A1D935245"
+				"745A282BA4A843D5"
+			]
+			description: [""]
+			id: "067427129EC1D197"
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "4618C2A655A00C69"
+				item: "immersiveengineering:arc_furnace"
+				type: "item"
+			}]
+			x: 1.9500000000000002d
+			y: 6.500000000000001d
+		}
+		{
+			dependencies: ["5FDD4C98C139F016"]
+			id: "22A502B9284FEEC5"
+			tasks: [{
+				id: "65C1034A239CD457"
+				item: "immersiveengineering:lightning_rod"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			id: "20FA9C099EFFB9A7"
+			tasks: [{
+				id: "6B7E28F93D8C0D1E"
+				item: "immersiveengineering:crusher"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			id: "45B0F7A0D28F319F"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "77E184BE043328D3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "immersiveengineering:drill"
+					}
+					type: "item"
+				}
+				{
+					id: "1D921E9316D1D775"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "immersiveengineering:buzzsaw"
+					}
+					type: "item"
+				}
+			]
+			title: "Heavy Tools"
+			x: -6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["45B0F7A0D28F319F"]
+			id: "3E9BCAAB4FF50A56"
+			tasks: [{
+				id: "35AA9813434E5F0A"
+				item: {
+					Count: 1
+					id: "immersiveengineering:maintenance_kit"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["45B0F7A0D28F319F"]
+			id: "7E3F72172F8A6C39"
+			tasks: [{
+				id: "3E298D38DE264907"
+				item: "immersiveengineering:jerrycan"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 13.0d
 		}
 	]
 	title: "Fancy Engineering"

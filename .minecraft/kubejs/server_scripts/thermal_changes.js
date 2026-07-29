@@ -62,6 +62,41 @@ ServerEvents.recipes(event => {
     F: 'steamadditions:steam_foundry'
   })
 
+  {//Vacuumulator
+    
+    event.replaceInput({id: "thermal:device_collector"},
+    "minecraft:hopper",
+    'immersive_machinery:redstone_mechanism'
+    )
+
+    event.replaceInput({id: "thermal:device_collector"},
+    "minecraft:ender_pearl",
+    'expandingtechnologies:item_vacuum'
+    )
+
+    event.replaceInput({id: "thermal:device_collector"},
+    "thermal:redstone_servo",
+    'immersiveengineering:electromagnet'
+    )
+
+    event.replaceInput({id: "thermal:device_collector"},
+    "#forge:glass",
+    'thermal:enderium_glass'
+    )
+  }
+
+  {//Aqueous Accumulator
+    event.replaceInput({id: "thermal:device_water_gen"},
+    "minecraft:bucket",
+    "minecraft:conduit"
+    )
+
+    /*event.replaceInput({id: "thermal:device_water_gen"},
+    "minecraft:iron_ingot",
+    "gtceu:infinite_water_cover"
+    )*/
+  }
+
   {//Pulverizer
     event.replaceInput(
     {id: "crusty_chunks:iron_gear_recipe"},

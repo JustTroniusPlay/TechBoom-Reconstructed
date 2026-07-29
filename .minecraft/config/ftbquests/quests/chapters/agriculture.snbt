@@ -50,6 +50,20 @@
 			x: 0.0d
 			y: 6.6d
 		}
+		{
+			id: "7B54216DC475A506"
+			linked_quest: "2E3EA7175DA2327F"
+			shape: "diamond"
+			size: 0.6d
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			id: "7DE855CEEF833C49"
+			linked_quest: "55CD3C049224FC35"
+			x: -0.5d
+			y: 5.5d
+		}
 	]
 	quests: [
 		{
@@ -2042,6 +2056,36 @@
 			}]
 			x: 0.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["0D791BC98BD89A90"]
+			description: [
+				"To boost grow of plants in machines you can use fertilizers."
+				""
+				"&oGarden Cloche&r use &lIndustrial Fertilizer&r."
+				""
+				"&oPhytogenic Incolator&r use &lPhyto-Gro&r."
+				""
+				"Vanilla Bone Meal still can be used in both machines. You can also use some components of fertilizers instead."
+			]
+			id: "0292C589FBF3C6F9"
+			shape: "hexagon"
+			size: 0.5d
+			tasks: [
+				{
+					id: "102083B715416B51"
+					item: "immersiveengineering:fertilizer"
+					type: "item"
+				}
+				{
+					id: "7633BCD371872A44"
+					item: "thermal:phytogro"
+					type: "item"
+				}
+			]
+			title: "Fertilizers"
+			x: 0.5091836734693942d
+			y: 6.923469387755098d
 		}
 	]
 	title: "Agriculture and Edibles"

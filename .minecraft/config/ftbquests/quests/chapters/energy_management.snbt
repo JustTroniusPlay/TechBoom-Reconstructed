@@ -660,6 +660,28 @@
 			x: 2.1d
 			y: -4.2d
 		}
+		{
+			dependencies: ["3CADA01B0663BC89"]
+			description: ["Can stop flow of power manually or with redstone signal."]
+			id: "735B17495C7C4DC8"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "20F9DEBA09936D78"
+					item: "immersiveengineering:breaker_switch"
+					type: "item"
+				}
+				{
+					id: "7036A513754492C2"
+					item: "immersiveengineering:redstone_breaker"
+					type: "item"
+				}
+			]
+			title: "Shutting Down Power"
+			x: -0.3017857142857139d
+			y: -5.0928571428571345d
+		}
 	]
 	title: "Energy Management"
 }

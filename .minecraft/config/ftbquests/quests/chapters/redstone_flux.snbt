@@ -41,6 +41,14 @@
 			x: 0.5102040816326507d
 			y: -3.6632653061224474d
 		}
+		{
+			id: "17D091CE1F7FB8E6"
+			linked_quest: "5361A9865C6547F4"
+			shape: "gear"
+			size: 1.5d
+			x: 9.0d
+			y: -2.7238945578231153d
+		}
 	]
 	quests: [
 		{
@@ -624,8 +632,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4DE3A5EB02DCDC59"]
@@ -639,8 +647,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.5d
+			x: 10.1d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4DE3A5EB02DCDC59"]
@@ -654,8 +662,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
+			x: 9.1d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4DE3A5EB02DCDC59"]
@@ -669,8 +677,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: -1.5d
+			x: 10.1d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
@@ -681,7 +689,7 @@
 			]
 			icon: "thermal:device_tree_extractor"
 			id: "4DE3A5EB02DCDC59"
-			shape: "gear"
+			size: 1.0d
 			tasks: [
 				{
 					id: "4E67081F5752155F"
@@ -695,8 +703,8 @@
 				}
 			]
 			title: "Latex"
-			x: 8.0d
-			y: -0.5d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1553365BB32E7666"]
@@ -920,6 +928,197 @@
 			]
 			x: 6.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			id: "52183F8D0ECBAC88"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "342F04DB8A2AE0FF"
+				item: "thermal:redprint"
+				type: "item"
+			}]
+			x: 1.2d
+			y: -0.3d
+		}
+		{
+			dependencies: ["52563AE115ACBF51"]
+			id: "6ECAD2E2ADF458D5"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "05E350D08BDFC7B8"
+				item: "thermal:lock"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"27D02A3ECE518CCE"
+			]
+			description: ["Catch things in the water using various items."]
+			icon: "thermal:device_fisher"
+			id: "55CD3C049224FC35"
+			size: 1.2d
+			tasks: [
+				{
+					id: "5D7935C9A4BD1155"
+					item: "thermal:device_fisher"
+					type: "item"
+				}
+				{
+					id: "3C94EF913EF4DAC4"
+					item: "thermal:junk_net"
+					type: "item"
+				}
+				{
+					id: "039013434504E090"
+					item: "thermal:aquachow"
+					type: "item"
+				}
+				{
+					id: "065247BAC9C10448"
+					item: "thermal:deep_aquachow"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -5.3999999999999995d
+		}
+		{
+			dependencies: ["52563AE115ACBF51"]
+			id: "7D2A3F6A10253029"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "3F833A82F318C872"
+				item: {
+					Count: 1
+					id: "thermal:detonator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.78673469387757d
+			y: 0.7710034013605593d
+		}
+		{
+			dependencies: ["2798CCE5B1DE21DA"]
+			icon: {
+				Count: 1
+				id: "thermal:xp_crystal"
+				tag: { }
+			}
+			id: "63DAC2C8EA115E22"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [
+				{
+					id: "4A8FDF1D8DE1E5F9"
+					item: {
+						Count: 1
+						id: "thermal:xp_crystal"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5976E2B11ACEBFA6"
+					item: "thermal:xp_storage_augment"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.2d
+			y: 0.6d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"0D791BC98BD89A90"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Creates Compost for Phytogenic Insolator and can be used in some recipes."]
+			icon: "thermal:device_composter"
+			id: "2E3EA7175DA2327F"
+			tasks: [
+				{
+					id: "4E30724D6A92D084"
+					item: "thermal:device_composter"
+					type: "item"
+				}
+				{
+					id: "0E4ECE09492C73A0"
+					item: "thermal:compost"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"63DAC2C8EA115E22"
+			]
+			id: "3BA851632B31C836"
+			tasks: [{
+				id: "286A00F6B3BC43EB"
+				item: "thermal:device_xp_condenser"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			description: ["Spreads potion effects around."]
+			id: "4D54D4EE4DBF13E0"
+			tasks: [{
+				id: "49A598650EF66838"
+				item: "thermal:device_potion_diffuser"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"07DD3A2F452B366A"
+			]
+			description: ["Destroys items and liquids that go into it."]
+			id: "35AD6FC9A487EFB4"
+			tasks: [{
+				id: "140FF9F39AFA5EA9"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			description: [
+				"Work as automatic stone blocks type farm. "
+				""
+				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
+			]
+			id: "016889850869B51A"
+			size: 1.0d
+			tasks: [{
+				id: "1AFF19B5C1CD91F1"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			title: "Stone farming"
+			x: 7.5d
+			y: -0.5d
 		}
 	]
 	title: "Redstone Machinery"

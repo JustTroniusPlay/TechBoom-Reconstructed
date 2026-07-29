@@ -185,7 +185,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["074857E8BD03F22B"]
@@ -218,6 +218,24 @@
 				type: "item"
 			}]
 			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["074857E8BD03F22B"]
+			id: "6D7846F74EFE27DB"
+			tasks: [
+				{
+					id: "779ECC865218EEB3"
+					item: "immersiveengineering:circuit_table"
+					type: "item"
+				}
+				{
+					id: "3D62D360835CFDDE"
+					item: "immersiveengineering:logic_unit"
+					type: "item"
+				}
+			]
+			x: 4.5d
 			y: 1.5d
 		}
 	]

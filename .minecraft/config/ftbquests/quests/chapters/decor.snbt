@@ -16,8 +16,8 @@
 		{
 			id: "32604DDD06610A0A"
 			linked_quest: "2C4EF247DFAA752C"
-			x: 3.5d
-			y: 7.5d
+			x: 5.5d
+			y: 7.0d
 		}
 		{
 			id: "6EB151E487E15967"
@@ -30,6 +30,7 @@
 		{
 			description: ["The most powerful tool for a builder. Expand the variety of blocks and add new ones to build with! "]
 			id: "497C619A7840452E"
+			shape: "rsquare"
 			tasks: [{
 				id: "5B2689FEB5A3B1F7"
 				item: {
@@ -56,16 +57,17 @@
 				"Additionally generators will power various furniture blocks like fridge, stove, lamps and etc."
 			]
 			id: "4EACC2BD120E4F11"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "60C994614265AA6E"
 					item: "cfm_wap:light_circuit_breaker"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "33FE2932243D6F82"
 					item: "refurbished_furniture:light_electricity_generator"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -99,8 +101,8 @@
 				item: "create:flywheel"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: 0.5d
+			y: 1.5d
 		}
 		{
 			description: ["Copycat block come with many forms and sizes. There even functional blocks like cogs, pipes and etc. "]
@@ -118,8 +120,8 @@
 				type: "item"
 			}]
 			title: "Shapeshifters of block world"
-			x: 1.5d
-			y: 1.5d
+			x: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["497C619A7840452E"]
@@ -237,8 +239,8 @@
 				}
 			]
 			title: "Decor Brackets"
-			x: 1.5d
-			y: 4.5d
+			x: 7.0d
+			y: 3.5d
 		}
 		{
 			id: "4F18D7D45D9753B5"
@@ -275,8 +277,8 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: 4.5d
+			x: 0.5d
+			y: 6.5d
 		}
 		{
 			id: "21ECBCD25A77230D"
@@ -297,8 +299,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: 4.5d
+			x: 1.5d
+			y: 6.5d
 		}
 		{
 			id: "0ED6CE7F452DE7FF"
@@ -328,8 +330,8 @@
 				item: "createdieselgenerators:andesite_girder"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 5.5d
+			x: 7.0d
+			y: 2.5d
 		}
 		{
 			id: "6B04EA2C93C2DA95"
@@ -356,8 +358,8 @@
 				title: "Microblocks Saws"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 6.0d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			id: "0F17C10C4998426B"
@@ -370,8 +372,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 6.0d
+			x: 2.0d
+			y: 8.5d
 		}
 		{
 			id: "67A41D397214BE42"
@@ -380,8 +382,8 @@
 				item: "immersiveengineering:clinker_brick"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 7.5d
+			x: 4.5d
+			y: 5.0d
 		}
 		{
 			id: "0909DFCD508EC139"
@@ -397,18 +399,19 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
+			x: 2.5d
 			y: 7.5d
 		}
 		{
+			description: ["Can be connected with LV wire to electrify intruders."]
 			id: "02AF1BC4057D548F"
 			tasks: [{
 				id: "0E6A648C297F1C7E"
 				item: "immersiveengineering:razor_wire"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 6.0d
+			x: 7.5d
+			y: 7.5d
 		}
 		{
 			id: "5EFC319A28000945"
@@ -492,8 +495,8 @@
 				}
 			]
 			title: "Metalic Lamps"
-			x: 7.0d
-			y: 9.0d
+			x: 3.0d
+			y: 8.5d
 		}
 		{
 			id: "0E3CD512D8925E70"
@@ -531,7 +534,7 @@
 			]
 			title: "Posts and Wallmounts"
 			x: 7.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4CCBE98B5628C77A"]
@@ -541,8 +544,28 @@
 				item: "createaddition:festive_spool"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 4.5d
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			id: "21573BDE950941B5"
+			tasks: [{
+				id: "5A8BEB0253B101C3"
+				item: "immersiveengineering:floodlight"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			id: "7E4A476C16C1223C"
+			tasks: [{
+				id: "616706C0EACF7142"
+				item: "immersiveengineering:concrete"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
 		}
 	]
 	title: "Decor"

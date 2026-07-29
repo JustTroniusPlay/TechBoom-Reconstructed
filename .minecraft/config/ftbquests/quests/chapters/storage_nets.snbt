@@ -50,6 +50,19 @@
 			x: -2.4755102040816084d
 			y: 7.030952380952382d
 		}
+		{
+			id: "7F4288F7FCBCE9EF"
+			linked_quest: "67A60A92B37AEADD"
+			size: 0.5d
+			x: -2.5d
+			y: 10.0d
+		}
+		{
+			id: "6DF3CC4A7FB10FDB"
+			linked_quest: "35AD6FC9A487EFB4"
+			x: 1.5d
+			y: 10.0d
+		}
 	]
 	quests: [
 		{
@@ -244,7 +257,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["32FCC9DCD937E066"]
+			dependencies: [
+				"32FCC9DCD937E066"
+				"67A60A92B37AEADD"
+			]
 			dependency_requirement: "one_completed"
 			description: ["Can put items into packages. Mostly need as a start for simple supply network."]
 			id: "5829B229883C5738"
@@ -304,8 +320,8 @@
 				item: "expandingtechnologies:item_vacuum"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 4.5d
+			x: -0.425d
+			y: 5.1d
 		}
 		{
 			dependencies: ["5829B229883C5738"]
@@ -616,13 +632,21 @@
 			dependency_requirement: "one_completed"
 			description: ["Stop inputed items and output them in configured amount. In basic mod will output items only &owhen all filters are satisfied&r."]
 			id: "5E1CC541E65C3D24"
-			tasks: [{
-				id: "44174784C133F210"
-				item: "immersiveengineering:item_batcher"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 10.5d
+			tasks: [
+				{
+					id: "44174784C133F210"
+					item: "immersiveengineering:item_batcher"
+					type: "item"
+				}
+				{
+					id: "65AEE4C8DBD4FA17"
+					item: "thermal:item_buffer"
+					type: "item"
+				}
+			]
+			title: "Item Buffers"
+			x: 3.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7A722F4E1BB2DF66"]
@@ -635,8 +659,8 @@
 				item: "immersiveengineering:electromagnet"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 6.0d
+			x: -0.425d
+			y: 5.949999999999999d
 		}
 		{
 			dependencies: ["7E43DE8E8F0F36A6"]
@@ -840,6 +864,40 @@
 			]
 			x: 3.6673469387755375d
 			y: 8.928273809523834d
+		}
+		{
+			dependencies: ["67A60A92B37AEADD"]
+			description: [""]
+			icon: "mekanism:cardboard_box"
+			id: "4AA19B080FE6EE1D"
+			tasks: [
+				{
+					id: "2EC7CCD8366A209D"
+					item: "mekanism:cardboard_box"
+					type: "item"
+				}
+				{
+					id: "53226A4EB4F1A461"
+					item: "forestry:carton"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7A722F4E1BB2DF66"]
+			description: ["Just collects items around it."]
+			id: "06D5422EDCA1FBFD"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "3C68CEA3E512A943"
+				item: "thermal:device_collector"
+				type: "item"
+			}]
+			x: -0.85d
+			y: 5.5249999999999995d
 		}
 	]
 	title: "Storage Solutions"

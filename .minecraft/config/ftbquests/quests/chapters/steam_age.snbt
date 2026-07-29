@@ -16,14 +16,6 @@
 			y: 0.5d
 		}
 		{
-			id: "7F9754840726B892"
-			linked_quest: "4DE3A5EB02DCDC59"
-			shape: "gear"
-			size: 1.2d
-			x: -0.7071428571428626d
-			y: 4.973873299319699d
-		}
-		{
 			id: "69298028232E244E"
 			linked_quest: "0A47F74F64457575"
 			size: 0.7d
@@ -55,14 +47,6 @@
 			y: -1.591836734693878d
 		}
 		{
-			id: "7F125D6CCF670BC5"
-			linked_quest: "4AFEE3BCC0DC661B"
-			shape: "hexagon"
-			size: 0.7d
-			x: -4.480357142857159d
-			y: 8.202976190476171d
-		}
-		{
 			id: "035B96C26594770B"
 			linked_quest: "69DB58E1CD20ED2B"
 			shape: "pentagon"
@@ -76,7 +60,7 @@
 			shape: "rsquare"
 			size: 1.5d
 			x: -5.25d
-			y: -0.75d
+			y: -2.25d
 		}
 	]
 	quests: [
@@ -444,8 +428,8 @@
 				}
 			]
 			title: "Modular Boilers"
-			x: -3.7003295068027384d
-			y: -3.014880952380949d
+			x: -1.99455782312927d
+			y: -2.699999999999996d
 		}
 		{
 			dependencies: ["6AF4C17E9C8FF9DC"]
@@ -458,8 +442,8 @@
 				item: "railcraft:fluid_fueled_firebox"
 				type: "item"
 			}]
-			x: -2.9003295068027484d
-			y: -3.0148809523809526d
+			x: -1.19455782312928d
+			y: -2.6999999999999997d
 		}
 		{
 			dependencies: ["156FF337D16F88B3"]
@@ -682,8 +666,8 @@
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -3.729581207483001d
-			y: -1.467261904761905d
+			x: -2.024819302721099d
+			y: -0.9383928571428584d
 		}
 		{
 			dependencies: ["6AF4C17E9C8FF9DC"]
@@ -711,8 +695,8 @@
 				}
 			]
 			title: "Steam Turbine"
-			x: -4.705771683673468d
-			y: -2.9971513605442084d
+			x: -3.0d
+			y: -2.6822704081632556d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -744,6 +728,8 @@
 				"With help of block mold you now can create proper glass blocks. No more small makeshift panels, now proper glass industry! "
 				""
 				"Put Glass Dust with Mold into Steam Alloy Smeltery to get your first actual glass."
+				""
+				"&lCheck 'Redstone Machinery' tab for new simple machines!&r"
 			]
 			icon: "gtceu:glass_dust"
 			id: "5361A9865C6547F4"
@@ -871,8 +857,8 @@
 				item: "tconstruct:tinkers_anvil"
 				type: "item"
 			}]
-			x: -5.3999999999999995d
-			y: 1.2d
+			x: -6.0d
+			y: 0.6d
 		}
 		{
 			dependencies: [
@@ -894,23 +880,30 @@
 		{
 			dependencies: [
 				"5361A9865C6547F4"
-				"4AFEE3BCC0DC661B"
 				"69DB58E1CD20ED2B"
 			]
-			description: ["Simple charger, just put you item inside!"]
+			description: ["Simple chargers, just put you item inside!"]
 			id: "6E68DB6406FB4D3F"
 			shape: "diamond"
 			size: 1.2d
-			tasks: [{
-				id: "2989E62548390D70"
-				item: "immersiveengineering:charging_station"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2989E62548390D70"
+					item: "immersiveengineering:charging_station"
+					type: "item"
+				}
+				{
+					id: "20AF6CC7140305D1"
+					item: "thermal:charge_bench"
+					type: "item"
+				}
+			]
 			x: -3.6232142857142975d
 			y: 8.231547619047596d
 		}
 		{
 			dependencies: ["6E68DB6406FB4D3F"]
+			dependency_requirement: "all_started"
 			id: "49BC12E8322CB378"
 			tasks: [{
 				id: "565D187B97710361"
@@ -922,10 +915,11 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6E68DB6406FB4D3F"]
+			dependency_requirement: "all_started"
 			id: "3F84A2143ACABE45"
 			tasks: [{
 				id: "609EC953E3C65D79"
@@ -937,10 +931,14 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 8.5d
+			y: 7.5d
 		}
 		{
-			dependencies: ["6E68DB6406FB4D3F"]
+			dependencies: [
+				"56D8B89369ABF606"
+				"49BC12E8322CB378"
+			]
+			dependency_requirement: "one_completed"
 			id: "1BB3AB8685428FB7"
 			shape: "diamond"
 			tasks: [{
@@ -948,11 +946,12 @@
 				item: "thermal:tinker_bench"
 				type: "item"
 			}]
-			x: -3.6113095238095454d
-			y: 9.14277210884351d
+			x: -3.59898490646259d
+			y: 9.507142857142867d
 		}
 		{
-			dependencies: ["1BB3AB8685428FB7"]
+			dependencies: ["6E68DB6406FB4D3F"]
+			dependency_requirement: "all_started"
 			id: "56D8B89369ABF606"
 			shape: "rsquare"
 			size: 1.2d
@@ -977,11 +976,11 @@
 				}
 			]
 			title: "Powered by Flux"
-			x: -3.5999999999999996d
-			y: 10.2d
+			x: -4.8d
+			y: 9.0d
 		}
 		{
-			dependencies: ["56D8B89369ABF606"]
+			dependencies: ["1BB3AB8685428FB7"]
 			id: "43943D53B8603D29"
 			shape: "diamond"
 			tasks: [{
@@ -989,11 +988,11 @@
 				item: "thermal:upgrade_augment_1"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 9.5d
+			x: -4.027556335034014d
+			y: 9.964285714285722d
 		}
 		{
-			dependencies: ["56D8B89369ABF606"]
+			dependencies: ["1BB3AB8685428FB7"]
 			description: ["Expand the mining radius and stored energy in the tools."]
 			id: "7BA759BE13798919"
 			shape: "diamond"
@@ -1009,27 +1008,8 @@
 					type: "item"
 				}
 			]
-			x: -2.6106292517007077d
-			y: 9.527125850340099d
-		}
-		{
-			dependencies: ["5361A9865C6547F4"]
-			description: [
-				"Work as automatic stone blocks type farm. "
-				""
-				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
-			]
-			id: "016889850869B51A"
-			shape: "diamond"
-			size: 0.85d
-			tasks: [{
-				id: "1AFF19B5C1CD91F1"
-				item: "thermal:device_rock_gen"
-				type: "item"
-			}]
-			title: "Stone farming"
-			x: -1.9436862244898094d
-			y: 3.558928571428538d
+			x: -3.1418420493197345d
+			y: 9.96428571428573d
 		}
 		{
 			dependencies: ["4879433BBEEF8352"]
@@ -1314,6 +1294,33 @@
 			}]
 			x: -5.777200255102052d
 			y: 2.47797619047617d
+		}
+		{
+			dependencies: [
+				"1C59476B07336B42"
+				"3E7E613DF18680A6"
+			]
+			id: "76889788A0271286"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "078864211106C431"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: -8.909704506802726d
+			y: 3.57589285714284d
+		}
+		{
+			dependencies: ["0324FC7EAE1601BA"]
+			id: "3E7E613DF18680A6"
+			tasks: [{
+				id: "4BA66895712E5A8F"
+				item: "ad_astra:fuel_refinery"
+				type: "item"
+			}]
+			x: -8.909704506802726d
+			y: 5.004464285714263d
 		}
 	]
 	title: "Steam Age"
