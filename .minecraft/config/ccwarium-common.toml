@@ -1,3 +1,0 @@
-#ids of wariumvs controlables.
-nodes = ["vehicle_control_node", "control_seat"]
-
