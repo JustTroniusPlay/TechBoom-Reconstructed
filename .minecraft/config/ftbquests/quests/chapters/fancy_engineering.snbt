@@ -107,7 +107,23 @@
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Some complex machinery require you to build a structure from multiple blocks which are present here. "]
+			description: [
+				"Some complex machinery require you to build a structure from multiple blocks which are present here."
+				""
+				"{@pagebreak}"
+				"Every Immersive Engineering multiblock machine have indicators for its sides:"
+				""
+				"- Blue means input for liquids or items."
+				""
+				"- Orange is output."
+				""
+				"- Red is redstone signal control."
+				""
+				"- Yellow or orange colors indicate energy inputs."
+				""
+				"{@pagebreak}"
+				"You can always check JEI to see what block you need to click with Engineer's Hammer for activation. Every quest have completed machine showed in it."
+			]
 			id: "0729C937DEFF1E0B"
 			shape: "hexagon"
 			size: 1.5d
@@ -201,8 +217,20 @@
 		}
 		{
 			dependencies: ["55C78E5A9D06111B"]
+			description: [
+				"Generate 4096 FE/t consuming various liquids, mainly Diesel and its Bio variant."
+				""
+				"its very fuel hungry, so its best to make continues supply of fuel you want to use."
+				""
+				"{@pagebreak}"
+				"Three energy outputs above will split energy between themselves. And &ogenerator will not gonna work if there no way to output energy&r."
+				""
+				"Use redstone signal on side panel if you wish to deactivate generator. "
+			]
 			icon: "immersiveengineering:diesel_generator"
 			id: "0375476849A35537"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [
 				{
 					id: "7252B7A65F54D22A"
@@ -252,6 +280,7 @@
 		{
 			dependencies: ["09349E61D7AF0C55"]
 			id: "55C78E5A9D06111B"
+			shape: "hexagon"
 			tasks: [{
 				id: "33022D811112F1B3"
 				item: "immersiveengineering:biodiesel_bucket"
@@ -308,6 +337,7 @@
 			]
 			description: ["Simple water wheels that convert movement of water into energy. You can put max to 3 wheels on one kinetic dynamo. "]
 			id: "4C8C44388703BD22"
+			shape: "rsquare"
 			tasks: [{
 				count: 3L
 				id: "77B2B70E6B74701B"
@@ -392,7 +422,7 @@
 				"11CAA0BF384301E3"
 				"62EEE8CB1320336E"
 			]
-			description: ["Molds to use in metal press. Not only for plates, but for other things: gears, rods, wires and even packing items!"]
+			description: ["Molds to use in metal press. Not only for plates, but for other things: gears, rods, wires and even to pack items!"]
 			icon: "immersiveengineering:mold_gear"
 			id: "60252A3A1D935245"
 			shape: "diamond"
@@ -843,6 +873,7 @@
 			dependencies: ["79EF5B4E470ACDB4"]
 			description: ["Best standalone version of steel creating furnace."]
 			id: "697FDEFDED0990AC"
+			shape: "diamond"
 			tasks: [{
 				count: 36L
 				id: "1BCE9E2477B7E389"
@@ -916,9 +947,6 @@
 				"Put it as close as possible to the veins center. Putting it far away increase the chance of getting spoil blocks instead of ore. "
 				""
 				"&oKeep in mind&r that some &lore veins can overlap&r so sometimes you can sacrifice efficency for collecting multiple veins."
-				""
-				"{@pagebreak}"
-				"The side of Excavator with black spots - energy input. While back of the machine have redstone control to deactivate it with signal and output hatch to get items."
 			]
 			icon: "immersiveengineering:excavator"
 			id: "349E3A39938B8B33"
@@ -998,7 +1026,7 @@
 				"4AFEE3BCC0DC661B"
 				"1DED6CBFB9327179"
 			]
-			description: ["Used in creation of Circuit Backplanes and Advanced Components or as replacement for terracotta in connectors recipes."]
+			description: ["Used in creation of &oCircuit Backplanes and Advanced Electronic Components&r or as replacement for terracotta in connectors recipes."]
 			id: "44DC54BD41EB3A08"
 			shape: "hexagon"
 			size: 1.2d
@@ -1019,8 +1047,15 @@
 			y: 14.689732142857132d
 		}
 		{
-			dependencies: ["11CAA0BF384301E3"]
-			description: [""]
+			dependencies: [
+				"11CAA0BF384301E3"
+				"067427129EC1D197"
+			]
+			description: [
+				"Electrodes you create using presses unfortunately gets damaged in the process."
+				""
+				"You probably just luck some knowledge how to make more fine Electrodes that will last longer. Maybe someone in this world still knows how to create them..?"
+			]
 			icon: {
 				Count: 1
 				id: "immersiveengineering:graphite_electrode"
@@ -1054,7 +1089,7 @@
 					type: "item"
 				}
 			]
-			title: "Electrodes"
+			title: "Fine Electrodes"
 			x: 3.5d
 			y: 6.5d
 		}
@@ -1087,7 +1122,7 @@
 				type: "item"
 			}]
 			title: "Repurposing wastes"
-			x: 1.2d
+			x: 2.4d
 			y: 13.799999999999999d
 		}
 		{
@@ -1096,14 +1131,32 @@
 				"Procces wood to get more planks or just break down other wooden things."
 				""
 				"Another source of wood sawmill that used in creation of fiberboard."
+				""
+				"{@pagebreak}"
+				"If you already have different source of sawdust you prefer you can skip this quest."
 			]
+			icon: "immersiveengineering:sawmill"
 			id: "36F0492E4EA28759"
-			tasks: [{
-				id: "368236EDE37E6A04"
-				item: "immersiveengineering:sawmill"
-				optional_task: true
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "368236EDE37E6A04"
+					item: "immersiveengineering:sawmill"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4FBB97C1687F6D19"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:sawdust"
+						}
+					}
+					title: "Sawdust"
+					type: "item"
+				}
+			]
 			x: 1.0d
 			y: 12.5d
 		}
@@ -1142,7 +1195,7 @@
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
-			description: ["Getting Plant Oil in mass and to create HOP graphite for Arc Furnace!"]
+			description: ["Getting Plant Oil in mass and to create HOP Graphite for Arc Furnace Electrodes!"]
 			icon: "immersiveengineering:squeezer"
 			id: "5FDD4C98C139F016"
 			tasks: [
@@ -1162,29 +1215,54 @@
 		}
 		{
 			dependencies: [
-				"188646189318B493"
 				"5FDD4C98C139F016"
 				"60252A3A1D935245"
 				"745A282BA4A843D5"
 			]
-			description: [""]
+			description: [
+				"Arc Furnace is powerful multiblock machine &ocapable of processing multiple recipes&r at ones, but consumes a bunch of energy which indicated by its multiple energy inputs on the back."
+				""
+				"It counts as &ofinal upgrade for your Blast Furnace&r and can supply you with as much &lSteel&r as you ever need if you can meet its energy demands."
+				""
+				"{@pagebreak}"
+				"Arc Furnace work using &lElectrodes&r - special components made out of carbon. Their durability will be consumed over time and you need to replace them."
+				""
+				"You can create them using molds in Metal Pressess on &lHOP Graphite&r."
+			]
+			icon: "immersiveengineering:arc_furnace"
 			id: "067427129EC1D197"
 			shape: "rsquare"
 			size: 1.3d
-			tasks: [{
-				id: "4618C2A655A00C69"
-				item: "immersiveengineering:arc_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4618C2A655A00C69"
+					item: "immersiveengineering:arc_furnace"
+					type: "item"
+				}
+				{
+					id: "11FD9F558177F428"
+					item: {
+						Count: 1
+						id: "immersiveengineering:graphite_electrode"
+						tag: {
+							graphDmg: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 1.9500000000000002d
 			y: 6.500000000000001d
 		}
 		{
 			dependencies: ["5FDD4C98C139F016"]
 			id: "22A502B9284FEEC5"
+			shape: "diamond"
 			tasks: [{
 				id: "65C1034A239CD457"
 				item: "immersiveengineering:lightning_rod"
+				optional_task: true
 				type: "item"
 			}]
 			x: 2.0d
@@ -1266,6 +1344,20 @@
 			}]
 			x: -6.0d
 			y: 13.0d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Do you ever wanted to make"]
+			id: "3672AA82CBFB10E0"
+			shape: "diamond"
+			tasks: [{
+				id: "784EF9AE7FC2DDE2"
+				item: "gtceu:charcoal_pile_igniter"
+				type: "item"
+			}]
+			title: "Stucked on charcoal"
+			x: -4.5d
+			y: 1.5d
 		}
 	]
 	title: "Fancy Engineering"

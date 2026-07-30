@@ -370,8 +370,8 @@
 				}
 			]
 			title: "Liquid Boilers"
-			x: -2.413254676870764d
-			y: 2.9392006802721014d
+			x: -3.15d
+			y: 2.8d
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
@@ -394,7 +394,7 @@
 				}
 			]
 			title: "Solar Boilers"
-			x: -3.15d
+			x: -4.2d
 			y: 2.8d
 		}
 		{
@@ -882,7 +882,7 @@
 				"5361A9865C6547F4"
 				"69DB58E1CD20ED2B"
 			]
-			description: ["Simple chargers, just put you item inside!"]
+			description: ["Simple chargers, just put your item inside!"]
 			id: "6E68DB6406FB4D3F"
 			shape: "diamond"
 			size: 1.2d
@@ -890,11 +890,13 @@
 				{
 					id: "2989E62548390D70"
 					item: "immersiveengineering:charging_station"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "20AF6CC7140305D1"
 					item: "thermal:charge_bench"
+					optional_task: true
 					type: "item"
 				}
 			]
