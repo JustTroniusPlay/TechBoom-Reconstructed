@@ -41,7 +41,7 @@
 			description: [
 				"Better version of Blast Furnace from Nether resources!"
 				""
-				"Makes steel faster and can proccess Geology ores better then other ways."
+				"Makes steel faster and &ocan proccess Geology ores&r better then other ways."
 				""
 				"Just remember to clear Slag out of it!"
 			]
@@ -220,7 +220,7 @@
 			description: [
 				"Generate 4096 FE/t consuming various liquids, mainly Diesel and its Bio variant."
 				""
-				"its very fuel hungry, so its best to make continues supply of fuel you want to use."
+				"its very fuel hungry, so its best to make continues supply of fuel you want to use. This generator pretty loud so putting it far away can be a good idea."
 				""
 				"{@pagebreak}"
 				"Three energy outputs above will split energy between themselves. And &ogenerator will not gonna work if there no way to output energy&r."
@@ -274,8 +274,8 @@
 					type: "item"
 				}
 			]
-			x: -0.7202380952380878d
-			y: 17.772321428571423d
+			x: 1.5090136054421706d
+			y: 15.162638180272104d
 		}
 		{
 			dependencies: ["09349E61D7AF0C55"]
@@ -286,13 +286,14 @@
 				item: "immersiveengineering:biodiesel_bucket"
 				type: "item"
 			}]
-			x: -0.7202380952380878d
-			y: 16.272321428571423d
+			x: 1.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["16FA4B48AB337396"]
 			icon: "immersiveengineering:refinery"
 			id: "09349E61D7AF0C55"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "7E5C1336FEA69EEB"
@@ -305,13 +306,48 @@
 					item: "immersiveengineering:phenolic_resin_bucket"
 					type: "item"
 				}
+				{
+					count: 5L
+					id: "12352682DBDD82DA"
+					item: { Count: 5, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0BDE46792FEB7FE8"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "28DC6A2FCCB62AF3"
+					item: { Count: 2, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3A7BE7807A0F4C22"
+					item: { Count: 16, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					id: "7DAE45F152898A4E"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3BD2B573A551EE7E"
+					item: { Count: 8, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
 			]
-			x: -0.7202380952380878d
-			y: 14.772321428571423d
+			x: 1.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
-			description: ["Fermenter oxidize different plants to get in mass &lEthanol&r - one of elements to get Diesel or Phenolic Resin."]
+			description: ["Fermenter oxidize different plants to get in mass &lEthanol&r - one of elements to get Biodiesel or Phenolic Resin."]
 			icon: "immersiveengineering:fermenter"
 			id: "16FA4B48AB337396"
 			tasks: [
@@ -326,9 +362,44 @@
 					item: "immersiveengineering:ethanol_bucket"
 					type: "item"
 				}
+				{
+					count: 2L
+					id: "3738AE1D460C34A4"
+					item: { Count: 2, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "60DBDF972C4FE5B7"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "7B24194FF56D5C64"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5C206A6C180550A8"
+					item: { Count: 4, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2F01A1080353D3D2"
+					item: { Count: 4, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "61177AD5B773F5B5"
+					item: { Count: 4, id: "minecraft:cauldron" }
+					type: "item"
+				}
 			]
-			x: -0.7202380952380878d
-			y: 13.272321428571423d
+			x: 1.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -359,8 +430,8 @@
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
-			x: -2.1d
-			y: 2.8d
+			x: 3.1416666666666586d
+			y: 1.3276041666666316d
 		}
 		{
 			dependencies: ["11CAA0BF384301E3"]
@@ -458,8 +529,8 @@
 				type: "item"
 			}]
 			title: "Bullet-smithing"
-			x: 7.0d
-			y: 5.5d
+			x: 3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -771,8 +842,8 @@
 				type: "item"
 			}]
 			title: "Industrial Coke Oven"
-			x: -0.9708333333333101d
-			y: 6.350446428571416d
+			x: -0.9848639455782475d
+			y: 6.450053146258455d
 		}
 		{
 			dependencies: ["51D2A2A99A671311"]
@@ -789,7 +860,7 @@
 				item: "gtceu:coke_oven_bricks"
 				type: "item"
 			}]
-			size: 0.7d
+			size: 1.0d
 			tasks: [
 				{
 					id: "06A693B62FDAE319"
@@ -810,8 +881,8 @@
 					type: "item"
 				}
 			]
-			x: 5.178571428571459d
-			y: -0.7071428571428484d
+			x: 0.0d
+			y: -0.35d
 		}
 		{
 			dependencies: ["69057739C5B7EB11"]
@@ -840,8 +911,8 @@
 				type: "item"
 			}]
 			title: "Hellish Materials"
-			x: 0.0d
-			y: 3.5999999999999996d
+			x: 0.02380952380949708d
+			y: 3.8632653061224502d
 		}
 		{
 			dependencies: ["4647FBAA99333197"]
@@ -866,8 +937,8 @@
 					type: "item"
 				}
 			]
-			x: -1.2916666666666359d
-			y: 3.6552083333333343d
+			x: -1.2678571428571388d
+			y: 3.918473639455785d
 		}
 		{
 			dependencies: ["79EF5B4E470ACDB4"]
@@ -933,8 +1004,8 @@
 				}
 			]
 			title: "Unseen veins"
-			x: -3.5059523809523583d
-			y: 9.333779761904765d
+			x: -3.0d
+			y: 6.6d
 		}
 		{
 			dependencies: [
@@ -950,6 +1021,8 @@
 			]
 			icon: "immersiveengineering:excavator"
 			id: "349E3A39938B8B33"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [
 				{
 					id: "75F3F7EF48D2940B"
@@ -1005,8 +1078,8 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
-			y: 10.5d
+			x: -3.0d
+			y: 8.4d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -1017,8 +1090,8 @@
 				optional_task: true
 				type: "item"
 			}]
-			x: -2.5d
-			y: 12.5d
+			x: -3.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1026,7 +1099,7 @@
 				"4AFEE3BCC0DC661B"
 				"1DED6CBFB9327179"
 			]
-			description: ["Used in creation of &oCircuit Backplanes and Advanced Electronic Components&r or as replacement for terracotta in connectors recipes."]
+			description: ["Used in creation of &oCircuit Backplanes and Advanced Electronic Components&r and as replacement for terracotta in connectors recipes."]
 			id: "44DC54BD41EB3A08"
 			shape: "hexagon"
 			size: 1.2d
@@ -1043,8 +1116,8 @@
 				}
 			]
 			title: "Duroplast"
-			x: 5.220238095238095d
-			y: 14.689732142857132d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1096,22 +1169,59 @@
 		{
 			dependencies: ["0729C937DEFF1E0B"]
 			description: ["Fills things with liquids or procces them using molds!"]
+			icon: "immersiveengineering:bottling_machine"
 			id: "1DED6CBFB9327179"
-			tasks: [{
-				id: "6A5C926AE5FC206C"
-				item: "immersiveengineering:bottling_machine"
-				optional_task: true
-				type: "item"
-			}]
-			x: 1.8869047619047663d
-			y: 10.762351190476195d
+			tasks: [
+				{
+					id: "6A5C926AE5FC206C"
+					item: "immersiveengineering:bottling_machine"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "353A38DB28DEED26"
+					item: "immersiveengineering:fluid_pump"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3DA51CC6DE67CCE0"
+					item: { Count: 2, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					id: "040E6F1C1F16056F"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6988890E5860CB26"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "080E9DA6E76E5A61"
+					item: { Count: 3, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "252546C2112066BB"
+					item: { Count: 3, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
 				"09349E61D7AF0C55"
 				"36F0492E4EA28759"
 			]
-			dependency_requirement: "one_completed"
+			dependency_requirement: "all_started"
 			description: ["Made out of wooden dusts can be used in replacement for planks in recipes."]
 			id: "31FC10A01A0DFBDD"
 			shape: "hexagon"
@@ -1122,7 +1232,7 @@
 				type: "item"
 			}]
 			title: "Repurposing wastes"
-			x: 2.4d
+			x: 0.0d
 			y: 13.799999999999999d
 		}
 		{
@@ -1156,8 +1266,43 @@
 					title: "Sawdust"
 					type: "item"
 				}
+				{
+					count: 4L
+					id: "35EA258C6C0F2D1A"
+					item: { Count: 4, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "29DA812FB2B3BF4C"
+					item: { Count: 4, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "426EB3F617CDB858"
+					item: { Count: 2, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "156A8E1855757B89"
+					item: { Count: 6, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					id: "2CF84500D647214A"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3A9158043FE7456E"
+					item: { Count: 8, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
 			]
-			x: 1.0d
+			x: 0.0d
 			y: 12.5d
 		}
 		{
@@ -1209,6 +1354,46 @@
 					item: "immersiveengineering:ingot_hop_graphite"
 					type: "item"
 				}
+				{
+					count: 2L
+					id: "25EDC224B14A0068"
+					item: { Count: 2, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "22FDE487820466AE"
+					item: { Count: 4, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "0615B507A7E78D3B"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "077C85E43A3D06C7"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "30B94068DD2E00CE"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6EBCAE353FF1B6D5"
+					item: { Count: 3, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "61771F8D1DB80176"
+					item: { Count: 4, id: "immersiveengineering:wooden_barrel" }
+					type: "item"
+				}
 			]
 			x: 0.0d
 			y: 8.0d
@@ -1222,7 +1407,7 @@
 			description: [
 				"Arc Furnace is powerful multiblock machine &ocapable of processing multiple recipes&r at ones, but consumes a bunch of energy which indicated by its multiple energy inputs on the back."
 				""
-				"It counts as &ofinal upgrade for your Blast Furnace&r and can supply you with as much &lSteel&r as you ever need if you can meet its energy demands."
+				"It counts as &ofinal upgrade for your Improved Blast Furnace&r and can supply you with as much &lSteel&r as you ever need if you can meet its energy demands."
 				""
 				"{@pagebreak}"
 				"Arc Furnace work using &lElectrodes&r - special components made out of carbon. Their durability will be consumed over time and you need to replace them."
@@ -1251,20 +1436,123 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					count: 27L
+					id: "1462AB9A0F965CA6"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "642A382B8D37A9BF"
+					item: { Count: 10, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "2AB4439EAAF31942"
+					item: { Count: 14, id: "immersiveengineering:slab_sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4DE4F4759726A7F1"
+					item: { Count: 5, id: "thermal:steel_block" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "24A784C674F992E2"
+					item: { Count: 16, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4FE27F5658C38C07"
+					item: { Count: 5, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "3B37550001078651"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "1F0F94C03E1A341D"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "2C577C1C288EC748"
+					item: { Count: 10, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
 			]
 			x: 1.9500000000000002d
 			y: 6.500000000000001d
 		}
 		{
 			dependencies: ["5FDD4C98C139F016"]
+			description: [
+				"Catch lightning with this multiblock to generate a bunch of energy! "
+				""
+				"You need to stack steel fences on top and maybe even make fence \"net\" to succesfully get raw energy of nature."
+			]
+			icon: "immersiveengineering:lightning_rod"
 			id: "22A502B9284FEEC5"
 			shape: "diamond"
-			tasks: [{
-				id: "65C1034A239CD457"
-				item: "immersiveengineering:lightning_rod"
-				optional_task: true
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "65C1034A239CD457"
+					item: "immersiveengineering:lightning_rod"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3EF9413C2A15E750"
+					item: { Count: 4, id: "immersiveengineering:capacitor_hv" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1A4D688B6B106C38"
+					item: { Count: 3, id: "immersiveengineering:coil_hv" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7FE0726FDE7D57ED"
+					item: { Count: 4, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "16FF3331AA13F79F"
+					item: { Count: 8, id: "immersiveengineering:coil_lv" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3A2A03DE7A3AB194"
+					item: { Count: 4, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4F08EACCFF330F2F"
+					item: { Count: 4, id: "immersiveengineering:treated_fence" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7E61FD309D4175CA"
+					item: { Count: 8, id: "immersiveengineering:steel_fence" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: 8.0d
 		}
@@ -1277,10 +1565,18 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 8.5d
+			y: 12.5d
 		}
 		{
-			dependencies: ["0729C937DEFF1E0B"]
+			dependencies: ["55C78E5A9D06111B"]
+			description: [
+				"Drill and Buzzsaw that consumes (bio)diesel. You can refuel them directly in the Refinery."
+				""
+				"To make them work you need attachments that affect their range and other abilities."
+				""
+				"{@pagebreak}"
+				"Press Shift to break only on block or Shift+Right-click to change it to single-block mod."
+			]
 			id: "45B0F7A0D28F319F"
 			shape: "rsquare"
 			tasks: [
@@ -1296,6 +1592,7 @@
 						}
 						id: "immersiveengineering:drill"
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1310,15 +1607,17 @@
 						}
 						id: "immersiveengineering:buzzsaw"
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
 			title: "Heavy Tools"
-			x: -6.0d
-			y: 12.0d
+			x: 4.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["45B0F7A0D28F319F"]
+			description: ["Modify your tools on the go!"]
 			id: "3E9BCAAB4FF50A56"
 			tasks: [{
 				id: "35AA9813434E5F0A"
@@ -1331,23 +1630,24 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 11.0d
+			x: 4.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["45B0F7A0D28F319F"]
+			description: ["Can be used to take more fuel with you and refuel tools."]
 			id: "7E3F72172F8A6C39"
 			tasks: [{
 				id: "3E298D38DE264907"
 				item: "immersiveengineering:jerrycan"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 13.0d
+			x: 4.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Do you ever wanted to make"]
+			description: ["Do you ever wanted to make a bunch of charcoal?"]
 			id: "3672AA82CBFB10E0"
 			shape: "diamond"
 			tasks: [{
@@ -1358,6 +1658,388 @@
 			title: "Stucked on charcoal"
 			x: -4.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["0375476849A35537"]
+			description: [
+				"Protect your ears from loud noises."
+				""
+				"Especially Diesel generator you built!"
+				""
+				"You can customize color and sound volumes in Engineer's Workbench. Even attach them to your helmet!"
+			]
+			id: "1F1CEC52088C7EE6"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "5E8D307625DCC871"
+				item: "immersiveengineering:earmuffs"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 16.2d
+		}
+		{
+			dependencies: ["45B0F7A0D28F319F"]
+			description: ["Different drills give your tool various ranges and speed."]
+			id: "0DDF99D66641B5AC"
+			tasks: [
+				{
+					id: "226D5467F44D8743"
+					item: "immersiveengineering:drillhead_iron"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "686D7D929D5A20BE"
+					item: "immersiveengineering:drillhead_steel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "54790F401056FBC7"
+					item: {
+						Count: 1
+						id: "immersivegeology:drill_head_high_speed_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3206960CC627CDE7"
+					item: {
+						Count: 1
+						id: "immersivegeology:drill_head_titanium"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3A0A6233E4372811"
+					item: {
+						Count: 1
+						id: "immersivegeology:drill_head_tungsten_carbide"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Heavy Drills"
+			x: 6.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["45B0F7A0D28F319F"]
+			description: [
+				"Different blades effective for various work."
+				""
+				"&lSawblade&r - standart wood cutter."
+				""
+				"&lRockcutter&r - can break stone blocks like silktouch pickaxe."
+				""
+				"&lGrinding Disk&r - can collect mettal blocks with easy, but break fast on other things."
+			]
+			id: "18D07206AEBEE88B"
+			tasks: [
+				{
+					id: "12880CB628FC5BC3"
+					item: {
+						Count: 1
+						id: "immersiveengineering:sawblade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "62CC26741FC1F1E6"
+					item: {
+						Count: 1
+						id: "immersiveengineering:rockcutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "286F7DDD46A3E1B7"
+					item: {
+						Count: 1
+						id: "immersiveengineering:grindingdisk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Heavy Sawblades"
+			x: 6.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["45B0F7A0D28F319F"]
+			id: "405AD10056BC179A"
+			tasks: [
+				{
+					id: "206EC45B2C5EB11C"
+					item: "immersiveengineering:toolupgrade_drill_lube"
+					type: "item"
+				}
+				{
+					id: "2B3E9A33C72E4437"
+					item: "immersiveengineering:toolupgrade_drill_damage"
+					type: "item"
+				}
+				{
+					id: "6044DC26231A1874"
+					item: "immersiveengineering:toolupgrade_drill_fortune"
+					type: "item"
+				}
+				{
+					id: "64C785C8D02C074A"
+					item: "immersiveengineering:toolupgrade_drill_capacity"
+					type: "item"
+				}
+				{
+					id: "7B4545E8FF483229"
+					item: "immersiveengineering:toolupgrade_drill_waterproof"
+					type: "item"
+				}
+				{
+					id: "00B71B97581D6D24"
+					item: "immersiveengineering:toolupgrade_buzzsaw_spareblades"
+					type: "item"
+				}
+			]
+			title: "Heavy Upgrades"
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: [
+				"Steel upgrade to your shield that can be modified in Engineering Workbenche."
+				""
+				"{@pagebreak}"
+				"Double tap \"S\" key to equip shield with Magnetic Glove. You can change it in controls."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 2
+					}
+				}
+				id: "immersiveengineering:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4BA33B602CF1380F"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1618F2355DF4BD09"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 2
+							}
+						}
+						id: "immersiveengineering:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D8ED8F6745980FC"
+					item: "immersiveengineering:toolupgrade_shield_magnet"
+					type: "item"
+				}
+				{
+					id: "6C55109B89C9E981"
+					item: "immersiveengineering:toolupgrade_shield_shock"
+					type: "item"
+				}
+				{
+					id: "77E2165D86C146E2"
+					item: "immersiveengineering:toolupgrade_shield_flash"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: [
+				"Take some amount of energy with you to charge tools or use special upgrades. It will charge tools you holding."
+				""
+				"Accumulator Backpack itself need IE accumulator to store energy. Use Engineering's Workbench to modify."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 4
+					}
+				}
+				id: "immersiveengineering:powerpack"
+			}
+			id: "46BBF312DDDCB405"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3588D20CF11272B1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 4
+							}
+						}
+						id: "immersiveengineering:powerpack"
+					}
+					type: "item"
+				}
+				{
+					id: "39977366060980DC"
+					item: "immersiveengineering:toolupgrade_powerpack_antenna"
+					type: "item"
+				}
+				{
+					id: "6617B4F064CD1795"
+					item: "immersiveengineering:toolupgrade_powerpack_magnet"
+					type: "item"
+				}
+				{
+					id: "0FEFB4EC245D6CD1"
+					item: "immersiveengineering:toolupgrade_powerpack_induction"
+					type: "item"
+				}
+				{
+					id: "3833E2512182E1F4"
+					item: "immersiveengineering:toolupgrade_powerpack_tesla"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"287ACA017CA51588"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 21
+					}
+				}
+				id: "immersiveengineering:revolver"
+			}
+			id: "721BB33A3E1675DB"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "28EE517DC2366265"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 21
+							}
+						}
+						id: "immersiveengineering:revolver"
+					}
+					type: "item"
+				}
+				{
+					id: "09C6D59BE9A78739"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 8
+							}
+						}
+						id: "immersiveengineering:speedloader"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5D60272D07A5F53A"
+					item: "immersiveengineering:toolupgrade_railgun_scope"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7A54FBB35EB7323E"
+					item: "immersiveengineering:toolupgrade_revolver_bayonet"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E0AF9E3A1EAB915"
+					item: "immersiveengineering:toolupgrade_revolver_magazine"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3A68B2E2665E020A"
+					item: "immersiveengineering:toolupgrade_revolver_electro"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.9056122448979593d
+			y: 3.7418367346938766d
+		}
+		{
+			dependencies: ["287ACA017CA51588"]
+			icon: "immersiveengineering:wolfpack"
+			id: "013187654108253F"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "55BFF4D2D840C00A"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "specialBullet"
+					}
+				}
+				type: "item"
+			}]
+			title: "Special Bullets"
+			x: 3.514795918367362d
+			y: 4.25782312925169d
 		}
 	]
 	title: "Fancy Engineering"

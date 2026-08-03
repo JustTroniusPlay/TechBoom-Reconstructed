@@ -175,6 +175,7 @@
 				item: "forestry:foresters_manual"
 				type: "item"
 			}]
+			shape: "square"
 			size: 0.7d
 			tasks: [{
 				id: "4A84AC7EA26F5EC5"

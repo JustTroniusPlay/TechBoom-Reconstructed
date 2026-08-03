@@ -30,8 +30,8 @@
 			id: "28C7B746F4C22299"
 			linked_quest: "757887491266FA38"
 			size: 0.7d
-			x: 1.75d
-			y: 4.55d
+			x: 3.1857142857142846d
+			y: 4.988010204081644d
 		}
 		{
 			id: "164196E53947B6E2"
@@ -212,8 +212,8 @@
 				item: "thermal:crude_oil_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.5d
+			x: 3.15d
+			y: 4.2d
 		}
 		{
 			dependencies: [
@@ -243,8 +243,8 @@
 				}
 			]
 			title: "Refined Oil"
-			x: 4.2d
-			y: 3.5999999999999996d
+			x: 3.988095238095241d
+			y: 3.049914965986396d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]

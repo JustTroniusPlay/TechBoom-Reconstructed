@@ -46,7 +46,7 @@
 		{
 			id: "28F29F846C54834D"
 			linked_quest: "6F496DC9A766E115"
-			size: 0.85d
+			size: 0.6d
 			x: -2.4755102040816084d
 			y: 7.030952380952382d
 		}
@@ -613,8 +613,8 @@
 		{
 			dependencies: [
 				"566F5CF387C7F261"
-				"26041794979A3851"
 				"7E43DE8E8F0F36A6"
+				"32FCC9DCD937E066"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Simply will route items with its filters in UI. Right-click on it to open and configure what items will go in what colored side."]
@@ -867,7 +867,7 @@
 		}
 		{
 			dependencies: ["67A60A92B37AEADD"]
-			description: [""]
+			description: ["Can pickup block entities like chests and store them in your inventory. "]
 			icon: "mekanism:cardboard_box"
 			id: "4AA19B080FE6EE1D"
 			tasks: [
@@ -886,7 +886,10 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["7A722F4E1BB2DF66"]
+			dependencies: [
+				"1EC45844AE9357C0"
+				"22DBC765ABF06217"
+			]
 			description: ["Just collects items around it."]
 			id: "06D5422EDCA1FBFD"
 			shape: "diamond"
