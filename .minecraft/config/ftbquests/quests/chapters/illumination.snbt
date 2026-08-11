@@ -1,0 +1,93 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "illumination"
+	group: "3851BDF7432073CB"
+	icon: "createdeco:yellow_andesite_lamp"
+	id: "2F4B1E8A669654E8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0909DFCD508EC139"
+			tasks: [
+				{
+					id: "069D53A5053096E3"
+					item: "immersiveengineering:lantern"
+					type: "item"
+				}
+				{
+					id: "21BA438E06C08A07"
+					item: "immersiveengineering:electric_lantern"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			description: ["Can be made from various materials and with different colors depending on ingridient."]
+			id: "1C6724E2D84CF97C"
+			tasks: [
+				{
+					id: "1B61A8DC38F681CE"
+					item: "createdeco:yellow_andesite_lamp"
+					type: "item"
+				}
+				{
+					id: "7F97616C817C2452"
+					item: "createdeco:red_brass_lamp"
+					type: "item"
+				}
+				{
+					id: "0D1BD11EE7A092F1"
+					item: "createdeco:green_iron_lamp"
+					type: "item"
+				}
+				{
+					id: "3754F20E00B2928A"
+					item: "createdeco:blue_copper_lamp"
+					type: "item"
+				}
+				{
+					id: "423BC0BF2BDCA4E9"
+					item: "createdeco:yellow_industrial_iron_lamp"
+					type: "item"
+				}
+				{
+					id: "23DFAC2C06506304"
+					item: "createdeco:yellow_zinc_lamp"
+					type: "item"
+				}
+			]
+			title: "Metalic Lamps"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			id: "21573BDE950941B5"
+			tasks: [{
+				id: "5A8BEB0253B101C3"
+				item: "immersiveengineering:floodlight"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			id: "0F17C10C4998426B"
+			tasks: [{
+				id: "5D0278E3ECCC0DB9"
+				item: {
+					Count: 1
+					id: "immersiveengineering:balloon"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+	]
+	title: "Illumination"
+}

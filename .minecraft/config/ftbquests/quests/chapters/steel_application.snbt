@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steel_application"
+	group: "2A52AF7C0A2DD052"
+	id: "472969E081960F79"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Steel Application"
+}

@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "your_own_city"
-	group: ""
+	group: "78A677EE2AEFB46F"
 	icon: "mca:villager_editor"
 	id: "67B34152EE2C02BA"
-	order_index: 4
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{

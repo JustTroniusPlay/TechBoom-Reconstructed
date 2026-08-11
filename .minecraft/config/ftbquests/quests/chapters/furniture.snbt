@@ -1,0 +1,158 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "furniture"
+	group: "3851BDF7432073CB"
+	icon: "refurbished_furniture:oak_chair"
+	id: "407A59A75BB35AB4"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Before you will be able to get good furniture you need to power your crafting station. First step is crafting a source of electricity for your future Workbench."
+				""
+				"There two ways:"
+				"- Simple solid fuel generator to power your house."
+				"- Circuit braker that can use FE sources of energy."
+				""
+				"Additionally generators will power various furniture blocks like fridge, stove, lamps and etc."
+			]
+			id: "4EACC2BD120E4F11"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "60C994614265AA6E"
+					item: "cfm_wap:light_circuit_breaker"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "33FE2932243D6F82"
+					item: "refurbished_furniture:light_electricity_generator"
+					type: "item"
+				}
+			]
+			title: "Lights on!"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4EACC2BD120E4F11"]
+			description: ["To make complex and advanced furniture for your house you need Workbench. Everything will be crafted in this block."]
+			id: "171984E2621C6ACD"
+			tasks: [{
+				id: "7AAD2EC3AB5840C5"
+				item: "refurbished_furniture:workbench"
+				type: "item"
+			}]
+			title: "Advanced Furniture"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4EACC2BD120E4F11"]
+			description: ["By using wrench you can connect any electric devices to electric generator or just together."]
+			id: "4360743A4EE7CE7D"
+			shape: "diamond"
+			tasks: [{
+				id: "38AF26EB1352AEBF"
+				item: "refurbished_furniture:wrench"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "5FB266E16C440D33"
+			rewards: [
+				{
+					count: 16
+					id: "5920F817CD52F3F4"
+					item: "create:wooden_bracket"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2651D3540B690EE5"
+					item: "create:metal_bracket"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7E4E20439001D22F"
+					item: "create:wooden_bracket"
+					type: "item"
+				}
+				{
+					id: "4FEAC9EE20629459"
+					item: "create:metal_bracket"
+					type: "item"
+				}
+			]
+			title: "Decor Brackets"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			id: "7174B08F0F1FA468"
+			tasks: [{
+				id: "5B46E567D808CE1E"
+				item: "createdieselgenerators:andesite_girder"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			id: "0E3CD512D8925E70"
+			tasks: [
+				{
+					id: "1E4D8324AA81762C"
+					item: "immersiveengineering:treated_post"
+					type: "item"
+				}
+				{
+					id: "2D48FA1EA9ECFA44"
+					item: "immersiveengineering:treated_wallmount"
+					type: "item"
+				}
+				{
+					id: "6C6E7A1D0FC4A1DD"
+					item: "immersiveengineering:alu_post"
+					type: "item"
+				}
+				{
+					id: "0C5FF3756E2A5D32"
+					item: "immersiveengineering:alu_wallmount"
+					type: "item"
+				}
+				{
+					id: "413509D00BF7A827"
+					item: "immersiveengineering:steel_post"
+					type: "item"
+				}
+				{
+					id: "4BB81E7AA840FCE5"
+					item: "immersiveengineering:steel_wallmount"
+					type: "item"
+				}
+			]
+			title: "Posts and Wallmounts"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			id: "1CAF439EAD5B091D"
+			tasks: [{
+				id: "534F484BB986ED07"
+				item: "rsgauges:industrial_small_lever"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+	]
+	title: "Furniture"
+}

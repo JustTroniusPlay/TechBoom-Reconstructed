@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "multiblock_machines"
+	group: "2A52AF7C0A2DD052"
+	id: "323F0B0CF9AE49CB"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Heavy Machines"
+}

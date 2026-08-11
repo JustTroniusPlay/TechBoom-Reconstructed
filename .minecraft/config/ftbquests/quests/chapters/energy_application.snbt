@@ -1,0 +1,302 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "energy_application"
+	group: "552C56EECBA58F89"
+	icon: "create_new_age:basic_motor"
+	id: "32B9CDB6B8CD1D77"
+	order_index: 3
+	quest_links: [
+		{
+			id: "274448A5CC277BCC"
+			linked_quest: "25951FDCB7908145"
+			shape: "hexagon"
+			size: 1.5d
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			id: "53DDF683F1A265D2"
+			linked_quest: "69DB58E1CD20ED2B"
+			shape: "pentagon"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			id: "185B4F767F6B30CA"
+			linked_quest: "288826470DDF0F30"
+			shape: "octagon"
+			size: 0.7d
+			x: 3.6755102040816254d
+			y: -0.6816326530612251d
+		}
+		{
+			id: "42ABEC6CB08A1914"
+			linked_quest: "282CE827964FBE54"
+			shape: "hexagon"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			id: "46250AD836366B9D"
+			linked_quest: "0DB76665DD848A9A"
+			shape: "octagon"
+			size: 0.7d
+			x: 3.7163265306122426d
+			y: 0.5836734693877546d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"25951FDCB7908145"
+				"69DB58E1CD20ED2B"
+			]
+			description: ["Generate fixed amount of stress by consuming energy, but you can change it speed."]
+			id: "18BF6D22CDB7509D"
+			tasks: [{
+				id: "3E75252022BD8BD2"
+				item: "create_new_age:basic_motor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"18BF6D22CDB7509D"
+				"0E4D4401AF3EDF54"
+			]
+			id: "7168542153473DA6"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "566F7EB455062C02"
+				item: "create_new_age:basic_motor_extension"
+				type: "item"
+			}]
+			x: -0.4693877551020549d
+			y: -0.9353741496598644d
+		}
+		{
+			dependencies: [
+				"25951FDCB7908145"
+				"69DB58E1CD20ED2B"
+			]
+			icon: "create_new_age:overcharged_iron"
+			id: "5ECEF02D7431A68F"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "60F538EEAB17B4CD"
+					item: "create_new_age:basic_energiser"
+					type: "item"
+				}
+				{
+					id: "1B76AD2112C6742A"
+					item: "create_new_age:overcharged_iron"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5ECEF02D7431A68F"]
+			id: "0316B642B81524B4"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "54BE51B7463086F2"
+				item: "create_new_age:advanced_energiser"
+				type: "item"
+			}]
+			x: 1.5136054421768677d
+			y: 0.8095238095238102d
+		}
+		{
+			dependencies: ["0316B642B81524B4"]
+			id: "4D6E6EA47CA5978C"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "48907E5611166EA3"
+				item: "create_new_age:reinforced_energiser"
+				type: "item"
+			}]
+			x: 1.5136054421768677d
+			y: 1.319727891156461d
+		}
+		{
+			dependencies: ["4EF6BA6A14C473DA"]
+			id: "6E605D41A0CFDD7E"
+			size: 1.0d
+			tasks: [{
+				id: "2740AC605AC1361B"
+				item: "create_new_age:reinforced_motor"
+				type: "item"
+			}]
+			x: 0.48979591836734215d
+			y: -2.0510204081632644d
+		}
+		{
+			dependencies: [
+				"6E605D41A0CFDD7E"
+				"0E4D4401AF3EDF54"
+			]
+			id: "610C4C8C26ED7A5C"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "2B6901624C4B38FA"
+				item: "create_new_age:advanced_motor_extension"
+				type: "item"
+			}]
+			x: -0.4693877551020691d
+			y: -2.0578231292517017d
+		}
+		{
+			dependencies: ["5ECEF02D7431A68F"]
+			id: "4EF6BA6A14C473DA"
+			size: 1.0d
+			tasks: [{
+				id: "280DFCBEF5CD6FC8"
+				item: "create_new_age:advanced_motor"
+				type: "item"
+			}]
+			x: 1.5340136054421691d
+			y: -0.9455782312925116d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			id: "0E4D4401AF3EDF54"
+			shape: "octagon"
+			tasks: [{
+				id: "4F8727ABE9C24130"
+				item: "create_new_age:copper_circuit"
+				type: "item"
+			}]
+			x: -1.0816326530612486d
+			y: -1.5068027210884374d
+		}
+		{
+			dependencies: ["25951FDCB7908145"]
+			description: ["Will generate energy based on Rotation Per Minute and magnetic blocks used around the coil."]
+			icon: "create_new_age:generator_coil"
+			id: "59DE400FAB603D8A"
+			rewards: [{
+				count: 12
+				id: "7D45C659A4498194"
+				item: "create_new_age:magnetite_block"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "269949462ECBD686"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+				{
+					id: "1D916F39592C1711"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+			]
+			x: 0.5145408163265266d
+			y: 2.890306122448976d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "46A13C7F6842C1AE"
+			size: 0.7d
+			tasks: [{
+				id: "526ECE3776D213C2"
+				item: "create_new_age:layered_magnet"
+				type: "item"
+			}]
+			x: -0.2880952380952593d
+			y: 4.402736752595761d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "0FBD8C5E61338813"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "27E562EA84E185E1"
+				item: "create_new_age:redstone_magnet"
+				type: "item"
+			}]
+			x: 0.5219298245613828d
+			y: 3.9301266559255126d
+		}
+		{
+			dependencies: ["59DE400FAB603D8A"]
+			id: "50FB45708E0B12F5"
+			size: 0.7d
+			tasks: [{
+				id: "5DE441D21EB24EE3"
+				item: "create_new_age:fluxuated_magnetite"
+				type: "item"
+			}]
+			x: 1.2782312925169794d
+			y: 4.389981650554937d
+		}
+		{
+			dependencies: ["0FBD8C5E61338813"]
+			id: "4DF0DA70E0E5048F"
+			size: 0.7d
+			tasks: [{
+				id: "612B2AC75C9138B1"
+				item: "create_new_age:netherite_magnet"
+				type: "item"
+			}]
+			x: 0.5282312925169848d
+			y: 4.685228696741838d
+		}
+		{
+			dependencies: [
+				"5ECEF02D7431A68F"
+				"288826470DDF0F30"
+				"282CE827964FBE54"
+				"0DB76665DD848A9A"
+			]
+			icon: "create_new_age:reactor_rod"
+			id: "6789C590AFA6D9F1"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "629ABCE8FA8B92C6"
+					item: "create_new_age:reactor_casing"
+					type: "item"
+				}
+				{
+					id: "17A23DF864F88C9E"
+					item: "create_new_age:reactor_glass"
+					type: "item"
+				}
+				{
+					id: "11821ADD1CFCE2F1"
+					item: "create_new_age:reactor_fuel_acceptor"
+					type: "item"
+				}
+				{
+					id: "6FED96F28621D0F7"
+					item: "create_new_age:reactor_heat_vent"
+					type: "item"
+				}
+				{
+					id: "643B1B93877E0F9B"
+					item: "create_new_age:reactor_rod"
+					type: "item"
+				}
+			]
+			title: "Nuclear Kinetics"
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "Energy Application"
+}

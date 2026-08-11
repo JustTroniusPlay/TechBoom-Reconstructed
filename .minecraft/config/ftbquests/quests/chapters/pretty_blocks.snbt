@@ -1,0 +1,166 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pretty_blocks"
+	group: "3851BDF7432073CB"
+	icon: "chisel:factory/tilemosaic"
+	id: "01055C5B3084896B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The most powerful tool for a builder. Expand the variety of blocks and add new ones to build with! "]
+			id: "497C619A7840452E"
+			shape: "rsquare"
+			tasks: [{
+				id: "5B2689FEB5A3B1F7"
+				item: {
+					Count: 1
+					id: "chisel:iron_chisel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Friend of the builder"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["497C619A7840452E"]
+			id: "15B4E79FE3985C2F"
+			rewards: [{
+				count: 256
+				id: "76886DF9729BE4A9"
+				item: "chisel:factory/dots"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "7F547149E10C06EA"
+				item: { Count: 64, id: "chisel:factory/dots" }
+				type: "item"
+			}]
+			title: "Raw Metalic Style"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: ["With ProjectRed saw you can cut blocks into various shapes. Vertical slabs, panels and so much more. Almost every blocks can be used!"]
+			id: "3B2B9A664D1EC8D2"
+			shape: "rsquare"
+			tasks: [{
+				id: "6970E5F5257CF081"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cb_microblock:tools/saw"
+					}
+				}
+				title: "Microblocks Saws"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "67A41D397214BE42"
+			tasks: [{
+				id: "0EA9F2EB1411FE64"
+				item: "immersiveengineering:clinker_brick"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			id: "7E4A476C16C1223C"
+			tasks: [{
+				id: "616706C0EACF7142"
+				item: "immersiveengineering:concrete"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			description: ["Copycat block come with many forms and sizes. There even functional blocks like cogs, pipes and etc. "]
+			id: "07EAF46039399D70"
+			rewards: [{
+				count: 32
+				id: "65D1F874D314B014"
+				item: "copycats:copycat_block"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "767C95EDF7BF1763"
+				item: "copycats:copycat_block"
+				type: "item"
+			}]
+			title: "Shapeshifters of block world"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["545BBD97C96F963A"]
+			id: "77D53B254B716EB9"
+			tasks: [
+				{
+					id: "091B2AA08B830264"
+					item: "adchimneys:cobblestone_chimney"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "394B69321C7F9BCA"
+					item: "adchimneys:small_brick_chimney"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7BE95FE06C76C447"
+					item: "adchimneys:large_brick_chimney"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "514B073CB7F3CE94"
+					item: "adchimneys:metal_chimney"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "07DEE6017AEA51AC"
+					item: "adchimneys:glass_chimney"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "World of chimneys!"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["77D53B254B716EB9"]
+			id: "375012CBB7DEBA40"
+			shape: "diamond"
+			tasks: [{
+				id: "1BCE8DA30E8557DE"
+				item: {
+					Count: 1
+					id: "adchimneys:wooden_paintbrush"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+	]
+	title: "Pretty Blocks"
+}

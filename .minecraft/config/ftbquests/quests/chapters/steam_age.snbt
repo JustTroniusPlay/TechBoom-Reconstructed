@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "steam_age"
-	group: "495B816819C83ED9"
+	group: "67E30E93A58EC129"
 	icon: "gtceu:lp_steam_solid_boiler"
 	id: "394C51FF4CC2793B"
-	order_index: 0
+	order_index: 1
 	quest_links: [
 		{
 			id: "71474757EDAFDEB7"
@@ -433,7 +433,7 @@
 		}
 		{
 			dependencies: ["6AF4C17E9C8FF9DC"]
-			description: ["Uses lava and creosote oil instead of solid fuel."]
+			description: ["Uses creosote oil instead of solid fuel."]
 			id: "311D638942ACCDBD"
 			shape: "diamond"
 			size: 0.6d

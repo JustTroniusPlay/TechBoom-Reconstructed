@@ -5,7 +5,7 @@
 	group: "495B816819C83ED9"
 	icon: "forestry:bee_house"
 	id: "1F27CA7EEAD386FD"
-	order_index: 1
+	order_index: 0
 	quest_links: [{
 		id: "275A575F5F19A334"
 		linked_quest: "4619627EEEE566A4"

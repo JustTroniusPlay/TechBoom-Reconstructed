@@ -1,0 +1,31 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storages"
+	group: "3851BDF7432073CB"
+	icon: "immersiveengineering:silo"
+	id: "67E28922A3E0BAD2"
+	order_index: 2
+	quest_links: [
+		{
+			id: "45F19FA923F620A1"
+			linked_quest: "20F8F5FEA03406E6"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "6EB151E487E15967"
+			linked_quest: "28AA5C24C1C4BC2C"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			id: "32604DDD06610A0A"
+			linked_quest: "2C4EF247DFAA752C"
+			x: 4.5d
+			y: 1.5d
+		}
+	]
+	quests: [ ]
+	title: "Storages"
+}

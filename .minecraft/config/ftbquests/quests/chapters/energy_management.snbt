@@ -5,7 +5,7 @@
 	group: "78A677EE2AEFB46F"
 	icon: "thermal:energy_duct"
 	id: "153E7C5D5F57897F"
-	order_index: 2
+	order_index: 5
 	quest_links: [
 		{
 			id: "13DF990FC49D788F"
@@ -14,13 +14,6 @@
 			size: 1.5d
 			x: 1.0d
 			y: -0.5d
-		}
-		{
-			id: "7385056AFB4C6B16"
-			linked_quest: "006F0DFB4E9FE795"
-			title: "Brass Accumulator"
-			x: 2.4994897959183646d
-			y: 4.175000000000004d
 		}
 		{
 			id: "6F977D2B7482E7EE"
@@ -681,6 +674,33 @@
 			title: "Shutting Down Power"
 			x: -0.3017857142857139d
 			y: -5.0928571428571345d
+		}
+		{
+			dependencies: [
+				"1A155790CD83B2A7"
+				"2DC0C89F91D2AE1D"
+			]
+			description: [
+				"Upgrade of MV accumulator that stores 2X more energy, but its actual benefit comes from modularity - combining multiple blocks into one big battery!"
+				""
+				"Brass accumulator will auto output energy from top and bottom."
+			]
+			hide_dependent_lines: true
+			id: "006F0DFB4E9FE795"
+			rewards: [{
+				count: 3
+				id: "770B574F68E1A1F8"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C31D6E55511897C"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			title: "Brass Accumulator"
+			x: 2.5d
+			y: 4.5d
 		}
 	]
 	title: "Energy Management"

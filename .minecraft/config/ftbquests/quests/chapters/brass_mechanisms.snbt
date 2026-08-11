@@ -1,0 +1,993 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "brass_mechanisms"
+	group: "552C56EECBA58F89"
+	icon: "create:mechanical_crafter"
+	id: "27136CEFC88349D1"
+	order_index: 1
+	quest_links: [
+		{
+			id: "567528A927199C37"
+			linked_quest: "1A155790CD83B2A7"
+			shape: "hexagon"
+			size: 1.5d
+			x: 7.5d
+			y: 4.15d
+		}
+		{
+			id: "5C1D148877E2D7AB"
+			linked_quest: "5B16DA7287A8ABFE"
+			shape: "diamond"
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			id: "50DFA12EEBA8E8B5"
+			linked_quest: "49BFD7BD22B74CBD"
+			shape: "octagon"
+			size: 0.7d
+			x: 2.0180272108843553d
+			y: -4.055272108843528d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["7B289C03327D9227"]
+			description: ["Grind things down and destroy items that don't have any output!"]
+			id: "75D2966F919D360B"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				count: 2L
+				id: "1AAB0CDD45820F0D"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "Crushing Wheels"
+			x: -1.5819727891156448d
+			y: -4.255272108843529d
+		}
+		{
+			dependencies: ["2EF4C6591798F00E"]
+			description: ["Complex station that will harvest resources in ore vein chunk using rotational power and sometimes lava if needed."]
+			icon: "createoreexcavation:drilling_machine"
+			id: "746BED2E65591E76"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [
+				{
+					id: "6DC3201C3189C45F"
+					item: "createoreexcavation:drilling_machine"
+					type: "item"
+				}
+				{
+					id: "4BC0895228D1F6BF"
+					item: "createoreexcavation:drill"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "28062FBFD67FF084"
+					item: "createoreexcavation:diamond_drill"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "06516CC0A43E9063"
+					item: "createoreexcavation:netherite_drill"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7B289C03327D9227"
+				"49BFD7BD22B74CBD"
+			]
+			description: [
+				"Infinite ore veins need special equipment and preporation to gather."
+				""
+				"There exist some vanilla and modded veins from Thermal and Mekanism."
+				""
+				"{@pagebreak}"
+				""
+				"&lOre Vein Finder&r will help you seek for infinite ore veins that you will be able to drill for &oendless supply&r of various resources!"
+				""
+				"When you in chunk with ore vein use &lSample Drill&r to collect information about vein type. Drill need filled Air Tank on top to work."
+				""
+				"{@pagebreak}"
+				"Just click Sample Drill with &lAtlas&r after it finishes. Atlas save information about the ore veins you find: it will show type and coordinates of the vein. "
+				""
+				"You can additionally filter what veins you don't want to search next time. It can be helpful if you want to find a new resources."
+			]
+			id: "2EF4C6591798F00E"
+			rewards: [{
+				id: "0BC17D80EE89CEDD"
+				item: "createoreexcavation:drill"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5D2F173EBA533BDC"
+					item: "createoreexcavation:sample_drill"
+					type: "item"
+				}
+				{
+					id: "55FC0FF72E1009E8"
+					item: "createoreexcavation:vein_finder"
+					type: "item"
+				}
+				{
+					id: "2905A7258658BDC6"
+					item: "createoreexcavation:vein_atlas"
+					type: "item"
+				}
+			]
+			title: "Looking For Eternal Veins"
+			x: 1.0180272108843553d
+			y: -4.055272108843528d
+		}
+		{
+			dependencies: [
+				"766AF1AE840A63FD"
+				"75D2966F919D360B"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Molten Vents can generate some Create related blocks when lava is poured on them. But before that you need to use explosives to awake them from their dormant state. "
+				""
+				"Collect and crush blocks to get resources with some chance."
+			]
+			icon: "molten_vents:dormant_molten_asurine"
+			id: "382680D8EC3065F3"
+			shape: "hexagon"
+			tasks: [{
+				id: "5BF6F2EEB79D532B"
+				title: "Molten Vents"
+				type: "checkmark"
+			}]
+			x: -3.23588435374149d
+			y: -4.2059523809524d
+		}
+		{
+			dependencies: ["3D1CCF8E85981E52"]
+			description: ["Apply items to other items to craft things or can use tools like a player!"]
+			icon: "create:deployer"
+			id: "37FAA3D4CF96E9EE"
+			shape: "rsquare"
+			size: 1.2d
+			subtitle: "Need a hand?"
+			tasks: [{
+				id: "7C1169D7D67535EC"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 10.2d
+			y: -0.6d
+		}
+		{
+			dependencies: ["3D1CCF8E85981E52"]
+			description: ["Capable of craft things right in the world! And can work with even bigger grids then 3x3!"]
+			id: "7B289C03327D9227"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				count: 9L
+				id: "50C021836BABC536"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "Mechanical Crafters"
+			x: 3.0d
+			y: -0.6d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "42F2B3DC445CED5F"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "0D204D98A9693D68"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			x: 2.9615646258503077d
+			y: 3.1078231292516953d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			description: [""]
+			id: "35E21107F56A809E"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "5CED78FBD31C8589"
+				item: {
+					Count: 1
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.4615646258503077d
+			y: 2.6078231292516953d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			description: ["Little silly companion with modular abilities!"]
+			icon: "create_sa:brass_drone_item"
+			id: "2D24B69CEABE3F73"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "16DA750BAC91D902"
+					item: "create_sa:brass_drone_item"
+					type: "item"
+				}
+				{
+					id: "6BA9E14E300BC1C4"
+					item: "create_sa:drone_controller"
+					type: "item"
+				}
+			]
+			x: -1.4819727891156447d
+			y: -0.5552721088435284d
+		}
+		{
+			dependencies: ["2D24B69CEABE3F73"]
+			description: ["Additional storage for your drone!"]
+			id: "1D6381AA70C87A0E"
+			tasks: [{
+				id: "0C4D4AB1C4FFC13F"
+				item: "create_sa:vault_component"
+				type: "item"
+			}]
+			x: -0.4819727891156447d
+			y: -1.5552721088435284d
+		}
+		{
+			dependencies: ["2D24B69CEABE3F73"]
+			description: ["Push items!"]
+			id: "2071E54E3C20E9B0"
+			tasks: [{
+				id: "141DDDE49F857406"
+				item: "create_sa:fan_component"
+				type: "item"
+			}]
+			x: -0.4819727891156447d
+			y: 0.4447278911564716d
+		}
+		{
+			dependencies: ["2D24B69CEABE3F73"]
+			description: ["Give drone ability to break blocks."]
+			id: "0524C6A3A4051DAC"
+			tasks: [{
+				id: "7B51DF1E3282AFE1"
+				item: "create_sa:brass_drill_head"
+				type: "item"
+			}]
+			x: -2.4819727891156447d
+			y: 0.4447278911564716d
+		}
+		{
+			dependencies: ["2D24B69CEABE3F73"]
+			description: ["Can pick up blocks or entities and move them around! Attracks items too!"]
+			id: "37DC8B98BD8A2989"
+			tasks: [{
+				id: "599FE90366E31732"
+				item: "create_sa:copper_magnet"
+				type: "item"
+			}]
+			x: -2.4819727891156447d
+			y: -1.5552721088435284d
+		}
+		{
+			dependencies: [
+				"7B289C03327D9227"
+				"37FAA3D4CF96E9EE"
+			]
+			icon: "create_sa:heat_engine"
+			id: "7ED421A21A7BB90C"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "7B7D00BD48861DCD"
+					item: "create_sa:heat_engine"
+					type: "item"
+				}
+				{
+					id: "36DE4EC6B3272945"
+					item: {
+						Count: 1
+						id: "create_sa:andesite_jetpack_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "74A993EAE1CF1EF3"
+					item: {
+						Count: 1
+						id: "create_sa:andesite_exoskeleton_chestplate"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"37FAA3D4CF96E9EE"
+				"7B289C03327D9227"
+			]
+			icon: "create_sa:steam_engine"
+			id: "0E0B2F4801CE1F38"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "1A01BC99C57525E4"
+					item: "create_sa:steam_engine"
+					type: "item"
+				}
+				{
+					id: "3338D2E19066F518"
+					item: {
+						Count: 1
+						id: "create_sa:brass_jetpack_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "10B9F9ED8CF6B1BF"
+					item: {
+						Count: 1
+						id: "create_sa:brass_exoskeleton_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D1CCF8E85981E52"]
+			id: "01F0CE0956D6A361"
+			subtitle: "Clock out of blocks!"
+			tasks: [{
+				id: "6248A70F71D52EB6"
+				item: "create:clockwork_bearing"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "35EFF8146D90FE18"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "00E5D9239FED3AB9"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:chemical_sprayer"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "3B8B380CB2BD2FC7"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:chemical_sprayer_lighter"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.4615646258503077d
+			y: 2.6078231292516953d
+		}
+		{
+			dependencies: ["35EFF8146D90FE18"]
+			icon: "createdieselgenerators:chemical_turret"
+			id: "00CDC15A7E3EE931"
+			tasks: [
+				{
+					id: "1AFD2530A4B64520"
+					item: "createdieselgenerators:chemical_turret"
+					type: "item"
+				}
+				{
+					id: "23A7A332670DC8CF"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:lighter"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Hans bring the flammenwerfer"
+			x: 2.461564625850322d
+			y: 3.979251700680269d
+		}
+		{
+			dependencies: ["37FAA3D4CF96E9EE"]
+			description: ["Complex little thing for complex mechanisms."]
+			id: "0852CB10008D7CDB"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "15140B4F56F7A582"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 10.2d
+			y: -5.3999999999999995d
+		}
+		{
+			dependencies: ["0852CB10008D7CDB"]
+			description: ["Move items around where it was talled to."]
+			id: "11D2F8CDD6C8BE1E"
+			shape: "diamond"
+			subtitle: "Need a helping hand?"
+			tasks: [{
+				id: "35EC02D719243E98"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0852CB10008D7CDB"]
+			description: ["Control speed of yout kinetic network!"]
+			id: "305B85EBEB9776A3"
+			rewards: [{
+				id: "5A49412929F2A366"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0E38F3B4A6AD1591"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 10.978401360544197d
+			y: -4.779251700680284d
+		}
+		{
+			dependencies: ["1A155790CD83B2A7"]
+			description: ["Advanced Create component."]
+			id: "3D1CCF8E85981E52"
+			shape: "hexagon"
+			tasks: [{
+				id: "09034466495D9971"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3D1CCF8E85981E52"]
+			id: "16C915DA96722503"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "5A1C9770541C568A"
+				item: "vintageimprovements:belt_grinder"
+				type: "item"
+			}]
+			x: 7.490986394557808d
+			y: 2.1299319727890946d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			description: ["Consumes energy to generate stress. "]
+			id: "3238F7E1DF448006"
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "49357F146F9F534C"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: 4.428571428571431d
+			y: 1.5238095238095255d
+		}
+		{
+			dependencies: [
+				"7B289C03327D9227"
+				"69DB58E1CD20ED2B"
+			]
+			description: ["Generate energy based on rotational input."]
+			id: "600DDB0FDB97CFFA"
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "688817377E3F75B2"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0852CB10008D7CDB"]
+			description: ["Stores kinetic.. energy? Yea, I thinks thats.. right?"]
+			id: "43E9C14749BCCDAB"
+			shape: "diamond"
+			tasks: [{
+				id: "1DE9E628F17FF16C"
+				item: "create_connected:kinetic_battery"
+				type: "item"
+			}]
+			x: 10.883163265306102d
+			y: -6.160204081632671d
+		}
+		{
+			dependencies: ["37FAA3D4CF96E9EE"]
+			id: "70A43884F1EE4D7A"
+			shape: "rsquare"
+			size: 0.7d
+			tasks: [{
+				id: "44897A9AC6CC214E"
+				item: "create_factory_logistics:fluid_mechanism"
+				type: "item"
+			}]
+			x: 10.21649659863943d
+			y: 0.6731292517006651d
+		}
+		{
+			dependencies: ["3D1CCF8E85981E52"]
+			id: "269BE244B9748C44"
+			tasks: [{
+				id: "6404C505F94DD717"
+				item: "create:content_observer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A155790CD83B2A7"]
+			id: "05641858A233D910"
+			tasks: [{
+				id: "3388CAAE5DE6EAB6"
+				item: "create:attribute_filter"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.4d
+		}
+		{
+			dependencies: ["7ED421A21A7BB90C"]
+			description: ["You can put Filling and Fueling tanks into the Charm slot in your accessories. Your Jetpacks and Exoskeletons will use their fuel first."]
+			id: "3768363D8D069FD0"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [
+				{
+					id: "09A8549F9A2D449A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_sa:small_fueling_tank"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0257FAB3E88DF213"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_sa:medium_fueling_tank"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "77AB653C7F61E62B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_sa:large_fueling_tank"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fueling Tanks"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["75D2966F919D360B"]
+			id: "031B519BF4D06C79"
+			size: 0.7d
+			tasks: [{
+				id: "6C6472BBCEEDA677"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			x: -2.3819727891156446d
+			y: -5.305272108843528d
+		}
+		{
+			dependencies: ["031B519BF4D06C79"]
+			id: "6EF8A861057F5B0C"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "160718F1612ECF4A"
+					item: {
+						Count: 1
+						id: "create_sa:experience_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "512A90C8216EE293"
+					item: {
+						Count: 1
+						id: "create_sa:experience_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5AD06944001644E0"
+					item: {
+						Count: 1
+						id: "create_sa:experience_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "688BAE7EA39FC4A6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"undermod:capability_item_life_leech": {
+								power: 1
+							}
+						}
+						id: "create_sa:experience_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -3.2239795918367236d
+			y: -5.313095238095261d
+		}
+		{
+			dependencies: ["7ED421A21A7BB90C"]
+			id: "40B6B0C798A68B81"
+			tasks: [{
+				id: "2337EDCABE644A51"
+				item: {
+					Count: 1
+					id: "create_sa:flamethrower"
+					tag: {
+						tagActivated: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E0B2F4801CE1F38"]
+			id: "2A4AFDE15F127A08"
+			tasks: [{
+				id: "777F9D46FFCF46D3"
+				item: {
+					Count: 1
+					id: "create_sa:portable_drill"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7ED421A21A7BB90C"]
+			id: "6C4582F5223A69AB"
+			tasks: [{
+				id: "5E0386E552BA4E93"
+				item: {
+					Count: 1
+					id: "create_sa:grapplin_whisk"
+					tag: {
+						tagHooked: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			id: "45859986D34FB28C"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3525B965F120E8F0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"undermod:capability_item_life_leech": {
+								power: 1
+							}
+						}
+						id: "create_sa:rose_quartz_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FCAAC9D6FFD064C"
+					item: {
+						Count: 1
+						id: "create_sa:rose_quartz_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B9BED94B6B992C5"
+					item: {
+						Count: 1
+						id: "create_sa:rose_quartz_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B24095B4F6D6288"
+					item: {
+						Count: 1
+						id: "create_sa:rose_quartz_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Gilded Tools"
+			x: 1.963435374149661d
+			y: 2.1054421768707705d
+		}
+		{
+			dependencies: ["0E0B2F4801CE1F38"]
+			id: "6C7E622388940B38"
+			size: 1.0d
+			tasks: [{
+				id: "5CA1B3CA6D717365"
+				item: {
+					Count: 1
+					id: "create_sa:netherite_jetpack_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			description: ["Can help you charge Certus Quartz and get Channeling Enchantment."]
+			id: "115F76F055B5EB09"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "436FB829F5275F40"
+					item: "createaddition:tesla_coil"
+					type: "item"
+				}
+				{
+					id: "001537BFB3BF4A44"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			x: 3.963435374149661d
+			y: 2.1054421768707705d
+		}
+		{
+			dependencies: ["0852CB10008D7CDB"]
+			description: ["Simply craft more glass panes from one glass block."]
+			id: "14EC0F32B3ED3C33"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "0F976689CD00F595"
+				item: "vintageimprovements:laser"
+				type: "item"
+			}]
+			x: 9.597448979591817d
+			y: -4.826870748299335d
+		}
+		{
+			dependencies: [
+				"0852CB10008D7CDB"
+				"7B289C03327D9227"
+			]
+			id: "769E68032FC9806D"
+			tasks: [{
+				id: "44108E03742800E5"
+				item: "vintageimprovements:lathe"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			description: ["Automated Smithing Table."]
+			id: "3F6DF0D28A64980E"
+			size: 0.7d
+			tasks: [{
+				id: "0886E6A8BB4B16CE"
+				item: "vintageimprovements:helve_hammer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.3d
+		}
+		{
+			dependencies: ["769E68032FC9806D"]
+			id: "6E9B2C7B591148F9"
+			tasks: [{
+				id: "3E124680BD9DC007"
+				item: "vintageimprovements:curving_press"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["746BED2E65591E76"]
+			description: ["Brother of Drilling Machine that capable of extracting fluids: water, oil or lava."]
+			id: "757887491266FA38"
+			size: 0.7d
+			tasks: [{
+				id: "7A5360473CD53AB9"
+				item: "createoreexcavation:extractor"
+				type: "item"
+			}]
+			x: 0.984863945578212d
+			y: -6.357993197278915d
+		}
+		{
+			dependencies: ["0852CB10008D7CDB"]
+			description: ["Better version of Andesite Chunk Loader. "]
+			icon: "create_power_loader:brass_chunk_loader"
+			id: "43DC6334943F14C6"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "21623579CD8926B0"
+					item: "create_power_loader:empty_brass_chunk_loader"
+					type: "item"
+				}
+				{
+					id: "764AC632E584B490"
+					item: "create_power_loader:brass_chunk_loader"
+					type: "item"
+				}
+			]
+			x: 9.549829931972766d
+			y: -6.11258503401362d
+		}
+		{
+			dependencies: ["75D2966F919D360B"]
+			id: "282CE827964FBE54"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2108F3DF32238F73"
+					item: "create_new_age:radioactive_thorium"
+					type: "item"
+				}
+				{
+					id: "7DF3B7E9A698617A"
+					item: "create_new_age:nuclear_fuel"
+					type: "item"
+				}
+			]
+			x: -3.2239795918367236d
+			y: -3.14642857142859d
+		}
+		{
+			dependencies: [
+				"3082ACB31EDFB2D1"
+				"7B289C03327D9227"
+			]
+			description: ["Machine for oil harvesting."]
+			id: "0D95F54AC91C2DF0"
+			rewards: [{
+				count: 128
+				id: "2CDD15D8E47C8B90"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "756CAB5FB9173561"
+					item: "createdieselgenerators:pumpjack_bearing"
+					type: "item"
+				}
+				{
+					id: "536EA1287B8280EB"
+					item: "createdieselgenerators:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "4AE1C5D5E9268692"
+					item: "createdieselgenerators:pumpjack_head"
+					type: "item"
+				}
+				{
+					id: "65FBAA5FD6C42773"
+					item: "createdieselgenerators:pumpjack_hole"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 2.5d
+		}
+	]
+	title: "Brass Machinations"
+}

@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "agriculture"
-	group: ""
+	group: "78A677EE2AEFB46F"
 	icon: "minecraft:wheat"
 	id: "76A8B7B259D8C784"
-	order_index: 2
+	order_index: 0
 	quest_links: [
 		{
 			id: "29F80237B5932041"
