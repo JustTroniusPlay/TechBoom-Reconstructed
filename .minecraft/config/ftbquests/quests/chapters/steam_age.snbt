@@ -12,55 +12,64 @@
 			linked_quest: "15C30310B03E4F79"
 			shape: "gear"
 			size: 1.5d
-			x: 1.5d
-			y: 0.5d
+			x: 5.481117134353767d
+			y: -1.4997448979591752d
 		}
 		{
 			id: "69298028232E244E"
 			linked_quest: "0A47F74F64457575"
+			shape: "octagon"
 			size: 0.7d
-			x: -1.75d
-			y: 6.6499999999999995d
+			x: -7.7765332695578095d
+			y: -12.459927721088434d
 		}
 		{
 			id: "183BD844B51E68E0"
 			linked_quest: "2798CCE5B1DE21DA"
 			shape: "gear"
 			size: 1.5d
-			x: 0.75d
-			y: 6.0d
+			x: -6.549064625850306d
+			y: -12.429953231292508d
 		}
 		{
 			id: "3699CE0C026189E1"
 			linked_quest: "5169668687940129"
 			shape: "gear"
 			size: 1.5d
-			x: 0.75d
-			y: 7.5d
+			x: -8.911227147108832d
+			y: -12.435437925170064d
 		}
 		{
 			id: "1C88D3CDC422080B"
 			linked_quest: "4B31C89E0FA58CE0"
-			shape: "hexagon"
+			shape: "octagon"
 			size: 0.5d
-			x: 0.8367346938775526d
-			y: -1.591836734693878d
+			x: 5.099484481292549d
+			y: 0.2788265306122426d
 		}
 		{
 			id: "035B96C26594770B"
 			linked_quest: "69DB58E1CD20ED2B"
 			shape: "pentagon"
 			size: 0.85d
-			x: -4.25d
-			y: 7.225d
+			x: 1.5381311118196948d
+			y: -10.79226190476193d
 		}
 		{
 			id: "3B38ACB3D7E7FB08"
 			linked_quest: "1A3BA4BEFD861942"
 			shape: "rsquare"
 			size: 1.5d
-			x: -5.25d
-			y: -2.25d
+			x: 2.481246014030603d
+			y: -4.7177295918367435d
+		}
+		{
+			id: "0918317AA7162DA2"
+			linked_quest: "5B16DA7287A8ABFE"
+			shape: "diamond"
+			size: 0.7d
+			x: -3.243877551020411d
+			y: -11.567410714285721d
 		}
 	]
 	quests: [
@@ -71,14 +80,15 @@
 			]
 			description: ["Aside from making alloys it can work with steel molds to create some components, blocks or nuggets from ingots.  "]
 			id: "61DA87FD5E45D2BC"
-			shape: "diamond"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "4A05A522EC33C3F6"
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.5d
+			x: 0.10424638605444159d
+			y: -1.5589285714285737d
 		}
 		{
 			dependencies: [
@@ -124,7 +134,7 @@
 				}
 			]
 			x: 1.0d
-			y: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -142,8 +152,8 @@
 				title: "Wall Sharing!"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.5d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -163,8 +173,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -1.0d
+			x: 7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -188,8 +198,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 2.0d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -232,8 +242,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 3.0d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -273,8 +283,8 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
-			y: 2.0d
+			x: 5.383755846088441d
+			y: -9.479634353741488d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -286,8 +296,8 @@
 				item: "gtceu:lp_steam_furnace"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -295,7 +305,6 @@
 				"319CEF2BDD679CF5"
 			]
 			description: ["Can smelt 8 items at a time using steam. "]
-			hide_dependent_lines: true
 			icon: "gtceu:steam_oven"
 			id: "35DDCEC2CECEF4D6"
 			shape: "rsquare"
@@ -333,21 +342,22 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 3.0d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
 			description: ["Can crush gem blocks into items and create plates a little bit cheaper."]
 			id: "793ABF03A8827044"
+			shape: "diamond"
 			size: 0.85d
 			tasks: [{
 				id: "6AF61FE6D49FBB10"
 				item: "gtceu:lp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.5d
+			x: 5.823974277210901d
+			y: -0.3487244897959201d
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
@@ -370,8 +380,8 @@
 				}
 			]
 			title: "Liquid Boilers"
-			x: -3.15d
-			y: 2.8d
+			x: 1.0669602997448804d
+			y: -7.190476190476197d
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
@@ -394,8 +404,8 @@
 				}
 			]
 			title: "Solar Boilers"
-			x: -4.2d
-			y: 2.8d
+			x: 0.7169602997448805d
+			y: -6.840476190476197d
 		}
 		{
 			dependencies: ["4A33371DB94DFD62"]
@@ -428,8 +438,8 @@
 				}
 			]
 			title: "Modular Boilers"
-			x: -1.99455782312927d
-			y: -2.699999999999996d
+			x: 8.080952380952404d
+			y: -10.806696428571414d
 		}
 		{
 			dependencies: ["6AF4C17E9C8FF9DC"]
@@ -442,8 +452,8 @@
 				item: "railcraft:fluid_fueled_firebox"
 				type: "item"
 			}]
-			x: -1.19455782312928d
-			y: -2.6999999999999997d
+			x: 8.7108790391157d
+			y: -10.217750850340119d
 		}
 		{
 			dependencies: ["156FF337D16F88B3"]
@@ -472,8 +482,8 @@
 				}
 			]
 			title: "Trained Iron"
-			x: -1.0d
-			y: 0.5d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -506,8 +516,8 @@
 				}
 			]
 			title: "Steel Pipeline"
-			x: -2.0d
-			y: 0.5d
+			x: 5.3999999999999995d
+			y: -5.3999999999999995d
 		}
 		{
 			dependencies: ["3CD05E2E5661246B"]
@@ -525,8 +535,8 @@
 				type: "item"
 			}]
 			title: "Industrialization"
-			x: -3.750000000000057d
-			y: 0.5714285714285623d
+			x: 5.389960671768733d
+			y: -8.0827380952381d
 		}
 		{
 			dependencies: [
@@ -558,8 +568,8 @@
 				}
 			]
 			title: "Refined Rubber"
-			x: -5.0d
-			y: 3.5d
+			x: 5.383755846088441d
+			y: -10.812967687074817d
 		}
 		{
 			dependencies: ["5771754309EAFB99"]
@@ -610,8 +620,8 @@
 				}
 			]
 			title: "Low Voltage"
-			x: -6.892857142857153d
-			y: 3.576254251700661d
+			x: 5.383755846088441d
+			y: -12.336777210884343d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -622,8 +632,8 @@
 				item: "gtceu:lp_steam_miner"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -0.25d
+			x: 6.25d
+			y: -3.0d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -634,8 +644,8 @@
 				item: "gtceu:lp_steam_rock_crusher"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.25d
+			x: 4.75d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -652,8 +662,8 @@
 				type: "item"
 			}]
 			title: "Steel Steam Oven"
-			x: -2.4d
-			y: 1.7999999999999998d
+			x: 8.031962159864008d
+			y: -6.876870748299339d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -666,8 +676,8 @@
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -2.024819302721099d
-			y: -0.9383928571428584d
+			x: 8.074736926020485d
+			y: -8.089562074829912d
 		}
 		{
 			dependencies: ["6AF4C17E9C8FF9DC"]
@@ -695,8 +705,8 @@
 				}
 			]
 			title: "Steam Turbine"
-			x: -3.0d
-			y: -2.6822704081632556d
+			x: 8.760879039115693d
+			y: -11.41775085034012d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -716,8 +726,8 @@
 				title: "Soft Mallet"
 				type: "item"
 			}]
-			x: 1.4999999999999716d
-			y: -1.2754464285714278d
+			x: 5.477035501700698d
+			y: -0.04260204081632679d
 		}
 		{
 			dependencies: [
@@ -767,31 +777,33 @@
 				}
 			]
 			title: "Getting glassed"
-			x: -3.7d
-			y: 4.8d
+			x: 0.1388113839285552d
+			y: -8.015348639455794d
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
 			id: "08772C8BA5BE9DB8"
+			shape: "diamond"
 			tasks: [{
 				id: "322C360866FB990B"
 				item: "torchmaster:dreadlamp"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 6.0d
+			x: -0.48303970025511944d
+			y: -6.940476190476197d
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
 			id: "0B87BE74ACF8791E"
+			shape: "diamond"
 			subtitle: "And here comes the sun!"
 			tasks: [{
 				id: "7BD176196E10776F"
 				item: "torchmaster:feral_flare_lantern"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 6.0d
+			x: -0.9830397002551194d
+			y: -7.440476190476197d
 		}
 		{
 			dependencies: [
@@ -843,8 +855,8 @@
 					type: "item"
 				}
 			]
-			x: -0.75d
-			y: 6.6499999999999995d
+			x: -7.7871651785713745d
+			y: -11.279953231292508d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -857,8 +869,8 @@
 				item: "tconstruct:tinkers_anvil"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.6d
+			x: 2.4d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -874,8 +886,8 @@
 				item: "systeams:steam_dynamo"
 				type: "item"
 			}]
-			x: 0.85d
-			y: -0.85d
+			x: 5.0892803996598985d
+			y: -0.36913265306122867d
 		}
 		{
 			dependencies: [
@@ -900,8 +912,8 @@
 					type: "item"
 				}
 			]
-			x: -3.6232142857142975d
-			y: 8.231547619047596d
+			x: 2.990512064200651d
+			y: -10.768452380952404d
 		}
 		{
 			dependencies: ["6E68DB6406FB4D3F"]
@@ -916,8 +928,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 9.0d
+			x: 3.9964697597788685d
+			y: -12.865986394557854d
 		}
 		{
 			dependencies: ["6E68DB6406FB4D3F"]
@@ -932,8 +944,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.5d
+			x: 2.9964697597788685d
+			y: -12.865986394557854d
 		}
 		{
 			dependencies: [
@@ -948,8 +960,8 @@
 				item: "thermal:tinker_bench"
 				type: "item"
 			}]
-			x: -3.59898490646259d
-			y: 9.507142857142867d
+			x: 2.9058181866496042d
+			y: -14.118962585034016d
 		}
 		{
 			dependencies: ["6E68DB6406FB4D3F"]
@@ -978,8 +990,8 @@
 				}
 			]
 			title: "Powered by Flux"
-			x: -4.8d
-			y: 9.0d
+			x: 1.8238453975339795d
+			y: -12.835459183673503d
 		}
 		{
 			dependencies: ["1BB3AB8685428FB7"]
@@ -990,8 +1002,8 @@
 				item: "thermal:upgrade_augment_1"
 				type: "item"
 			}]
-			x: -4.027556335034014d
-			y: 9.964285714285722d
+			x: 3.3507161458332675d
+			y: -14.554166666666696d
 		}
 		{
 			dependencies: ["1BB3AB8685428FB7"]
@@ -1010,8 +1022,8 @@
 					type: "item"
 				}
 			]
-			x: -3.1418420493197345d
-			y: 9.96428571428573d
+			x: 2.4935732886904134d
+			y: -14.53375850340139d
 		}
 		{
 			dependencies: ["4879433BBEEF8352"]
@@ -1033,8 +1045,8 @@
 				}
 			]
 			title: "Hellish Replacement"
-			x: -5.528720238095254d
-			y: 6.406547619047586d
+			x: 0.12857142857144765d
+			y: -9.934757653061205d
 		}
 		{
 			dependencies: ["69DB58E1CD20ED2B"]
@@ -1072,8 +1084,8 @@
 				}
 			]
 			title: "Celestial Objects"
-			x: -5.53892431972789d
-			y: 7.233078231292488d
+			x: 0.11806308460886328d
+			y: -10.776105442176874d
 		}
 		{
 			dependencies: ["4879433BBEEF8352"]
@@ -1122,8 +1134,8 @@
 					type: "item"
 				}
 			]
-			x: -7.282121598639478d
-			y: 8.87355442176868d
+			x: -1.3241137861394492d
+			y: -13.754081632653076d
 		}
 		{
 			dependencies: ["4A8233ADB6406DA9"]
@@ -1136,8 +1148,8 @@
 				title: "Press Recreation"
 				type: "checkmark"
 			}]
-			x: -7.305931122449003d
-			y: 8.159268707482958d
+			x: -1.368331473214262d
+			y: -13.027806122448983d
 		}
 		{
 			dependencies: [
@@ -1196,11 +1208,14 @@
 				}
 			]
 			title: "Digital Storage"
-			x: -8.800829081632664d
-			y: 7.311309523809484d
+			x: -2.137379092261945d
+			y: -15.86058673469389d
 		}
 		{
-			dependencies: ["5361A9865C6547F4"]
+			dependencies: [
+				"5361A9865C6547F4"
+				"4879433BBEEF8352"
+			]
 			description: ["You will need it to convert any form of energy for your main digital storage network. You can use Fluix Cables to transfer energy between components."]
 			id: "799F7F64000A3084"
 			shape: "diamond"
@@ -1209,25 +1224,8 @@
 				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
-			x: -7.324638605442161d
-			y: 5.416071428571399d
-		}
-		{
-			dependencies: [
-				"799F7F64000A3084"
-				"0852CB10008D7CDB"
-				"7B289C03327D9227"
-			]
-			description: ["Attachment for Energy Acceptor. With it you now can power your ME system with rotational power."]
-			id: "5B16DA7287A8ABFE"
-			size: 0.7d
-			tasks: [{
-				id: "2BF870DF77EE4B3D"
-				item: "createappliedkinetics:energy_provider"
-				type: "item"
-			}]
-			x: -6.578571428571423d
-			y: 5.847619047619041d
+			x: -4.66161112882655d
+			y: -10.837840136054446d
 		}
 		{
 			dependencies: ["4879433BBEEF8352"]
@@ -1240,8 +1238,8 @@
 				item: "ae2:fluix_crystal"
 				type: "item"
 			}]
-			x: -7.324638605442161d
-			y: 7.249404761904735d
+			x: -2.177175010629256d
+			y: -13.096938775510225d
 		}
 		{
 			dependencies: [
@@ -1250,14 +1248,15 @@
 			]
 			description: ["Generate energy natively for Applied Energistic network and &oonly&r for it."]
 			id: "09BD3CED744A51DB"
+			shape: "diamond"
 			size: 0.65d
 			tasks: [{
 				id: "462BC67A712946FE"
 				item: "ae2:vibration_chamber"
 				type: "item"
 			}]
-			x: -7.324638605442161d
-			y: 6.273214285714268d
+			x: -3.228875690901333d
+			y: -12.163860544217687d
 		}
 		{
 			dependencies: ["76422C026A6749CA"]
@@ -1278,8 +1277,8 @@
 					type: "item"
 				}
 			]
-			x: -6.550829081632678d
-			y: 6.628656462585006d
+			x: -2.1863945578231565d
+			y: -12.069791666666639d
 		}
 		{
 			dependencies: [
@@ -1294,8 +1293,8 @@
 				item: "railcraft:powered_rolling_machine"
 				type: "item"
 			}]
-			x: -5.777200255102052d
-			y: 2.47797619047617d
+			x: 6.955184417517003d
+			y: -10.82249149659863d
 		}
 		{
 			dependencies: [
@@ -1310,8 +1309,8 @@
 				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			x: -8.909704506802726d
-			y: 3.57589285714284d
+			x: 6.955184417517017d
+			y: -12.336777210884343d
 		}
 		{
 			dependencies: ["0324FC7EAE1601BA"]
@@ -1321,8 +1320,8 @@
 				item: "ad_astra:fuel_refinery"
 				type: "item"
 			}]
-			x: -8.909704506802726d
-			y: 5.004464285714263d
+			x: 7.0d
+			y: -13.5d
 		}
 	]
 	title: "Steam Age"

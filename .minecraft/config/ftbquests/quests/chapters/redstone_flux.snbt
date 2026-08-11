@@ -429,8 +429,8 @@
 				item: "thermal:machine_crystallizer"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.5d
+			x: -4.7642857142857125d
+			y: 3.2761054421768847d
 		}
 		{
 			dependencies: ["3155C182FC72865E"]
@@ -576,8 +576,8 @@
 				}
 			]
 			title: "Crystalization"
-			x: -6.0d
-			y: 2.5d
+			x: -4.76428571428572d
+			y: 4.311819727891155d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -682,11 +682,7 @@
 		}
 		{
 			dependencies: ["5361A9865C6547F4"]
-			description: [
-				"&lArboreal Extractor&r will help you get &osimple rubber&r more effectively and other liquids from trees like &oResin and Sap&r."
-				""
-				"&lFollow 'Redstone Machinery' tab next.&r"
-			]
+			description: ["&lArboreal Extractor&r will help you get &osimple rubber&r more effectively and other liquids from trees like &oResin and Sap&r."]
 			icon: "thermal:device_tree_extractor"
 			id: "4DE3A5EB02DCDC59"
 			size: 1.0d
@@ -715,8 +711,8 @@
 				item: "thermal:dynamo_fuel_augment"
 				type: "item"
 			}]
-			x: -3.15d
-			y: 4.8999999999999995d
+			x: -3.5d
+			y: 5.949999999999999d
 		}
 		{
 			dependencies: ["1553365BB32E7666"]
@@ -727,8 +723,8 @@
 				item: "thermal:dynamo_output_augment"
 				type: "item"
 			}]
-			x: -3.15d
-			y: 4.2d
+			x: -3.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["52563AE115ACBF51"]
@@ -784,8 +780,8 @@
 				item: "thermal:potion_amplifier_augment"
 				type: "item"
 			}]
-			x: -3.15d
-			y: 3.5d
+			x: -3.5d
+			y: 4.55d
 		}
 		{
 			dependencies: ["1553365BB32E7666"]
@@ -796,8 +792,8 @@
 				item: "thermal:potion_duration_augment"
 				type: "item"
 			}]
-			x: -2.4499999999999997d
-			y: 4.8999999999999995d
+			x: -2.8d
+			y: 5.949999999999999d
 		}
 		{
 			dependencies: ["52563AE115ACBF51"]
@@ -939,8 +935,8 @@
 				item: "thermal:redprint"
 				type: "item"
 			}]
-			x: 1.2d
-			y: -0.3d
+			x: 2.0518707482993293d
+			y: 0.7012755102040771d
 		}
 		{
 			dependencies: ["52563AE115ACBF51"]
@@ -1117,8 +1113,8 @@
 				type: "item"
 			}]
 			title: "Stone farming"
-			x: 7.5d
-			y: -0.5d
+			x: 10.614285714285714d
+			y: -2.7167517006802555d
 		}
 	]
 	title: "Redstone Machinery"

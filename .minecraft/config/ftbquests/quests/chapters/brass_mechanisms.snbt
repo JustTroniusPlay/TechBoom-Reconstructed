@@ -16,13 +16,6 @@
 			y: 4.15d
 		}
 		{
-			id: "5C1D148877E2D7AB"
-			linked_quest: "5B16DA7287A8ABFE"
-			shape: "diamond"
-			x: 6.0d
-			y: -5.5d
-		}
-		{
 			id: "50DFA12EEBA8E8B5"
 			linked_quest: "49BFD7BD22B74CBD"
 			shape: "octagon"
@@ -987,6 +980,24 @@
 			]
 			x: -1.5d
 			y: 2.5d
+		}
+		{
+			dependencies: [
+				"799F7F64000A3084"
+				"0852CB10008D7CDB"
+				"7B289C03327D9227"
+			]
+			description: ["Attachment for Energy Acceptor. With it you now can power your ME system with rotational power."]
+			id: "5B16DA7287A8ABFE"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "2BF870DF77EE4B3D"
+				item: "createappliedkinetics:energy_provider"
+				type: "item"
+			}]
+			x: 5.189200680272101d
+			y: -5.385714285714272d
 		}
 	]
 	title: "Brass Machinations"
