@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "energy_application"
+	group: "552C56EECBA58F89"
+	id: "32B9CDB6B8CD1D77"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Energy Application"
+}

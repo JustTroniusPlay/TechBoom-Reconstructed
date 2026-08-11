@@ -5,7 +5,7 @@
 	group: "78A677EE2AEFB46F"
 	icon: "thermal:energy_duct"
 	id: "153E7C5D5F57897F"
-	order_index: 2
+	order_index: 5
 	quest_links: [
 		{
 			id: "13DF990FC49D788F"

@@ -1,0 +1,177 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "special_decors"
+	group: "3851BDF7432073CB"
+	icon: "create:flywheel"
+	id: "6C535E987652C36B"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5142562557CBD9EE"
+			rewards: [{
+				count: 4
+				id: "5A71BC28751DC8D1"
+				item: "create:flywheel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "30C45CBADED4933E"
+				item: "create:flywheel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			id: "4F18D7D45D9753B5"
+			tasks: [{
+				id: "615173F1FC66A596"
+				item: "create:cuckoo_clock"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			id: "74878810382F1295"
+			tasks: [{
+				id: "18501AC5291F965F"
+				item: "create:turntable"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			icon: "create:display_board"
+			id: "6362DB17E665EDF3"
+			tasks: [
+				{
+					id: "24CD788330643779"
+					item: "create:display_board"
+					type: "item"
+				}
+				{
+					id: "1D560626CC860B75"
+					item: "create:display_link"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			id: "21ECBCD25A77230D"
+			tasks: [
+				{
+					id: "15FBF0A80C8D1DA8"
+					item: "create:nixie_tube"
+					type: "item"
+				}
+				{
+					id: "2839B2C097EB8833"
+					item: "bits_n_bobs:large_nixie_tube"
+					type: "item"
+				}
+				{
+					id: "3F7FBC0CD340620B"
+					item: "bits_n_bobs:nixie_board"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "0ED6CE7F452DE7FF"
+			tasks: [{
+				id: "514EA71B60BAAE46"
+				item: "create:placard"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			id: "14D9817B30708716"
+			size: 1.0d
+			tasks: [{
+				id: "75126CCDD2B01AC1"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			id: "6B04EA2C93C2DA95"
+			tasks: [{
+				id: "3154E2AE9CA0911A"
+				item: "createdieselgenerators:sheet_metal_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			icon: "immersiveengineering:wirecoil_structure_steel"
+			id: "510D59805EF033F8"
+			tasks: [
+				{
+					id: "7111DBFC4A9A9E64"
+					item: "immersiveengineering:wirecoil_structure_rope"
+					type: "item"
+				}
+				{
+					id: "39C379E5C2372D94"
+					item: "immersiveengineering:wirecoil_structure_steel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "11ED8F4EA48A46E8"
+					item: "immersiveengineering:connector_structural"
+					type: "item"
+				}
+			]
+			title: "Deco Coils"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4CCBE98B5628C77A"]
+			id: "6E89F07804FAACD2"
+			tasks: [{
+				id: "3F22BC386F117324"
+				item: "createaddition:festive_spool"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: ["Can be connected with LV wire to electrify intruders."]
+			id: "02AF1BC4057D548F"
+			tasks: [{
+				id: "0E6A648C297F1C7E"
+				item: "immersiveengineering:razor_wire"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			id: "5EFC319A28000945"
+			tasks: [{
+				id: "33B70C96F714F925"
+				item: "immersiveengineering:tesla_coil"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+	]
+	title: "Complex Shapes"
+}

@@ -1,8 +1,13 @@
 {
 	chapter_groups: [
+		{ id: "67E30E93A58EC129", title: "Path to Industrialization" }
+		{ id: "78A677EE2AEFB46F", title: "Knowledge Database" }
+		{ id: "2330B33194C94242", title: "Transportation" }
 		{ id: "31544B14A6F1FD15", title: "Around The World" }
-		{ id: "78A677EE2AEFB46F", title: "Logistics" }
+		{ id: "3851BDF7432073CB", title: "Decor" }
 		{ id: "495B816819C83ED9", title: "Production" }
+		{ id: "552C56EECBA58F89", title: "Moving Parts" }
+		{ id: "2A52AF7C0A2DD052", title: "Fancy Engineering" }
 		{ id: "1BFD5ACB45CB2ED0", title: "Gregification" }
 	]
 }

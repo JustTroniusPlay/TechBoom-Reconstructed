@@ -5,7 +5,7 @@
 	group: "495B816819C83ED9"
 	icon: "create:steam_engine"
 	id: "694F800726287F7C"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "706C6771133466D1"
@@ -348,6 +348,7 @@
 			description: ["Apply items to other items to craft things or can use tools like a player!"]
 			icon: "create:deployer"
 			id: "37FAA3D4CF96E9EE"
+			shape: "rsquare"
 			tasks: [{
 				id: "7C1169D7D67535EC"
 				item: "create:deployer"
@@ -1721,23 +1722,6 @@
 			}]
 			x: -1.4874149659863747d
 			y: -0.07959183673467862d
-		}
-		{
-			dependencies: [
-				"11D2F8CDD6C8BE1E"
-				"332E6B2C638AE656"
-			]
-			icon: "fluid:pipette"
-			id: "6B98F8F66130812D"
-			shape: "diamond"
-			size: 0.6d
-			tasks: [{
-				id: "11A5AD5E6D1E20A1"
-				item: "fluid:pipette"
-				type: "item"
-			}]
-			x: -1.8999999999999986d
-			y: -6.8d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]

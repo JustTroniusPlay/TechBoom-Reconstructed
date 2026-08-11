@@ -1,371 +1,44 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "move_around_the_world"
-	group: "31544B14A6F1FD15"
-	icon: "immersive_aircraft:biplane"
-	id: "3F59CDDF17799DB4"
-	order_index: 0
+	filename: "railways"
+	group: "2330B33194C94242"
+	icon: "minecraft:minecart"
+	id: "51D2DA79DE9FAAFA"
+	order_index: 1
 	quest_links: [
-		{
-			id: "1F2DAE03F94E9D08"
-			linked_quest: "16550070AD851335"
-			shape: "pentagon"
-			x: 2.0d
-			y: -0.5d
-		}
 		{
 			id: "4A9DF2D9298A82A6"
 			linked_quest: "3862A47C6FC3972D"
 			size: 1.3d
-			x: 1.85d
-			y: -6.95d
+			x: 14.035714285714292d
+			y: -3.1785714285714306d
 		}
 		{
 			id: "474A4F30B171898A"
 			linked_quest: "4DB042DAF83D7A0A"
 			shape: "gear"
 			size: 1.5d
-			x: -1.5d
-			y: -3.0d
+			x: 8.429761904761897d
+			y: -0.5499999999999998d
 		}
 		{
 			id: "25CC9A8A3CA31828"
 			linked_quest: "52563AE115ACBF51"
 			shape: "hexagon"
-			x: -4.0d
-			y: 1.5d
+			x: 5.929761904761897d
+			y: 3.95d
+		}
+		{
+			id: "7B8C0A2FDCE46521"
+			linked_quest: "37FAA3D4CF96E9EE"
+			shape: "rsquare"
+			size: 0.7d
+			x: 11.2d
+			y: -1.4d
 		}
 	]
 	quests: [
-		{
-			dependencies: [
-				"16550070AD851335"
-				"25951FDCB7908145"
-			]
-			id: "19A3AA66E77C638B"
-			tasks: [{
-				id: "635A388E076A7155"
-				item: "escalated:wooden_walkway_steps"
-				type: "item"
-			}]
-			title: "Moving stairs"
-			x: 3.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"19A3AA66E77C638B"
-				"0852CB10008D7CDB"
-			]
-			icon: "create_hypertube:hypertube_entrance"
-			id: "5B86291CA26479CA"
-			rewards: [
-				{
-					count: 32
-					id: "4E1846E56B5D0431"
-					item: "create_hypertube:hypertube"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "02CCF3A31A1ECC2D"
-					item: "create_hypertube:hypertube_entrance"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					count: 2L
-					id: "2D6B3BFC5A570145"
-					item: {
-						Count: 2
-						id: "create_hypertube:hypertube_entrance"
-					}
-					type: "item"
-				}
-				{
-					id: "538FA47964C6E34A"
-					item: "create_hypertube:hypertube"
-					type: "item"
-				}
-				{
-					id: "584C7C9B2733B78D"
-					item: "create_hypertube:hypertube_accelerator"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Pipes for people"
-			x: 3.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["16550070AD851335"]
-			description: [
-				"Navigate wast oceans can be easy with ships. "
-				""
-				"Cogs and briggs have additional inventories to store items if you want to move to new place or build a outpost. And you can take some people with you! Be it your friends or recruits!"
-				""
-				"Press 'R' when you in the ship to open your sails and use movement keys to adjust your speed."
-			]
-			id: "3A41770109A15749"
-			tasks: [
-				{
-					id: "2015BA237C104C5E"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "smallships:cogs"
-						}
-					}
-					optional_task: true
-					title: "Cogs"
-					type: "item"
-				}
-				{
-					id: "4EAA5801D99F4ACB"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "smallships:galleys"
-						}
-					}
-					optional_task: true
-					title: "Galleys"
-					type: "item"
-				}
-				{
-					id: "32AEF09BF5E49BD6"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "smallships:drakkars"
-						}
-					}
-					optional_task: true
-					title: "Drakkars"
-					type: "item"
-				}
-				{
-					id: "29E8B1643C5E9421"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "smallships:briggs"
-						}
-					}
-					optional_task: true
-					title: "Briggs"
-					type: "item"
-				}
-			]
-			title: "Ships"
-			x: 2.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["16550070AD851335"]
-			description: ["Gyrodyne is human powered flying transport. While you use it your food gonna deplete overtime. "]
-			id: "6D0457966A524EAE"
-			tasks: [{
-				id: "6E510E3216FED0B1"
-				item: "immersive_aircraft:gyrodyne"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["16550070AD851335"]
-			description: ["Simple plane that burns fuel. It need a runway to get off the ground. "]
-			id: "65BA9D00FF643C02"
-			tasks: [{
-				id: "008898EC76794871"
-				item: "immersive_aircraft:biplane"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["16550070AD851335"]
-			id: "25BA2070871AE3EA"
-			tasks: [{
-				id: "161088748CD9F778"
-				item: "immersive_aircraft:airship"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["65BA9D00FF643C02"]
-			description: ["A plane to land on water bodies. Have 3 seats with additional weapons slot."]
-			id: "6B534C2E20488B71"
-			tasks: [{
-				id: "6BD55DB46A9D8366"
-				item: "immersive_aircraft:bamboo_hopper"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["6D0457966A524EAE"]
-			description: ["Small and slow flying machine to build on heights or get around in big caves."]
-			id: "0F8F079CC7B24363"
-			tasks: [{
-				id: "2A61AEB3C9209607"
-				item: "immersive_aircraft:quadrocopter"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["25BA2070871AE3EA"]
-			id: "0C1002BC27CD439E"
-			tasks: [{
-				id: "733465BE4EB53328"
-				item: "immersive_aircraft:cargo_airship"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["0C1002BC27CD439E"]
-			id: "4538468B67AFCB06"
-			tasks: [{
-				id: "4D711629C654821F"
-				item: "immersive_aircraft:warship"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3A41770109A15749"]
-			id: "7E05DEB9161D7A0E"
-			subtitle: "plise help me"
-			tasks: [{
-				id: "268A74516AE89918"
-				item: "immersive_machinery:copperfin"
-				type: "item"
-			}]
-			title: "I am under the wathar"
-			x: 2.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["65BA9D00FF643C02"]
-			description: ["Bigger plane that counts as upgrade. it have two weapon slots and more storage."]
-			id: "105379AFEC836E38"
-			tasks: [{
-				id: "280CEB37D24F867A"
-				item: "man_of_many_planes:scarlet_biplane"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["65BA9D00FF643C02"]
-			description: ["Alternative plane version that don't have weapons and much less storage, but it consumes less fuel."]
-			id: "6AA14584A8F2980E"
-			tasks: [{
-				id: "2D96F3E834CD03CC"
-				item: "man_of_many_planes:economy_plane"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"65BA9D00FF643C02"
-				"25BA2070871AE3EA"
-				"6D0457966A524EAE"
-				"740A845F94D5D8AA"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"Upgrades for your flying transport help with various things."
-				""
-				"&lEngine Power&r - makes your aircraft faster."
-			]
-			hide_dependency_lines: true
-			id: "673BB15BE8763099"
-			tasks: [
-				{
-					id: "76939771B39D06CF"
-					item: "immersive_aircraft:enhanced_propeller"
-					type: "item"
-				}
-				{
-					id: "55F3B8740837C2CB"
-					item: "immersive_aircraft:industrial_gears"
-					type: "item"
-				}
-				{
-					id: "1FD46057EF0EEE6F"
-					item: "immersive_aircraft:sturdy_pipes"
-					type: "item"
-				}
-				{
-					id: "7F94A412B52680A9"
-					item: "immersive_aircraft:improved_landing_gear"
-					type: "item"
-				}
-				{
-					id: "2A7446F76492941F"
-					item: "immersive_aircraft:hull_reinforcement"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Usefull upgrades"
-			x: -2.5d
-			y: -0.5d
-		}
-		{
-			dependencies: [
-				"25BA2070871AE3EA"
-				"6D0457966A524EAE"
-				"65BA9D00FF643C02"
-				"740A845F94D5D8AA"
-			]
-			dependency_requirement: "one_completed"
-			description: ["Engines enchance your aircraft, but have a drawbacks."]
-			hide_dependency_lines: true
-			id: "3AC410451AF4E819"
-			tasks: [
-				{
-					id: "613B334626C7C33C"
-					item: "immersive_aircraft:eco_engine"
-					type: "item"
-				}
-				{
-					id: "0833D6303C25129D"
-					item: "immersive_aircraft:nether_engine"
-					type: "item"
-				}
-				{
-					id: "5D9D53ACD9CCBBBB"
-					item: "immersive_aircraft:steel_boiler"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Engines"
-			x: -2.5d
-			y: 1.0d
-		}
 		{
 			dependencies: ["4DB042DAF83D7A0A"]
 			id: "7DD34728381D1555"
@@ -384,8 +57,8 @@
 				type: "item"
 			}]
 			title: "Railways"
-			x: -5.7499999999999964d
-			y: -2.930952380952455d
+			x: 4.1797619047619d
+			y: -0.48095238095245474d
 		}
 		{
 			dependencies: ["6C63FA3003078E6E"]
@@ -416,11 +89,11 @@
 				}
 			]
 			title: "Big Trains"
-			x: -0.7d
-			y: -7.0d
+			x: 14.0d
+			y: -0.7d
 		}
 		{
-			dependencies: ["16550070AD851335"]
+			dependencies: ["37FAA3D4CF96E9EE"]
 			description: [
 				"Bigger trains need to be build by hand and transfer big amount of resources around the world."
 				""
@@ -450,8 +123,8 @@
 				}
 			]
 			title: "Bigger train tracks"
-			x: -5.952380952436442E-4d
-			y: -3.779761904761898d
+			x: 12.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6C63FA3003078E6E"]
@@ -474,47 +147,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"25BA2070871AE3EA"
-				"6D0457966A524EAE"
-				"65BA9D00FF643C02"
-				"740A845F94D5D8AA"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"Did you felt it? When you fly your aircraft change diretions on its own. It can become annoying overtime. Or you just want better autopilot."
-				""
-				"Gyroscopes will balance your aircraft and make it fly in straight line. So no turning in random directions!"
-				""
-				"Other gyroscopes will add other helpful information on your screen."
-			]
-			hide_dependency_lines: true
-			id: "2D4DC458134B70C0"
-			tasks: [
-				{
-					id: "2756E9E908D9279F"
-					item: "immersive_aircraft:gyroscope"
-					type: "item"
-				}
-				{
-					id: "2C3B53863BF184DF"
-					item: "immersive_aircraft:gyroscope_dials"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5B106689222CCF44"
-					item: "immersive_aircraft:gyroscope_hud"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -2.5d
-			y: 2.5d
+			x: 12.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6C63FA3003078E6E"]
@@ -525,47 +159,21 @@
 				item: "railways:track_monorail"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["0F8F079CC7B24363"]
-			description: [
-				"Bamboo bee can move items from containers of your choice."
-				""
-				"Shift+rightclick on storage to make it input or output."
-				""
-				"Put your bee on the ground by just clicking and then go in its inventory to configure it if you need."
-				""
-				"Bamboo bee will transfer 1 stack of items at a time."
-			]
-			id: "5280DC0BAD5B4BFF"
-			size: 0.7d
-			tasks: [{
-				id: "551BF0100988FF8E"
-				item: {
-					Count: 1
-					id: "immersive_machinery:bamboo_bee"
-					tag: {
-						ContainerPositions: [ ]
-					}
-				}
-				type: "item"
-			}]
-			x: 1.9636904761904788d
-			y: 2.8035714285714306d
+			x: 12.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
 			id: "11DA06949EF4E1DD"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "2BEF4691B13D1F47"
 				item: "create:minecart_coupling"
 				type: "item"
 			}]
-			x: -11.549999999999999d
-			y: -1.4d
+			x: -0.5238095238095326d
+			y: 4.372619047619011d
 		}
 		{
 			dependencies: ["1FD927A625974E13"]
@@ -576,8 +184,8 @@
 				item: "create:schedule"
 				type: "item"
 			}]
-			x: -1.05d
-			y: -5.95d
+			x: 14.0d
+			y: 0.35d
 		}
 		{
 			dependencies: ["1FD927A625974E13"]
@@ -596,8 +204,8 @@
 				}
 			]
 			title: "Train fuel"
-			x: -2.0d
-			y: -7.5d
+			x: 15.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1FD927A625974E13"]
@@ -630,8 +238,8 @@
 				}
 			]
 			title: "Railroad logistics"
-			x: 0.0d
-			y: -8.0d
+			x: 15.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3CB5B9B7BD3751EC"]
@@ -641,8 +249,8 @@
 				item: "create:controller_rail"
 				type: "item"
 			}]
-			x: -7.66972789115648d
-			y: -1.8166666666667002d
+			x: 6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
@@ -654,8 +262,8 @@
 				item: "create:cart_assembler"
 				type: "item"
 			}]
-			x: -8.857738095238084d
-			y: -1.1964285714285836d
+			x: 0.2976190476190368d
+			y: 3.2297619047618724d
 		}
 		{
 			dependencies: ["6C63FA3003078E6E"]
@@ -671,8 +279,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.05d
-			y: -4.2d
+			x: 12.6d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -685,8 +293,8 @@
 				item: "create_interactive:buffer_stop"
 				type: "item"
 			}]
-			x: 0.5500000000000003d
-			y: -6.6d
+			x: 14.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -702,8 +310,8 @@
 				item: "thermal:lumium_rail"
 				type: "item"
 			}]
-			x: -5.693537414965977d
-			y: 1.407142857142821d
+			x: 4.236224489795919d
+			y: 3.8571428571428212d
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
@@ -715,8 +323,8 @@
 				item: "minecraft:powered_rail"
 				type: "item"
 			}]
-			x: -6.598299319727904d
-			y: -1.8166666666667002d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["51F27E0987380337"]
@@ -726,8 +334,8 @@
 				item: "thermal:lumium_powered_rail"
 				type: "item"
 			}]
-			x: -6.669727891156473d
-			y: 2.3499999999999712d
+			x: 3.2600340136054236d
+			y: 4.799999999999971d
 		}
 		{
 			dependencies: ["63AFBFC47D0B51C1"]
@@ -737,8 +345,8 @@
 				item: "thermal:prismarine_powered_rail"
 				type: "item"
 			}]
-			x: -6.812585034013619d
-			y: -6.673809523809554d
+			x: 3.1171768707482777d
+			y: -4.223809523809554d
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
@@ -750,8 +358,8 @@
 				item: "minecraft:detector_rail"
 				type: "item"
 			}]
-			x: -4.860204081632663d
-			y: -3.9833333333333716d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["51F27E0987380337"]
@@ -761,8 +369,8 @@
 				item: "thermal:lumium_detector_rail"
 				type: "item"
 			}]
-			x: -4.717346938775524d
-			y: 0.3738095238094967d
+			x: 5.2124149659863726d
+			y: 2.823809523809497d
 		}
 		{
 			dependencies: ["63AFBFC47D0B51C1"]
@@ -772,8 +380,8 @@
 				item: "thermal:prismarine_detector_rail"
 				type: "item"
 			}]
-			x: -4.812585034013619d
-			y: -8.578571428571463d
+			x: 5.117176870748278d
+			y: -6.128571428571463d
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
@@ -786,8 +394,8 @@
 				item: "thermal:prismarine_rail"
 				type: "item"
 			}]
-			x: -5.8125850340135905d
-			y: -7.569047619047653d
+			x: 4.117176870748306d
+			y: -5.119047619047653d
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
@@ -799,8 +407,8 @@
 				item: "minecraft:activator_rail"
 				type: "item"
 			}]
-			x: -6.596088435374156d
-			y: -3.9892857142856784d
+			x: 5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["63AFBFC47D0B51C1"]
@@ -810,8 +418,8 @@
 				item: "thermal:prismarine_activator_rail"
 				type: "item"
 			}]
-			x: -6.884013605442188d
-			y: -8.459523809523843d
+			x: 3.0457482993197083d
+			y: -6.009523809523842d
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
@@ -821,8 +429,8 @@
 				item: "thermal:crossover_rail"
 				type: "item"
 			}]
-			x: -4.884013605442188d
-			y: -1.7214285714286053d
+			x: 5.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["63AFBFC47D0B51C1"]
@@ -832,8 +440,8 @@
 				item: "thermal:prismarine_crossover_rail"
 				type: "item"
 			}]
-			x: -4.884013605442188d
-			y: -6.673809523809554d
+			x: 5.045748299319708d
+			y: -4.223809523809554d
 		}
 		{
 			dependencies: ["51F27E0987380337"]
@@ -843,8 +451,8 @@
 				item: "thermal:lumium_activator_rail"
 				type: "item"
 			}]
-			x: -6.669727891156473d
-			y: 0.4452380952380661d
+			x: 3.2600340136054236d
+			y: 2.8952380952380663d
 		}
 		{
 			dependencies: ["51F27E0987380337"]
@@ -854,8 +462,8 @@
 				item: "thermal:lumium_crossover_rail"
 				type: "item"
 			}]
-			x: -4.788775510204093d
-			y: 2.3976190476190222d
+			x: 5.140986394557803d
+			y: 4.847619047619022d
 		}
 		{
 			dependencies: ["63AFBFC47D0B51C1"]
@@ -866,8 +474,8 @@
 				item: "thermal:underwater_minecart"
 				type: "item"
 			}]
-			x: -5.858503401360576d
-			y: -9.1d
+			x: 4.071258503401321d
+			y: -6.6499999999999995d
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
@@ -905,8 +513,8 @@
 				}
 			]
 			title: "Railwork"
-			x: -13.599999999999998d
-			y: -3.0809523809524553d
+			x: -1.9797619047619044d
+			y: -0.30357142857151764d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -917,8 +525,8 @@
 				type: "item"
 			}]
 			title: "Cheap Railroad"
-			x: -12.5d
-			y: -5.0d
+			x: -0.8797619047619065d
+			y: -2.2226190476190624d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -929,8 +537,8 @@
 				type: "item"
 			}]
 			title: "Almost like flying"
-			x: -13.5d
-			y: -5.0d
+			x: -1.8797619047619065d
+			y: -2.2226190476190624d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -940,8 +548,8 @@
 				item: "railcraft:electric_track"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -5.0d
+			x: -2.8797619047619065d
+			y: -2.2226190476190624d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -951,8 +559,8 @@
 				item: "railcraft:high_speed_track"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -1.5d
+			x: -2.8797619047619065d
+			y: 1.2773809523809376d
 		}
 		{
 			dependencies: ["4B66E67951DD4600"]
@@ -962,8 +570,8 @@
 				item: "railcraft:high_speed_electric_track"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -0.5d
+			x: -2.3797619047619065d
+			y: 2.2773809523809376d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -973,8 +581,8 @@
 				item: "railcraft:reinforced_track"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -1.5d
+			x: -0.8797619047619065d
+			y: 1.2773809523809376d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -984,8 +592,8 @@
 				item: "railcraft:elevator_track"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -1.5d
+			x: -1.8797619047619065d
+			y: 1.2773809523809376d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -1008,8 +616,8 @@
 				}
 			]
 			title: "Classical kits"
-			x: -16.929761904761897d
-			y: -3.172959183673427d
+			x: -3.845238095238095d
+			y: -0.44523809523811053d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -1032,8 +640,8 @@
 				}
 			]
 			title: "Entity Management"
-			x: -16.429761904761897d
-			y: -2.172959183673427d
+			x: 0.1904761904761969d
+			y: 1.2773809523809376d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -1067,8 +675,8 @@
 				}
 			]
 			title: "Stopping"
-			x: -15.429761904761897d
-			y: -4.672959183673427d
+			x: -3.809523809523803d
+			y: -2.2226190476190624d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -1091,8 +699,8 @@
 				}
 			]
 			title: "New moves"
-			x: -16.429761904761897d
-			y: -4.172959183673427d
+			x: 0.1904761904761969d
+			y: -2.2226190476190624d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -1120,8 +728,8 @@
 				}
 			]
 			title: "Special kits"
-			x: -15.429761904761897d
-			y: -1.6729591836734272d
+			x: -3.8630952380952266d
+			y: 1.2976190476190155d
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
@@ -1133,8 +741,8 @@
 				item: "minecraft:minecart"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -1.5d
+			x: 0.29523809523810907d
+			y: 5.12023809523812d
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
@@ -1161,8 +769,8 @@
 				}
 			]
 			title: "Energy Carts"
-			x: -14.0d
-			y: 0.5d
+			x: 1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
@@ -1198,8 +806,8 @@
 				}
 			]
 			title: "Fluid Tank Carts"
-			x: -8.0d
-			y: 0.5d
+			x: 1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
@@ -1227,8 +835,8 @@
 				}
 			]
 			title: "Changing Tracks"
-			x: -13.0d
-			y: 1.5d
+			x: -1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
@@ -1237,27 +845,31 @@
 				{
 					id: "674403A0A6FCEFF6"
 					item: "minecraft:chest_minecart"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "38D352AB13265CAC"
 					item: "minecraft:hopper_minecart"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0CF55DD171B83A17"
 					item: "immersiveengineering:minecart_woodencrate"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2AA0EE194711E195"
 					item: "immersiveengineering:minecart_reinforcedcrate"
+					optional_task: true
 					type: "item"
 				}
 			]
 			title: "Storage Carts"
-			x: -9.0d
-			y: 1.5d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
@@ -1269,8 +881,8 @@
 				item: "stevescarts:blockcartassembler"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -4.5d
+			x: -1.9880952380952408d
+			y: -5.555952380952391d
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
@@ -1288,8 +900,8 @@
 				}
 			]
 			title: "Funky Carts"
-			x: -11.0d
-			y: 2.0d
+			x: 1.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
@@ -1303,8 +915,8 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
-			y: 3.5d
+			x: 1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["427BC7DB527660E7"]
@@ -1318,8 +930,8 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
-			y: 4.5d
+			x: 1.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
@@ -1329,8 +941,8 @@
 				item: "littlelogistics:steam_locomotive"
 				type: "item"
 			}]
-			x: -13.0d
-			y: 4.0d
+			x: -0.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["202881A2FA1E9B9D"]
@@ -1348,8 +960,8 @@
 				}
 			]
 			title: "Special Storage cars"
-			x: -14.0d
-			y: 3.0d
+			x: -1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["202881A2FA1E9B9D"]
@@ -1359,8 +971,8 @@
 				item: "littlelogistics:fluid_car"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 5.0d
+			x: -1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["202881A2FA1E9B9D"]
@@ -1370,8 +982,8 @@
 				item: "littlelogistics:seater_car"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 3.0d
+			x: -1.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["202881A2FA1E9B9D"]
@@ -1381,11 +993,11 @@
 				item: "littlelogistics:energy_locomotive"
 				type: "item"
 			}]
-			x: -14.0d
-			y: 5.0d
+			x: -0.5d
+			y: 9.0d
 		}
 		{
-			dependencies: ["4B126C46A6671245"]
+			dependencies: ["74E29675671803C5"]
 			description: [
 				"Tunnel bore is simple mining machine that will mine forward until it run out of solid fuel. "
 				""
@@ -1403,115 +1015,21 @@
 				item: "railcraft:tunnel_bore"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["16550070AD851335"]
-			id: "1D1CCBF0E8DBD5B1"
-			tasks: [{
-				id: "504F31F560F0D800"
-				item: "littlelogistics:tug"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["1D1CCBF0E8DBD5B1"]
-			id: "7523B875C49CFAA0"
-			tasks: [{
-				id: "2ABAF964F49C4854"
-				item: "littlelogistics:tug_route"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["1D1CCBF0E8DBD5B1"]
-			id: "5EBBDB70D62A7B03"
-			tasks: [{
-				id: "63CCA35D3A0A4939"
-				item: "littlelogistics:seater_barge"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["22B1A3B5203F5643"]
-			id: "21CBD565AD4F1C72"
-			tasks: [{
-				id: "27FD98D1EB144040"
-				item: "littlelogistics:fluid_barge"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["1D1CCBF0E8DBD5B1"]
-			id: "22B1A3B5203F5643"
-			tasks: [
-				{
-					id: "16EDFD410CE08710"
-					item: "littlelogistics:barge"
-					type: "item"
-				}
-				{
-					id: "4462314F2B984AD7"
-					item: "littlelogistics:barrel_barge"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 6.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["22B1A3B5203F5643"]
-			id: "25651BE197B9FEEB"
-			tasks: [{
-				id: "73F6A938C76B19E9"
-				item: "littlelogistics:spring"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["22B1A3B5203F5643"]
-			id: "105044CDE2BD3FBE"
-			tasks: [{
-				id: "705238ECC411E9A6"
-				item: "littlelogistics:vacuum_barge"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["22B1A3B5203F5643"]
-			id: "08B9A8882CFF2679"
-			tasks: [{
-				id: "0BE61B1CC81F333A"
-				item: "littlelogistics:fishing_barge"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -2.5d
+			x: -3.15d
+			y: 5.95d
 		}
 		{
 			dependencies: ["202881A2FA1E9B9D"]
 			id: "3D5268664C99338B"
+			shape: "diamond"
+			size: 0.7d
 			tasks: [{
 				id: "2F5181539A43BF49"
 				item: "littlelogistics:locomotive_route"
 				type: "item"
 			}]
-			x: -13.0d
-			y: 5.0d
+			x: 0.12261904761905384d
+			y: 8.502380952380932d
 		}
 		{
 			dependencies: ["776112F6AA25549A"]
@@ -1569,8 +1087,8 @@
 				}
 			]
 			title: "Bores"
-			x: -8.0d
-			y: 4.0d
+			x: -3.148299319727905d
+			y: 6.9066326530611875d
 		}
 		{
 			dependencies: ["4DB042DAF83D7A0A"]
@@ -1581,6 +1099,7 @@
 			]
 			icon: "immersive_machinery:tunnel_digger"
 			id: "740A845F94D5D8AA"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "544F30E8FDAEBCAB"
@@ -1600,108 +1119,23 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["16550070AD851335"]
-			description: ["Very cheap imitation of legendery Elytra. Have less durability and loose it faster with sharp dives or when use fireworks, but atleast not costy to repair with tough fabric."]
-			id: "64454BD70315F1D1"
-			tasks: [{
-				id: "1212314BA71B0DC5"
-				item: {
-					Count: 1
-					id: "immersiveengineering:glider"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -1.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["16550070AD851335"]
-			description: ["Hook to wires, ropes or steel cables."]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					Parent: {
-						Items: [ ]
-						Size: 2
-					}
-				}
-				id: "immersiveengineering:skyhook"
-			}
-			id: "0929320096BEA3D5"
-			tasks: [
-				{
-					id: "71DBBF5769B3E84F"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								Items: [ ]
-								Size: 2
-							}
-						}
-						id: "immersiveengineering:skyhook"
-					}
-					type: "item"
-				}
-				{
-					id: "0CFBF76C66F37889"
-					item: "immersiveengineering:wirecoil_structure_rope"
-					type: "item"
-				}
-				{
-					id: "527B494140B2D932"
-					item: "immersiveengineering:connector_structural"
-					type: "item"
-				}
-				{
-					id: "6B3CD8996554365F"
-					item: "immersiveengineering:wirecoil_structure_steel"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -1.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["1D1CCBF0E8DBD5B1"]
-			icon: "littlelogistics:energy_tug"
-			id: "32EB398D4A9D6EAB"
-			tasks: [
-				{
-					count: 2L
-					id: "5AA90B81E6BA9291"
-					item: "littlelogistics:vessel_charger"
-					type: "item"
-				}
-				{
-					id: "04854315B685597D"
-					item: "littlelogistics:energy_tug"
-					type: "item"
-				}
-			]
-			title: "Energy Tug"
-			x: 5.0d
+			x: 10.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["202881A2FA1E9B9D"]
+			dependency_requirement: "one_completed"
 			id: "1FE4650F8423EEFF"
+			shape: "diamond"
+			size: 0.7d
 			tasks: [{
 				id: "44B4490ACBDCBA6E"
 				item: "littlelogistics:spring"
 				type: "item"
 			}]
-			x: -14.0d
-			y: 4.0d
+			x: 0.09880952380953545d
+			y: 7.478571428571406d
 		}
 	]
-	title: "Transportation"
+	title: "Railways"
 }

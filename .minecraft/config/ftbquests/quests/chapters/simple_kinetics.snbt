@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "simple_kinetics"
+	group: "552C56EECBA58F89"
+	id: "000B19B44BC6B3D1"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Simple Kinetics"
+}

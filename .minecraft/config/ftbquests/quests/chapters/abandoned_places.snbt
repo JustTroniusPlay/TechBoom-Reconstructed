@@ -5,7 +5,7 @@
 	group: "31544B14A6F1FD15"
 	icon: "minecraft:cracked_stone_bricks"
 	id: "1E833984333A516D"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

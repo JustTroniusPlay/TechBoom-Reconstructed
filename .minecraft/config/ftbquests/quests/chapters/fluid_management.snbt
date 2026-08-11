@@ -5,7 +5,7 @@
 	group: "78A677EE2AEFB46F"
 	icon: "minecraft:lava_bucket"
 	id: "1BEAE39254DC4E0F"
-	order_index: 4
+	order_index: 3
 	quest_links: [
 		{
 			id: "1BC37209B1F69641"
@@ -21,12 +21,6 @@
 			shape: "diamond"
 			x: 3.0d
 			y: -4.5d
-		}
-		{
-			id: "594CC73C5D91EA9C"
-			linked_quest: "6B98F8F66130812D"
-			x: -2.0972789115646293d
-			y: -6.117346938775469d
 		}
 		{
 			id: "7B95BDC607E0AB2F"
@@ -58,6 +52,13 @@
 			size: 0.7d
 			x: 8.4d
 			y: -7.0d
+		}
+		{
+			id: "0B8FFB12D799766E"
+			linked_quest: "2F69960DFCAC5C3C"
+			size: 0.7d
+			x: -3.8386904761904916d
+			y: -8.004761904761908d
 		}
 	]
 	quests: [
@@ -498,6 +499,7 @@
 			dependencies: [
 				"72304D7D63A87E7A"
 				"721BF9359D5D6E95"
+				"2F69960DFCAC5C3C"
 			]
 			id: "3A3B6216A170CB26"
 			tasks: [{
@@ -505,8 +507,8 @@
 				item: "create_factory_logistics:jar_packager"
 				type: "item"
 			}]
-			x: -4.621088435374148d
-			y: -6.823129251700678d
+			x: -3.85d
+			y: -8.942857142857145d
 		}
 		{
 			dependencies: [
@@ -521,8 +523,8 @@
 				item: "create_factory_logistics:factory_fluid_gauge"
 				type: "item"
 			}]
-			x: -4.723129251700676d
-			y: -10.068027210884352d
+			x: -3.85d
+			y: -9.799999999999999d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
@@ -667,17 +669,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["72304D7D63A87E7A"]
-			id: "3B1CDA47C78BE68D"
-			tasks: [{
-				id: "064D31BCC380369D"
-				item: "fluid:centrifugal_pump"
-				type: "item"
-			}]
-			x: -4.702721088435375d
-			y: -9.006802721088434d
-		}
-		{
 			dependencies: ["62F294152390992E"]
 			description: ["Can put fluids out in the world. Configure with Engineer's Hammer. Using redstone signal will block output."]
 			id: "2CC6FA9A969ECBCA"
@@ -689,28 +680,6 @@
 			}]
 			x: 7.0d
 			y: -9.799999999999999d
-		}
-		{
-			dependencies: ["72304D7D63A87E7A"]
-			id: "3493D38BC8F5E5BE"
-			tasks: [{
-				id: "56AB1E3C9E4B87AF"
-				item: "fluid:gutter_outlet"
-				type: "item"
-			}]
-			x: -4.682312925170066d
-			y: -7.904761904761905d
-		}
-		{
-			dependencies: ["3493D38BC8F5E5BE"]
-			id: "075D146ED9F0F1E0"
-			tasks: [{
-				id: "4D495D17CEE1B8D2"
-				item: "fluid:smart_gutter_outlet"
-				type: "item"
-			}]
-			x: -5.682312925170066d
-			y: -7.904761904761905d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -865,30 +834,6 @@
 			]
 			x: 3.0d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"5186990A391ADB8D"
-				"6B98F8F66130812D"
-			]
-			dependency_requirement: "one_completed"
-			icon: "fluid:fluid_interface"
-			id: "1A5F0BECE163EBCF"
-			size: 0.7d
-			tasks: [
-				{
-					id: "446DDA075E905B93"
-					item: "fluid:fluid_interface"
-					type: "item"
-				}
-				{
-					id: "57AD0E4287798BB4"
-					item: "fluid:smart_fluid_interface"
-					type: "item"
-				}
-			]
-			x: -2.1217687074829996d
-			y: -3.0030612244897554d
 		}
 		{
 			dependencies: [

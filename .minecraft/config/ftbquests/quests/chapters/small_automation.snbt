@@ -1,0 +1,129 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "small_automation"
+	group: "2330B33194C94242"
+	icon: "littlelogistics:energy_tug"
+	id: "1ED4BB4474EFE5FB"
+	order_index: 2
+	quest_links: [{
+		id: "234B5E12CB713A5F"
+		linked_quest: "1FE4650F8423EEFF"
+		shape: "diamond"
+		size: 0.7d
+		x: 0.1428571428571459d
+		y: 0.5714285714285765d
+	}]
+	quests: [
+		{
+			icon: "littlelogistics:tug"
+			id: "1D1CCBF0E8DBD5B1"
+			shape: "rsquare"
+			tasks: [{
+				id: "504F31F560F0D800"
+				item: "littlelogistics:tug"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D1CCBF0E8DBD5B1"]
+			id: "7523B875C49CFAA0"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "2ABAF964F49C4854"
+				item: "littlelogistics:tug_route"
+				type: "item"
+			}]
+			x: -1.1428571428571388d
+			y: 0.6071428571428612d
+		}
+		{
+			dependencies: ["1D1CCBF0E8DBD5B1"]
+			id: "5EBBDB70D62A7B03"
+			tasks: [{
+				id: "63CCA35D3A0A4939"
+				item: "littlelogistics:seater_barge"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["22B1A3B5203F5643"]
+			id: "21CBD565AD4F1C72"
+			tasks: [{
+				id: "27FD98D1EB144040"
+				item: "littlelogistics:fluid_barge"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1D1CCBF0E8DBD5B1"]
+			id: "22B1A3B5203F5643"
+			tasks: [
+				{
+					id: "16EDFD410CE08710"
+					item: "littlelogistics:barge"
+					type: "item"
+				}
+				{
+					id: "4462314F2B984AD7"
+					item: "littlelogistics:barrel_barge"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["22B1A3B5203F5643"]
+			id: "105044CDE2BD3FBE"
+			tasks: [{
+				id: "705238ECC411E9A6"
+				item: "littlelogistics:vacuum_barge"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["22B1A3B5203F5643"]
+			id: "08B9A8882CFF2679"
+			tasks: [{
+				id: "0BE61B1CC81F333A"
+				item: "littlelogistics:fishing_barge"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1D1CCBF0E8DBD5B1"]
+			icon: "littlelogistics:energy_tug"
+			id: "32EB398D4A9D6EAB"
+			tasks: [
+				{
+					count: 2L
+					id: "5AA90B81E6BA9291"
+					item: "littlelogistics:vessel_charger"
+					type: "item"
+				}
+				{
+					id: "04854315B685597D"
+					item: "littlelogistics:energy_tug"
+					type: "item"
+				}
+			]
+			title: "Energy Tug"
+			x: -0.5d
+			y: 1.5d
+		}
+	]
+	title: "Small Automation"
+}

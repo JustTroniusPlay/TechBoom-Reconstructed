@@ -5,7 +5,7 @@
 	group: "78A677EE2AEFB46F"
 	icon: "create:large_cogwheel"
 	id: "1520912C9E316A01"
-	order_index: 0
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{

@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "first_steps"
-	group: ""
+	group: "67E30E93A58EC129"
 	icon: "minecraft:crafting_table"
 	id: "0899FBC774E74E99"
 	order_index: 0
@@ -3059,8 +3059,8 @@
 				}
 			]
 			title: "Manual doubling"
-			x: 5.917639243197286d
-			y: -5.9195471938775555d
+			x: 5.848251488095251d
+			y: -5.712744472789112d
 		}
 		{
 			dependencies: ["4619627EEEE566A4"]
@@ -3128,5 +3128,5 @@
 			y: -10.846077806122452d
 		}
 	]
-	title: "Start of the journey"
+	title: "At The Start"
 }
