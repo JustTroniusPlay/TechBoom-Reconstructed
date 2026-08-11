@@ -1,0 +1,254 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "contraptions"
+	group: "552C56EECBA58F89"
+	icon: "create:gantry_carriage"
+	id: "28789C0F364D2EF7"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["25951FDCB7908145"]
+			description: ["First steps in the world of moving contraptions."]
+			icon: "create:mechanical_bearing"
+			id: "108C99B4F1FE705F"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [
+				{
+					id: "5BCDB3A286FFDAAD"
+					item: "create:mechanical_bearing"
+					type: "item"
+				}
+				{
+					id: "63EF971EDF1B271B"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.0357142857142847d
+			y: 2.785714285714292d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			description: [""]
+			icon: "create:mechanical_piston"
+			id: "131F6E41A7F8D902"
+			rewards: [{
+				count: 8
+				id: "4E1742C1443E1B0D"
+				item: "create:piston_extension_pole"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "58F3B08D1092E3C0"
+					item: "create:mechanical_piston"
+					type: "item"
+				}
+				{
+					id: "6C5BC2EB0279EE93"
+					item: "create:sticky_mechanical_piston"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "65C50E8270E40B5F"
+					item: "create:piston_extension_pole"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			icon: "create:gantry_carriage"
+			id: "63D13484D290E086"
+			rewards: [{
+				count: 8
+				id: "7890C5317AB8F97A"
+				item: "create:gantry_shaft"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "01968051960F926F"
+					item: "create:gantry_carriage"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "514A3E1A10C4B51A"
+					item: "create:gantry_shaft"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			icon: "create:rope_pulley"
+			id: "006BE374861F163C"
+			tasks: [
+				{
+					id: "49AEC744D1FE730E"
+					item: "create:rope_pulley"
+					type: "item"
+				}
+				{
+					id: "3282C9647DC204C6"
+					item: "bits_n_bobs:chain_pulley"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			id: "6CB66A8B5CA50E79"
+			tasks: [
+				{
+					id: "10992A01971DDC28"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+				{
+					id: "00200431CBFE3905"
+					item: "create:radial_chassis"
+					type: "item"
+				}
+				{
+					id: "39596A3B6F63E942"
+					item: "create:secondary_linear_chassis"
+					type: "item"
+				}
+			]
+			title: "Chassis"
+			x: 1.3755102040816283d
+			y: 2.820408163265313d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			dependency_requirement: "one_completed"
+			id: "5BCF22055EDA1850"
+			tasks: [
+				{
+					id: "0C3EF92710D2C5CF"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+				{
+					id: "541DDB5FADCE70FB"
+					item: "create:redstone_contact"
+					type: "item"
+				}
+			]
+			title: "Making a contact"
+			x: -1.959183673469397d
+			y: 2.777551020408154d
+		}
+		{
+			dependencies: [
+				"27D02A3ECE518CCE"
+				"5BCF22055EDA1850"
+			]
+			id: "0B61ED63E8F8E7D2"
+			shape: "diamond"
+			tasks: [{
+				id: "1AFEBD1BA0CEECD0"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: -3.0051020408163396d
+			y: 3.3214285714285623d
+		}
+		{
+			dependencies: ["5BCF22055EDA1850"]
+			id: "2921356EB034FB43"
+			shape: "diamond"
+			tasks: [{
+				id: "444CE0029226CAFB"
+				item: "create:mechanical_plough"
+				type: "item"
+			}]
+			x: -3.0051020408163396d
+			y: 2.3214285714285623d
+		}
+		{
+			dependencies: ["6CB66A8B5CA50E79"]
+			id: "5C76216A1010F53A"
+			tasks: [{
+				id: "1A5E65B530FCD384"
+				item: "create:sticker"
+				type: "item"
+			}]
+			x: 2.396938775510222d
+			y: 2.8085034013605608d
+		}
+		{
+			dependencies: ["108C99B4F1FE705F"]
+			id: "7FB3323035BFA2A5"
+			tasks: [{
+				id: "44E3412E0A30E847"
+				item: "create:contraption_controls"
+				type: "item"
+			}]
+			x: -1.962244897959195d
+			y: 5.032653061224494d
+		}
+		{
+			dependencies: ["5BCF22055EDA1850"]
+			id: "123E31364D6068D8"
+			shape: "diamond"
+			tasks: [{
+				id: "5ED2E404231FA563"
+				item: "create:mechanical_roller"
+				type: "item"
+			}]
+			x: -3.5051020408163396d
+			y: 2.8214285714285623d
+		}
+		{
+			dependencies: [
+				"006F0DFB4E9FE795"
+				"1A155790CD83B2A7"
+				"5BCF22055EDA1850"
+			]
+			id: "44BAF1D73912447F"
+			tasks: [{
+				id: "3912433E1D751A96"
+				item: "createaddition:portable_energy_interface"
+				type: "item"
+			}]
+			x: -1.9540816326530575d
+			y: 1.8285714285714292d
+		}
+		{
+			dependencies: [
+				"1A155790CD83B2A7"
+				"5BCF22055EDA1850"
+				"7FB3323035BFA2A5"
+			]
+			id: "3F3B85401746F8BC"
+			tasks: [{
+				id: "248D68B3369469F7"
+				item: "create:elevator_pulley"
+				type: "item"
+			}]
+			x: -1.9574829931972886d
+			y: 3.964285714285701d
+		}
+	]
+	title: "Contraptions"
+}

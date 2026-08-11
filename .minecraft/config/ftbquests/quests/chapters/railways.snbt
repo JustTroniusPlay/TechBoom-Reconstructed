@@ -8,13 +8,6 @@
 	order_index: 1
 	quest_links: [
 		{
-			id: "4A9DF2D9298A82A6"
-			linked_quest: "3862A47C6FC3972D"
-			size: 1.3d
-			x: 14.035714285714292d
-			y: -3.1785714285714306d
-		}
-		{
 			id: "474A4F30B171898A"
 			linked_quest: "4DB042DAF83D7A0A"
 			shape: "gear"
@@ -283,10 +276,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"1FD927A625974E13"
-				"3862A47C6FC3972D"
-			]
+			dependencies: ["1FD927A625974E13"]
 			id: "5DFB1DB8D083F92F"
 			tasks: [{
 				id: "5B2DCEBC036D3FA5"

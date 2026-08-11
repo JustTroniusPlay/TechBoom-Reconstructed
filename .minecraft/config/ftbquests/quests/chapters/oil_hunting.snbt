@@ -3,9 +3,218 @@
 	default_quest_shape: ""
 	filename: "oil_hunting"
 	group: "552C56EECBA58F89"
+	icon: "createdieselgenerators:diesel_engine"
 	id: "649200B889034791"
-	order_index: 3
-	quest_links: [ ]
-	quests: [ ]
-	title: "Diesel Use"
+	order_index: 4
+	quest_links: [
+		{
+			id: "643B19463155089A"
+			linked_quest: "036AB4BD3B27FB1B"
+			shape: "diamond"
+			x: 7.816326530612237d
+			y: 6.3795705782312915d
+		}
+		{
+			id: "5C7A0ED21B869B3C"
+			linked_quest: "0D95F54AC91C2DF0"
+			x: 6.530612244897959d
+			y: 7.551020408163257d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["25951FDCB7908145"]
+			description: [""]
+			id: "3082ACB31EDFB2D1"
+			shape: "rsquare"
+			subtitle: "Hunting the black gold"
+			tasks: [{
+				id: "2BE071B6A294E103"
+				item: "createdieselgenerators:oil_scanner"
+				type: "item"
+			}]
+			x: 6.54081632653061d
+			y: 8.60752551020408d
+		}
+		{
+			dependencies: ["0D95F54AC91C2DF0"]
+			description: ["The top segment will contain &oGasoline&r and middle one &oDiesel&r."]
+			icon: "createdieselgenerators:crude_oil_bucket"
+			id: "043F7FFDC6430B34"
+			shape: "rsquare"
+			size: 1.2d
+			subtitle: "Simple and easy"
+			tasks: [
+				{
+					id: "22AF7F92510AB871"
+					item: "createdieselgenerators:distillation_controller"
+					type: "item"
+				}
+				{
+					id: "70E346771A8B2024"
+					item: "createdieselgenerators:gasoline_bucket"
+					type: "item"
+				}
+				{
+					id: "400A83B1DF44BB16"
+					item: "createdieselgenerators:diesel_bucket"
+					type: "item"
+				}
+			]
+			title: "Oil Proccesing"
+			x: 6.54081632653061d
+			y: 6.3993622448979615d
+		}
+		{
+			dependencies: ["043F7FFDC6430B34"]
+			description: ["Oil Barrels work similar to copper fluid tanks, but just can be more fitting to your refinery place."]
+			id: "20F8F5FEA03406E6"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "6ABBAD21DE1F859C"
+					item: "createdieselgenerators:oil_barrel"
+					type: "item"
+				}
+				{
+					id: "58DC4D782CC7F434"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:canister"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Thematical containment"
+			x: 6.54081632653061d
+			y: 5.297321428571433d
+		}
+		{
+			dependencies: [
+				"1A155790CD83B2A7"
+				"5C9C2540BA21612F"
+				"043F7FFDC6430B34"
+			]
+			dependency_requirement: "one_completed"
+			id: "00A2DD71A6D04C32"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "78302B8EDA5D2C1A"
+				item: "createdieselgenerators:huge_diesel_engine"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7863C9BC39A7F9D8"]
+			description: ["Can be combined together."]
+			id: "5B4C03560857B7FA"
+			tasks: [{
+				id: "79801EA3EA2F45FB"
+				item: "createdieselgenerators:large_diesel_engine"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7863C9BC39A7F9D8"]
+			description: ["Just remember that as speed increases, so does the stress requirement of powered machinery."]
+			id: "307B27F7EDC1D052"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [
+				{
+					id: "2C2A9442744DE7F1"
+					item: "createdieselgenerators:engine_silencer"
+					type: "item"
+				}
+				{
+					id: "7A46A17885973A77"
+					item: "createdieselgenerators:engine_turbocharger"
+					type: "item"
+				}
+			]
+			title: "Engine Upgrades"
+			x: 6.5d
+			y: 3.7258928571428633d
+		}
+		{
+			description: [
+				"Before you get real dieseil you can craft its replacement made from seeds oil and ethanol. How and what way you will choose to create them is up to you."
+				""
+				"With biodisel though your engines will give less SU."
+				""
+				"You can even use Ethanol and Seed Oil by itself to get your engines running, but &odon't expect much&r with this type of fuel."
+				""
+				"&oYou can use the same liquids from different mods.&r"
+			]
+			icon: "createdieselgenerators:biodiesel_bucket"
+			id: "5C9C2540BA21612F"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "27E606CF6F14B22A"
+					item: "createdieselgenerators:biodiesel_bucket"
+					type: "item"
+				}
+				{
+					id: "49FA834E1BC5F165"
+					item: "createdieselgenerators:plant_oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "56F925702339AAC3"
+					item: "createdieselgenerators:ethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Ecological replacement"
+			x: 6.5299319727891145d
+			y: 2.7026360544217702d
+		}
+		{
+			dependencies: [
+				"043F7FFDC6430B34"
+				"5C9C2540BA21612F"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Create rotational power by using various fuels."]
+			id: "7863C9BC39A7F9D8"
+			shape: "rsquare"
+			tasks: [{
+				id: "0BE45FEC8B325CAA"
+				item: "createdieselgenerators:diesel_engine"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["043F7FFDC6430B34"]
+			id: "2844C8440B416227"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "45F2A4918DB8DF91"
+				item: {
+					Count: 1
+					id: "createdieselgenerators:lighter"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.7d
+		}
+	]
+	title: "Spinning Diesel"
 }
