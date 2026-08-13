@@ -842,8 +842,8 @@
 				type: "item"
 			}]
 			title: "Industrial Coke Oven"
-			x: -0.9848639455782475d
-			y: 6.450053146258455d
+			x: -1.0464285714285637d
+			y: 6.4714285714285715d
 		}
 		{
 			dependencies: ["51D2A2A99A671311"]
@@ -2040,6 +2040,27 @@
 			title: "Special Bullets"
 			x: 3.514795918367362d
 			y: 4.25782312925169d
+		}
+		{
+			dependencies: [
+				"191FA67C7B17BB2F"
+				"69057739C5B7EB11"
+			]
+			description: [
+				"Combination of Blueprint abilities with internal storage of Engineer's Crafting Table. By right-clicking on the recipe on the right in the UI it will not be overwritten by different recipe. "
+				""
+				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly and bring resources out of your chests."
+			]
+			id: "1C31C068991CC116"
+			shape: "rsquare"
+			tasks: [{
+				id: "1D887C29DCACCEF9"
+				item: "forestry:worktable"
+				type: "item"
+			}]
+			title: "Personal Crafting Book"
+			x: 4.267857142857153d
+			y: 3.534523809523808d
 		}
 	]
 	title: "Fancy Engineering"

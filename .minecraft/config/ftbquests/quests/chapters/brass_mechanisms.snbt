@@ -23,6 +23,14 @@
 			x: 2.0180272108843553d
 			y: -4.055272108843528d
 		}
+		{
+			id: "59528E48DD9EE25D"
+			linked_quest: "6C63FA3003078E6E"
+			shape: "gear"
+			size: 1.2d
+			x: 11.989200680272113d
+			y: -0.5857142857142819d
+		}
 	]
 	quests: [
 		{
@@ -468,11 +476,25 @@
 			description: ["Advanced Create component."]
 			id: "3D1CCF8E85981E52"
 			shape: "hexagon"
-			tasks: [{
-				id: "09034466495D9971"
-				item: "create:electron_tube"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "09034466495D9971"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					id: "4D001CD0B2A9A1D6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:sandpaper"
+						}
+					}
+					title: "Sand Paper"
+					type: "item"
+				}
+			]
 			x: 7.5d
 			y: 3.0d
 		}
@@ -488,37 +510,6 @@
 			}]
 			x: 7.490986394557808d
 			y: 2.1299319727890946d
-		}
-		{
-			dependencies: ["7B289C03327D9227"]
-			description: ["Consumes energy to generate stress. "]
-			id: "3238F7E1DF448006"
-			shape: "diamond"
-			size: 1.3d
-			tasks: [{
-				id: "49357F146F9F534C"
-				item: "createaddition:electric_motor"
-				type: "item"
-			}]
-			x: 4.428571428571431d
-			y: 1.5238095238095255d
-		}
-		{
-			dependencies: [
-				"7B289C03327D9227"
-				"69DB58E1CD20ED2B"
-			]
-			description: ["Generate energy based on rotational input."]
-			id: "600DDB0FDB97CFFA"
-			shape: "diamond"
-			size: 1.3d
-			tasks: [{
-				id: "688817377E3F75B2"
-				item: "createaddition:alternator"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]

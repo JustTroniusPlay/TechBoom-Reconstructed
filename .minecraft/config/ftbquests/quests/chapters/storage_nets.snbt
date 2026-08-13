@@ -53,6 +53,7 @@
 		{
 			id: "7F4288F7FCBCE9EF"
 			linked_quest: "67A60A92B37AEADD"
+			shape: "octagon"
 			size: 0.5d
 			x: -2.5d
 			y: 10.0d
@@ -341,8 +342,15 @@
 				"721BF9359D5D6E95"
 				"540D62BE372AE7D1"
 			]
+			description: [
+				"Way to connect two storage networks together."
+				""
+				"For those who like something from both worlds"
+			]
 			id: "0D6832578FA06AE0"
+			shape: "diamond"
 			size: 0.85d
+			subtitle: "Hard to choose!"
 			tasks: [{
 				id: "062ED7C68413E8B8"
 				item: "createstockbridge:ae_bridge"
@@ -392,6 +400,7 @@
 			icon: "create:factory_gauge"
 			id: "2B9896C67F23D3AA"
 			size: 0.7d
+			subtitle: "Complex Monitoring"
 			tasks: [{
 				id: "1C8061AAF24DC98D"
 				item: "create:factory_gauge"
@@ -709,7 +718,7 @@
 				"One ME network can't have two separate controllers, but you can make a multiblock controller using multiple."
 			]
 			id: "71094588853AD9EB"
-			shape: "diamond"
+			shape: "rsquare"
 			size: 1.2d
 			tasks: [{
 				id: "615CCDAA2C08FE34"

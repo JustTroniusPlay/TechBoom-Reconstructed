@@ -45,6 +45,13 @@
 			x: 3.7163265306122426d
 			y: 0.5836734693877546d
 		}
+		{
+			id: "2721B761C3787D2E"
+			linked_quest: "7B289C03327D9227"
+			shape: "octagon"
+			x: 0.5025510204081414d
+			y: 5.459183673469376d
+		}
 	]
 	quests: [
 		{
@@ -216,8 +223,8 @@
 				item: "create_new_age:layered_magnet"
 				type: "item"
 			}]
-			x: -0.2880952380952593d
-			y: 4.402736752595761d
+			x: -0.35d
+			y: 2.8d
 		}
 		{
 			dependencies: ["59DE400FAB603D8A"]
@@ -229,8 +236,8 @@
 				item: "create_new_age:redstone_magnet"
 				type: "item"
 			}]
-			x: 0.5219298245613828d
-			y: 3.9301266559255126d
+			x: 0.4821428571428328d
+			y: 3.765306122448976d
 		}
 		{
 			dependencies: ["59DE400FAB603D8A"]
@@ -241,8 +248,8 @@
 				item: "create_new_age:fluxuated_magnetite"
 				type: "item"
 			}]
-			x: 1.2782312925169794d
-			y: 4.389981650554937d
+			x: 1.4d
+			y: 2.8d
 		}
 		{
 			dependencies: ["0FBD8C5E61338813"]
@@ -253,8 +260,8 @@
 				item: "create_new_age:netherite_magnet"
 				type: "item"
 			}]
-			x: 0.5282312925169848d
-			y: 4.685228696741838d
+			x: 0.4884443250984347d
+			y: 4.5204081632653015d
 		}
 		{
 			dependencies: [
@@ -296,6 +303,34 @@
 			title: "Nuclear Kinetics"
 			x: 3.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			description: ["Generate energy based on rotational input."]
+			id: "600DDB0FDB97CFFA"
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "688817377E3F75B2"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: -0.5994897959183945d
+			y: 3.7627551020408063d
+		}
+		{
+			dependencies: ["7B289C03327D9227"]
+			description: ["Consumes energy to generate stress. "]
+			id: "3238F7E1DF448006"
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "49357F146F9F534C"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: 1.5433673469387585d
+			y: 3.7627551020408134d
 		}
 	]
 	title: "Energy Application"

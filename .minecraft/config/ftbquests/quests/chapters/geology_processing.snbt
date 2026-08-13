@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "geology_processing"
+	group: "2A52AF7C0A2DD052"
+	icon: "immersivegeology:powder_bauxite"
+	id: "7120570C0D20C6DF"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Geology Processing"
+}

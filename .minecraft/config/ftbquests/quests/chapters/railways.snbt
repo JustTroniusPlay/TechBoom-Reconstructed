@@ -22,14 +22,6 @@
 			x: 5.929761904761897d
 			y: 3.95d
 		}
-		{
-			id: "7B8C0A2FDCE46521"
-			linked_quest: "37FAA3D4CF96E9EE"
-			shape: "rsquare"
-			size: 0.7d
-			x: 11.2d
-			y: -1.4d
-		}
 	]
 	quests: [
 		{

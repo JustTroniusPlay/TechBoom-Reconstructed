@@ -704,7 +704,7 @@
 				"They need constant inflow of water to not explode. If you still choose to filling it manually then be careful: &oif boiler will heat up to maximum adding water is strictly &lprohibited!&r You need wait for it to cool down.  "
 				""
 				"{@pagebreak}"
-				"Steam machinery have exhaust vents that need open space beside them to operate. "
+				"Steam machinery have exhaust vents that need open space beside them to operate. You can change at which side it gonna be with Wrenches."
 				""
 				"Unfotunately they can't auto-output or input items by themselves. You need to use additional means like hoppers or other ways. Starting with Low Voltage machinery or some other Redstone Flux machines it not gonna be a problem anymore."
 				""
@@ -2608,24 +2608,6 @@
 			y: -13.607142857142852d
 		}
 		{
-			dependencies: ["191FA67C7B17BB2F"]
-			description: [
-				"Combination of Blueprint abilities with internal storage of Engineer's Crafting Table. By right-clicking on the recipe on the right in the UI it will not be overwritten by different recipe. "
-				""
-				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly and bring resources out of your chests."
-			]
-			id: "1C31C068991CC116"
-			shape: "rsquare"
-			tasks: [{
-				id: "1D887C29DCACCEF9"
-				item: "forestry:worktable"
-				type: "item"
-			}]
-			title: "Personal Crafting Book"
-			x: 7.959088010204141d
-			y: -3.925807823129233d
-		}
-		{
 			dependencies: ["3129F95624CBEDD4"]
 			description: [
 				"Manual way to make rails and other simple components."
@@ -2650,6 +2632,8 @@
 				"Very cheap batteries that store energy. Chemical properties give them full charge after crafting."
 				""
 				"Sounds wonderful, isn't it? Well there is a problem. Made out of simple materials they will loose their energy capacity overtime and if there no energy stored in them they will brake!"
+				""
+				"You can grind unusable batteries back into some resources."
 			]
 			id: "332A1EB91726C2C0"
 			size: 0.7d

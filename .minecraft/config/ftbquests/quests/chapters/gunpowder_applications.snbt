@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "gunpowder_applications"
-	group: "495B816819C83ED9"
+	group: "2A52AF7C0A2DD052"
 	icon: {
 		Count: 1
 		id: "crusty_chunks:revolver_animated"
 		tag: { }
 	}
 	id: "0645F7302ADC781A"
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [ ]
 	title: "Gunpowder Applications"
