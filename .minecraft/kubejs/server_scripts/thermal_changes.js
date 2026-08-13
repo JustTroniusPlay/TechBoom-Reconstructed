@@ -253,7 +253,7 @@ ServerEvents.recipes(event => {
             "amount": 4000
           },
           {
-            "item": "minecraft:quartz"
+            "tag": "forge:dusts/quartz"
           },
           {"item": "ae2:charged_certus_quartz_crystal"}
         ],

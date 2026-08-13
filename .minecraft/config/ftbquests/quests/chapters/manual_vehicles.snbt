@@ -31,6 +31,14 @@
 			x: -0.012244897959185153d
 			y: -0.9591836734693899d
 		}
+		{
+			id: "56F3FF882BA40267"
+			linked_quest: "7DD34728381D1555"
+			shape: "octagon"
+			size: 0.6d
+			x: 2.6999999999999997d
+			y: -1.5d
+		}
 	]
 	quests: [
 		{
@@ -233,7 +241,9 @@
 				"16550070AD851335"
 				"25951FDCB7908145"
 			]
+			description: [""]
 			id: "19A3AA66E77C638B"
+			subtitle: "Kinetic Escalators"
 			tasks: [
 				{
 					id: "635A388E076A7155"
@@ -482,6 +492,38 @@
 			]
 			x: 0.4880952380952337d
 			y: 3.7630952380952323d
+		}
+		{
+			dependencies: ["7DD34728381D1555"]
+			description: [
+				"Manual drilling machine that use solid fuel for power."
+				""
+				"Use Shift or Space to go up or down."
+			]
+			icon: "immersive_machinery:tunnel_digger"
+			id: "740A845F94D5D8AA"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "544F30E8FDAEBCAB"
+					item: "immersive_machinery:tunnel_digger"
+					type: "item"
+				}
+				{
+					id: "0FDA0FB9F04C6519"
+					item: "immersive_machinery:diamond_drill"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1C9F9924AD4D3EDC"
+					item: "immersive_machinery:netherite_drill"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.0d
 		}
 	]
 	title: "Personal Transport"

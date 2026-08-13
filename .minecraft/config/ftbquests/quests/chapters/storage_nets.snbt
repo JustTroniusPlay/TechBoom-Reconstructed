@@ -58,12 +58,6 @@
 			x: -2.5d
 			y: 10.0d
 		}
-		{
-			id: "6DF3CC4A7FB10FDB"
-			linked_quest: "35AD6FC9A487EFB4"
-			x: 1.5d
-			y: 10.0d
-		}
 	]
 	quests: [
 		{
@@ -239,8 +233,8 @@
 				item: "create:stockpile_switch"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 4.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -254,7 +248,7 @@
 				item: "create:smart_chute"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 4.0d
 		}
 		{
@@ -392,8 +386,8 @@
 				item: "create_factory_logistics:network_link"
 				type: "item"
 			}]
-			x: 1.5244897959183916d
-			y: 4.809523809523814d
+			x: 3.5d
+			y: 3.85d
 		}
 		{
 			dependencies: ["721BF9359D5D6E95"]
@@ -511,8 +505,8 @@
 				}
 			]
 			title: "Fancy Silos"
-			x: 3.547278911564625d
-			y: 4.0238095238095255d
+			x: 3.1197278911564865d
+			y: 4.745238095238104d
 		}
 		{
 			dependencies: [
@@ -688,6 +682,7 @@
 		{
 			dependencies: ["1B95E7F9A5CBDBE8"]
 			id: "5E561FBFF8104A9C"
+			shape: "diamond"
 			tasks: [{
 				id: "5A094BE96546CD0A"
 				item: "ulvcovm:ulv_robot_arm"
@@ -790,7 +785,10 @@
 			y: 2.4499999999999997d
 		}
 		{
-			dependencies: ["2B605F8F5C28FCAD"]
+			dependencies: [
+				"2B605F8F5C28FCAD"
+				"7A722F4E1BB2DF66"
+			]
 			description: ["Extend access to various storages."]
 			id: "784CD20CAEDEC685"
 			tasks: [{
@@ -798,11 +796,11 @@
 				item: "create_connected:inventory_access_port"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: 1.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["2B605F8F5C28FCAD"]
+			dependencies: ["784CD20CAEDEC685"]
 			description: ["Give access to two inventories at the same time."]
 			id: "5763E65E25EBD0E4"
 			tasks: [{
@@ -810,12 +808,16 @@
 				item: "create_connected:inventory_bridge"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["7E43DE8E8F0F36A6"]
-			description: ["Can be put on pipes and later cabels to hide them into walls for better look!"]
+			dependencies: [
+				"7E43DE8E8F0F36A6"
+				"332E6B2C638AE656"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Can be put on GregTech pipes and later cabels to hide them into walls for better look!"]
 			icon: {
 				Count: 1
 				id: "gtceu:facade_cover"
@@ -826,6 +828,7 @@
 				}
 			}
 			id: "480641273B63C681"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -879,6 +882,7 @@
 			description: ["Can pickup block entities like chests and store them in your inventory. "]
 			icon: "mekanism:cardboard_box"
 			id: "4AA19B080FE6EE1D"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "2EC7CCD8366A209D"
@@ -910,6 +914,21 @@
 			}]
 			x: -0.85d
 			y: 5.5249999999999995d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"07DD3A2F452B366A"
+			]
+			description: ["Destroys items and liquids that go into it."]
+			id: "35AD6FC9A487EFB4"
+			tasks: [{
+				id: "140FF9F39AFA5EA9"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.0d
 		}
 	]
 	title: "Storage Solutions"

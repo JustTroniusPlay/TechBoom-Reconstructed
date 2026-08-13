@@ -12,53 +12,39 @@
 			linked_quest: "37506D0DC482AAA8"
 			shape: "pentagon"
 			size: 1.5d
-			x: 2.25d
-			y: -2.25d
-		}
-		{
-			id: "4800D7C6F6EC0B89"
-			linked_quest: "7D3FA2BBD1033FE9"
-			shape: "diamond"
-			x: 3.0d
-			y: -4.5d
-		}
-		{
-			id: "7B95BDC607E0AB2F"
-			linked_quest: "08F0E06F30471E3E"
-			shape: "diamond"
-			size: 1.2d
-			x: 7.629591836734676d
-			y: -6.0784013605442055d
+			x: 6.45d
+			y: -4.3d
 		}
 		{
 			id: "453D25EC705F69D3"
 			linked_quest: "540D62BE372AE7D1"
 			shape: "gear"
 			size: 0.6d
-			x: 4.2129251700680115d
-			y: -5.007142857142803d
+			x: 0.0d
+			y: -5.1d
 		}
 		{
 			id: "3AF215A295B43236"
 			linked_quest: "108C99B4F1FE705F"
 			shape: "rsquare"
 			size: 0.6d
-			x: -3.4185374149660035d
-			y: -1.4712585034013586d
-		}
-		{
-			id: "742950AE7664DB07"
-			linked_quest: "7AE82FECE43A0323"
-			size: 0.7d
-			x: 8.4d
-			y: -7.0d
+			x: 9.66760204081632d
+			y: -4.271938775510186d
 		}
 		{
 			id: "0B8FFB12D799766E"
 			linked_quest: "2F69960DFCAC5C3C"
 			size: 0.7d
-			x: -3.8386904761904916d
-			y: -8.004761904761908d
+			x: -4.4886904761904916d
+			y: -5.151020408163268d
+		}
+		{
+			id: "3433388B42F2FE0C"
+			linked_quest: "480641273B63C681"
+			shape: "diamond"
+			size: 0.7d
+			x: 3.0d
+			y: -9.0d
 		}
 	]
 	quests: [
@@ -78,8 +64,8 @@
 				item: "create:mechanical_pump"
 				type: "item"
 			}]
-			x: -2.0999999999999996d
-			y: -8.9d
+			x: -2.7499999999999996d
+			y: -6.04625850340136d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
@@ -98,8 +84,8 @@
 				item: "create:smart_fluid_pipe"
 				type: "item"
 			}]
-			x: -1.4986394557823104d
-			y: -9.782312925170071d
+			x: -2.1486394557823103d
+			y: -6.928571428571431d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
@@ -117,8 +103,8 @@
 				item: "create:fluid_valve"
 				type: "item"
 			}]
-			x: -2.621088435374155d
-			y: -9.782312925170068d
+			x: -3.2710884353741547d
+			y: -6.928571428571427d
 		}
 		{
 			dependencies: [
@@ -134,8 +120,8 @@
 				item: "create:portable_fluid_interface"
 				type: "item"
 			}]
-			x: -3.438945578231305d
-			y: -2.165136054421758d
+			x: 8.924999999999999d
+			y: -4.25d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
@@ -151,8 +137,8 @@
 				item: "create:hose_pulley"
 				type: "item"
 			}]
-			x: -2.0700680272108727d
-			y: -10.35374149659864d
+			x: -2.7200680272108726d
+			y: -7.5d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -207,8 +193,8 @@
 					type: "item"
 				}
 			]
-			x: 0.14761904761904532d
-			y: -3.7744897959183277d
+			x: 6.433333333333313d
+			y: -5.526020408163251d
 		}
 		{
 			dependencies: [
@@ -237,14 +223,11 @@
 				type: "item"
 			}]
 			title: "Water Tank Siding"
-			x: 0.1680272108843468d
-			y: -4.7336734693877105d
+			x: 6.471428571428558d
+			y: -6.635544217687048d
 		}
 		{
-			dependencies: [
-				"5186990A391ADB8D"
-				"11A8EA423A27F25F"
-			]
+			dependencies: ["5186990A391ADB8D"]
 			description: [
 				"Upgraded iron variant of copper tanks."
 				""
@@ -276,8 +259,8 @@
 				}
 			]
 			title: "Modular Tank"
-			x: -2.948809523809544d
-			y: -2.9078231292516676d
+			x: 8.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -305,8 +288,8 @@
 				}
 			]
 			title: "Modular Tanks"
-			x: -2.1488095238095397d
-			y: -2.1935374149659523d
+			x: 7.999234693877554d
+			y: -4.261734693877536d
 		}
 		{
 			dependencies: ["5186990A391ADB8D"]
@@ -331,8 +314,8 @@
 				}
 			]
 			title: "Variations"
-			x: -2.420238095238112d
-			y: -1.4935374149659424d
+			x: 7.5d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -466,18 +449,24 @@
 				item: "mekanism:basic_mechanical_pipe"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -10.5d
+			x: -1.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
-				"7D3FA2BBD1033FE9"
 				"37506D0DC482AAA8"
+				"332E6B2C638AE656"
 			]
-			description: ["Wooden pipes can't transport hot fluids and gases!"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Wooden pipes can't transport hot fluids and gases!"
+				""
+				"You can make different size one with less or more material, look in JEI!"
+			]
 			icon: "gtceu:treated_wood_normal_fluid_pipe"
 			id: "6C4F567410AA97A0"
-			size: 0.6d
+			shape: "diamond"
+			size: 0.7d
 			tasks: [
 				{
 					id: "10ED1745F41877F2"
@@ -491,9 +480,9 @@
 					type: "item"
 				}
 			]
-			title: "Wood Pipes"
-			x: 3.0d
-			y: -3.0d
+			title: "Wooden Pipes"
+			x: 5.198086734693881d
+			y: -5.911734693877548d
 		}
 		{
 			dependencies: [
@@ -507,8 +496,8 @@
 				item: "create_factory_logistics:jar_packager"
 				type: "item"
 			}]
-			x: -3.85d
-			y: -8.942857142857145d
+			x: -4.5d
+			y: -6.089115646258504d
 		}
 		{
 			dependencies: [
@@ -523,8 +512,8 @@
 				item: "create_factory_logistics:factory_fluid_gauge"
 				type: "item"
 			}]
-			x: -3.85d
-			y: -9.799999999999999d
+			x: -4.5d
+			y: -6.946258503401358d
 		}
 		{
 			dependencies: ["72304D7D63A87E7A"]
@@ -535,8 +524,8 @@
 				item: "create:spout"
 				type: "item"
 			}]
-			x: -2.070068027210887d
-			y: -7.925170068027214d
+			x: -2.720068027210887d
+			y: -5.071428571428573d
 		}
 		{
 			dependencies: ["7B64D58280611794"]
@@ -547,8 +536,8 @@
 				item: "create_things_and_misc:spout_gun"
 				type: "item"
 			}]
-			x: -1.7999999999999998d
-			y: -7.199999999999999d
+			x: -2.4499999999999997d
+			y: -4.3462585034013586d
 		}
 		{
 			dependencies: ["7B64D58280611794"]
@@ -565,8 +554,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.4d
-			y: -7.199999999999999d
+			x: -3.05d
+			y: -4.3462585034013586d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -608,8 +597,8 @@
 				}
 			]
 			title: "Better Buckets"
-			x: 6.10578231292515d
-			y: -6.073639455782299d
+			x: 2.25d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -624,8 +613,8 @@
 				item: "immersiveengineering:metal_barrel"
 				type: "item"
 			}]
-			x: 6.134353741496582d
-			y: -4.845068027210878d
+			x: 3.25d
+			y: -4.0d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -665,8 +654,8 @@
 				}
 			]
 			title: "Simple Multiblock Tanks"
-			x: 1.5d
-			y: -1.0d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["62F294152390992E"]
@@ -696,7 +685,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -10.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["29271E54A7DBAF2E"]
@@ -707,8 +696,8 @@
 				item: "immersivetechnology:barrel_steel"
 				type: "item"
 			}]
-			x: 6.134353741496582d
-			y: -4.216496598639445d
+			x: 3.25d
+			y: -3.3714285714285666d
 		}
 		{
 			dependencies: ["7931B771167AFDFE"]
@@ -741,8 +730,8 @@
 				}
 			]
 			title: "Fancy Tank"
-			x: 1.5d
-			y: 0.0d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["724160D9F6565F29"]
@@ -753,8 +742,8 @@
 				item: "ulvcovm:ulv_fluid_regulator"
 				type: "item"
 			}]
-			x: 2.9690476190476005d
-			y: -10.162244897959162d
+			x: 2.1734693877551052d
+			y: -11.16122448979591d
 		}
 		{
 			dependencies: ["332E6B2C638AE656"]
@@ -786,8 +775,8 @@
 				}
 			]
 			title: "Potin Alloy"
-			x: 2.1843537414965866d
-			y: -8.492857142857098d
+			x: 1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -806,8 +795,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: -5.0d
+			x: 0.8999999999999999d
+			y: -5.092857142857197d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -832,8 +821,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -872,8 +861,8 @@
 				}
 			]
 			title: "Cover Control"
-			x: 2.198639455782299d
-			y: -11.1877551020408d
+			x: 3.15d
+			y: -10.15d
 		}
 		{
 			dependencies: ["0B9E46B8967F33B0"]
@@ -885,8 +874,8 @@
 				item: "forestry:raintank"
 				type: "item"
 			}]
-			x: 1.05d
-			y: -4.2d
+			x: 7.0d
+			y: -5.95d
 		}
 		{
 			dependencies: ["3E8CD30DEAF3BF95"]
@@ -914,8 +903,8 @@
 				}
 			]
 			title: "Steel Modularity"
-			x: -3.8972789115646336d
-			y: -2.886394557823081d
+			x: 7.973724489795913d
+			y: -6.414795918367325d
 		}
 		{
 			dependencies: [
@@ -932,8 +921,8 @@
 				type: "item"
 			}]
 			title: "Stackable Liquids"
-			x: 6.134353741496589d
-			y: -7.245068027210877d
+			x: 1.275d
+			y: -3.4d
 		}
 		{
 			dependencies: ["62F294152390992E"]
@@ -986,13 +975,70 @@
 				"But you probably need some good luck to get it!"
 			]
 			id: "0FC22D30E0F736AF"
+			size: 0.7d
 			tasks: [{
 				id: "41CE82DDF26BCB75"
 				item: "thermal:device_water_gen"
 				type: "item"
 			}]
-			x: -0.7875850340136026d
-			y: -4.2688775510204024d
+			x: 5.95d
+			y: -5.95d
+		}
+		{
+			dependencies: ["031595756B809ADC"]
+			id: "7067FCA367EB961F"
+			shape: "diamond"
+			tasks: [{
+				id: "07095F1ED998BA9C"
+				item: {
+					Count: 1
+					id: "thermal:fluid_reservoir"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.8375425170067814d
+			y: -3.798129251700672d
+		}
+		{
+			dependencies: ["08F0E06F30471E3E"]
+			id: "7AE82FECE43A0323"
+			size: 0.7d
+			tasks: [{
+				id: "6AD621CCBF572A3C"
+				item: "thermal:fluid_tank_augment"
+				type: "item"
+			}]
+			x: 2.277338435374145d
+			y: -2.4257653061224254d
+		}
+		{
+			dependencies: [
+				"1553365BB32E7666"
+				"031595756B809ADC"
+			]
+			description: ["Fluid tank that can be expanded with upgrades and have configurable sides."]
+			id: "08F0E06F30471E3E"
+			tasks: [{
+				id: "54255A04237FA5AC"
+				item: {
+					Count: 1
+					id: "thermal:fluid_cell"
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								Amount: 0
+								Capacity: 32000
+								FluidName: "minecraft:empty"
+								Tank: 0b
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.2559098639455755d
+			y: -3.2471088435374043d
 		}
 	]
 	title: "Fluid Management"

@@ -1,0 +1,175 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steel_glaze"
+	group: "2A52AF7C0A2DD052"
+	icon: "thermal:steel_block"
+	id: "42130AB6A153F201"
+	order_index: 0
+	quest_links: [{
+		id: "0D37DA266658503C"
+		linked_quest: "7A0C939E0FE540EC"
+		shape: "gear"
+		size: 1.5d
+		x: 1.2d
+		y: 0.4500000000000002d
+	}]
+	quests: [
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Simple water wheels that convert movement of water into energy. You can put max to 3 wheels on one kinetic dynamo. "]
+			icon: "immersiveengineering:watermill"
+			id: "4C8C44388703BD22"
+			shape: "rsquare"
+			tasks: [
+				{
+					count: 3L
+					id: "77B2B70E6B74701B"
+					item: "immersiveengineering:watermill"
+					type: "item"
+				}
+				{
+					id: "3E0D9F133C2F834F"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+			]
+			title: "Water Energy"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Generate energy based on temperature difference between adjusted blocks, for example like lava and ice."]
+			id: "644DA6D29FB50DA8"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "62222DF3CA4498D7"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: -0.9714285714285751d
+			y: -0.22857142857142776d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: [
+				"Take some amount of energy with you to charge tools or use special upgrades. It will charge tools you holding."
+				""
+				"Accumulator Backpack itself need IE accumulator to store energy. Use Engineering's Workbench to modify."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 4
+					}
+				}
+				id: "immersiveengineering:powerpack"
+			}
+			id: "46BBF312DDDCB405"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3588D20CF11272B1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 4
+							}
+						}
+						id: "immersiveengineering:powerpack"
+					}
+					type: "item"
+				}
+				{
+					id: "39977366060980DC"
+					item: "immersiveengineering:toolupgrade_powerpack_antenna"
+					type: "item"
+				}
+				{
+					id: "6617B4F064CD1795"
+					item: "immersiveengineering:toolupgrade_powerpack_magnet"
+					type: "item"
+				}
+				{
+					id: "0FEFB4EC245D6CD1"
+					item: "immersiveengineering:toolupgrade_powerpack_induction"
+					type: "item"
+				}
+				{
+					id: "3833E2512182E1F4"
+					item: "immersiveengineering:toolupgrade_powerpack_tesla"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: [
+				"Steel upgrade to your shield that can be modified in Engineering Workbenche."
+				""
+				"{@pagebreak}"
+				"Double tap \"S\" key to equip shield with Magnetic Glove. You can change it in controls."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 2
+					}
+				}
+				id: "immersiveengineering:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4BA33B602CF1380F"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1618F2355DF4BD09"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 2
+							}
+						}
+						id: "immersiveengineering:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D8ED8F6745980FC"
+					item: "immersiveengineering:toolupgrade_shield_magnet"
+					type: "item"
+				}
+				{
+					id: "6C55109B89C9E981"
+					item: "immersiveengineering:toolupgrade_shield_shock"
+					type: "item"
+				}
+				{
+					id: "77E2165D86C146E2"
+					item: "immersiveengineering:toolupgrade_shield_flash"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.0d
+		}
+	]
+	title: "Steel Glaze"
+}

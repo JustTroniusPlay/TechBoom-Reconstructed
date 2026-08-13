@@ -8,43 +8,30 @@
 	order_index: 1
 	quest_links: [
 		{
-			id: "474A4F30B171898A"
-			linked_quest: "4DB042DAF83D7A0A"
-			shape: "gear"
-			size: 1.5d
-			x: 8.429761904761897d
-			y: -0.5499999999999998d
-		}
-		{
 			id: "25CC9A8A3CA31828"
 			linked_quest: "52563AE115ACBF51"
 			shape: "hexagon"
 			x: 5.929761904761897d
 			y: 3.95d
 		}
+		{
+			id: "59528E48DD9EE25D"
+			linked_quest: "6C63FA3003078E6E"
+			shape: "gear"
+			size: 1.2d
+			x: 6.911989795918373d
+			y: -0.5380952380952237d
+		}
+		{
+			id: "26722541C65124C7"
+			linked_quest: "7DD34728381D1555"
+			shape: "gear"
+			size: 1.5d
+			x: 4.150085034013614d
+			y: -0.5666666666666487d
+		}
 	]
 	quests: [
-		{
-			dependencies: ["4DB042DAF83D7A0A"]
-			id: "7DD34728381D1555"
-			rewards: [{
-				count: 64
-				id: "6B617F39C8965B74"
-				item: "minecraft:rail"
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 1.5d
-			tasks: [{
-				count: 16L
-				id: "0548D962A8BAE3F6"
-				item: "minecraft:rail"
-				type: "item"
-			}]
-			title: "Railways"
-			x: 4.1797619047619d
-			y: -0.48095238095245474d
-		}
 		{
 			dependencies: ["6C63FA3003078E6E"]
 			icon: "create:railway_casing"
@@ -74,42 +61,8 @@
 				}
 			]
 			title: "Big Trains"
-			x: 14.0d
-			y: -0.7d
-		}
-		{
-			dependencies: ["37FAA3D4CF96E9EE"]
-			description: [
-				"Bigger trains need to be build by hand and transfer big amount of resources around the world."
-				""
-				"But first you need tracks for them! There many different sizes and variants. "
-				""
-				"And even before you build your first large train you can try simple Handcard to move along the tracks."
-			]
-			id: "6C63FA3003078E6E"
-			tasks: [
-				{
-					id: "2225FC3D2346C00A"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "create:tracks"
-						}
-					}
-					title: "Custom tracks"
-					type: "item"
-				}
-				{
-					id: "3133D1DC0503D061"
-					item: "railways:handcar"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Bigger train tracks"
-			x: 12.0d
-			y: -0.5d
+			x: 9.557823129251702d
+			y: -0.6952380952380792d
 		}
 		{
 			dependencies: ["6C63FA3003078E6E"]
@@ -132,8 +85,8 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: 0.5d
+			x: 7.557823129251702d
+			y: 0.5047619047619207d
 		}
 		{
 			dependencies: ["6C63FA3003078E6E"]
@@ -144,8 +97,8 @@
 				item: "railways:track_monorail"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -1.5d
+			x: 7.557823129251702d
+			y: -1.4952380952380793d
 		}
 		{
 			dependencies: ["4B126C46A6671245"]
@@ -169,8 +122,8 @@
 				item: "create:schedule"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 0.35d
+			x: 9.557823129251702d
+			y: 0.3547619047619208d
 		}
 		{
 			dependencies: ["1FD927A625974E13"]
@@ -189,8 +142,8 @@
 				}
 			]
 			title: "Train fuel"
-			x: 15.5d
-			y: 0.0d
+			x: 11.057823129251702d
+			y: 0.004761904761920732d
 		}
 		{
 			dependencies: ["1FD927A625974E13"]
@@ -223,8 +176,8 @@
 				}
 			]
 			title: "Railroad logistics"
-			x: 15.5d
-			y: -1.5d
+			x: 11.057823129251702d
+			y: -1.4952380952380793d
 		}
 		{
 			dependencies: ["3CB5B9B7BD3751EC"]
@@ -264,8 +217,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.6d
-			y: 0.0d
+			x: 8.157823129251701d
+			y: 0.004761904761920732d
 		}
 		{
 			dependencies: ["1FD927A625974E13"]
@@ -275,8 +228,8 @@
 				item: "create_interactive:buffer_stop"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -2.0d
+			x: 9.557823129251702d
+			y: -1.9952380952380793d
 		}
 		{
 			dependencies: [
@@ -855,14 +808,29 @@
 		}
 		{
 			dependencies: ["7DD34728381D1555"]
+			icon: "stevescarts:blockcartassembler"
 			id: "1896AD265E453653"
 			shape: "rsquare"
 			size: 1.5d
-			tasks: [{
-				id: "25F7284557993388"
-				item: "stevescarts:blockcartassembler"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "25F7284557993388"
+					item: "stevescarts:blockcartassembler"
+					type: "item"
+				}
+				{
+					id: "154CC6DFA0D9C3AA"
+					item: "stevescarts:module_wooden_hull"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "196EF31CE353BCC0"
+					item: "stevescarts:module_standard_hull"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -1.9880952380952408d
 			y: -5.555952380952391d
 		}
@@ -1071,38 +1039,6 @@
 			title: "Bores"
 			x: -3.148299319727905d
 			y: 6.9066326530611875d
-		}
-		{
-			dependencies: ["4DB042DAF83D7A0A"]
-			description: [
-				"Manual drilling machine that use solid fuel for power."
-				""
-				"Use Shift or Space to go up or down."
-			]
-			icon: "immersive_machinery:tunnel_digger"
-			id: "740A845F94D5D8AA"
-			shape: "diamond"
-			tasks: [
-				{
-					id: "544F30E8FDAEBCAB"
-					item: "immersive_machinery:tunnel_digger"
-					type: "item"
-				}
-				{
-					id: "0FDA0FB9F04C6519"
-					item: "immersive_machinery:diamond_drill"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "1C9F9924AD4D3EDC"
-					item: "immersive_machinery:netherite_drill"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 10.0d
-			y: -0.5d
 		}
 		{
 			dependencies: ["202881A2FA1E9B9D"]

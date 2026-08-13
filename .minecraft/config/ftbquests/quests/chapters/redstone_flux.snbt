@@ -42,12 +42,12 @@
 			y: -3.6632653061224474d
 		}
 		{
-			id: "17D091CE1F7FB8E6"
-			linked_quest: "5361A9865C6547F4"
-			shape: "gear"
-			size: 1.5d
-			x: 9.0d
-			y: -2.7238945578231153d
+			id: "62D4B7186FC8809D"
+			linked_quest: "4DE3A5EB02DCDC59"
+			shape: "octagon"
+			size: 0.7d
+			x: 4.99285714285714d
+			y: 1.3689625850340121d
 		}
 	]
 	quests: [
@@ -503,46 +503,6 @@
 		}
 		{
 			dependencies: [
-				"1553365BB32E7666"
-				"031595756B809ADC"
-			]
-			description: ["Fluid tank that can be expanded with upgrades and have configurable sides."]
-			id: "08F0E06F30471E3E"
-			tasks: [{
-				id: "54255A04237FA5AC"
-				item: {
-					Count: 1
-					id: "thermal:fluid_cell"
-					tag: {
-						BlockEntityTag: {
-							TankInv: [{
-								Amount: 0
-								Capacity: 32000
-								FluidName: "minecraft:empty"
-								Tank: 0b
-							}]
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -0.20000000000000018d
-			y: 4.800000000000001d
-		}
-		{
-			dependencies: ["08F0E06F30471E3E"]
-			id: "7AE82FECE43A0323"
-			size: 0.7d
-			tasks: [{
-				id: "6AD621CCBF572A3C"
-				item: "thermal:fluid_tank_augment"
-				type: "item"
-			}]
-			x: -0.1785714285714306d
-			y: 5.62134353741498d
-		}
-		{
-			dependencies: [
 				"7BF7C8E5AFC2EE6A"
 				"030F34B864E08816"
 			]
@@ -606,103 +566,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"4DE3A5EB02DCDC59"
-				"22BE527D08C5B64D"
-				"10D646BACACC9E61"
-			]
-			dependency_requirement: "one_completed"
-			description: ["Universal energy storage cell. Using different upgrades you can change its attributes. It out- and input sides can be configured in the block UI."]
-			id: "518089C9998EBFF8"
-			shape: "diamond"
-			size: 1.5d
-			tasks: [{
-				id: "7F8CAB3D92F12540"
-				item: {
-					Count: 1
-					id: "thermal:energy_cell"
-					tag: {
-						BlockEntityTag: {
-							Energy: 0
-							EnergyMax: 1000000
-							EnergyRecv: 1000
-							EnergySend: 1000
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["4DE3A5EB02DCDC59"]
-			id: "423F84ADDE1CC9ED"
-			tasks: [{
-				id: "5718A24DF83ECC71"
-				item: {
-					Count: 1
-					id: "thermal:potion_infuser"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 10.1d
-			y: 2.0d
-		}
-		{
-			dependencies: ["4DE3A5EB02DCDC59"]
-			id: "7067FCA367EB961F"
-			tasks: [{
-				id: "07095F1ED998BA9C"
-				item: {
-					Count: 1
-					id: "thermal:fluid_reservoir"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 9.1d
-			y: 2.5d
-		}
-		{
-			dependencies: ["4DE3A5EB02DCDC59"]
-			id: "5E8C6076F2C33137"
-			tasks: [{
-				id: "4FD3CE150526A9D4"
-				item: {
-					Count: 1
-					id: "thermal:potion_quiver"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 10.1d
-			y: 1.0d
-		}
-		{
-			dependencies: ["5361A9865C6547F4"]
-			description: ["&lArboreal Extractor&r will help you get &osimple rubber&r more effectively and other liquids from trees like &oResin and Sap&r."]
-			icon: "thermal:device_tree_extractor"
-			id: "4DE3A5EB02DCDC59"
-			size: 1.0d
-			tasks: [
-				{
-					id: "4E67081F5752155F"
-					item: "thermal:device_tree_extractor"
-					type: "item"
-				}
-				{
-					id: "7D3376A6FE7DB162"
-					item: "thermal:latex_bucket"
-					type: "item"
-				}
-			]
-			title: "Latex"
-			x: 9.0d
-			y: 1.5d
-		}
-		{
 			dependencies: ["1553365BB32E7666"]
 			id: "602A267ADD5E2093"
 			size: 0.7d
@@ -711,8 +574,8 @@
 				item: "thermal:dynamo_fuel_augment"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.949999999999999d
+			x: -1.05d
+			y: 4.2d
 		}
 		{
 			dependencies: ["1553365BB32E7666"]
@@ -723,8 +586,8 @@
 				item: "thermal:dynamo_output_augment"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.25d
+			x: -3.15d
+			y: 2.8d
 		}
 		{
 			dependencies: ["52563AE115ACBF51"]
@@ -780,8 +643,8 @@
 				item: "thermal:potion_amplifier_augment"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 4.55d
+			x: -2.4499999999999997d
+			y: 4.2d
 		}
 		{
 			dependencies: ["1553365BB32E7666"]
@@ -792,8 +655,8 @@
 				item: "thermal:potion_duration_augment"
 				type: "item"
 			}]
-			x: -2.8d
-			y: 5.949999999999999d
+			x: -1.05d
+			y: 2.4499999999999997d
 		}
 		{
 			dependencies: ["52563AE115ACBF51"]
@@ -853,7 +716,7 @@
 				""
 				"All machines have configurable sides for in- and output.  "
 				""
-				"&lFollow 'Redstone Machinery' tab for Thermal Machinery.&r"
+				"&lFollow 'Redstone Machinery' tab.&r"
 			]
 			id: "2798CCE5B1DE21DA"
 			shape: "gear"
@@ -919,11 +782,12 @@
 				{
 					id: "4BA1E60DAC01C7AE"
 					item: "thermal:tree_oil_bucket"
+					optional_task: true
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 5.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]
@@ -952,41 +816,6 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"5361A9865C6547F4"
-				"27D02A3ECE518CCE"
-			]
-			description: ["Catch things in the water using various items."]
-			icon: "thermal:device_fisher"
-			id: "55CD3C049224FC35"
-			size: 1.2d
-			tasks: [
-				{
-					id: "5D7935C9A4BD1155"
-					item: "thermal:device_fisher"
-					type: "item"
-				}
-				{
-					id: "3C94EF913EF4DAC4"
-					item: "thermal:junk_net"
-					type: "item"
-				}
-				{
-					id: "039013434504E090"
-					item: "thermal:aquachow"
-					type: "item"
-				}
-				{
-					id: "065247BAC9C10448"
-					item: "thermal:deep_aquachow"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 9.0d
-			y: -5.3999999999999995d
-		}
-		{
 			dependencies: ["52563AE115ACBF51"]
 			id: "7D2A3F6A10253029"
 			shape: "diamond"
@@ -1002,119 +831,6 @@
 			}]
 			x: -4.78673469387757d
 			y: 0.7710034013605593d
-		}
-		{
-			dependencies: ["2798CCE5B1DE21DA"]
-			icon: {
-				Count: 1
-				id: "thermal:xp_crystal"
-				tag: { }
-			}
-			id: "63DAC2C8EA115E22"
-			shape: "diamond"
-			size: 0.6d
-			tasks: [
-				{
-					id: "4A8FDF1D8DE1E5F9"
-					item: {
-						Count: 1
-						id: "thermal:xp_crystal"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "5976E2B11ACEBFA6"
-					item: "thermal:xp_storage_augment"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 4.2d
-			y: 0.6d
-		}
-		{
-			dependencies: [
-				"5361A9865C6547F4"
-				"0D791BC98BD89A90"
-			]
-			dependency_requirement: "one_completed"
-			description: ["Creates Compost for Phytogenic Insolator and can be used in some recipes."]
-			icon: "thermal:device_composter"
-			id: "2E3EA7175DA2327F"
-			tasks: [
-				{
-					id: "4E30724D6A92D084"
-					item: "thermal:device_composter"
-					type: "item"
-				}
-				{
-					id: "0E4ECE09492C73A0"
-					item: "thermal:compost"
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: -4.5d
-		}
-		{
-			dependencies: [
-				"5361A9865C6547F4"
-				"63DAC2C8EA115E22"
-			]
-			id: "3BA851632B31C836"
-			tasks: [{
-				id: "286A00F6B3BC43EB"
-				item: "thermal:device_xp_condenser"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5361A9865C6547F4"]
-			description: ["Spreads potion effects around."]
-			id: "4D54D4EE4DBF13E0"
-			tasks: [{
-				id: "49A598650EF66838"
-				item: "thermal:device_potion_diffuser"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"5361A9865C6547F4"
-				"07DD3A2F452B366A"
-			]
-			description: ["Destroys items and liquids that go into it."]
-			id: "35AD6FC9A487EFB4"
-			tasks: [{
-				id: "140FF9F39AFA5EA9"
-				item: "thermal:device_nullifier"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["5361A9865C6547F4"]
-			description: [
-				"Work as automatic stone blocks type farm. "
-				""
-				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
-			]
-			id: "016889850869B51A"
-			size: 1.0d
-			tasks: [{
-				id: "1AFF19B5C1CD91F1"
-				item: "thermal:device_rock_gen"
-				type: "item"
-			}]
-			title: "Stone farming"
-			x: 10.614285714285714d
-			y: -2.7167517006802555d
 		}
 	]
 	title: "Redstone Machinery"

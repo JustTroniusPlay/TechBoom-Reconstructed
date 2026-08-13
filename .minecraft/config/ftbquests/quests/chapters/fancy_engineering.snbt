@@ -6,32 +6,12 @@
 	icon: "immersiveengineering:advanced_blast_furnace"
 	id: "1F4BE2C27FDFFE99"
 	order_index: 1
-	quest_links: [
-		{
-			id: "0D37DA266658503C"
-			linked_quest: "7A0C939E0FE540EC"
-			shape: "gear"
-			size: 1.5d
-			x: -3.0d
-			y: 1.5d
-		}
-		{
-			id: "7F316268B078E675"
-			linked_quest: "67C1B62B8C68F0F1"
-			shape: "diamond"
-			size: 0.7d
-			x: 6.3d
-			y: 1.05d
-		}
-		{
-			id: "709A36C731158048"
-			linked_quest: "51D2A2A99A671311"
-			shape: "gear"
-			size: 1.5d
-			x: 5.178571428571438d
-			y: 0.3642857142857139d
-		}
-	]
+	quest_links: [{
+		id: "29EEF1CFBE826818"
+		linked_quest: "5C9C2540BA21612F"
+		x: 1.5d
+		y: 14.0d
+	}]
 	quests: [
 		{
 			dependencies: [
@@ -161,62 +141,7 @@
 			y: 10.81428571428571d
 		}
 		{
-			dependencies: [
-				"7A0C939E0FE540EC"
-				"51D2A2A99A671311"
-			]
-			description: [
-				"Alternative upgrade to coke oven that use energy to boost its proccesses. "
-				""
-				"Place Baseheaters on the side and power them. &lFront side&r wil output &lcoke coal&r or other items, while &oback side&r will output &ocreosote&r."
-				""
-				"Top part is items input."
-			]
-			icon: "immersivetechnology:advanced_coke_oven"
-			id: "37659341AAB207BF"
-			rewards: [{
-				id: "2F672DC8998FF637"
-				item: "minecraft:hopper"
-				type: "item"
-			}]
-			tasks: [
-				{
-					count: 12L
-					id: "55293C72AFEA3416"
-					item: "immersivetechnology:reinforced_coke_brick"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "5EC104707890A538"
-					item: { Count: 6, id: "thermal:steel_block" }
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "753F31BF9E101B47"
-					item: { Count: 9, id: "immersiveengineering:sheetmetal_steel" }
-					type: "item"
-				}
-				{
-					id: "7A9953884436904E"
-					item: "immersivetechnology:advanced_coke_oven"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "640EB95627311269"
-					item: { Count: 2, id: "immersivetechnology:advanced_coke_oven_baseheater" }
-					type: "item"
-				}
-			]
-			title: "Steel plated Coke Oven"
-			x: 0.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["55C78E5A9D06111B"]
+			dependencies: ["5C9C2540BA21612F"]
 			description: [
 				"Generate 4096 FE/t consuming various liquids, mainly Diesel and its Bio variant."
 				""
@@ -276,18 +201,6 @@
 			]
 			x: 1.5090136054421706d
 			y: 15.162638180272104d
-		}
-		{
-			dependencies: ["09349E61D7AF0C55"]
-			id: "55C78E5A9D06111B"
-			shape: "hexagon"
-			tasks: [{
-				id: "33022D811112F1B3"
-				item: "immersiveengineering:biodiesel_bucket"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 14.0d
 		}
 		{
 			dependencies: ["16FA4B48AB337396"]
@@ -400,38 +313,6 @@
 			]
 			x: 1.5d
 			y: 12.0d
-		}
-		{
-			dependencies: [
-				"7A0C939E0FE540EC"
-				"521B2505E5C81E16"
-			]
-			description: ["Simple water wheels that convert movement of water into energy. You can put max to 3 wheels on one kinetic dynamo. "]
-			id: "4C8C44388703BD22"
-			shape: "rsquare"
-			tasks: [{
-				count: 3L
-				id: "77B2B70E6B74701B"
-				item: "immersiveengineering:watermill"
-				type: "item"
-			}]
-			title: "Water Energy"
-			x: 2.142857142857153d
-			y: 2.685714285714276d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Generate energy based on temperature difference between adjusted blocks, for example like lava and ice."]
-			id: "644DA6D29FB50DA8"
-			shape: "diamond"
-			size: 0.7d
-			tasks: [{
-				id: "62222DF3CA4498D7"
-				item: "immersiveengineering:thermoelectric_generator"
-				type: "item"
-			}]
-			x: 3.1416666666666586d
-			y: 1.3276041666666316d
 		}
 		{
 			dependencies: ["11CAA0BF384301E3"]
@@ -578,258 +459,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["51D2A2A99A671311"]
-			description: ["Using charcoal and other resources you can craft gundpowder."]
-			id: "4565506C16FA5FC3"
-			shape: "hexagon"
-			size: 0.7d
-			tasks: [{
-				id: "6073931AD4F3764E"
-				item: "minecraft:gunpowder"
-				type: "item"
-			}]
-			x: 4.2d
-			y: -0.7d
-		}
-		{
-			can_repeat: true
-			dependencies: ["51D2A2A99A671311"]
-			description: [
-				"Everything about Immersive Engineering to get more detailed info."
-				""
-				"This quest will repeat itself if you will lost this book."
-			]
-			icon: "immersiveengineering:manual"
-			id: "1EF7AEE6B0AA5B8E"
-			rewards: [{
-				id: "6B79B81EFE4D16C6"
-				item: "immersiveengineering:manual"
-				type: "item"
-			}]
-			shape: "square"
-			size: 0.7d
-			tasks: [{
-				id: "4B79CD381E408817"
-				title: "Manual for engineering"
-				type: "checkmark"
-			}]
-			x: 6.3d
-			y: -0.7d
-		}
-		{
-			dependencies: ["15B5CF1F309CA82A"]
-			description: [
-				"Crates can store items even if broken."
-				""
-				"Reinforced variant is more blast resistant."
-			]
-			id: "6099D2F4EEE9112A"
-			shape: "diamond"
-			tasks: [
-				{
-					id: "669D82183AF2E564"
-					item: "immersiveengineering:crate"
-					type: "item"
-				}
-				{
-					id: "7EDE3FED12DEFFED"
-					item: "immersiveengineering:reinforced_crate"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Portable crates"
-			x: 6.321428571428584d
-			y: 3.6857142857142833d
-		}
-		{
-			dependencies: ["6099D2F4EEE9112A"]
-			description: [
-				"Can store additional items, tools and even food. Shift-rightclick to place and pick up it. &oYou can even put it into the Tool Belt slots!&r"
-				""
-				"Wiring slots are for IE wires and connectors."
-			]
-			id: "797391FB5DEDC3D1"
-			size: 0.7d
-			tasks: [{
-				id: "16B54E554582D684"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 23
-						}
-					}
-					id: "immersiveengineering:toolbox"
-				}
-				type: "item"
-			}]
-			x: 6.321428571428584d
-			y: 4.5428571428571445d
-		}
-		{
-			dependencies: ["51D2A2A99A671311"]
-			description: [
-				"Creosot is essential to make treated planks that you can use in some mechanisms."
-				""
-				"And it can be used as fuel for some generators."
-			]
-			icon: "immersiveengineering:treated_wood_horizontal"
-			id: "15B5CF1F309CA82A"
-			rewards: [{
-				count: 8
-				id: "4469E52FA1977540"
-				item: "immersiveengineering:treated_wood_horizontal"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "6B35BA0BBC89FCC8"
-					item: "immersiveengineering:creosote_bucket"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "2722D0C47AD4802C"
-					item: { Count: 8, id: "immersiveengineering:treated_wood_horizontal" }
-					type: "item"
-				}
-			]
-			x: 5.142857142857153d
-			y: 2.5071428571428456d
-		}
-		{
-			dependencies: ["15B5CF1F309CA82A"]
-			description: [
-				"Compression dynamo can consume creosote and generate Forge Energy units. "
-				""
-				"It can be useful way to get a little bit more energy and spend Creosote if you have too much if it. "
-			]
-			id: "1FB9F832D1214239"
-			shape: "diamond"
-			size: 0.7d
-			tasks: [{
-				id: "7DBAE07870657D9A"
-				item: "thermal:dynamo_compression"
-				type: "item"
-			}]
-			title: "Creosote to energy"
-			x: 3.1454081632653015d
-			y: 1.9105867346938723d
-		}
-		{
-			dependencies: ["15B5CF1F309CA82A"]
-			description: [
-				"Treated planks can be crafted into Windmills. They will generate energy passively."
-				""
-				"Different weather will reduce or decrease energy output of Windmill. Building another Windmill of any type in close proximity (up to 7 blocks in front of it) will reduce its speed."
-			]
-			icon: "immersiveengineering:dynamo"
-			id: "521B2505E5C81E16"
-			shape: "diamond"
-			tasks: [
-				{
-					id: "34BE81DB7F0D00F4"
-					item: "immersiveengineering:dynamo"
-					type: "item"
-				}
-				{
-					id: "483BA109E9968F38"
-					item: "immersiveengineering:windmill"
-					type: "item"
-				}
-			]
-			title: "Kinetic clean energy"
-			x: 3.15d
-			y: 2.6357142857143003d
-		}
-		{
-			dependencies: ["521B2505E5C81E16"]
-			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail. Each blade will need it own Sail upgrade!"]
-			id: "50BA9C41804AE9A2"
-			size: 0.7d
-			tasks: [{
-				id: "3E02F94201C301A0"
-				item: "immersiveengineering:windmill_sail"
-				type: "item"
-			}]
-			x: 3.150000000000007d
-			y: 3.4285714285714306d
-		}
-		{
-			dependencies: ["15B5CF1F309CA82A"]
-			description: ["Have additional storage inside to keep some items and components."]
-			id: "69057739C5B7EB11"
-			tasks: [{
-				id: "50CBFA6876FEF895"
-				item: "immersiveengineering:craftingtable"
-				type: "item"
-			}]
-			x: 5.142857142857153d
-			y: 4.328571428571422d
-		}
-		{
-			dependencies: ["15B5CF1F309CA82A"]
-			description: [
-				"Using treated planks you can make big tank to store liquids! "
-				""
-				"Just be aware that wooden tank &ocan't store&r gases and hot liquids. For that you should use metal ones."
-				""
-				"Multiblock tanks auto-output when one of their valves look down or you can use pumps."
-				""
-				"&lLook into 'Fluid Management' tab.&r  "
-			]
-			icon: "gtceu:wooden_multiblock_tank"
-			id: "37506D0DC482AAA8"
-			shape: "pentagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "4229ACD319299404"
-					item: "gtceu:wooden_multiblock_tank"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "0D56842C82DFE996"
-					item: { Count: 2, id: "gtceu:wooden_tank_valve" }
-					type: "item"
-				}
-				{
-					count: 23L
-					id: "545EB99C733995C2"
-					item: "gtceu:wood_wall"
-					type: "item"
-				}
-				{
-					id: "3B81E908A6AB3AD8"
-					item: "gtceu:bronze_multiblock_tank"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "298E6598ACBC0524"
-					item: "gtceu:bronze_tank_valve"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 23L
-					id: "4C2BDB353A99BCA2"
-					item: "gtceu:steam_machine_casing"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Multiblock Tank"
-			x: 7.357142857142875d
-			y: 2.50714285714286d
-		}
-		{
 			dependencies: ["37392944F830DC3E"]
 			description: ["Fastest Coke Oven version that do things on its own without any additional requirements."]
 			id: "575BDE04271E94D1"
@@ -844,59 +473,6 @@
 			title: "Industrial Coke Oven"
 			x: -1.0464285714285637d
 			y: 6.4714285714285715d
-		}
-		{
-			dependencies: ["51D2A2A99A671311"]
-			description: [
-				"Upgrade to your Rustic Coke Oven that makes it faster."
-				""
-				"It now will outomatically output items and fluids with its hatches. Multiple Coke Ovens even will share walls with each other!"
-			]
-			icon: "gtceu:coke_oven"
-			id: "49EAA9A6F41A7551"
-			rewards: [{
-				count: 31
-				id: "384E2A2D05A73339"
-				item: "gtceu:coke_oven_bricks"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [
-				{
-					id: "06A693B62FDAE319"
-					item: "gtceu:coke_oven"
-					type: "item"
-				}
-				{
-					count: 25L
-					id: "0CBC08D5914738D8"
-					item: "gtceu:coke_oven_bricks"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "7CD3A054FEF6769C"
-					item: "gtceu:coke_oven_hatch"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 0.0d
-			y: -0.35d
-		}
-		{
-			dependencies: ["69057739C5B7EB11"]
-			description: ["Primary crafting station for various components."]
-			id: "11CAA0BF384301E3"
-			shape: "rsquare"
-			size: 1.2d
-			tasks: [{
-				id: "58F653ABADDA7700"
-				item: "immersiveengineering:workbench"
-				type: "item"
-			}]
-			x: 5.129591836734704d
-			y: 5.86530612244897d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -956,7 +532,7 @@
 			y: 5.036160714285714d
 		}
 		{
-			dependencies: ["7A0C939E0FE540EC"]
+			dependencies: ["0729C937DEFF1E0B"]
 			description: [
 				"Immersive Engineering adds its own deep ore veins that can be extracted only by using complex machines. But before that you should find them!"
 				""
@@ -1005,13 +581,10 @@
 			]
 			title: "Unseen veins"
 			x: -3.0d
-			y: 6.6d
+			y: 8.4d
 		}
 		{
-			dependencies: [
-				"5D42522665506478"
-				"0729C937DEFF1E0B"
-			]
+			dependencies: ["5D42522665506478"]
 			description: [
 				"Powerfull digging machine that will extract deep ore veins. it consist of two parts: &lExcavator engine and Bucket wheel&r. &oConsult to Engineer's Manual to see how they connect&r."
 				""
@@ -1079,7 +652,7 @@
 				}
 			]
 			x: -3.0d
-			y: 8.4d
+			y: 6.6d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -1568,7 +1141,7 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["55C78E5A9D06111B"]
+			dependencies: ["5C9C2540BA21612F"]
 			description: [
 				"Drill and Buzzsaw that consumes (bio)diesel. You can refuel them directly in the Refinery."
 				""
@@ -1644,20 +1217,6 @@
 			}]
 			x: 4.5d
 			y: 15.0d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Do you ever wanted to make a bunch of charcoal?"]
-			id: "3672AA82CBFB10E0"
-			shape: "diamond"
-			tasks: [{
-				id: "784EF9AE7FC2DDE2"
-				item: "gtceu:charcoal_pile_igniter"
-				type: "item"
-			}]
-			title: "Stucked on charcoal"
-			x: -4.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["0375476849A35537"]
@@ -1828,124 +1387,6 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["7A0C939E0FE540EC"]
-			description: [
-				"Steel upgrade to your shield that can be modified in Engineering Workbenche."
-				""
-				"{@pagebreak}"
-				"Double tap \"S\" key to equip shield with Magnetic Glove. You can change it in controls."
-			]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					Parent: {
-						Items: [ ]
-						Size: 2
-					}
-				}
-				id: "immersiveengineering:shield"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "4BA33B602CF1380F"
-			shape: "diamond"
-			tasks: [
-				{
-					id: "1618F2355DF4BD09"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								Items: [ ]
-								Size: 2
-							}
-						}
-						id: "immersiveengineering:shield"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7D8ED8F6745980FC"
-					item: "immersiveengineering:toolupgrade_shield_magnet"
-					type: "item"
-				}
-				{
-					id: "6C55109B89C9E981"
-					item: "immersiveengineering:toolupgrade_shield_shock"
-					type: "item"
-				}
-				{
-					id: "77E2165D86C146E2"
-					item: "immersiveengineering:toolupgrade_shield_flash"
-					type: "item"
-				}
-			]
-			x: -3.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			description: [
-				"Take some amount of energy with you to charge tools or use special upgrades. It will charge tools you holding."
-				""
-				"Accumulator Backpack itself need IE accumulator to store energy. Use Engineering's Workbench to modify."
-			]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					Parent: {
-						Items: [ ]
-						Size: 4
-					}
-				}
-				id: "immersiveengineering:powerpack"
-			}
-			id: "46BBF312DDDCB405"
-			shape: "diamond"
-			tasks: [
-				{
-					id: "3588D20CF11272B1"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								Items: [ ]
-								Size: 4
-							}
-						}
-						id: "immersiveengineering:powerpack"
-					}
-					type: "item"
-				}
-				{
-					id: "39977366060980DC"
-					item: "immersiveengineering:toolupgrade_powerpack_antenna"
-					type: "item"
-				}
-				{
-					id: "6617B4F064CD1795"
-					item: "immersiveengineering:toolupgrade_powerpack_magnet"
-					type: "item"
-				}
-				{
-					id: "0FEFB4EC245D6CD1"
-					item: "immersiveengineering:toolupgrade_powerpack_induction"
-					type: "item"
-				}
-				{
-					id: "3833E2512182E1F4"
-					item: "immersiveengineering:toolupgrade_powerpack_tesla"
-					type: "item"
-				}
-			]
-			x: -4.0d
-			y: 0.0d
-		}
-		{
 			dependencies: [
 				"7A0C939E0FE540EC"
 				"287ACA017CA51588"
@@ -2040,27 +1481,6 @@
 			title: "Special Bullets"
 			x: 3.514795918367362d
 			y: 4.25782312925169d
-		}
-		{
-			dependencies: [
-				"191FA67C7B17BB2F"
-				"69057739C5B7EB11"
-			]
-			description: [
-				"Combination of Blueprint abilities with internal storage of Engineer's Crafting Table. By right-clicking on the recipe on the right in the UI it will not be overwritten by different recipe. "
-				""
-				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly and bring resources out of your chests."
-			]
-			id: "1C31C068991CC116"
-			shape: "rsquare"
-			tasks: [{
-				id: "1D887C29DCACCEF9"
-				item: "forestry:worktable"
-				type: "item"
-			}]
-			title: "Personal Crafting Book"
-			x: 4.267857142857153d
-			y: 3.534523809523808d
 		}
 	]
 	title: "Fancy Engineering"

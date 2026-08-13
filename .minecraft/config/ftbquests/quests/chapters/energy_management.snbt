@@ -23,18 +23,6 @@
 			y: 0.2607142857142861d
 		}
 		{
-			id: "7E16D6E0D25025A2"
-			linked_quest: "518089C9998EBFF8"
-			x: -0.5005102040816354d
-			y: 2.6750000000000043d
-		}
-		{
-			id: "6934C4180CCE1CB8"
-			linked_quest: "332A1EB91726C2C0"
-			x: -1.5d
-			y: 1.5d
-		}
-		{
 			id: "792420F3FC228E88"
 			linked_quest: "799F7F64000A3084"
 			shape: "rsquare"
@@ -103,7 +91,7 @@
 			dependencies: [
 				"56766749439CD7E0"
 				"5361A9865C6547F4"
-				"3CADA01B0663BC89"
+				"69DB58E1CD20ED2B"
 			]
 			description: [
 				"Block type energy transfer. Unlike wires with connectors every cable need to be lay down block by block and will transfer fixed amount of energy. Have internal energy buffer."
@@ -123,7 +111,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -137,8 +125,8 @@
 				item: "mekanism:basic_universal_cable"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -6.0d
+			x: 4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4CCBE98B5628C77A"]
@@ -701,6 +689,35 @@
 			title: "Brass Accumulator"
 			x: 2.5d
 			y: 4.5d
+		}
+		{
+			dependencies: [
+				"22BE527D08C5B64D"
+				"10D646BACACC9E61"
+				"5361A9865C6547F4"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Universal energy storage cell. Using different upgrades you can change its attributes. It out- and input sides can be configured in the block UI."]
+			id: "518089C9998EBFF8"
+			size: 1.0d
+			tasks: [{
+				id: "7F8CAB3D92F12540"
+				item: {
+					Count: 1
+					id: "thermal:energy_cell"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 1000000
+							EnergyRecv: 1000
+							EnergySend: 1000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
 		}
 	]
 	title: "Energy Management"

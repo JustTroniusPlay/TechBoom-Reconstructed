@@ -6,23 +6,13 @@
 	icon: "minecraft:crafting_table"
 	id: "0899FBC774E74E99"
 	order_index: 0
-	quest_links: [
-		{
-			id: "0E64812A0919423B"
-			linked_quest: "031595756B809ADC"
-			shape: "pentagon"
-			size: 1.5d
-			x: -0.532700892857136d
-			y: -11.903220663265309d
-		}
-		{
-			id: "7A33371FDB0C7959"
-			linked_quest: "4879433BBEEF8352"
-			shape: "rsquare"
-			x: 9.094897959183651d
-			y: -7.58775510204082d
-		}
-	]
+	quest_links: [{
+		id: "7A33371FDB0C7959"
+		linked_quest: "4879433BBEEF8352"
+		shape: "rsquare"
+		x: 9.094897959183651d
+		y: -7.58775510204082d
+	}]
 	quests: [
 		{
 			description: ["Nothing changed in normal Minecraft progressin. So start with basic blocks for now!"]
@@ -480,13 +470,15 @@
 		{
 			dependencies: ["34D049FD2BF84E84"]
 			description: [
-				"To craft certain things you will need special tools. "
+				"Special GregTech tools that used in creation of different components."
 				""
-				"Hammer can help with making casings, tools and plates for now."
+				"&lHammers&r can help with making casings and plates. Additionally you can get already crushed ores when mining with it and make dusts after."
 				""
-				"File can make metal components like rods, screws and others."
+				"&lFiles&r can make metal components like rods, screws and others alike. They also used in combination with Hammer to &ocreate metal tools&r."
 				""
-				"Mortar can grind materials down into dusts to use them in future procceses or to simply make alloys manually! "
+				"&lMortars&r works as primitive macerator and grind materials down into dusts to use them in future procceses."
+				""
+				"&lWire Cutters&r used in making wires and other metalic components later."
 			]
 			id: "5D86113FD3732735"
 			rewards: [{
@@ -544,21 +536,24 @@
 							value: "gtceu:tools/crafting_wire_cutters"
 						}
 					}
-					optional_task: true
 					title: "Crafting Wire Cutters"
 					type: "item"
 				}
 			]
 			title: "Engineering Tools"
-			x: 5.86274447278916d
-			y: -3.936352040816285d
+			x: 1.556622023809581d
+			y: -7.451179846938775d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
-			description: ["Made out of copper and tin, Bronze is one of the first alloys that used in early machinery."]
+			description: [
+				"Made out of copper and tin, Bronze is one of the first alloys that used in early machinery."
+				""
+				"&lContinue in \"Bronze Age\" tab next.&r"
+			]
 			icon: "thermal:bronze_ingot"
 			id: "3129F95624CBEDD4"
-			shape: "hexagon"
+			shape: "gear"
 			size: 1.5d
 			subtitle: "Classical alloy"
 			tasks: [{
@@ -567,8 +562,8 @@
 				type: "item"
 			}]
 			title: "Bronze Age"
-			x: -0.5268707482993493d
-			y: -14.002147108843559d
+			x: 3.75d
+			y: -15.0d
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
@@ -697,36 +692,7 @@
 			y: -8.168452380952377d
 		}
 		{
-			dependencies: ["7D3FA2BBD1033FE9"]
-			description: [
-				"Solid boilers will generate steam for your first simple machinery."
-				""
-				"They need constant inflow of water to not explode. If you still choose to filling it manually then be careful: &oif boiler will heat up to maximum adding water is strictly &lprohibited!&r You need wait for it to cool down.  "
-				""
-				"{@pagebreak}"
-				"Steam machinery have exhaust vents that need open space beside them to operate. You can change at which side it gonna be with Wrenches."
-				""
-				"Unfotunately they can't auto-output or input items by themselves. You need to use additional means like hoppers or other ways. Starting with Low Voltage machinery or some other Redstone Flux machines it not gonna be a problem anymore."
-				""
-				"&lContinue in 'Steam Age' tab.&r"
-			]
-			id: "15C30310B03E4F79"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "6E73CC1F8E9C461D"
-				item: "gtceu:lp_steam_solid_boiler"
-				type: "item"
-			}]
-			title: "Start of steam age!"
-			x: -2.576870748299349d
-			y: -16.652147108843558d
-		}
-		{
-			dependencies: [
-				"1843506F57D72661"
-				"34D049FD2BF84E84"
-			]
+			dependencies: ["1843506F57D72661"]
 			description: ["Alloy Kiln can create alloys easily by just using burnabel solid fuel. build 4x4 cube and click with Engineer's Hammer to activate it."]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "10E87B6699909383"
@@ -747,56 +713,13 @@
 				}
 			]
 			title: "Alloys"
-			x: 1.6104963860544146d
-			y: -11.242623299319753d
-		}
-		{
-			dependencies: [
-				"3129F95624CBEDD4"
-				"1843506F57D72661"
-			]
-			description: [
-				"Main product of the oven is Coke Coal. It two times more efficent then coal and can be used in future to make steel."
-				""
-				"You also finally can get charcoal from wood!"
-				""
-				"&lLook into 'Fancy Engineering' tab to continue.&r"
-			]
-			icon: "immersiveengineering:coke_oven"
-			id: "51D2A2A99A671311"
-			rewards: [{
-				count: 4
-				id: "194E4C721BDDA7EA"
-				item: "minecraft:coal"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			subtitle: "Better fuel!"
-			tasks: [
-				{
-					count: 27L
-					id: "65C0F943A5744932"
-					item: "immersiveengineering:cokebrick"
-					type: "item"
-				}
-				{
-					id: "40BBBB445E7C475D"
-					item: "immersiveengineering:coke_oven"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "First Coke Oven"
-			x: -0.499027423469407d
-			y: -17.268579931972802d
+			x: 1.5877072704082096d
+			y: -11.302880527210903d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
 			description: ["Engineer's Hammer can activate your multiblock structures. Just click on the blocks of the formed structure."]
-			hide_dependent_lines: true
 			id: "1843506F57D72661"
-			shape: "diamond"
 			size: 0.7d
 			subtitle: "Activate the multiblock!"
 			tasks: [{
@@ -810,8 +733,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.673373724489842d
-			y: -3.0924744897958973d
+			x: 1.5713807397959627d
+			y: -8.711043792517025d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -892,8 +815,8 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 3.509135841836745d
-			y: -11.294153911564635d
+			x: -0.75d
+			y: -15.0d
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
@@ -941,7 +864,7 @@
 				""
 				"But fow now lets just make simple metal upgrades."
 				""
-				"&lSee more quests in 'Storage solutions' tab.&r"
+				"&lSee more quests in 'Storage Solutions' tab.&r"
 			]
 			id: "362FE530374D058F"
 			rewards: [{
@@ -968,8 +891,8 @@
 				}
 			]
 			title: "Storage Upgrade"
-			x: 0.0d
-			y: -6.0d
+			x: 3.1662786989796103d
+			y: -3.9525403911564823d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -1042,9 +965,9 @@
 					type: "item"
 				}
 			]
-			title: "Little upgrades"
-			x: 0.7d
-			y: -14.35d
+			title: "Little Upgrades"
+			x: 3.7598161139455897d
+			y: -13.709800170068d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -1055,7 +978,7 @@
 				""
 				"They very convenient to mine large resource veins and have great durability."
 				""
-				"Saws needed to make some components, but additionally with it you can get &o6 planks from 1 log&r or &osome get metal nuggets early&r."
+				"Saws needed to make some components, but additionally with it you can get &o6 planks from 1 log&r or &osome metal nuggets early&r."
 			]
 			id: "0F21BFC7B6C7D51D"
 			shape: "diamond"
@@ -1099,8 +1022,8 @@
 				}
 			]
 			title: "Gregic Tools"
-			x: 6.649564200680324d
-			y: -4.830569727891138d
+			x: 2.3434417517007446d
+			y: -8.345397534013628d
 		}
 		{
 			dependencies: ["7D69A9A746774D60"]
@@ -1124,9 +1047,9 @@
 				title: "Paxels"
 				type: "item"
 			}]
-			title: "Simple multitool"
-			x: 3.1584077380952778d
-			y: -1.945238095238099d
+			title: "Simple Multitool"
+			x: 3.1019929846938936d
+			y: -1.9478210034013612d
 		}
 		{
 			can_repeat: true
@@ -1191,36 +1114,6 @@
 			y: 3.0088860544217795d
 		}
 		{
-			dependencies: ["3129F95624CBEDD4"]
-			description: [
-				"With Gregtech wrehnches you can change how pipes from this mod connected, configure and breake important machinery instantly. "
-				""
-				"&lCheck 'Fluid Management' tab for different pipes.&r "
-				""
-				"But as of now simple bronze boilers will output steam automatically, so you don't need any fancy pumps."
-				""
-				"Plus you will need wrench in crafting of some components."
-			]
-			id: "7D3FA2BBD1033FE9"
-			shape: "circle"
-			size: 0.85d
-			tasks: [{
-				id: "6EFCCC7CF2D8BF3C"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "gtceu:tools/crafting_wrenches"
-					}
-				}
-				title: "Any #gtceu:tools/crafting_wrenches"
-				type: "item"
-			}]
-			title: "Work Wrenches"
-			x: -2.5743197278911834d
-			y: -15.525701530612285d
-		}
-		{
 			dependencies: ["25951FDCB7908145"]
 			description: [
 				"Mix of Zinc and Copper. Material for advanced Create components."
@@ -1235,8 +1128,8 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: 4.509135841836746d
-			y: -10.294153911564635d
+			x: -0.7595716411564553d
+			y: -13.710650510204061d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -1268,8 +1161,8 @@
 				item: "thermal:invar_ingot"
 				type: "item"
 			}]
-			x: 1.6305644132653185d
-			y: -12.750159438775519d
+			x: 2.829884141156448d
+			y: -10.640295493197236d
 		}
 		{
 			dependencies: ["306F6137CCDFF3C1"]
@@ -1492,8 +1385,8 @@
 				}
 			]
 			title: "Osmium Tools"
-			x: 5.078135629251754d
-			y: -4.80676020408162d
+			x: 0.7720131802721752d
+			y: -8.32158801020411d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -1667,8 +1560,8 @@
 				}
 			]
 			title: "Ziplines"
-			x: 5.863169642857187d
-			y: -2.3557397959183106d
+			x: -0.15514987244895906d
+			y: -7.4384566326531d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -1687,96 +1580,6 @@
 			title: "Free furnaces"
 			x: 7.050000000000001d
 			y: -7.7632653061224595d
-		}
-		{
-			dependencies: ["25951FDCB7908145"]
-			description: ["Backtanks can be put in your body accessory slot while diving helmet need to be in helmet slot, but can be stored in head accessory slot when you don't use it."]
-			id: "49BFD7BD22B74CBD"
-			shape: "diamond"
-			size: 0.7d
-			tasks: [
-				{
-					id: "5FA683A1AA176A82"
-					item: {
-						Count: 1
-						id: "create:copper_backtank"
-						tag: {
-							Air: 900
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4F8DE86640D13FD3"
-					item: {
-						Count: 1
-						id: "create:copper_diving_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0A31707AA21860FB"
-					item: {
-						Count: 1
-						id: "create:copper_diving_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Going underwater"
-			x: 4.209135841836744d
-			y: -12.194153911564635d
-		}
-		{
-			dependencies: ["49BFD7BD22B74CBD"]
-			id: "40DAF71D31B80879"
-			shape: "diamond"
-			size: 0.7d
-			tasks: [
-				{
-					id: "38CF07019CD01173"
-					item: {
-						Count: 1
-						id: "create:netherite_backtank"
-						tag: {
-							Air: 900
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6356C3B4A5BA6ECE"
-					item: {
-						Count: 1
-						id: "create:netherite_diving_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "3BB675CBFF46B87C"
-					item: {
-						Count: 1
-						id: "create:netherite_diving_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 4.909135841836744d
-			y: -12.194153911564635d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -1808,7 +1611,7 @@
 				""
 				"Outside the interface, right click the saved recipe to use available materials to craft the item. Shift right click to craft up to a stack of the item. Left click to delete a crafting recipe. A secondary display slot is available for each slot."
 				""
-				"&oThis can be very useful in crafting of many components.&r"
+				"&oThis can be very useful to remember how to craft many components.&r"
 			]
 			id: "191FA67C7B17BB2F"
 			rewards: [{
@@ -1824,8 +1627,8 @@
 				item: "create:crafting_blueprint"
 				type: "item"
 			}]
-			x: 7.024649234693916d
-			y: -3.926828231292465d
+			x: 2.3672991071428697d
+			y: -6.54607780612244d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -1947,8 +1750,8 @@
 				}
 			]
 			title: "Zinc Things"
-			x: 4.57529230442178d
-			y: -11.250021258503459d
+			x: -1.7952859268707542d
+			y: -14.986160714285695d
 		}
 		{
 			dependencies: ["7D69A9A746774D60"]
@@ -2080,8 +1883,8 @@
 				}
 			]
 			title: "Copper Things"
-			x: 2.280856717687108d
-			y: -1.945238095238099d
+			x: 2.224441964285724d
+			y: -1.9478210034013612d
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
@@ -2162,11 +1965,11 @@
 				}
 				type: "item"
 			}]
-			x: 5.078135629251754d
-			y: -3.0448554421768534d
+			x: 0.7720131802721752d
+			y: -6.5596832482993435d
 		}
 		{
-			dependencies: ["49BFD7BD22B74CBD"]
+			dependencies: ["330180412AC025EA"]
 			icon: {
 				Count: 1
 				id: "thermal:diving_helmet"
@@ -2223,29 +2026,8 @@
 				}
 			]
 			title: "Diving Suit"
-			x: 4.578268494897977d
-			y: -12.740582482993219d
-		}
-		{
-			dependencies: [
-				"3129F95624CBEDD4"
-				"330180412AC025EA"
-			]
-			description: [
-				"Machine that can make some special crafts automaticaly. Most of the Forestry related machines made out of simple materials, so they can be made easily."
-				""
-				"&lSee 'Industrial Beekeeper' tab.&r"
-			]
-			id: "4619627EEEE566A4"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "5057F8074A16534B"
-				item: "forestry:carpenter"
-				type: "item"
-			}]
-			x: -3.413313137755104d
-			y: -14.026796343537416d
+			x: -0.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2442,8 +2224,8 @@
 				}
 			]
 			title: "Brass things"
-			x: 3.662622236394566d
-			y: -10.258949829931982d
+			x: -1.7799798044217638d
+			y: -13.731058673469363d
 		}
 		{
 			dependencies: ["7BFF886E57F3D543"]
@@ -2504,11 +2286,14 @@
 				}
 			]
 			title: "Hazmat Suit"
-			x: 4.812537202380945d
-			y: -7.823575680272107d
+			x: 0.10199298469388651d
+			y: -5.022045068027197d
 		}
 		{
-			dependencies: ["10E87B6699909383"]
+			dependencies: [
+				"10E87B6699909383"
+				"4D2E330C1FE0BF08"
+			]
 			description: ["You can make glass panels with help of alloy kiln. It is not much but will do it for now."]
 			id: "330180412AC025EA"
 			shape: "hexagon"
@@ -2519,8 +2304,8 @@
 				type: "item"
 			}]
 			title: "Glass alloying"
-			x: -0.5480070153061121d
-			y: -9.512011054421798d
+			x: -0.52317708333333d
+			y: -9.772385204081623d
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
@@ -2536,7 +2321,7 @@
 			y: -7.224787414965974d
 		}
 		{
-			dependencies: ["7B81DDC0AA14EF81"]
+			dependencies: ["3129F95624CBEDD4"]
 			dependency_requirement: "one_started"
 			id: "6A1419E66988511D"
 			shape: "diamond"
@@ -2604,55 +2389,8 @@
 				}
 			]
 			title: "Bronze Equipment"
-			x: 0.7d
-			y: -13.607142857142852d
-		}
-		{
-			dependencies: ["3129F95624CBEDD4"]
-			description: [
-				"Manual way to make rails and other simple components."
-				""
-				"&lCheck \"Transportation\" tab.&r"
-			]
-			id: "4DB042DAF83D7A0A"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "19BA601086193C7D"
-				item: "railcraft:manual_rolling_machine"
-				type: "item"
-			}]
-			title: "Rails Time!"
-			x: 1.5408163265305905d
-			y: -16.819409013605483d
-		}
-		{
-			dependencies: ["4DB042DAF83D7A0A"]
-			description: [
-				"Very cheap batteries that store energy. Chemical properties give them full charge after crafting."
-				""
-				"Sounds wonderful, isn't it? Well there is a problem. Made out of simple materials they will loose their energy capacity overtime and if there no energy stored in them they will brake!"
-				""
-				"You can grind unusable batteries back into some resources."
-			]
-			id: "332A1EB91726C2C0"
-			size: 0.7d
-			tasks: [
-				{
-					id: "6A544699456536A4"
-					item: "railcraft:zinc_carbon_battery"
-					type: "item"
-				}
-				{
-					id: "550AF761F7E01C15"
-					item: "railcraft:zinc_silver_battery"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Unreliable batteries"
-			x: 1.5481292517006526d
-			y: -18.05214710884356d
+			x: 3.748931760204094d
+			y: -12.980378401360504d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2673,27 +2411,8 @@
 				}
 			]
 			title: "Manual Rubber"
-			x: 4.788727678571426d
-			y: -8.775956632653056d
-		}
-		{
-			dependencies: [
-				"7BFF886E57F3D543"
-				"56766749439CD7E0"
-			]
-			id: "512D08F4FA99BE90"
-			size: 0.7d
-			tasks: [{
-				id: "7F2F949C17AD4418"
-				item: {
-					Count: 1
-					id: "thermal:rf_potato"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 5.836346726190477d
-			y: -8.799766156462582d
+			x: 0.11015625000000995d
+			y: -3.974649234693871d
 		}
 		{
 			dependencies: ["15CBA4A7DB0EE055"]
@@ -2784,8 +2503,8 @@
 				item: "thermal:dynamo_magmatic"
 				type: "item"
 			}]
-			x: 1.65097257653062d
-			y: -14.117506377551024d
+			x: 7.054373937074807d
+			y: -10.681111819727846d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2902,12 +2621,16 @@
 				}
 			]
 			title: "Flint Tools"
-			x: 2.7241284013606104d
-			y: -2.457780612244896d
+			x: 2.667713647959226d
+			y: -2.4603635204081584d
 		}
 		{
 			dependencies: ["4B31C89E0FA58CE0"]
-			description: ["Invar tools comes with Efficiency after crafting."]
+			description: [
+				"Invar tools comes with Efficiency after crafting."
+				""
+				"&oDon't forget that there special GregTech tools too!&r"
+			]
 			id: "3D3B1B33532FA357"
 			shape: "diamond"
 			size: 0.7d
@@ -2994,8 +2717,8 @@
 				}
 			]
 			title: "Hasty!"
-			x: 1.65097257653062d
-			y: -13.403220663265316d
+			x: 2.829884141156434d
+			y: -11.436213860544171d
 		}
 		{
 			dependencies: ["0F21BFC7B6C7D51D"]
@@ -3043,43 +2766,8 @@
 				}
 			]
 			title: "Manual doubling"
-			x: 5.848251488095251d
-			y: -5.712744472789112d
-		}
-		{
-			dependencies: ["4619627EEEE566A4"]
-			description: ["You can use carpenter to automate creation of wooden ties for your railroads."]
-			id: "4C7E5BEF0E29D6F3"
-			size: 0.7d
-			tasks: [{
-				id: "4B49A1C5DB4AA5D3"
-				item: "railcraft:wooden_tie"
-				type: "item"
-			}]
-			x: -3.3959661989796075d
-			y: -12.995110544217699d
-		}
-		{
-			dependencies: ["4619627EEEE566A4"]
-			description: ["With help of Carpenter you can make wood pulp and paper out of it."]
-			icon: "forestry:wood_pulp"
-			id: "2D9254097394383E"
-			size: 0.7d
-			tasks: [
-				{
-					id: "0864A98334B666E2"
-					item: "forestry:wood_pulp"
-					type: "item"
-				}
-				{
-					id: "546DBCB742A97713"
-					item: "minecraft:paper"
-					type: "item"
-				}
-			]
-			title: "Piece of paper"
-			x: -3.375558035714306d
-			y: -15.035926870748309d
+			x: 3.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -3098,19 +2786,32 @@
 			y: -9.648118622448983d
 		}
 		{
-			dependencies: ["031595756B809ADC"]
-			description: ["Water sources is not infinite anymore. To get unlimited amount of water you should use pumps from &lFluid Management&r chapter!"]
-			icon: "minecraft:water_bucket"
-			id: "3B94AC16A5495D07"
+			dependencies: ["10E87B6699909383"]
+			description: [
+				"You can create alloys manually by mixing coresponding dusts and get blends of desired alloy."
+				""
+				"Of course they still need to be smelted to get ingots."
+			]
+			icon: "thermal:bronze_dust"
+			id: "04DAB4AE1BD20342"
 			shape: "square"
-			tasks: [{
-				id: "76D25B49966BD15E"
-				title: "Water is not infinite!!!!"
-				type: "checkmark"
-			}]
-			x: -0.5279389880952294d
-			y: -10.846077806122452d
+			size: 0.6d
+			tasks: [
+				{
+					id: "49DD1F7BA4223CD8"
+					title: "Manual Alloying"
+					type: "checkmark"
+				}
+				{
+					id: "2A89E6B79EAC19DE"
+					item: "thermal:bronze_dust"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.6373671343537453d
+			y: -11.267623299319716d
 		}
 	]
-	title: "At The Start"
+	title: "Age of Beginning"
 }
