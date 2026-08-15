@@ -727,8 +727,8 @@
 				item: "gtceu:lp_steam_miner"
 				type: "item"
 			}]
-			x: -1.40041321215989d
-			y: -2.8013446003401157d
+			x: -1.75d
+			y: -2.5d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -842,8 +842,8 @@
 				title: "Soft Mallet"
 				type: "item"
 			}]
-			x: -1.4d
-			y: -2.1d
+			x: -4.2d
+			y: -2.8d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -986,14 +986,18 @@
 				item: "gtceu:lp_steam_rock_crusher"
 				type: "item"
 			}]
-			x: -2.75d
-			y: -2.75d
+			x: -2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3CD05E2E5661246B"]
-			description: ["Essential metal to reach indutrial age. Most complex machines will gonna need it."]
+			description: [
+				"Essential metal to reach indutrial age. Most complex machines will gonna need it."
+				""
+				"&lCheck \"Fancy Engineering\" tab next.&r"
+			]
 			id: "7A0C939E0FE540EC"
-			shape: "rsquare"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "6EA4E40B4C5F24B0"
@@ -1374,6 +1378,7 @@
 			]
 			description: ["Using Seed Oil in Carpenter you can create special casing and sticks to use in creation of better bee housings and resource collection."]
 			id: "3AEE4DD01F88622A"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "55429477913319DD"
@@ -1393,7 +1398,7 @@
 		{
 			dependencies: [
 				"3AEE4DD01F88622A"
-				"693B43DD699B1707"
+				"3F3FC863FA058BDF"
 			]
 			icon: "forestry:apiary"
 			id: "42242A5A5BEAA077"
@@ -1450,7 +1455,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["3129F95624CBEDD4"]
+			dependencies: ["4619627EEEE566A4"]
 			id: "1CF89139038FEFA9"
 			shape: "diamond"
 			size: 0.6d
@@ -1459,8 +1464,8 @@
 				item: "forestry:wrench"
 				type: "item"
 			}]
-			x: 5.7d
-			y: -0.6d
+			x: 6.495389894238926d
+			y: -3.8433009141156376d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -1480,7 +1485,7 @@
 			dependencies: ["69057739C5B7EB11"]
 			description: ["Primary crafting station for various components."]
 			id: "11CAA0BF384301E3"
-			shape: "gear"
+			shape: "rsquare"
 			size: 1.2d
 			tasks: [{
 				id: "58F653ABADDA7700"
@@ -1599,6 +1604,105 @@
 			title: "Steel plated Coke Oven"
 			x: 1.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Consumes Lava or Creosote to heat itself and create Steam."]
+			id: "0FCFA77A56C98B28"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "250C3DA58D2315F2"
+				item: "gtceu:lp_steam_liquid_boiler"
+				optional_task: true
+				type: "item"
+			}]
+			title: "Liquid Boilers"
+			x: -3.15d
+			y: -2.4499999999999997d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Generate steam with the power of the SUN!"]
+			id: "780843C2BC813902"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "63DF20CE04CE4282"
+				item: "gtceu:lp_steam_solar_boiler"
+				optional_task: true
+				type: "item"
+			}]
+			title: "Solar Boilers"
+			x: -1.05d
+			y: -2.4499999999999997d
+		}
+		{
+			dependencies: ["11CAA0BF384301E3"]
+			description: ["Blueprint for beautiful Engineering banner paterns."]
+			icon: {
+				Count: 1
+				id: "minecraft:gray_banner"
+				tag: {
+					BlockEntityTag: {
+						Patterns: [{
+							Color: 0
+							Pattern: "ie_twd"
+						}]
+						id: "minecraft:banner"
+					}
+				}
+			}
+			id: "4D8E5F7F17424703"
+			size: 0.6d
+			tasks: [{
+				id: "34B69BEF98093C27"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "bannerpatterns"
+					}
+				}
+				type: "item"
+			}]
+			title: "Industrial Banners"
+			x: 5.1d
+			y: -8.7d
+		}
+		{
+			dependencies: ["11CAA0BF384301E3"]
+			description: ["Blueprint to craft components: mechanical parts, tubes, electronics and bulbs."]
+			icon: "immersiveengineering:component_iron"
+			id: "4AFEE3BCC0DC661B"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "3D62BC3435EE9A23"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "components"
+					}
+				}
+				type: "item"
+			}]
+			title: "Components"
+			x: 4.54096812553145d
+			y: -10.95112404336733d
+		}
+		{
+			dependencies: ["6AF4C17E9C8FF9DC"]
+			id: "0521F2E55A33A975"
+			subtitle: "Work In Progress"
+			tasks: [{
+				id: "5F3EA4DE19BFA304"
+				item: "railcraft:crusher"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -8.5d
 		}
 	]
 	title: "Bronze Age"

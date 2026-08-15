@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
       'gold','invar','electrum',
       'signalum','lead',
       'tin','steel','silver',
-      'nickel','rose_gold','lapis',
+      'nickel','rose_gold',
       'enderium','constantan','lumium']
     
     event.remove({id: "common_ore_library:crafting/gear/tungsten"});

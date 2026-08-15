@@ -151,16 +151,19 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Before you get real dieseil you can craft its replacement made from seeds oil and ethanol. How and what way you will choose to create them is up to you."
+				"Before you get real dieseil you can craft its replacement made from &oSeeds Oil and Ethanol&r. How and what way you will choose to create them is up to you."
 				""
-				"With biodisel though your engines will give less SU."
+				"Use this fuel to power various generators to get energy, stress or heat in blaze burners and boilers. "
+				""
+				"{@pagebreak}"
+				"With biodisel though your kinetic brass engines will give less Stress Units."
 				""
 				"You can even use Ethanol and Seed Oil by itself to get your engines running, but &odon't expect much&r with this type of fuel."
 				""
 				"&oYou can use the same liquids from different mods.&r"
 			]
 			id: "5C9C2540BA21612F"
-			shape: "rsquare"
+			shape: "hexagon"
 			size: 1.0d
 			tasks: [
 				{

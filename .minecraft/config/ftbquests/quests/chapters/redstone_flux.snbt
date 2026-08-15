@@ -16,7 +16,7 @@
 		}
 	}
 	id: "45EECEB7C05F8905"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "088304EF00FB61C8"
@@ -498,8 +498,8 @@
 				item: "systeams:boiler_pipe"
 				type: "item"
 			}]
-			x: -1.7210884353741491d
-			y: 5.909353741496616d
+			x: -1.7059523809523824d
+			y: 4.704676870748308d
 		}
 		{
 			dependencies: [

@@ -22,6 +22,11 @@ ServerEvents.recipes(event => {
     'gtceu:rubber_block'
   );
 
+  event.replaceInput({id: "create:crafting/kinetics/empty_blaze_burner"},
+    "#forge:plates/iron",
+    '#forge:plates/steel'
+  );
+
   event.remove({id: "create_new_age:shaped/generator_coil"});
   event.shaped(
   Item.of('create_new_age:generator_coil', 1), // arg 1: output
@@ -35,4 +40,15 @@ ServerEvents.recipes(event => {
     B: 'immersiveengineering:coil_lv',  //arg 3: the mapping object
     C: 'create:andesite_alloy_block'
   })
+
+  event.remove({output: "create:brass_casing"});
+  event.custom(
+    {
+    "type": "create:item_application",
+		"ingredients":[
+			{"tag": "forge:treated_wood"},
+			{"tag": "forge:ingots/brass"}],
+		"results": [
+			{"item": "create:brass_casing"}]
+	})
 })

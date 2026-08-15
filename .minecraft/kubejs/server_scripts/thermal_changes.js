@@ -83,6 +83,11 @@ ServerEvents.recipes(event => {
     "#forge:glass",
     'thermal:enderium_glass'
     )
+
+    event.replaceInput({id: "thermal:device_collector"},
+    "#forge:ingots/tin",
+    'minecraft:echo_shard'
+    )
   }
 
   {//Aqueous Accumulator
@@ -325,8 +330,7 @@ ServerEvents.recipes(event => {
     excep_gems.forEach(gem => {
       event.recipes.thermal.lapidary_fuel("#forge:gems/" + gem).energy(1000000)
     });
-
-    
-    
   }
+
+  event.recipes.thermal.compression_fuel("createdieselgenerators:biodiesel").energy(680000);
 })

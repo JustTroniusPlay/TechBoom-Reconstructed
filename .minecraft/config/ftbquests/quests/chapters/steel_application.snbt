@@ -26,6 +26,7 @@
 		{
 			id: "28C2EDC2B52649C2"
 			linked_quest: "5C9C2540BA21612F"
+			shape: "hexagon"
 			x: 4.0d
 			y: -1.0d
 		}
@@ -110,54 +111,6 @@
 			]
 			x: 2.5d
 			y: -1.0d
-		}
-		{
-			dependencies: ["5361A9865C6547F4"]
-			description: ["Generate steam with the power of the SUN!"]
-			id: "780843C2BC813902"
-			shape: "diamond"
-			size: 0.7d
-			tasks: [
-				{
-					id: "63DF20CE04CE4282"
-					item: "gtceu:lp_steam_solar_boiler"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "03505657C39A335C"
-					item: "gtceu:hp_steam_solar_boiler"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Solar Boilers"
-			x: 0.7d
-			y: -0.35d
-		}
-		{
-			dependencies: ["5361A9865C6547F4"]
-			description: ["Consumes Lava or Creosote to heat itself and create Steam."]
-			id: "0FCFA77A56C98B28"
-			shape: "diamond"
-			size: 0.7d
-			tasks: [
-				{
-					id: "250C3DA58D2315F2"
-					item: "gtceu:lp_steam_liquid_boiler"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5CCCB9A31D7FE942"
-					item: "gtceu:hp_steam_liquid_boiler"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Liquid Boilers"
-			x: -1.75d
-			y: -0.35d
 		}
 		{
 			dependencies: [
