@@ -159,8 +159,6 @@
 				"Main product of the oven is Coke Coal. It two times more efficent then coal and can be used in future to make steel."
 				""
 				"You also finally can get charcoal from wood!"
-				""
-				"&lLook into 'Fancy Engineering' tab to continue.&r"
 			]
 			icon: "immersiveengineering:coke_oven"
 			id: "51D2A2A99A671311"
@@ -524,6 +522,7 @@
 				item: "gtceu:coke_oven_bricks"
 				type: "item"
 			}]
+			shape: "diamond"
 			size: 1.0d
 			tasks: [
 				{

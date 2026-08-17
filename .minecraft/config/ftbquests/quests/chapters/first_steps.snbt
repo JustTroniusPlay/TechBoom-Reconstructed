@@ -244,6 +244,7 @@
 				{
 					id: "2711BA5788062CC7"
 					item: "adpother:iron_filter_frame"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -468,7 +469,7 @@
 			y: -1.325085034013597d
 		}
 		{
-			dependencies: ["34D049FD2BF84E84"]
+			dependencies: ["04DAB4AE1BD20342"]
 			description: [
 				"Special GregTech tools that used in creation of different components."
 				""
@@ -536,6 +537,7 @@
 							value: "gtceu:tools/crafting_wire_cutters"
 						}
 					}
+					optional_task: true
 					title: "Crafting Wire Cutters"
 					type: "item"
 				}
@@ -575,6 +577,9 @@
 				"Craft patterns and put them in Part Builder with some materials of your choice. "
 				""
 				"You can also &lrepair&r your tool with coresponding material in Tinker Station."
+				""
+				"{@pagebreak}"
+				"Putting Crafting Station and other tables near each other will connect them so you can easily go between different tabs without exiting."
 			]
 			icon: {
 				Count: 1
@@ -718,23 +723,54 @@
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
-			description: ["Engineer's Hammer can activate your multiblock structures. Just click on the blocks of the formed structure."]
+			description: [
+				"Engineer's Hammers can activate your multiblock structures. Just click on the blocks of the formed structure. "
+				""
+				"Using JEI you can check which block to click on the multiblock structure, it will be highlighted by red color."
+			]
 			id: "1843506F57D72661"
 			size: 0.7d
 			subtitle: "Activate the multiblock!"
-			tasks: [{
-				id: "4A4378B44737C81E"
-				item: {
-					Count: 1
-					id: "immersiveengineering:hammer"
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "4A4378B44737C81E"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
 					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
-			x: 1.5713807397959627d
-			y: -8.711043792517025d
+				{
+					id: "2AF40054AD30CF79"
+					item: {
+						Count: 1
+						id: "immersivegeology:hammer_bronze"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4784BAD0B0EC13B8"
+					item: {
+						Count: 1
+						id: "immersivegeology:hammer_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5672991071428726d
+			y: -9.605718537414944d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -794,7 +830,7 @@
 			description: [
 				"Andesite Alloy being used in all early Create machines and kinetic components."
 				""
-				"It can be created by mixing Iron or Zinc with Andesite blocks."
+				"It can be created by mixing Iron or Zinc with Andesite blocks or dusts."
 				""
 				"Just keep in mind that it always good to have more of it so you always can make needed shafts or cogs."
 				""
@@ -867,12 +903,20 @@
 				"&lSee more quests in 'Storage Solutions' tab.&r"
 			]
 			id: "362FE530374D058F"
-			rewards: [{
-				count: 6
-				id: "71F30BDE89CA6187"
-				item: "sophisticatedstorage:basic_tier_upgrade"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "71F30BDE89CA6187"
+					item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5A9C37CFF2C04A49"
+					item: "sophisticatedstorage:basic_to_copper_tier_upgrade"
+					type: "item"
+				}
+			]
 			shape: "pentagon"
 			size: 1.5d
 			subtitle: "More space for my mess!"
@@ -919,8 +963,8 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: 1.6277954931973113d
-			y: -2.457780612244896d
+			x: 2.3700201955782774d
+			y: -3.1768069727890946d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -1026,7 +1070,7 @@
 			y: -8.345397534013628d
 		}
 		{
-			dependencies: ["7D69A9A746774D60"]
+			dependencies: ["34D049FD2BF84E84"]
 			dependency_requirement: "one_started"
 			description: [
 				"Paxels combine axe, pickaxe and shovel into one item. "
@@ -1048,8 +1092,8 @@
 				type: "item"
 			}]
 			title: "Simple Multitool"
-			x: 3.1019929846938936d
-			y: -1.9478210034013612d
+			x: 2.0026732568027654d
+			y: -2.052019557823111d
 		}
 		{
 			can_repeat: true
@@ -1088,7 +1132,7 @@
 			shape: "square"
 			tasks: [{
 				id: "00F50C64FD811BF8"
-				title: "Dedicated map"
+				title: "Dedicated Map"
 				type: "checkmark"
 			}]
 			x: -4.310299744897925d
@@ -1463,7 +1507,7 @@
 					type: "observation"
 				}
 			]
-			title: "Wild edibles"
+			title: "Wild Edibles"
 			x: -2.8102997448979252d
 			y: 5.0088860544217795d
 		}
@@ -1754,7 +1798,7 @@
 			y: -14.986160714285695d
 		}
 		{
-			dependencies: ["7D69A9A746774D60"]
+			dependencies: ["34D049FD2BF84E84"]
 			dependency_requirement: "one_started"
 			description: ["Very simple tools that don't even need plates! "]
 			icon: {
@@ -1883,8 +1927,8 @@
 				}
 			]
 			title: "Copper Things"
-			x: 2.224441964285724d
-			y: -1.9478210034013612d
+			x: 1.1251222363945956d
+			y: -2.052019557823111d
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
@@ -2026,11 +2070,11 @@
 				}
 			]
 			title: "Diving Suit"
-			x: -0.5d
-			y: -11.0d
+			x: -0.97682291666667d
+			y: -12.0d
 		}
 		{
-			dependencies: ["34D049FD2BF84E84"]
+			dependencies: ["1843506F57D72661"]
 			description: [
 				"&lImmersive Geology&r add its own type of veins that can be used to get additional or alternative resources income. But unlike most of GregTech ones you need to crush them manually, compile and then use &oCrude Bloomery&r to get your ingots, at least before you will get upgraded Blast Furnace. "
 				""
@@ -2049,39 +2093,21 @@
 			size: 1.2d
 			tasks: [
 				{
-					id: "410653CF57F0D340"
-					item: {
-						Count: 1
-						id: "immersivegeology:hammer_stone"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "599F4A4F76B0E513"
-					item: {
-						Count: 1
-						id: "immersivegeology:hammer_bronze"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
 					id: "187E62150E57BE0C"
 					item: "immersivegeology:bloomery"
 					optional_task: true
 					type: "item"
 				}
+				{
+					count: 12L
+					id: "4CFF6B76A4E87ECC"
+					item: { Count: 12, id: "immersivegeology:storage_block_refractory_brick" }
+					type: "item"
+				}
 			]
 			title: "Crude Ore Harvesting"
-			x: 0.7d
-			y: -2.4499999999999997d
+			x: 0.6030133928571644d
+			y: -9.593813775510178d
 		}
 		{
 			dependencies: ["65E0926A806B0CE7"]
@@ -2100,8 +2126,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.7d
-			y: -1.6744897959183729d
+			x: 0.17444196428573377d
+			y: -9.093813775510178d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -2290,10 +2316,7 @@
 			y: -5.022045068027197d
 		}
 		{
-			dependencies: [
-				"10E87B6699909383"
-				"4D2E330C1FE0BF08"
-			]
+			dependencies: ["10E87B6699909383"]
 			description: ["You can make glass panels with help of alloy kiln. It is not much but will do it for now."]
 			id: "330180412AC025EA"
 			shape: "hexagon"
@@ -2304,8 +2327,8 @@
 				type: "item"
 			}]
 			title: "Glass alloying"
-			x: -0.52317708333333d
-			y: -9.772385204081623d
+			x: -1.0d
+			y: -10.772385204081623d
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
@@ -2621,8 +2644,8 @@
 				}
 			]
 			title: "Flint Tools"
-			x: 2.667713647959226d
-			y: -2.4603635204081584d
+			x: 1.5683939200680976d
+			y: -2.564562074829908d
 		}
 		{
 			dependencies: ["4B31C89E0FA58CE0"]
@@ -2786,11 +2809,12 @@
 			y: -9.648118622448983d
 		}
 		{
-			dependencies: ["10E87B6699909383"]
+			dependencies: ["34D049FD2BF84E84"]
+			dependency_requirement: "one_started"
 			description: [
-				"You can create alloys manually by mixing coresponding dusts and get blends of desired alloy."
+				"You can create alloys manually by grinding ingots using mortat and then mixing coresponding dusts to get blends of desired alloy."
 				""
-				"Of course they still need to be smelted to get ingots."
+				"Of course it still need to be smelted to get ingots."
 			]
 			icon: "thermal:bronze_dust"
 			id: "04DAB4AE1BD20342"
@@ -2808,9 +2832,47 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "10DD07C679C9AE75"
+					item: {
+						Count: 1
+						id: "gtceu:flint_mortar"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
 			]
-			x: 0.6373671343537453d
-			y: -11.267623299319716d
+			x: 1.531584821428595d
+			y: -6.046194727891134d
+		}
+		{
+			dependencies: ["330180412AC025EA"]
+			id: "10B1AA06D2EEE9E7"
+			shape: "diamond"
+			tasks: [{
+				id: "483625DDEDA3A424"
+				item: {
+					Count: 1
+					id: "adpother:aerometer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -9.5d
 		}
 	]
 	title: "Age of Beginning"

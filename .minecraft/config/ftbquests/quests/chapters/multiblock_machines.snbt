@@ -6,13 +6,22 @@
 	icon: "immersiveengineering:heavy_engineering"
 	id: "323F0B0CF9AE49CB"
 	order_index: 1
-	quest_links: [{
-		id: "29EEF1CFBE826818"
-		linked_quest: "5C9C2540BA21612F"
-		shape: "hexagon"
-		x: 0.8190476190476375d
-		y: -11.726897321428552d
-	}]
+	quest_links: [
+		{
+			id: "29EEF1CFBE826818"
+			linked_quest: "5C9C2540BA21612F"
+			shape: "hexagon"
+			x: 0.8190476190476375d
+			y: -11.726897321428552d
+		}
+		{
+			id: "14C672FDFF64D846"
+			linked_quest: "745A282BA4A843D5"
+			shape: "octagon"
+			x: 2.209523809523809d
+			y: -8.738095238095234d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -71,26 +80,96 @@
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
+			icon: "immersiveengineering:mixer"
 			id: "268EC5D708C8C75D"
-			tasks: [{
-				id: "0C0F2F37F6969734"
-				item: "immersiveengineering:mixer"
-				optional_task: true
-				type: "item"
-			}]
-			x: 9.5d
+			tasks: [
+				{
+					id: "0C0F2F37F6969734"
+					item: "immersiveengineering:mixer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "31844371A748379F"
+					item: { Count: 3, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "51A7B4FDE29A3EB8"
+					item: { Count: 4, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3AE0F6D108B7C515"
+					item: { Count: 4, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					id: "5EA2B4CF10DBC79C"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "669420D11C53DBE5"
+					item: { Count: 5, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					id: "32820403E6257639"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+			]
+			x: 10.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
+			icon: "immersiveengineering:crusher"
 			id: "20FA9C099EFFB9A7"
 			shape: "gear"
 			size: 1.2d
-			tasks: [{
-				id: "6B7E28F93D8C0D1E"
-				item: "immersiveengineering:crusher"
-				type: "item"
-			}]
+			subtitle: "Geology Duplication"
+			tasks: [
+				{
+					id: "6B7E28F93D8C0D1E"
+					item: "immersiveengineering:crusher"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "05CE589A55721D1A"
+					item: { Count: 10, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "2D717A211E1ECCFB"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "112F2BA02EB73251"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2360F3172A81C814"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "58079BAC653FEC2D"
+					item: { Count: 9, id: "minecraft:hopper" }
+					type: "item"
+				}
+			]
 			x: 0.7119047619047763d
 			y: -6.338802083333325d
 		}
@@ -296,7 +375,7 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
+			x: 8.5d
 			y: -6.5d
 		}
 		{
@@ -451,7 +530,7 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
+			x: 6.5d
 			y: -6.5d
 		}
 		{
@@ -1200,6 +1279,30 @@
 			}]
 			x: 5.0d
 			y: -13.5d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			id: "24C392F4ABC826C2"
+			shape: "diamond"
+			tasks: [{
+				id: "589CBFA265CDD3CC"
+				item: "immersiveengineering:assembler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			id: "36EFEA27976F2AA7"
+			shape: "diamond"
+			tasks: [{
+				id: "7B32FB75262B5A15"
+				item: "immersiveengineering:auto_workbench"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.5d
 		}
 	]
 	title: "Heavy Duty"

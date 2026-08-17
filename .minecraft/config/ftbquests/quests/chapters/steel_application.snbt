@@ -328,6 +328,9 @@
 				"Inside one of them you will find presses and certus quartz to start making components for your first digital storage system in the future."
 				""
 				"Press 'G' on Certus Quarts Cluster to read important info about the buddings."
+				""
+				"{@pagebreak}"
+				"If compass just spinning that means there no meteros in close proximity. You should go and look in other places in the world."
 			]
 			icon: "ae2:sky_stone_block"
 			id: "4879433BBEEF8352"
