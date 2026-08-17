@@ -719,6 +719,17 @@
 			x: -0.5d
 			y: 2.5d
 		}
+		{
+			dependencies: ["69DB58E1CD20ED2B"]
+			id: "1D338F6215ECCD94"
+			tasks: [{
+				id: "6D0A2F0893D5FF1B"
+				item: "immersivetechnology:trash_energy"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
 	]
 	title: "Energy Management"
 }

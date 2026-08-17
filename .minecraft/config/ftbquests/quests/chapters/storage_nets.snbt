@@ -930,6 +930,18 @@
 			x: 1.5d
 			y: 10.0d
 		}
+		{
+			dependencies: ["362FE530374D058F"]
+			id: "33E391E9484D659B"
+			shape: "diamond"
+			tasks: [{
+				id: "57D0FE2282C0C44D"
+				item: "immersivetechnology:trash_item"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
 	]
 	title: "Storage Solutions"
 }

@@ -2136,7 +2136,7 @@
 	#Remove Minecraft's Gold Ore during world generation.
 	remove_gold = false
 	#Remove Immersive Engineering's Bauxite Ore.
-	remove_ie_bauxite = true
+	remove_ie_bauxite = false
 	#Remove Immersive Engineering's Lead Ore.
 	remove_ie_lead = true
 	#Remove Immersive Engineering's Silver Ore.

@@ -727,6 +727,7 @@
 				"63DAC2C8EA115E22"
 			]
 			id: "3BA851632B31C836"
+			shape: "diamond"
 			tasks: [{
 				id: "286A00F6B3BC43EB"
 				item: "thermal:device_xp_condenser"
@@ -772,6 +773,7 @@
 				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
 			]
 			id: "016889850869B51A"
+			shape: "diamond"
 			size: 1.0d
 			tasks: [{
 				id: "1AFF19B5C1CD91F1"
@@ -819,6 +821,7 @@
 			description: ["&lArboreal Extractor&r will help you get &osimple rubber&r more effectively and other liquids from trees like &oResin and Sap&r."]
 			icon: "thermal:device_tree_extractor"
 			id: "4DE3A5EB02DCDC59"
+			shape: "diamond"
 			size: 1.0d
 			tasks: [{
 				id: "4E67081F5752155F"

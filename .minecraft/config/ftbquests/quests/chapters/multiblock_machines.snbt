@@ -1304,6 +1304,39 @@
 			x: 4.0d
 			y: -5.5d
 		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			description: [
+				"Can display Immersive Engineering multiblocks for better building."
+				""
+				"With Shift+Click you can change mods: "
+				""
+				"* &lSelection&r - where you can choose structure."
+				""
+				"* &lProjection&r - where you can put projection in the world."
+				""
+				"Using mouse scroll wheel while shifting you will &orotate structure&r."
+			]
+			id: "28DB034A241FE700"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				id: "37CECF439BA8CA10"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 0
+						}
+					}
+					id: "immersivepetroleum:projector"
+				}
+				type: "item"
+			}]
+			x: 2.277551020408154d
+			y: -2.4948979591836746d
+		}
 	]
 	title: "Heavy Duty"
 }

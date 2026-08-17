@@ -7,6 +7,11 @@ ServerEvents.recipes(event => {
     "#forge:glass_panes"
   );
 
+  event.replaceInput({id: "create:crafting/kinetics/encased_fan"},
+    "create:propeller",
+    "gtceu:steel_rotor"
+  );
+
   event.replaceInput({id: "create:crafting/kinetics/large_water_wheel"},
     "#minecraft:planks",
     '#forge:treated_wood'
