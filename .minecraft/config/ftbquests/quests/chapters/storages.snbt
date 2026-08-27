@@ -25,6 +25,12 @@
 			x: 4.5d
 			y: 1.5d
 		}
+		{
+			id: "5AF3A2D83857F32E"
+			linked_quest: "60E179A4458D1937"
+			x: 3.5d
+			y: 3.0d
+		}
 	]
 	quests: [ ]
 	title: "Storages"

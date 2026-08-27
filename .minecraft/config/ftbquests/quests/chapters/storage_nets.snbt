@@ -944,6 +944,11 @@
 		}
 		{
 			dependencies: ["362FE530374D058F"]
+			description: [
+				"There various helpful upgrades to your Sophisticated Storages. But first you need simple &oUpgrade Base&r. Then just use JEI to see their recipes."
+				""
+				"Some of them can be upgraded &ofurther&r to get additional functionality."
+			]
 			id: "74E7F633CB6B8097"
 			shape: "diamond"
 			size: 0.8d
@@ -952,8 +957,22 @@
 				item: "sophisticatedstorage:upgrade_base"
 				type: "item"
 			}]
+			title: "Customize your storing!"
 			x: 4.0d
 			y: 4.4d
+		}
+		{
+			dependencies: ["74E7F633CB6B8097"]
+			description: ["Helpful for creation of custom looking storages."]
+			id: "60E179A4458D1937"
+			shape: "diamond"
+			tasks: [{
+				id: "5965D6182669F547"
+				item: "sophisticatedstorage:decoration_table"
+				type: "item"
+			}]
+			x: 4.5244897959183845d
+			y: 4.859523809523804d
 		}
 	]
 	title: "Storage Solutions"

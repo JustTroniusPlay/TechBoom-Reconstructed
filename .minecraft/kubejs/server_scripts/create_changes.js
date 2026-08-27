@@ -32,6 +32,20 @@ ServerEvents.recipes(event => {
     '#forge:plates/steel'
   );
 
+  event.replaceInput({id: "create:cutting/runtime_generated/compat/minecraft/stripped_bamboo_block_to_bamboo_planks"},
+    "minecraft:stripped_bamboo_block",
+    ["minecraft:stripped_bamboo_block", "regions_unexplored:stripped_bamboo_log"]
+  );
+
+  event.replaceInput({input: "createdeco:zinc_sheet"},
+    "createdeco:zinc_sheet",
+    '#forge:plates/zinc'
+  );
+  event.replaceOutput({output: "createdeco:zinc_sheet"},
+    "createdeco:zinc_sheet",
+    '#forge:plates/zinc'
+  );
+
   event.remove({id: "create_new_age:shaped/generator_coil"});
   event.shaped(
   Item.of('create_new_age:generator_coil', 1), // arg 1: output
@@ -44,6 +58,16 @@ ServerEvents.recipes(event => {
     A: 'immersiveengineering:wirecoil_structure_steel',
     B: 'immersiveengineering:coil_lv',  //arg 3: the mapping object
     C: 'create:andesite_alloy_block'
+  })
+
+  event.shaped(
+  Item.of('create:belt_connector', 4), // arg 1: output
+  [
+    'AAA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: 'thermal:cured_rubber'
   })
 
   event.remove({output: "create:brass_casing"});
