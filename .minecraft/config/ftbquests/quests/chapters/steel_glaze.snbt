@@ -40,7 +40,7 @@
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Generate energy based on temperature difference between adjusted blocks, for example like lava and ice."]
+			description: ["Generate energy based on temperature difference between adjusted blocks, for example like &lLava and Ice.&r"]
 			id: "644DA6D29FB50DA8"
 			shape: "diamond"
 			size: 0.7d

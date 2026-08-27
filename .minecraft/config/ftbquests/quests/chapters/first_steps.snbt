@@ -319,7 +319,7 @@
 		}
 		{
 			dependencies: ["2FD57CEE87E0DE92"]
-			description: ["Powered by redstone, pumps will suck emissions throught vents system. It is a primary way to move pollution around."]
+			description: ["Powered by redstone, pumps will suck emissions throught vents system and output it up into chimneys above."]
 			icon: "adchimneys:stone_pump"
 			id: "6C790BA267E29176"
 			rewards: [{
@@ -348,7 +348,11 @@
 		}
 		{
 			dependencies: ["6CF046ABDEF49022"]
-			description: ["You can collect pollution that accumulated in the clouds using the small contraption: put a pump block, &opump pipe&r on top and then hopper on it. By clicking pump pipe with more pipes you will extended and get it to the sky limit. Now you can move your pollution down and use filters to clear the skies!"]
+			description: [
+				"You can collect pollution that accumulated in the clouds using the small contraption: put a pump block, &opump pipe&r on top and then hopper on it. By clicking pump pipe with more pipes you will extended and get it to the sky limit. Now you can move your pollution down and use filters to clear the skies!"
+				""
+				"Generally you can use Hopper and Pipes to move pollution down from its sources too."
+			]
 			id: "0FD0819C574379AC"
 			rewards: [
 				{

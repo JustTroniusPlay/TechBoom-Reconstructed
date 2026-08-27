@@ -505,8 +505,8 @@
 				}
 			]
 			title: "Fancy Silos"
-			x: 3.1197278911564865d
-			y: 4.745238095238104d
+			x: 1.75d
+			y: 4.55d
 		}
 		{
 			dependencies: [
@@ -941,6 +941,19 @@
 			}]
 			x: 1.5d
 			y: 6.5d
+		}
+		{
+			dependencies: ["362FE530374D058F"]
+			id: "74E7F633CB6B8097"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [{
+				id: "17BBE1A46A85C386"
+				item: "sophisticatedstorage:upgrade_base"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.4d
 		}
 	]
 	title: "Storage Solutions"

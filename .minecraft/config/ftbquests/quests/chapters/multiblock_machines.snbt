@@ -1014,7 +1014,7 @@
 				"To make them work you need attachments that affect their range and other abilities."
 				""
 				"{@pagebreak}"
-				"Press Shift to break only on block or Shift+Right-click to change it to single-block mod."
+				"Press Shift to break only one block or Shift+Right-click to change it to single-block mod."
 			]
 			id: "45B0F7A0D28F319F"
 			shape: "rsquare"
