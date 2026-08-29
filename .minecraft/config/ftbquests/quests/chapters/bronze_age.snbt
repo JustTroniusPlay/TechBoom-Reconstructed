@@ -52,6 +52,7 @@
 				"Supply machine with creosote of any kind and put wooden slabs. It even make 4 that way!"
 			]
 			id: "4C7E5BEF0E29D6F3"
+			shape: "hexagon"
 			size: 0.7d
 			tasks: [{
 				id: "4B49A1C5DB4AA5D3"
@@ -138,8 +139,6 @@
 				"Steam machinery have exhaust vents that need open space beside them to operate. You can change at which side it gonna be with Wrenches."
 				""
 				"Unfotunately they can't auto-output or input items by themselves. You need to use additional means like hoppers or other ways. Starting with Low Voltage machinery or some other Redstone Flux machines it not gonna be a problem anymore."
-				""
-				"&lContinue in 'Steam Age' tab.&r"
 			]
 			id: "15C30310B03E4F79"
 			shape: "rsquare"
@@ -515,7 +514,12 @@
 			description: [
 				"Upgrade to your Rustic Coke Oven that makes it faster."
 				""
-				"It now will outomatically output items and fluids with its hatches. Multiple Coke Ovens even will share walls with each other!"
+				"It now will outomatically output items and fluids with its hatches. "
+				""
+				"{@pagebreak}"
+				"Multiple Advanced Coke Ovens will share walls with each other! Thats mean you can make multiblocks intersect using Coke Oven bricks."
+				""
+				"Just keep in mind that &oHatches&r &lDON'T&r share Input/Output between different ovens. Every Coke Oven in shared structure need its own."
 			]
 			icon: "gtceu:coke_oven"
 			id: "49EAA9A6F41A7551"
@@ -1031,8 +1035,16 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["3129F95624CBEDD4"]
-			description: ["Primary way to get Biomass."]
+			dependencies: [
+				"05BC74C712E41396"
+				"64649C5C66312EDD"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Primary way to get Biomass."
+				""
+				"For this machine to work you need to make fertilizers. &lMulch&r you get from some previous machines can be a good start."
+			]
 			icon: "forestry:fermenter"
 			id: "0F45980EACA70EBA"
 			tasks: [
@@ -1047,7 +1059,7 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
+			x: 6.5d
 			y: -1.0d
 		}
 		{
@@ -1065,8 +1077,8 @@
 				item: "forestry:engine_biogas"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.0d
+			x: 7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1242,8 +1254,8 @@
 				item: "forestry:moistener"
 				type: "item"
 			}]
-			x: 2.054877165709975d
-			y: -1.7109534438775142d
+			x: 5.25d
+			y: -0.7d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -1327,7 +1339,7 @@
 				item: "forestry:centrifuge"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 8.506650922087601d
 			y: 0.0d
 		}
 		{
@@ -1349,7 +1361,7 @@
 				}
 			]
 			title: "Bee, where you come from?"
-			x: 10.0d
+			x: 10.506650922087601d
 			y: -2.0d
 		}
 		{
@@ -1370,8 +1382,8 @@
 				item: "forestry:bee_house"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.0d
+			x: 8.506650922087601d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1380,7 +1392,7 @@
 			]
 			description: ["Using Seed Oil in Carpenter you can create special casing and sticks to use in creation of better bee housings and resource collection."]
 			id: "3AEE4DD01F88622A"
-			shape: "rsquare"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "55429477913319DD"
@@ -1394,7 +1406,7 @@
 				}
 			]
 			title: "Applying Seed Oil"
-			x: 8.0d
+			x: 8.506650922087601d
 			y: -2.5d
 		}
 		{
@@ -1437,7 +1449,7 @@
 					type: "item"
 				}
 			]
-			x: 7.993349077912399d
+			x: 8.5d
 			y: -1.203130314625838d
 		}
 		{
@@ -1453,7 +1465,7 @@
 				item: "forestry:escritoire"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 8.506650922087601d
 			y: -4.5d
 		}
 		{

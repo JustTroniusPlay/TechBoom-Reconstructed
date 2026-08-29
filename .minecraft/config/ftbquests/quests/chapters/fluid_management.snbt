@@ -26,7 +26,7 @@
 		{
 			id: "3AF215A295B43236"
 			linked_quest: "108C99B4F1FE705F"
-			shape: "rsquare"
+			shape: "octagon"
 			size: 0.6d
 			x: 9.66760204081632d
 			y: -4.271938775510186d
@@ -346,7 +346,7 @@
 				"{@pagebreak}"
 				"&lGregTech Pipes&r don't extract without help of covers or pumps if machines can't output fluids. "
 				""
-				"They most notable benefits are internal buffer and ability to control their connections with any wrench-like tool. Additionally you can put block &oCovers on them to hide pipes in the walls&r."
+				"They most notable benefits are internal buffer and ability to control direction of fluid flow with any Wrench-like tool. Additionally you can put block &oCovers on them to hide pipes in the walls&r."
 				""
 				"You can craft pipes from wide variety of materials and with different sizes. This all will determine how much pipe can transfer &ominibuckets per tick&r. The result depends on how much materials you wish to spend."
 				""

@@ -226,7 +226,11 @@
 				"3D1CCF8E85981E52"
 				"2B605F8F5C28FCAD"
 			]
-			description: ["Will detect things for you in various storages."]
+			description: [
+				"Will detect things for you in various storages."
+				""
+				"&oCan actually work even with fluids!&r"
+			]
 			id: "2E05C5DC65334CCF"
 			tasks: [{
 				id: "450872BAD605C6D5"
