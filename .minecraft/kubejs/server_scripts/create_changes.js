@@ -46,6 +46,11 @@ ServerEvents.recipes(event => {
     '#forge:plates/zinc'
   );
 
+  event.replaceOutput({output: "create:crafting/kinetics/goggles"},
+    "#forge:glass",
+    '#forge:glass_panes'
+  );
+
   event.remove({id: "create_new_age:shaped/generator_coil"});
   event.shaped(
   Item.of('create_new_age:generator_coil', 1), // arg 1: output

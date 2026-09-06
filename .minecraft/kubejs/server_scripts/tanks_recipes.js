@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
 
   event.remove({id: "railcraft:iron_tank_wall"});
     event.shaped(
-  Item.of('railcraft:white_iron_tank_wall', 8), // arg 1: output
+  Item.of('railcraft:white_iron_tank_wall', 4), // arg 1: output
   [
     ' B ',
     'BCB', // arg 2: the shape (array of strings)
@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
 
   event.remove({id: "railcraft:steel_tank_wall"});
     event.shaped(
-  Item.of('railcraft:white_steel_tank_wall', 8), // arg 1: output
+  Item.of('railcraft:white_steel_tank_wall', 4), // arg 1: output
   [
     ' B ',
     'BCB', // arg 2: the shape (array of strings)

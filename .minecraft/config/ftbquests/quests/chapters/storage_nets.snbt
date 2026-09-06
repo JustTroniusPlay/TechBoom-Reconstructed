@@ -978,6 +978,40 @@
 			x: 4.5244897959183845d
 			y: 4.859523809523804d
 		}
+		{
+			dependencies: ["3B872B9D66E36739"]
+			description: ["Click your storages with packing tape to collect them as blocks after afterwards."]
+			id: "4C1F2B6D7D467299"
+			shape: "diamond"
+			subtitle: "Moving to new storage room"
+			tasks: [
+				{
+					id: "7BF575590504C28A"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:packing_tape"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "082937DA39295A62"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:super_packing_tape"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 6.5d
+		}
 	]
 	title: "Storage Solutions"
 }

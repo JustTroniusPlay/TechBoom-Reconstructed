@@ -57,13 +57,13 @@
 		{
 			dependencies: ["25951FDCB7908145"]
 			description: [
-				"The backbone tool of Create mod is its gold plated beatiful wrench!"
+				"The backbone tool of Create mod is its gold plated beatiful wrench! "
 				""
-				"That tool helps you rotate mechanisms, change their behavior and brake them without use of tools (shift+right click)."
+				"It helps you rotate mechanisms, change their behavior and brake them without use of tools (shift+right click)."
 			]
 			icon: "create:wrench"
 			id: "7F493483338AF21E"
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [{
 				id: "733F4F8FF9018E48"
 				item: "create:wrench"
@@ -502,10 +502,7 @@
 			y: -4.501700680272101d
 		}
 		{
-			dependencies: [
-				"2185592369B7D5FC"
-				"1A3BA4BEFD861942"
-			]
+			dependencies: ["2185592369B7D5FC"]
 			description: ["With help of cardboard you can make nametags and use it for books or item frames."]
 			icon: "create:cardboard"
 			id: "67A60A92B37AEADD"

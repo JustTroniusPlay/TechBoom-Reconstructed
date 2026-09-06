@@ -99,16 +99,12 @@
 				}
 			]
 			title: "Piece of paper"
-			x: 5.679366961628347d
-			y: -2.980341198979552d
+			x: 6.520484062765725d
+			y: -3.8439811862244753d
 		}
 		{
 			dependencies: ["031595756B809ADC"]
-			description: [
-				"With Gregtech wrehnches you can change how pipes from this mod connected, configure and breake important machinery instantly. "
-				""
-				"But as of now simple bronze boilers will output steam automatically, so you don't need any fancy pumps."
-			]
+			description: ["With Gregtech wrehnches you can configure and breake important machinery blocks from the mod."]
 			id: "7D3FA2BBD1033FE9"
 			shape: "circle"
 			size: 0.85d
@@ -131,7 +127,7 @@
 		{
 			dependencies: ["7D3FA2BBD1033FE9"]
 			description: [
-				"Solid boilers will generate steam for your first simple machinery."
+				"Solid boilers will generate steam for your first simple machinery. They will output it themselves into connected pipes, so it better to use those that can prevent steam getting into unwanted pipe networks."
 				""
 				"They need constant inflow of water to not explode. If you still choose to filling it manually then be careful: &oif boiler will heat up to maximum adding water is strictly &lprohibited!&r You need wait for it to cool down.  "
 				""
@@ -651,7 +647,7 @@
 			icon: "gtceu:primitive_blast_furnace"
 			id: "3CD05E2E5661246B"
 			rewards: [{
-				count: 16
+				count: 17
 				id: "0312BB4628AC0288"
 				item: "gtceu:firebricks"
 				type: "item"
@@ -726,15 +722,17 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
+			description: ["Mines ores under it in some radius."]
 			id: "17598FE2FF7FBD46"
-			size: 0.5d
+			shape: "diamond"
+			size: 0.7d
 			tasks: [{
 				id: "166F200772DAA0EF"
 				item: "gtceu:lp_steam_miner"
 				type: "item"
 			}]
-			x: -1.75d
-			y: -2.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
@@ -985,15 +983,17 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
+			description: ["Steam powered stone generator."]
 			id: "41D287C2BC7CF3E8"
-			size: 0.5d
+			shape: "diamond"
+			size: 0.7d
 			tasks: [{
 				id: "14D8490D6ECB3D8E"
 				item: "gtceu:lp_steam_rock_crusher"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: -2.75d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3CD05E2E5661246B"]
@@ -1035,15 +1035,20 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"05BC74C712E41396"
-				"64649C5C66312EDD"
-			]
+			dependencies: ["3129F95624CBEDD4"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Primary way to get Biomass."
+				"Primary way to get Biomass for Biogas Engine."
 				""
-				"For this machine to work you need to make fertilizers. &lMulch&r you get from some previous machines can be a good start."
+				"For this machine to work you need to make fertilizers:"
+				""
+				"- Crafted using &oApatite&r gems."
+				""
+				"- &oCompost&r made out of dirt and wheat."
+				" "
+				"- &oMulch&r can be get from proccesses from other Forestry machines."
+				""
+				"If you have some piles of &oashes&r after some other proccesses you can use them as replacement in some fertilizers recipes."
 			]
 			icon: "forestry:fermenter"
 			id: "0F45980EACA70EBA"
@@ -1059,7 +1064,7 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
+			x: 0.5d
 			y: -1.0d
 		}
 		{
@@ -1077,8 +1082,8 @@
 				item: "forestry:engine_biogas"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -1.5d
+			x: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1254,8 +1259,8 @@
 				item: "forestry:moistener"
 				type: "item"
 			}]
-			x: 5.25d
-			y: -0.7d
+			x: 1.0793276001807186d
+			y: -1.5926206420067857d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -1382,8 +1387,8 @@
 				item: "forestry:bee_house"
 				type: "item"
 			}]
-			x: 8.506650922087601d
-			y: 1.0d
+			x: 6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1412,7 +1417,7 @@
 		{
 			dependencies: [
 				"3AEE4DD01F88622A"
-				"3F3FC863FA058BDF"
+				"693B43DD699B1707"
 			]
 			icon: "forestry:apiary"
 			id: "42242A5A5BEAA077"
@@ -1467,19 +1472,6 @@
 			}]
 			x: 8.506650922087601d
 			y: -4.5d
-		}
-		{
-			dependencies: ["4619627EEEE566A4"]
-			id: "1CF89139038FEFA9"
-			shape: "diamond"
-			size: 0.6d
-			tasks: [{
-				id: "7F52DE3DD3928D2E"
-				item: "forestry:wrench"
-				type: "item"
-			}]
-			x: 6.495389894238926d
-			y: -3.8433009141156376d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]

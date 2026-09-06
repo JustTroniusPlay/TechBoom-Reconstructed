@@ -2000,19 +2000,45 @@
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
-			description: ["Can help rotate blocks. Useful for building."]
+			description: [
+				"Very simple wrenches that can help rotate or configuring blocks."
+				""
+				"Sometimes it better to use wrench from respected mod for better compatability or abilities."
+			]
 			id: "1940606A8481B5C7"
 			shape: "diamond"
 			size: 0.7d
-			tasks: [{
-				id: "7F327976FAE8B991"
-				item: {
-					Count: 1
-					id: "thermal:wrench"
-					tag: { }
+			tasks: [
+				{
+					id: "7F327976FAE8B991"
+					item: {
+						Count: 1
+						id: "thermal:wrench"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "4BA6850868F1469A"
+					item: "forestry:wrench"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "515DB3DA50B48260"
+					item: "ad_astra:wrench"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C6C8ED72CB8BAB2"
+					item: "immersivetechnology:formation_tool"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Various Wrenches"
 			x: 0.7720131802721752d
 			y: -6.5596832482993435d
 		}

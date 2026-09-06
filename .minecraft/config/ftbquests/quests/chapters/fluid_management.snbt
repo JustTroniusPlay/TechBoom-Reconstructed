@@ -128,7 +128,7 @@
 			description: [
 				"Can be lowered to get liquids below you."
 				""
-				"Most notable feature of Pulley to pump &oinfinite&r amount of &lwater or lava&r from large bodies of respective liquids."
+				"Most notable feature of Pulley to pump &oinfinite&r amount of &lwater or lava&r from &lLARGE&r bodies of respective liquids."
 			]
 			id: "477C63414BE6219A"
 			shape: "rsquare"
@@ -165,7 +165,11 @@
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
-			description: ["Output water automatically throught Pump Hatch. Output capacity based on biome."]
+			description: [
+				"Output water automatically throught Pump Hatch. Output capacity based on biome and weather conditions."
+				""
+				"You can make it &loutput more water&r later by &oreplacing Pump Hatch&r with higher tiers of Output Hatches."
+			]
 			icon: "gtceu:primitive_pump"
 			id: "4885642010185D62"
 			shape: "diamond"
@@ -1039,6 +1043,28 @@
 			}]
 			x: 2.2559098639455755d
 			y: -3.2471088435374043d
+		}
+		{
+			dependencies: ["031595756B809ADC"]
+			description: ["Can be used to empty different machines from liquids."]
+			id: "7C759EAE8A7994A1"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "2B2BB43AE75236F3"
+					item: "forestry:pipette"
+					type: "item"
+				}
+				{
+					id: "1C08E47256AD7530"
+					item: "mekanism:gauge_dropper"
+					type: "item"
+				}
+			]
+			title: "Pipettes"
+			x: 3.2491071428571274d
+			y: -4.821938775510191d
 		}
 	]
 	title: "Fluid Management"
