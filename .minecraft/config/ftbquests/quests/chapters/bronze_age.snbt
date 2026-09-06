@@ -1,0 +1,1715 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bronze_age"
+	group: "67E30E93A58EC129"
+	icon: "gtceu:bronze_machine_casing"
+	id: "6AFED1D39B3A0C7C"
+	order_index: 1
+	quest_links: [
+		{
+			id: "54D994E7E116909D"
+			linked_quest: "3129F95624CBEDD4"
+			shape: "gear"
+			size: 1.5d
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "1C88D3CDC422080B"
+			linked_quest: "4B31C89E0FA58CE0"
+			shape: "octagon"
+			size: 0.5d
+			x: 0.3992705676020236d
+			y: -3.861224489795923d
+		}
+		{
+			id: "0E64812A0919423B"
+			linked_quest: "031595756B809ADC"
+			shape: "pentagon"
+			size: 1.5d
+			x: -2.101749840561234d
+			y: -0.0014987244897799457d
+		}
+		{
+			id: "3B38ACB3D7E7FB08"
+			linked_quest: "1A3BA4BEFD861942"
+			shape: "rsquare"
+			size: 1.2d
+			x: -2.982841398278076d
+			y: -11.172177933673456d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"4619627EEEE566A4"
+				"15B5CF1F309CA82A"
+			]
+			description: [
+				"You can use Carpenter to automate creation of wooden ties for your railroads."
+				""
+				"Supply machine with creosote of any kind and put wooden slabs. It even make 4 that way!"
+			]
+			id: "4C7E5BEF0E29D6F3"
+			shape: "hexagon"
+			size: 0.7d
+			tasks: [{
+				id: "4B49A1C5DB4AA5D3"
+				item: "railcraft:wooden_tie"
+				type: "item"
+			}]
+			x: 5.479366961628386d
+			y: -4.179320790816291d
+		}
+		{
+			dependencies: [
+				"3129F95624CBEDD4"
+				"330180412AC025EA"
+			]
+			description: ["Machine that can make some special crafts automaticaly. Most of the Forestry related machines made out of simple materials, so they can be made easily."]
+			id: "4619627EEEE566A4"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "5057F8074A16534B"
+				item: "forestry:carpenter"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4619627EEEE566A4"]
+			description: ["With help of Carpenter you can make wood pulp and paper out of it."]
+			icon: "forestry:wood_pulp"
+			id: "2D9254097394383E"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "0864A98334B666E2"
+					item: "forestry:wood_pulp"
+					type: "item"
+				}
+				{
+					id: "546DBCB742A97713"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			title: "Piece of paper"
+			x: 6.520484062765725d
+			y: -3.8439811862244753d
+		}
+		{
+			dependencies: ["031595756B809ADC"]
+			description: ["With Gregtech wrehnches you can configure and breake important machinery blocks from the mod."]
+			id: "7D3FA2BBD1033FE9"
+			shape: "circle"
+			size: 0.85d
+			tasks: [{
+				id: "6EFCCC7CF2D8BF3C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:tools/crafting_wrenches"
+					}
+				}
+				title: "Any #gtceu:tools/crafting_wrenches"
+				type: "item"
+			}]
+			title: "Work Wrenches"
+			x: -2.0878281781462675d
+			y: -1.5554262329931845d
+		}
+		{
+			dependencies: ["7D3FA2BBD1033FE9"]
+			description: [
+				"Solid boilers will generate steam for your first simple machinery. They will output it themselves into connected pipes, so it better to use those that can prevent steam getting into unwanted pipe networks."
+				""
+				"They need constant inflow of water to not explode. If you still choose to filling it manually then be careful: &oif boiler will heat up to maximum adding water is strictly &lprohibited!&r You need wait for it to cool down.  "
+				""
+				"{@pagebreak}"
+				"Steam machinery have exhaust vents that need open space beside them to operate. You can change at which side it gonna be with Wrenches."
+				""
+				"Unfotunately they can't auto-output or input items by themselves. You need to use additional means like hoppers or other ways. Starting with Low Voltage machinery or some other Redstone Flux machines it not gonna be a problem anymore."
+			]
+			id: "15C30310B03E4F79"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "6E73CC1F8E9C461D"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			title: "Start of steam age!"
+			x: -2.0885576105442447d
+			y: -3.174999999999998d
+		}
+		{
+			dependencies: ["3129F95624CBEDD4"]
+			description: [
+				"Main product of the oven is Coke Coal. It two times more efficent then coal and can be used in future to make steel."
+				""
+				"You also finally can get charcoal from wood!"
+			]
+			icon: "immersiveengineering:coke_oven"
+			id: "51D2A2A99A671311"
+			rewards: [{
+				count: 4
+				id: "194E4C721BDDA7EA"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Better fuel!"
+			tasks: [
+				{
+					count: 27L
+					id: "65C0F943A5744932"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					id: "40BBBB445E7C475D"
+					item: "immersiveengineering:coke_oven"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "First Coke Oven"
+			x: 1.514285714285697d
+			y: -3.766432823129242d
+		}
+		{
+			dependencies: ["3129F95624CBEDD4"]
+			description: ["Manual way to make rails and create other simple components."]
+			icon: "railcraft:manual_rolling_machine"
+			id: "4DB042DAF83D7A0A"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "19BA601086193C7D"
+					item: "railcraft:manual_rolling_machine"
+					type: "item"
+				}
+				{
+					id: "0573D216B9685656"
+					item: "railcraft:standard_rail"
+					type: "item"
+				}
+			]
+			title: "Rails Time!"
+			x: 3.50462837478743d
+			y: -2.8d
+		}
+		{
+			dependencies: ["4DB042DAF83D7A0A"]
+			description: [
+				"Very cheap batteries that store energy. Chemical properties give them full charge after crafting."
+				""
+				"Sounds wonderful, isn't it? Well there is a problem. Made out of simple materials they will loose their energy capacity overtime and if there no energy stored in them they will brake!"
+				""
+				"You can grind unusable batteries back into some resources."
+			]
+			id: "332A1EB91726C2C0"
+			size: 0.7d
+			tasks: [
+				{
+					id: "6A544699456536A4"
+					item: "railcraft:zinc_carbon_battery"
+					type: "item"
+				}
+				{
+					id: "550AF761F7E01C15"
+					item: "railcraft:zinc_silver_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Unreliable batteries"
+			x: 3.5052538398171507d
+			y: -1.9330622874149483d
+		}
+		{
+			dependencies: [
+				"4DB042DAF83D7A0A"
+				"4C7E5BEF0E29D6F3"
+			]
+			description: [
+				"Standart rails that opens a bunch of possibilities for you in minecart uses."
+				""
+				"&lCheck \"Transportation\" tab to continue.&r"
+			]
+			id: "7DD34728381D1555"
+			rewards: [{
+				count: 64
+				id: "6B617F39C8965B74"
+				item: "minecraft:rail"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				count: 16L
+				id: "0548D962A8BAE3F6"
+				item: "minecraft:rail"
+				type: "item"
+			}]
+			title: "Railways"
+			x: 3.5052538398171578d
+			y: -4.1507493622448735d
+		}
+		{
+			dependencies: ["51D2A2A99A671311"]
+			description: ["Using charcoal and other resources you can craft gundpowder."]
+			id: "4565506C16FA5FC3"
+			shape: "hexagon"
+			size: 0.7d
+			tasks: [{
+				id: "6073931AD4F3764E"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: 2.1d
+			y: -2.8d
+		}
+		{
+			can_repeat: true
+			dependencies: ["51D2A2A99A671311"]
+			description: [
+				"Everything about Immersive Engineering to get more detailed info."
+				""
+				"This quest will repeat itself if you will lost this book."
+			]
+			icon: "immersiveengineering:manual"
+			id: "1EF7AEE6B0AA5B8E"
+			rewards: [{
+				id: "6B79B81EFE4D16C6"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.7d
+			tasks: [{
+				id: "4B79CD381E408817"
+				title: "Manual for engineering"
+				type: "checkmark"
+			}]
+			x: 2.340968125531454d
+			y: -3.7987430909863846d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Using treated planks you can make big tank to store liquids! "
+				""
+				"Just be aware that wooden tank &ocan't store&r gases and hot liquids. For that you should use metal ones."
+				""
+				"Multiblock tanks auto-output when one of their valves look down or you can use pumps."
+				""
+				"&lLook into 'Fluid Management' tab.&r  "
+			]
+			icon: "gtceu:wooden_multiblock_tank"
+			id: "37506D0DC482AAA8"
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4229ACD319299404"
+					item: "gtceu:wooden_multiblock_tank"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0D56842C82DFE996"
+					item: { Count: 2, id: "gtceu:wooden_tank_valve" }
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "545EB99C733995C2"
+					item: "gtceu:wood_wall"
+					type: "item"
+				}
+				{
+					id: "3B81E908A6AB3AD8"
+					item: "gtceu:bronze_multiblock_tank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "298E6598ACBC0524"
+					item: "gtceu:bronze_tank_valve"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "4C2BDB353A99BCA2"
+					item: "gtceu:steam_machine_casing"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Multiblock Tank"
+			x: 1.622302827380942d
+			y: -6.462213010204067d
+		}
+		{
+			dependencies: ["51D2A2A99A671311"]
+			description: [
+				"Creosot is essential to make treated planks that you can use in some components."
+				""
+				"And it can be used as fuel for some generators."
+			]
+			icon: "immersiveengineering:treated_wood_horizontal"
+			id: "15B5CF1F309CA82A"
+			rewards: [{
+				count: 8
+				id: "4469E52FA1977540"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6B35BA0BBC89FCC8"
+					item: "immersiveengineering:creosote_bucket"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2722D0C47AD4802C"
+					item: { Count: 8, id: "immersiveengineering:treated_wood_horizontal" }
+					type: "item"
+				}
+			]
+			x: 3.483964445153056d
+			y: -6.405102040816338d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Crates can store items even if broken."
+				""
+				"Reinforced variant is more blast resistant."
+			]
+			id: "6099D2F4EEE9112A"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "669D82183AF2E564"
+					item: "immersiveengineering:crate"
+					type: "item"
+				}
+				{
+					id: "7EDE3FED12DEFFED"
+					item: "immersiveengineering:reinforced_crate"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Portable crates"
+			x: 4.925303598001705d
+			y: -6.446768707482995d
+		}
+		{
+			dependencies: ["6099D2F4EEE9112A"]
+			description: [
+				"Can store additional items, tools and even food. Shift-rightclick to place and pick up it. &oYou can even put it into the Tool Belt slots!&r"
+				""
+				"Wiring slots are for IE wires and connectors."
+			]
+			id: "797391FB5DEDC3D1"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "16B54E554582D684"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 23
+						}
+					}
+					id: "immersiveengineering:toolbox"
+				}
+				type: "item"
+			}]
+			x: 4.932124588116487d
+			y: -7.189184736394559d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: ["Have additional storage inside to keep some items and components."]
+			id: "69057739C5B7EB11"
+			tasks: [{
+				id: "50CBFA6876FEF895"
+				item: "immersiveengineering:craftingtable"
+				type: "item"
+			}]
+			x: 4.530612244897966d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"191FA67C7B17BB2F"
+				"69057739C5B7EB11"
+			]
+			description: [
+				"Combination of Blueprint abilities with internal storage of Engineer's Crafting Table. By right-clicking on the recipe on the right in the UI it will not be overwritten by different recipe. "
+				""
+				"Worktable is useful when you craft something frequently and will get rid of need to check recipes constantly and bring resources out of your chests."
+			]
+			id: "1C31C068991CC116"
+			shape: "diamond"
+			tasks: [{
+				id: "1D887C29DCACCEF9"
+				item: "forestry:worktable"
+				type: "item"
+			}]
+			title: "Personal Crafting Book"
+			x: 5.503553159545056d
+			y: -8.00551126700681d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Compression dynamo can consume creosote and generate Forge Energy units. "
+				""
+				"It can be useful way to get a little bit more energy and spend Creosote if you have too much if it."
+				""
+				"{@pagebreak}"
+				"In the future you can use it with other fuels that give much more FE. Check them using JEI."
+			]
+			id: "1FB9F832D1214239"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "7DBAE07870657D9A"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			title: "Creosote to energy"
+			x: 2.483144996279748d
+			y: -7.985103103741501d
+		}
+		{
+			dependencies: [
+				"51D2A2A99A671311"
+				"4B31C89E0FA58CE0"
+			]
+			description: [
+				"Upgrade to your Rustic Coke Oven that makes it faster."
+				""
+				"It now will outomatically output items and fluids with its hatches. "
+				""
+				"{@pagebreak}"
+				"Multiple Advanced Coke Ovens will share walls with each other! Thats mean you can make multiblocks intersect using Coke Oven bricks."
+				""
+				"Just keep in mind that &oHatches&r &lDON'T&r share Input/Output between different ovens. Every Coke Oven in shared structure need its own."
+			]
+			icon: "gtceu:coke_oven"
+			id: "49EAA9A6F41A7551"
+			rewards: [{
+				count: 31
+				id: "384E2A2D05A73339"
+				item: "gtceu:coke_oven_bricks"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [
+				{
+					id: "06A693B62FDAE319"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "0CBC08D5914738D8"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7CD3A054FEF6769C"
+					item: "gtceu:coke_oven_hatch"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.37886240433671503d
+			y: -4.677551020408174d
+		}
+		{
+			dependencies: [
+				"15C30310B03E4F79"
+				"4B31C89E0FA58CE0"
+			]
+			description: ["Will convert any steam into Forge Energy units and by itself don't create pollution."]
+			id: "467322DDC62BF603"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "4E2469CD931206B9"
+				item: "systeams:steam_dynamo"
+				type: "item"
+			}]
+			x: 0.4138725021258338d
+			y: -3.1686915391156205d
+		}
+		{
+			dependencies: ["521B2505E5C81E16"]
+			description: ["You can upgrade your windmills blades with some tough fabric. Just click on the windmill with sail. Each blade will need it own Sail upgrade!"]
+			id: "50BA9C41804AE9A2"
+			size: 0.7d
+			tasks: [{
+				id: "3E02F94201C301A0"
+				item: "immersiveengineering:windmill_sail"
+				type: "item"
+			}]
+			x: 3.480065502763601d
+			y: -8.72602040816325d
+		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: [
+				"Treated planks can be crafted into Windmills. They will generate energy passively."
+				""
+				"Different weather will reduce or decrease energy output of Windmill. Building another Windmill of any type in close proximity (up to 7 blocks in front of it) will reduce its speed."
+			]
+			icon: "immersiveengineering:windmill"
+			id: "521B2505E5C81E16"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "34BE81DB7F0D00F4"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "483BA109E9968F38"
+					item: "immersiveengineering:windmill"
+					type: "item"
+				}
+			]
+			title: "Kinetic Clean Energy"
+			x: 3.4596573394982926d
+			y: -7.991326530612227d
+		}
+		{
+			dependencies: ["031595756B809ADC"]
+			description: ["Water sources is not infinite anymore. To get unlimited amount of water you should use pumps from &lFluid Management&r chapter!"]
+			icon: "minecraft:water_bucket"
+			id: "3B94AC16A5495D07"
+			shape: "square"
+			tasks: [{
+				id: "76D25B49966BD15E"
+				title: "Water is not infinite!!!!"
+				type: "checkmark"
+			}]
+			x: -2.101749840561234d
+			y: 1.084215561224502d
+		}
+		{
+			dependencies: [
+				"22BE56C3CA087A04"
+				"15B5CF1F309CA82A"
+			]
+			description: ["You can change wood type of wheel with clicking planks on it."]
+			id: "67C1B62B8C68F0F1"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "36F9C8C36842D28F"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.25d
+		}
+		{
+			dependencies: [
+				"156FF337D16F88B3"
+				"319CEF2BDD679CF5"
+				"7DC8D43AB8C12697"
+			]
+			description: ["Lets make some steel! Blast Furnace can use normal coal, but Coke Coal is more effective."]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "3CD05E2E5661246B"
+			rewards: [{
+				count: 17
+				id: "0312BB4628AC0288"
+				item: "gtceu:firebricks"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [
+				{
+					id: "761327595B2D9F9E"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "25F5560C4D42E378"
+					item: { Count: 16, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			title: "Steel Pipeline"
+			x: -2.0738825999149952d
+			y: -7.592160926870733d
+		}
+		{
+			dependencies: ["156FF337D16F88B3"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Wrought iron is tougher version of vanilla metal. It will be used in &olow voltage machinery&r or to upgrade your steam machines, but more early it can serve you &nto make stronger tools&r."
+				""
+				"Its making procces kinda tricky tho. You need to &lsmelt iron nuggets&r to get wrought iron one and then &luse compressor or alloy smelter with ingot casting mold&r to get them."
+				""
+				"Additionally if you will &ouse Wrought Iron in Blast Furnace&r instead of normal one, the &oblasting speed will increase!&r"
+			]
+			icon: "gtceu:wrought_iron_ingot"
+			id: "5C4DA67C07C8E9B7"
+			shape: "diamond"
+			subtitle: "Proccesing veteran"
+			tasks: [
+				{
+					id: "26166249294BE433"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "0357158F497C7E3E"
+					item: "gtceu:wrought_iron_nugget"
+					type: "item"
+				}
+			]
+			title: "Trained Iron"
+			x: -2.0738825999149952d
+			y: -6.000324192176855d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: [
+				"Many Gregtech multiblocks can share walls. Thats mean you can save resources and space if you put them between intersecting casings. &oJust remember&r that inputs and outputs busses must not connect to two specific machines. At the same time Steam Input Hatches can fuel both multiblocks."
+				""
+				"Additionally you can add more than 1 input or output busses to your multiblock machines if you want."
+			]
+			hide_dependent_lines: true
+			icon: "gtceu:steam_machine_casing"
+			id: "319CEF2BDD679CF5"
+			shape: "square"
+			tasks: [{
+				id: "00B3AF4C6DEC8483"
+				title: "Wall Sharing!"
+				type: "checkmark"
+			}]
+			x: -2.074903008078259d
+			y: -4.942857142857143d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Mines ores under it in some radius."]
+			id: "17598FE2FF7FBD46"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "166F200772DAA0EF"
+				item: "gtceu:lp_steam_miner"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["As the name suggest will compress items: can create ingots from nuggets, some items into blocks and other such things."]
+			icon: "gtceu:lp_steam_compressor"
+			id: "156FF337D16F88B3"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "41FA3EBCCC16C424"
+					item: "gtceu:lp_steam_compressor"
+					type: "item"
+				}
+				{
+					id: "4DC618BA3A7F09E4"
+					item: "gtceu:compressed_fireclay"
+					type: "item"
+				}
+			]
+			x: -1.074903008078259d
+			y: -4.942857142857143d
+		}
+		{
+			dependencies: [
+				"625BBC103C7A0FCE"
+				"319CEF2BDD679CF5"
+			]
+			description: ["Can smelt 8 items at a time using steam. "]
+			icon: "gtceu:steam_oven"
+			id: "35DDCEC2CECEF4D6"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "25EE2E50D1FC18AA"
+					item: "gtceu:steam_oven"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6867920997B1C73B"
+					item: { Count: 8, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7611FEC59679D87E"
+					item: { Count: 8, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "369B11FA5A189D8E"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "349D34F3BE728D80"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "6C9BAC375188D361"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+			]
+			x: -4.577283960459212d
+			y: -3.876174532312902d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Juste smelts anything with heat of steam."]
+			id: "625BBC103C7A0FCE"
+			shape: "diamond"
+			tasks: [{
+				id: "3CB972427251F8DE"
+				item: "gtceu:lp_steam_furnace"
+				type: "item"
+			}]
+			x: -3.3391887223639714d
+			y: -3.780936437074807d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Can crush gem blocks into items and create plates a little bit cheaper."]
+			id: "793ABF03A8827044"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [{
+				id: "6AF61FE6D49FBB10"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: -0.85d
+			y: -3.8249999999999997d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Sift Mallet can diactivate Gregtech machinery."]
+			id: "5E79D5EED8FFB37C"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "0D14DD23595429CA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:tools/crafting_mallets"
+					}
+				}
+				title: "Soft Mallet"
+				type: "item"
+			}]
+			x: -4.2d
+			y: -2.8d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: [
+				"Can grind things into dusts. Most notable use to &ogrind down raw ores and getting two times more!&r"
+				""
+				"Some grinded dusts, for example Redstone, need to be washed after grind proccesing to become useful or smelted to get ingots. But you also can throw them into the cauldron with water manually. "
+			]
+			icon: "gtceu:lp_steam_macerator"
+			id: "7DC8D43AB8C12697"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "33565194B1EBDA18"
+					item: "gtceu:lp_steam_macerator"
+					type: "item"
+				}
+				{
+					id: "2D18480C363B70D8"
+					item: "gtceu:fireclay_dust"
+					type: "item"
+				}
+			]
+			x: -3.074903008078259d
+			y: -4.942857142857143d
+		}
+		{
+			dependencies: [
+				"7DC8D43AB8C12697"
+				"319CEF2BDD679CF5"
+			]
+			description: [
+				"Can grind multiplie items at the same time."
+				""
+				"Very useful to start ore grinding business."
+			]
+			icon: "gtceu:steam_grinder"
+			id: "6D95B9D2E5EB331E"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "59D2D09C3865912F"
+					item: "gtceu:steam_grinder"
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "30684FC8DA21D96C"
+					item: { Count: 22, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "43A4F4D56BD15C2C"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "293ECE2DD8DA5D0C"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "189B12E1D7A435B8"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+			]
+			x: -3.7434221540178783d
+			y: -5.919997608418356d
+		}
+		{
+			dependencies: [
+				"61DA87FD5E45D2BC"
+				"319CEF2BDD679CF5"
+			]
+			description: ["Multiblock version of alloy smeltery to procces multiple recipes at a same time."]
+			icon: "steamadditions:steam_foundry"
+			id: "5303D30192D7463A"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "56271D842D9CAE50"
+					item: "steamadditions:steam_foundry"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "149822B64B40C2F0"
+					item: { Count: 14, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6B3339F967A54540"
+					item: { Count: 8, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "4430020089784574"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "7D2B3DD453DD806E"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "668D5129E65D681A"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+			]
+			x: -6.018555683992368d
+			y: -2.1983684098639173d
+		}
+		{
+			dependencies: [
+				"15C30310B03E4F79"
+				"10E87B6699909383"
+			]
+			description: ["Aside from making alloys it can work with steel molds to create some components, blocks or nuggets from ingots.  "]
+			id: "61DA87FD5E45D2BC"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				id: "4A05A522EC33C3F6"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: -6.018555683992368d
+			y: -3.1983684098639173d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Steam powered stone generator."]
+			id: "41D287C2BC7CF3E8"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "14D8490D6ECB3D8E"
+				item: "gtceu:lp_steam_rock_crusher"
+				type: "item"
+			}]
+			x: -2.75d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3CD05E2E5661246B"]
+			description: [
+				"Essential metal to reach indutrial age. Most complex machines will gonna need it."
+				""
+				"&lCheck \"Fancy Engineering\" tab next.&r"
+			]
+			id: "7A0C939E0FE540EC"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6EA4E40B4C5F24B0"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			title: "Industrialization"
+			x: -2.0783043686224545d
+			y: -9.49870057397958d
+		}
+		{
+			dependencies: ["3129F95624CBEDD4"]
+			description: ["You can get different liquids with Squeezer. "]
+			icon: "forestry:squeezer"
+			id: "05BC74C712E41396"
+			tasks: [
+				{
+					id: "0565C7776F57AF97"
+					item: "forestry:squeezer"
+					type: "item"
+				}
+				{
+					id: "145D9FC1F445DB3E"
+					item: "forestry:bucket_seed_oil"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3129F95624CBEDD4"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Primary way to get Biomass for Biogas Engine."
+				""
+				"For this machine to work you need to make fertilizers:"
+				""
+				"- Crafted using &oApatite&r gems."
+				""
+				"- &oCompost&r made out of dirt and wheat."
+				" "
+				"- &oMulch&r can be get from proccesses from other Forestry machines."
+				""
+				"If you have some piles of &oashes&r after some other proccesses you can use them as replacement in some fertilizers recipes."
+			]
+			icon: "forestry:fermenter"
+			id: "0F45980EACA70EBA"
+			tasks: [
+				{
+					id: "6DBE77846C446867"
+					item: "forestry:fermenter"
+					type: "item"
+				}
+				{
+					id: "75A9D3DEA85B2773"
+					item: "forestry:bucket_biomass"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0F45980EACA70EBA"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Biogas Engine use Biomass and lava to produce 50 FE/t. Other forms of fuel like Seed Oil will be 30 and most other only 10."
+				""
+				"Biogas Engine only use fuel to heat itself up. Lava exist as a start up and not gonna be consumed if you not use water or milk as fuel replacement."
+			]
+			id: "26F7DA43C2FE94AB"
+			shape: "diamond"
+			tasks: [{
+				id: "3EBFECBB41DFA882"
+				item: "forestry:engine_biogas"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"61DA87FD5E45D2BC"
+				"7A0C939E0FE540EC"
+			]
+			description: [
+				"With help of block mold you now can create proper glass blocks. No more small makeshift panels, now proper glass industry! "
+				""
+				"Put Glass Dust with Mold into Steam Alloy Smeltery to get your first actual glass."
+				""
+				"&lContinue in \"Ways of Glass\" tab.&r"
+			]
+			icon: "gtceu:glass_dust"
+			id: "5361A9865C6547F4"
+			rewards: [
+				{
+					count: 4
+					id: "4E97644868664113"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "466FF922FBD36283"
+					item: "minecraft:glass"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2A1BA25DA1C88106"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+				{
+					id: "7BEC1A813C6A3DA9"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "02A828D3BBC95E60"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Getting glassed"
+			x: -6.0013970822704295d
+			y: -9.47509964923469d
+		}
+		{
+			dependencies: ["6AF4C17E9C8FF9DC"]
+			icon: "railcraft:steam_turbine"
+			id: "3C16D1C6847306F8"
+			shape: "diamond"
+			subtitle: "Work In Progress"
+			tasks: [
+				{
+					count: 12L
+					id: "73A0DCEEB3B5ACB8"
+					item: "railcraft:steam_turbine"
+					type: "item"
+				}
+				{
+					id: "359B30460ED1307D"
+					item: {
+						Count: 1
+						id: "railcraft:turbine_rotor"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Steam Turbine"
+			x: 0.5472789115646194d
+			y: -10.5d
+		}
+		{
+			dependencies: ["4A33371DB94DFD62"]
+			description: [
+				"This type of boilers have different variations depending on its size. Maximum amount fireboxes are 3x3. With each size level amount of minimum boilers grows. You can start with 1 firebox and boiler."
+				""
+				"They much more efficent than bronze and high pressure ones, but need fuel and &lconstant supply of WATER.&r If you will not provide it and boiler get too heated, trying adding more will make it EXPLODE. "
+			]
+			icon: "railcraft:solid_fueled_firebox"
+			id: "6AF4C17E9C8FF9DC"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "5257950F383FFE22"
+					item: "railcraft:solid_fueled_firebox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "215F0749F2FEB357"
+					item: "railcraft:low_pressure_steam_boiler_tank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3026ABFD8257B6E0"
+					item: "railcraft:high_pressure_steam_boiler_tank"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Modular Boilers"
+			x: 0.5529459635416828d
+			y: -9.496412627551003d
+		}
+		{
+			dependencies: ["6AF4C17E9C8FF9DC"]
+			description: ["Uses creosote oil instead of solid fuel."]
+			id: "311D638942ACCDBD"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "35AF971D08CA0D94"
+				item: "railcraft:fluid_fueled_firebox"
+				type: "item"
+			}]
+			x: 1.1544217687074734d
+			y: -8.92857142857143d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Every previous type of boiler or single block bronze machine can be made or upgraded with steel to High Pressure version."]
+			id: "4A33371DB94DFD62"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				id: "5AFF08EF595FA079"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -0.6d
+			y: -9.49260071215982d
+		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"35DDCEC2CECEF4D6"
+			]
+			description: ["Upgrade to steam oven with steel. Use less space, accepts items and steam from all directions and have bigger items internal buffer. Will smelt 9 items at a time."]
+			id: "6103B2A9C790E8EF"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				id: "793CF622DA144ED2"
+				item: "railcraft:steam_oven"
+				type: "item"
+			}]
+			title: "Steel Steam Oven"
+			x: -4.577095623405633d
+			y: -7.189385363520394d
+		}
+		{
+			dependencies: ["3129F95624CBEDD4"]
+			description: [
+				"Simple machine that can help create moist blocks. "
+				""
+				"Most notable things you can create are Mycelium or Podzol."
+			]
+			id: "64649C5C66312EDD"
+			size: 0.7d
+			tasks: [{
+				id: "47ECA6A05692F4FB"
+				item: "forestry:moistener"
+				type: "item"
+			}]
+			x: 1.0793276001807186d
+			y: -1.5926206420067857d
+		}
+		{
+			dependencies: ["3129F95624CBEDD4"]
+			description: [
+				"Before you can start to care about little bugs you should find them in the wild!"
+				""
+				"Beehives exist all over the world and contains different drones and princesses."
+				""
+				"Brake hives with the Scoop. You will get damaged while in the procces (because I mean they surely don't like that right?), but it will not gonna be enough to kill you at &ofull health&r. If you want to escape stinging of little bugs you can use Smoker on the bee hive to calm them down."
+			]
+			icon: {
+				Count: 1
+				id: "forestry:scoop"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3F3FC863FA058BDF"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "3C599D936254CBE8"
+					item: {
+						Count: 1
+						id: "forestry:scoop"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1394DB691A46E0BC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forestry:bees"
+						}
+					}
+					title: "Bees"
+					type: "item"
+				}
+				{
+					id: "51C86B9B85DD7B9A"
+					item: "forestry:smoker"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Catching Bugs"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3F3FC863FA058BDF"]
+			icon: "forestry:foresters_manual"
+			id: "3A992BAB2BD9A2DB"
+			rewards: [{
+				id: "426FB786DF6549F0"
+				item: "forestry:foresters_manual"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.7d
+			tasks: [{
+				id: "4A84AC7EA26F5EC5"
+				type: "checkmark"
+			}]
+			title: "Beekeeper reading"
+			x: 6.512020022852823d
+			y: 0.7747608418367733d
+		}
+		{
+			dependencies: ["3F3FC863FA058BDF"]
+			description: ["After your breaking hives session you get some amount of honeycombs. To procces them use Centrifuge, the resulting materials will be honey drops and beeswax."]
+			id: "0A1E7B5B3F0D9F74"
+			tasks: [{
+				id: "1CE2078C5ED64FF9"
+				item: "forestry:centrifuge"
+				type: "item"
+			}]
+			x: 8.506650922087601d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A1E7B5B3F0D9F74"]
+			description: ["Will consume Honey Drops to tell you information about bee habitable zones."]
+			icon: "forestry:portable_alyzer"
+			id: "34B155B4FCA71D5A"
+			tasks: [
+				{
+					id: "05958303C47ECD2A"
+					item: "forestry:portable_alyzer"
+					type: "item"
+				}
+				{
+					id: "75884E9654A24B2A"
+					item: "forestry:analyzer"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Bee, where you come from?"
+			x: 10.506650922087601d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3F3FC863FA058BDF"]
+			description: [
+				"New house for your bees where they will produce honey combs. To start place Drone and Princess in left slots so Queen can be created."
+				""
+				"Bee Queen will die overtime, producing resources in Bee House. In the end she will leave drones and another princesses, so you can continue your bee garden."
+				""
+				"{@pagebreak}"
+				"Bee require a suitable enviroment for themselves: fitting biome and flowers around the hive."
+				""
+				"The wrong biome will halt any bee work. The same can be said about conditions like rain."
+			]
+			id: "693B43DD699B1707"
+			tasks: [{
+				id: "23C6242FF14C56C0"
+				item: "forestry:bee_house"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4619627EEEE566A4"
+				"05BC74C712E41396"
+			]
+			description: ["Using Seed Oil in Carpenter you can create special casing and sticks to use in creation of better bee housings and resource collection."]
+			id: "3AEE4DD01F88622A"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "55429477913319DD"
+					item: "forestry:impregnated_casing"
+					type: "item"
+				}
+				{
+					id: "13B26E5323B32939"
+					item: "forestry:impregnated_stick"
+					type: "item"
+				}
+			]
+			title: "Applying Seed Oil"
+			x: 8.506650922087601d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3AEE4DD01F88622A"
+				"693B43DD699B1707"
+			]
+			icon: "forestry:apiary"
+			id: "42242A5A5BEAA077"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [
+				{
+					id: "2A49F745AAC7E513"
+					item: "forestry:apiary"
+					type: "item"
+				}
+				{
+					id: "49C1B485AFDE7F82"
+					item: {
+						Count: 1
+						id: "forestry:frame_impregnated"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "21EFFFC24F60D7C6"
+					item: {
+						Count: 1
+						id: "forestry:frame_untreated"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -1.203130314625838d
+		}
+		{
+			dependencies: [
+				"3AEE4DD01F88622A"
+				"34B155B4FCA71D5A"
+			]
+			id: "2A300C72DC0C7533"
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "014C8BD3EDB0BD42"
+				item: "forestry:escritoire"
+				type: "item"
+			}]
+			x: 8.506650922087601d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Do you ever wanted to make a bunch of charcoal?"]
+			id: "3672AA82CBFB10E0"
+			shape: "diamond"
+			tasks: [{
+				id: "784EF9AE7FC2DDE2"
+				item: "gtceu:charcoal_pile_igniter"
+				type: "item"
+			}]
+			title: "Stucked on charcoal"
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["69057739C5B7EB11"]
+			description: ["Primary crafting station for various components."]
+			id: "11CAA0BF384301E3"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				id: "58F653ABADDA7700"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			x: 4.54096812553145d
+			y: -9.707892219387745d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: [
+				"Will wash your dusts and different items automatically on grand scale."
+				""
+				"&oCan help get rubber pulps as alternative to Extractor.&r"
+			]
+			icon: "steamadditions:steam_separator"
+			id: "37EE9AB51014DCBA"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "505700760D3382BA"
+					item: "steamadditions:steam_separator"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "096F0F372F25D6F0"
+					item: { Count: 18, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "295D5313CA587714"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "3871FF62E82FC2ED"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "2E5CA82252505532"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+			]
+			x: -4.625698541135215d
+			y: -8.67217793367346d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["With Tinker's Anvil at your disposal now you can make more different custom tools."]
+			id: "719A86D87C805DEB"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				id: "4C5D614C862D962E"
+				item: "tconstruct:tinkers_anvil"
+				type: "item"
+			}]
+			x: -1.089984255420923d
+			y: -11.172177933673456d
+		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"51D2A2A99A671311"
+			]
+			description: [
+				"Alternative upgrade to coke oven that use energy to boost its proccesses. "
+				""
+				"Place Baseheaters on the side and power them. &lFront side&r wil output &lcoke coal&r or other items, while &oback side&r will output &ocreosote&r."
+				""
+				"Top part is items input."
+			]
+			icon: "immersivetechnology:advanced_coke_oven"
+			id: "37659341AAB207BF"
+			rewards: [{
+				id: "2F672DC8998FF637"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 12L
+					id: "55293C72AFEA3416"
+					item: "immersivetechnology:reinforced_coke_brick"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5EC104707890A538"
+					item: { Count: 6, id: "thermal:steel_block" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "753F31BF9E101B47"
+					item: { Count: 9, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					id: "7A9953884436904E"
+					item: "immersivetechnology:advanced_coke_oven"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "640EB95627311269"
+					item: { Count: 2, id: "immersivetechnology:advanced_coke_oven_baseheater" }
+					type: "item"
+				}
+			]
+			title: "Steel plated Coke Oven"
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Consumes Lava or Creosote to heat itself and create Steam."]
+			id: "0FCFA77A56C98B28"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "250C3DA58D2315F2"
+				item: "gtceu:lp_steam_liquid_boiler"
+				optional_task: true
+				type: "item"
+			}]
+			title: "Liquid Boilers"
+			x: -3.15d
+			y: -2.4499999999999997d
+		}
+		{
+			dependencies: ["15C30310B03E4F79"]
+			description: ["Generate steam with the power of the SUN!"]
+			id: "780843C2BC813902"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "63DF20CE04CE4282"
+				item: "gtceu:lp_steam_solar_boiler"
+				optional_task: true
+				type: "item"
+			}]
+			title: "Solar Boilers"
+			x: -1.05d
+			y: -2.4499999999999997d
+		}
+		{
+			dependencies: ["11CAA0BF384301E3"]
+			description: ["Blueprint for beautiful Engineering banner paterns."]
+			icon: {
+				Count: 1
+				id: "minecraft:gray_banner"
+				tag: {
+					BlockEntityTag: {
+						Patterns: [{
+							Color: 0
+							Pattern: "ie_twd"
+						}]
+						id: "minecraft:banner"
+					}
+				}
+			}
+			id: "4D8E5F7F17424703"
+			size: 0.6d
+			tasks: [{
+				id: "34B69BEF98093C27"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "bannerpatterns"
+					}
+				}
+				type: "item"
+			}]
+			title: "Industrial Banners"
+			x: 5.1d
+			y: -8.7d
+		}
+		{
+			dependencies: ["11CAA0BF384301E3"]
+			description: ["Blueprint to craft components: mechanical parts, tubes, electronics and bulbs."]
+			icon: "immersiveengineering:component_iron"
+			id: "4AFEE3BCC0DC661B"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "3D62BC3435EE9A23"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "components"
+					}
+				}
+				type: "item"
+			}]
+			title: "Components"
+			x: 4.54096812553145d
+			y: -10.95112404336733d
+		}
+		{
+			dependencies: ["6AF4C17E9C8FF9DC"]
+			id: "0521F2E55A33A975"
+			subtitle: "Work In Progress"
+			tasks: [{
+				id: "5F3EA4DE19BFA304"
+				item: "railcraft:crusher"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -8.5d
+		}
+	]
+	title: "Bronze Age"
+}

@@ -2,15 +2,187 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "gunpowder_applications"
-	group: "495B816819C83ED9"
+	group: "2A52AF7C0A2DD052"
 	icon: {
 		Count: 1
 		id: "crusty_chunks:revolver_animated"
 		tag: { }
 	}
 	id: "0645F7302ADC781A"
-	order_index: 4
-	quest_links: [ ]
-	quests: [ ]
-	title: "Gunpowder Applications"
+	order_index: 2
+	quest_links: [{
+		id: "14C6E2A46F40CA5E"
+		linked_quest: "44DC54BD41EB3A08"
+		shape: "octagon"
+		x: 2.0d
+		y: 2.0d
+	}]
+	quests: [
+		{
+			dependencies: ["11CAA0BF384301E3"]
+			icon: "immersiveengineering:empty_casing"
+			id: "287ACA017CA51588"
+			shape: "diamond"
+			tasks: [{
+				id: "586B50F294D632EE"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "bullet"
+					}
+				}
+				type: "item"
+			}]
+			title: "Bullet-smithing"
+			x: 0.1428571428571388d
+			y: 1.952380952380949d
+		}
+		{
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"287ACA017CA51588"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 21
+					}
+				}
+				id: "immersiveengineering:revolver"
+			}
+			id: "721BB33A3E1675DB"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "28EE517DC2366265"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 21
+							}
+						}
+						id: "immersiveengineering:revolver"
+					}
+					type: "item"
+				}
+				{
+					id: "09C6D59BE9A78739"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 8
+							}
+						}
+						id: "immersiveengineering:speedloader"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5D60272D07A5F53A"
+					item: "immersiveengineering:toolupgrade_railgun_scope"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7A54FBB35EB7323E"
+					item: "immersiveengineering:toolupgrade_revolver_bayonet"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E0AF9E3A1EAB915"
+					item: "immersiveengineering:toolupgrade_revolver_magazine"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3A68B2E2665E020A"
+					item: "immersiveengineering:toolupgrade_revolver_electro"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.1190476190476275d
+			y: 0.49999999999998934d
+		}
+		{
+			dependencies: ["287ACA017CA51588"]
+			icon: "immersiveengineering:wolfpack"
+			id: "013187654108253F"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "55BFF4D2D840C00A"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "specialBullet"
+					}
+				}
+				type: "item"
+			}]
+			title: "Special Bullets"
+			x: 0.5238095238095184d
+			y: 1.5714285714285658d
+		}
+		{
+			dependencies: ["44DC54BD41EB3A08"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 3
+					}
+				}
+				id: "immersiveengineering:railgun"
+			}
+			id: "50C34CC179F51D97"
+			tasks: [
+				{
+					id: "32879DED3A0FF31B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 3
+							}
+						}
+						id: "immersiveengineering:railgun"
+					}
+					type: "item"
+				}
+				{
+					id: "53BDC23754F4D1AE"
+					item: "immersiveengineering:toolupgrade_railgun_capacitors"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F44207E2839DAD9"
+					item: "immersiveengineering:toolupgrade_railgun_scope"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7E0C5542C497D55C"
+					item: "immersiveengineering:stick_steel"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.5d
+		}
+	]
+	title: "Gunpowder Applications [WIP]"
 }

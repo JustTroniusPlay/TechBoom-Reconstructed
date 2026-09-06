@@ -1,6 +1,6 @@
 {
 	chapter_groups: [
-		{ id: "67E30E93A58EC129", title: "Path to Industrialization" }
+		{ id: "67E30E93A58EC129", title: "Paths to Industrialization" }
 		{ id: "78A677EE2AEFB46F", title: "Knowledge Database" }
 		{ id: "2330B33194C94242", title: "Transportation" }
 		{ id: "31544B14A6F1FD15", title: "Around The World" }

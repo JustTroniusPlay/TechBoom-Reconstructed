@@ -5,7 +5,7 @@
 	group: "495B816819C83ED9"
 	icon: "mekanism:alloy_infused"
 	id: "514529C4F39E6ACB"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -88,5 +88,5 @@
 			y: 1.533928571428575d
 		}
 	]
-	title: "Advanced Materials"
+	title: "Advanced Materials [WIP]"
 }

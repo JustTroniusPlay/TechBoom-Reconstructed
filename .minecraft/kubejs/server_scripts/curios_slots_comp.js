@@ -27,7 +27,24 @@ ServerEvents.tags('item', event => {
             
     })
 
-    const toolbox = ['ae2:meteorite_compass','gtceu:wood_mallet','create:super_glue','forestry:scoop']
+    const toolbox = [
+        'ae2:meteorite_compass',
+
+        '#gtceu:tools/crafting_mallets',
+        '#forge:tools/butchery_knives',
+
+        'create:super_glue',
+        'forestry:scoop', 
+
+        "railcraft:iron_crowbar",
+        "railcraft:steel_crowbar",
+        "railcraft:diamond_crowbar",
+
+        "railcraft:iron_spike_maul",
+        "railcraft:iron_steel_maul",
+        "railcraft:iron_diamond_maul",
+        
+    ]
     toolbox.forEach(tool =>
         {
             event.add('immersiveengineering:toolbox/tools', tool);

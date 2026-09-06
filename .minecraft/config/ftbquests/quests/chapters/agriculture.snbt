@@ -50,20 +50,6 @@
 			x: 0.0d
 			y: 6.6d
 		}
-		{
-			id: "7B54216DC475A506"
-			linked_quest: "2E3EA7175DA2327F"
-			shape: "diamond"
-			size: 0.6d
-			x: 1.5d
-			y: 6.0d
-		}
-		{
-			id: "7DE855CEEF833C49"
-			linked_quest: "55CD3C049224FC35"
-			x: -0.5d
-			y: 5.5d
-		}
 	]
 	quests: [
 		{
@@ -1896,14 +1882,15 @@
 				item: "solringopie:food_book"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "Everything about healthy life"
 			tasks: [{
 				id: "0C78303EC299A231"
 				type: "checkmark"
 			}]
 			title: "Food Book"
-			x: 4.0d
-			y: 6.0d
+			x: 3.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["27D02A3ECE518CCE"]
@@ -2042,8 +2029,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 5.0d
+			x: 1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["27D02A3ECE518CCE"]
@@ -2075,17 +2062,80 @@
 				{
 					id: "102083B715416B51"
 					item: "immersiveengineering:fertilizer"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7633BCD371872A44"
 					item: "thermal:phytogro"
+					optional_task: true
 					type: "item"
 				}
 			]
 			title: "Fertilizers"
 			x: 0.5091836734693942d
 			y: 6.923469387755098d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"27D02A3ECE518CCE"
+			]
+			description: ["Catch things in the water using various items."]
+			icon: "thermal:device_fisher"
+			id: "55CD3C049224FC35"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "5D7935C9A4BD1155"
+					item: "thermal:device_fisher"
+					type: "item"
+				}
+				{
+					id: "3C94EF913EF4DAC4"
+					item: "thermal:junk_net"
+					type: "item"
+				}
+				{
+					id: "039013434504E090"
+					item: "thermal:aquachow"
+					type: "item"
+				}
+				{
+					id: "065247BAC9C10448"
+					item: "thermal:deep_aquachow"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -0.6d
+			y: 5.3999999999999995d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"0D791BC98BD89A90"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Creates Compost for Phytogenic Insolator and can be used in some recipes."]
+			icon: "thermal:device_composter"
+			id: "2E3EA7175DA2327F"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "4E30724D6A92D084"
+					item: "thermal:device_composter"
+					type: "item"
+				}
+				{
+					id: "0E4ECE09492C73A0"
+					item: "thermal:compost"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 6.0d
 		}
 	]
 	title: "Agriculture and Edibles"

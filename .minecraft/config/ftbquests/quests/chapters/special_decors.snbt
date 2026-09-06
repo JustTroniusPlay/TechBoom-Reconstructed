@@ -116,6 +116,10 @@
 			y: 1.5d
 		}
 		{
+			dependencies: [
+				"4D2E330C1FE0BF08"
+				"7A0C939E0FE540EC"
+			]
 			icon: "immersiveengineering:wirecoil_structure_steel"
 			id: "510D59805EF033F8"
 			tasks: [
@@ -171,6 +175,16 @@
 			}]
 			x: 5.0d
 			y: 1.5d
+		}
+		{
+			id: "5D50FB3033AECAE7"
+			tasks: [{
+				id: "3B44FB929FED471E"
+				item: "railcraft:black_post"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
 		}
 	]
 	title: "Complex Shapes"

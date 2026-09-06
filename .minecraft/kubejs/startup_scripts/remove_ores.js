@@ -40,6 +40,8 @@ WorldgenEvents.remove(event => {
         "railcraft:deepslate_sulfur_ore",
         "railcraft:sulfur_ore",
 
+        "crusty_chunks:bauxite"
+
     ];
 
     event.removeOres(props => 

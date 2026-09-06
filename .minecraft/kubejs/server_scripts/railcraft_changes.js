@@ -5,6 +5,44 @@ ServerEvents.recipes(event => {
     "gtceu:bronze_firebox_casing"
   )
 
+  {//Worldspikes Chunkloaders
+    event.replaceInput({id:"railcraft:world_spike"},
+    "minecraft:gold_ingot",
+    "thermal:ruby_block"
+    )
+    event.replaceInput({id:"railcraft:personal_world_spike"},
+    "minecraft:gold_ingot",
+    "minecraft:emerald_block"
+    )
+
+    event.replaceInput({id:"railcraft:world_spike"},
+    "minecraft:obsidian",
+    "railcraft:crushed_obsidian"
+    )
+    event.replaceInput({id:"railcraft:personal_world_spike"},
+    "minecraft:obsidian",
+    "railcraft:crushed_obsidian"
+    )
+
+    event.replaceInput({id:"railcraft:world_spike"},
+    "minecraft:ender_pearl",
+    "stevescarts:component_eye_of_galgador"
+    )
+    event.replaceInput({id:"railcraft:personal_world_spike"},
+    "minecraft:ender_pearl",
+    "stevescarts:component_eye_of_galgador"
+    )
+
+    event.replaceInput({id:"railcraft:world_spike"},
+    "minecraft:diamond",
+    "ae2:quantum_entangled_singularity"
+    )
+    event.replaceInput({id:"railcraft:personal_world_spike"},
+    "minecraft:emerald",
+    "ae2:quantum_entangled_singularity"
+    )
+  }
+
   {//Locomotives
     event.remove({id: "railcraft:steam_locomotive"});
     event.shaped(
@@ -165,6 +203,27 @@ event.replaceInput(
   "result": {
     "count": 12,
     "item": "railcraft:standard_rail"
+  }
+  });
+
+  event.custom({
+  "type": "railcraft:rolling",
+  "key": {
+    "a": {
+      "tag": "forge:plates/iron"
+    },
+    "b": {
+      "item": "stevescarts:component_iron_wheels"
+    }
+  },
+  "pattern": [
+    "a a",
+    "aaa",
+    "b b"
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:minecart"
   }
   });
 

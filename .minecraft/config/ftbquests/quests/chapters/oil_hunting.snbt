@@ -69,7 +69,6 @@
 			dependencies: ["043F7FFDC6430B34"]
 			description: ["Oil Barrels work similar to copper fluid tanks, but just can be more fitting to your refinery place."]
 			id: "20F8F5FEA03406E6"
-			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -145,34 +144,36 @@
 			y: 3.7258928571428633d
 		}
 		{
+			dependencies: [
+				"09349E61D7AF0C55"
+				"28AF57B15FD06843"
+			]
+			dependency_requirement: "one_completed"
 			description: [
-				"Before you get real dieseil you can craft its replacement made from seeds oil and ethanol. How and what way you will choose to create them is up to you."
+				"Before you get real dieseil you can craft its replacement made from &oSeeds Oil and Ethanol&r. How and what way you will choose to create them is up to you."
 				""
-				"With biodisel though your engines will give less SU."
+				"Use this fuel to power various generators to get energy, stress or heat in blaze burners and boilers. "
+				""
+				"{@pagebreak}"
+				"With biodisel though your kinetic brass engines will give less Stress Units."
 				""
 				"You can even use Ethanol and Seed Oil by itself to get your engines running, but &odon't expect much&r with this type of fuel."
 				""
 				"&oYou can use the same liquids from different mods.&r"
 			]
-			icon: "createdieselgenerators:biodiesel_bucket"
 			id: "5C9C2540BA21612F"
-			shape: "rsquare"
+			shape: "hexagon"
 			size: 1.0d
 			tasks: [
 				{
 					id: "27E606CF6F14B22A"
 					item: "createdieselgenerators:biodiesel_bucket"
-					type: "item"
-				}
-				{
-					id: "49FA834E1BC5F165"
-					item: "createdieselgenerators:plant_oil_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "56F925702339AAC3"
-					item: "createdieselgenerators:ethanol_bucket"
+					id: "1FA1F9A028CB00A1"
+					item: "immersiveengineering:biodiesel_bucket"
 					optional_task: true
 					type: "item"
 				}
@@ -214,6 +215,23 @@
 			}]
 			x: 7.5d
 			y: 5.7d
+		}
+		{
+			dependencies: [
+				"043F7FFDC6430B34"
+				"54661956247869DD"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Shale Oil you found underground can be used to make some crude oil for different oil processes."]
+			id: "579226E41F011F26"
+			shape: "hexagon"
+			tasks: [{
+				id: "7D1401E30092203F"
+				item: "crusty_chunks:shale_oil"
+				type: "item"
+			}]
+			x: 5.277210884353735d
+			y: 6.369366496598641d
 		}
 	]
 	title: "Spinning Diesel"

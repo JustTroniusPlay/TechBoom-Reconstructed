@@ -20,6 +20,12 @@ ServerEvents.recipes(event => {
         "gtceu:small_bronze_gear"
     )
 
+  event.replaceInput(
+        {id: "forestry:smoker"},
+        "minecraft:flint_and_steel",
+        "minecraft:flint"
+    )  
+
   const fmachines = 
   [
     "forestry:engine_biogas",
@@ -68,6 +74,62 @@ creo.forEach(creo => {
     result: {
       count: 4,
       item: "railcraft:wooden_tie"
+    },
+    show_notification: true
+  },
+  time: 60
+  });
+
+  event.custom({
+  type: "forestry:carpenter",
+  box: [],
+  liquid: {
+    Amount: 125,
+    FluidName: creo
+  },
+  recipe: {
+    type: "minecraft:crafting_shaped",
+    category: "misc",
+    key: {
+      "#": {
+        tag: "minecraft:planks"
+      },
+    },
+    pattern: [
+      " # "
+    ],
+    result: {
+      count: 1,
+      item: "immersiveengineering:treated_wood_horizontal"
+    },
+    show_notification: true
+  },
+  time: 20
+  });
+
+  event.custom({
+  type: "forestry:carpenter",
+  box: [],
+  liquid: {
+    Amount: 1000,
+    FluidName: creo
+  },
+  recipe: {
+    type: "minecraft:crafting_shaped",
+    category: "misc",
+    key: {
+      "#": {
+        tag: "minecraft:planks"
+      },
+    },
+    pattern: [
+      "###",
+      "# #",
+      "###"
+    ],
+    result: {
+      count: 8,
+      item: "immersiveengineering:treated_wood_horizontal"
     },
     show_notification: true
   },

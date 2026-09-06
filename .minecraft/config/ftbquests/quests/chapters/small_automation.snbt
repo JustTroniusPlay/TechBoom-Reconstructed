@@ -16,6 +16,7 @@
 	}]
 	quests: [
 		{
+			dependencies: ["34D049FD2BF84E84"]
 			icon: "littlelogistics:tug"
 			id: "1D1CCBF0E8DBD5B1"
 			shape: "rsquare"

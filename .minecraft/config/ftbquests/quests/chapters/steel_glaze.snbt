@@ -1,0 +1,354 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steel_glaze"
+	group: "2A52AF7C0A2DD052"
+	icon: "thermal:steel_block"
+	id: "42130AB6A153F201"
+	order_index: 0
+	quest_links: [{
+		id: "0D37DA266658503C"
+		linked_quest: "7A0C939E0FE540EC"
+		shape: "gear"
+		size: 1.5d
+		x: 1.2d
+		y: 0.4500000000000002d
+	}]
+	quests: [
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Simple water wheels that convert movement of water into energy. You can put max to 3 wheels on one kinetic dynamo. "]
+			icon: "immersiveengineering:watermill"
+			id: "4C8C44388703BD22"
+			shape: "rsquare"
+			tasks: [
+				{
+					count: 3L
+					id: "77B2B70E6B74701B"
+					item: "immersiveengineering:watermill"
+					type: "item"
+				}
+				{
+					id: "3E0D9F133C2F834F"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+			]
+			title: "Water Energy"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Generate energy based on temperature difference between adjusted blocks, for example like &lLava and Ice.&r"]
+			id: "644DA6D29FB50DA8"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "62222DF3CA4498D7"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: -0.9714285714285751d
+			y: -0.22857142857142776d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: [
+				"Take some amount of energy with you to charge tools or use special upgrades. It will charge tools you holding."
+				""
+				"Accumulator Backpack itself need IE accumulator to store energy. Use Engineering's Workbench to modify."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 4
+					}
+				}
+				id: "immersiveengineering:powerpack"
+			}
+			id: "46BBF312DDDCB405"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3588D20CF11272B1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 4
+							}
+						}
+						id: "immersiveengineering:powerpack"
+					}
+					type: "item"
+				}
+				{
+					id: "39977366060980DC"
+					item: "immersiveengineering:toolupgrade_powerpack_antenna"
+					type: "item"
+				}
+				{
+					id: "6617B4F064CD1795"
+					item: "immersiveengineering:toolupgrade_powerpack_magnet"
+					type: "item"
+				}
+				{
+					id: "0FEFB4EC245D6CD1"
+					item: "immersiveengineering:toolupgrade_powerpack_induction"
+					type: "item"
+				}
+				{
+					id: "3833E2512182E1F4"
+					item: "immersiveengineering:toolupgrade_powerpack_tesla"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: [
+				"Steel upgrade to your shield that can be modified in Engineering Workbenche."
+				""
+				"{@pagebreak}"
+				"Double tap \"S\" key to equip shield with Magnetic Glove. You can change it in controls."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 2
+					}
+				}
+				id: "immersiveengineering:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4BA33B602CF1380F"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1618F2355DF4BD09"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 2
+							}
+						}
+						id: "immersiveengineering:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D8ED8F6745980FC"
+					item: "immersiveengineering:toolupgrade_shield_magnet"
+					type: "item"
+				}
+				{
+					id: "6C55109B89C9E981"
+					item: "immersiveengineering:toolupgrade_shield_shock"
+					type: "item"
+				}
+				{
+					id: "77E2165D86C146E2"
+					item: "immersiveengineering:toolupgrade_shield_flash"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3CD05E2E5661246B"
+				"4647FBAA99333197"
+			]
+			description: [
+				"Better version of Blast Furnace from Nether resources!"
+				""
+				"Makes steel faster and &ocan proccess Geology ores&r better then other ways."
+				""
+				"Just remember to clear Slag out of it!"
+			]
+			icon: "immersiveengineering:blast_furnace"
+			id: "79EF5B4E470ACDB4"
+			tasks: [
+				{
+					count: 27L
+					id: "4539E419960B6A2B"
+					item: { Count: 27, id: "immersiveengineering:blastbrick" }
+					type: "item"
+				}
+				{
+					id: "6D40633FABDBF406"
+					item: "immersiveengineering:blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Better Blasting"
+			x: 1.2250000000000014d
+			y: -3.682142857142871d
+		}
+		{
+			dependencies: ["79EF5B4E470ACDB4"]
+			description: [
+				"With some steel plating and energy you can boost production of this industrial metal."
+				""
+				"Place Preheaters on the sides of the Blast Furnace and give them power. &oFront side&r will output &oSlag&r, while &lback side&r will output &lsteel&r itself."
+				""
+				"Top part is items input."
+			]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "745A282BA4A843D5"
+			rewards: [{
+				id: "0CE7ADC1EA15951B"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					count: 27L
+					id: "68CFC7DD9D063B7B"
+					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "592251313E28E9FF"
+					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
+				{
+					id: "40CEA24B000E795E"
+					item: "immersiveengineering:advanced_blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Improved blasting"
+			x: 1.2250000000000014d
+			y: -5.467857142857156d
+		}
+		{
+			dependencies: ["37392944F830DC3E"]
+			description: ["Fastest Coke Oven version that do things on its own without any additional requirements."]
+			id: "575BDE04271E94D1"
+			shape: "rsquare"
+			size: 0.85d
+			tasks: [{
+				count: 27L
+				id: "2F40390FDF8B0340"
+				item: { Count: 27, id: "railcraft:coke_oven_bricks" }
+				type: "item"
+			}]
+			title: "Industrial Coke Oven"
+			x: -0.9739795918367378d
+			y: -5.539285714285729d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			dependency_requirement: "one_started"
+			description: ["Nether opens you a way to get great amount of new resources."]
+			id: "4647FBAA99333197"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "32EE79113BC817D7"
+				item: "crusty_chunks:blast_clay"
+				type: "item"
+			}]
+			title: "Hellish Materials"
+			x: 1.2d
+			y: -1.7999999999999998d
+		}
+		{
+			dependencies: ["4647FBAA99333197"]
+			id: "0E72E4B73D245BA0"
+			subtitle: "Work In Progress"
+			tasks: [
+				{
+					id: "251AAB20974D1ADD"
+					item: "crusty_chunks:firebox"
+					type: "item"
+				}
+				{
+					id: "230FFCDE961B8F19"
+					item: "crusty_chunks:electric_firebox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "001D5F54EAEF8EE1"
+					item: "crusty_chunks:oil_firebox"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -0.9331632653061277d
+			y: -1.8045918367347085d
+		}
+		{
+			dependencies: ["79EF5B4E470ACDB4"]
+			description: ["Best standalone version of steel creating furnace."]
+			id: "697FDEFDED0990AC"
+			shape: "diamond"
+			tasks: [{
+				count: 36L
+				id: "1BCE9E2477B7E389"
+				item: { Count: 36, id: "railcraft:blast_furnace_bricks" }
+				type: "item"
+			}]
+			title: "Maximus Blasting"
+			x: 2.4392857142857167d
+			y: -3.682142857142871d
+		}
+		{
+			dependencies: ["79EF5B4E470ACDB4"]
+			description: [
+				"&lSlag&r that you get as waste can be repurposed into different things."
+				""
+				"Slag Gravel boost grow of water based plants."
+				""
+				"Slag Glass can work as insulator for HV relays."
+				""
+				"Slag Bricks have blast resistance."
+			]
+			id: "37392944F830DC3E"
+			tasks: [
+				{
+					id: "5DC071CF057CAC30"
+					item: "immersiveengineering:slag_brick"
+					type: "item"
+				}
+				{
+					id: "2771DF363D784788"
+					item: "immersiveengineering:slag_gravel"
+					type: "item"
+				}
+				{
+					id: "51E112E6F288D153"
+					item: "immersiveengineering:slag_glass"
+					type: "item"
+				}
+			]
+			title: "Slag Wonders"
+			x: -0.9739795918367378d
+			y: -3.74336734693879d
+		}
+	]
+	title: "Steel Glaze [WIP]"
+}

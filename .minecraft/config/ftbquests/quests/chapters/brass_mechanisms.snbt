@@ -16,19 +16,19 @@
 			y: 4.15d
 		}
 		{
-			id: "5C1D148877E2D7AB"
-			linked_quest: "5B16DA7287A8ABFE"
-			shape: "diamond"
-			x: 6.0d
-			y: -5.5d
-		}
-		{
 			id: "50DFA12EEBA8E8B5"
 			linked_quest: "49BFD7BD22B74CBD"
 			shape: "octagon"
 			size: 0.7d
 			x: 2.0180272108843553d
 			y: -4.055272108843528d
+		}
+		{
+			id: "67CE8E2D37D5CD70"
+			linked_quest: "0E4D4401AF3EDF54"
+			shape: "hexagon"
+			x: 11.270153061224505d
+			y: -2.195238095238089d
 		}
 	]
 	quests: [
@@ -173,10 +173,16 @@
 			dependencies: ["3D1CCF8E85981E52"]
 			description: ["Capable of craft things right in the world! And can work with even bigger grids then 3x3!"]
 			id: "7B289C03327D9227"
+			rewards: [{
+				count: 6
+				id: "66E35597D082F841"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 1.2d
 			tasks: [{
-				count: 9L
+				count: 3L
 				id: "50C021836BABC536"
 				item: "create:mechanical_crafter"
 				type: "item"
@@ -472,14 +478,33 @@
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
-			description: ["Advanced Create component."]
+			description: [
+				"Advanced Create component made of polished Rose Quarts."
+				""
+				"Craft Sandpaper and put it in your offhand while rose quarts in main. Hold right click to polish."
+			]
+			icon: "create:electron_tube"
 			id: "3D1CCF8E85981E52"
 			shape: "hexagon"
-			tasks: [{
-				id: "09034466495D9971"
-				item: "create:electron_tube"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "09034466495D9971"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					id: "4D001CD0B2A9A1D6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:sandpaper"
+						}
+					}
+					title: "Sand Paper"
+					type: "item"
+				}
+			]
 			x: 7.5d
 			y: 3.0d
 		}
@@ -495,37 +520,6 @@
 			}]
 			x: 7.490986394557808d
 			y: 2.1299319727890946d
-		}
-		{
-			dependencies: ["7B289C03327D9227"]
-			description: ["Consumes energy to generate stress. "]
-			id: "3238F7E1DF448006"
-			shape: "diamond"
-			size: 1.3d
-			tasks: [{
-				id: "49357F146F9F534C"
-				item: "createaddition:electric_motor"
-				type: "item"
-			}]
-			x: 4.428571428571431d
-			y: 1.5238095238095255d
-		}
-		{
-			dependencies: [
-				"7B289C03327D9227"
-				"69DB58E1CD20ED2B"
-			]
-			description: ["Generate energy based on rotational input."]
-			id: "600DDB0FDB97CFFA"
-			shape: "diamond"
-			size: 1.3d
-			tasks: [{
-				id: "688817377E3F75B2"
-				item: "createaddition:alternator"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
@@ -987,6 +981,62 @@
 			]
 			x: -1.5d
 			y: 2.5d
+		}
+		{
+			dependencies: [
+				"799F7F64000A3084"
+				"0852CB10008D7CDB"
+				"7B289C03327D9227"
+			]
+			description: ["Attachment for Energy Acceptor. With it you now can power your ME system with rotational power."]
+			id: "5B16DA7287A8ABFE"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "2BF870DF77EE4B3D"
+				item: "createappliedkinetics:energy_provider"
+				type: "item"
+			}]
+			x: 5.189200680272101d
+			y: -5.385714285714272d
+		}
+		{
+			dependencies: ["37FAA3D4CF96E9EE"]
+			description: [
+				"Bigger trains need to be build by hand and transfer big amount of resources around the world."
+				""
+				"But first you need tracks for them! There many different sizes and variants. "
+				""
+				"And even before you build your first large train you can try simple Handcard to move along the tracks."
+				""
+				"&lSee in \"Transportation\" tab next.&r"
+			]
+			id: "6C63FA3003078E6E"
+			shape: "gear"
+			size: 1.2d
+			tasks: [
+				{
+					id: "2225FC3D2346C00A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:tracks"
+						}
+					}
+					title: "Custom tracks"
+					type: "item"
+				}
+				{
+					id: "3133D1DC0503D061"
+					item: "railways:handcar"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Bigger train tracks"
+			x: 12.0d
+			y: -0.6d
 		}
 	]
 	title: "Brass Machinations"

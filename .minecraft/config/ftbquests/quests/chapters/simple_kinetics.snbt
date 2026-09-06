@@ -18,6 +18,7 @@
 		{
 			id: "4858949CB9F2FC35"
 			linked_quest: "7B64D58280611794"
+			shape: "octagon"
 			size: 0.65d
 			x: 2.6d
 			y: -8.125d
@@ -26,15 +27,29 @@
 			id: "6A111940E2357F42"
 			linked_quest: "5186990A391ADB8D"
 			shape: "octagon"
-			x: 5.557142857142864d
-			y: -9.8d
+			x: 5.507908163265341d
+			y: -0.23231292517008484d
 		}
 		{
 			id: "0C71DFCC9CE99A0F"
 			linked_quest: "0E4D4401AF3EDF54"
 			shape: "hexagon"
 			size: 1.2d
-			x: 7.8d
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			id: "7F316268B078E675"
+			linked_quest: "67C1B62B8C68F0F1"
+			shape: "diamond"
+			x: 2.8d
+			y: -2.1d
+		}
+		{
+			id: "2A342AA75F4CB6D9"
+			linked_quest: "579226E41F011F26"
+			shape: "hexagon"
+			x: 7.0d
 			y: -6.0d
 		}
 	]
@@ -42,13 +57,13 @@
 		{
 			dependencies: ["25951FDCB7908145"]
 			description: [
-				"The backbone tool of Create mod is its gold plated beatiful wrench!"
+				"The backbone tool of Create mod is its gold plated beatiful wrench! "
 				""
-				"That tool helps you rotate mechanisms, change their behavior and brake them without use of tools (shift+right click)."
+				"It helps you rotate mechanisms, change their behavior and brake them without use of tools (shift+right click)."
 			]
 			icon: "create:wrench"
 			id: "7F493483338AF21E"
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [{
 				id: "733F4F8FF9018E48"
 				item: "create:wrench"
@@ -148,8 +163,8 @@
 				}
 			]
 			title: "Schematics"
-			x: 0.7880952380952309d
-			y: 2.7761904761904788d
+			x: 0.7603741496598815d
+			y: 2.744217687074844d
 		}
 		{
 			dependencies: ["691DD9FDCE3E58DA"]
@@ -164,23 +179,6 @@
 			}]
 			x: 0.7309523809523881d
 			y: -1.288095238095238d
-		}
-		{
-			dependencies: [
-				"22BE56C3CA087A04"
-				"15B5CF1F309CA82A"
-			]
-			description: ["You can change wood type of wheel with clicking planks on it."]
-			id: "67C1B62B8C68F0F1"
-			shape: "diamond"
-			size: 0.7d
-			tasks: [{
-				id: "36F9C8C36842D28F"
-				item: "create:large_water_wheel"
-				type: "item"
-			}]
-			x: -0.5134353741496653d
-			y: -1.2681972789115719d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -226,8 +224,8 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: -1.4199829931972516d
+			y: -0.9051020408163168d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -239,8 +237,8 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.5d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["621E6E9756E60D93"]
@@ -251,8 +249,8 @@
 				item: "create:nozzle"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -5.25d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -420,7 +418,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["17304F0AA96C369E"]
@@ -433,7 +431,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["52FD5BFF07C6D698"]
@@ -504,10 +502,7 @@
 			y: -4.501700680272101d
 		}
 		{
-			dependencies: [
-				"2185592369B7D5FC"
-				"1A3BA4BEFD861942"
-			]
+			dependencies: ["2185592369B7D5FC"]
 			description: ["With help of cardboard you can make nametags and use it for books or item frames."]
 			icon: "create:cardboard"
 			id: "67A60A92B37AEADD"
@@ -666,8 +661,8 @@
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
-			x: 2.5260204081632764d
-			y: -1.3690476190476204d
+			x: -1.3914115646258267d
+			y: -1.962244897959181d
 		}
 		{
 			dependencies: ["6157725B6CC022A4"]
@@ -678,8 +673,8 @@
 				item: "createaddition:barbed_wire"
 				type: "item"
 			}]
-			x: 3.2607142857143003d
-			y: -1.3894557823129219d
+			x: -2.162840136054399d
+			y: -1.962244897959181d
 		}
 		{
 			dependencies: ["311F17E0AB89A1B2"]
@@ -745,14 +740,15 @@
 		{
 			dependencies: ["621E6E9756E60D93"]
 			id: "04DAC545503E54B2"
+			shape: "diamond"
 			size: 0.65d
 			tasks: [{
 				id: "22EEB87EDF23F9E3"
 				item: "create_connected:empty_fan_catalyst"
 				type: "item"
 			}]
-			x: 1.9500000000000002d
-			y: -5.2d
+			x: 2.020918367346937d
+			y: -3.7755102040816126d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -793,11 +789,15 @@
 					type: "item"
 				}
 			]
-			x: -3.5025510204081343d
-			y: -1.2748299319727678d
+			x: 3.49166666666666d
+			y: -1.3154761904761756d
 		}
 		{
-			dependencies: ["34A4F350D3CE0400"]
+			dependencies: [
+				"34A4F350D3CE0400"
+				"40B9ECFB3C0DB31F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["Simple chunk loader that use rotational power. Catch ghast by clicking it with empty one!"]
 			icon: "create_power_loader:andesite_chunk_loader"
 			id: "242CE134590880BD"
@@ -816,8 +816,8 @@
 				}
 			]
 			title: "Ghast Chunk Loader"
-			x: -3.49336734693874d
-			y: -2.4755102040816155d
+			x: 4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
@@ -871,7 +871,7 @@
 			y: -4.989795918367342d
 		}
 		{
-			dependencies: ["1A3BA4BEFD861942"]
+			dependencies: ["7A0C939E0FE540EC"]
 			id: "54661956247869DD"
 			shape: "rsquare"
 			size: 1.2d
@@ -888,16 +888,26 @@
 				"54661956247869DD"
 				"5186990A391ADB8D"
 			]
+			dependency_requirement: "one_completed"
+			icon: "create:steam_engine"
 			id: "40B9ECFB3C0DB31F"
 			shape: "diamond"
 			size: 1.2d
-			tasks: [{
-				id: "51660897DFAD0E55"
-				item: "create:steam_engine"
-				type: "item"
-			}]
-			x: 5.549489795918404d
-			y: -8.475510204081619d
+			tasks: [
+				{
+					id: "51660897DFAD0E55"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					id: "5016667E8FD95F69"
+					item: "minecraft:campfire"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 5.507908163265341d
+			y: -1.4078231292517032d
 		}
 		{
 			dependencies: ["54661956247869DD"]
@@ -920,8 +930,8 @@
 				item: "moreburners:electric_burner"
 				type: "item"
 			}]
-			x: 4.549489795918404d
-			y: -4.975510204081619d
+			x: 6.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -935,7 +945,7 @@
 				item: "create_new_age:heater"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 4.5d
 			y: -5.0d
 		}
 		{
@@ -968,8 +978,8 @@
 				item: "moreburners:heat_upgrade"
 				type: "item"
 			}]
-			x: 4.548724489795944d
-			y: -4.1976190476190425d
+			x: 6.494302721088459d
+			y: -4.208163265306137d
 		}
 		{
 			dependencies: ["5B4C38C2E2CA7441"]
@@ -1052,8 +1062,98 @@
 				}
 			]
 			title: "Blazing Tools"
-			x: 5.542346938775552d
-			y: -4.808843537414951d
+			x: 5.548724489795944d
+			y: -7.387414965986395d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			description: ["Backtanks can be put in your body accessory slot while diving helmet need to be in helmet slot, but can be stored in head accessory slot when you don't use it."]
+			id: "49BFD7BD22B74CBD"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "5FA683A1AA176A82"
+					item: {
+						Count: 1
+						id: "create:copper_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F8DE86640D13FD3"
+					item: {
+						Count: 1
+						id: "create:copper_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A31707AA21860FB"
+					item: {
+						Count: 1
+						id: "create:copper_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Going underwater"
+			x: 1.75d
+			y: 0.35d
+		}
+		{
+			dependencies: ["49BFD7BD22B74CBD"]
+			id: "40DAF71D31B80879"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "38CF07019CD01173"
+					item: {
+						Count: 1
+						id: "create:netherite_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6356C3B4A5BA6ECE"
+					item: {
+						Count: 1
+						id: "create:netherite_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BB675CBFF46B87C"
+					item: {
+						Count: 1
+						id: "create:netherite_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 1.05d
 		}
 	]
 	title: "Simple Mechanisms"

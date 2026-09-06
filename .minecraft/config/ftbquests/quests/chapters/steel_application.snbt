@@ -2,10 +2,836 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "steel_application"
-	group: "2A52AF7C0A2DD052"
+	group: "67E30E93A58EC129"
+	icon: "tconstruct:clear_glass"
 	id: "472969E081960F79"
-	order_index: 0
-	quest_links: [ ]
-	quests: [ ]
-	title: "Steel Application"
+	order_index: 2
+	quest_links: [
+		{
+			id: "6980E7250D230491"
+			linked_quest: "5361A9865C6547F4"
+			shape: "gear"
+			size: 1.5d
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			id: "2EEDB6CA32AA7D88"
+			linked_quest: "0F45980EACA70EBA"
+			shape: "octagon"
+			size: 0.7d
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "28C2EDC2B52649C2"
+			linked_quest: "5C9C2540BA21612F"
+			shape: "hexagon"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			id: "69298028232E244E"
+			linked_quest: "0A47F74F64457575"
+			shape: "octagon"
+			size: 0.7d
+			x: -5.515306122448977d
+			y: -6.3d
+		}
+		{
+			id: "183BD844B51E68E0"
+			linked_quest: "2798CCE5B1DE21DA"
+			shape: "gear"
+			size: 1.5d
+			x: -4.287837478741474d
+			y: -6.270025510204074d
+		}
+		{
+			id: "3699CE0C026189E1"
+			linked_quest: "5169668687940129"
+			shape: "gear"
+			size: 1.5d
+			x: -6.6499999999999995d
+			y: -6.2755102040816295d
+		}
+		{
+			id: "0918317AA7162DA2"
+			linked_quest: "5B16DA7287A8ABFE"
+			shape: "diamond"
+			size: 0.7d
+			x: 4.250000000000007d
+			y: -2.4838435374149626d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "08772C8BA5BE9DB8"
+			shape: "diamond"
+			tasks: [{
+				id: "322C360866FB990B"
+				item: "torchmaster:dreadlamp"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "0B87BE74ACF8791E"
+			shape: "diamond"
+			subtitle: "And here comes the sun!"
+			tasks: [{
+				id: "7BD176196E10776F"
+				item: "torchmaster:feral_flare_lantern"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"0F45980EACA70EBA"
+			]
+			description: ["Simple machine that convert Biomass into Ethanol."]
+			icon: "forestry:still"
+			id: "28AF57B15FD06843"
+			tasks: [
+				{
+					id: "07FBF9E7A550D62A"
+					item: "forestry:still"
+					type: "item"
+				}
+				{
+					id: "3C0756A5630BB7C3"
+					item: "forestry:bucket_bio_ethanol"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4DB042DAF83D7A0A"
+				"5771754309EAFB99"
+			]
+			description: ["Upgraded version that use energy."]
+			id: "48BC04D05B89C7EA"
+			shape: "rsquare"
+			tasks: [{
+				id: "4C2630267ED5A26F"
+				item: "railcraft:powered_rolling_machine"
+				type: "item"
+			}]
+			x: -2.355952380952388d
+			y: -4.405952380952378d
+		}
+		{
+			dependencies: [
+				"1C59476B07336B42"
+				"3E7E613DF18680A6"
+			]
+			id: "76889788A0271286"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "078864211106C431"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.3367772108843425d
+		}
+		{
+			dependencies: ["0324FC7EAE1601BA"]
+			id: "3E7E613DF18680A6"
+			tasks: [{
+				id: "4BA66895712E5A8F"
+				item: "ad_astra:fuel_refinery"
+				type: "item"
+			}]
+			x: -2.4551844175170174d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5771754309EAFB99"]
+			description: [
+				"Low Voltage circuit opens you a path to complex electronic machines."
+				""
+				"Its always better to make as much of them as possible, because of quite annoying recipes chain."
+				""
+				"&l&oGregTech Low Voltage questline not finished in current patch, sorry :(&r"
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "1C59476B07336B42"
+			rewards: [{
+				count: 5
+				id: "1A521DF0F4AC5D7D"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "298BFE41EAE4BE11"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "471926DD4EB9A9DA"
+					item: "gtceu:resistor"
+					type: "item"
+				}
+				{
+					id: "7B9A40F294EFAA93"
+					item: "gtceu:vacuum_tube"
+					type: "item"
+				}
+				{
+					id: "3EBD5A265A15E71B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/red_alloy"
+						}
+					}
+					title: "Red Alloy"
+					type: "item"
+				}
+			]
+			title: "Low Voltage"
+			x: -0.5d
+			y: -6.3604737988945335d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"37EE9AB51014DCBA"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"With help of Extractor you now get first proper rubber."
+				""
+				"You can use &oSteam Separator&r multiblocks as alternative."
+			]
+			icon: "gtceu:rubber_ingot"
+			id: "5771754309EAFB99"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					id: "712CC7E813185EC5"
+					item: "gtceu:lp_steam_extractor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AE9B9E498507096"
+					item: "gtceu:raw_rubber_dust"
+					type: "item"
+				}
+				{
+					id: "02EB1B7EBBEEFC90"
+					item: "gtceu:rubber_ingot"
+					type: "item"
+				}
+			]
+			title: "Refined Rubber"
+			x: -0.4899111793154489d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"0A47F74F64457575"
+				"5361A9865C6547F4"
+			]
+			description: [
+				"To build a Smeltery you need to create a closed enclosure with floor and wals from seared blocks with controller, fuel tank, chutes and drains. The quest requires you to craft minimal amount, but you can always expand the smeltery in all directions which give it more storage and slots for simultaneous smelting."
+				""
+				"{@pagebreak}"
+				"Smeltery use lava as fuel to melt any resources down. Put it in &oFuel Tank&r."
+				""
+				"Clicking the Controller will open its UI, where you can put meltable things manually or provide items throught &oChute&r with various means like hoppers. &l!!!BE CAREFUl!!!&r Metals will become alloys automatically after smelting, so look what you put there."
+				""
+				"After they become liquids you can click on them in the UI to change their order. Those at the very bottom will get poured out of the &oDrain&r, but only if there Faucet on them and Casting Table or Basin to pour."
+				""
+				"&lFollow 'Blacksimthing' tab for custom tools, armor and metal work.&r"
+			]
+			icon: "tconstruct:smeltery_controller"
+			id: "25B2030958956699"
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Becoming the blacksmith"
+			tasks: [
+				{
+					id: "5F0E4AC9EF1AC999"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "164208078012D19B"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "58B6BE24808E5EB1"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "2E62C009FEC8340B"
+					item: "tconstruct:seared_chute"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "34B56298262F8E82"
+					item: { Count: 8, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+			]
+			x: -5.525938031462542d
+			y: -5.120025510204074d
+		}
+		{
+			dependencies: ["4879433BBEEF8352"]
+			description: ["In the depths of the Nether you can find ore veins containing certus quartz native to hellish landscape. It can be used in some crafting recipe instead of one you farm in meteors."]
+			icon: "gtceu:certus_quartz_gem"
+			id: "7E322C0C7CE5B091"
+			shape: "hexagon"
+			size: 0.7d
+			tasks: [
+				{
+					id: "53D6CF29C5CC2C9A"
+					item: "gtceu:raw_certus_quartz"
+					type: "item"
+				}
+				{
+					id: "4F9072AEF24597BF"
+					item: "gtceu:certus_quartz_gem"
+					type: "item"
+				}
+			]
+			title: "Hellish Replacement"
+			x: 6.818367346938783d
+			y: -0.8999999999999995d
+		}
+		{
+			dependencies: ["69DB58E1CD20ED2B"]
+			description: [
+				"By charging normal compass you can seek for fallen meteors. "
+				""
+				"Inside one of them you will find presses and certus quartz to start making components for your first digital storage system in the future."
+				""
+				"Press 'G' on Certus Quarts Cluster to read important info about the buddings."
+				""
+				"{@pagebreak}"
+				"If compass just spinning that means there no meteros in close proximity. You should go and look in other places in the world."
+			]
+			icon: "ae2:sky_stone_block"
+			id: "4879433BBEEF8352"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "19ED3647BB91E7C8"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					id: "051424CB82D92F48"
+					item: "ae2:meteorite_compass"
+					type: "item"
+				}
+				{
+					id: "33EDB4874960F550"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "1F189006AD4FE158"
+					item: "ae2:quartz_cluster"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Celestial Objects"
+			x: 5.878571428571426d
+			y: -0.883843537414954d
+		}
+		{
+			dependencies: ["4879433BBEEF8352"]
+			description: ["To make components and blocks of your future digital storage you need processors. Inscriber is ultimate way to craft them."]
+			icon: "ae2:inscriber"
+			id: "4A8233ADB6406DA9"
+			rewards: [
+				{
+					count: 3
+					id: "691BF866CD14A702"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "47D5A77B463D0ABD"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1A30DFDDE0B615A1"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3B43AE49CABA5141"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+				{
+					id: "0AA69E31F8CCE46A"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "664C4D46FEDD5789"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "6CEBE4F7B9183079"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			x: 7.964285714285715d
+			y: -3.3124149659863846d
+		}
+		{
+			dependencies: ["4A8233ADB6406DA9"]
+			description: ["Presses can be coppied with iron block and coresponding press."]
+			icon: "minecraft:iron_block"
+			id: "2F3E8A2C8A46E941"
+			size: 0.5d
+			tasks: [{
+				id: "07F74B626CCB2A6A"
+				title: "Press Recreation"
+				type: "checkmark"
+			}]
+			x: 7.964285714285722d
+			y: -2.6267006802721085d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"4879433BBEEF8352"
+			]
+			description: ["You will need it to convert any form of energy for your main digital storage network. You can use Fluix Cables to transfer energy between components."]
+			id: "799F7F64000A3084"
+			shape: "diamond"
+			tasks: [{
+				id: "7EE3EA9812EAF172"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 4.25d
+			y: -3.3124149659863846d
+		}
+		{
+			dependencies: ["4879433BBEEF8352"]
+			description: ["Fluix crystals are essential in the creation of most of AE2 blocks and components."]
+			id: "76422C026A6749CA"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "1BD37126F7CBFA84"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: 5.907142857142851d
+			y: -3.2552721088435277d
+		}
+		{
+			dependencies: [
+				"76422C026A6749CA"
+				"799F7F64000A3084"
+			]
+			description: ["Generate energy natively for Applied Energistic network and &oonly&r for it."]
+			id: "09BD3CED744A51DB"
+			shape: "diamond"
+			size: 0.65d
+			tasks: [{
+				id: "462BC67A712946FE"
+				item: "ae2:vibration_chamber"
+				type: "item"
+			}]
+			x: 5.050000000000004d
+			y: -3.3124149659863917d
+		}
+		{
+			dependencies: ["76422C026A6749CA"]
+			description: ["Will boost grow of crystal like blocks or plants adjusted to it. Power it with AE energy or use wooden crank."]
+			icon: "ae2:growth_accelerator"
+			id: "4C18C52168A5F91D"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1B3C573B8080D192"
+					item: "ae2:growth_accelerator"
+					type: "item"
+				}
+				{
+					id: "6A16C7FE47F7A93D"
+					item: "ae2:crank"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 6.907142857142858d
+			y: -3.2552721088435277d
+		}
+		{
+			dependencies: [
+				"799F7F64000A3084"
+				"76422C026A6749CA"
+				"4A8233ADB6406DA9"
+			]
+			description: [
+				"Digital storage use Storage Cells with various properties: Bytes and Types."
+				""
+				"&oTypes&r: means how many different items can cell hold."
+				""
+				"&oBytes&r: show how many items cell can hold. 1 item = 1 bit, so for a byte you need 8 items."
+				""
+				"Put them in ME Drive and connect terminal to it with fluix cables. Now you have simple way to store your items in one block!"
+				""
+				"With addition of crafting terminal you now can create things directly from ME system."
+				""
+				"&lFollow 'Storage Solutions' tab next.&r"
+			]
+			icon: "ae2:drive"
+			id: "540D62BE372AE7D1"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Who needs item sorting?"
+			tasks: [
+				{
+					id: "07BF7D74DD8A3B9B"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "074050C53154702C"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "473F8D6510E53CA6"
+					item: "ae2:terminal"
+					type: "item"
+				}
+				{
+					id: "7229AFD712C4987A"
+					item: "ae2:crafting_terminal"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "09C8561C6B735270"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+			]
+			title: "Digital Storage"
+			x: 5.868367346938783d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"69DB58E1CD20ED2B"
+			]
+			description: ["Simple chargers, just put your item inside!"]
+			id: "6E68DB6406FB4D3F"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "2989E62548390D70"
+					item: "immersiveengineering:charging_station"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "20AF6CC7140305D1"
+					item: "thermal:charge_bench"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.6666666666666714d
+			y: -3.714285714285708d
+		}
+		{
+			dependencies: ["6E68DB6406FB4D3F"]
+			dependency_requirement: "all_started"
+			id: "49BC12E8322CB378"
+			tasks: [{
+				id: "565D187B97710361"
+				item: {
+					Count: 1
+					id: "thermal:flux_magnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.672624362244889d
+			y: -5.811819727891159d
+		}
+		{
+			dependencies: ["6E68DB6406FB4D3F"]
+			dependency_requirement: "all_started"
+			icon: {
+				Count: 1
+				id: "thermal:flux_capacitor"
+				tag: { }
+			}
+			id: "3F84A2143ACABE45"
+			tasks: [
+				{
+					id: "609EC953E3C65D79"
+					item: {
+						Count: 1
+						id: "thermal:flux_capacitor"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7B2B07AFADF08094"
+					item: {
+						Count: 1
+						id: "thermal:rf_potato"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.672624362244889d
+			y: -5.811819727891159d
+		}
+		{
+			dependencies: [
+				"56D8B89369ABF606"
+				"49BC12E8322CB378"
+			]
+			dependency_requirement: "one_completed"
+			id: "1BB3AB8685428FB7"
+			shape: "diamond"
+			tasks: [{
+				id: "08EAFEAA5BE16F17"
+				item: "thermal:tinker_bench"
+				type: "item"
+			}]
+			x: 2.5819727891156248d
+			y: -7.06479591836732d
+		}
+		{
+			dependencies: ["6E68DB6406FB4D3F"]
+			dependency_requirement: "all_started"
+			id: "56D8B89369ABF606"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [
+				{
+					id: "69FBDB8122F8582A"
+					item: {
+						Count: 1
+						id: "thermal:flux_drill"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "04D95D7B901BFE60"
+					item: {
+						Count: 1
+						id: "thermal:flux_saw"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Powered by Flux"
+			x: 1.5d
+			y: -5.781292517006808d
+		}
+		{
+			dependencies: ["1BB3AB8685428FB7"]
+			id: "43943D53B8603D29"
+			shape: "diamond"
+			tasks: [{
+				id: "414D6656567D8585"
+				item: "thermal:upgrade_augment_1"
+				type: "item"
+			}]
+			x: 3.026870748299288d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1BB3AB8685428FB7"]
+			description: ["Expand the mining radius and stored energy in the tools."]
+			id: "7BA759BE13798919"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "195D1EBFEA53C9E7"
+					item: "thermal:area_radius_augment"
+					type: "item"
+				}
+				{
+					id: "75E3AAD0A151E534"
+					item: "thermal:rf_coil_augment"
+					type: "item"
+				}
+			]
+			x: 2.169727891156434d
+			y: -7.479591836734695d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			description: ["Spreads potion effects around."]
+			id: "4D54D4EE4DBF13E0"
+			shape: "diamond"
+			tasks: [{
+				id: "49A598650EF66838"
+				item: "thermal:device_potion_diffuser"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5361A9865C6547F4"
+				"63DAC2C8EA115E22"
+			]
+			id: "3BA851632B31C836"
+			shape: "diamond"
+			tasks: [{
+				id: "286A00F6B3BC43EB"
+				item: "thermal:device_xp_condenser"
+				type: "item"
+			}]
+			x: -0.4634353741496682d
+			y: 1.9190476190476176d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "thermal:xp_crystal"
+				tag: { }
+			}
+			id: "63DAC2C8EA115E22"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [
+				{
+					id: "4A8FDF1D8DE1E5F9"
+					item: {
+						Count: 1
+						id: "thermal:xp_crystal"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5976E2B11ACEBFA6"
+					item: "thermal:xp_storage_augment"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -0.45748299319729413d
+			y: 2.7238095238095283d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			description: [
+				"Work as automatic stone blocks type farm. "
+				""
+				"Put water and lava on opposite sides of Extruder. Different blocks underneath will change its output."
+			]
+			id: "016889850869B51A"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "1AFF19B5C1CD91F1"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			title: "Stone farming"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "5E8C6076F2C33137"
+			shape: "diamond"
+			tasks: [{
+				id: "4FD3CE150526A9D4"
+				item: {
+					Count: 1
+					id: "thermal:potion_quiver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			id: "423F84ADDE1CC9ED"
+			shape: "diamond"
+			tasks: [{
+				id: "5718A24DF83ECC71"
+				item: {
+					Count: 1
+					id: "thermal:potion_infuser"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			description: ["&lArboreal Extractor&r will help you get &osimple rubber&r more effectively and other liquids from trees like &oResin and Sap&r."]
+			icon: "thermal:device_tree_extractor"
+			id: "4DE3A5EB02DCDC59"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "4E67081F5752155F"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			title: "Latex"
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+	title: "Ways of Glass"
 }

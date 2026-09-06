@@ -379,7 +379,15 @@
 				}
 				{
 					id: "087DA014816C042A"
-					item: "crusty_chunks:bauxite"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ores/aluminum"
+						}
+					}
+					optional_task: true
+					title: "Bauxite Ores"
 					type: "item"
 				}
 			]
