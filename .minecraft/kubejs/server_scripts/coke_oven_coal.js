@@ -108,6 +108,18 @@ ServerEvents.recipes(event => {
     "item": "immersiveengineering:coal_coke"
     }
     })
+    event.custom({
+    "type": "railcraft:coking",
+    "cookingTime": 400,
+    "creosoteOutput": 500,
+    "experience": 0.0,
+    "ingredient": {
+    "item": "immersivegeology:normal_ore_bituminous"
+    },
+    "result": {
+    "item": "immersiveengineering:coal_coke"
+    }
+    })
 
     event.remove({id: "railcraft:coke_oven/coal_coke_block"});
     event.custom({
@@ -122,6 +134,15 @@ ServerEvents.recipes(event => {
       "item": "thermal:coal_coke_block"
     }
     });
+
+    event.replaceInput({id:"gtceu:coke_oven/coal_to_coke"},
+      "minecraft:coal",
+      ["minecraft:coal", "immersivegeology:normal_ore_bituminous"]
+    )
+    event.replaceInput({id:"gtceu:coke_oven/coal_to_coke_block"},
+      "minecraft:coal_block",
+      ["minecraft:coal_block", "immersivegeology:storage_block_bituminous"]
+    )
 
     const coke_block = ['thermal:coal_coke_block', 'gtceu:coke_block']
 

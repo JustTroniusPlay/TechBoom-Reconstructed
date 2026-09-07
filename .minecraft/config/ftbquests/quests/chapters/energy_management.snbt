@@ -16,13 +16,6 @@
 			y: -0.5d
 		}
 		{
-			id: "6F977D2B7482E7EE"
-			linked_quest: "1C59476B07336B42"
-			size: 0.5d
-			x: -3.75d
-			y: 0.2607142857142861d
-		}
-		{
 			id: "792420F3FC228E88"
 			linked_quest: "799F7F64000A3084"
 			shape: "rsquare"
@@ -88,11 +81,7 @@
 			y: -4.178571428571431d
 		}
 		{
-			dependencies: [
-				"56766749439CD7E0"
-				"5361A9865C6547F4"
-				"69DB58E1CD20ED2B"
-			]
+			dependencies: ["69DB58E1CD20ED2B"]
 			description: [
 				"Block type energy transfer. Unlike wires with connectors every cable need to be lay down block by block and will transfer fixed amount of energy. Have internal energy buffer."
 				""
@@ -100,7 +89,7 @@
 			]
 			id: "3E885ACD84B8FF4F"
 			rewards: [{
-				count: 16
+				count: 8
 				id: "057C34174B31A361"
 				item: "thermal:energy_duct"
 				type: "item"
@@ -117,7 +106,6 @@
 			dependencies: [
 				"56766749439CD7E0"
 				"3E885ACD84B8FF4F"
-				"006F0DFB4E9FE795"
 			]
 			id: "0646482B8B0DF2D2"
 			tasks: [{

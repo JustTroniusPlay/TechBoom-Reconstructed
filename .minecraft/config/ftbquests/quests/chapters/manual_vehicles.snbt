@@ -459,11 +459,10 @@
 				"25BA2070871AE3EA"
 				"6D0457966A524EAE"
 				"65BA9D00FF643C02"
-				"740A845F94D5D8AA"
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Did you felt it? When you fly your aircraft change diretions on its own. It can become annoying overtime. Or you just want better autopilot."
+				"Did you felt it? When you fly your aircraft change directions on its own. It can become annoying overtime. Or you just want better autopilot."
 				""
 				"Gyroscopes will balance your aircraft and make it fly in straight line. So no turning in random directions!"
 				""
@@ -524,6 +523,44 @@
 			]
 			x: 2.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"65BA9D00FF643C02"
+				"25BA2070871AE3EA"
+				"6D0457966A524EAE"
+			]
+			hide_dependency_lines: true
+			id: "55438972C0D21B04"
+			tasks: [
+				{
+					id: "5D9CB23E23207FC4"
+					item: "immersive_aircraft:telescope"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3DF4F094C20BDA85"
+					item: "immersive_aircraft:heavy_crossbow"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "29E9782C366C9F5E"
+					item: "immersive_aircraft:bomb_bay"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "56111CBEBEFCD9CA"
+					item: "immersive_aircraft:rotary_cannon"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Weapons"
+			x: 2.000000000000014d
+			y: 3.7410714285714377d
 		}
 	]
 	title: "Personal Transport"

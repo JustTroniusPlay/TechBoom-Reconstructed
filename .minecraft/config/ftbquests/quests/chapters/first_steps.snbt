@@ -1151,6 +1151,7 @@
 				""
 				"By pressing \"A\" you will save item in your bookmarks if you don't want to forget about it."
 			]
+			icon: "gtceu:quantum_eye"
 			id: "2969C3E43E853041"
 			shape: "square"
 			tasks: [{
@@ -1218,6 +1219,8 @@
 				"With so many tools at your disposal for building your factory, you really run out of handful inventory slots. But don't worry! Tool Belt here to help with your inventory management! "
 				""
 				"&lIt can be upgraded on anvil with pouches to get more slots up to 8 max.&r"
+				""
+				"You need to put your belt into Curious eqipment slot! Then close inventory and &lhold 'R' key&r &owhile empty handed or holding tools&r."
 			]
 			id: "173F0498DAC0D9CB"
 			rewards: [{
@@ -1242,7 +1245,7 @@
 			description: [
 				"The classic helper of all explores out there. You can upgrade it with metals and minerals to get more slots, but the real strength comes from different special upgrades."
 				""
-				"Press 'N' button to open it in your inventory without need to placing."
+				"Press 'N' button to open it in your inventory without need to placing or holding."
 			]
 			id: "1E25061EB6CCD519"
 			shape: "diamond"
@@ -2903,6 +2906,26 @@
 			}]
 			x: -1.0d
 			y: -9.5d
+		}
+		{
+			dependencies: ["4EBBAB4B8A99D4A7"]
+			description: [
+				"Curious mod add special equipment slots for various useful trinkets."
+				""
+				"Find small button inside your inventory near avatar to open it. Some items can be put here later to assist you in many ways."
+				""
+				"You can press 'L' key to open it too."
+			]
+			icon: "toolbelt:pouch"
+			id: "5A9CA3D8F3E0A95C"
+			shape: "square"
+			tasks: [{
+				id: "438F92FE4E2CBBBC"
+				title: "Equipment Slots"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.0d
 		}
 	]
 	title: "Age of Beginning"

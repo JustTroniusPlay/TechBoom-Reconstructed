@@ -13,12 +13,11 @@ ServerEvents.tags('item', event => {
     event.add('forge:creosot_bucket', 'thermal:creosote_bucket');
 
     event.add('minecraft:bookshelf_books', 'voltaic:guidebook');
-    event.add('minecraft:lectern_books', 'voltaic:guidebook');
-
     event.add('minecraft:bookshelf_books', 'cookingforblockheads:crafting_book');
     event.add('minecraft:bookshelf_books', 'cookingforblockheads:recipe_book');
     event.add('minecraft:bookshelf_books', 'cookingforblockheads:no_filter_edition');
     event.add('minecraft:bookshelf_books', 'solringopie:food_book');
+    event.add('minecraft:bookshelf_books', 'forestry:foresters_manual');
 
     event.add('forge:dusts/quartz', 'gtceu:nether_quartz_dust');
     event.add('forge:dusts/coke_coal', 'gtceu:coke_dust');
@@ -45,6 +44,8 @@ ServerEvents.recipes(event => {
     event.remove({id: "createdieselgenerators:compat/immersiveengineering/graphite_electrode"});
     event.remove({id: "biggerreactors:smelting/graphite_ingot"});
     event.remove({id: "biggerreactors:blasting/graphite_ingot"});
+    event.remove({id: "immersiveengineering:crafting/torch"});
+
 
   /*  event.remove({id: "cybernetic_system:craft_wire_copper"});
     event.shapeless(
@@ -92,6 +93,12 @@ ServerEvents.recipes(event => {
         {id: "cookingforblockheads:crafting_book"},
         'minecraft:diamond',
         ['#forge:seeds','#forge:fruits','#forge:vegetables','#forge:crops']
+    )
+
+    event.replaceInput(
+        {id: "adpother:aerometer"},
+        'minecraft:comparator',
+        'minecraft:repeater'
     )
 
   /*  event.remove({id: "tesseract:tesseract"});

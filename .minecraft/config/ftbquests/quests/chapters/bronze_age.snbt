@@ -1046,9 +1046,9 @@
 				""
 				"- &oCompost&r made out of dirt and wheat."
 				" "
-				"- &oMulch&r can be get from proccesses from other Forestry machines."
+				"- &oMulch&r can be get from processes of other Forestry machines."
 				""
-				"If you have some piles of &oashes&r after some other proccesses you can use them as replacement in some fertilizers recipes."
+				"If you have some piles of &oashes&r after some other processes you can use them as replacement in some fertilizers recipes."
 			]
 			icon: "forestry:fermenter"
 			id: "0F45980EACA70EBA"
@@ -1709,6 +1709,34 @@
 			}]
 			x: 0.5d
 			y: -8.5d
+		}
+		{
+			dependencies: ["3F3FC863FA058BDF"]
+			id: "7296D42F6664F247"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [
+				{
+					id: "2DB0D455DD284B77"
+					item: "forestry:bee_chest"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "017237AA08231454"
+					item: "forestry:tree_chest"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0BE28130B3619270"
+					item: "forestry:butterfly_chest"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 5.392933042357569d
+			y: -0.7368383290816283d
 		}
 	]
 	title: "Bronze Age"

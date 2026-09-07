@@ -34,7 +34,10 @@ ServerEvents.recipes(event => {
     "forestry:moistener",
     "forestry:fermenter",
     "forestry:squeezer",
-    "forestry:raintank"
+    "forestry:raintank",
+    "forestry:bee_chest",
+    "forestry:tree_chest",
+    "forestry:butterfly_chest"
   ];
   fmachines.forEach(machine => 
     {

@@ -1013,8 +1013,8 @@
 				item: "thermal:fluid_tank_augment"
 				type: "item"
 			}]
-			x: 2.277338435374145d
-			y: -2.4257653061224254d
+			x: 1.4214285714285695d
+			y: -1.2786564625850212d
 		}
 		{
 			dependencies: [
@@ -1041,8 +1041,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.2559098639455755d
-			y: -3.2471088435374043d
+			x: 1.4d
+			y: -2.1d
 		}
 		{
 			dependencies: ["031595756B809ADC"]
@@ -1065,6 +1065,20 @@
 			title: "Pipettes"
 			x: 3.2491071428571274d
 			y: -4.821938775510191d
+		}
+		{
+			dependencies: [
+				"031595756B809ADC"
+				"5169668687940129"
+			]
+			id: "39220EE8A1441C5D"
+			tasks: [{
+				id: "5461E04F7100D7F4"
+				item: "mekanism:basic_fluid_tank"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
 		}
 	]
 	title: "Fluid Management"
