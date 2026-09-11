@@ -3,10 +3,208 @@
 	default_quest_shape: ""
 	filename: "industrial_beekeeper"
 	group: "495B816819C83ED9"
-	icon: "forestry:bee_house"
+	icon: "forestry:alveary_plain"
 	id: "1F27CA7EEAD386FD"
 	order_index: 0
-	quest_links: [ ]
-	quests: [ ]
+	quest_links: [
+		{
+			id: "2FECB314372B8291"
+			linked_quest: "2A300C72DC0C7533"
+			shape: "gear"
+			size: 1.5d
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			id: "12915A26AFF117E2"
+			linked_quest: "4EC0457BBD8103AA"
+			shape: "gear"
+			size: 1.5d
+			x: 5.5d
+			y: 1.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["4EC0457BBD8103AA"]
+			id: "2CFFEF0941DDD68B"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "52938AE864F3D97C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "techboom:forestry_tubes"
+					}
+				}
+				title: "Electron Tubes"
+				type: "item"
+			}]
+			x: 3.5999999999999996d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A300C72DC0C7533"]
+			id: "62120CC3258F035B"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "72C1BF2B0B097C8F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "techboom:forestry_circuits"
+					}
+				}
+				title: "Circuits"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"62120CC3258F035B"
+				"2CFFEF0941DDD68B"
+			]
+			description: [
+				"Create special upgrades to your Forestry machines or program MultiFarms!"
+				""
+				"Keep in mind that as soon as all tubes will be put into slots new circuit will be made automatically! So decide your buffs before placing them!"
+				""
+				"Different circuits have different amount of slots available. After you made your new custom upgrade you can replace old tubes &obut without refund!&r"
+			]
+			id: "5E539F7C431A81F3"
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "Uniting powers"
+			tasks: [{
+				id: "7943A5FC8ADA7DF8"
+				item: {
+					Count: 1
+					id: "forestry:soldering_iron"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.8214285714285623d
+			y: -1.4071428571428584d
+		}
+		{
+			dependencies: ["2A300C72DC0C7533"]
+			description: [
+				"Alveary - multiblock that work as one giant Bee Hive to boost your bees. "
+				""
+				"It quite costy to make because of Scentend Paneling and resources you can get from special bees. But I asure you the result gonna be worth it!"
+				""
+				"{@pagebreak}"
+				"You can customize your Alveary using different blocks you can see in next quests. "
+				""
+				"&oJust remember to replace &lbottom layer&r in multiblock structure.&r"
+			]
+			icon: "forestry:alveary_plain"
+			id: "714613AF584BBB2A"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					count: 27L
+					id: "52A07CB1A1D1BC2D"
+					item: { Count: 27, id: "forestry:alveary_plain" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "197EDDBB35BB92E7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:wooden_slabs"
+						}
+					}
+					title: "Wooden Slabs"
+					type: "item"
+				}
+			]
+			title: "Bee Farming"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["714613AF584BBB2A"]
+			description: ["Spawn swarms near Alveary with small chance that can contain new bees using Royal Jelly inside the structure."]
+			id: "70E37F3F4DB67773"
+			tasks: [{
+				id: "7F73755F8E547D0A"
+				item: "forestry:alveary_swarmer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["714613AF584BBB2A"]
+			description: ["Changes temperature inside the Alveary. Make it warmer or colder using Heater or Fan."]
+			id: "60AFB6975D61DE98"
+			tasks: [
+				{
+					id: "3E84609DAA5E95BA"
+					item: "forestry:alveary_fan"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7E31754086A9E52A"
+					item: "forestry:alveary_heater"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["714613AF584BBB2A"]
+			description: ["Collects pollen from nerby tress."]
+			id: "69089DAE55FD0495"
+			tasks: [{
+				id: "59818998FE4A5621"
+				item: "forestry:alveary_sieve"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["714613AF584BBB2A"]
+			description: ["Prevents offsprings of your bees to mutate in Alveary."]
+			id: "090556DC51C01AC3"
+			tasks: [{
+				id: "286E92538E4317BA"
+				item: "forestry:alveary_stabiliser"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["714613AF584BBB2A"]
+			description: ["Provide water or lava to modify humidity of your Alveary. This also change its temperature slightly.  "]
+			id: "0BC70B362D964108"
+			tasks: [{
+				id: "6E4AF738BE57CB47"
+				item: "forestry:alveary_hygro"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+	]
 	title: "Industrial Beekeeper"
 }

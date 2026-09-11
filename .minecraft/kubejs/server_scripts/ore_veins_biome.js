@@ -7,13 +7,6 @@ ServerEvents.tags('biome', event => {
 
 GTCEuServerEvents.oreVeins(event => {
 
-    /*event.removeAll((id, vein) => 
-        //id.path != "cassiterite_vein"
-        //id.path != "copper_vein"
-        //id.path != "iron_vein"
-        //id.path != "redstone_vein_ow"
-    )*/
-
 /*OVERWORLD*/{
      event.modify("gtceu:copper_tin_vein", vein => {
         //vein.clusterSize(120)

@@ -1,0 +1,13 @@
+/*  event.remove({id: "tesseract:tesseract"});
+    event.shaped(
+  Item.of('tesseract:tesseract', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'mekanism:block_refined_obsidian',
+    B: 'thermal:enderium_block',  //arg 3: the mapping object
+    C: 'createutilities:void_steel_block'
+  })*/

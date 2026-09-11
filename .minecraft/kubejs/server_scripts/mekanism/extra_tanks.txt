@@ -1,0 +1,56 @@
+/*event.remove({id: "mekanism_extras:fluid_tank/absolute"});
+    event.shaped(
+  Item.of('mekanism_extras:absolute_fluid_tank', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'mekanism_extras:alloy_radiance',
+    B: 'thermal:lumium_ingot',  //arg 3: the mapping object
+    C: 'mekanism:ultimate_fluid_tank'
+  })
+
+  event.remove({id: "mekanism_extras:fluid_tank/supreme"});
+    event.shaped(
+  Item.of('mekanism_extras:supreme_fluid_tank', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'mekanism_extras:alloy_thermonuclear',
+    B: 'enderio:redstone_alloy_ingot',  //arg 3: the mapping object
+    C: 'mekanism_extras:absolute_fluid_tank'
+  })
+
+  event.remove({id: "mekanism_extras:fluid_tank/cosmic"});
+    event.shaped(
+  Item.of('mekanism_extras:cosmic_fluid_tank', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'mekanism_extras:alloy_shining',
+    B: 'create:refined_radiance',  //arg 3: the mapping object
+    C: 'mekanism_extras:supreme_fluid_tank'
+  })
+
+  event.remove({id: "mekanism_extras:fluid_tank/infinite"});
+    event.shaped(
+  Item.of('mekanism_extras:infinite_fluid_tank', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'mekanism_extras:alloy_spectrum',
+    B: 'gtceu:neutronium_ingot',  //arg 3: the mapping object
+    C: 'mekanism_extras:cosmic_fluid_tank'
+  })
+  */

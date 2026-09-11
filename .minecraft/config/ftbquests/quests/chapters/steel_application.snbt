@@ -97,6 +97,7 @@
 			description: ["Simple machine that convert Biomass into Ethanol."]
 			icon: "forestry:still"
 			id: "28AF57B15FD06843"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "07FBF9E7A550D62A"
@@ -831,6 +832,37 @@
 			title: "Latex"
 			x: -1.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			description: ["Can fill or empty fluid containers using energy or dump fluids without it to nearby blocks."]
+			id: "47E2CC7D0C2F4A85"
+			size: 0.7d
+			tasks: [{
+				id: "427B99F33A9AE598"
+				item: "forestry:bottler"
+				type: "item"
+			}]
+			x: 1.75d
+			y: -0.35d
+		}
+		{
+			dependencies: ["5361A9865C6547F4"]
+			description: [
+				"Consumes FE energy to maintain heat and make vaarious components for Forestry farms."
+				""
+				"&lContinue in \"Industrial Beekeeper\" tab next.&r"
+			]
+			id: "4EC0457BBD8103AA"
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "2B68C930073C9943"
+				item: "forestry:fabricator"
+				type: "item"
+			}]
+			x: 3.2345238095238145d
+			y: -1.9047619047619122d
 		}
 	]
 	title: "Ways of Glass"

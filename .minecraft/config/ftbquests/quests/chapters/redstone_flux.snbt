@@ -109,8 +109,8 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: -1.7000000000000002d
-			y: -0.6999999999999997d
+			x: -1.703571428571422d
+			y: -0.8619472789115576d
 		}
 		{
 			dependencies: ["2798CCE5B1DE21DA"]

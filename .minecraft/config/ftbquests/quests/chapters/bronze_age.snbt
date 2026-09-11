@@ -1419,6 +1419,7 @@
 				"3AEE4DD01F88622A"
 				"693B43DD699B1707"
 			]
+			description: ["Upgraded Bee house tha buffs your income of various stuff from bees using Frames."]
 			icon: "forestry:apiary"
 			id: "42242A5A5BEAA077"
 			shape: "rsquare"
@@ -1453,6 +1454,18 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "184F3170BF403AEE"
+					item: {
+						Count: 1
+						id: "forestry:frame_proven"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
 			]
 			x: 8.5d
 			y: -1.203130314625838d
@@ -1462,7 +1475,32 @@
 				"3AEE4DD01F88622A"
 				"34B155B4FCA71D5A"
 			]
+			description: [
+				"To use the Escritoire, &oplace a Bee&r in the &lcentral hexagon&r. It will help you get valuable information about bees and their mutations!"
+				""
+				"A number of book tiles will appear around it: more complex the species, the greater the number of tiles. "
+				""
+				"&lConsumables&r are then added to the &oleft-hand column&r under the \"Examine Specimens\" button. Those can reveal you random tiles. "
+				""
+				"{@pagebreak}"
+				"For consumables you can use very different materials: &lHoneycombs or Honey Drops&r. Just be aware that using similar consumables better then different to see more slots. Fill all left slots with them and now you can get some hints."
+				""
+				"&oJust be careful!&r Using it too much will worsen your research and can give less results with each try! And try your best to use consumables bees produce themselves or it not gonna work properly!"
+				""
+				"{@pagebreak}"
+				"You can also research Tree Saplings and Butterflies for their own mutations, but right now lets focus on bees!"
+				""
+				"After getting a research notes you need to use it in your hands to increase the chance of next mutations. But how exactly? Well the notes always says which species need to be breed in the Bee Hives or Apiary to get a new genomes!"
+				""
+				"&lWith this new discovery lets continue in \"Industrial Beekeeper\" tab.\""
+			]
 			id: "2A300C72DC0C7533"
+			rewards: [{
+				count: 4
+				id: "78391EDBD8E84126"
+				item: "forestry:bee_comb_honey"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.2d
 			tasks: [{
@@ -1575,6 +1613,7 @@
 				item: "minecraft:hopper"
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [
 				{
 					count: 12L
@@ -1712,6 +1751,11 @@
 		}
 		{
 			dependencies: ["3F3FC863FA058BDF"]
+			description: [
+				"Too many bees clutter your inventory? How about special chest to store them all!"
+				""
+				"Additionally you can store sapplings and other critters."
+			]
 			id: "7296D42F6664F247"
 			shape: "diamond"
 			size: 0.85d
@@ -1737,6 +1781,190 @@
 			]
 			x: 5.392933042357569d
 			y: -0.7368383290816283d
+		}
+		{
+			dependencies: ["2A300C72DC0C7533"]
+			description: ["To see existing bee genes please consult Forestry guide book: \"Beekeeping\" section."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						analyzed: 0b
+						genome: {
+							"forestry:activity": {
+								active: "forestry:activity_diurnal"
+								inactive: "forestry:activity_diurnal"
+							}
+							"forestry:bee_effect": {
+								active: "forestry:bee_effect_none"
+								inactive: "forestry:bee_effect_none"
+							}
+							"forestry:bee_species": {
+								active: "forestry:bee_diligent"
+								inactive: "forestry:bee_diligent"
+							}
+							"forestry:cave_dwelling": {
+								active: "forestry:falsed"
+								inactive: "forestry:falsed"
+							}
+							"forestry:fertility": {
+								active: "forestry:2id"
+								inactive: "forestry:2id"
+							}
+							"forestry:flower_type": {
+								active: "forestry:flower_type_vanilla"
+								inactive: "forestry:flower_type_vanilla"
+							}
+							"forestry:humidity_tolerance": {
+								active: "forestry:tolerance_none"
+								inactive: "forestry:tolerance_none"
+							}
+							"forestry:lifespan": {
+								active: "forestry:30id"
+								inactive: "forestry:30id"
+							}
+							"forestry:pollination": {
+								active: "forestry:15i"
+								inactive: "forestry:15i"
+							}
+							"forestry:speed": {
+								active: "forestry:0.6fd"
+								inactive: "forestry:0.6fd"
+							}
+							"forestry:temperature_tolerance": {
+								active: "forestry:tolerance_none"
+								inactive: "forestry:tolerance_none"
+							}
+							"forestry:territory": {
+								active: "forestry:9_6_9"
+								inactive: "forestry:9_6_9"
+							}
+							"forestry:tolerates_rain": {
+								active: "forestry:falsed"
+								inactive: "forestry:falsed"
+							}
+						}
+						health: 30
+						max_heath: 30
+						pristine: 1b
+					}
+				}
+				id: "forestry:bee_larvae_ge"
+				tag: {
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_diligent"
+									inactive: "forestry:bee_diligent"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:30id"
+									inactive: "forestry:30id"
+								}
+								"forestry:pollination": {
+									active: "forestry:15i"
+									inactive: "forestry:15i"
+								}
+								"forestry:speed": {
+									active: "forestry:0.6fd"
+									inactive: "forestry:0.6fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 30
+							max_heath: 30
+							pristine: 1b
+						}
+					}
+				}
+			}
+			id: "630517C8505B3E73"
+			shape: "square"
+			tasks: [{
+				id: "3254702A8AE6D4C7"
+				title: "Bee Genetics"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3129F95624CBEDD4"]
+			description: [
+				"To get &oPeat&r you need to make a Bog Earth - simple mix of dirt and sand with water. Leave it in near water for it to transform into your new fuel source."
+				""
+				"You can also find &oPeat Mud&r in some biomes."
+				""
+				"{@pagebreak}"
+				"This engine produce Ash as bioproduct of its work. It can be useful in later recipes."
+			]
+			icon: "forestry:engine_peat"
+			id: "255F95F400CD9299"
+			shape: "diamond"
+			size: 0.85d
+			tasks: [
+				{
+					id: "26EE93286AE69FD2"
+					item: "forestry:engine_peat"
+					type: "item"
+				}
+				{
+					id: "5BB7D53A8973B8BC"
+					item: "forestry:bog_earth"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1DE288D20BAD1521"
+					item: "regions_unexplored:peat_mud"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "21F0B8438B9B81F7"
+					item: "forestry:peat"
+					type: "item"
+				}
+			]
+			x: -1.275d
+			y: -0.85d
 		}
 	]
 	title: "Bronze Age"

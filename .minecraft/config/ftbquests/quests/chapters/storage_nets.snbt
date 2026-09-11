@@ -643,11 +643,13 @@
 				{
 					id: "44174784C133F210"
 					item: "immersiveengineering:item_batcher"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "65AEE4C8DBD4FA17"
 					item: "thermal:item_buffer"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -704,8 +706,8 @@
 				item: "ae2:storage_bus"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 4.0d
+			x: -3.2632653061224204d
+			y: 5.224829931972788d
 		}
 		{
 			dependencies: ["540D62BE372AE7D1"]

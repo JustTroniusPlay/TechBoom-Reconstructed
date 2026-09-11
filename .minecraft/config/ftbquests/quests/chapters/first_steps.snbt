@@ -1634,7 +1634,11 @@
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
-			description: ["While you explore the world you can find weapon blueprints for different guns. They can be modern or rustic ones with various mods themes."]
+			description: [
+				"While you explore the world you can find weapon blueprints for different guns. They can be modern or rustic ones with various mods themes."
+				""
+				"(As of &lnow&r you craft them in respected crafting stations related to TaCZ mod. Just find gun you get in JEI and see where you can make it. This gonna change in some way later.)"
+			]
 			icon: {
 				Count: 1
 				id: "taczblueprints:blueprint_pistol"
@@ -2924,8 +2928,8 @@
 				title: "Equipment Slots"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 0.0d
+			x: -1.282700892857136d
+			y: 0.09428146258504455d
 		}
 	]
 	title: "Age of Beginning"
