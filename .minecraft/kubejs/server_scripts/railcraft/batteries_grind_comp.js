@@ -1,6 +1,6 @@
 ServerEvents.tags('item', event => {
-    event.add('emtpy_battery','railcraft:zinc_silver_battery_empty');
-    event.add('emtpy_battery','railcraft:zinc_carbon_battery_empty');
+    event.add('techboom:empty_battery','railcraft:zinc_silver_battery_empty');
+    event.add('techboom:empty_battery','railcraft:zinc_carbon_battery_empty');
 })
 
 ServerEvents.recipes(event => {
@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
             'railcraft:charge_spool_medium', 
             Item.of('railcraft:slag', 4)
         ], 
-        '#emtpy_battery')
+        '#techboom:empty_battery')
     
     //Create Crushing Wheel
     event.recipes.create.crushing(
@@ -22,11 +22,11 @@ ServerEvents.recipes(event => {
             Item.of('railcraft:slag', 4),
             Item.of('railcraft:slag', 2).withChance(0.5)
         ],
-        '#emtpy_battery')
+        '#techboom:empty_battery')
 
     //GregTech Macerator
     event.recipes.gtceu.macerator('techboom:gtceu_batteries_grind')
-            .itemInputs('#emtpy_battery')
+            .itemInputs('#techboom:empty_battery')
             .itemOutputs('2x railcraft:charge_terminal')
             .itemOutputs('railcraft:charge_spool_medium')
             .itemOutputs('4x railcraft:slag')
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "thermal:pulverizer",
         "ingredient": {
-            "tag": "emtpy_battery"
+            "tag": "techboom:empty_battery"
         },
         "result": [
             {

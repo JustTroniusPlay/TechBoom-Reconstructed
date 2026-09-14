@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
 
     event.remove({id: "railcraft:iron_tank_wall"});
     event.shaped(
-    Item.of('railcraft:white_iron_tank_wall', 4)
+    Item.of('railcraft:white_iron_tank_wall', 4),
     [
         ' B ',
         'BCB',

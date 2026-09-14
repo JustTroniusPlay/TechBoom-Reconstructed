@@ -10,6 +10,6 @@ ServerEvents.recipes(event => {
     ],
     {
         A: 'create:copper_sheet',
-        B: '#gtceu:tools/craftwing_hammers'
+        B: '#gtceu:tools/crafting_hammers'
     })
 })

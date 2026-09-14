@@ -1220,7 +1220,7 @@
 				""
 				"&lIt can be upgraded on anvil with pouches to get more slots up to 8 max.&r"
 				""
-				"You need to put your belt into Curious eqipment slot! Then close inventory and &lhold 'R' key&r &owhile empty handed or holding tools&r."
+				"You need to put your belt into Curious eqipment slot! (Or use special slot for Tool Belt using ';' keybind) Then close inventory and &lhold 'R' key&r &owhile empty handed or holding tools&r."
 			]
 			id: "173F0498DAC0D9CB"
 			rewards: [{
@@ -1241,29 +1241,26 @@
 			y: -0.7247448979591766d
 		}
 		{
-			dependencies: ["306F6137CCDFF3C1"]
+			dependencies: ["4497A5EEEA049B28"]
 			description: [
-				"The classic helper of all explores out there. You can upgrade it with metals and minerals to get more slots, but the real strength comes from different special upgrades."
+				"The classic helper of all explores out there. "
 				""
-				"Press 'N' button to open it in your inventory without need to placing or holding."
+				"You can upgrade it with metals and minerals to get more slots or color it using dyes, but the real strength comes from different special upgrades!"
+				""
+				"Press 'N' button to open it. You can place it with Shift-rightlick."
 			]
 			id: "1E25061EB6CCD519"
 			shape: "diamond"
 			size: 1.3d
 			tasks: [{
 				id: "3861685FE6F41D0A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "accessories:back"
-					}
-				}
+				item: "sophisticatedbackpacks:backpack"
 				title: "Backpack"
 				type: "item"
 			}]
-			x: -4.589051870748278d
-			y: -1.787244897959134d
+			title: "Advanced Backpack"
+			x: -4.590024447278907d
+			y: -2.8715773809523313d
 		}
 		{
 			dependencies: ["1E25061EB6CCD519"]
@@ -1299,8 +1296,8 @@
 				}
 			]
 			title: "Storing more than items"
-			x: -5.131728316326502d
-			y: -2.2989370748299223d
+			x: -5.13270089285713d
+			y: -3.3832695578231196d
 		}
 		{
 			dependencies: ["1E25061EB6CCD519"]
@@ -1357,8 +1354,8 @@
 				}
 			]
 			title: "Basic needs in a pocket"
-			x: -4.601116071428557d
-			y: -2.669685374149651d
+			x: -4.561272321428575d
+			y: -3.742453231292508d
 		}
 		{
 			dependencies: ["1E25061EB6CCD519"]
@@ -1388,8 +1385,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0390518707482785d
-			y: -2.287244897959134d
+			x: -4.040024447278907d
+			y: -3.3715773809523313d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -2928,8 +2925,66 @@
 				title: "Equipment Slots"
 				type: "checkmark"
 			}]
-			x: -1.282700892857136d
-			y: 0.09428146258504455d
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["306F6137CCDFF3C1"]
+			description: [
+				"Simple small backpack that work more like a pocket. Made out of any ingot you can get and regular animal materials."
+				""
+				"You can put it on various equipment slots to store: back, belt and charm."
+			]
+			id: "4497A5EEEA049B28"
+			shape: "diamond"
+			tasks: [{
+				id: "6A4FBF37DF77B0AE"
+				item: {
+					Count: 1
+					id: "thermal:satchel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Starting Backpacking"
+			x: -4.5816804846938695d
+			y: -1.705038265306115d
+		}
+		{
+			dependencies: ["4497A5EEEA049B28"]
+			description: [
+				"Forestry backpacks can store different items depending on their version. JEI will tell you in one of its tabs when you gonna look into their recipes."
+				""
+				"{@pagebreak}"
+				"Using Shift-rightclick you can change their mode:"
+				""
+				"&lDefault&r - Automatically takes any compatible items that enter the player's inventory until full."
+				""
+				"&lLocked&r - Doesn't take in anything automatically, but can still be opened and manually filled/emptied."
+				""
+				"&lReceiving&r - Shift-rightclicking on an inventory will take all compatible items until full."
+				""
+				"&lResupply&r - Refills any stacks of its items on the player's hotbar."
+				""
+				"&oor you can deposite items into chests if you click on them.&r"
+			]
+			id: "3E56C633CCA30C5B"
+			shape: "diamond"
+			tasks: [{
+				id: "6CBF6D4FE091BF5E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "techboom:forestry_backpacks"
+					}
+				}
+				title: "Forestry Backpacks"
+				type: "item"
+			}]
+			title: "Specialized Backpacks"
+			x: -5.192857142857143d
+			y: -2.334289965986386d
 		}
 	]
 	title: "Age of Beginning"

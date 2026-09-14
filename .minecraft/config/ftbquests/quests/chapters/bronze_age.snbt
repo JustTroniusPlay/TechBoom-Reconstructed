@@ -1522,7 +1522,7 @@
 				type: "item"
 			}]
 			title: "Stucked on charcoal"
-			x: -3.5d
+			x: -1.0d
 			y: -7.0d
 		}
 		{
@@ -1738,7 +1738,17 @@
 			y: -10.95112404336733d
 		}
 		{
-			dependencies: ["6AF4C17E9C8FF9DC"]
+			dependencies: [
+				"7A0C939E0FE540EC"
+				"6D95B9D2E5EB331E"
+			]
+			description: [
+				"FE powered multiblock grinder made out of steel. Grind 9 items at the same time."
+				""
+				"Can damage entities on top of it."
+				""
+				"(&lP.S.&r &oStill unfinished in terms of custom recipes. I planning to make this a upgrade for Steam one similar to Steam Oven.&r)"
+			]
 			id: "0521F2E55A33A975"
 			subtitle: "Work In Progress"
 			tasks: [{
@@ -1746,8 +1756,8 @@
 				item: "railcraft:crusher"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -8.5d
+			x: -3.400944508662839d
+			y: -7.165409757653045d
 		}
 		{
 			dependencies: ["3F3FC863FA058BDF"]

@@ -718,6 +718,20 @@
 			x: -1.0d
 			y: 0.5d
 		}
+		{
+			dependencies: ["3E885ACD84B8FF4F"]
+			description: ["Limits energy flow for Fluxducts."]
+			id: "0B4F441261E26A73"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [{
+				id: "2CCE9096C0F7975B"
+				item: "thermal:energy_limiter_attachment"
+				type: "item"
+			}]
+			x: 3.2d
+			y: 0.4d
+		}
 	]
 	title: "Energy Management"
 }

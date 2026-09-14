@@ -1080,6 +1080,37 @@
 			x: 3.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["332E6B2C638AE656"]
+			description: [
+				"Filter and Servos to extract fluids. For &lFluiducts&r &oonly.&r"
+				""
+				"Can be controlled with redstone signal."
+			]
+			id: "7F26CCDEFD86E0C2"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "26A28843B972FB4B"
+					item: "thermal:filter_attachment"
+					type: "item"
+				}
+				{
+					id: "62E3B52F4745B0B0"
+					item: "thermal:servo_attachment"
+					type: "item"
+				}
+				{
+					id: "7B7EC77A09129704"
+					item: "thermal:turbo_servo_attachment"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fluiduct Attachments"
+			x: -1.0d
+			y: -8.0d
+		}
 	]
 	title: "Fluid Management"
 }

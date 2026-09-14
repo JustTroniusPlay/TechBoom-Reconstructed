@@ -49,4 +49,6 @@ ServerEvents.tags('item', event => {
         {
             event.add('immersiveengineering:toolbox/tools', tool);
         })
+
+    event.add('curios:charm', 'thermal:satchel');
 })

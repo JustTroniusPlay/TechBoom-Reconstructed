@@ -31,6 +31,24 @@ ServerEvents.tags('item', event => {
   boards.forEach(board => {
     event.add('techboom:forestry_circuits','forestry:circuit_board_' + board)
   })
+
+
+  const forestry_packs = 
+    [
+        "miner",
+        "digger",
+        "forester",
+        "hunter",
+        "builder"
+    ]
+
+  forestry_packs.forEach(backpack => {
+
+    event.add('techboom:forestry_backpacks', "forestry:" + backpack + "_bag");
+
+  })
+
+
 })
 
 ServerEvents.tags('fluid', event => {

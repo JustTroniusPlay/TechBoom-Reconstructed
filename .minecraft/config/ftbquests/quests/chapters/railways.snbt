@@ -465,6 +465,7 @@
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
+			icon: "railcraft:abandoned_track"
 			id: "0CC359E4843F401C"
 			tasks: [{
 				id: "4468D95DD4F23487"
@@ -483,8 +484,8 @@
 				item: "railcraft:electric_track"
 				type: "item"
 			}]
-			x: -2.8797619047619065d
-			y: -2.2226190476190624d
+			x: -0.8550170068027327d
+			y: 1.3023809523809575d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
@@ -516,11 +517,16 @@
 				item: "railcraft:reinforced_track"
 				type: "item"
 			}]
-			x: -0.8797619047619065d
-			y: 1.2773809523809376d
+			x: -2.819302721088448d
+			y: -2.1976190476190425d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
+			description: [
+				"When powered will raise minecart up and lower it down without power. "
+				""
+				"Can be climbed as ladder."
+			]
 			id: "6F81E5910DB07857"
 			tasks: [{
 				id: "281E3393C67B78BD"
@@ -532,6 +538,7 @@
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
+			description: ["Transforme tracks into special one related to vanilla variants."]
 			id: "13B1E997CADD6670"
 			tasks: [
 				{
@@ -551,11 +558,16 @@
 				}
 			]
 			title: "Classical kits"
-			x: -3.845238095238095d
-			y: -0.44523809523811053d
+			x: -4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
+			description: [
+				"&lEmbarking and Dissembarking&r - will pick up entities and eject them when cart is passing over. Change pick up radius using Crowbar."
+				""
+				"&lDumping&r - throws entities under railtrack, better to use with &oAbandoned Track&r as it can get over pits."
+			]
 			id: "2AA616D8289DFD13"
 			tasks: [
 				{
@@ -584,7 +596,11 @@
 				"Convert rails to control movement of carts."
 				""
 				"{@pagebreak}"
-				"&lLocking&r - "
+				"&lLocking&r - stops minecarts if not poweredby redstone. Don't affect passing by carts otherwise."
+				""
+				"&lBuffer Stop&r - creates a block on railroad for any passing carts. "
+				""
+				"&lGated&r - put a simple wooden gate that you can open manually with your hand. Can help close your rail path from unwanted guests."
 			]
 			id: "47732C75808B04CF"
 			tasks: [
@@ -603,11 +619,6 @@
 					item: "railcraft:gated_track_kit"
 					type: "item"
 				}
-				{
-					id: "59FE4DEA8E69ECA8"
-					item: "railcraft:locomotive_track_kit"
-					type: "item"
-				}
 			]
 			title: "Stopping"
 			x: -3.809523809523803d
@@ -615,13 +626,13 @@
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
+			description: [
+				"&lLauncher&r - speed up your carts at high speed, but can brake connections between carts. Use Crowbaar to configure it!"
+				""
+				"&lControl&r - redirect carts and locomotives in other direction, which can be changed using Crowbar or redstone signal. But it can't completly stop the carts if they reach quite high speed!"
+			]
 			id: "2D469FDAC4EB672C"
 			tasks: [
-				{
-					id: "47EFD1A50149A761"
-					item: "railcraft:transition_track_kit"
-					type: "item"
-				}
 				{
 					id: "72CC6576DD700F62"
 					item: "railcraft:launcher_track_kit"
@@ -639,6 +650,12 @@
 		}
 		{
 			dependencies: ["62EFB613F0C8BAA0"]
+			description: [
+				"Affects minecarts and locomotives in special ways."
+				""
+				"{@pagebreak}"
+				"&lRouting&r - "
+			]
 			id: "169EFC1ECA9C7470"
 			tasks: [
 				{
@@ -659,6 +676,11 @@
 				{
 					id: "2BC7AF72AC7C1DB8"
 					item: "railcraft:whistle_track_kit"
+					type: "item"
+				}
+				{
+					id: "482A3901C2963BCD"
+					item: "railcraft:coupler_track_kit"
 					type: "item"
 				}
 			]
@@ -1053,6 +1075,105 @@
 			}]
 			x: 0.09880952380953545d
 			y: 7.478571428571406d
+		}
+		{
+			dependencies: ["427BC7DB527660E7"]
+			description: ["Controls how your &oLocomotives&r behave when powered by redstone. Use Crowbar to change its mode!"]
+			id: "50B852C42B453D66"
+			shape: "diamond"
+			tasks: [{
+				id: "7B4AB388A2022DA4"
+				item: "railcraft:locomotive_track_kit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["34738D5B087134A0"]
+			id: "780C902651432CD5"
+			tasks: [{
+				id: "23BB4842D6B3AA85"
+				item: "railcraft:transition_track_kit"
+				type: "item"
+			}]
+			x: -1.319302721088448d
+			y: 2.2666666666666657d
+		}
+		{
+			dependencies: ["62EFB613F0C8BAA0"]
+			id: "3B3888EAF41E08A2"
+			shape: "square"
+			tasks: [{
+				id: "07D12A8B4B997E3F"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "railcraft:guide_book"
+					}
+				}
+				type: "item"
+			}]
+			title: "Everything to know about Tracks!"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["62EFB613F0C8BAA0"]
+			description: [
+				"Help you make turns with help of Switch Track: manual Lever or redstone controlled Motor."
+				""
+				"Router need for Locomotives and their schedules."
+			]
+			id: "1A9ABEABF5388915"
+			tasks: [
+				{
+					id: "30A18EB90B0979C5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "techboom:wye_traacks"
+						}
+					}
+					title: "Wye Tracks"
+					type: "item"
+				}
+				{
+					id: "36FCAF5044D344AC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "techboom:turnout_tracks"
+						}
+					}
+					title: "Turnout Tracks"
+					type: "item"
+				}
+				{
+					id: "421C2108463ABF26"
+					item: "railcraft:switch_track_lever"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0777B9DF459EAE26"
+					item: "railcraft:switch_track_motor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "29E32C6C1BFA7D48"
+					item: "railcraft:switch_track_router"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Turning Tracks"
+			x: 1.5d
+			y: -1.5d
 		}
 	]
 	title: "Railways"
