@@ -127,8 +127,22 @@
 		}
 		{
 			dependencies: ["1FD927A625974E13"]
+			description: [
+				"Trains this big require you to &ofuel them with liquid fuels or using any burnable solid fuel&r in storage. Without them your train will be moving painfuly slow! Every &oliquid will use 100mb at a time&r."
+				""
+				"Different liquids will give various work time for train:"
+				""
+				"- Any &lSteam&r can be used, but is the most cheap fuel type giving only 250 ticks."
+				""
+				"- &lLava&r is average fuel that gives 500 ticks."
+				""
+				"- Then comes &lBiodiesels&r, that gives 750 ticks."
+				""
+				"- Last stronges fuel types are &lDiesel and refined Fuels&r from some different mods, which give 1000 ticks worth of time."
+				""
+				"Most solid fuels time based on their &oburn timer&r that you can see using JEI."
+			]
 			id: "126905C14FC9ABD0"
-			subtitle: "NOT IMPLEMENTED YET"
 			tasks: [
 				{
 					id: "3FF4C2EDF4E381F8"
@@ -141,7 +155,7 @@
 					type: "item"
 				}
 			]
-			title: "Train fuel"
+			title: "Train Fuels"
 			x: 11.057823129251702d
 			y: 0.004761904761920732d
 		}
@@ -1063,7 +1077,10 @@
 			y: 6.9066326530611875d
 		}
 		{
-			dependencies: ["202881A2FA1E9B9D"]
+			dependencies: [
+				"202881A2FA1E9B9D"
+				"1D1CCBF0E8DBD5B1"
+			]
 			dependency_requirement: "one_completed"
 			id: "1FE4650F8423EEFF"
 			shape: "diamond"

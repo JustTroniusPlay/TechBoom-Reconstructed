@@ -1,0 +1,6 @@
+{
+  "fluids": [
+    "#forge:steam"
+  ],
+  "fuel_ticks": 250
+}

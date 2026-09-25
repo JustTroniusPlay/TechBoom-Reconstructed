@@ -1,0 +1,9 @@
+{
+  "fluids": [
+    "createdieselgenerators:diesel",
+    "immersivepetroleum:diesel",
+    "crusty_chunks:diesel",
+    "gtceu:diesel"
+  ],
+  "fuel_ticks": 1000
+}
