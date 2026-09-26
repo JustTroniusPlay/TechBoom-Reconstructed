@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
   );
 
   //Goggles
-  event.replaceOutput({output: "create:crafting/kinetics/goggles"},
+  event.replaceInput({output: "create:crafting/kinetics/goggles"},
     "#forge:glass",
     '#forge:glass_panes'
   );

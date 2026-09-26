@@ -1,5 +1,6 @@
 ServerEvents.tags('biome', event => {
     event.add("forge:is_mountain", "minecraft:is_mountain")
+    event.add("forge:is_mountain", "regions_unexplored:towering_cliffs")
     event.add("forge:is_wet", "regions_unexplored:blackwood_taiga")
     event.add("forge:is_wet", "regions_unexplored:pine_taiga")
 })

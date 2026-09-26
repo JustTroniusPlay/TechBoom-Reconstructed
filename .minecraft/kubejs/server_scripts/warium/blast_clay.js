@@ -4,8 +4,8 @@ ServerEvents.recipes(event => {
   event.shapeless(
   Item.of('crusty_chunks:blast_clay', 4),
   [
-    'gtceu:compressed_fireclay',
-    'gtceu:netherrack_dust',
+    ['gtceu:compressed_fireclay','immersivegeology:raw_fire_clay'],
+    ['gtceu:netherrack_dust','create:cinder_flour'],
     'minecraft:blaze_powder'
   ])
 
