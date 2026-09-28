@@ -864,6 +864,20 @@
 			x: 3.2345238095238145d
 			y: -1.9047619047619122d
 		}
+		{
+			dependencies: ["76422C026A6749CA"]
+			description: ["Passively generaate very small amount of energy for little AE network."]
+			id: "51AF8A3A73F7EBF5"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [{
+				id: "7ECB7CE9AF1AB3FE"
+				item: "ae2:crystal_resonance_generator"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
 	]
 	title: "Ways of Glass"
 }

@@ -407,6 +407,206 @@
 			x: -0.5d
 			y: -3.5d
 		}
+		{
+			dependencies: ["7636E4BA9323624C"]
+			description: ["Grips mostly help with &lrecoil control&r.  "]
+			id: "7D105A54B5AEEEDA"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "135BF9D2DAAE1861"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "create_armorer:grip_shaft"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "082DFD8B445BB5D3"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "create_armorer:grip_wooden"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "19A726DEEF7AF96C"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "create_armorer:grip_gantry_shaft"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Hold on to something!"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"02D4261153179F6F"
+				"0E2F959A48BA47EE"
+			]
+			id: "2BBCDD83973C8CD3"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "0D2F20AFA00B6446"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:sight_light"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3DBCDA6D1ED750F9"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:sight_simple_reflex"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "712D7D735F1661C4"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:sight_light_short"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fancy Scopes"
+			x: 3.000000000000007d
+			y: -0.7071428571428626d
+		}
+		{
+			dependencies: ["2BBCDD83973C8CD3"]
+			id: "4C0FE05533217186"
+			shape: "diamond"
+			subtitle: "For fine snipers"
+			tasks: [{
+				id: "5C0F98C6876E6C3F"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "immersive_armorer:scope_spyglass_ie"
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7636E4BA9323624C"]
+			id: "267DD7FFAC4BD8EF"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "49BCF35F289F2515"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "create_armorer:sight_simple"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3CE92913496F8A10"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "create_armorer:sight_reflex"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "11FA737B822B506D"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "create_armorer:sight_standard"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Rustic Sights"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["267DD7FFAC4BD8EF"]
+			id: "763CEAE7C6152DD9"
+			shape: "diamond"
+			size: 0.8d
+			subtitle: "To see farther"
+			tasks: [
+				{
+					id: "77225358A917B00B"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "create_armorer:sight_medium_distance"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0392722D6532F415"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "create_armorer:scope_telephoto"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Distance Scopes"
+			x: 0.4d
+			y: -0.4d
+		}
 	]
 	title: "Gunpowder Applications"
 }

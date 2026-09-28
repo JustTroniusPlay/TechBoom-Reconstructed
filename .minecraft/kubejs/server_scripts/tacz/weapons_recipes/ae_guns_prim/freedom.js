@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     {
         R: '#forge:rings/iron',
         P: '#forge:double_plates/iron',
-        O: 'gtceu:tin_alloy_small_fluid_pipe',
+        O: 'gtceu:potin_small_fluid_pipe',
         Q: 'ae2:charged_certus_quartz_crystal',
         D: '#forge:gems/amethyst',
         S: 'ae2:silicon',

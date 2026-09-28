@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         D: 'gtceu:double_iron_plate',
         S: 'immersiveengineering:slab_treated_wood_horizontal',
         C: 'immersiveengineering:component_iron',
-        L: 'gtceu:long_iron_rod',
+        L: 'gtceu:potin_normal_fluid_pipe',
         B: bow_limb,
         H: bow_grip,
         R: '#forge:rods/iron',

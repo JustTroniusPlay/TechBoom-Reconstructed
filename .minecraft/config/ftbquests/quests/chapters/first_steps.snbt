@@ -3053,6 +3053,7 @@
 							HasBulletInBarrel: 1b
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3067,6 +3068,7 @@
 							HasBulletInBarrel: 1b
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -3081,6 +3083,7 @@
 							HasBulletInBarrel: 1b
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
