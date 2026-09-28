@@ -1337,6 +1337,56 @@
 			x: 2.277551020408154d
 			y: -2.4948979591836746d
 		}
+		{
+			dependencies: ["44DC54BD41EB3A08"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 3
+					}
+				}
+				id: "immersiveengineering:railgun"
+			}
+			id: "50C34CC179F51D97"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "32879DED3A0FF31B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 3
+							}
+						}
+						id: "immersiveengineering:railgun"
+					}
+					type: "item"
+				}
+				{
+					id: "53BDC23754F4D1AE"
+					item: "immersiveengineering:toolupgrade_railgun_capacitors"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F44207E2839DAD9"
+					item: "immersiveengineering:toolupgrade_railgun_scope"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7E0C5542C497D55C"
+					item: "immersiveengineering:stick_steel"
+					type: "item"
+				}
+			]
+			x: 0.7714285714285651d
+			y: -7.418877551020408d
+		}
 	]
 	title: "Heavy Duty"
 }

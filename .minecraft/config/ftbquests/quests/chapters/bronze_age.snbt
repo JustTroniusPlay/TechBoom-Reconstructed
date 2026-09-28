@@ -1976,6 +1976,47 @@
 			x: -1.275d
 			y: -0.85d
 		}
+		{
+			dependencies: ["15B5CF1F309CA82A"]
+			description: ["Made out of treated wood materials, more refined weapons for respected engineers."]
+			id: "0E2F959A48BA47EE"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "0EF4644312A004D7"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 20
+							GunFireMode: "AUTO"
+							GunId: "immersive_armorer:assult_rifle"
+							HasBulletInBarrel: 1b
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "31F8E858127B2549"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 4
+							GunFireMode: "SEMI"
+							GunId: "immersive_armorer:pump_shotgun"
+							HasBulletInBarrel: 1b
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Treated Gunpowder"
+			x: 5.5d
+			y: -5.5d
+		}
 	]
 	title: "Bronze Age"
 }

@@ -1177,8 +1177,8 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: -0.7595716411564553d
-			y: -13.710650510204061d
+			x: -0.7811224489796089d
+			y: -13.648575680272089d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -1632,9 +1632,11 @@
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
 			description: [
-				"While you explore the world you can find weapon blueprints for different guns. They can be modern or rustic ones with various mods themes."
+				"While you explore the world you can find weapons and attachments blueprints for different ancient guns. They can be your \"trophies\", but very limited if you not lucky enough."
 				""
-				"(As of &lnow&r you craft them in respected crafting stations related to TaCZ mod. Just find gun you get in JEI and see where you can make it. This gonna change in some way later.)"
+				"You can craft them using special stations."
+				""
+				"At the same time you can craft self made guns using various materials. You will see them in questlines when they gonna be available or you can check &l\"Gunpowder Application\"&r tab for them."
 			]
 			icon: {
 				Count: 1
@@ -1645,11 +1647,43 @@
 			}
 			id: "4DF2BE340A6E1E79"
 			shape: "square"
-			tasks: [{
-				id: "019CEE68F5FB1636"
-				title: "Dusty blueprints"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "019CEE68F5FB1636"
+					title: "Dusty blueprints"
+					type: "checkmark"
+				}
+				{
+					id: "4F4408CB9546A47E"
+					item: "tacz:gun_smith_table"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "191B90E6D43AAC88"
+					item: {
+						Count: 1
+						id: "tacz:workbench_c"
+						tag: {
+							BlockId: "tacz:attachment_workbench"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "556A1E6480873159"
+					item: {
+						Count: 1
+						id: "tacz:workbench_a"
+						tag: {
+							BlockId: "tacz:ammo_workbench"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -4.310299744897925d
 			y: 1.5088860544217795d
 		}
@@ -2284,8 +2318,8 @@
 				}
 			]
 			title: "Brass things"
-			x: -1.7799798044217638d
-			y: -13.731058673469363d
+			x: -0.35d
+			y: -12.95d
 		}
 		{
 			dependencies: ["7BFF886E57F3D543"]
@@ -2985,6 +3019,217 @@
 			title: "Specialized Backpacks"
 			x: -5.192857142857143d
 			y: -2.334289965986386d
+		}
+		{
+			dependencies: ["1A155790CD83B2A7"]
+			description: ["Quite rustic various guns for many purposes."]
+			id: "7636E4BA9323624C"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "48CFE30FA27C7869"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 4
+							GunFireMode: "SEMI"
+							GunId: "create_armorer:pistol_revolver_torque"
+							HasBulletInBarrel: 1b
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3678DD1660ECF5D5"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 10
+							GunFireMode: "AUTO"
+							GunId: "create_armorer:rifle_assult_roller"
+							HasBulletInBarrel: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7219246D5000A824"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 8
+							GunFireMode: "SEMI"
+							GunId: "create_armorer:sniper_semi_m1"
+							HasBulletInBarrel: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E87D4743CF979E1"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 2
+							GunFireMode: "SEMI"
+							GunId: "create_armorer:shotgun_db_stone"
+							HasBulletInBarrel: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Brass Self-Defense"
+			x: -2.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["4B31C89E0FA58CE0"]
+			description: ["Reliable heavy guns for engineers."]
+			id: "02D4261153179F6F"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "4644D85E38B16122"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 12
+							GunFireMode: "SEMI"
+							GunId: "immersive_armorer:pistol_9mm"
+							HasBulletInBarrel: 1b
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36D6F8420DD21D91"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 17
+							GunFireMode: "AUTO"
+							GunId: "immersive_armorer:short_smg"
+							HasBulletInBarrel: 1b
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Sturdy Gunslinger"
+			x: 4.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["4879433BBEEF8352"]
+			description: ["Powered by strange resonance of charged Certus quartz."]
+			id: "28E5E2CFBF6E9979"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "1650F622127EDB64"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 17
+							GunFireMode: "SEMI"
+							GunId: "applied_armorer:niklas_pistol_semi_union"
+							HasBulletInBarrel: 1b
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6CAC964FDADC91CF"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 10
+							GunFireMode: "SEMI"
+							GunId: "applied_armorer:niklas_pistol_semi_pride"
+							HasBulletInBarrel: 1b
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5548427527487D0A"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 17
+							GunFireMode: "AUTO"
+							GunId: "applied_armorer:niklas_smg_freedom"
+							HasBulletInBarrel: 1b
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "72E7291B88E408EA"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 34
+							GunFireMode: "SEMI"
+							GunId: "applied_armorer:niklas_pistol_double_win_win"
+							HasBulletInBarrel: 1b
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Applied Projectiles"
+			x: 9.111734693877537d
+			y: -6.470004251700665d
+		}
+		{
+			dependencies: ["4EBBAB4B8A99D4A7"]
+			description: [
+				"In this modpack you not gonna loose most of items and things related to equipment:"
+				""
+				"- Any things related to Curios equipment."
+				""
+				"- Toolbelts and toolboxes."
+				""
+				"- Any backpacks."
+				""
+				"- Ammo Boxes."
+				""
+				"- Special armors like Jetpacks, Gliders and etc."
+				""
+				"{@pagebreak}"
+				"You will &lstill gonna loose&r things in your main inventory related to blocks, resources, common items and tools. At the same time you &lhotbar always stays the same&r even after death. So manage your inventory accordingly to not loose viable tools at your disposal. "
+				""
+				"And at last: your &larmor and tools will loose 25% of their durability&r after death. So still, try not to die much! "
+			]
+			icon: "createdeco:decal_skull"
+			id: "2DA0DB3EB74C60AF"
+			shape: "square"
+			tasks: [{
+				id: "25230F2B86428FDB"
+				title: "Death Savings"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
 		}
 	]
 	title: "Age of Beginning"

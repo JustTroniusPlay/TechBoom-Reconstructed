@@ -5,7 +5,7 @@
 	group: "2A52AF7C0A2DD052"
 	icon: "immersivegeology:powder_bauxite"
 	id: "7120570C0D20C6DF"
-	order_index: 4
+	order_index: 3
 	quest_links: [{
 		id: "517178E0C5C06FAC"
 		linked_quest: "20FA9C099EFFB9A7"
