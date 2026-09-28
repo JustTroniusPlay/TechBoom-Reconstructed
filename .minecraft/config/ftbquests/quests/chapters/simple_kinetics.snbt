@@ -1155,6 +1155,50 @@
 			x: 1.75d
 			y: 1.05d
 		}
+		{
+			dependencies: ["7F493483338AF21E"]
+			description: [
+				"Do you ever wanted to bonk your enemies with strong brass wrench? You can even make it usable tool again just in one simple crafting move!"
+				""
+				"To use melee press 'V' key."
+				""
+				"You even can get &ospecial attachment&r to spice up your damage, but I don't think &oit can be usable as tool anymore with it...&r"
+			]
+			id: "222B60D498331714"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [
+				{
+					id: "3A00B02CE5D5D295"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 1
+							GunFireMode: "SEMI"
+							GunId: "create_armorer:special_melee_wrench"
+							HasBulletInBarrel: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75B32EAD7AF890FD"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "create_armorer:muzzle_refit_iron_spike"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Weaponized Construction Equipment"
+			x: -0.5d
+			y: 2.0d
+		}
 	]
 	title: "Simple Mechanisms"
 }

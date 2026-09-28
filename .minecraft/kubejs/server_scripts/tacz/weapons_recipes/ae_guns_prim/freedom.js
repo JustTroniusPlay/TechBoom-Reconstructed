@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         P: '#forge:double_plates/iron',
         O: 'gtceu:tin_alloy_small_fluid_pipe',
         Q: 'ae2:charged_certus_quartz_crystal',
-        D: '#forge:dyes/purple',
+        D: '#forge:gems/amethyst',
         S: 'ae2:silicon',
         H: bow_limb,
         G:'#forge:glass_panes'
