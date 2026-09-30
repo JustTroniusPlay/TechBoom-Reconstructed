@@ -22,14 +22,14 @@
 			id: "6F2B8F6A55C12320"
 			linked_quest: "02D4261153179F6F"
 			shape: "rsquare"
-			x: 3.0d
+			x: 3.4d
 			y: -2.0d
 		}
 		{
 			id: "7286EBA90F08A554"
 			linked_quest: "0E2F959A48BA47EE"
 			shape: "rsquare"
-			x: 3.0d
+			x: 3.4d
 			y: 0.5d
 		}
 		{
@@ -45,7 +45,7 @@
 			linked_quest: "28E5E2CFBF6E9979"
 			shape: "rsquare"
 			x: -1.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			id: "1DA6B71D2553013F"
@@ -111,8 +111,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: -2.5d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["02D4261153179F6F"]
@@ -143,8 +143,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: -1.5d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7636E4BA9323624C"]
@@ -308,7 +308,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 4.4d
 			y: 1.0d
 		}
 		{
@@ -341,7 +341,7 @@
 				}
 			]
 			x: -2.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7636E4BA9323624C"]
@@ -368,7 +368,7 @@
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
-			description: ["Second iteration of magaazine upgrade."]
+			description: ["Second iteration of magazine upgrade."]
 			id: "64C375020A2B19F0"
 			shape: "diamond"
 			tasks: [{
@@ -390,7 +390,7 @@
 				"7B289C03327D9227"
 				"0852CB10008D7CDB"
 			]
-			description: ["Third iteration of magazine upgraade."]
+			description: ["Third iteration of magazine upgrade."]
 			id: "393BB9CC308A9DF7"
 			shape: "diamond"
 			tasks: [{
@@ -502,13 +502,13 @@
 				}
 			]
 			title: "Fancy Scopes"
-			x: 3.000000000000007d
-			y: -0.7071428571428626d
+			x: 2.4d
+			y: -1.2d
 		}
 		{
 			dependencies: ["2BBCDD83973C8CD3"]
 			id: "4C0FE05533217186"
-			shape: "diamond"
+			shape: "rsquare"
 			subtitle: "For fine snipers"
 			tasks: [{
 				id: "5C0F98C6876E6C3F"
@@ -521,8 +521,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -0.5d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7636E4BA9323624C"]
@@ -574,7 +574,7 @@
 		{
 			dependencies: ["267DD7FFAC4BD8EF"]
 			id: "763CEAE7C6152DD9"
-			shape: "diamond"
+			shape: "rsquare"
 			size: 0.8d
 			subtitle: "To see farther"
 			tasks: [
@@ -604,8 +604,578 @@
 				}
 			]
 			title: "Distance Scopes"
-			x: 0.4d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0E2F959A48BA47EE"
+				"02D4261153179F6F"
+			]
+			id: "43785C5946E7C5ED"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "5E78DDD6ED446298"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:light_extended_mag_1"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "67D9A5CB5141C352"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:extended_mag_1"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Extended Mags"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["43785C5946E7C5ED"]
+			id: "1052B995BE1F7F38"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3B2C7F68B2830B85"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:light_extended_mag_2"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "316E23541D86AF5E"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:extended_mag_2"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Extended Mags II"
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["43785C5946E7C5ED"]
+			id: "0CA5C5DB889C35D8"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7E4A5908148B7534"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:light_extended_mag_3"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "28EA82C08E113680"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:extended_mag_3"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Extended Mags III"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["28E5E2CFBF6E9979"]
+			id: "7530CD96066460DD"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "19D749390B00A058"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "applied_armorer:si_simple_3"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F37B69C4A8359C0"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "applied_armorer:si_pricision"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -0.7d
+			y: 3.2d
+		}
+		{
+			dependencies: ["7530CD96066460DD"]
+			id: "5EC661FF2212B170"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [{
+				id: "2BF55DDAA033F680"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "applied_armorer:sight_type_3741"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.2d
+			y: 3.7d
+		}
+		{
+			dependencies: ["7530CD96066460DD"]
+			id: "3710339897C1593D"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [{
+				id: "4E932D550ABBCA73"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "applied_armorer:si_profession"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.19999999999999996d
+			y: 3.7d
+		}
+		{
+			dependencies: ["5EC661FF2212B170"]
+			id: "4755A8144BD5C920"
+			shape: "diamond"
+			tasks: [{
+				id: "6E9AB155AF9B17A3"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "applied_armorer:si_ms_12"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.2d
+			y: 4.7d
+		}
+		{
+			dependencies: ["3710339897C1593D"]
+			id: "02087E909DDA5100"
+			shape: "diamond"
+			tasks: [{
+				id: "317E9969139D3C71"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "applied_armorer:si_double_sided_mirror"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.19999999999999996d
+			y: 4.7d
+		}
+		{
+			dependencies: ["02087E909DDA5100"]
+			id: "43ADDEFF1484765B"
+			shape: "diamond"
+			tasks: [{
+				id: "0654AED4502D9AC2"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "applied_armorer:scope_ms_14"
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"43ADDEFF1484765B"
+				"763CEAE7C6152DD9"
+				"4C0FE05533217186"
+			]
+			id: "62804B0F97F42B4A"
+			shape: "rsquare"
+			tasks: [{
+				id: "331BB2E4C7E37569"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "applied_armorer:scope_xgs_905"
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["28E5E2CFBF6E9979"]
+			id: "7C39F3CFB49CF640"
+			shape: "diamond"
+			tasks: [{
+				id: "46164A227D5A599C"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "applied_armorer:muzzle_ns_1"
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["28E5E2CFBF6E9979"]
+			id: "4368E7A092B41A9E"
+			shape: "diamond"
+			tasks: [{
+				id: "28DC296DA5FED642"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "applied_armorer:muzzle_commander"
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4368E7A092B41A9E"]
+			id: "231E7FE241F872BC"
+			shape: "diamond"
+			tasks: [{
+				id: "302A7A38A321269C"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "applied_armorer:muzzle_bs_mod4"
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["28E5E2CFBF6E9979"]
+			description: [
+				"Exclusive to Pride pistol special knifes."
+				""
+				"Press 'V' to use melee with this attachment!"
+			]
+			id: "762F55DCFC6F72FA"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "72F17AC32396047A"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "applied_armorer:bayonet_gladius"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "501C5B4AF78298EE"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "applied_armorer:bayonet_gladius"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Pride Bayonet"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["02D4261153179F6F"]
+			id: "33C63099B1778D75"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7D5733D990AA364F"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:muzzle_refit_extra_heavy_barrel"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F379FC903A902F4"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:muzzle_refit_melted_metal_spitter"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Exclusive Addititons"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E2F959A48BA47EE"]
+			id: "6ECE252303567BE6"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "6C4D9BDDDEEBDE26"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:grip_treated_wood"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7263788F911A2F6F"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:grip_twined"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3B33E6FD7C5B3E09"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:grip_treated_wood_light"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.4d
 			y: -0.4d
+		}
+		{
+			dependencies: [
+				"02D4261153179F6F"
+				"0E2F959A48BA47EE"
+			]
+			id: "1D87921B3F57EDBD"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "3C8F2F110082A190"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:stock_crude"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "46A71DF156D2C881"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:stock_bracket"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.4d
+			y: -1.2d
+		}
+		{
+			dependencies: ["1D87921B3F57EDBD"]
+			id: "1BC5446506799D07"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "6F393307D6B184EF"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:stock_simple"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "37AB59997D0B2178"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:stock_steady"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "22FD89CC17C13FA7"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:stock_heavy"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.8d
+			y: -0.8d
+		}
+		{
+			dependencies: ["33C63099B1778D75"]
+			id: "544512EE2BC90389"
+			shape: "diamond"
+			tasks: [{
+				id: "5FBDFACE0AB59E9E"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "immersive_armorer:muzzle_refit_he_compound"
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E2F959A48BA47EE"]
+			id: "76D80F9953957180"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "281E0E7E9770C37E"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:muzzle_extended_barrel"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "77726966CE5A1E92"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:muzzle_refit_electromagnetic_accelerator"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7E8EBD63DF38703E"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "immersive_armorer:muzzle_refit_pressure_wave"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Shotgun Barrels"
+			x: 2.5d
+			y: 1.5d
 		}
 	]
 	title: "Gunpowder Applications"

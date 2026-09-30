@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     event.remove({id:'immersive_armorer:attachments/sight_light_short'});
-    const collar = Item.of('tconstruct:tough_binding', '{Material:"tconstruct:copper"}').weakNBT();
+    const collar = Item.of('tconstruct:tough_binding', '{Material:"tconstruct:constantan"}').weakNBT();
     const atachment = Item.of('tacz:attachment', '{AttachmentId:"immersive_armorer:sight_light_short"}').strongNBT();
 
     event.shaped(

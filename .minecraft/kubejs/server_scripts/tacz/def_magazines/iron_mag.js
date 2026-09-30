@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
       'PDP'
     ],
     {
-        R: '#forge:rods/iron',
+        R: '#forge:rods/tin_alloy',
         S: small_spring,
         P: plate,
         D: double_plate
@@ -27,14 +27,14 @@ ServerEvents.recipes(event => {
     event.shaped(
     heavy,
     [
-      'PSP',
+      'TST',
       'RSR',
       'DDD'
     ],
     {
-        R: '#forge:rods/iron',
+        R: '#forge:rods/tin_alloy',
+        T: '#forge:plates/tin_alloy',
         S: spring,
-        P: plate,
         D: double_plate
     })
 })

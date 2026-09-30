@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         P: plate,
         D: double_plate,
         L: '#forge:gems/lapis',
-        M: 'immersiveengineering:component_iron'
+        M: 'immersiveengineering:component_steel'
     })
 
     event.shaped(
@@ -36,6 +36,6 @@ ServerEvents.recipes(event => {
         S: spring,
         D: double_plate,
         L: '#forge:gems/lapis',
-        M: 'immersiveengineering:component_iron'
+        M: 'immersiveengineering:component_steel'
     })
 })
