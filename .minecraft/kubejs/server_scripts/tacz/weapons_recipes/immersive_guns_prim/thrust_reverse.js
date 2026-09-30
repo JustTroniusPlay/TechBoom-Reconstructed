@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
 
+    event.remove({id:"immersive_armorer:gun/assult_rifle"});
     const bow_grip = Item.of('tconstruct:bow_grip', '{Material:"tconstruct:treated_wood"}').weakNBT();
     const bow_limb = Item.of('tconstruct:bow_limb', '{Material:"tconstruct:treated_wood"}').weakNBT();
     const gun = Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"immersive_armorer:assult_rifle",HasBulletInBarrel:1b}').strongNBT();

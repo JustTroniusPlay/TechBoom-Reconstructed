@@ -3022,7 +3022,25 @@
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
-			description: ["Quite rustic various guns for many purposes."]
+			description: [
+				"Quite rustic various guns for many purposes. Made out of kinda shiny materials and alloys."
+				""
+				"{@pagebreak}"
+				"&l\"Torque\" Revolver&r - very simple weapon with quite good firepower, it's small ammo capacity and extravagant design makes it impossible to modify with various attachments."
+				""
+				"{@pagebreak}"
+				"&l\"Roller\" Assult Rifle&r - fast way to riddle your enemies with bullets. "
+				""
+				"It's interesting design actually can make it overheat if it will fire long enough, but thats &onot&r a bad thing! "
+				""
+				"Sustained fire allows it to shoot faster, to the point where it even begins to reload automatically for a short time. But you need to extend it magazine first!"
+				""
+				"{@pagebreak}"
+				"&l\"Classical M1\" Semi Rifle&r - reliable linear rifle that can hit targets from afar with good accuracy. "
+				""
+				"{@pagebreak}"
+				"&l\"Stone\" Shotgun&r - bulky powerful weapon with two barrels that effective at close range because of it bullet spread. "
+			]
 			id: "7636E4BA9323624C"
 			shape: "rsquare"
 			tasks: [
@@ -3093,7 +3111,15 @@
 		}
 		{
 			dependencies: ["4B31C89E0FA58CE0"]
-			description: ["Reliable heavy guns for engineers."]
+			description: [
+				"Reliable heavy guns for engineers. Made out of sturdy metals and alloys."
+				""
+				"{@pagebreak}"
+				"&l\"Legend\" Pistol&r - heavy gun with enough firepower and ammo cpacity to help against strong foes. But not much can be talked about it's customizability options. At least there some special attachments that changes it bullet effects."
+				""
+				"{@pagebreak}"
+				"&l\"Hummingbird\" Mini SMG&r - quick and lightly gun to spread lead onto group of enemies. With help of some special or regulaar attachments it can be upgraded later on to became even more reliable weapon."
+			]
 			id: "02D4261153179F6F"
 			shape: "rsquare"
 			tasks: [
@@ -3134,7 +3160,20 @@
 		}
 		{
 			dependencies: ["4879433BBEEF8352"]
-			description: ["Powered by strange resonance of charged Certus quartz."]
+			description: [
+				"Powered by strange resonance of charged Certus quartz. "
+				""
+				"Their downside can be quite expensive bullet cost at this stage of your progression."
+				""
+				"{@pagebreak}"
+				"&l\"Union\" Pistol&r - simple gun that can be duel wielded into Win-Win variant! But on its not bad for some early shooting around."
+				""
+				"{@pagebreak}"
+				"&l\"Pride\" Pistol&r - more sophisticated gun from this technology. Can be equiped with simple bayonet for good close range battles!"
+				""
+				"{@pagebreak}"
+				"&l\"Freedom\" SMG&r - crystalic bullet spewer that can help with many enemy encounters. Especially with many options for attachments."
+			]
 			id: "28E5E2CFBF6E9979"
 			shape: "rsquare"
 			tasks: [

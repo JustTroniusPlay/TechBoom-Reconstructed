@@ -1978,7 +1978,15 @@
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
-			description: ["Made out of treated wood materials, more refined weapons for respected engineers."]
+			description: [
+				"Made out of treated wood materials, more refined weapons for respected engineers."
+				""
+				"{@pagebreak}"
+				"&l\"Thrust Reverse\" Assult Rifle&r - good all-rounded gun with accuracy and firepower. Can be modified by various attachments for your own taste."
+				""
+				"{@pagebreak}"
+				"&l\"Suppressor\" Shotgun&r - weapon that speaks for itself, perfect close quartes combat damage output for you and even can be changed with special barrel upgrades."
+			]
 			id: "0E2F959A48BA47EE"
 			shape: "rsquare"
 			tasks: [

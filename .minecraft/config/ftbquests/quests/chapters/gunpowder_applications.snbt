@@ -340,8 +340,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 0.5d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7636E4BA9323624C"]
@@ -502,7 +502,7 @@
 				}
 			]
 			title: "Fancy Scopes"
-			x: 2.4d
+			x: 2.8d
 			y: -1.2d
 		}
 		{
@@ -612,6 +612,7 @@
 				"0E2F959A48BA47EE"
 				"02D4261153179F6F"
 			]
+			description: ["Help keep more ammo in your guns, works for many ancient weapons and some of your rustic once."]
 			id: "43785C5946E7C5ED"
 			shape: "diamond"
 			tasks: [
@@ -641,7 +642,7 @@
 				}
 			]
 			title: "Extended Mags"
-			x: 7.0d
+			x: 5.5d
 			y: -1.0d
 		}
 		{
@@ -675,7 +676,7 @@
 				}
 			]
 			title: "Extended Mags II"
-			x: 7.5d
+			x: 6.0d
 			y: -0.5d
 		}
 		{
@@ -709,7 +710,7 @@
 				}
 			]
 			title: "Extended Mags III"
-			x: 7.5d
+			x: 6.0d
 			y: -1.5d
 		}
 		{
@@ -879,6 +880,7 @@
 		}
 		{
 			dependencies: ["28E5E2CFBF6E9979"]
+			description: ["Help to manage recoil on your guns quite immensily."]
 			id: "4368E7A092B41A9E"
 			shape: "diamond"
 			tasks: [{
@@ -897,6 +899,7 @@
 		}
 		{
 			dependencies: ["4368E7A092B41A9E"]
+			description: ["Extends the range of your shooting weapons."]
 			id: "231E7FE241F872BC"
 			shape: "diamond"
 			tasks: [{
@@ -986,6 +989,7 @@
 		}
 		{
 			dependencies: ["0E2F959A48BA47EE"]
+			description: ["Treated wood grips that mostly help with &lrecoil control&r. "]
 			id: "6ECE252303567BE6"
 			shape: "diamond"
 			size: 0.8d
@@ -1027,7 +1031,8 @@
 					type: "item"
 				}
 			]
-			x: 4.4d
+			title: "Treating you with resilience"
+			x: 4.0d
 			y: -0.4d
 		}
 		{
@@ -1035,6 +1040,7 @@
 				"02D4261153179F6F"
 				"0E2F959A48BA47EE"
 			]
+			description: ["Stocks can help with &lrecoil control&r. "]
 			id: "1D87921B3F57EDBD"
 			shape: "diamond"
 			size: 0.8d
@@ -1064,11 +1070,12 @@
 					type: "item"
 				}
 			]
-			x: 4.4d
-			y: -1.2d
+			x: 3.399659863945594d
+			y: -0.7714285714285509d
 		}
 		{
 			dependencies: ["1D87921B3F57EDBD"]
+			description: ["Use treated wood and more advanced materials."]
 			id: "1BC5446506799D07"
 			shape: "diamond"
 			size: 0.8d
@@ -1110,8 +1117,9 @@
 					type: "item"
 				}
 			]
-			x: 4.8d
-			y: -0.8d
+			title: "Treated Stocks"
+			x: 4.0d
+			y: -1.2d
 		}
 		{
 			dependencies: ["33C63099B1778D75"]
@@ -1133,6 +1141,7 @@
 		}
 		{
 			dependencies: ["0E2F959A48BA47EE"]
+			description: ["Special shotgun aattachments that can change it use case drastically."]
 			id: "76D80F9953957180"
 			shape: "diamond"
 			tasks: [
@@ -1176,6 +1185,155 @@
 			title: "Shotgun Barrels"
 			x: 2.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["4DF2BE340A6E1E79"]
+			description: [""]
+			id: "0CB514B15EB499B9"
+			shape: "diamond"
+			subtitle: "Want to test your precision?"
+			tasks: [
+				{
+					id: "6D5C272D00FD5D89"
+					item: "tacz:target"
+					type: "item"
+				}
+				{
+					id: "02763720849A03F3"
+					item: "tacz:target_minecart"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["43785C5946E7C5ED"]
+			description: ["Slight upgrade to magazines with Applied technology. Now they even help reduce recoil!"]
+			id: "7341B860BCE0DDD0"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "56F09F6B49EC8BBE"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "applied_armorer:extended_mag_aa_1"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "414EE6FA11961437"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "applied_armorer:extended_mid_mag_aa_1"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0CA5C5DB889C35D8"
+				"7341B860BCE0DDD0"
+			]
+			id: "32C36BEF22D3B26C"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "54D14168875C9ABF"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "applied_armorer:extended_mag_aa_3"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "134BA67828AF6256"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "applied_armorer:extended_mid_mag_aa_3"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1052B995BE1F7F38"
+				"7341B860BCE0DDD0"
+			]
+			id: "46FEA57970181231"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "6FF2BCA8B8C9E453"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "applied_armorer:extended_mag_aa_2"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "75D0CF6039110CFF"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "applied_armorer:extended_mid_mag_aa_2"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"7C39F3CFB49CF640"
+				"231E7FE241F872BC"
+			]
+			id: "67B28AE83973C79D"
+			shape: "diamond"
+			tasks: [{
+				id: "147C7C19CC6A1353"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "applied_armorer:muzzle_classic"
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
 		}
 	]
 	title: "Gunpowder Applications"
