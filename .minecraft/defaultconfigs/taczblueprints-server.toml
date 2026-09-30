@@ -9,83 +9,70 @@
 
 [unlocks]
 	#List of gun IDs enabled by default. Example: ["tacz:gun/ak47", "tacz:gun/m4a1"]
-	enabledGuns = 
-	[
-		"tacz:modern_kinetic_gun/create_armorer",
-		"tacz:modern_kinetic_gun/applied_armorer",
-		"tacz:modern_kinetic_gun/immersive_armorer",
+	enabledGuns = [
+		"applied_armorer:gun/niklas_pistol_semi_pride",
+		"applied_armorer:gun/niklas_smg_freedom",
+		"applied_armorer:gun/niklas_pistol_semi_union",
+		"applied_armorer:gun/niklas_pistol_double_win_win",
 
-		"tacz:modern_kinetic_gun/applied_armorer:niklas_pistol_semi_pride", 
-		"tacz:modern_kinetic_gun/applied_armorer:niklas_smg_freedom", 
-		"tacz:modern_kinetic_gun/applied_armorer:niklas_pistol_semi_union",
-		"tacz:modern_kinetic_gun/applied_armorer:niklas_pistol_double_win_win",
+		"create_armorer:gun/sniper_semi_m1",
+		"create_armorer:gun/rifle_assult_roller",
+		"create_armorer:gun/shotgun_db_stone",
+		"create_armorer:gun/pistol_revolver_torque",
+		"create_armorer:gun/special_melee_wrench",
 
-		"tacz:modern_kinetic_gun/create_armorer:sniper_semi_m1",
-		"tacz:modern_kinetic_gun/create_armorer:rifle_assult_roller",
-		"tacz:modern_kinetic_gun/create_armorer:shotgun_db_stone",
-		"tacz:modern_kinetic_gun/create_armorer:pistol_revolver_torque",
-		"tacz:modern_kinetic_gun/create_armorer:special_melee_wrench",
-
-		"tacz:modern_kinetic_gun/immersive_armorer:short_smg",
-		"tacz:modern_kinetic_gun/immersive_armorer:pistol_9mm",
-		"tacz:modern_kinetic_gun/immersive_armorer:pump_shotgun",
-		"tacz:modern_kinetic_gun/immersive_armorer:assult_rifle"
+		"immersive_armorer:gun/short_smg",
+		"immersive_armorer:gun/pistol_9mm",
+		"immersive_armorer:gun/pump_shotgun",
+		"immersive_armorer:gun/assult_rifle"
 	]
 	#List of attachment IDs enabled by default. Example: ["tacz:attachment/scope_4x"]
-	enabledAttachments = 
-	[
-		"tacz:attachment/create_armorer",
-		"tacz:attachment/applied_armorer",
-		"tacz:attachment/immersive_armorer",
+	enabledAttachments = [
 
-		"tacz:attachment/tacz:light_extended_mag_1",
-		"tacz:attachment/tacz:light_extended_mag_2",
-		"tacz:attachment/tacz:light_extended_mag_3",
+		"tacz:attachment/light_extended_mag_1",
+		"tacz:attachment/light_extended_mag_2",
+		"tacz:attachment/light_extended_mag_3",
 
-		"tacz:attachment/tacz:extended_mag_1",
-		"tacz:attachment/tacz:extended_mag_2",
-		"tacz:attachment/tacz:extended_mag_3",
+		"tacz:attachment/extended_mag_1",
+		"tacz:attachment/extended_mag_2",
+		"tacz:attachment/extended_mag_3",
 
+		"applied_armorer:attachment/extended_mid_mag_aa_1",
+		"applied_armorer:attachment/extended_mid_mag_aa_2",
+		"applied_armorer:attachment/extended_mid_mag_aa_3",
 
-		"tacz:attachment/applied_armorer:extended_mid_mag_aa_1",
-		"tacz:attachment/applied_armorer:extended_mid_mag_aa_2",
-		"tacz:attachment/applied_armorer:extended_mid_mag_aa_3",
+		"applied_armorer:attachment/extended_mag_aa_1",
+		"applied_armorer:attachment/extended_mag_aa_2",
+		"applied_armorer:attachment/extended_mag_aa_3",
 
-		"tacz:attachment/applied_armorer:extended_mag_aa_1",
-		"tacz:attachment/applied_armorer:extended_mag_aa_2",
-		"tacz:attachment/applied_armorer:extended_mag_aa_3",
+		"applied_armorer:attachment/bayonet_er",
+		"applied_armorer:attachment/bayonet_gladius",
 
-		"tacz:attachment/applied_armorer:bayonet_er",
-		"tacz:attachment/applied_armorer:bayonet_gladius",
+		"applied_armorer:attachment/muzzle_classic",
+		"applied_armorer:attachment/muzzle_commander",
+		"applied_armorer:attachment/muzzle_bs_mod4",
+		"applied_armorer:attachment/muzzle_ns_1",
 
-		"tacz:attachment/applied_armorer:muzzle_classic",
-		"tacz:attachment/applied_armorer:muzzle_commander",
-		"tacz:attachment/applied_armorer:muzzle_bs_mod4",
-		"tacz:attachment/applied_armorer:muzzle_ns_1",
+		"applied_armorer:attachment/si_double_sided_mirror",
+		"applied_armorer:attachment/si_ms_12",
+		"applied_armorer:attachment/scope_ms_14",
+		"applied_armorer:attachment/si_pricision",
+		"applied_armorer:attachment/si_profession",
+		"applied_armorer:attachment/si_simple_3",
+		"applied_armorer:attachment/sight_type_3741",
+		"applied_armorer:attachment/scope_xgs_905",
 
-		"tacz:attachment/applied_armorer:si_double_sided_mirror',
-		"tacz:attachment/applied_armorer:si_ms_12',
-		"tacz:attachment/applied_armorer:scope_ms_14',
-		"tacz:attachment/applied_armorer:si_pricision',
-		"tacz:attachment/applied_armorer:si_profession',
-		"tacz:attachment/applied_armorer:si_simple_3',
-		"tacz:attachment/applied_armorer:sight_type_3741',
-		"tacz:attachment/applied_armorer:scope_xgs_905',
+		"create_armorer:attachment/extended_mag_ca_1",
+		"create_armorer:attachment/extended_mag_ca_2",
+		"create_armorer:attachment/extended_mag_ca_3",
 
+		"create_armorer:attachment/grip_gantry_shaft",
+		"create_armorer:attachment/grip_shaft",
+		"create_armorer:attachment/grip_wooden",
 
-		"tacz:attachment/create_armorer:extended_mag_ca_1",
-		"tacz:attachment/create_armorer:extended_mag_ca_2",
-		"tacz:attachment/create_armorer:extended_mag_ca_3",
-		
-		"tacz:attachment/create_armorer:grip_gantry_shaft",
-		"tacz:attachment/create_armorer:grip_shaft",
-		"tacz:attachment/create_armorer:grip_wooden",
-
-		"tacz:attachment/create_armorer:sight_medium_distance",
-		"tacz:attachment/create_armorer:sight_simple",
-		"tacz:attachment/create_armorer:sight_reflex",
-		"tacz:attachment/create_armorer",
-		"tacz:attachment/create_armorer",
+		"create_armorer:attachment/sight_medium_distance",
+		"create_armorer:attachment/sight_simple",
+		"create_armorer:attachment/sight_reflex"
 	]
 	#List of ammo IDs enabled by default. Example: ["tacz:ammo/556mm"]
 	enabledAmmo = []
