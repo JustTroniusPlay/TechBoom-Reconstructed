@@ -1,0 +1,135 @@
+
+[tables]
+	#If false, disables the GunSmith table recipes for guns.
+	enableGunTable = false
+	#If false, disables the GunSmith table recipes for attachments.
+	enableAttachmentTable = false
+	#If false, disables the GunSmith table recipes for ammo.
+	enableAmmoTable = true
+
+[unlocks]
+	#List of gun IDs enabled by default. Example: ["tacz:gun/ak47", "tacz:gun/m4a1"]
+	enabledGuns = 
+	[
+		"tacz:modern_kinetic_gun/create_armorer",
+		"tacz:modern_kinetic_gun/applied_armorer",
+		"tacz:modern_kinetic_gun/immersive_armorer",
+
+		"tacz:modern_kinetic_gun/applied_armorer:niklas_pistol_semi_pride", 
+		"tacz:modern_kinetic_gun/applied_armorer:niklas_smg_freedom", 
+		"tacz:modern_kinetic_gun/applied_armorer:niklas_pistol_semi_union",
+		"tacz:modern_kinetic_gun/applied_armorer:niklas_pistol_double_win_win",
+
+		"tacz:modern_kinetic_gun/create_armorer:sniper_semi_m1",
+		"tacz:modern_kinetic_gun/create_armorer:rifle_assult_roller",
+		"tacz:modern_kinetic_gun/create_armorer:shotgun_db_stone",
+		"tacz:modern_kinetic_gun/create_armorer:pistol_revolver_torque",
+		"tacz:modern_kinetic_gun/create_armorer:special_melee_wrench",
+
+		"tacz:modern_kinetic_gun/immersive_armorer:short_smg",
+		"tacz:modern_kinetic_gun/immersive_armorer:pistol_9mm",
+		"tacz:modern_kinetic_gun/immersive_armorer:pump_shotgun",
+		"tacz:modern_kinetic_gun/immersive_armorer:assult_rifle"
+	]
+	#List of attachment IDs enabled by default. Example: ["tacz:attachment/scope_4x"]
+	enabledAttachments = 
+	[
+		"tacz:attachment/create_armorer",
+		"tacz:attachment/applied_armorer",
+		"tacz:attachment/immersive_armorer",
+
+		"tacz:attachment/tacz:light_extended_mag_1",
+		"tacz:attachment/tacz:light_extended_mag_2",
+		"tacz:attachment/tacz:light_extended_mag_3",
+
+		"tacz:attachment/tacz:extended_mag_1",
+		"tacz:attachment/tacz:extended_mag_2",
+		"tacz:attachment/tacz:extended_mag_3",
+
+
+		"tacz:attachment/applied_armorer:extended_mid_mag_aa_1",
+		"tacz:attachment/applied_armorer:extended_mid_mag_aa_2",
+		"tacz:attachment/applied_armorer:extended_mid_mag_aa_3",
+
+		"tacz:attachment/applied_armorer:extended_mag_aa_1",
+		"tacz:attachment/applied_armorer:extended_mag_aa_2",
+		"tacz:attachment/applied_armorer:extended_mag_aa_3",
+
+		"tacz:attachment/applied_armorer:bayonet_er",
+		"tacz:attachment/applied_armorer:bayonet_gladius",
+
+		"tacz:attachment/applied_armorer:muzzle_classic",
+		"tacz:attachment/applied_armorer:muzzle_commander",
+		"tacz:attachment/applied_armorer:muzzle_bs_mod4",
+		"tacz:attachment/applied_armorer:muzzle_ns_1",
+
+		"tacz:attachment/applied_armorer:si_double_sided_mirror',
+		"tacz:attachment/applied_armorer:si_ms_12',
+		"tacz:attachment/applied_armorer:scope_ms_14',
+		"tacz:attachment/applied_armorer:si_pricision',
+		"tacz:attachment/applied_armorer:si_profession',
+		"tacz:attachment/applied_armorer:si_simple_3',
+		"tacz:attachment/applied_armorer:sight_type_3741',
+		"tacz:attachment/applied_armorer:scope_xgs_905',
+
+
+		"tacz:attachment/create_armorer:extended_mag_ca_1",
+		"tacz:attachment/create_armorer:extended_mag_ca_2",
+		"tacz:attachment/create_armorer:extended_mag_ca_3",
+		
+		"tacz:attachment/create_armorer:grip_gantry_shaft",
+		"tacz:attachment/create_armorer:grip_shaft",
+		"tacz:attachment/create_armorer:grip_wooden",
+
+		"tacz:attachment/create_armorer:sight_medium_distance",
+		"tacz:attachment/create_armorer:sight_simple",
+		"tacz:attachment/create_armorer:sight_reflex",
+		"tacz:attachment/create_armorer",
+		"tacz:attachment/create_armorer",
+	]
+	#List of ammo IDs enabled by default. Example: ["tacz:ammo/556mm"]
+	enabledAmmo = []
+
+[loot]
+	#Global loot generation settings for blueprints in structure chests.
+	#Chance (0.0 to 1.0) that blueprints will be added to a chest
+	#Range: 0.0 ~ 1.0
+	chestChance = 0.05
+	#Minimum number of blueprints to add when loot triggers
+	#Range: 1 ~ 64
+	chestMinCount = 1
+	#Maximum number of blueprints to add when loot triggers
+	#Range: 1 ~ 64
+	chestMaxCount = 1
+	#Optional per-loot-table overrides in format: minecraft:chests/jungle_temple=1.0,4,6
+	lootTableOverrides = []
+
+[weaponTypeWeights]
+	#Relative weights for each weapon type when generating blueprint loot.
+	#Higher values = more likely to drop. Set to 0 to disable a type.
+	#Example: If Pistol=100 and Rifle=50, pistols are 2x more likely than rifles.
+	#Weight for Pistol blueprints
+	#Range: 0 ~ 1000
+	pistolWeight = 100
+	#Weight for SMG blueprints
+	#Range: 0 ~ 1000
+	smgWeight = 80
+	#Weight for Rifle blueprints
+	#Range: 0 ~ 1000
+	rifleWeight = 70
+	#Weight for Shotgun blueprints
+	#Range: 0 ~ 1000
+	shotgunWeight = 60
+	#Weight for Sniper blueprints
+	#Range: 0 ~ 1000
+	sniperWeight = 40
+	#Weight for Machine Gun blueprints
+	#Range: 0 ~ 1000
+	mgWeight = 30
+	#Weight for RPG blueprints
+	#Range: 0 ~ 1000
+	rpgWeight = 20
+	#Weight for unrecognized weapon types
+	#Range: 0 ~ 1000
+	defaultWeight = 50
+
