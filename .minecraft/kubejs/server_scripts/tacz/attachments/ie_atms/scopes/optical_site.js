@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         P: '#forge:plates/iron',
         I: '#forge:rings/iron',
         M: 'immersiveengineering:component_iron',
-        C: '#forge:plates/constantan',
+        C: '#forge:ingots/constantan',
         W: '#forge:wires/aluminum'
     })
 })

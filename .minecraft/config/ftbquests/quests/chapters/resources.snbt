@@ -241,7 +241,6 @@
 				{
 					id: "0EFEBFAB5610ECCB"
 					item: "gtceu:raw_coal"
-					optional_task: true
 					type: "item"
 				}
 			]

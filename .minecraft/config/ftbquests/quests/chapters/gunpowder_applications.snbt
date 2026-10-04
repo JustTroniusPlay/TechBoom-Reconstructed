@@ -38,7 +38,7 @@
 			shape: "square"
 			size: 1.3d
 			x: 1.0d
-			y: -3.5d
+			y: -5.0d
 		}
 		{
 			id: "7E5AF4037C00ABFB"
@@ -102,6 +102,7 @@
 							AmmoId: "immersive_armorer:454_casul"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -134,6 +135,7 @@
 							AmmoId: "tacz:9mm"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -166,6 +168,7 @@
 							AmmoId: "create_armorer:rbapb"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -194,6 +197,7 @@
 						AmmoId: "tacz:12g"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 1.0d
@@ -219,6 +223,7 @@
 							AmmoId: "create_armorer:slap"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -247,6 +252,7 @@
 							Level: 0
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -259,6 +265,7 @@
 							Level: 1
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -271,13 +278,14 @@
 							Level: 2
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
 			]
 			title: "Ammo Boxes"
 			x: 1.0d
-			y: -5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0E2F959A48BA47EE"]
@@ -299,6 +307,7 @@
 							AmmoId: "immersive_armorer:ap_ammo"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -331,6 +340,7 @@
 							AmmoId: "applied_armorer:etched_quartz_bullet"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -361,6 +371,7 @@
 						AttachmentId: "create_armorer:extended_mag_ca_1"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -1.0d
@@ -380,6 +391,7 @@
 						AttachmentId: "create_armorer:extended_mag_ca_2"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -1.5d
@@ -402,6 +414,7 @@
 						AttachmentId: "create_armorer:extended_mag_ca_3"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -0.5d
@@ -423,6 +436,7 @@
 							AttachmentId: "create_armorer:grip_shaft"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -435,6 +449,7 @@
 							AttachmentId: "create_armorer:grip_wooden"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -447,6 +462,7 @@
 							AttachmentId: "create_armorer:grip_gantry_shaft"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -460,6 +476,7 @@
 				"02D4261153179F6F"
 				"0E2F959A48BA47EE"
 			]
+			dependency_requirement: "one_completed"
 			id: "2BBCDD83973C8CD3"
 			shape: "diamond"
 			size: 0.8d
@@ -473,6 +490,7 @@
 							AttachmentId: "immersive_armorer:sight_light"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -485,6 +503,7 @@
 							AttachmentId: "immersive_armorer:sight_simple_reflex"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -497,6 +516,7 @@
 							AttachmentId: "immersive_armorer:sight_light_short"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -507,6 +527,7 @@
 		}
 		{
 			dependencies: ["2BBCDD83973C8CD3"]
+			description: [""]
 			id: "4C0FE05533217186"
 			shape: "rsquare"
 			subtitle: "For fine snipers"
@@ -519,6 +540,7 @@
 						AttachmentId: "immersive_armorer:scope_spyglass_ie"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 1.5d
@@ -539,6 +561,7 @@
 							AttachmentId: "create_armorer:sight_simple"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -551,6 +574,7 @@
 							AttachmentId: "create_armorer:sight_reflex"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -563,6 +587,7 @@
 							AttachmentId: "create_armorer:sight_standard"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -573,6 +598,7 @@
 		}
 		{
 			dependencies: ["267DD7FFAC4BD8EF"]
+			description: [""]
 			id: "763CEAE7C6152DD9"
 			shape: "rsquare"
 			size: 0.8d
@@ -587,6 +613,7 @@
 							AttachmentId: "create_armorer:sight_medium_distance"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -599,6 +626,7 @@
 							AttachmentId: "create_armorer:scope_telephoto"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -625,6 +653,7 @@
 							AttachmentId: "tacz:light_extended_mag_1"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -637,6 +666,7 @@
 							AttachmentId: "tacz:extended_mag_1"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -659,6 +689,7 @@
 							AttachmentId: "tacz:light_extended_mag_2"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -671,6 +702,7 @@
 							AttachmentId: "tacz:extended_mag_2"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -693,6 +725,7 @@
 							AttachmentId: "tacz:light_extended_mag_3"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -705,6 +738,7 @@
 							AttachmentId: "tacz:extended_mag_3"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -728,6 +762,7 @@
 							AttachmentId: "applied_armorer:si_simple_3"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -739,6 +774,7 @@
 							AttachmentId: "applied_armorer:si_pricision"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -760,6 +796,7 @@
 						AttachmentId: "applied_armorer:sight_type_3741"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -1.2d
@@ -779,6 +816,7 @@
 						AttachmentId: "applied_armorer:si_profession"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -0.19999999999999996d
@@ -797,6 +835,7 @@
 						AttachmentId: "applied_armorer:si_ms_12"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -1.2d
@@ -804,6 +843,7 @@
 		}
 		{
 			dependencies: ["3710339897C1593D"]
+			description: [""]
 			id: "02087E909DDA5100"
 			shape: "diamond"
 			tasks: [{
@@ -815,6 +855,7 @@
 						AttachmentId: "applied_armorer:si_double_sided_mirror"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -0.19999999999999996d
@@ -833,6 +874,7 @@
 						AttachmentId: "applied_armorer:scope_ms_14"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 1.0d
@@ -855,6 +897,7 @@
 						AttachmentId: "applied_armorer:scope_xgs_905"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 1.0d
@@ -873,6 +916,7 @@
 						AttachmentId: "applied_armorer:muzzle_ns_1"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -2.0d
@@ -892,6 +936,7 @@
 						AttachmentId: "applied_armorer:muzzle_commander"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -2.5d
@@ -911,6 +956,7 @@
 						AttachmentId: "applied_armorer:muzzle_bs_mod4"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -3.0d
@@ -935,6 +981,7 @@
 							AttachmentId: "applied_armorer:bayonet_gladius"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -946,6 +993,7 @@
 							AttachmentId: "applied_armorer:bayonet_gladius"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 			]
@@ -967,6 +1015,7 @@
 							AttachmentId: "immersive_armorer:muzzle_refit_extra_heavy_barrel"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -979,6 +1028,7 @@
 							AttachmentId: "immersive_armorer:muzzle_refit_melted_metal_spitter"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -990,6 +1040,13 @@
 		{
 			dependencies: ["0E2F959A48BA47EE"]
 			description: ["Treated wood grips that mostly help with &lrecoil control&r. "]
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "immersive_armorer:grip_treated_wood"
+				}
+			}
 			id: "6ECE252303567BE6"
 			shape: "diamond"
 			size: 0.8d
@@ -1003,6 +1060,7 @@
 							AttachmentId: "immersive_armorer:grip_treated_wood"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1015,6 +1073,7 @@
 							AttachmentId: "immersive_armorer:grip_twined"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1027,6 +1086,7 @@
 							AttachmentId: "immersive_armorer:grip_treated_wood_light"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1040,6 +1100,7 @@
 				"02D4261153179F6F"
 				"0E2F959A48BA47EE"
 			]
+			dependency_requirement: "one_completed"
 			description: ["Stocks can help with &lrecoil control&r. "]
 			id: "1D87921B3F57EDBD"
 			shape: "diamond"
@@ -1054,6 +1115,7 @@
 							AttachmentId: "immersive_armorer:stock_crude"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1066,6 +1128,7 @@
 							AttachmentId: "immersive_armorer:stock_bracket"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1089,6 +1152,7 @@
 							AttachmentId: "immersive_armorer:stock_simple"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1101,6 +1165,7 @@
 							AttachmentId: "immersive_armorer:stock_steady"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1113,6 +1178,7 @@
 							AttachmentId: "immersive_armorer:stock_heavy"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1134,6 +1200,7 @@
 						AttachmentId: "immersive_armorer:muzzle_refit_he_compound"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 5.0d
@@ -1154,6 +1221,7 @@
 							AttachmentId: "immersive_armorer:muzzle_extended_barrel"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1166,6 +1234,7 @@
 							AttachmentId: "immersive_armorer:muzzle_refit_electromagnetic_accelerator"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1178,6 +1247,7 @@
 							AttachmentId: "immersive_armorer:muzzle_refit_pressure_wave"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1206,7 +1276,7 @@
 				}
 			]
 			x: 2.0d
-			y: -5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["43785C5946E7C5ED"]
@@ -1223,6 +1293,7 @@
 							AttachmentId: "applied_armorer:extended_mag_aa_1"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1235,6 +1306,7 @@
 							AttachmentId: "applied_armorer:extended_mid_mag_aa_1"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1259,6 +1331,7 @@
 							AttachmentId: "applied_armorer:extended_mag_aa_3"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1271,6 +1344,7 @@
 							AttachmentId: "applied_armorer:extended_mid_mag_aa_3"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1295,6 +1369,7 @@
 							AttachmentId: "applied_armorer:extended_mag_aa_2"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1307,6 +1382,7 @@
 							AttachmentId: "applied_armorer:extended_mid_mag_aa_2"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1330,10 +1406,59 @@
 						AttachmentId: "applied_armorer:muzzle_classic"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -2.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["28E5E2CFBF6E9979"]
+			id: "407B8730A7E1EE85"
+			tasks: [{
+				id: "6B4DE050F2405500"
+				item: {
+					Count: 1
+					id: "tacz:ammo"
+					tag: {
+						AmmoId: "applied_armorer:hard_core_quartz_bullet"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7636E4BA9323624C"
+				"02D4261153179F6F"
+				"4DF2BE340A6E1E79"
+				"28E5E2CFBF6E9979"
+				"0E2F959A48BA47EE"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"When using fireaarms you can do somethings depending on the gun itself or it's modifications."
+				""
+				"- Most rifles can be used as melee weapons pressing &l'V' key&r. Some pistols can get this ability with some upgrades."
+				""
+				"- Pressing &l'G' key&r can change some guns firing modes: fully auto or single shot. "
+				""
+				"- When you using special scopes &othat can change zoom levels&r, use 'V'  key to change how much zoom you need."
+			]
+			hide_dependency_lines: true
+			icon: "thermal:gunpowder_block"
+			id: "66C288F989359241"
+			shape: "square"
+			tasks: [{
+				id: "211455BE4B3D90FD"
+				title: "How to control your guns"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -3.5d
 		}
 	]
 	title: "Gunpowder Applications"

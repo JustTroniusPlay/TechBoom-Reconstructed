@@ -580,6 +580,8 @@
 				""
 				"Craft patterns and put them in Part Builder with some materials of your choice. "
 				""
+				"&oTip: most metals to solid to make parts without melting, but there exception to this - Copper. This metal soft enough to carve parts for early game tools.&r"
+				""
 				"You can also &lrepair&r your tool with coresponding material in Tinker Station."
 				""
 				"{@pagebreak}"
@@ -702,7 +704,7 @@
 		}
 		{
 			dependencies: ["1843506F57D72661"]
-			description: ["Alloy Kiln can create alloys easily by just using burnabel solid fuel. build 4x4 cube and click with Engineer's Hammer to activate it."]
+			description: ["Alloy Kiln can create alloys easily by just using burnabel solid fuel. Build 4x4 cube and click with Engineer's Hammer to activate it."]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "10E87B6699909383"
 			shape: "rsquare"
@@ -1218,24 +1220,27 @@
 			description: [
 				"With so many tools at your disposal for building your factory, you really run out of handful inventory slots. But don't worry! Tool Belt here to help with your inventory management! "
 				""
-				"&lIt can be upgraded on anvil with pouches to get more slots up to 8 max.&r"
+				"&lIt can be upgraded on anvil with Belt Pouches to get more slots up to 8 max.&r"
 				""
 				"You need to put your belt into Curious eqipment slot! (Or use special slot for Tool Belt using ';' keybind) Then close inventory and &lhold 'R' key&r &owhile empty handed or holding tools&r."
 			]
+			icon: "toolbelt:belt"
 			id: "173F0498DAC0D9CB"
-			rewards: [{
-				count: 2
-				id: "61B0683B73B3AEA6"
-				item: "toolbelt:pouch"
-				type: "item"
-			}]
 			shape: "diamond"
 			size: 1.2d
-			tasks: [{
-				id: "60439C50FF0153E0"
-				item: "toolbelt:belt"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "60439C50FF0153E0"
+					item: "toolbelt:belt"
+					type: "item"
+				}
+				{
+					id: "629718267329A73A"
+					item: "toolbelt:pouch"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "Additional Hands"
 			x: -4.57901785714283d
 			y: -0.7247448979591766d
@@ -1247,7 +1252,9 @@
 				""
 				"You can upgrade it with metals and minerals to get more slots or color it using dyes, but the real strength comes from different special upgrades!"
 				""
-				"Press 'N' button to open it. You can place it with Shift-rightlick."
+				"Press 'N' button to open it. You can place it with Shift-rightclick."
+				""
+				"&oDon't forget to empty your Satchel before crafting.&r"
 			]
 			id: "1E25061EB6CCD519"
 			shape: "diamond"
@@ -1564,7 +1571,7 @@
 			description: [
 				"Ziplines are useful ways to go down a mountain or any other slopes. "
 				""
-				"Put two zipline hooks at some distance and then click with rope at both of them to connect those points. Hold right click while on the rope to move along side it. You can even connect multiplie points to various hooks. "
+				"Put two zipline hooks at some distance and then click with rope at both of them to connect those points. Use the item while sneaking to change rope tension. Hold right click while on the rope to move along side it. You can even connect multiplie points to various hooks. "
 				""
 				"Additionally if you put hooks at the same height level you can just use them as a way to cross pits and falls freely in both direction. "
 				""
@@ -2812,7 +2819,7 @@
 			y: -11.436213860544171d
 		}
 		{
-			dependencies: ["0F21BFC7B6C7D51D"]
+			dependencies: ["5D86113FD3732735"]
 			dependency_requirement: "one_started"
 			description: [
 				"Manual ore grinder will give you additional resources in form of dusts with 25%!"
@@ -2856,7 +2863,7 @@
 					type: "item"
 				}
 			]
-			title: "Manual doubling"
+			title: "Manual Doubling"
 			x: 3.0d
 			y: -7.5d
 		}
@@ -2989,6 +2996,8 @@
 			description: [
 				"Forestry backpacks can store different items depending on their version. JEI will tell you in one of its tabs when you gonna look into their recipes."
 				""
+				"&oDon't forget to empty your Satchel before crafting.&r"
+				""
 				"{@pagebreak}"
 				"Using Shift-rightclick you can change their mode:"
 				""
@@ -3050,12 +3059,13 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 4
+							GunCurrentAmmoCount: 0
 							GunFireMode: "SEMI"
 							GunId: "create_armorer:pistol_revolver_torque"
 							HasBulletInBarrel: 1b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -3065,12 +3075,18 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 10
+							AttachmentSCOPE: {
+								Count: 1b
+								id: "minecraft:air"
+								tag: { }
+							}
+							GunCurrentAmmoCount: 0
 							GunFireMode: "AUTO"
 							GunId: "create_armorer:rifle_assult_roller"
-							HasBulletInBarrel: 1b
+							HasBulletInBarrel: 0b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -3080,12 +3096,23 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 8
+							AttachmentGRIP: {
+								Count: 1b
+								id: "minecraft:air"
+								tag: { }
+							}
+							AttachmentSCOPE: {
+								Count: 1b
+								id: "minecraft:air"
+								tag: { }
+							}
+							GunCurrentAmmoCount: 0
 							GunFireMode: "SEMI"
 							GunId: "create_armorer:sniper_semi_m1"
 							HasBulletInBarrel: 1b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -3095,12 +3122,13 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 2
+							GunCurrentAmmoCount: 0
 							GunFireMode: "SEMI"
 							GunId: "create_armorer:shotgun_db_stone"
 							HasBulletInBarrel: 1b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -3129,12 +3157,13 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 12
+							GunCurrentAmmoCount: 0
 							GunFireMode: "SEMI"
 							GunId: "immersive_armorer:pistol_9mm"
-							HasBulletInBarrel: 1b
+							HasBulletInBarrel: 0b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -3144,12 +3173,13 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 17
+							GunCurrentAmmoCount: 0
 							GunFireMode: "AUTO"
 							GunId: "immersive_armorer:short_smg"
-							HasBulletInBarrel: 1b
+							HasBulletInBarrel: 0b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -3183,12 +3213,13 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 17
+							GunCurrentAmmoCount: 0
 							GunFireMode: "SEMI"
 							GunId: "applied_armorer:niklas_pistol_semi_union"
-							HasBulletInBarrel: 1b
+							HasBulletInBarrel: 0b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -3198,12 +3229,13 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 10
+							GunCurrentAmmoCount: 0
 							GunFireMode: "SEMI"
 							GunId: "applied_armorer:niklas_pistol_semi_pride"
-							HasBulletInBarrel: 1b
+							HasBulletInBarrel: 0b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -3213,12 +3245,13 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 17
+							GunCurrentAmmoCount: 0
 							GunFireMode: "AUTO"
 							GunId: "applied_armorer:niklas_smg_freedom"
-							HasBulletInBarrel: 1b
+							HasBulletInBarrel: 0b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -3228,13 +3261,29 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 34
+							GunCurrentAmmoCount: 0
 							GunFireMode: "SEMI"
 							GunId: "applied_armorer:niklas_pistol_double_win_win"
 							HasBulletInBarrel: 1b
 						}
 					}
+					match_nbt: true
 					optional_task: true
+					type: "item"
+				}
+				{
+					id: "363899DC47DD4F65"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 0
+							GunFireMode: "SEMI"
+							GunId: "applied_armorer:niklas_lever_vigenere"
+							HasBulletInBarrel: 0b
+						}
+					}
+					match_nbt: true
 					type: "item"
 				}
 			]

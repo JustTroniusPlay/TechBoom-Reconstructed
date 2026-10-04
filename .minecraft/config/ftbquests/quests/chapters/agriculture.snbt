@@ -369,6 +369,7 @@
 		}
 		{
 			dependencies: ["27D02A3ECE518CCE"]
+			description: ["Can be found in rivers and near oceans."]
 			hide_dependent_lines: true
 			icon: "gtceu:salt_dust"
 			id: "42240C69EC325829"

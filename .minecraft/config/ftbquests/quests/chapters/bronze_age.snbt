@@ -1996,12 +1996,13 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 20
+							GunCurrentAmmoCount: 0
 							GunFireMode: "AUTO"
 							GunId: "immersive_armorer:assult_rifle"
 							HasBulletInBarrel: 1b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -2011,12 +2012,13 @@
 						Count: 1
 						id: "tacz:modern_kinetic_gun"
 						tag: {
-							GunCurrentAmmoCount: 4
+							GunCurrentAmmoCount: 0
 							GunFireMode: "SEMI"
 							GunId: "immersive_armorer:pump_shotgun"
-							HasBulletInBarrel: 1b
+							HasBulletInBarrel: 0b
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -2024,6 +2026,48 @@
 			title: "Treated Gunpowder"
 			x: 5.5d
 			y: -5.5d
+		}
+		{
+			dependencies: ["61DA87FD5E45D2BC"]
+			description: ["GregTech tools made out of Rose Gold will have Fortune."]
+			icon: "gtceu:rose_gold_ingot"
+			id: "6C65ACEF7AB7EAB5"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "042C8721EEE5EEC5"
+					item: "gtceu:rose_gold_ingot"
+					type: "item"
+				}
+				{
+					id: "73FFD44238594724"
+					item: {
+						Count: 1
+						id: "gtceu:rose_gold_pickaxe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								TorchPlacing: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [{
+									id: "minecraft:fortune"
+									lvl: 2s
+								}]
+								Enchantability: 33
+								HarvestLevel: 2
+								MaxDamage: 767
+								ToolSpeed: 16.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -2.5d
 		}
 	]
 	title: "Bronze Age"

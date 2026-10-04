@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         {
             X: 'thermal:satchel',
             P: 'toolbelt:pouch',
-            F: 'immersiveengineering:hemp_fabric',
+            F: 'immersiveengineering:ersatz_leather',
             U: 'sophisticatedbackpacks:upgrade_base',
             C: '#forge:chests/wooden'
         })
@@ -136,7 +136,11 @@ ServerEvents.recipes(event => {
 
   event.remove({id: "sophisticatedbackpacks:diamond_backpack"})
 
-  event.custom({
+  const diamond_items = ['create_new_age:overcharged_diamond','gtceu:flawless_diamond_gem']
+
+  diamond_items.forEach(flawless_charged => {
+
+        event.custom({
         type: "sophisticatedbackpacks:backpack_upgrade",
         conditions: [
             {
@@ -152,7 +156,7 @@ ServerEvents.recipes(event => {
                 item: 'gtceu:raw_diamond'
             },
             F: {
-                item: 'create_new_age:overcharged_diamond'
+                item: flawless_charged
             },
             U: {
                 item: 'sophisticatedstorage:gold_to_diamond_tier_upgrade'
@@ -173,4 +177,6 @@ ServerEvents.recipes(event => {
             "item": "sophisticatedbackpacks:diamond_backpack"
         }
   })
+  });
+  
 })
