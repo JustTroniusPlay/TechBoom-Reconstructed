@@ -849,9 +849,12 @@
 		{
 			dependencies: ["5361A9865C6547F4"]
 			description: [
-				"Consumes FE energy to maintain heat and make vaarious components for Forestry farms."
+				"Consumes FE energy to maintain heat and make various components for Forestry farms."
 				""
 				"&lContinue in \"Industrial Beekeeper\" tab next.&r"
+				""
+				"{@pagebreak}"
+				"You can use it to create glass blocks as alternative to alloy smelter. You can find this recipe in JEI, but &lyou still need block mold in right up slot&r. Resulted output don't stack, so prepare to get items by some means.  "
 			]
 			id: "4EC0457BBD8103AA"
 			shape: "gear"

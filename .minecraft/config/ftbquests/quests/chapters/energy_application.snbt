@@ -52,6 +52,13 @@
 			x: 0.5025510204081414d
 			y: 5.459183673469376d
 		}
+		{
+			id: "67CE8E2D37D5CD70"
+			linked_quest: "0E4D4401AF3EDF54"
+			shape: "octagon"
+			x: -1.5d
+			y: -1.5d
+		}
 	]
 	quests: [
 		{
@@ -173,22 +180,6 @@
 			}]
 			x: 1.5340136054421691d
 			y: -0.9455782312925116d
-		}
-		{
-			dependencies: [
-				"54661956247869DD"
-				"37FAA3D4CF96E9EE"
-				"1A3BA4BEFD861942"
-			]
-			id: "0E4D4401AF3EDF54"
-			shape: "octagon"
-			tasks: [{
-				id: "4F8727ABE9C24130"
-				item: "create_new_age:copper_circuit"
-				type: "item"
-			}]
-			x: -1.0816326530612486d
-			y: -1.5068027210884374d
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
