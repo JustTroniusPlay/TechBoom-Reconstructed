@@ -307,11 +307,13 @@
 		{
 			dependencies: ["16550070AD851335"]
 			description: [
-				"Navigate wast oceans can be easy with ships. "
+				"Navigating wast oceans can be easy with ships. "
 				""
 				"Cogs and briggs have additional inventories to store items if you want to move to new place or build a outpost. And you can take some people with you! Be it your friends or recruits!"
 				""
-				"Press 'R' when you in the ship to open your sails and use movement keys to adjust your speed."
+				"Press 'R' when you in the ship to open your sails and use movement keys to adjust your speed. With mouse wheel you can zoom your camera for better view."
+				""
+				"You can use leads to tie your ship to fences for immersion."
 			]
 			id: "3A41770109A15749"
 			shape: "rsquare"

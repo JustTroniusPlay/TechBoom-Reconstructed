@@ -136,6 +136,7 @@
 			icon: "create:chain_conveyor"
 			id: "6F496DC9A766E115"
 			rewards: [{
+				count: 8
 				id: "5A31129522417CCC"
 				item: "minecraft:chain"
 				type: "item"

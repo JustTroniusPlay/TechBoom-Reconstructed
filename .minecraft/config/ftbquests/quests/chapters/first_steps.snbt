@@ -576,16 +576,16 @@
 			description: [
 				"To start making custom tools from various materials you will need &lPart Builder&r and &lTinker Station&r."
 				""
+				"Putting Crafting Station and other tables near each other will connect them so you can easily go between different tabs without exiting."
+				""
+				"{@pagebreak}"
 				"Inside Tinker Station you can see what parts you will need for different tools."
 				""
 				"Craft patterns and put them in Part Builder with some materials of your choice. "
 				""
 				"&oTip: most metals to solid to make parts without melting, but there exception to this - Copper. This metal soft enough to carve parts for early game tools.&r"
 				""
-				"You can also &lrepair&r your tool with coresponding material in Tinker Station."
-				""
-				"{@pagebreak}"
-				"Putting Crafting Station and other tables near each other will connect them so you can easily go between different tabs without exiting."
+				"You can also &lrepair&r your tool with coresponding material in Tinker Station or even &lreplace&r various parts."
 			]
 			icon: {
 				Count: 1
@@ -1222,7 +1222,7 @@
 				""
 				"&lIt can be upgraded on anvil with Belt Pouches to get more slots up to 8 max.&r"
 				""
-				"You need to put your belt into Curious eqipment slot! (Or use special slot for Tool Belt using ';' keybind) Then close inventory and &lhold 'R' key&r &owhile empty handed or holding tools&r."
+				"You need to put your belt into Curious eqipment slot! (Or use special slot for Tool Belt using ';' keybind, &lbut&r it don't work with item saving unfortunately) Then close inventory and &lhold 'R' key&r &owhile empty handed or holding tools&r."
 			]
 			icon: "toolbelt:belt"
 			id: "173F0498DAC0D9CB"

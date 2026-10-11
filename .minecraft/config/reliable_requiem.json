@@ -33,7 +33,8 @@
     "immersiveengineering:toolbox",
     "create_sa:fillable",
     "createdieselgenerators:lighter",
-    "tacz:ammo_box"
+    "tacz:ammo_box",
+    "toolbelt:belt"
   ],
   "droppedItemOverrides": [],
   "destroyedItemOverrides": [],

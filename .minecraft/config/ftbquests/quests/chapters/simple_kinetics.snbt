@@ -889,6 +889,7 @@
 				"5186990A391ADB8D"
 			]
 			dependency_requirement: "one_completed"
+			description: ["Generate Stress by heating water into steam."]
 			icon: "create:steam_engine"
 			id: "40B9ECFB3C0DB31F"
 			shape: "diamond"

@@ -1,0 +1,21 @@
+{
+	id: "406D0E3EEC15B3DA"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "pipes"
+	}
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 4, item: "create:fluid_pipe" }
+		{ count: 8, item: "immersiveengineering:fluid_pipe" }
+		{ count: 5, item: "gtceu:copper_normal_fluid_pipe" }
+		{ count: 4, item: "thermal:fluid_duct" }
+	]
+	title: "pipes"
+}

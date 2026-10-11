@@ -904,7 +904,10 @@
 			y: -6.357993197278915d
 		}
 		{
-			dependencies: ["0852CB10008D7CDB"]
+			dependencies: [
+				"0852CB10008D7CDB"
+				"7B289C03327D9227"
+			]
 			description: ["Better version of Andesite Chunk Loader. "]
 			icon: "create_power_loader:brass_chunk_loader"
 			id: "43DC6334943F14C6"
@@ -921,8 +924,8 @@
 					type: "item"
 				}
 			]
-			x: 9.549829931972766d
-			y: -6.11258503401362d
+			x: 6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["75D2966F919D360B"]

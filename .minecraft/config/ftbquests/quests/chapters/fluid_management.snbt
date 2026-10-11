@@ -364,32 +364,12 @@
 				"With help of any wrench-like tool you can control their connections."
 			]
 			id: "332E6B2C638AE656"
-			rewards: [
-				{
-					count: 4
-					id: "0C67E64DE0B1BEBC"
-					item: "create:fluid_pipe"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "69FA7870E7ABA6BC"
-					item: "immersiveengineering:fluid_pipe"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "08740B4F418FE221"
-					item: "gtceu:copper_normal_fluid_pipe"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "371255B1F8DE8F55"
-					item: "thermal:fluid_duct"
-					type: "item"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "062B46D0802798B4"
+				table_id: 4642382454300455898L
+				type: "choice"
+			}]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [
@@ -421,7 +401,7 @@
 					type: "item"
 				}
 			]
-			title: "Pick your hydration"
+			title: "Pick Your Hydration"
 			x: 2.221428571428575d
 			y: -6.142857142857146d
 		}
