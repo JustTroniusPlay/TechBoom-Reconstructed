@@ -141,7 +141,7 @@
 		}
 		{
 			dependencies: ["65BA9D00FF643C02"]
-			description: ["Bigger plane that counts as upgrade. it have two weapon slots and more storage."]
+			description: ["Bigger plane that counts as upgrade. it have two weapon slots, more storage and two seats!"]
 			id: "105379AFEC836E38"
 			tasks: [{
 				id: "280CEB37D24F867A"

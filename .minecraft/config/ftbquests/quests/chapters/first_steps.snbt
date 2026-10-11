@@ -3322,6 +3322,41 @@
 			x: -2.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["7F1D22C969F965A6"]
+			description: ["Can be used to repair tools in normal crafting grid. Just keep in mind that main part of your tool define what material to use for repair kits."]
+			icon: {
+				Count: 1
+				id: "tconstruct:repair_kit"
+				tag: {
+					Material: "tconstruct:wood"
+				}
+			}
+			id: "217CB02CFE88C97E"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "576F326299F8DED3"
+					title: "Repir Kits"
+					type: "checkmark"
+				}
+				{
+					id: "6765897405405D2B"
+					item: {
+						Count: 1
+						id: "tconstruct:repair_kit"
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -6.8d
+		}
 	]
 	title: "Age of Beginning"
 }

@@ -8,7 +8,7 @@
   "filesExplorerCollapsed": false,
   "apiBrowserCollapsed": false,
   "previewCollapsed": false,
-  "filesFavoritesCollapsed": true,
+  "filesFavoritesCollapsed": false,
   "pickerInventoryCollapsed": false,
   "pickerRecentCollapsed": false,
   "pickerBookmarksCollapsed": false,
@@ -45,9 +45,10 @@
   "pinnedFiles": [],
   "pinnedFolders": [],
   "favorites": [
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts"
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio"
   ],
-  "recipesSelected": "techboom:casting_glass_create",
+  "recipesSelected": "immersive_aircraft:bamboo_hopper",
   "recipesSearch": "",
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
@@ -60,12 +61,22 @@
   "createSelected": "",
   "createSearch": "",
   "filesOpen": [
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\kubejsstudio\\appearance.json"
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\gregtech\\greg_trimotor.js",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\gregtech\\rose_gold.js"
   ],
   "recentPicks": [
-    "item forestry:bucket_glass",
-    "item minecraft:sand",
-    "item tconstruct:molten_glass_bucket"
+    "item immersive_aircraft:bamboo_hopper",
+    "item gtceu:manganese_foil",
+    "item immersiveengineering:sheetmetal_aluminum",
+    "item minecraft:glass",
+    "item gtceu:wood_crate",
+    "item immersiveengineering:treated_wood_horizontal",
+    "item create_new_age:reinforced_motor",
+    "item gtceu:steel_turbine_blade",
+    "item gtceu:double_iron_plate",
+    "item civilian_aviation:trimotor_white",
+    "item #civilian_aviation:comanche",
+    "item civilian_aviation:skyhawk_blackred"
   ],
   "filesActive": 0
 }

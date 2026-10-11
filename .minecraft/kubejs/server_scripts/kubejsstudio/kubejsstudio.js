@@ -1,98 +1,53 @@
-// kubejsstudio custom: techboom:forestry_glass
+
+
+
+// kubejsstudio custom: ulvcovm:shaped/ulv_electric_motor
 ServerEvents.highPriorityData(event => {
     event.addJson(
-      'techboom:recipes/forestry_glass',
+      'ulvcovm:recipes/shaped/ulv_electric_motor',
       {
-        "type": "forestry:fabricator",
-        "molten": {"Amount":1000,"FluidName":"forestry:glass"},
-        "plan": [{"item":"gtceu:block_casting_mold"}],
-        "recipe": {
-          "type": "minecraft:crafting_shaped",
-          "category": "building",
-          "key": {"#":{"item":"gtceu:tiny_flint_dust"}},
-          "pattern": ["   "," # ","   "],
-          "result": {"count":1,"item":"minecraft:glass"},
-          "show_notification": true
-        }
+        "type": "minecraft:crafting_shaped",
+        "pattern": ["CWR","WMW","RWC"],
+        "key": {
+          "C": {"item": "thermal:cured_rubber"},
+          "W": {"item":"gtceu:tin_single_wire"},
+          "R": {"tag":"forge:rods/copper"},
+          "M": {"tag":"forge:rods/magnetic_iron"}
+        },
+        "matchSize": false,
+        "result": {"item":"ulvcovm:ulv_electric_motor"}
       }
     )
 })
-// kubejsstudio custom: techboom:thermal_ord_glass
+// kubejsstudio custom: kubejsstudio:trimotor_white
 ServerEvents.highPriorityData(event => {
     event.addJson(
-      'techboom:recipes/thermal_ord_glass',
+      'kubejsstudio:recipes/trimotor_white',
       {
-      "type": "thermal:smelter",
-      "ingredients": [
-        {
-          "tag": "forge:dusts/quartz_sand",
-          "count": 1
+        "type": "create:mechanical_crafting",
+        "pattern": [
+          "AAABCBAAA",
+          "BCBDEDBCB",
+          "EEFFFFFEE",
+          "EEGHFHGEE",
+          "DEGFIFGED",
+          "AEGFFFGEA",
+          "DEGHFHGED",
+          "AEFFFFFEA",
+          "EAEEEEEAE"
+        ],
+        "key": {
+          "A": {"item":"gtceu:double_iron_plate"},
+          "B": {"item":"gtceu:steel_turbine_blade"},
+          "C": {"item":"create_new_age:reinforced_motor"},
+          "D": {"item":"minecraft:glass"},
+          "E": {"item":"immersiveengineering:sheetmetal_aluminum"},
+          "F": {"item":"immersiveengineering:treated_wood_horizontal"},
+          "G": {"item":"gtceu:manganese_foil"},
+          "H": {"item":"gtceu:wood_crate"},
+          "I": {"item":"immersive_aircraft:bamboo_hopper"}
         },
-        {
-          "tag": "forge:dusts/flint",
-          "count": 1
-        }
-      ],
-      "result": [
-        {
-          "item": "minecraft:glass",
-          "count": 4
-        }
-      ],
-      "energy": 2000
-    }
-    )
-})
-// kubejsstudio custom: techboom:immersive_glass
-ServerEvents.highPriorityData(event => {
-    event.addJson(
-      'techboom:recipes/immersive_glass',
-      {
-      "type": "immersiveengineering:bottling_machine",
-      "fluid": {
-        "amount": 1000,
-        "tag": "minecraft:lava"
-      },
-      "inputs": [
-        {
-          "item": "gtceu:block_casting_mold"
-        },
-        {
-          "tag": "forge:dusts/glass"
-        }
-      ],
-      "results": [
-        {
-          "item": "minecraft:glass"
-        },
-        {
-          "item": "gtceu:block_casting_mold"
-        }
-      ]
-    }
-    )
-})
-// kubejsstudio custom: techboom:liquid_glass_create
-ServerEvents.highPriorityData(event => {
-    event.addJson(
-      'techboom:recipes/liquid_glass_create',
-      {
-        "type": "create:compacting",
-        "ingredients": [{"tag":"forge:sand"}],
-        "results": [{"amount":1000,"fluid":"forestry:glass"}],
-        "heatRequirement": "heated",
-      }
-    )
-})
-// kubejsstudio custom: techboom:casting_glass_create
-ServerEvents.highPriorityData(event => {
-    event.addJson(
-      'techboom:recipes/casting_glass_create',
-      {
-        "type": "createdieselgenerators:casting",
-        "ingredients": [{"fluid":"forestry:glass","amount":1000}],
-        "mold": "createdieselgenerators:bar",
-        "results": [{"item":"minecraft:glass"}]
+        "result": {"item":"civilian_aviation:trimotor_white","count":1}
       }
     )
 })

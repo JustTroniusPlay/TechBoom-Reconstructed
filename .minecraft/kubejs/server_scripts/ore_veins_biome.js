@@ -1,7 +1,18 @@
 ServerEvents.tags('biome', event => {
-    event.add("forge:is_mountain", "minecraft:is_mountain")
-    event.add("forge:is_mountain", "regions_unexplored:towering_cliffs")
-    event.add("forge:is_mountain", "regions_unexplored:highland_fields")
+  
+    let biomes = 
+    [
+      "minecraft:is_mountain",
+      "regions_unexplored:towering_cliffs",
+      "regions_unexplored:highland_fields",
+      "regions_unexplored:maple_forest"
+    ]
+  
+    biomes.forEach(biome => 
+    {
+      event.add("forge:is_mountain", biome)
+    })
+    
     event.add("forge:is_wet", "regions_unexplored:blackwood_taiga")
     event.add("forge:is_wet", "regions_unexplored:pine_taiga")
 })

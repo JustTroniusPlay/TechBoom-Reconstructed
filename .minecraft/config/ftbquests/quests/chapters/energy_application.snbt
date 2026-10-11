@@ -300,7 +300,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7B289C03327D9227"]
+			dependencies: [
+				"7B289C03327D9227"
+				"59DE400FAB603D8A"
+			]
 			description: ["Generate energy based on rotational input."]
 			id: "600DDB0FDB97CFFA"
 			shape: "diamond"
