@@ -22,7 +22,7 @@ ServerEvents.highPriorityData(event => {
     }
     
     bottling_crystal(
-      "forge:redstone_acid", 4000, 
+      "forge:redstone_acid", 2000, 
       "minecraft:quartz",
       4,
       'techboom:recipes/fluix_immersive'

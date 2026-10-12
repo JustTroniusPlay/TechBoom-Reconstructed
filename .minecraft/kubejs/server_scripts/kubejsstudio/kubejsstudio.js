@@ -51,3 +51,61 @@ ServerEvents.highPriorityData(event => {
       }
     )
 })
+// kubejsstudio custom: gtceu:alloy_smelter/coke_oven_brick
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'gtceu:recipes/alloy_smelter/coke_oven_brick',
+      {
+        "type": "gtceu:alloy_smelter",
+        "duration": 40,
+        "category": "gtceu:alloy_smelter",
+        "tickInputs": {"eu":[{"content":7}]},
+        "inputs": {
+          "item": [
+            {
+              "content": {
+                "type": "gtceu:sized",
+                "count": 1,
+                "ingredient": {"item":"gtceu:compressed_coke_clay"}
+              }
+            },
+            {
+              "content": {
+                "type": "gtceu:sized",
+                "count": 1,
+                "ingredient": {"item":"gtceu:small_invar_dust"}
+              }
+            }
+          ]
+        },
+        "outputs": {
+          "item": [
+            {
+              "content": {
+                "type": "gtceu:sized",
+                "count": 2,
+                "ingredient": {"item":"gtceu:coke_oven_brick"}
+              }
+            }
+          ]
+        }
+      }
+    )
+})
+// kubejsstudio custom: gtceu:shaped/compressed_coke_clay
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'gtceu:recipes/shaped/compressed_coke_clay',
+      {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [" X ","SYS","   "],
+        "key": {
+          "Y": {"item":"gtceu:brick_wooden_form"},
+          "X": {"item":"gtceu:compressed_clay"},
+          "S": {"item":"tconstruct:grout"}
+        },
+        "matchSize": false,
+        "result": {"item":"gtceu:compressed_coke_clay","count":6}
+      }
+    )
+})

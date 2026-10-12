@@ -49,7 +49,7 @@ ServerEvents.highPriorityData(event => {
       {
       "type": "immersiveengineering:bottling_machine",
       "fluid": {
-        "amount": 1000,
+        "amount": 250,
         "tag": "minecraft:lava"
       },
       "inputs": [
