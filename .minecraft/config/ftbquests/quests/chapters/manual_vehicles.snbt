@@ -532,6 +532,7 @@
 				"25BA2070871AE3EA"
 				"6D0457966A524EAE"
 			]
+			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
 			id: "55438972C0D21B04"
 			tasks: [

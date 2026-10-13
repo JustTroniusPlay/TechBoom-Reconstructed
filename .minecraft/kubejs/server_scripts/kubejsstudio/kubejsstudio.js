@@ -109,3 +109,51 @@ ServerEvents.highPriorityData(event => {
       }
     )
 })
+// kubejsstudio custom: thermal:drill_head
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'thermal:recipes/drill_head',
+      {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "conditions": [{"type":"thermal:flag","flag":"tool_components"}],
+        "key": {
+          "C": {"tag":"forge:storage_blocks/iron"},
+          "I": {"tag":"forge:plates/iron"}
+        },
+        "pattern": [" I ","ICI","III"],
+        "result": {"item":"thermal:drill_head"},
+        "show_notification": true
+      }
+    )
+})
+// kubejsstudio custom: thermal:saw_blade
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'thermal:recipes/saw_blade',
+      {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "conditions": [{"type":"thermal:flag","flag":"tool_components"}],
+        "key": {
+          "C": {"tag":"forge:storage_blocks/copper"},
+          "I": {"tag":"forge:plates/iron"}
+        },
+        "pattern": ["II ","ICI"," II"],
+        "result": {"item":"thermal:saw_blade"},
+        "show_notification": true
+      }
+    )
+})
+// kubejsstudio custom: kubejsstudio:techboom_vibr_iron
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'kubejsstudio:recipes/techboom_vibr_iron',
+      {
+        "type": "vintageimprovements:vibrating",
+        "ingredients": [{"tag":"forge:ingots/iron","count":9}],
+        "results": [{"item":"minecraft:iron_block","count":1}],
+        "processingTime": 100
+      }
+    )
+})

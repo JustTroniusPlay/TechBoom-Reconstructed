@@ -6,4 +6,12 @@ ServerEvents.recipes(event => {
    .duration(60)
    .EUt(1)
   
+   event.recipes.gtceu.assembler('techboom:greg_assembler_coke')
+    .itemInputs(
+        'gtceu:clay_dust',
+        '#forge:sand'
+        )
+    .itemOutputs('gtceu:compressed_coke_clay')
+    .duration(40)
+    .EUt(32)
 })
