@@ -102,4 +102,5 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'civilian_aviation:vulcanair_winged' })
     event.remove({ id: 'civilian_aviation:vulcanair_yellow' })
     event.remove({ id: 'gtceu:smelting/coke_oven_brick' })
+    event.remove({ id: 'kubejsstudio:techboom_vibr_iron' })
 })

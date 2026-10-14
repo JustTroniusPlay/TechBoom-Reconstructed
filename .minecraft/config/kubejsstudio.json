@@ -3,7 +3,7 @@
   "browserCollapsed": false,
   "pendingCollapsed": false,
   "sideListCollapsed": false,
-  "tab": 5,
+  "tab": 0,
   "propsBlocks": false,
   "filesExplorerCollapsed": false,
   "apiBrowserCollapsed": false,
@@ -17,7 +17,7 @@
   "filesExplorerW": 220,
   "filesConsoleH": 120,
   "recipesBrowserW": 200,
-  "previewH": 105,
+  "previewH": 111,
   "sideListW": 200,
   "pendingHeight": 60,
   "pickerW": 0,
@@ -48,8 +48,8 @@
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts",
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio"
   ],
-  "recipesSelected": "railways:mixing/palettes/dye/black",
-  "recipesSearch": "railways:mixing",
+  "recipesSelected": "ulvcovm:shaped/ulv_electric_motor",
+  "recipesSearch": "ulv",
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
   "tagsSearch": "",
@@ -60,8 +60,11 @@
   "createRegistry": "item",
   "createSelected": "",
   "createSearch": "",
-  "filesOpen": [],
+  "filesOpen": [
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\glass_recipes.js"
+  ],
   "recentPicks": [
+    "item thermal:cured_rubber",
     "item gtceu:steel_buzz_saw_blade",
     "item thermal:saw_blade",
     "item gtceu:iron_drill_head",
@@ -72,8 +75,7 @@
     "item minecraft:glass",
     "item gtceu:wood_crate",
     "item immersiveengineering:treated_wood_horizontal",
-    "item create_new_age:reinforced_motor",
-    "item gtceu:steel_turbine_blade"
+    "item create_new_age:reinforced_motor"
   ],
-  "filesActive": -1
+  "filesActive": 0
 }

@@ -9,7 +9,7 @@ ServerEvents.highPriorityData(event => {
         "type": "minecraft:crafting_shaped",
         "pattern": ["CWR","WMW","RWC"],
         "key": {
-          "C": {"item": "thermal:cured_rubber"},
+          "C": {"item":"gtceu:lead_single_cable"},
           "W": {"item":"gtceu:tin_single_wire"},
           "R": {"tag":"forge:rods/copper"},
           "M": {"tag":"forge:rods/magnetic_iron"}
@@ -154,6 +154,28 @@ ServerEvents.highPriorityData(event => {
         "ingredients": [{"tag":"forge:ingots/iron","count":9}],
         "results": [{"item":"minecraft:iron_block","count":1}],
         "processingTime": 100
+      }
+    )
+})
+// kubejsstudio custom: ulvcovm:shaped/ulv_electric_pump
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'ulvcovm:recipes/shaped/ulv_electric_pump',
+      {
+        "type": "minecraft:crafting_shaped",
+        "pattern": ["SFR","sPw","RMC"],
+        "key": {
+          "S": {"tag":"forge:screws/copper"},
+          "R": {"item":"thermal:cured_rubber"},
+          "F": {"tag":"forge:rotors/copper"},
+          "P": {"item":"gtceu:copper_normal_fluid_pipe"},
+          "M": {"item":"ulvcovm:ulv_electric_motor"},
+          "C": {"item":"gtceu:lead_single_cable"},
+          "s": {"tag":"gtceu:tools/crafting_saws"},
+          "w": {"tag":"gtceu:tools/crafting_wrenches"}
+        },
+        "matchSize": false,
+        "result": {"item":"ulvcovm:ulv_electric_pump"}
       }
     )
 })

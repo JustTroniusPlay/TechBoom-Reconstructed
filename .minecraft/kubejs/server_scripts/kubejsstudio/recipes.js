@@ -19,6 +19,7 @@ ServerEvents.highPriorityData(event => {
     event.addJson('civilian_aviation:recipes/bell206_blank',{"type":"minecraft:crafting_shaped","pattern":["#A#","BCB","DED"],"key":{"#":{"item":"gtceu:steel_turbine_blade"},"A":[{"item":"create_new_age:advanced_motor"},{"item":"gtceu:lv_electric_motor"}],"B":{"item":"immersiveengineering:sheetmetal_aluminum"},"C":{"item":"gtceu:double_manganese_plate"},"D":{"item":"gtceu:wood_crate"},"E":{"tag":"civilian_aviation:bell47g"}},"result":{"item":"civilian_aviation:bell206_blank","count":1}})
     event.addJson('create:recipes/crafting/kinetics/mechanical_drill', {"type":"minecraft:crafting_shaped","category":"misc","pattern":[" # ","#A#"," B "],"key":{"#":{"item":"create:andesite_alloy"},"A":[{"item":"thermal:drill_head"},{"item":"gtceu:iron_drill_head"}],"B":{"item":"create:andesite_casing"}},"result":{"item":"create:mechanical_drill","count":1}})
     event.addJson('create:recipes/crafting/kinetics/mechanical_saw', {"type":"minecraft:crafting_shaped","category":"misc","pattern":["#","A"],"key":{"#":[{"item":"thermal:saw_blade"},{"item":"gtceu:steel_buzz_saw_blade"}],"A":{"item":"create:andesite_casing"}},"result":{"item":"create:mechanical_saw","count":1}})
+    event.addJson('gtceu:recipes/shapeless/lead_cable_1', {"type":"minecraft:crafting_shapeless","ingredients":[{"item":"gtceu:lead_single_wire"},[{"item":"gtceu:rubber_plate"},{"item":"thermal:cured_rubber"}]],"result":{"item":"gtceu:lead_single_cable","count":1}})
 })
 ServerEvents.recipes(event => {
     event.remove({ id: 'civilian_aviation:bell206_black' })

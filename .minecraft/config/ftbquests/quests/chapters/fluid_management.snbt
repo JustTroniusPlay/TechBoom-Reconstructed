@@ -111,6 +111,7 @@
 				"5186990A391ADB8D"
 				"108C99B4F1FE705F"
 			]
+			dependency_requirement: "one_completed"
 			description: ["Communication between moving Create contraptions or Trains and stationaty places. "]
 			id: "11A8EA423A27F25F"
 			shape: "diamond"
@@ -231,7 +232,7 @@
 			y: -6.635544217687048d
 		}
 		{
-			dependencies: ["5186990A391ADB8D"]
+			dependencies: ["11A8EA423A27F25F"]
 			description: [
 				"Upgraded iron variant of copper tanks."
 				""
@@ -263,8 +264,8 @@
 				}
 			]
 			title: "Modular Tank"
-			x: 8.0d
-			y: -5.5d
+			x: 8.951275510204086d
+			y: -5.460204081632675d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -817,6 +818,7 @@
 			dependency_requirement: "one_completed"
 			description: ["To configure your covers or disassemble them."]
 			id: "1042CC5D3176F2A3"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -887,8 +889,8 @@
 				}
 			]
 			title: "Steel Modularity"
-			x: 7.973724489795913d
-			y: -6.414795918367325d
+			x: 8.924999999999999d
+			y: -6.375d
 		}
 		{
 			dependencies: [
