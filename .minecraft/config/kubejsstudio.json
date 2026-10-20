@@ -48,8 +48,8 @@
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts",
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio"
   ],
-  "recipesSelected": "thermal:device_water_gen",
-  "recipesSearch": "thermal:device",
+  "recipesSelected": "techboom:liquid_glass_create",
+  "recipesSearch": "",
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
   "tagsSearch": "",
@@ -65,18 +65,18 @@
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\gregtech\\compressed_clay.js"
   ],
   "recentPicks": [
+    "item gtceu:flint_dust",
+    "item minecraft:flint",
+    "item gtceu:quartz_sand_dust",
+    "item minecraft:sand",
+    "item #forge:sand",
     "item thermal:cured_rubber",
     "item gtceu:steel_buzz_saw_blade",
     "item thermal:saw_blade",
     "item gtceu:iron_drill_head",
     "item thermal:drill_head",
     "item immersive_aircraft:bamboo_hopper",
-    "item gtceu:manganese_foil",
-    "item immersiveengineering:sheetmetal_aluminum",
-    "item minecraft:glass",
-    "item gtceu:wood_crate",
-    "item immersiveengineering:treated_wood_horizontal",
-    "item create_new_age:reinforced_motor"
+    "item gtceu:manganese_foil"
   ],
   "filesActive": 1
 }

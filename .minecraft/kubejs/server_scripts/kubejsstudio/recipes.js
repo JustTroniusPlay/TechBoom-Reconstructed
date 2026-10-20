@@ -22,6 +22,10 @@ ServerEvents.highPriorityData(event => {
     event.addJson('gtceu:recipes/shapeless/lead_cable_1', {"type":"minecraft:crafting_shapeless","ingredients":[{"item":"gtceu:lead_single_wire"},[{"item":"gtceu:rubber_plate"},{"item":"thermal:cured_rubber"}]],"result":{"item":"gtceu:lead_single_cable","count":1}})
     event.addJson('create:recipes/crafting/kinetics/spout', {"type":"minecraft:crafting_shaped","category":"misc","pattern":["#","A"],"key":{"#":{"item":"create:copper_casing"},"A":{"item":"thermal:cured_rubber"}},"result":{"item":"create:spout","count":1}})
     event.addJson('techboom:recipes/create_curred_rubber', {"type":"create:mixing","ingredients":[{"amount":1000,"fluid":"thermal:latex"}],"results":[{"item":"thermal:cured_rubber","count":2}],"heatRequirement":"heated"})
+    event.addJson('techboom:recipes/create_quartz_sand', {"type":"create:crushing","ingredients":[{"tag":"forge:sand"}],"results":[{"item":"gtceu:quartz_sand_dust"}],"processingTime":200})
+    event.addJson('techboom:recipes/create_flint_dust', {"type":"create:crushing","ingredients":[{"item":"minecraft:flint"}],"results":[{"item":"gtceu:flint_dust"}],"processingTime":200})
+    event.addJson('techboom:recipes/quartz_sand_milling', {"type":"create:milling","ingredients":[{"item":"minecraft:sand"}],"results":[{"item":"gtceu:quartz_sand_dust"}],"processingTime":200})
+    event.addJson('techboom:recipes/flint_dust_milling', {"type":"create:milling","ingredients":[{"item":"minecraft:flint"}],"results":[{"item":"gtceu:flint_dust"}],"processingTime":200})
 })
 ServerEvents.recipes(event => {
     event.remove({ id: 'civilian_aviation:bell206_black' })
@@ -106,4 +110,5 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'civilian_aviation:vulcanair_yellow' })
     event.remove({ id: 'gtceu:smelting/coke_oven_brick' })
     event.remove({ id: 'kubejsstudio:techboom_vibr_iron' })
+    event.remove({ id: 'emxarms:sky_workbench' })
 })

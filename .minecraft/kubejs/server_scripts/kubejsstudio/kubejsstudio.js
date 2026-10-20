@@ -203,3 +203,15 @@ ServerEvents.highPriorityData(event => {
       }
     )
 })
+// kubejsstudio custom: techboom:liquid_glass_create
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'techboom:recipes/liquid_glass_create',
+      {
+        "type": "create:compacting",
+        "ingredients": [{"tag":"forge:dusts/glass"}],
+        "results": [{"amount":1000,"fluid":"forestry:glass"}],
+        "heatRequirement": "heated"
+      }
+    )
+})
