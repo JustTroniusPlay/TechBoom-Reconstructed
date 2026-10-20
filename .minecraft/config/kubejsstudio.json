@@ -48,7 +48,7 @@
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts",
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio"
   ],
-  "recipesSelected": "techboom:liquid_glass_create",
+  "recipesSelected": "createdieselgenerators:compression_molding/blaze_rod",
   "recipesSearch": "",
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
@@ -62,9 +62,14 @@
   "createSearch": "",
   "filesOpen": [
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\glass_recipes.js",
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\gregtech\\compressed_clay.js"
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\gregtech\\compressed_clay.js",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio\\kubejsstudio.js",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\railcraft\\batteries_grind_comp.js"
   ],
   "recentPicks": [
+    "item railcraft:charge_spool_medium",
+    "item railcraft:charge_terminal",
+    "item #techboom:empty_battery",
     "item gtceu:flint_dust",
     "item minecraft:flint",
     "item gtceu:quartz_sand_dust",
@@ -73,10 +78,7 @@
     "item thermal:cured_rubber",
     "item gtceu:steel_buzz_saw_blade",
     "item thermal:saw_blade",
-    "item gtceu:iron_drill_head",
-    "item thermal:drill_head",
-    "item immersive_aircraft:bamboo_hopper",
-    "item gtceu:manganese_foil"
+    "item gtceu:iron_drill_head"
   ],
-  "filesActive": 1
+  "filesActive": 3
 }

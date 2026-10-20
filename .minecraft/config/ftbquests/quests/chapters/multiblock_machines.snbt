@@ -1485,6 +1485,18 @@
 			x: 0.0d
 			y: -7.5d
 		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			id: "1FE66DB5DED1379B"
+			shape: "diamond"
+			tasks: [{
+				id: "41B5579AB34FB0AC"
+				item: "immersivepetroleum:gas_generator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
 	]
 	title: "Heavy Duty"
 }

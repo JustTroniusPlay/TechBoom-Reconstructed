@@ -215,3 +215,39 @@ ServerEvents.highPriorityData(event => {
       }
     )
 })
+// kubejsstudio custom: techboom:batteries_crushing_ie
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'techboom:recipes/batteries_crushing_ie',
+      {
+        "type": "immersiveengineering:crusher",
+        "energy": 1000,
+        "input": {"tag":"techboom:empty_battery"},
+        "result": {"base_ingredient": {"item":"railcraft:charge_terminal"},"count": 2},
+        "secondaries": [
+          {
+            "chance": 1,
+            "output": {"item":"railcraft:charge_spool_medium"}
+          },
+          {
+            "chance": 1,
+            "output": {"base_ingredient": {"item":"railcraft:slag"}, "count": 4}
+          },
+          {"chance":0.5,"output":{"base_ingredient": {"item":"railcraft:slag"}, "count": 2}}
+        ],
+        "time": 100
+      }
+    )
+})
+// kubejsstudio custom: techboom:charged_grav_gun_create
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'techboom:recipes/charged_grav_gun_create',
+      {
+        "type": "create_new_age:energising",
+        "energy_needed": 1000000,
+        "ingredients": [{"item":"gravitygun:gravity_gun"}],
+        "results": [{"item":"gravitygun:gravity_gun_supercharged"}]
+      }
+    )
+})

@@ -1093,6 +1093,17 @@
 			x: -1.0d
 			y: -8.0d
 		}
+		{
+			dependencies: ["7931B771167AFDFE"]
+			id: "774590CB39BFDBFB"
+			tasks: [{
+				id: "7DD6CE833DC90C74"
+				item: "immersivepetroleum:oiltank"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
 	]
 	title: "Fluid Management"
 }
