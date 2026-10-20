@@ -17,7 +17,7 @@
   "filesExplorerW": 220,
   "filesConsoleH": 120,
   "recipesBrowserW": 200,
-  "previewH": 111,
+  "previewH": 112,
   "sideListW": 200,
   "pendingHeight": 60,
   "pickerW": 0,
@@ -48,8 +48,8 @@
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts",
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio"
   ],
-  "recipesSelected": "ulvcovm:shaped/ulv_electric_motor",
-  "recipesSearch": "ulv",
+  "recipesSelected": "thermal:device_water_gen",
+  "recipesSearch": "thermal:device",
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
   "tagsSearch": "",
@@ -61,7 +61,8 @@
   "createSelected": "",
   "createSearch": "",
   "filesOpen": [
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\glass_recipes.js"
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\glass_recipes.js",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\gregtech\\compressed_clay.js"
   ],
   "recentPicks": [
     "item thermal:cured_rubber",
@@ -77,5 +78,5 @@
     "item immersiveengineering:treated_wood_horizontal",
     "item create_new_age:reinforced_motor"
   ],
-  "filesActive": 0
+  "filesActive": 1
 }

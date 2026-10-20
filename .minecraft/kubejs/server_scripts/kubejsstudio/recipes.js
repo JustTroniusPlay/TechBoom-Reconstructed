@@ -20,6 +20,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson('create:recipes/crafting/kinetics/mechanical_drill', {"type":"minecraft:crafting_shaped","category":"misc","pattern":[" # ","#A#"," B "],"key":{"#":{"item":"create:andesite_alloy"},"A":[{"item":"thermal:drill_head"},{"item":"gtceu:iron_drill_head"}],"B":{"item":"create:andesite_casing"}},"result":{"item":"create:mechanical_drill","count":1}})
     event.addJson('create:recipes/crafting/kinetics/mechanical_saw', {"type":"minecraft:crafting_shaped","category":"misc","pattern":["#","A"],"key":{"#":[{"item":"thermal:saw_blade"},{"item":"gtceu:steel_buzz_saw_blade"}],"A":{"item":"create:andesite_casing"}},"result":{"item":"create:mechanical_saw","count":1}})
     event.addJson('gtceu:recipes/shapeless/lead_cable_1', {"type":"minecraft:crafting_shapeless","ingredients":[{"item":"gtceu:lead_single_wire"},[{"item":"gtceu:rubber_plate"},{"item":"thermal:cured_rubber"}]],"result":{"item":"gtceu:lead_single_cable","count":1}})
+    event.addJson('create:recipes/crafting/kinetics/spout', {"type":"minecraft:crafting_shaped","category":"misc","pattern":["#","A"],"key":{"#":{"item":"create:copper_casing"},"A":{"item":"thermal:cured_rubber"}},"result":{"item":"create:spout","count":1}})
+    event.addJson('techboom:recipes/create_curred_rubber', {"type":"create:mixing","ingredients":[{"amount":1000,"fluid":"thermal:latex"}],"results":[{"item":"thermal:cured_rubber","count":2}],"heatRequirement":"heated"})
 })
 ServerEvents.recipes(event => {
     event.remove({ id: 'civilian_aviation:bell206_black' })

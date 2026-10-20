@@ -179,3 +179,27 @@ ServerEvents.highPriorityData(event => {
       }
     )
 })
+// kubejsstudio custom: thermal:device_water_gen
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'thermal:recipes/device_water_gen',
+      {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "conditions": [{"type":"thermal:flag","flag":"device_water_gen"}],
+        "key": {
+          "C": {"item":"minecraft:conduit"},
+          "G": {"tag":"thermal:glass/hardened"},
+          "I": {"tag":"forge:ingots/steel"},
+          "P": {"item":"thermal:redstone_servo"},
+          "X": [
+            {"item":"create:hose_pulley"},
+            {"item":"gtceu:infinite_water_cover"}
+          ]
+        },
+        "pattern": ["IXI","GCG","IPI"],
+        "result": {"item":"thermal:device_water_gen"},
+        "show_notification": true
+      }
+    )
+})
