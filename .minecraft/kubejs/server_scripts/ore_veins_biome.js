@@ -1,6 +1,26 @@
+/*function VeinData(id, weight, density, size) {
+  this.id = id;
+  this.weight = weight;
+  this.density = density;
+  this.size = size;
+}
+
+VeinData.prototype.getId = function(){
+  return this.id;
+}
+VeinData.prototype.getWeight = function(){
+  return this.weight;
+}
+VeinData.prototype.getDensity = function(){
+  return this.density;
+}
+VeinData.prototype.getSize = function(){
+  return this.size;
+}*/
+
 ServerEvents.tags('biome', event => {
   
-    let biomes = 
+    let mountain = 
     [
       "minecraft:is_mountain",
       "regions_unexplored:towering_cliffs",
@@ -8,137 +28,122 @@ ServerEvents.tags('biome', event => {
       "regions_unexplored:maple_forest"
     ]
   
-    biomes.forEach(biome => 
+    mountain.forEach(biome => 
     {
       event.add("forge:is_mountain", biome)
     })
     
-    event.add("forge:is_wet", "regions_unexplored:blackwood_taiga")
-    event.add("forge:is_wet", "regions_unexplored:pine_taiga")
+    let wet = 
+    [
+      "regions_unexplored:blackwood_taiga",
+      "regions_unexplored:pine_taiga",
+      "regions_unexplored:old_growth_bayou"
+    ]
+    wet.forEach(biome => 
+    {
+      event.add("forge:is_wet", biome)
+    })
+    
 })
 
 GTCEuServerEvents.oreVeins(event => {
 
-/*OVERWORLD*/{
-     event.modify("gtceu:copper_tin_vein", vein => {
-        //vein.clusterSize(120)
-        vein.weight(15)
-    })
-    
-    event.modify("gtceu:cassiterite_vein", vein => {
-        vein.biomes("#forge:is_cold")
-        //vein.clusterSize(120)
-        //vein.weight(120)
-    })
+  event.modify("gtceu:copper_tin_vein", vein => {
+      //vein.clusterSize(120)
+      vein.weight(15)
+  })
 
-    event.modify("gtceu:copper_vein", vein => {
-        vein.biomes("#forge:is_hot")
-        //vein.clusterSize(120)
-        //vein.weight(120)
-    })
-
-    event.modify("gtceu:iron_vein", vein => {
-        vein.biomes("#forge:is_mountain")
-        //vein.clusterSize(120)
-
-    })
-
-    event.modify("gtceu:coal_vein", vein => {
-        //vein.density(0.5)
-        //vein.clusterSize(60)
-        //vein.weight(40)
-        vein.biomes("#forge:is_wet")
-    })
-
-    event.modify("gtceu:garnet_vein", vein => {
-        vein.biomes("#forge:is_wet")
-    })
-    
-    event.modify("gtceu:magnetite_vein_ow", vein => {
-        //vein.density(0.45)
-        //vein.clusterSize(80)
-        vein.biomes("#forge:is_dry")
-    })
-
-    event.modify("gtceu:redstone_vein_ow", vein => {
-        vein.biomes("#forge:is_plains")
-        //vein.density(0.8)
-        //vein.clusterSize(80)
-    })
-
-    event.modify("gtceu:galena_vein", vein => {
-        //vein.density(0.75)
-        //vein.clusterSize(80)
-        vein.biomes("#forge:is_cold")
-        //vein.weight(80)
-    })
-
-    event.modify("gtceu:mica_vein", vein => {
-        //vein.density(0.75)
-        //vein.clusterSize(80)
-        vein.biomes("#forge:is_plateau")
-        //vein.weight(60)
-    })
-
-    event.modify("gtceu:nickel_vein", vein => {
-        //vein.density(0.75)
-        //vein.clusterSize(80)
-        vein.biomes("#forge:is_hot")
-        //vein.weight(80)
-    })
-
-    event.modify("gtceu:lapis_vein", vein => {
-        //vein.density(1)
-        //vein.clusterSize(80)
-        vein.biomes("#forge:is_cold")
-        //vein.weight(80)
-    })
-
-    event.modify("gtceu:sapphire_vein", vein => {
-        //vein.density(0.5)
-        //vein.clusterSize(40)
-        vein.biomes("#forge:is_mountain")
-    })
-
-    event.modify("gtceu:diamond_vein", vein => {
-        vein.biomes("#forge:is_mountain")
-    })
-
-    event.modify("gtceu:garnet_tin_vein", vein => {
-        vein.biomes("#forge:is_dry")
-    })
-
-    event.modify("gtceu:apatite_vein", vein => {
-        vein.biomes("#forge:is_water")
-    })
-    
-    event.modify("gtceu:salts_vein", vein => {
-        vein.biomes("#forge:is_water")
-    })
-
-    event.modify("gtceu:manganese_vein_ow", vein => {
-        vein.biomes("#forge:is_dry")
-    })
-
-    event.modify("gtceu:olivine_vein", vein => {
-        vein.biomes("#forge:is_cold")
-    })
-
-    let sandy_veins = 
-    [
+  const veins = new Map([
+    /*OVERWORLD*/
+    ["#forge:is_cold", 
+      [
+        "cassiterite_vein", //Tin
+        "galena_vein", // Lead
+        "lapis_vein", // Lapiz
+        "olivine_vein" // Olivine
+      ]
+    ],
+    ["#forge:is_hot",
+      [
+        "copper_vein",
+        "nickel_vein"
+      ]
+    ],
+    ["#forge:is_mountain",
+      [
+        "iron_vein",
+        "sapphire_vein",
+        "diamond_vein"
+      ]
+    ],
+    ["#forge:is_wet",
+      [
+        "coal_vein",
+        "garnet_vein"
+      ]
+    ],
+    ["#forge:is_dry",
+      [
+        "magnetite_vein_ow",
+        "garnet_tin_vein",
+        "manganese_vein_ow"
+      ]
+    ],
+    ["#forge:is_plains",
+      [
+        "redstone_vein_ow"
+      ]
+    ],
+    ["#forge:is_plateau",
+      [
+        "mica_vein"
+      ]
+    ],
+    ["#forge:is_water",
+      [
+        "apatite_vein",
+        "salts_vein"
+      ]
+    ],
+    ["#forge:is_sandy",
+      [
         "oilsands_vein",
         "lubricant_vein",
-        "mineral_sand_vein",
+        "mineral_sand_vein"
+      ]
+    ],
+    /*NETHER*/
+    ["minecraft:nether_wastes",
+      [
+        "nether_quartz_vein",
+        "certus_quartz"
+      ]
+    ],
+    ["minecraft:crimson_forest",
+      [
+        "banded_iron_vein",
+        "molybdenum_vein"
+      ]
+    ],
+    ["minecraft:warped_forest",
+      [
+        "monazite_vein",
+        "beryllium_vein"
+      ]
     ]
-    
-    sandy_veins.forEach(element => {
-        event.modify("gtceu:" + element, vein => {
-            vein.biomes("#forge:is_sandy")
+  ]);
+  
+  veins.forEach((names, type) => {
+    names.forEach(name => 
+    {
+        event.modify("gtceu:" + name, vein => 
+        {
+          vein.biomes(type)
         })
-    });
-}
+    })
+    
+  });
 
-/*NETHER*/{
     event.modify("gtceu:sulfur_vein", vein => {
         vein.biomes("regions_unexplored:mycotoxic_undergrowth")
     })
@@ -154,27 +159,7 @@ GTCEuServerEvents.oreVeins(event => {
     event.modify("gtceu:redstone_vein", vein => {
         vein.biomes("regions_unexplored:redstone_abyss")
     })
-    event.modify("gtceu:nether_quartz_vein", vein => {
-        vein.biomes("minecraft:nether_wastes")
-    })
-    event.modify("gtceu:monazite_vein", vein => {
-        vein.biomes("minecraft:warped_forest")
-    })
-    event.modify("gtceu:molybdenum_vein", vein => {
-        vein.biomes("minecraft:crimson_forest")
-    })
     event.modify("gtceu:manganese_vein", vein => {
         vein.biomes("minecraft:basalt_deltas")
     })
-    event.modify("gtceu:certus_quartz", vein => {
-        vein.biomes("minecraft:nether_wastes")
-    })
-    event.modify("gtceu:beryllium_vein", vein => {
-        vein.biomes("minecraft:warped_forest")
-    })
-    event.modify("gtceu:banded_iron_vein", vein => {
-        vein.biomes("minecraft:crimson_forest")
-    })
-
-}
 })

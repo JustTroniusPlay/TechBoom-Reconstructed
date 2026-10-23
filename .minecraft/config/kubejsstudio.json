@@ -3,7 +3,7 @@
   "browserCollapsed": false,
   "pendingCollapsed": false,
   "sideListCollapsed": false,
-  "tab": 0,
+  "tab": 5,
   "propsBlocks": false,
   "filesExplorerCollapsed": false,
   "apiBrowserCollapsed": false,
@@ -17,7 +17,7 @@
   "filesExplorerW": 220,
   "filesConsoleH": 120,
   "recipesBrowserW": 200,
-  "previewH": 112,
+  "previewH": 107,
   "sideListW": 200,
   "pendingHeight": 60,
   "pickerW": 0,
@@ -61,10 +61,7 @@
   "createSelected": "",
   "createSearch": "",
   "filesOpen": [
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\glass_recipes.js",
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\gregtech\\compressed_clay.js",
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio\\kubejsstudio.js",
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\railcraft\\batteries_grind_comp.js"
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\ore_veins_biome.js"
   ],
   "recentPicks": [
     "item railcraft:charge_spool_medium",
@@ -80,5 +77,5 @@
     "item thermal:saw_blade",
     "item gtceu:iron_drill_head"
   ],
-  "filesActive": 3
+  "filesActive": 0
 }
