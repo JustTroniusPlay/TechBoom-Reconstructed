@@ -17,7 +17,7 @@
   "filesExplorerW": 220,
   "filesConsoleH": 120,
   "recipesBrowserW": 200,
-  "previewH": 107,
+  "previewH": 112,
   "sideListW": 200,
   "pendingHeight": 60,
   "pickerW": 0,
@@ -48,8 +48,8 @@
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts",
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio"
   ],
-  "recipesSelected": "createdieselgenerators:compression_molding/blaze_rod",
-  "recipesSearch": "",
+  "recipesSelected": "techboom:pulverizer_sand_grind",
+  "recipesSearch": "pulverizer",
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
   "tagsSearch": "",
@@ -61,7 +61,7 @@
   "createSelected": "",
   "createSearch": "",
   "filesOpen": [
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\ore_veins_biome.js"
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\thermal\\pulverizer_grind.js"
   ],
   "recentPicks": [
     "item railcraft:charge_spool_medium",
