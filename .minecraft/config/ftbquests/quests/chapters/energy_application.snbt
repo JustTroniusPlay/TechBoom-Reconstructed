@@ -52,6 +52,13 @@
 			x: 0.5025510204081414d
 			y: 5.459183673469376d
 		}
+		{
+			id: "67CE8E2D37D5CD70"
+			linked_quest: "0E4D4401AF3EDF54"
+			shape: "octagon"
+			x: -1.5d
+			y: -1.5d
+		}
 	]
 	quests: [
 		{
@@ -175,22 +182,6 @@
 			y: -0.9455782312925116d
 		}
 		{
-			dependencies: [
-				"54661956247869DD"
-				"37FAA3D4CF96E9EE"
-				"1A3BA4BEFD861942"
-			]
-			id: "0E4D4401AF3EDF54"
-			shape: "octagon"
-			tasks: [{
-				id: "4F8727ABE9C24130"
-				item: "create_new_age:copper_circuit"
-				type: "item"
-			}]
-			x: -1.0816326530612486d
-			y: -1.5068027210884374d
-		}
-		{
 			dependencies: ["25951FDCB7908145"]
 			description: ["Will generate energy based on Rotation Per Minute and magnetic blocks used around the coil."]
 			icon: "create_new_age:generator_coil"
@@ -309,7 +300,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7B289C03327D9227"]
+			dependencies: [
+				"7B289C03327D9227"
+				"59DE400FAB603D8A"
+			]
 			description: ["Generate energy based on rotational input."]
 			id: "600DDB0FDB97CFFA"
 			shape: "diamond"

@@ -1,0 +1,4 @@
+// kubejsstudio item tooltips; edit in Studio since this file is regenerated from the appearance manifest
+ItemEvents.tooltip(event => {
+    event.add('gtceu:block_casting_mold', ['Can be used in Forestry Thermionic Fabricator as mold'])
+})

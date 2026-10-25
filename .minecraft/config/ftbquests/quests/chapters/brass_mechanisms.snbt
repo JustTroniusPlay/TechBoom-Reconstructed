@@ -23,13 +23,6 @@
 			x: 2.0180272108843553d
 			y: -4.055272108843528d
 		}
-		{
-			id: "67CE8E2D37D5CD70"
-			linked_quest: "0E4D4401AF3EDF54"
-			shape: "hexagon"
-			x: 11.270153061224505d
-			y: -2.195238095238089d
-		}
 	]
 	quests: [
 		{
@@ -1040,6 +1033,22 @@
 			title: "Bigger train tracks"
 			x: 12.0d
 			y: -0.6d
+		}
+		{
+			dependencies: [
+				"54661956247869DD"
+				"37FAA3D4CF96E9EE"
+				"1A3BA4BEFD861942"
+			]
+			id: "0E4D4401AF3EDF54"
+			shape: "hexagon"
+			tasks: [{
+				id: "4F8727ABE9C24130"
+				item: "create_new_age:copper_circuit"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.0d
 		}
 	]
 	title: "Brass Machinations"

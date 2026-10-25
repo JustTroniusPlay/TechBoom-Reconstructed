@@ -80,6 +80,7 @@
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
+			description: ["Mixes fluids with different items. Can work as better way to make potions or some special liquids."]
 			icon: "immersiveengineering:mixer"
 			id: "268EC5D708C8C75D"
 			tasks: [
@@ -129,6 +130,7 @@
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
+			description: ["Can crush things into dusts, but most not"]
 			icon: "immersiveengineering:crusher"
 			id: "20FA9C099EFFB9A7"
 			shape: "gear"
@@ -170,8 +172,8 @@
 					type: "item"
 				}
 			]
-			x: 0.7119047619047763d
-			y: -6.338802083333325d
+			x: 2.4d
+			y: -6.6d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -425,8 +427,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -6.499999999999998d
+			x: -0.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -470,8 +472,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -6.323102678571436d
+			x: 1.2d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -695,6 +697,7 @@
 			dependencies: [
 				"11CAA0BF384301E3"
 				"62EEE8CB1320336E"
+				"1DED6CBFB9327179"
 			]
 			description: ["Molds to use in metal press. Not only for plates, but for other things: gears, rods, wires and even to pack items!"]
 			icon: "immersiveengineering:mold_gear"
@@ -712,8 +715,8 @@
 				type: "item"
 			}]
 			title: "Molds for everything!"
-			x: 2.0119047619047663d
-			y: -7.271428571428578d
+			x: 1.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -889,7 +892,6 @@
 			dependencies: [
 				"09349E61D7AF0C55"
 				"4AFEE3BCC0DC661B"
-				"1DED6CBFB9327179"
 				"60252A3A1D935245"
 			]
 			description: ["Used in creation of &oCircuit Backplanes and Advanced Electronic Components&r and as replacement for terracotta in connectors recipes."]
@@ -1282,25 +1284,106 @@
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
+			description: ["Works as big automatic crafting table."]
+			icon: "immersiveengineering:assembler"
 			id: "24C392F4ABC826C2"
 			shape: "diamond"
-			tasks: [{
-				id: "589CBFA265CDD3CC"
-				item: "immersiveengineering:assembler"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "589CBFA265CDD3CC"
+					item: "immersiveengineering:assembler"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "32D109E655232382"
+					item: { Count: 2, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "35EB08E3A5BE73AB"
+					item: { Count: 2, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7A94699FFB3422D3"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "4BAAC18567BD4FEF"
+					item: { Count: 9, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "03B502228BC34870"
+					item: { Count: 6, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4276649FE497224C"
+					item: { Count: 6, id: "immersiveengineering:slab_sheetmetal_iron" }
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
+			description: ["Can help automate special recipes from Engineer's Workbench."]
+			icon: "immersiveengineering:auto_workbench"
 			id: "36EFEA27976F2AA7"
 			shape: "diamond"
-			tasks: [{
-				id: "7B32FB75262B5A15"
-				item: "immersiveengineering:auto_workbench"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7B32FB75262B5A15"
+					item: "immersiveengineering:auto_workbench"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1704F7D1DB00DFC8"
+					item: { Count: 4, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7471E9734C1ACA66"
+					item: { Count: 4, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "6CBBC3DA39432AA7"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6F60F8FD1AE0E8DA"
+					item: { Count: 3, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1890AE9B5191CBBA"
+					item: { Count: 5, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "437043978780E10A"
+					item: { Count: 2, id: "immersiveengineering:slab_treated_wood_horizontal" }
+					type: "item"
+				}
+			]
 			x: 4.0d
 			y: -5.5d
 		}
@@ -1339,6 +1422,19 @@
 		}
 		{
 			dependencies: ["44DC54BD41EB3A08"]
+			description: [
+				"Accelerates various things using magnetic energy. But &lmain ammo&r is mostly &oSteel Rods&r or &oGraphite Electrodes&r."
+				""
+				"- &lBlaze Rods&r can &oignite enemies&r on fire."
+				""
+				"- &lEnd Rods&r can be used to &ohit Endermans&r."
+				""
+				"- &lEnderpearls&r can be loaded to &oshoot them farther&r."
+				""
+				"- &lSawblades&r can be used to &opierce enemies&r."
+				""
+				"- Even &lTridents&r can be used as projectiles."
+			]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1350,6 +1446,12 @@
 				id: "immersiveengineering:railgun"
 			}
 			id: "50C34CC179F51D97"
+			rewards: [{
+				count: 8
+				id: "1F829ED4C95B539A"
+				item: "immersiveengineering:stick_steel"
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -1378,14 +1480,27 @@
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "7E0C5542C497D55C"
-					item: "immersiveengineering:stick_steel"
-					type: "item"
-				}
 			]
-			x: 0.7714285714285651d
-			y: -7.418877551020408d
+			title: "Power of Magnets"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0729C937DEFF1E0B"]
+			description: [
+				"Burns Gasoline, Naphtha or Benzol to generate 256 FE/t. "
+				""
+				"Can be controlled by redstone signal to stop and accepts fuels with buckets or jerrycans. You can use pipes to provide fuel from the top."
+			]
+			id: "1FE66DB5DED1379B"
+			shape: "diamond"
+			tasks: [{
+				id: "41B5579AB34FB0AC"
+				item: "immersivepetroleum:gas_generator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
 		}
 	]
 	title: "Heavy Duty"

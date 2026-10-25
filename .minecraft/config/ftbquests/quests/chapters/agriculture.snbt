@@ -144,6 +144,11 @@
 					item: "cookingforblockheads:milk_jar"
 					type: "item"
 				}
+				{
+					id: "106D43590798A275"
+					item: "cookingforblockheads:spice_rack"
+					type: "item"
+				}
 			]
 			title: "Ingredients Storage"
 			x: -0.5d
@@ -181,7 +186,7 @@
 					type: "item"
 				}
 			]
-			title: "Useful parts"
+			title: "Useful Parts"
 			x: -0.5d
 			y: -3.5d
 		}

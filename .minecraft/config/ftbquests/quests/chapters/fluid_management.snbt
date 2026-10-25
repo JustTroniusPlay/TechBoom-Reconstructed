@@ -111,6 +111,7 @@
 				"5186990A391ADB8D"
 				"108C99B4F1FE705F"
 			]
+			dependency_requirement: "one_completed"
 			description: ["Communication between moving Create contraptions or Trains and stationaty places. "]
 			id: "11A8EA423A27F25F"
 			shape: "diamond"
@@ -231,7 +232,7 @@
 			y: -6.635544217687048d
 		}
 		{
-			dependencies: ["5186990A391ADB8D"]
+			dependencies: ["11A8EA423A27F25F"]
 			description: [
 				"Upgraded iron variant of copper tanks."
 				""
@@ -263,8 +264,8 @@
 				}
 			]
 			title: "Modular Tank"
-			x: 8.0d
-			y: -5.5d
+			x: 8.951275510204086d
+			y: -5.460204081632675d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -710,6 +711,7 @@
 				{
 					id: "34AD3142522FC12B"
 					item: "immersivetechnology:steel_sheetmetal_tank"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -817,6 +819,7 @@
 			dependency_requirement: "one_completed"
 			description: ["To configure your covers or disassemble them."]
 			id: "1042CC5D3176F2A3"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -887,8 +890,8 @@
 				}
 			]
 			title: "Steel Modularity"
-			x: 7.973724489795913d
-			y: -6.414795918367325d
+			x: 8.924999999999999d
+			y: -6.375d
 		}
 		{
 			dependencies: [
@@ -1090,6 +1093,46 @@
 			title: "Fluiduct Attachments"
 			x: -1.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["7931B771167AFDFE"]
+			description: ["Can connect to similar one in a line."]
+			icon: "immersivepetroleum:oiltank"
+			id: "774590CB39BFDBFB"
+			tasks: [
+				{
+					id: "7DD6CE833DC90C74"
+					item: "immersivepetroleum:oiltank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 62L
+					id: "13688F9A0A7E89D3"
+					item: { Count: 62, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "5A28DE8CFCE61E4B"
+					item: { Count: 17, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5682A7A573353891"
+					item: { Count: 2, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "03114EC29E9B88F8"
+					item: { Count: 2, id: "immersiveengineering:slab_steel_scaffolding_standard" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -2.5d
 		}
 	]
 	title: "Fluid Management"

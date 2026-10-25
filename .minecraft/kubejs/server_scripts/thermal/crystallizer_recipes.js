@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
         "ingredients": [
             {
                 "fluid": "immersiveengineering:redstone_acid",
-                "amount": 4000
+                "amount": 2000
             },
             {
                 "tag": "forge:dusts/quartz"

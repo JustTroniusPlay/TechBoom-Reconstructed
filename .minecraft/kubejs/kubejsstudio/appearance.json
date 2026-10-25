@@ -1,0 +1,13 @@
+{
+  "item": {
+    "gtceu:block_casting_mold": {
+      "tooltip": [
+        {
+          "text": "Can be used in Forestry Thermionic Fabricator as mold",
+          "at": "line",
+          "n": 2
+        }
+      ]
+    }
+  }
+}
