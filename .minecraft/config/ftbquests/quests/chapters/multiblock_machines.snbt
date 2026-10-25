@@ -1487,6 +1487,11 @@
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
+			description: [
+				"Burns Gasoline, Naphtha or Benzol to generate 256 FE/t. "
+				""
+				"Can be controlled by redstone signal to stop and accepts fuels with buckets or jerrycans. You can use pipes to provide fuel from the top."
+			]
 			id: "1FE66DB5DED1379B"
 			shape: "diamond"
 			tasks: [{

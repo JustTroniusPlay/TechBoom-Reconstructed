@@ -711,6 +711,7 @@
 				{
 					id: "34AD3142522FC12B"
 					item: "immersivetechnology:steel_sheetmetal_tank"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1095,12 +1096,41 @@
 		}
 		{
 			dependencies: ["7931B771167AFDFE"]
+			description: ["Can connect to similar one in a line."]
+			icon: "immersivepetroleum:oiltank"
 			id: "774590CB39BFDBFB"
-			tasks: [{
-				id: "7DD6CE833DC90C74"
-				item: "immersivepetroleum:oiltank"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7DD6CE833DC90C74"
+					item: "immersivepetroleum:oiltank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 62L
+					id: "13688F9A0A7E89D3"
+					item: { Count: 62, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "5A28DE8CFCE61E4B"
+					item: { Count: 17, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5682A7A573353891"
+					item: { Count: 2, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "03114EC29E9B88F8"
+					item: { Count: 2, id: "immersiveengineering:slab_steel_scaffolding_standard" }
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: -2.5d
 		}

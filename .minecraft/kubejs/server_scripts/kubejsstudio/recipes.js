@@ -26,10 +26,11 @@ ServerEvents.highPriorityData(event => {
     event.addJson('techboom:recipes/create_flint_dust', {"type":"create:crushing","ingredients":[{"item":"minecraft:flint"}],"results":[{"item":"gtceu:flint_dust"}],"processingTime":200})
     event.addJson('techboom:recipes/quartz_sand_milling', {"type":"create:milling","ingredients":[{"item":"minecraft:sand"}],"results":[{"item":"gtceu:quartz_sand_dust"}],"processingTime":200})
     event.addJson('techboom:recipes/flint_dust_milling', {"type":"create:milling","ingredients":[{"item":"minecraft:flint"}],"results":[{"item":"gtceu:flint_dust"}],"processingTime":200})
-    event.addJson('techboom:recipes/pulverizer_sand_grind', {"type":"thermal:pulverizer","results":"#forge:dusts/quartz_sand","ingredients":"#forge:sand","energy":"200"})
-    event.addJson('techboom:recipes/pulverizer_flint_grind', {"type":"thermal:pulverizer","results":"#forge:dusts/flint","ingredients":"minecraft:flint","energy":"200"})
+    event.addJson('techboom:recipes/steel_rotor_create', {"type":"create:mechanical_crafting","pattern":["ABA","BCB","ABA"],"key":{"A":{"tag":"forge:plates/steel"},"B":{"tag":"forge:rods/steel"},"C":{"item":"create:andesite_alloy"}},"result":{"item":"gtceu:steel_rotor","count":1}})
 })
 ServerEvents.recipes(event => {
+    event.remove({ id: 'techboom:pulverizer_sand_grind' })
+    event.remove({ id: 'techboom:pulverizer_flint_grind' })
     event.remove({ id: 'civilian_aviation:bell206_black' })
     event.remove({ id: 'civilian_aviation:bell206_blackstripe' })
     event.remove({ id: 'civilian_aviation:bell206_blue' })

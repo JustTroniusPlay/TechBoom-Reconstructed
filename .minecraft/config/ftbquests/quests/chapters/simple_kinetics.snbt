@@ -821,7 +821,7 @@
 		}
 		{
 			dependencies: ["25951FDCB7908145"]
-			description: ["Filters needed when you want ceirtan output or input when working with Create mod machines. "]
+			description: ["Filters needed when you want ceirtan output or input when working with Create mod machines. &oEspecilly useful if there some overlap in recipes!&r"]
 			id: "1E77A0BEA339B0BB"
 			rewards: [
 				{

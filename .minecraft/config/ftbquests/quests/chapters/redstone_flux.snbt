@@ -442,16 +442,19 @@
 				{
 					id: "1BF835186BF38E32"
 					item: "thermal:signalum_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7BD34F4926C53C9D"
 					item: "thermal:lumium_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "574EC3860731C8CD"
 					item: "thermal:enderium_ingot"
+					optional_task: true
 					type: "item"
 				}
 			]

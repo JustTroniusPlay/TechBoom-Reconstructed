@@ -26,6 +26,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson('techboom:recipes/create_flint_dust', {"type":"create:crushing","ingredients":[{"item":"minecraft:flint"}],"results":[{"item":"gtceu:flint_dust"}],"processingTime":200})
     event.addJson('techboom:recipes/quartz_sand_milling', {"type":"create:milling","ingredients":[{"item":"minecraft:sand"}],"results":[{"item":"gtceu:quartz_sand_dust"}],"processingTime":200})
     event.addJson('techboom:recipes/flint_dust_milling', {"type":"create:milling","ingredients":[{"item":"minecraft:flint"}],"results":[{"item":"gtceu:flint_dust"}],"processingTime":200})
+    event.addJson('techboom:recipes/pulverizer_sand_grind', {"type":"thermal:pulverizer","results":"#forge:dusts/quartz_sand","ingredients":"#forge:sand","energy":"200"})
+    event.addJson('techboom:recipes/pulverizer_flint_grind', {"type":"thermal:pulverizer","results":"#forge:dusts/flint","ingredients":"minecraft:flint","energy":"200"})
 })
 ServerEvents.recipes(event => {
     event.remove({ id: 'civilian_aviation:bell206_black' })

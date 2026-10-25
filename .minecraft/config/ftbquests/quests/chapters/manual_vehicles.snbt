@@ -20,16 +20,16 @@
 			linked_quest: "510D59805EF033F8"
 			shape: "diamond"
 			size: 0.7d
-			x: -0.962244897959188d
-			y: -0.9306122448979615d
+			x: -0.35d
+			y: -1.0214285714285716d
 		}
 		{
 			id: "13907278FEB8F514"
 			linked_quest: "3CADA01B0663BC89"
 			shape: "diamond"
 			size: 0.7d
-			x: -0.012244897959185153d
-			y: -0.9591836734693899d
+			x: 0.6000000000000029d
+			y: -1.05d
 		}
 		{
 			id: "56F3FF882BA40267"
@@ -78,7 +78,7 @@
 				item: "immersive_aircraft:biplane"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -3.0d
 			y: 2.0d
 		}
 		{
@@ -90,7 +90,7 @@
 				item: "immersive_aircraft:airship"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.0d
 			y: 2.0d
 		}
 		{
@@ -102,7 +102,7 @@
 				item: "immersive_aircraft:bamboo_hopper"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -3.0d
 			y: 4.5d
 		}
 		{
@@ -125,19 +125,21 @@
 				item: "immersive_aircraft:cargo_airship"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["0C1002BC27CD439E"]
 			id: "4538468B67AFCB06"
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				id: "4D711629C654821F"
 				item: "immersive_aircraft:warship"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.0d
+			x: 4.000000000000007d
+			y: 4.491071428571438d
 		}
 		{
 			dependencies: ["65BA9D00FF643C02"]
@@ -148,7 +150,7 @@
 				item: "man_of_many_planes:scarlet_biplane"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.5d
 			y: 2.5d
 		}
 		{
@@ -194,7 +196,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -3.0d
 			y: 0.5d
 		}
 		{
@@ -206,7 +208,7 @@
 				item: "man_of_many_planes:economy_plane"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.5d
 			y: 1.5d
 		}
 		{
@@ -233,8 +235,8 @@
 				}
 				type: "item"
 			}]
-			x: -0.5122448979591852d
-			y: -0.45918367346938993d
+			x: 0.10000000000000286d
+			y: -0.55d
 		}
 		{
 			dependencies: [
@@ -562,8 +564,163 @@
 				}
 			]
 			title: "Weapons"
-			x: 2.000000000000014d
-			y: 3.7410714285714377d
+			x: -3.6785714285714164d
+			y: 3.205357142857153d
+		}
+		{
+			dependencies: ["105379AFEC836E38"]
+			icon: "civilian_aviation:pzlp11"
+			id: "13824F3BD7FABA28"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "73B425290C5F80E2"
+					item: "civilian_aviation:pzlp11"
+					type: "item"
+				}
+				{
+					id: "7F388ABAE62EEB7B"
+					item: "civilian_aviation:gunm1919"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "63A6D64CAE53035C"
+					item: "civilian_aviation:basicbomb_hardpoint"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["13824F3BD7FABA28"]
+			icon: "civilian_aviation:pzl37los"
+			id: "14C452D53FB5F3E1"
+			tasks: [
+				{
+					id: "7B2337E6F8744EED"
+					item: "civilian_aviation:pzl37los"
+					type: "item"
+				}
+				{
+					id: "25D0266239B22DDD"
+					item: "civilian_aviation:gunobserver"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6B534C2E20488B71"]
+			id: "7D8EE04C21639072"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				id: "08B6240CD66B91B8"
+				item: "civilian_aviation:trimotor_white"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6D0457966A524EAE"]
+			id: "7CCC2505CD189A0C"
+			tasks: [{
+				id: "7EDF65EF001AF596"
+				item: "civilian_aviation:bell47g_black"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7CCC2505CD189A0C"]
+			id: "4C968A26DD9D206F"
+			shape: "rsquare"
+			tasks: [{
+				id: "75313EFC9A9523FB"
+				item: "civilian_aviation:bell206_blank"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["65BA9D00FF643C02"]
+			id: "34FBEBC820829175"
+			tasks: [
+				{
+					id: "22C31951D0EFC8A0"
+					item: "civilian_aviation:skyhawk_blank"
+					type: "item"
+				}
+				{
+					id: "4CC4D09FD6C90729"
+					item: "civilian_aviation:skyhawk_pr_blank"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["34FBEBC820829175"]
+			id: "1DC3A6AF211D6268"
+			tasks: [{
+				id: "3AEDB4FE2861A524"
+				item: "civilian_aviation:e500_silver"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["34FBEBC820829175"]
+			id: "4C5A7A10279BB3F2"
+			tasks: [{
+				id: "5D37E335626E9FF5"
+				item: "civilian_aviation:comanche_blank"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4C5A7A10279BB3F2"]
+			id: "41EE411FD7B84471"
+			shape: "rsquare"
+			tasks: [{
+				id: "468A638B4C39A365"
+				item: "civilian_aviation:vulcanair_blank"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"34FBEBC820829175"
+				"13824F3BD7FABA28"
+				"7CCC2505CD189A0C"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Change color of your advaanced flying vehicles."]
+			hide_dependency_lines: true
+			id: "33C83114F4D7859D"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				id: "6B77842801B60214"
+				item: "civilian_aviation:paint_spray"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
 		}
 	]
 	title: "Personal Transport"

@@ -3,7 +3,7 @@
   "browserCollapsed": false,
   "pendingCollapsed": false,
   "sideListCollapsed": false,
-  "tab": 5,
+  "tab": 0,
   "propsBlocks": false,
   "filesExplorerCollapsed": false,
   "apiBrowserCollapsed": false,
@@ -48,8 +48,8 @@
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts",
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio"
   ],
-  "recipesSelected": "techboom:pulverizer_sand_grind",
-  "recipesSearch": "pulverizer",
+  "recipesSelected": "immersivepetroleum:fuels/diesel",
+  "recipesSearch": "immersivepetroleum",
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
   "tagsSearch": "",
@@ -60,22 +60,20 @@
   "createRegistry": "item",
   "createSelected": "",
   "createSearch": "",
-  "filesOpen": [
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\thermal\\pulverizer_grind.js"
-  ],
+  "filesOpen": [],
   "recentPicks": [
+    "item forestry:worktable",
+    "item gtceu:steel_rotor",
+    "item #forge:rods/steel",
+    "item create:andesite_alloy",
+    "item #forge:plates/steel",
     "item railcraft:charge_spool_medium",
     "item railcraft:charge_terminal",
     "item #techboom:empty_battery",
     "item gtceu:flint_dust",
     "item minecraft:flint",
     "item gtceu:quartz_sand_dust",
-    "item minecraft:sand",
-    "item #forge:sand",
-    "item thermal:cured_rubber",
-    "item gtceu:steel_buzz_saw_blade",
-    "item thermal:saw_blade",
-    "item gtceu:iron_drill_head"
+    "item minecraft:sand"
   ],
-  "filesActive": 0
+  "filesActive": -1
 }
