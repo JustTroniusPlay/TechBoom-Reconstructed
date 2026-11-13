@@ -3,7 +3,7 @@
   "browserCollapsed": false,
   "pendingCollapsed": false,
   "sideListCollapsed": false,
-  "tab": 0,
+  "tab": 5,
   "propsBlocks": false,
   "filesExplorerCollapsed": false,
   "apiBrowserCollapsed": false,
@@ -53,14 +53,19 @@
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
   "tagsSearch": "",
-  "lootSelected": "",
+  "lootSelected": "underground_bunkers:chests/underground_bunker/underground_bunker_supply",
   "lootSearch": "",
   "propsSelected": "parcool:parcool_guide",
   "propsSearch": "guide",
   "createRegistry": "item",
   "createSelected": "",
   "createSearch": "",
-  "filesOpen": [],
+  "filesOpen": [
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\coke_coal_related\\coke_ovens_recipes.js",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\railcraft\\water_sliding.js",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\blast_ovens_recipes.js",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\thermal\\machine_frame.js"
+  ],
   "recentPicks": [
     "item forestry:worktable",
     "item gtceu:steel_rotor",
@@ -75,5 +80,5 @@
     "item gtceu:quartz_sand_dust",
     "item minecraft:sand"
   ],
-  "filesActive": -1
+  "filesActive": 3
 }

@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     //IE 
     event.remove({id: "immersiveengineering:crafting/cokebrick"});
     event.shaped(
-    Item.of('immersiveengineering:cokebrick', 6), // arg 1: output
+    Item.of('immersiveengineering:cokebrick', 9), // arg 1: output
     [
         'ABA',
         'BCB', // arg 2: the shape (array of strings)
@@ -35,16 +35,17 @@ ServerEvents.recipes(event => {
     //Railcraft
     event.remove({id: "railcraft:coke_oven_bricks"});
     event.shaped(
-    Item.of('railcraft:coke_oven_bricks', 3), // arg 1: output
+    Item.of('railcraft:coke_oven_bricks', 8), // arg 1: output
     [
-        'ABA',
+        'ADA',
         'BCB', // arg 2: the shape (array of strings)
-        'ABA'
+        'ADA'
     ],
     {
-        A: 'tconstruct:scorched_bricks',
-        B: 'immersiveengineering:slag_brick',  //arg 3: the mapping object
-        C: 'gtceu:coke_oven_bricks'
+        C: 'immersiveengineering:cokebrick',
+        B: '#railcraft:quarried',  //arg 3: the mapping object
+        A: 'gtceu:coke_oven_bricks',
+        D: '#railcraft:abyssal'
     }
     )
 })

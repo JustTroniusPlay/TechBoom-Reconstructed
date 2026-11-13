@@ -1488,7 +1488,7 @@
 		{
 			dependencies: ["0729C937DEFF1E0B"]
 			description: [
-				"Burns Gasoline, Naphtha or Benzol to generate 256 FE/t. "
+				"Burns Gasoline, Naphtha or Benzol to generate 256 FE/t. And can be picked up in your inventory with Shift+rightclick."
 				""
 				"Can be controlled by redstone signal to stop and accepts fuels with buckets or jerrycans. You can use pipes to provide fuel from the top."
 			]

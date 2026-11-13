@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
   //Mechanical Press
   event.replaceInput({id: "create:crafting/kinetics/mechanical_press"},
     "minecraft:iron_block",
-    'thermal:steel_block'
+    'minecraft:anvil'
   );
 
   //Hose Pulley
@@ -47,5 +47,8 @@ ServerEvents.recipes(event => {
     "#forge:glass",
     '#forge:glass_panes'
   );
+  
+  //Bar Mold
+  event.replaceInput({id: "createdieselgenerators:cutting/bar_mold"}, '#forge:plates/iron', '#forge:plates/steel')
   
 })

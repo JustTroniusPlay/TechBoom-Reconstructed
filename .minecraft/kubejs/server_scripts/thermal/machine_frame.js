@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
   ],
   {
     A: 'gtceu:wrought_iron_ingot',
-    B: 'tconstruct:clear_glass',  //arg 3: the mapping object
+    B: '#forge:glass/silica',  //arg 3: the mapping object
     C: 'gtceu:bronze_gearbox',
     D: 'mekanism:ingot_osmium'
   })

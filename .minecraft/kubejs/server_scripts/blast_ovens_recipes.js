@@ -17,15 +17,15 @@ ServerEvents.recipes(event => {
 
   event.remove({id: "railcraft:blast_furnace_bricks"});
   event.shaped(
-  Item.of('railcraft:blast_furnace_bricks', 6), // arg 1: output
+  Item.of('railcraft:blast_furnace_bricks', 18), // arg 1: output
   [
     'ABA',
     'BCB', // arg 2: the shape (array of strings)
     'ABA'
   ],
   {
-    A: 'tconstruct:scorched_brick',
-    B: 'immersiveengineering:blastbrick',  //arg 3: the mapping object
+    B: 'gtceu:heatproof_machine_casing',
+    A: 'immersiveengineering:blastbrick',  //arg 3: the mapping object
     C: 'create:blaze_burner'
   }
 )

@@ -785,7 +785,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #minecraft:wool"
+					title: "Wool"
 					type: "item"
 				}
 			]
@@ -1199,6 +1199,20 @@
 			title: "Weaponized Construction Equipment"
 			x: -0.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["25951FDCB7908145"]
+			description: ["Can be helpful tool to make notes and keep track of things. You can even place it on the wall!"]
+			id: "5D39B6C9A4A802CC"
+			shape: "diamond"
+			subtitle: "Write that down!"
+			tasks: [{
+				id: "7B28F15E32DFCCFE"
+				item: "create:clipboard"
+				type: "item"
+			}]
+			x: 2.055952380952384d
+			y: 1.7736394557823303d
 		}
 	]
 	title: "Simple Mechanisms"
