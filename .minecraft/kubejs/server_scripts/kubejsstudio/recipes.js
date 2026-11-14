@@ -27,10 +27,9 @@ ServerEvents.highPriorityData(event => {
     event.addJson('techboom:recipes/quartz_sand_milling', {"type":"create:milling","ingredients":[{"item":"minecraft:sand"}],"results":[{"item":"gtceu:quartz_sand_dust"}],"processingTime":200})
     event.addJson('techboom:recipes/flint_dust_milling', {"type":"create:milling","ingredients":[{"item":"minecraft:flint"}],"results":[{"item":"gtceu:flint_dust"}],"processingTime":200})
     event.addJson('techboom:recipes/steel_rotor_create', {"type":"create:mechanical_crafting","pattern":["ABA","BCB","ABA"],"key":{"A":{"tag":"forge:plates/steel"},"B":{"tag":"forge:rods/steel"},"C":{"item":"create:andesite_alloy"}},"result":{"item":"gtceu:steel_rotor","count":1}})
+    event.addJson('immersivegeology:recipes/crafting/craft_raw_fire_clay', {"type":"minecraft:crafting_shapeless","group":"raw_fire_clay","category":"misc","ingredients":[{"item":"minecraft:clay_ball"},{"item":"minecraft:clay_ball"},{"item":"gtceu:flint_dust"},{"item":"gtceu:quartz_sand_dust"},{"item":"gtceu:quartz_sand_dust"},{"item":"gtceu:flint_dust"}],"result":{"item":"immersivegeology:raw_fire_clay","count":4}})
 })
 ServerEvents.recipes(event => {
-    event.remove({ id: 'techboom:pulverizer_sand_grind' })
-    event.remove({ id: 'techboom:pulverizer_flint_grind' })
     event.remove({ id: 'civilian_aviation:bell206_black' })
     event.remove({ id: 'civilian_aviation:bell206_blackstripe' })
     event.remove({ id: 'civilian_aviation:bell206_blue' })

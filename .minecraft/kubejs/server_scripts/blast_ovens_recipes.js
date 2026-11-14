@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     'ABA'
   ],
   {
-    A: 'minecraft:nether_bricks',
+    A: 'tconstruct:scorched_bricks',
     B: 'crusty_chunks:blast_furnace_brick',  //arg 3: the mapping object
     C: 'gtceu:invar_frame'
   }
@@ -20,13 +20,14 @@ ServerEvents.recipes(event => {
   Item.of('railcraft:blast_furnace_bricks', 18), // arg 1: output
   [
     'ABA',
-    'BCB', // arg 2: the shape (array of strings)
+    'DCD', // arg 2: the shape (array of strings)
     'ABA'
   ],
   {
     B: 'gtceu:heatproof_machine_casing',
     A: 'immersiveengineering:blastbrick',  //arg 3: the mapping object
-    C: 'create:blaze_burner'
+    C: 'create:blaze_burner',
+    D: 'gtceu:firebricks'
   }
 )
 })

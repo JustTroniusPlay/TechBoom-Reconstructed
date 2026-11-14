@@ -3,7 +3,7 @@
   "browserCollapsed": false,
   "pendingCollapsed": false,
   "sideListCollapsed": false,
-  "tab": 5,
+  "tab": 0,
   "propsBlocks": false,
   "filesExplorerCollapsed": false,
   "apiBrowserCollapsed": false,
@@ -48,8 +48,8 @@
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts",
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio"
   ],
-  "recipesSelected": "immersivepetroleum:fuels/diesel",
-  "recipesSearch": "immersivepetroleum",
+  "recipesSelected": "techboom:create_quartz_sand",
+  "recipesSearch": "techb",
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
   "tagsSearch": "",
@@ -61,12 +61,16 @@
   "createSelected": "",
   "createSearch": "",
   "filesOpen": [
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\coke_coal_related\\coke_ovens_recipes.js",
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\railcraft\\water_sliding.js",
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\blast_ovens_recipes.js",
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\thermal\\machine_frame.js"
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio\\recipes.js",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio\\kubejsstudio.js",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\create\\copper_tank.js",
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\create\\generator_coil.js"
   ],
   "recentPicks": [
+    "item minecraft:diamond_pickaxe",
+    "item gtceu:diamond_pickaxe",
+    "item gtceu:flint_dust",
+    "item gtceu:quartz_sand_dust",
     "item forestry:worktable",
     "item gtceu:steel_rotor",
     "item #forge:rods/steel",
@@ -74,11 +78,7 @@
     "item #forge:plates/steel",
     "item railcraft:charge_spool_medium",
     "item railcraft:charge_terminal",
-    "item #techboom:empty_battery",
-    "item gtceu:flint_dust",
-    "item minecraft:flint",
-    "item gtceu:quartz_sand_dust",
-    "item minecraft:sand"
+    "item #techboom:empty_battery"
   ],
   "filesActive": 3
 }
