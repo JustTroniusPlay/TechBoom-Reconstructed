@@ -10,10 +10,12 @@ ServerEvents.recipes(event => {
     ])
 
     const wrench_no_atch = Item.of('tacz:modern_kinetic_gun', '{AttachmentMUZZLE:{Count:1b,id:"minecraft:air",tag:{}},GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"create_armorer:special_melee_wrench",HasBulletInBarrel:1b}').strongNBT();
+    const wrench_unloaded = Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:special_melee_wrench",HasBulletInBarrel:1b}').strongNBT();
+    const wrench_unl_no_atch = Item.of('tacz:modern_kinetic_gun', '{AttachmentMUZZLE:{Count:1b,id:"minecraft:air",tag:{}},GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:special_melee_wrench",HasBulletInBarrel:1b}').strongNBT();
     event.shapeless(
     'create:wrench',
     [
-        [wrench, wrench_no_atch]
+        [wrench, wrench_no_atch, wrench_unloaded, wrench_unl_no_atch]
     ])
 
     event.remove({id: 'create_armorer:attachments/muzzle_refit_iron_spike'})

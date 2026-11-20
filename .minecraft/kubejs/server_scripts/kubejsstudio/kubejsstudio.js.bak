@@ -239,3 +239,74 @@ ServerEvents.highPriorityData(event => {
       }
     )
 })
+// kubejsstudio custom: techboom:charged_grav_gun_create
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'techboom:recipes/charged_grav_gun_create',
+      {
+        "type": "create_new_age:energising",
+        "energy_needed": 1000000,
+        "ingredients": [{"item":"gravitygun:gravity_gun"}],
+        "results": [{"item":"gravitygun:gravity_gun_supercharged"}]
+      }
+    )
+})
+// kubejsstudio custom: gtceu:shaped/flint_and_steel
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'gtceu:recipes/shaped/flint_and_steel',
+      {
+        "type": "minecraft:crafting_shaped",
+        "pattern": ["G","F","S"],
+        "key": {
+          "G": {"tag":"forge:small_gears/iron"},
+          "F": {"item":"minecraft:flint"},
+          "S": {"tag":"forge:small_springs/iron"}
+        },
+        "matchSize": false,
+        "result": {"item":"minecraft:flint_and_steel","nbt":{"Damage":0}}
+      }
+    )
+})
+// kubejsstudio custom: techboom:cutting_diamond_plate
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'techboom:recipes/cutting_diamond_plate',
+      {
+        "type": "create:sequenced_assembly",
+        "ingredient": {"tag":"forge:storage_blocks/diamond"},
+        "results": [{"count":9,"item":"gtceu:diamond_plate"}],
+        "sequence": [
+          {
+            "type": "create:filling",
+            "ingredients": [
+              {"item":"gtceu:raw_diamond_block"},
+              {"amount":100,"tag":"forge:water"}
+            ],
+            "results": [{"item":"gtceu:raw_diamond_block"}]
+          },
+          {
+            "type": "create:cutting",
+            "ingredients": [{"item":"gtceu:raw_diamond_block"}],
+            "results": [{"item":"gtceu:raw_diamond_block"}]
+          }
+        ],
+        "transitionalItem": {"item":"gtceu:raw_diamond_block"}
+      }
+    )
+})
+// kubejsstudio custom: techboom:diamond_plate
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'techboom:recipes/diamond_plate',
+      {
+        "type": "unknown",
+        "result": {"item":"gtceu:diamond_plate","count":9},
+        "ingredients": [
+          {"tag":"gtceu:tools/crafting_saws"},
+          {"item":"minecraft:diamond"},
+          {"item":"minecraft:water_bucket"}
+        ]
+      }
+    )
+})

@@ -11,8 +11,10 @@ ServerEvents.recipes(event => {
   {
     A: 'gtceu:lp_steam_macerator',
     B: 'thermal:machine_frame', 
-    C: 'crusty_chunks:irongear',
+    C: 'gtceu:steel_buzz_saw_blade',
     D: 'thermal:copper_gear',
     E: 'thermal:rf_coil'
 })
+
+event.recipes.thermal.sawmill('gtceu:steel_buzz_saw_blade', '#forge:gears/steel')
 })

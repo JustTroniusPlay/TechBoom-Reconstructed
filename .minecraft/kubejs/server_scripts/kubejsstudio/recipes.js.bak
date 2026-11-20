@@ -30,8 +30,6 @@ ServerEvents.highPriorityData(event => {
     event.addJson('immersivegeology:recipes/crafting/craft_raw_fire_clay', {"type":"minecraft:crafting_shapeless","group":"raw_fire_clay","category":"misc","ingredients":[{"item":"minecraft:clay_ball"},{"item":"minecraft:clay_ball"},{"item":"gtceu:flint_dust"},{"item":"gtceu:quartz_sand_dust"},{"item":"gtceu:quartz_sand_dust"},{"item":"gtceu:flint_dust"}],"result":{"item":"immersivegeology:raw_fire_clay","count":4}})
 })
 ServerEvents.recipes(event => {
-    event.remove({ id: 'techboom:pulverizer_sand_grind' })
-    event.remove({ id: 'techboom:pulverizer_flint_grind' })
     event.remove({ id: 'civilian_aviation:bell206_black' })
     event.remove({ id: 'civilian_aviation:bell206_blackstripe' })
     event.remove({ id: 'civilian_aviation:bell206_blue' })
@@ -115,4 +113,5 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:smelting/coke_oven_brick' })
     event.remove({ id: 'kubejsstudio:techboom_vibr_iron' })
     event.remove({ id: 'emxarms:sky_workbench' })
+    event.shapeless('gtceu:diamond_plate', ['#gtceu:tools/crafting_saws', 'minecraft:diamond','minecraft:water_bucket']).id('techboom:diamond_plate')
 })

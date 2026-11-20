@@ -251,3 +251,69 @@ ServerEvents.highPriorityData(event => {
       }
     )
 })
+// kubejsstudio custom: gtceu:shaped/flint_and_steel
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'gtceu:recipes/shaped/flint_and_steel',
+      {
+        "type": "minecraft:crafting_shaped",
+        "pattern": ["G","F","S"],
+        "key": {
+          "G": {"tag":"forge:small_gears/iron"},
+          "F": {"item":"minecraft:flint"},
+          "S": {"tag":"forge:small_springs/iron"}
+        },
+        "matchSize": false,
+        "result": {"item":"minecraft:flint_and_steel","nbt":{"Damage":0}}
+      }
+    )
+})
+// kubejsstudio custom: techboom:cutting_diamond_plate
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'techboom:recipes/cutting_diamond_plate',
+      {
+        "type": "create:sequenced_assembly",
+        "ingredient": {"tag":"forge:storage_blocks/diamond"},
+        "results": [{"count":9,"item":"gtceu:diamond_plate"}],
+        "sequence": [
+          {
+            "type": "create:filling",
+            "ingredients": [
+              {"item":"gtceu:raw_diamond_block"},
+              {"amount":100,"tag":"forge:water"}
+            ],
+            "results": [{"item":"gtceu:raw_diamond_block"}]
+          },
+          {
+            "type": "create:cutting",
+            "ingredients": [{"item":"gtceu:raw_diamond_block"}],
+            "results": [{"item":"gtceu:raw_diamond_block"}]
+          }
+        ],
+        "transitionalItem": {"item":"gtceu:raw_diamond_block"}
+      }
+    )
+})
+// kubejsstudio custom: techboom:diamond_plate
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'techboom:recipes/diamond_plate',
+      {
+        "type": "unknown",
+        "result": {"item":"gtceu:diamond_plate","count":9},
+        "ingredients": [
+          {"tag":"gtceu:tools/crafting_saws"},
+          {"item":"minecraft:diamond"},
+          {"item":"minecraft:water_bucket"}
+        ]
+      }
+    )
+})
+// kubejsstudio custom: kubejsstudio:my_recipe
+ServerEvents.recipes(event => {
+    event.shapeless(
+      'minecraft:stone',
+      ['minecraft:cobblestone']
+    ).id('kubejsstudio:my_recipe')
+})

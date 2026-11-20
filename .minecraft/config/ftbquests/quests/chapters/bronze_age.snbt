@@ -681,6 +681,7 @@
 				""
 				"Additionally if you will &ouse Wrought Iron in Blast Furnace&r instead of normal one, the &oblasting speed will increase!&r"
 			]
+			hide_dependent_lines: true
 			icon: "gtceu:wrought_iron_ingot"
 			id: "5C4DA67C07C8E9B7"
 			shape: "diamond"
@@ -2068,6 +2069,22 @@
 			]
 			x: -5.0d
 			y: -2.5d
+		}
+		{
+			dependencies: [
+				"61DA87FD5E45D2BC"
+				"5C4DA67C07C8E9B7"
+			]
+			id: "24EC059702D12795"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [{
+				id: "69B80C8A25F6FD74"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
+			x: -5.449547426392407d
+			y: -4.201124043367329d
 		}
 	]
 	title: "Bronze Age"

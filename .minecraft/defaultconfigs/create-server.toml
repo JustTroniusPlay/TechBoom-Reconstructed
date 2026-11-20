@@ -282,7 +282,7 @@
 				speedometer = 0.0
 				brass_encased_cogwheel = 0.0
 				clockwork_bearing = 4.0
-				mechanical_press = 8.0
+				mechanical_press = 16.0
 				mechanical_drill = 4.0
 				andesite_encased_shaft = 0.0
 				netherite_backtank = 4.0

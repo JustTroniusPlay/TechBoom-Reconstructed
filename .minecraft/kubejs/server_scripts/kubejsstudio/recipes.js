@@ -113,4 +113,5 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:smelting/coke_oven_brick' })
     event.remove({ id: 'kubejsstudio:techboom_vibr_iron' })
     event.remove({ id: 'emxarms:sky_workbench' })
+    event.shapeless('gtceu:diamond_plate', ['#gtceu:tools/crafting_saws', 'minecraft:diamond','minecraft:water_bucket']).id('techboom:diamond_plate_hand')
 })
