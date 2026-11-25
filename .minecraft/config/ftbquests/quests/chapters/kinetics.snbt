@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "kinetics"
-	group: "78A677EE2AEFB46F"
+	group: "552C56EECBA58F89"
 	icon: "create:large_cogwheel"
 	id: "1520912C9E316A01"
-	order_index: 4
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

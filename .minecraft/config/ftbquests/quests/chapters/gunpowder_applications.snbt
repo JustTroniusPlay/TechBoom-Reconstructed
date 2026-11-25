@@ -9,7 +9,7 @@
 		tag: { }
 	}
 	id: "0645F7302ADC781A"
-	order_index: 8
+	order_index: 7
 	quest_links: [
 		{
 			id: "404B34DB86CE8FD1"
@@ -640,6 +640,7 @@
 				"0E2F959A48BA47EE"
 				"02D4261153179F6F"
 			]
+			dependency_requirement: "one_completed"
 			description: ["Help keep more ammo in your guns, works for many ancient weapons and some of your rustic once."]
 			id: "43785C5946E7C5ED"
 			shape: "diamond"

@@ -3,7 +3,7 @@
   "browserCollapsed": false,
   "pendingCollapsed": false,
   "sideListCollapsed": false,
-  "tab": 5,
+  "tab": 0,
   "propsBlocks": false,
   "filesExplorerCollapsed": false,
   "apiBrowserCollapsed": false,
@@ -15,9 +15,9 @@
   "filesConsoleCollapsed": false,
   "filesFilterFolders": true,
   "filesExplorerW": 212,
-  "filesConsoleH": 108,
+  "filesConsoleH": 107,
   "recipesBrowserW": 280,
-  "previewH": 112,
+  "previewH": 111,
   "sideListW": 200,
   "pendingHeight": 60,
   "pickerW": 0,
@@ -48,8 +48,8 @@
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts",
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio"
   ],
-  "recipesSelected": "gtceu:forge_hammer/forge_hammer/hammer_copper_to_plate",
-  "recipesSearch": "copper_to_plate",
+  "recipesSelected": "thermal:machines/furnace/furnace_rotten_flesh_to_leather",
+  "recipesSearch": "thermal:machines/furnace/furnace_rotten_flesh_to_leather",
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
   "tagsSearch": "",
@@ -61,21 +61,21 @@
   "createSelected": "",
   "createSearch": "",
   "filesOpen": [
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\gregtech\\forge_hammer_change.js"
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\mekanism\\heat_gen.js"
   ],
   "recentPicks": [
-    "item gtceu:diamond_plate",
-    "item gtceu:raw_diamond_block",
-    "item minecraft:diamond_block",
-    "item minecraft:diamond",
-    "item #forge:plates/diamond",
-    "item #gtceu:tools/crafting_saws",
-    "item gtceu:small_iron_spring",
+    "item minecraft:leather",
+    "item minecraft:rotten_flesh",
+    "item tconstruct:seared_brick",
+    "item #forge:frames/invar",
+    "item #tconstruct:seared_bricks",
+    "item #forge:plates/invar",
+    "item #forge:plates/iron",
+    "item #forge:nuggets/wrought_iron",
+    "item #forge:rods/wrought_iron",
     "item gtceu:small_iron_gear",
-    "item minecraft:diamond_pickaxe",
-    "item gtceu:diamond_pickaxe",
-    "item gtceu:flint_dust",
-    "item gtceu:quartz_sand_dust"
+    "item #forge:glass_panes",
+    "item immersiveengineering:redstone_acid_bucket"
   ],
   "filesActive": 0
 }

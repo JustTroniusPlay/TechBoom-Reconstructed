@@ -5,7 +5,7 @@
 	group: "552C56EECBA58F89"
 	icon: "create_new_age:basic_motor"
 	id: "32B9CDB6B8CD1D77"
-	order_index: 3
+	order_index: 4
 	quest_links: [
 		{
 			id: "274448A5CC277BCC"
@@ -21,14 +21,6 @@
 			shape: "pentagon"
 			x: 0.5d
 			y: -1.0d
-		}
-		{
-			id: "185B4F767F6B30CA"
-			linked_quest: "288826470DDF0F30"
-			shape: "octagon"
-			size: 0.7d
-			x: 3.6755102040816254d
-			y: -0.6816326530612251d
 		}
 		{
 			id: "42ABEC6CB08A1914"
@@ -261,7 +253,6 @@
 		{
 			dependencies: [
 				"5ECEF02D7431A68F"
-				"288826470DDF0F30"
 				"282CE827964FBE54"
 				"0DB76665DD848A9A"
 			]

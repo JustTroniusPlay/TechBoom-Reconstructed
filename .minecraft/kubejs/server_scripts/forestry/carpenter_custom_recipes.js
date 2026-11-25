@@ -96,4 +96,41 @@ ServerEvents.recipes(event => {
             time: 60
         });
     })
+    
+    //Fluix Crystals
+    event.custom({
+            type: "forestry:carpenter",
+            box: [],
+            liquid: {
+                Amount: 250,
+                FluidName: 'minecraft:water'
+            },
+            recipe: {
+                type: "minecraft:crafting_shaped",
+                category: "misc",
+                key: {
+                  "#": 
+                  {
+                      tag: "forge:dusts/redstone"
+                  },
+                  "$":
+                  {
+                    tag: "forge:gems/quartz" 
+                  },
+                  "%":
+                  {
+                    item: "ae2:charged_certus_quartz_crystal" 
+                  }
+                },
+                pattern: [
+                "#$%"
+                ],
+                result: {
+                count: 3,
+                item: "ae2:fluix_crystal"
+                },
+                show_notification: true
+            },
+            time: 40
+        });
 })

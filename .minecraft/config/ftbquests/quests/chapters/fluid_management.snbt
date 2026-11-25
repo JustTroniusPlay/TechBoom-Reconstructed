@@ -24,14 +24,6 @@
 			y: -5.1d
 		}
 		{
-			id: "3AF215A295B43236"
-			linked_quest: "108C99B4F1FE705F"
-			shape: "octagon"
-			size: 0.6d
-			x: 9.66760204081632d
-			y: -4.271938775510186d
-		}
-		{
 			id: "0B8FFB12D799766E"
 			linked_quest: "2F69960DFCAC5C3C"
 			size: 0.7d
@@ -112,7 +104,7 @@
 				"108C99B4F1FE705F"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Communication between moving Create contraptions or Trains and stationaty places. "]
+			description: ["Fluid transfer between moving Create contraptions or Trains and stationaty places. "]
 			id: "11A8EA423A27F25F"
 			shape: "diamond"
 			size: 0.85d
@@ -264,8 +256,8 @@
 				}
 			]
 			title: "Modular Tank"
-			x: 8.951275510204086d
-			y: -5.460204081632675d
+			x: 8.927806122448985d
+			y: -5.271938775510186d
 		}
 		{
 			dependencies: ["37506D0DC482AAA8"]
@@ -869,6 +861,7 @@
 			dependencies: ["3E8CD30DEAF3BF95"]
 			icon: "railcraft:white_steel_tank_valve"
 			id: "604AD5E9DA61C7DB"
+			shape: "diamond"
 			size: 0.85d
 			tasks: [
 				{
@@ -1136,6 +1129,27 @@
 			]
 			x: 4.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["0B9E46B8967F33B0"]
+			description: ["Weird small cacty that contains water. Who needs pumps if you can farm your water supply?"]
+			id: "76728BEDEFADADDE"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [
+				{
+					id: "666A3BE6D546E48F"
+					item: "pamhc2crops:barrelcactusitem"
+					type: "item"
+				}
+				{
+					id: "5C8A35F126C9BD44"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			x: 7.071045918367346d
+			y: -7.219940476190466d
 		}
 	]
 	title: "Fluid Management"

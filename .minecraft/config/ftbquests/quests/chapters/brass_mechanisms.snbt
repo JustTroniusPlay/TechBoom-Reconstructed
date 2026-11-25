@@ -5,7 +5,7 @@
 	group: "552C56EECBA58F89"
 	icon: "create:mechanical_crafter"
 	id: "27136CEFC88349D1"
-	order_index: 1
+	order_index: 2
 	quest_links: [
 		{
 			id: "567528A927199C37"

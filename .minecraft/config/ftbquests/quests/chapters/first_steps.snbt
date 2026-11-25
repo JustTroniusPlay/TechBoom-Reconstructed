@@ -1,4 +1,5 @@
 {
+	autofocus_id: "4EBBAB4B8A99D4A7"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "first_steps"
@@ -10,8 +11,8 @@
 		id: "7A33371FDB0C7959"
 		linked_quest: "4879433BBEEF8352"
 		shape: "rsquare"
-		x: 9.094897959183651d
-		y: -7.58775510204082d
+		x: 6.243027210884364d
+		y: -8.735650510204053d
 	}]
 	quests: [
 		{
@@ -58,8 +59,8 @@
 				title: "Slabs into blocks!"
 				type: "checkmark"
 			}]
-			x: -1.3102997448979252d
-			y: 1.5088860544217795d
+			x: -5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
@@ -107,8 +108,8 @@
 				title: "Pollution"
 				type: "checkmark"
 			}]
-			x: 0.6897002551020748d
-			y: 3.0088860544217795d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1A45CB2CCDCAD4DB"]
@@ -135,8 +136,8 @@
 				}
 			]
 			title: "Sulfur"
-			x: 1.6897002551020748d
-			y: 4.0088860544217795d
+			x: 1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1A45CB2CCDCAD4DB"]
@@ -163,14 +164,11 @@
 				}
 			]
 			title: "Carbon"
-			x: 1.6897002551020748d
-			y: 2.0088860544217795d
+			x: 1.0d
+			y: 2.5d
 		}
 		{
-			dependencies: [
-				"5D210874EE9C2BD3"
-				"0AA13BC0D2C48B13"
-			]
+			dependencies: ["6CF046ABDEF49022"]
 			description: [
 				"If you want to get rid of the pollution manually then you need two items: Vacuum bag and Vacuum tube. But at the same time &lto not get damaged by negative effects&r from pollution while collecting it you need &lRespirator&r. There three tiers of this items: iron, gold and diamond."
 				""
@@ -223,11 +221,11 @@
 				}
 			]
 			title: "Let's clear this mess!"
-			x: 2.6897002551020748d
-			y: 3.0088860544217795d
+			x: -1.1817283163264918d
+			y: -9.218664965986392d
 		}
 		{
-			dependencies: ["6C790BA267E29176"]
+			dependencies: ["330180412AC025EA"]
 			description: [
 				"Cleaning pollution can be tiring and time consuming, so you want to automate the proccess somehow."
 				""
@@ -261,15 +259,15 @@
 				}
 			]
 			title: "Automatic cleaning"
-			x: 3.7649340986395146d
-			y: 5.281420068027238d
+			x: -1.2d
+			y: -11.4d
 		}
 		{
 			dependencies: ["1A45CB2CCDCAD4DB"]
 			description: [
 				"Chimneys is a simple way to get pollution out of your enclosed space be it your house or a first factories."
 				""
-				"If you put chimneys near the blocks that generate pollution then emissions will leave throught it. "
+				"If you put chimneys near the blocks that generate pollution then emissions will leave up throught it!"
 			]
 			id: "545BBD97C96F963A"
 			rewards: [{
@@ -278,6 +276,8 @@
 				item: "adchimneys:cobblestone_chimney"
 				type: "item"
 			}]
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				count: 4L
 				id: "2B75F60BE3F95BC8"
@@ -285,41 +285,18 @@
 				type: "item"
 			}]
 			title: "Chimneys"
-			x: 0.6506483843537936d
-			y: 4.195705782312942d
+			x: 1.6397002551020776d
+			y: -0.3363520408163083d
 		}
 		{
-			dependencies: ["545BBD97C96F963A"]
-			description: ["Vents are used to move pollution blocks around verticaly. But they are useless without next component: &lpump&r."]
-			icon: "adchimneys:stone_vent"
-			id: "2FD57CEE87E0DE92"
-			rewards: [{
-				count: 16
-				id: "5AEB88AC29F273A3"
-				item: "adchimneys:stone_vent"
-				type: "item"
-			}]
-			tasks: [
-				{
-					count: 4L
-					id: "12B6DC1B2E3EC4C2"
-					item: "adchimneys:stone_vent"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "64932CF0355604E5"
-					item: "adchimneys:metal_vent"
-					optional_task: true
-					type: "item"
-				}
+			dependencies: ["5D86113FD3732735"]
+			description: [
+				"To move emissions verticaly around your base or connecting different chimney systems into one filtering chamber you need &lPumps&r and &lVents&r!"
+				""
+				"You can place Vents near pollution emitters similar to Chimneys, but they are useless without Pumps!"
+				""
+				"Powered by redstone signal, Pumps will suck emissions throught vents system and output it up into chimneys above it."
 			]
-			x: 0.6506483843537936d
-			y: 5.338562925170088d
-		}
-		{
-			dependencies: ["2FD57CEE87E0DE92"]
-			description: ["Powered by redstone, pumps will suck emissions throught vents system and output it up into chimneys above."]
 			icon: "adchimneys:stone_pump"
 			id: "6C790BA267E29176"
 			rewards: [{
@@ -328,7 +305,14 @@
 				item: "minecraft:lever"
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [
+				{
+					count: 4L
+					id: "4F9888A77B60CF07"
+					item: { Count: 4, id: "adchimneys:stone_vent" }
+					type: "item"
+				}
 				{
 					count: 4L
 					id: "3E2899AA8D177216"
@@ -342,9 +326,17 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					count: 4L
+					id: "3352AD1F685FF654"
+					item: { Count: 4, id: "adchimneys:metal_vent" }
+					optional_task: true
+					type: "item"
+				}
 			]
-			x: 2.193505527210938d
-			y: 5.338562925170081d
+			title: "Verticality of Emissions"
+			x: -0.20791879251697054d
+			y: -6.555399659863916d
 		}
 		{
 			dependencies: ["6CF046ABDEF49022"]
@@ -376,8 +368,8 @@
 				type: "item"
 			}]
 			title: "Clearing the skies"
-			x: 3.7363626700680825d
-			y: 3.024277210884371d
+			x: -1.1817283163264918d
+			y: -10.2390731292517d
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
@@ -450,8 +442,8 @@
 				type: "checkmark"
 			}]
 			title: "New ways to move"
-			x: -1.3102997448979252d
-			y: 4.5088860544217795d
+			x: -0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -568,8 +560,8 @@
 				type: "item"
 			}]
 			title: "Bronze Age"
-			x: 3.75d
-			y: -15.0d
+			x: 6.75d
+			y: -16.5d
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
@@ -621,8 +613,8 @@
 				}
 			]
 			title: "Custom tools"
-			x: -2.8223639455782488d
-			y: -6.059693877550997d
+			x: -2.810639880952354d
+			y: -4.934821428571393d
 		}
 		{
 			dependencies: [
@@ -699,8 +691,8 @@
 					type: "item"
 				}
 			]
-			x: -2.800510204081651d
-			y: -8.168452380952377d
+			x: -2.855750425170055d
+			y: -8.550552721088433d
 		}
 		{
 			dependencies: ["1843506F57D72661"]
@@ -724,8 +716,8 @@
 				}
 			]
 			title: "Alloys"
-			x: 1.5877072704082096d
-			y: -11.302880527210903d
+			x: 1.5406462585033935d
+			y: -13.11660289115644d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -779,7 +771,7 @@
 			y: -9.605718537414944d
 		}
 		{
-			dependencies: ["34D049FD2BF84E84"]
+			dependencies: ["5D86113FD3732735"]
 			description: [
 				"The most straightforwad way to generate energy by burning solid fuel. There three types of solid fuel generators you can make now."
 				""
@@ -809,12 +801,6 @@
 			size: 1.2d
 			tasks: [
 				{
-					id: "75C75C1490AB3E0C"
-					item: "mekanismgenerators:heat_generator"
-					optional_task: true
-					type: "item"
-				}
-				{
 					id: "5476B07FF0EC880F"
 					item: "ad_astra:coal_generator"
 					optional_task: true
@@ -828,15 +814,15 @@
 				}
 			]
 			title: "Primitive energy"
-			x: 7.0614795918367195d
-			y: -8.82772108843539d
+			x: 4.424149659863962d
+			y: -7.449936224489761d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
 			description: [
 				"Andesite Alloy being used in all early Create machines and kinetic components."
 				""
-				"It can be created by mixing Iron or Zinc with Andesite blocks or dusts."
+				"It can be created with &oIron or Zinc nuggets with Andesite blocks or dusts&r."
 				""
 				"Just keep in mind that it always good to have more of it so you always can make needed shafts or cogs."
 				""
@@ -857,17 +843,13 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -0.75d
-			y: -15.0d
+			x: -3.0d
+			y: -16.5d
 		}
 		{
-			dependencies: ["29EE940649C3AE38"]
-			description: [
-				"Drying Basin is simple way to convert rotten flesh to leather. "
-				""
-				"(This quest related to Integration Dynamics mod, as of right now there a possibility in will be included again in the pack. Just getting leather will complete this quest.)"
-			]
-			icon: "integrateddynamics:drying_basin"
+			dependencies: ["5A9CA3D8F3E0A95C"]
+			description: ["You can dry Rotten Flesh using your Furnace. Simple but effective way to make something out of it..."]
+			icon: "minecraft:rotten_flesh"
 			id: "306F6137CCDFF3C1"
 			rewards: [{
 				count: 4
@@ -878,12 +860,6 @@
 			shape: "diamond"
 			subtitle: "Making rotten flesh useful..."
 			tasks: [
-				{
-					id: "605010951CFC53C8"
-					item: "integrateddynamics:drying_basin"
-					optional_task: true
-					type: "item"
-				}
 				{
 					id: "3449D4CBA0CEBEF3"
 					item: "minecraft:rotten_flesh"
@@ -896,8 +872,9 @@
 					type: "item"
 				}
 			]
-			x: -3.8390518707482855d
-			y: -1.325085034013597d
+			title: "Dry Skin"
+			x: -5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -974,7 +951,11 @@
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
-			description: ["If you want, you can give your bronze tools some more durability at the cost of adding some plating."]
+			description: [
+				"If you want, you can give your bronze tools some more durability at the cost of adding some plating."
+				""
+				"&oCan be combined into sturdy Paxel if you need it.&r"
+			]
 			id: "7B81DDC0AA14EF81"
 			shape: "diamond"
 			tasks: [
@@ -1016,8 +997,8 @@
 				}
 			]
 			title: "Little Upgrades"
-			x: 3.7598161139455897d
-			y: -13.709800170068d
+			x: 6.763775510204098d
+			y: -15.31048044217686d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -1043,6 +1024,7 @@
 							value: "forge:tools/mining_hammers"
 						}
 					}
+					optional_task: true
 					title: "Mining Hammers"
 					type: "item"
 				}
@@ -1055,6 +1037,7 @@
 							value: "forge:tools/spades"
 						}
 					}
+					optional_task: true
 					title: "Spades"
 					type: "item"
 				}
@@ -1067,6 +1050,7 @@
 							value: "gtceu:tools/crafting_saws"
 						}
 					}
+					optional_task: true
 					title: "Saws"
 					type: "item"
 				}
@@ -1123,8 +1107,8 @@
 				title: "Materials and You"
 				type: "checkmark"
 			}]
-			x: -4.022363945578249d
-			y: -5.396896258503374d
+			x: -4.010639880952354d
+			y: -4.27202380952377d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -1141,8 +1125,8 @@
 				title: "Dedicated Map"
 				type: "checkmark"
 			}]
-			x: -4.310299744897925d
-			y: 4.5088860544217795d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -1161,13 +1145,13 @@
 				title: "Just Enough Items"
 				type: "checkmark"
 			}]
-			x: -4.810299744897925d
-			y: 3.0088860544217795d
+			x: -0.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["25951FDCB7908145"]
+			dependencies: ["10E87B6699909383"]
 			description: [
-				"Mix of Zinc and Copper. Material for advanced Create components."
+				"&oMix of Zinc and Copper&r. Material for advanced Create components and some railways logistics."
 				""
 				"&lSee more in 'Moving Parts' tab.&r"
 			]
@@ -1179,8 +1163,8 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: -0.7811224489796089d
-			y: -13.648575680272089d
+			x: -0.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -1198,22 +1182,22 @@
 				item: "forestry:engine_clockwork"
 				type: "item"
 			}]
-			x: 8.013265306122424d
-			y: -8.24081632653061d
+			x: 3.7430272108843567d
+			y: -6.735650510204039d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
-			description: ["Iron and nickel alloy that needed in some machinery working with hot things."]
+			description: ["&oIron and Nickel&r alloy that needed in some machinery working with hot things."]
 			id: "4B31C89E0FA58CE0"
 			shape: "hexagon"
-			size: 0.85d
+			size: 1.0d
 			tasks: [{
 				id: "0A27C55499D9B6EA"
 				item: "thermal:invar_ingot"
 				type: "item"
 			}]
-			x: 2.829884141156448d
-			y: -10.640295493197236d
+			x: 3.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["306F6137CCDFF3C1"]
@@ -1242,17 +1226,17 @@
 				}
 			]
 			title: "Additional Hands"
-			x: -4.57901785714283d
-			y: -0.7247448979591766d
+			x: -4.307918792516979d
+			y: -1.220705782312912d
 		}
 		{
 			dependencies: ["4497A5EEEA049B28"]
 			description: [
 				"The classic helper of all explores out there. "
 				""
-				"You can upgrade it with metals and minerals to get more slots or color it using dyes, but the real strength comes from different special upgrades!"
+				"You can upgrade it with metals and minerals to get more slots or color it using dyes, but the real strength comes from different &nspecial upgrades&r!"
 				""
-				"Press 'N' button to open it. You can place it with Shift-rightclick."
+				"Press 'N' button to open it. You can place it with Shift-rightclick. Even your friends can open it when you wear it on your back. "
 				""
 				"&oDon't forget to empty your Satchel before crafting.&r"
 			]
@@ -1266,8 +1250,8 @@
 				type: "item"
 			}]
 			title: "Advanced Backpack"
-			x: -4.590024447278907d
-			y: -2.8715773809523313d
+			x: -5.675265731292491d
+			y: -2.3839710884353735d
 		}
 		{
 			dependencies: ["1E25061EB6CCD519"]
@@ -1303,8 +1287,8 @@
 				}
 			]
 			title: "Storing more than items"
-			x: -5.13270089285713d
-			y: -3.3832695578231196d
+			x: -6.226286139455752d
+			y: -2.9635629251700593d
 		}
 		{
 			dependencies: ["1E25061EB6CCD519"]
@@ -1361,8 +1345,8 @@
 				}
 			]
 			title: "Basic needs in a pocket"
-			x: -4.561272321428575d
-			y: -3.742453231292508d
+			x: -5.654857568027197d
+			y: -3.3227465986394478d
 		}
 		{
 			dependencies: ["1E25061EB6CCD519"]
@@ -1392,8 +1376,8 @@
 					type: "item"
 				}
 			]
-			x: -4.040024447278907d
-			y: -3.3715773809523313d
+			x: -5.133609693877529d
+			y: -2.951870748299271d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -1523,7 +1507,11 @@
 			y: 5.0088860544217795d
 		}
 		{
-			dependencies: ["56766749439CD7E0"]
+			dependencies: [
+				"56766749439CD7E0"
+				"4972940DA0DA30B4"
+				"1B421255FFACA12D"
+			]
 			dependency_requirement: "one_completed"
 			description: [
 				"Energy is your way to get any machine working. Now that you have generators its good idea to find how to distribute, direct and overal control it where you need."
@@ -1534,21 +1522,29 @@
 			]
 			icon: "thermal:rf_coil"
 			id: "69DB58E1CD20ED2B"
+			rewards: [{
+				id: "3792AF7CCF3B6972"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
 			shape: "pentagon"
 			size: 1.5d
 			tasks: [{
-				id: "69F71A3FCCB8D977"
+				dimension: "minecraft:overworld"
+				icon: "thermal:rf_coil"
+				id: "0400E52566859B34"
 				title: "Energy Management"
-				type: "checkmark"
+				type: "dimension"
 			}]
-			x: 9.094897959183651d
-			y: -8.791836734693877d
+			x: 6.243027210884364d
+			y: -7.449936224489761d
 		}
 		{
 			dependencies: ["1836959FBE9CC719"]
 			dependency_requirement: "one_started"
 			description: ["If you plan use guide books from various mods then how about making a little library with chiseled bookshelves to store them?"]
 			id: "0A1B2576C270CA09"
+			progression_mode: "flexible"
 			rewards: [{
 				count: 3
 				id: "18B876DB60E43734"
@@ -1563,11 +1559,11 @@
 				type: "item"
 			}]
 			title: "Little Library"
-			x: -4.004506802721112d
-			y: -6.209693877550997d
+			x: -3.992782738095217d
+			y: -5.084821428571392d
 		}
 		{
-			dependencies: ["5D86113FD3732735"]
+			dependencies: ["0F21BFC7B6C7D51D"]
 			description: [
 				"Ziplines are useful ways to go down a mountain or any other slopes. "
 				""
@@ -1615,15 +1611,15 @@
 				}
 			]
 			title: "Ziplines"
-			x: -0.15514987244895906d
-			y: -7.4384566326531d
+			x: 3.185884353741507d
+			y: -9.385650510204044d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
 			description: [
 				"External Heater can make your normal furnaces work on energy instead of solid fuels. Additionally it can boost smelting speed if enough energy sustained in the procces. "
 				""
-				"Put it next to them and provide energy source for heater."
+				"Put it next to them and provide energy source for heater. You can disable it with redstone signal."
 			]
 			id: "1D2EA0B12A829837"
 			shape: "diamond"
@@ -1633,8 +1629,8 @@
 				type: "item"
 			}]
 			title: "Free furnaces"
-			x: 7.050000000000001d
-			y: -7.7632653061224595d
+			x: 5.15034013605445d
+			y: -6.699936224489754d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -1691,8 +1687,8 @@
 					type: "item"
 				}
 			]
-			x: -4.310299744897925d
-			y: 1.5088860544217795d
+			x: -5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -1724,8 +1720,9 @@
 			y: -6.54607780612244d
 		}
 		{
-			dependencies: ["25951FDCB7908145"]
+			dependencies: ["34D049FD2BF84E84"]
 			id: "1815FBFC46636B24"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [
 				{
@@ -1843,8 +1840,8 @@
 				}
 			]
 			title: "Zinc Things"
-			x: -1.7952859268707542d
-			y: -14.986160714285695d
+			x: 1.5777954931973213d
+			y: -1.507780612244872d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2001,8 +1998,8 @@
 				type: "item"
 			}]
 			title: "Bane of Endermans"
-			x: -3.9985544217687234d
-			y: -8.995408163265289d
+			x: -4.053794642857127d
+			y: -9.377508503401344d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -2040,8 +2037,8 @@
 				}
 			]
 			title: "Gems Application"
-			x: 7.05398596938779d
-			y: -9.897236394557815d
+			x: 5.043197278911589d
+			y: -8.128507653061185d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -2145,8 +2142,8 @@
 				}
 			]
 			title: "Diving Suit"
-			x: -0.97682291666667d
-			y: -12.0d
+			x: -3.4426870748299194d
+			y: -12.23565051020406d
 		}
 		{
 			dependencies: ["1843506F57D72661"]
@@ -2325,8 +2322,8 @@
 				}
 			]
 			title: "Brass things"
-			x: -0.35d
-			y: -12.95d
+			x: 0.08826530612247008d
+			y: -17.79428146258505d
 		}
 		{
 			dependencies: ["7BFF886E57F3D543"]
@@ -2402,8 +2399,8 @@
 				type: "item"
 			}]
 			title: "Glass alloying"
-			x: -1.0d
-			y: -10.772385204081623d
+			x: -2.871258503401343d
+			y: -12.985650510204053d
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
@@ -2415,8 +2412,8 @@
 				item: "tconstruct:copper_can"
 				type: "item"
 			}]
-			x: -3.99805484693875d
-			y: -7.224787414965974d
+			x: -4.053295068027154d
+			y: -7.606887755102029d
 		}
 		{
 			dependencies: ["3129F95624CBEDD4"]
@@ -2487,8 +2484,8 @@
 				}
 			]
 			title: "Bronze Equipment"
-			x: 3.748931760204094d
-			y: -12.980378401360504d
+			x: 6.799489795918376d
+			y: -14.560480442176853d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2517,6 +2514,7 @@
 			description: ["Pressing Shift + Right Click near the entities or chests you can pick them up! It can be useful to transport mobs."]
 			icon: "minecraft:player_head"
 			id: "7801BC4A27AFDE76"
+			progression_mode: "flexible"
 			shape: "square"
 			size: 0.85d
 			tasks: [{
@@ -2524,8 +2522,8 @@
 				title: "Carry On "
 				type: "checkmark"
 			}]
-			x: -1.2922087585033495d
-			y: 5.452848639455816d
+			x: -0.49703443877546505d
+			y: 5.40072278911569d
 		}
 		{
 			dependencies: ["7F1D22C969F965A6"]
@@ -2560,22 +2558,22 @@
 				}
 			]
 			title: "Storing Parts for later"
-			x: -1.7256802721088844d
-			y: -6.068792517006758d
+			x: -1.7139562074829895d
+			y: -4.943920068027153d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
-			description: ["Silver and gold give quite conductive metal."]
+			description: ["&oSilver&r and &oGold&r give quite conductive metal useful in stuff working with energy."]
 			id: "1C1AF1DA2760DB59"
 			shape: "hexagon"
-			size: 0.85d
+			size: 1.0d
 			tasks: [{
 				id: "48829E6B7093C19E"
 				item: "thermal:electrum_ingot"
 				type: "item"
 			}]
-			x: 2.8142378826530674d
-			y: -9.586894132653057d
+			x: 1.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["0A47F74F64457575"]
@@ -2588,12 +2586,13 @@
 				type: "item"
 			}]
 			title: "No zombies on my lawn!"
-			x: -4.610161564625841d
-			y: -8.175085034013591d
+			x: -4.665401785714245d
+			y: -8.557185374149647d
 		}
 		{
 			dependencies: ["4B31C89E0FA58CE0"]
 			description: ["Will use lava to generate energy."]
+			hide_dependent_lines: true
 			id: "4972940DA0DA30B4"
 			shape: "diamond"
 			tasks: [{
@@ -2601,8 +2600,8 @@
 				item: "thermal:dynamo_magmatic"
 				type: "item"
 			}]
-			x: 7.054373937074807d
-			y: -10.681111819727846d
+			x: 2.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2815,8 +2814,8 @@
 				}
 			]
 			title: "Hasty!"
-			x: 2.829884141156434d
-			y: -11.436213860544171d
+			x: 4.081122448979599d
+			y: -16.545174319727877d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -2864,15 +2863,12 @@
 				}
 			]
 			title: "Manual Doubling"
-			x: 3.0d
+			x: -1.0d
 			y: -7.5d
 		}
 		{
-			dependencies: [
-				"56766749439CD7E0"
-				"1C1AF1DA2760DB59"
-			]
-			description: ["Makes dynamos not loose stored energy!"]
+			dependencies: ["1C1AF1DA2760DB59"]
+			description: ["Makes Thermal Dynamos not loose stored energy!"]
 			id: "0073EAB8E0A299DC"
 			size: 0.7d
 			tasks: [{
@@ -2880,8 +2876,8 @@
 				item: "thermal:dynamo_throttle_augment"
 				type: "item"
 			}]
-			x: 6.120360331632661d
-			y: -9.648118622448983d
+			x: 1.489965986394573d
+			y: -18.12000425170065d
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
@@ -2946,8 +2942,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: -9.5d
+			x: -3.4426870748299194d
+			y: -13.771364795918345d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -2966,8 +2962,8 @@
 				title: "Equipment Slots"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 0.0d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["306F6137CCDFF3C1"]
@@ -2988,8 +2984,8 @@
 				type: "item"
 			}]
 			title: "Starting Backpacking"
-			x: -4.5816804846938695d
-			y: -1.705038265306115d
+			x: -5.666666666666657d
+			y: -1.2278911564625759d
 		}
 		{
 			dependencies: ["4497A5EEEA049B28"]
@@ -3026,8 +3022,8 @@
 				type: "item"
 			}]
 			title: "Specialized Backpacks"
-			x: -5.192857142857143d
-			y: -2.334289965986386d
+			x: -6.328326955782288d
+			y: -1.812542517006797d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -3134,8 +3130,8 @@
 				}
 			]
 			title: "Brass Self-Defense"
-			x: -2.0d
-			y: -13.5d
+			x: -0.5d
+			y: -18.5d
 		}
 		{
 			dependencies: ["4B31C89E0FA58CE0"]
@@ -3146,7 +3142,7 @@
 				"&l\"Legend\" Pistol&r - heavy gun with enough firepower and ammo cpacity to help against strong foes. But not much can be talked about it's customizability options. At least there some special attachments that changes it bullet effects."
 				""
 				"{@pagebreak}"
-				"&l\"Hummingbird\" Mini SMG&r - quick and lightly gun to spread lead onto group of enemies. With help of some special or regulaar attachments it can be upgraded later on to became even more reliable weapon."
+				"&l\"Hummingbird\" Mini SMG&r - quick and lightly gun to spread lead onto group of enemies. With help of some special or regular attachments it can be upgraded later on to became even more reliable weapon."
 			]
 			id: "02D4261153179F6F"
 			shape: "rsquare"
@@ -3185,8 +3181,8 @@
 				}
 			]
 			title: "Sturdy Gunslinger"
-			x: 4.0d
-			y: -11.5d
+			x: 3.5d
+			y: -18.5d
 		}
 		{
 			dependencies: ["4879433BBEEF8352"]
@@ -3288,8 +3284,8 @@
 				}
 			]
 			title: "Applied Projectiles"
-			x: 9.111734693877537d
-			y: -6.470004251700665d
+			x: 6.243027210884371d
+			y: -9.914221938775484d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -3319,8 +3315,8 @@
 				title: "Death Savings"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7F1D22C969F965A6"]
@@ -3354,8 +3350,21 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -6.8d
+			x: -1.988275935374105d
+			y: -5.675127551020395d
+		}
+		{
+			dependencies: ["4B31C89E0FA58CE0"]
+			hide_dependent_lines: true
+			id: "1B421255FFACA12D"
+			shape: "diamond"
+			tasks: [{
+				id: "22C9C080107FFE0D"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -18.0d
 		}
 	]
 	title: "Age of Beginning"

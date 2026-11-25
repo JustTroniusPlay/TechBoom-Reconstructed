@@ -310,3 +310,85 @@ ServerEvents.highPriorityData(event => {
       }
     )
 })
+// kubejsstudio custom: kubejsstudio:my_recipe
+ServerEvents.recipes(event => {
+    event.shapeless(
+      'minecraft:stone',
+      ['minecraft:cobblestone']
+    ).id('kubejsstudio:my_recipe')
+})
+// kubejsstudio custom: gtceu:shaped/anvil
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'gtceu:recipes/shaped/anvil',
+      {
+        "type": "minecraft:crafting_shaped",
+        "pattern": ["BBB","SBS","PBP"],
+        "key": {
+          "B": {"tag":"forge:storage_blocks/iron"},
+          "S": {"tag":"forge:rods/iron"},
+          "P": {"tag":"forge:plates/iron"}
+        },
+        "matchSize": false,
+        "result": {"item":"minecraft:anvil"}
+      }
+    )
+})
+// kubejsstudio custom: techboom:rose_quartz_basin
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'techboom:recipes/rose_quartz_basin',
+      {
+        "type": "createdieselgenerators:basin_fermenting",
+        "ingredients": [
+          {"tag":"forge:dusts/quartz"},
+          {"fluid":"immersiveengineering:redstone_acid","amount":1000}
+        ],
+        "processingTime": 120,
+        "results": [{"item":"create:rose_quartz"}]
+      }
+    )
+})
+// kubejsstudio custom: techboom:redstone_acid
+ServerEvents.recipes(event => {
+    event.shaped(
+      'immersiveengineering:redstone_acid_bucket',
+      ['#A#', '#B#'],
+      {
+        '#': 'minecraft:redstone',
+        'A': '#gtceu:tools/crafting_mallets',
+        'B': 'minecraft:water_bucket'
+      }
+    ).id('techboom:redstone_acid').replaceIngredient('minecraft:water_bucket', 'minecraft:air')
+})
+// kubejsstudio custom: thermal:augments/dynamo_throttle_augment
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'thermal:recipes/augments/dynamo_throttle_augment',
+      {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "conditions": [{"type":"thermal:flag","flag":"dynamo_augments"}],
+        "key": {
+          "E": {"tag":"forge:gears/electrum"},
+          "l": {"tag":"forge:plates/lead"}
+        },
+        "pattern": [" l ","lEl"," l "],
+        "result": {"item":"thermal:dynamo_throttle_augment"},
+        "show_notification": true
+      }
+    )
+})
+// kubejsstudio custom: thermal:machines/furnace/furnace_rotten_flesh_to_leather
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'thermal:recipes/machines/furnace/furnace_rotten_flesh_to_leather',
+      {
+        "type": "thermal:furnace",
+        "ingredient": {"item":"minecraft:rotten_flesh","count":4},
+        "result": {"item":"minecraft:leather","count":6},
+        "experience": 0.3,
+        "energy_mod": 2
+      }
+    )
+})

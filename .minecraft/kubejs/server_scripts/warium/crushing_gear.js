@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+/*ServerEvents.recipes(event => {
 
     event.replaceInput({id: "crusty_chunks:iron_gear_recipe"},
         "minecraft:cobblestone",
@@ -8,4 +8,4 @@ ServerEvents.recipes(event => {
         "minecraft:iron_ingot",
         "#forge:rods/iron"
     )
-})
+})*/

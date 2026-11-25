@@ -5,8 +5,13 @@
 	group: "552C56EECBA58F89"
 	icon: "create:gantry_carriage"
 	id: "28789C0F364D2EF7"
-	order_index: 2
-	quest_links: [ ]
+	order_index: 3
+	quest_links: [{
+		id: "03D885A62A6C6DA3"
+		linked_quest: "11A8EA423A27F25F"
+		x: 0.0d
+		y: 4.5d
+	}]
 	quests: [
 		{
 			dependencies: ["25951FDCB7908145"]

@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     'ABA'
   ],
   {
-    A: 'tconstruct:scorched_bricks',
+    A: 'tconstruct:scorched_brick',
     B: 'crusty_chunks:blast_furnace_brick',  //arg 3: the mapping object
     C: 'gtceu:invar_frame'
   }
