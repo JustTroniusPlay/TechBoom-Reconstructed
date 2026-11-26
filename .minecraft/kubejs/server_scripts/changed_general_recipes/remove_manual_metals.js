@@ -56,6 +56,7 @@ ServerEvents.recipes(event => {
             event.remove({id: "cbc_cw:" + metal + "_block_craft"});
             event.remove({id: "ad_astra:" + metal + "_ingot_from_" + metal + "_block"});
             event.remove({id: "railcraft:" + metal +"_ingot_crafted_with_ingots"});
+            event.remove({id: "railcraft:" + metal +"_block_from_" + metal + "_ingot"});
             event.remove({id: "thermal:storage/" + metal + "_ingot_from_block"});
 
             //blockToIngots

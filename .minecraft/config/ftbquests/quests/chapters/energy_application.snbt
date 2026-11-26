@@ -8,14 +8,6 @@
 	order_index: 4
 	quest_links: [
 		{
-			id: "274448A5CC277BCC"
-			linked_quest: "25951FDCB7908145"
-			shape: "hexagon"
-			size: 1.5d
-			x: 0.5d
-			y: 1.5d
-		}
-		{
 			id: "53DDF683F1A265D2"
 			linked_quest: "69DB58E1CD20ED2B"
 			shape: "pentagon"
@@ -41,8 +33,8 @@
 			id: "2721B761C3787D2E"
 			linked_quest: "7B289C03327D9227"
 			shape: "octagon"
-			x: 0.5025510204081414d
-			y: 5.459183673469376d
+			x: 0.5d
+			y: 4.5d
 		}
 		{
 			id: "67CE8E2D37D5CD70"
@@ -51,12 +43,20 @@
 			x: -1.5d
 			y: -1.5d
 		}
+		{
+			id: "5243CCD4CB116037"
+			linked_quest: "04EAB75326EB42CF"
+			shape: "hexagon"
+			size: 1.5d
+			x: 0.46666666666666146d
+			y: 1.2714285714285651d
+		}
 	]
 	quests: [
 		{
 			dependencies: [
-				"25951FDCB7908145"
 				"69DB58E1CD20ED2B"
+				"04EAB75326EB42CF"
 			]
 			description: ["Generate fixed amount of stress by consuming energy, but you can change it speed."]
 			id: "18BF6D22CDB7509D"
@@ -86,8 +86,8 @@
 		}
 		{
 			dependencies: [
-				"25951FDCB7908145"
 				"69DB58E1CD20ED2B"
+				"04EAB75326EB42CF"
 			]
 			icon: "create_new_age:overcharged_iron"
 			id: "5ECEF02D7431A68F"
@@ -117,8 +117,8 @@
 				item: "create_new_age:advanced_energiser"
 				type: "item"
 			}]
-			x: 1.5136054421768677d
-			y: 0.8095238095238102d
+			x: 2.1d
+			y: 0.6d
 		}
 		{
 			dependencies: ["0316B642B81524B4"]
@@ -130,8 +130,8 @@
 				item: "create_new_age:reinforced_energiser"
 				type: "item"
 			}]
-			x: 1.5136054421768677d
-			y: 1.319727891156461d
+			x: 2.1d
+			y: 1.1102040816326508d
 		}
 		{
 			dependencies: ["4EF6BA6A14C473DA"]
@@ -174,7 +174,7 @@
 			y: -0.9455782312925116d
 		}
 		{
-			dependencies: ["25951FDCB7908145"]
+			dependencies: ["04EAB75326EB42CF"]
 			description: ["Will generate energy based on Rotation Per Minute and magnetic blocks used around the coil."]
 			icon: "create_new_age:generator_coil"
 			id: "59DE400FAB603D8A"
@@ -202,53 +202,37 @@
 			y: 2.890306122448976d
 		}
 		{
-			dependencies: ["59DE400FAB603D8A"]
-			id: "46A13C7F6842C1AE"
-			size: 0.7d
-			tasks: [{
-				id: "526ECE3776D213C2"
-				item: "create_new_age:layered_magnet"
-				type: "item"
-			}]
-			x: -0.35d
-			y: 2.8d
-		}
-		{
-			dependencies: ["59DE400FAB603D8A"]
-			id: "0FBD8C5E61338813"
-			shape: "diamond"
-			size: 0.85d
-			tasks: [{
-				id: "27E562EA84E185E1"
-				item: "create_new_age:redstone_magnet"
-				type: "item"
-			}]
-			x: 0.4821428571428328d
-			y: 3.765306122448976d
-		}
-		{
-			dependencies: ["59DE400FAB603D8A"]
-			id: "50FB45708E0B12F5"
-			size: 0.7d
-			tasks: [{
-				id: "5DE441D21EB24EE3"
-				item: "create_new_age:fluxuated_magnetite"
-				type: "item"
-			}]
-			x: 1.4d
-			y: 2.8d
-		}
-		{
-			dependencies: ["0FBD8C5E61338813"]
+			dependencies: [
+				"59DE400FAB603D8A"
+				"5ECEF02D7431A68F"
+			]
 			id: "4DF0DA70E0E5048F"
 			size: 0.7d
-			tasks: [{
-				id: "612B2AC75C9138B1"
-				item: "create_new_age:netherite_magnet"
-				type: "item"
-			}]
-			x: 0.4884443250984347d
-			y: 4.5204081632653015d
+			tasks: [
+				{
+					id: "1AF5392C3868A834"
+					item: "create_new_age:redstone_magnet"
+					type: "item"
+				}
+				{
+					id: "069554A6FBAD3EB0"
+					item: "create_new_age:layered_magnet"
+					type: "item"
+				}
+				{
+					id: "6EBE7273437DD7E8"
+					item: "create_new_age:fluxuated_magnetite"
+					type: "item"
+				}
+				{
+					id: "612B2AC75C9138B1"
+					item: "create_new_age:netherite_magnet"
+					type: "item"
+				}
+			]
+			title: "Coil Magnets"
+			x: 1.533163265306122d
+			y: 2.4183673469387656d
 		}
 		{
 			dependencies: [

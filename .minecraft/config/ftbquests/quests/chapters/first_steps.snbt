@@ -1,5 +1,5 @@
 {
-	autofocus_id: "4EBBAB4B8A99D4A7"
+	autofocus_id: "7F1D22C969F965A6"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "first_steps"
@@ -67,8 +67,6 @@
 			description: [
 				"Aside from finding coal there a other ways to craft torches: Sulfur or Sticky resin! You can use it as replacement!"
 				""
-				"You can get &lSticky Resin&r from chopping down &oGregtech Rubber Trees.&r"
-				""
 				"&lSulfur&r can be found in ores underground, but not far down, so you can do some minor digging or find a cave entrance."
 			]
 			id: "062CF3CD78A87B5B"
@@ -86,8 +84,8 @@
 				type: "item"
 			}]
 			title: "Sulfuric Torches"
-			x: -1.5533375850339937d
-			y: -1.325085034013597d
+			x: -1.0038371598639344d
+			y: -1.3254676870748057d
 		}
 		{
 			dependencies: ["4EBBAB4B8A99D4A7"]
@@ -168,7 +166,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["6CF046ABDEF49022"]
+			dependencies: ["0A47F74F64457575"]
 			description: [
 				"If you want to get rid of the pollution manually then you need two items: Vacuum bag and Vacuum tube. But at the same time &lto not get damaged by negative effects&r from pollution while collecting it you need &lRespirator&r. There three tiers of this items: iron, gold and diamond."
 				""
@@ -221,8 +219,8 @@
 				}
 			]
 			title: "Let's clear this mess!"
-			x: -1.1817283163264918d
-			y: -9.218664965986392d
+			x: -1.834789540816331d
+			y: -9.411862244897918d
 		}
 		{
 			dependencies: ["330180412AC025EA"]
@@ -259,8 +257,8 @@
 				}
 			]
 			title: "Automatic cleaning"
-			x: -1.2d
-			y: -11.4d
+			x: -1.1562181122449005d
+			y: -11.192474489795877d
 		}
 		{
 			dependencies: ["1A45CB2CCDCAD4DB"]
@@ -335,11 +333,11 @@
 				}
 			]
 			title: "Verticality of Emissions"
-			x: -0.20791879251697054d
-			y: -6.555399659863916d
+			x: -1.1626806972789012d
+			y: -8.724107142857115d
 		}
 		{
-			dependencies: ["6CF046ABDEF49022"]
+			dependencies: ["6C790BA267E29176"]
 			description: [
 				"You can collect pollution that accumulated in the clouds using the small contraption: put a pump block, &opump pipe&r on top and then hopper on it. By clicking pump pipe with more pipes you will extended and get it to the sky limit. Now you can move your pollution down and use filters to clear the skies!"
 				""
@@ -368,8 +366,8 @@
 				type: "item"
 			}]
 			title: "Clearing the skies"
-			x: -1.1817283163264918d
-			y: -10.2390731292517d
+			x: -1.1694834183673422d
+			y: -9.958801020408131d
 		}
 		{
 			dependencies: ["29EE940649C3AE38"]
@@ -475,7 +473,7 @@
 				""
 				"&lMortars&r works as primitive macerator and grind materials down into dusts to use them in future procceses."
 				""
-				"&lWire Cutters&r used in making wires and other metalic components later."
+				"&lWire Cutters&r used in making wires, springs, small cogs and other intricate metalic components."
 			]
 			id: "5D86113FD3732735"
 			rewards: [{
@@ -767,18 +765,13 @@
 					type: "item"
 				}
 			]
-			x: 1.5672991071428726d
-			y: -9.605718537414944d
+			x: 1.543346088435365d
+			y: -10.962882653061179d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
 			description: [
-				"The most straightforwad way to generate energy by burning solid fuel. There three types of solid fuel generators you can make now."
-				""
-				"{@pagebreak}"
-				"&lHeat Generator&r is hybrid gen that easier to make. It can convert solid fuels or even lava into internal fuel capacity to generate some amount of energy in quick succession, but it's fuel efficiency left much to be desired."
-				""
-				"One of hiden talants of HG is to convert thermal heat of adjacent lava sources into very small amount of energy per seconds. "
+				"The most straightforwad way to generate energy by burning solid fuel. There two types of solid fuel generators you can make now."
 				""
 				"{@pagebreak}"
 				"&lCoal Generator&r is fuel efficient and will more slowly burn out fuel unlike it's relatives, but its energy output is rather slow. In theory it can generate more energy in the long run while your network is in congestion. Also don't generate much pollution at all! "
@@ -826,7 +819,7 @@
 				""
 				"Just keep in mind that it always good to have more of it so you always can make needed shafts or cogs."
 				""
-				"&lSee more in 'Kinetics' and 'Moving Parts' tabs.&r"
+				"&lSee more in 'Moving Parts' tabs.&r"
 			]
 			id: "25951FDCB7908145"
 			rewards: [{
@@ -1611,8 +1604,8 @@
 				}
 			]
 			title: "Ziplines"
-			x: 3.185884353741507d
-			y: -9.385650510204044d
+			x: 3.2500000000000004d
+			y: -9.100000000000001d
 		}
 		{
 			dependencies: ["56766749439CD7E0"]
@@ -1721,6 +1714,13 @@
 		}
 		{
 			dependencies: ["34D049FD2BF84E84"]
+			icon: {
+				Count: 1
+				id: "create_sa:zinc_axe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "1815FBFC46636B24"
 			shape: "diamond"
 			size: 0.7d
@@ -2142,8 +2142,8 @@
 				}
 			]
 			title: "Diving Suit"
-			x: -3.4426870748299194d
-			y: -12.23565051020406d
+			x: -2.2102997448979522d
+			y: -13.754719387755067d
 		}
 		{
 			dependencies: ["1843506F57D72661"]
@@ -2178,8 +2178,8 @@
 				}
 			]
 			title: "Crude Ore Harvesting"
-			x: 0.6030133928571644d
-			y: -9.593813775510178d
+			x: 0.595482568027208d
+			y: -11.020408163265301d
 		}
 		{
 			dependencies: ["65E0926A806B0CE7"]
@@ -2198,8 +2198,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.17444196428573377d
-			y: -9.093813775510178d
+			x: 0.6158907312925095d
+			y: -11.93567176870745d
 		}
 		{
 			dependencies: ["1A155790CD83B2A7"]
@@ -2327,7 +2327,7 @@
 		}
 		{
 			dependencies: ["7BFF886E57F3D543"]
-			description: ["Protects againts hazards like fire and even lava. "]
+			description: ["Protects againts hazards like fire and even lava. &oCan be helpful in hot places full of it.&r"]
 			icon: {
 				Count: 1
 				id: "thermal:hazmat_chestplate"
@@ -2384,8 +2384,8 @@
 				}
 			]
 			title: "Hazmat Suit"
-			x: 0.10199298469388651d
-			y: -5.022045068027197d
+			x: -0.508599064625848d
+			y: -5.4812499999999815d
 		}
 		{
 			dependencies: ["10E87B6699909383"]
@@ -2488,12 +2488,24 @@
 			y: -14.560480442176853d
 		}
 		{
-			dependencies: ["34D049FD2BF84E84"]
-			description: ["Made out of vines or dandelions. Not cheap right now, but useful in some equipment."]
+			dependencies: ["5D86113FD3732735"]
+			description: [
+				"Sticky Resin named like that for a reason! You can use it as replcement for Slime balls!"
+				""
+				"You can get it from chopping down &oGregtech Rubber Trees.&r"
+				""
+				"Additionally you can use it as another source of very cheap rubber. Mix it with some water and then heat in furnace. Cured Rubber can be crafted into some helpful equipment. "
+			]
 			id: "7BFF886E57F3D543"
 			shape: "hexagon"
 			size: 0.85d
+			subtitle: "Sticky situation"
 			tasks: [
+				{
+					id: "0B5C6912A0185247"
+					item: "gtceu:sticky_resin"
+					type: "item"
+				}
 				{
 					id: "03F71DC4A5E1A1BD"
 					item: "thermal:rubber"
@@ -2505,9 +2517,9 @@
 					type: "item"
 				}
 			]
-			title: "Manual Rubber"
-			x: 0.11015625000000995d
-			y: -3.974649234693871d
+			title: "Resin and Rubber"
+			x: -0.5120004251700365d
+			y: -6.383290816326522d
 		}
 		{
 			dependencies: ["15CBA4A7DB0EE055"]
@@ -2591,7 +2603,7 @@
 		}
 		{
 			dependencies: ["4B31C89E0FA58CE0"]
-			description: ["Will use lava to generate energy."]
+			description: ["Will consume lava to generate energy."]
 			hide_dependent_lines: true
 			id: "4972940DA0DA30B4"
 			shape: "diamond"
@@ -2730,7 +2742,6 @@
 			]
 			id: "3D3B1B33532FA357"
 			shape: "diamond"
-			size: 0.7d
 			tasks: [
 				{
 					id: "003B5AB7C0B47D6D"
@@ -2814,8 +2825,8 @@
 				}
 			]
 			title: "Hasty!"
-			x: 4.081122448979599d
-			y: -16.545174319727877d
+			x: 4.5162308673469695d
+			y: -16.21050170068027d
 		}
 		{
 			dependencies: ["5D86113FD3732735"]
@@ -2863,7 +2874,7 @@
 				}
 			]
 			title: "Manual Doubling"
-			x: -1.0d
+			x: -0.5d
 			y: -7.5d
 		}
 		{
@@ -2886,6 +2897,8 @@
 				"You can create alloys manually by grinding ingots using mortat and then mixing coresponding dusts to get blends of desired alloy."
 				""
 				"Of course it still need to be smelted to get ingots."
+				""
+				"If you can't find Iron, then try to make some Bronze tools first."
 			]
 			icon: "thermal:bronze_dust"
 			id: "04DAB4AE1BD20342"
@@ -2924,8 +2937,8 @@
 					type: "item"
 				}
 			]
-			x: 1.531584821428595d
-			y: -6.046194727891134d
+			x: 1.545822704081651d
+			y: -5.726828231292508d
 		}
 		{
 			dependencies: ["330180412AC025EA"]
@@ -3355,6 +3368,11 @@
 		}
 		{
 			dependencies: ["4B31C89E0FA58CE0"]
+			description: [
+				"&lHeat Generator&r is hybrid gen that can convert solid fuels or even lava into internal fuel capacity to generate some amount of energy in quick succession, but it's fuel efficiency left much to be desired."
+				""
+				"One of hiden talants of HG is to convert thermal heat of adjacent lava sources into small amount of energy per seconds. More sources are near, more energy it will gonna generate."
+			]
 			hide_dependent_lines: true
 			id: "1B421255FFACA12D"
 			shape: "diamond"
@@ -3365,6 +3383,18 @@
 			}]
 			x: 4.5d
 			y: -18.0d
+		}
+		{
+			dependencies: ["1A155790CD83B2A7"]
+			id: "05641858A233D910"
+			shape: "diamond"
+			tasks: [{
+				id: "3388CAAE5DE6EAB6"
+				item: "create:attribute_filter"
+				type: "item"
+			}]
+			x: -1.4963541666666345d
+			y: -17.706249999999965d
 		}
 	]
 	title: "Age of Beginning"

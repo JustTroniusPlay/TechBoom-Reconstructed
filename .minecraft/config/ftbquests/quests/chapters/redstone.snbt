@@ -51,7 +51,6 @@
 				"7BCA54C671476825"
 				"0689EE9B69E13F13"
 				"0852CB10008D7CDB"
-				"3D1CCF8E85981E52"
 			]
 			id: "06655C0B6099C3B8"
 			tasks: [{
@@ -135,10 +134,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"3D1CCF8E85981E52"
-				"7BCA54C671476825"
-			]
+			dependencies: ["7BCA54C671476825"]
 			id: "63985703F2FF5100"
 			tasks: [{
 				id: "5C45642240292831"

@@ -392,3 +392,17 @@ ServerEvents.highPriorityData(event => {
       }
     )
 })
+// kubejsstudio custom: tconstruct:smeltery/casting/scorched/brick_composite
+ServerEvents.highPriorityData(event => {
+    event.addJson(
+      'tconstruct:recipes/smeltery/casting/scorched/brick_composite',
+      {
+        "type": "tconstruct:casting_table",
+        "cast": {"item":"tconstruct:soul_glass_pane"},
+        "cast_consumed": true,
+        "cooling_time": 50,
+        "fluid": {"amount":125,"tag":"forge:magma"},
+        "result": "tconstruct:scorched_brick"
+      }
+    )
+})

@@ -146,6 +146,8 @@
 			dependencies: [
 				"09349E61D7AF0C55"
 				"28AF57B15FD06843"
+				"209DE8284AADF311"
+				"2185592369B7D5FC"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -214,23 +216,6 @@
 			}]
 			x: 7.5d
 			y: 5.7d
-		}
-		{
-			dependencies: [
-				"043F7FFDC6430B34"
-				"54661956247869DD"
-			]
-			dependency_requirement: "one_completed"
-			description: ["Shale Oil you found underground can be used to make some crude oil for different oil processes."]
-			id: "579226E41F011F26"
-			shape: "hexagon"
-			tasks: [{
-				id: "7D1401E30092203F"
-				item: "crusty_chunks:shale_oil"
-				type: "item"
-			}]
-			x: 5.277210884353735d
-			y: 6.369366496598641d
 		}
 	]
 	title: "Spinning Diesel"

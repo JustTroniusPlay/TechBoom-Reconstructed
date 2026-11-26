@@ -16,6 +16,7 @@
 				"Craft good amount of them so you can always expand your system easily."
 			]
 			id: "5A3BFC118141DC5C"
+			shape: "rsquare"
 			tasks: [
 				{
 					count: 16L
@@ -43,6 +44,7 @@
 		{
 			dependencies: ["5A3BFC118141DC5C"]
 			id: "2FB249F10D1AA777"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "4DE78BA335CF3E78"
@@ -57,7 +59,7 @@
 			]
 			title: "Coaxial Wheels"
 			x: 3.5d
-			y: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5A3BFC118141DC5C"]
@@ -68,46 +70,51 @@
 				item: "petrolsparts:double_cardan_shaft"
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [{
 				id: "0750A83B09AB395F"
 				item: "petrolsparts:double_cardan_shaft"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.5d
+			x: 4.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["024F753F2FAAC210"]
+			dependencies: ["5A3BFC118141DC5C"]
 			id: "7DA9B81F0E5C1A28"
+			shape: "diamond"
 			tasks: [{
 				id: "1F2AAD8218094E06"
 				item: "petrolsparts:differential"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5A3BFC118141DC5C"]
 			id: "024F753F2FAAC210"
+			shape: "diamond"
 			tasks: [{
 				id: "3C66C3F3155CC18D"
 				item: "petrolsparts:planetary_gearset"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.5d
+			x: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5A3BFC118141DC5C"]
 			id: "01AB8F49F3F439C8"
+			shape: "diamond"
+			size: 1.2d
 			tasks: [{
 				id: "21962DD873CC489A"
 				item: "petrolsparts:colossal_cogwheel"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.0d
+			x: 3.5071428571428456d
+			y: 1.5452380952381048d
 		}
 		{
 			dependencies: ["32FCC9DCD937E066"]
@@ -117,8 +124,8 @@
 				item: "petrolsparts:pneumatic_tube"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.0d
+			x: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1196A36E66D35045"]
@@ -128,8 +135,8 @@
 				item: "petrolsparts:hydraulic_transmission"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.5d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5A3BFC118141DC5C"]
@@ -141,6 +148,8 @@
 				item: "minecraft:chain"
 				type: "item"
 			}]
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [{
 				count: 2L
 				id: "2146B78CF2CBE507"
@@ -159,6 +168,7 @@
 				item: "create:gearbox"
 				type: "item"
 			}]
+			shape: "rsquare"
 			size: 1.2d
 			tasks: [
 				{
@@ -175,8 +185,8 @@
 				}
 			]
 			title: "Gearboxes"
-			x: 4.5d
-			y: -2.5d
+			x: 3.452380952380949d
+			y: -4.646428571428576d
 		}
 		{
 			dependencies: ["1B53FA2848ED5392"]
@@ -211,8 +221,8 @@
 				}
 			]
 			title: "Ultimate Gearboxes"
-			x: 4.0d
-			y: -3.5d
+			x: 2.477380952380949d
+			y: -5.771428571428576d
 		}
 		{
 			dependencies: ["1B53FA2848ED5392"]
@@ -238,8 +248,8 @@
 				}
 			]
 			title: "Advanced Gearboxes"
-			x: 3.5d
-			y: -2.5d
+			x: 3.477380952380949d
+			y: -6.771428571428576d
 		}
 		{
 			dependencies: ["1B53FA2848ED5392"]
@@ -265,8 +275,8 @@
 				}
 			]
 			title: "Parallel Gearboxes"
-			x: 5.0d
-			y: -3.5d
+			x: 4.4773809523809485d
+			y: -5.771428571428576d
 		}
 		{
 			dependencies: ["5A3BFC118141DC5C"]
@@ -277,6 +287,8 @@
 				item: "create:clutch"
 				type: "item"
 			}]
+			shape: "rsquare"
+			size: 1.2d
 			tasks: [
 				{
 					id: "68CE23DEFE52E117"
@@ -290,8 +302,8 @@
 				}
 			]
 			title: "Simple Clutches"
-			x: 2.0d
-			y: -0.5d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["072634110D7A6027"]
@@ -350,8 +362,8 @@
 				type: "item"
 			}]
 			title: "L-shaped Gearbox"
-			x: 5.5d
-			y: -1.5d
+			x: 4.4773809523809485d
+			y: -3.771428571428576d
 		}
 		{
 			dependencies: ["6F496DC9A766E115"]
@@ -387,7 +399,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["1B53FA2848ED5392"]
+			dependencies: ["5A3BFC118141DC5C"]
 			id: "0966F994586EED73"
 			rewards: [{
 				count: 6
@@ -395,6 +407,7 @@
 				item: "create:encased_chain_drive"
 				type: "item"
 			}]
+			shape: "rsquare"
 			size: 1.2d
 			tasks: [{
 				count: 3L
@@ -402,8 +415,8 @@
 				item: "create:encased_chain_drive"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.5d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0966F994586EED73"]
@@ -420,8 +433,8 @@
 				item: "create_connected:encased_chain_cogwheel"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -3.5d
+			x: 7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0966F994586EED73"]
@@ -437,14 +450,15 @@
 				item: "create:adjustable_chain_gearshift"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
 				"5A3BFC118141DC5C"
 				"26041794979A3851"
 			]
+			dependency_requirement: "one_completed"
 			description: ["Will transfer rotational power and items. Can be colored with dye!"]
 			id: "32FCC9DCD937E066"
 			rewards: [{
@@ -469,9 +483,6 @@
 				"Speedometer will show speed of certain network points."
 				""
 				"Stressometer will show how many mechanisms your network can sustain."
-				""
-				""
-				"Multimeter is both blocks in form of one!"
 			]
 			icon: "create:stressometer"
 			id: "3A32F6B5E26895FE"
@@ -487,15 +498,9 @@
 					item: "create:speedometer"
 					type: "item"
 				}
-				{
-					id: "3CB7A1BADBA3F933"
-					item: "create_better_motors:multimeter"
-					optional_task: true
-					type: "item"
-				}
 			]
 			title: "Metrics"
-			x: 2.0d
+			x: 2.5d
 			y: -2.5d
 		}
 		{
@@ -512,8 +517,8 @@
 				item: "create:sequenced_gearshift"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -3.5d
+			x: 8.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0966F994586EED73"]
@@ -537,8 +542,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: -2.5d
+			x: 8.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1B53FA2848ED5392"]
@@ -549,19 +554,20 @@
 				item: "create_connected:cross_connector"
 				type: "item"
 			}]
-			x: 4.54999999999999d
-			y: -1.4132653061224474d
+			x: 2.452380952380949d
+			y: -3.9464285714285756d
 		}
 		{
 			dependencies: ["5A3BFC118141DC5C"]
 			id: "64C0EE616C6B1045"
+			shape: "diamond"
 			tasks: [{
 				id: "2C65A42D20EABDFC"
 				item: "create_connected:shear_pin"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.5d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["072634110D7A6027"]
@@ -578,7 +584,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["072634110D7A6027"]
@@ -589,8 +595,8 @@
 				item: "create_connected:kinetic_bridge"
 				type: "item"
 			}]
-			x: 1.2d
-			y: 1.7999999999999998d
+			x: -0.5d
+			y: 0.5d
 		}
 	]
 	title: "Kinetics"

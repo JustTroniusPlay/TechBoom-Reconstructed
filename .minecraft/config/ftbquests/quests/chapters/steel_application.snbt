@@ -445,7 +445,10 @@
 			y: -3.3124149659863846d
 		}
 		{
-			dependencies: ["4879433BBEEF8352"]
+			dependencies: [
+				"4879433BBEEF8352"
+				"2185592369B7D5FC"
+			]
 			description: ["Fluix crystals are essential in the creation of most of AE2 blocks and components."]
 			id: "76422C026A6749CA"
 			shape: "hexagon"
@@ -881,6 +884,26 @@
 			}]
 			x: 6.5d
 			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4879433BBEEF8352"]
+			description: ["Useful information about your digital storage network. Consult for detailed explanations or if you need specific details."]
+			icon: "ae2:guide"
+			id: "0B1366F7C28F5686"
+			rewards: [{
+				id: "3F2384BDE05D9949"
+				item: "ae2:guide"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "7E7F4DF2226F2C3C"
+				type: "checkmark"
+			}]
+			title: "Energistic Learning"
+			x: 5.867346938775519d
+			y: 0.12653061224489903d
 		}
 	]
 	title: "Ways of Glass"

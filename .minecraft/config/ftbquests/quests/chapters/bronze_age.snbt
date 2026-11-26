@@ -1,5 +1,5 @@
 {
-	autofocus_id: "54D994E7E116909D"
+	autofocus_id: "51D2A2A99A671311"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "bronze_age"
@@ -33,12 +33,12 @@
 			y: -0.0014987244897799457d
 		}
 		{
-			id: "3B38ACB3D7E7FB08"
-			linked_quest: "1A3BA4BEFD861942"
-			shape: "rsquare"
-			size: 1.2d
-			x: -2.982841398278076d
-			y: -11.172177933673456d
+			id: "567528A927199C37"
+			linked_quest: "1A155790CD83B2A7"
+			shape: "octagon"
+			size: 0.85d
+			x: 4.299999999999983d
+			y: -8.337861394557812d
 		}
 	]
 	quests: [
@@ -418,8 +418,8 @@
 				}
 			]
 			title: "Portable crates"
-			x: 4.925303598001705d
-			y: -6.446768707482995d
+			x: 5.511904761904773d
+			y: -6.43275403911565d
 		}
 		{
 			dependencies: ["6099D2F4EEE9112A"]
@@ -445,8 +445,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.932124588116487d
-			y: -7.189184736394559d
+			x: 5.518725752019556d
+			y: -7.175170068027214d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -457,8 +457,8 @@
 				item: "immersiveengineering:craftingtable"
 				type: "item"
 			}]
-			x: 4.530612244897966d
-			y: -8.0d
+			x: 5.511904761904773d
+			y: -7.985950786564647d
 		}
 		{
 			dependencies: [
@@ -478,8 +478,8 @@
 				type: "item"
 			}]
 			title: "Personal Crafting Book"
-			x: 5.503553159545056d
-			y: -8.00551126700681d
+			x: 6.484845676551863d
+			y: -7.991462053571457d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -500,8 +500,8 @@
 				type: "item"
 			}]
 			title: "Creosote to energy"
-			x: 2.483144996279748d
-			y: -7.985103103741501d
+			x: 2.0928571428571345d
+			y: -7.491943027210866d
 		}
 		{
 			dependencies: [
@@ -578,8 +578,8 @@
 				item: "immersiveengineering:windmill_sail"
 				type: "item"
 			}]
-			x: 3.480065502763601d
-			y: -8.72602040816325d
+			x: 2.107823129251699d
+			y: -9.128677721088437d
 		}
 		{
 			dependencies: ["15B5CF1F309CA82A"]
@@ -604,8 +604,8 @@
 				}
 			]
 			title: "Kinetic Clean Energy"
-			x: 3.4596573394982926d
-			y: -7.991326530612227d
+			x: 2.0857142857142676d
+			y: -8.23241921768706d
 		}
 		{
 			dependencies: ["031595756B809ADC"]
@@ -626,7 +626,7 @@
 				"22BE56C3CA087A04"
 				"15B5CF1F309CA82A"
 			]
-			description: ["You can change wood type of wheel with clicking planks on it."]
+			description: ["Just bigger and better."]
 			id: "67C1B62B8C68F0F1"
 			shape: "diamond"
 			size: 0.7d
@@ -818,7 +818,7 @@
 		}
 		{
 			dependencies: ["15C30310B03E4F79"]
-			description: ["Can crush gem blocks into items and create plates a little bit cheaper."]
+			description: ["Can crush gem blocks into items and create plates cheaper."]
 			id: "793ABF03A8827044"
 			shape: "diamond"
 			size: 0.85d
@@ -1164,8 +1164,8 @@
 				}
 			]
 			title: "Steam Turbine"
-			x: 0.5472789115646194d
-			y: -10.5d
+			x: -0.6258503401360542d
+			y: -11.472789115646265d
 		}
 		{
 			dependencies: ["4A33371DB94DFD62"]
@@ -1198,8 +1198,8 @@
 				}
 			]
 			title: "Modular Boilers"
-			x: 0.5529459635416828d
-			y: -9.496412627551003d
+			x: -0.6054421768707456d
+			y: -10.574829931972793d
 		}
 		{
 			dependencies: ["6AF4C17E9C8FF9DC"]
@@ -1212,8 +1212,8 @@
 				item: "railcraft:fluid_fueled_firebox"
 				type: "item"
 			}]
-			x: 1.1544217687074734d
-			y: -8.92857142857143d
+			x: -0.03401360544216914d
+			y: -10.023809523809526d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -1494,7 +1494,7 @@
 				""
 				"After getting a research notes you need to use it in your hands to increase the chance of next mutations. But how exactly? Well the notes always says which species need to be breed in the Bee Hives or Apiary to get a new genomes!"
 				""
-				"&lWith this new discovery lets continue in \"Industrial Beekeeper\" tab.\""
+				"&lWith this new discovery lets continue in \"Industrial Beekeeper\" tab.&r"
 			]
 			id: "2A300C72DC0C7533"
 			rewards: [{
@@ -1514,8 +1514,8 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["7A0C939E0FE540EC"]
-			description: ["Do you ever wanted to make a bunch of charcoal?"]
+			dependencies: ["3129F95624CBEDD4"]
+			description: ["Do you ever wanted to make &oa bunch&r of charcoal?"]
 			id: "3672AA82CBFB10E0"
 			shape: "diamond"
 			tasks: [{
@@ -1524,8 +1524,8 @@
 				type: "item"
 			}]
 			title: "Stucked on charcoal"
-			x: -1.0d
-			y: -7.0d
+			x: 2.095238095238102d
+			y: -1.8428571428571416d
 		}
 		{
 			dependencies: ["69057739C5B7EB11"]
@@ -1538,8 +1538,8 @@
 				item: "immersiveengineering:workbench"
 				type: "item"
 			}]
-			x: 4.54096812553145d
-			y: -9.707892219387745d
+			x: 5.5222606425382565d
+			y: -9.693843005952392d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -1587,14 +1587,14 @@
 			description: ["With Tinker's Anvil at your disposal now you can make more different custom tools."]
 			id: "719A86D87C805DEB"
 			shape: "rsquare"
-			size: 1.2d
+			size: 1.0d
 			tasks: [{
 				id: "4C5D614C862D962E"
 				item: "tconstruct:tinkers_anvil"
 				type: "item"
 			}]
-			x: -1.089984255420923d
-			y: -11.172177933673456d
+			x: -4.605442176870746d
+			y: -10.472789115646261d
 		}
 		{
 			dependencies: [
@@ -1714,8 +1714,8 @@
 				type: "item"
 			}]
 			title: "Industrial Banners"
-			x: 5.1d
-			y: -8.7d
+			x: 6.081292517006807d
+			y: -8.685950786564646d
 		}
 		{
 			dependencies: ["11CAA0BF384301E3"]
@@ -1736,8 +1736,8 @@
 				type: "item"
 			}]
 			title: "Components"
-			x: 4.54096812553145d
-			y: -10.95112404336733d
+			x: 5.5222606425382565d
+			y: -10.937074829931976d
 		}
 		{
 			dependencies: [
@@ -2026,8 +2026,8 @@
 				}
 			]
 			title: "Treated Gunpowder"
-			x: 5.5d
-			y: -5.5d
+			x: 5.535714285714299d
+			y: -5.389455782312922d
 		}
 		{
 			dependencies: ["61DA87FD5E45D2BC"]
@@ -2086,6 +2086,61 @@
 			}]
 			x: -5.449547426392407d
 			y: -4.201124043367329d
+		}
+		{
+			dependencies: [
+				"15B5CF1F309CA82A"
+				"1A155790CD83B2A7"
+			]
+			description: ["Refined casing for more precise mechaanisms."]
+			id: "4DB35E534F12ABA6"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "52069A18677107A9"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 3.4642857142857295d
+			y: -9.607142857142847d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Create air stream that push or pull things around. Can use different catalysts to proccess items."]
+			id: "621E6E9756E60D93"
+			subtitle: "Blown away!"
+			tasks: [{
+				id: "0C9519C78E083041"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -11.224489795918387d
+		}
+		{
+			dependencies: ["621E6E9756E60D93"]
+			id: "04DAC545503E54B2"
+			shape: "diamond"
+			size: 0.65d
+			tasks: [{
+				id: "22EEB87EDF23F9E3"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			x: -2.479081632653063d
+			y: -12.0d
+		}
+		{
+			dependencies: ["621E6E9756E60D93"]
+			id: "121519A8BF334E14"
+			size: 0.5d
+			tasks: [{
+				id: "0E4B28AA52856E41"
+				item: "create:nozzle"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -11.724489795918387d
 		}
 	]
 	title: "Bronze Age"

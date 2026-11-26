@@ -1,4 +1,5 @@
 {
+	autofocus_id: "04EAB75326EB42CF"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "simple_kinetics"
@@ -20,37 +21,23 @@
 			linked_quest: "7B64D58280611794"
 			shape: "octagon"
 			size: 0.65d
-			x: 2.6d
-			y: -8.125d
-		}
-		{
-			id: "6A111940E2357F42"
-			linked_quest: "5186990A391ADB8D"
-			shape: "octagon"
-			x: 6.892857142857139d
-			y: -1.4049319727891003d
-		}
-		{
-			id: "0C71DFCC9CE99A0F"
-			linked_quest: "0E4D4401AF3EDF54"
-			shape: "hexagon"
-			size: 1.2d
-			x: 3.0d
-			y: -6.0d
+			x: 2.0207482993197416d
+			y: -10.273894557823109d
 		}
 		{
 			id: "7F316268B078E675"
 			linked_quest: "67C1B62B8C68F0F1"
 			shape: "diamond"
-			x: 4.973469387755102d
-			y: -0.801870748299315d
+			size: 1.2d
+			x: 2.4d
+			y: -0.6d
 		}
 		{
-			id: "2A342AA75F4CB6D9"
-			linked_quest: "579226E41F011F26"
+			id: "36C29935BA17E4DE"
+			linked_quest: "5C9C2540BA21612F"
 			shape: "hexagon"
-			x: 7.0d
-			y: -6.0d
+			x: 1.7397959183673493d
+			y: -7.5714285714285765d
 		}
 	]
 	quests: [
@@ -74,7 +61,7 @@
 		}
 		{
 			dependencies: ["7F493483338AF21E"]
-			description: ["Toolbox can hold up to 8 items inside that you can take from it remotely using a keybind (ALT bu default). Its range not infinite, so consider putting it closer to you workplace. "]
+			description: ["Toolbox can hold up to 8 items inside that you can take from it remotely using a keybind (ALT bu default). Its range not infinite, but it can be picked up with one click."]
 			id: "0DE96BB04654485F"
 			shape: "diamond"
 			size: 0.7d
@@ -88,6 +75,7 @@
 		}
 		{
 			dependencies: ["7F493483338AF21E"]
+			description: ["Shows useful information when looking at Create things."]
 			id: "1C9C2BDF0492D3E9"
 			shape: "diamond"
 			size: 0.7d
@@ -168,7 +156,7 @@
 		}
 		{
 			dependencies: ["691DD9FDCE3E58DA"]
-			description: ["The most simple kinetic power generator you can make. "]
+			description: ["The most simple kinetic power generator you can make."]
 			id: "22BE56C3CA087A04"
 			shape: "rsquare"
 			size: 1.2d
@@ -191,66 +179,34 @@
 				item: "create_new_age:stirling_engine"
 				type: "item"
 			}]
-			x: 4.973469387755102d
-			y: -2.0059523809523725d
+			x: 5.5d
+			y: -6.5d
 		}
 		{
-			dependencies: ["22BE56C3CA087A04"]
+			dependencies: ["1BF667E512906C7F"]
 			description: [""]
 			icon: "create:mechanical_mixer"
 			id: "2185592369B7D5FC"
-			tasks: [
-				{
-					id: "75EF127A24F42C09"
-					item: "create:mechanical_mixer"
-					type: "item"
-				}
-				{
-					id: "174DEA2B5FE97FAD"
-					item: "create:basin"
-					type: "item"
-				}
-			]
-			x: -1.0d
-			y: -5.0d
+			tasks: [{
+				id: "75EF127A24F42C09"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 0.7146258503401484d
+			y: -5.88248299319725d
 		}
 		{
-			dependencies: ["22BE56C3CA087A04"]
+			dependencies: ["04EAB75326EB42CF"]
 			description: ["Grinds some low tier items."]
 			id: "567F66C720FFFE6D"
-			shape: "diamond"
+			shape: "rsquare"
 			tasks: [{
 				id: "57F2973B980D99FD"
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: -1.4199829931972516d
-			y: -0.9051020408163168d
-		}
-		{
-			dependencies: ["22BE56C3CA087A04"]
-			description: ["Create air stream that push or pull things around. Can use different catalysts to proccess items."]
-			id: "621E6E9756E60D93"
-			subtitle: "Blown away!"
-			tasks: [{
-				id: "0C9519C78E083041"
-				item: "create:encased_fan"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["621E6E9756E60D93"]
-			id: "121519A8BF334E14"
-			size: 0.5d
-			tasks: [{
-				id: "0E4B28AA52856E41"
-				item: "create:nozzle"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -3.5d
+			x: -2.452380952380956d
+			y: -2.8311224489795705d
 		}
 		{
 			dependencies: [
@@ -280,7 +236,7 @@
 		{
 			dependencies: ["25951FDCB7908145"]
 			description: [
-				"Ponder is one of the most useful features of Create mod. Press 'W' on item in your inventory and you will see animated guide of how to use the blocks or items. "
+				"Ponder is one of the most useful features of Create mod. Press and hold 'W' on item in your inventory and you will see animated guide of how to use the blocks or items. "
 				""
 				"Instead of explaining things quests will say interesting facts. But if there no ponder then quest will still tell you what and how to use thing."
 			]
@@ -296,29 +252,23 @@
 			y: 0.06700680272108883d
 		}
 		{
-			dependencies: [
-				"22BE56C3CA087A04"
-				"7A0C939E0FE540EC"
+			dependencies: ["50E059F7BCAE779E"]
+			description: [
+				"With help of Mechanical Press you now can get plates with 1 to 1 ratio. No more wasted metals!"
+				""
+				"Using it with Basin you even can pack some items or craft special stuff."
 			]
-			description: ["With help of Mechanical Press you now can get plates with 1 to 1 ratio. No more wasted metals!"]
 			icon: "create:mechanical_press"
 			id: "1A3BA4BEFD861942"
 			shape: "rsquare"
 			size: 1.2d
-			tasks: [
-				{
-					id: "04010810049E0C99"
-					item: "create:mechanical_press"
-					type: "item"
-				}
-				{
-					id: "2982F274BA157CCF"
-					item: "create:depot"
-					type: "item"
-				}
-			]
-			x: 0.7250000000000085d
-			y: -5.943877551020414d
+			tasks: [{
+				id: "04010810049E0C99"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 2.940476190476197d
+			y: -8.366666666666667d
 		}
 		{
 			dependencies: [
@@ -355,7 +305,7 @@
 				}
 			]
 			x: 2.0d
-			y: -7.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["188E10C139F48264"]
@@ -405,36 +355,38 @@
 				}
 			]
 			title: "Filling Tanks"
-			x: 2.575340136054436d
-			y: -6.981972789115623d
+			x: 1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["50E059F7BCAE779E"]
 			description: ["Cut blocks infront and proccess items like stonecutter."]
 			id: "17304F0AA96C369E"
+			shape: "diamond"
 			tasks: [{
 				id: "1CBC9D7B52E79AD5"
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.0d
+			x: 4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["50E059F7BCAE779E"]
 			description: ["Drill blocks infront of it."]
 			hide_dependent_lines: true
 			id: "4D1A4AA16B63FB77"
+			shape: "diamond"
 			tasks: [{
 				id: "38D5D8B1ADDFF417"
 				item: "create:mechanical_drill"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -0.5d
+			x: 2.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["22BE56C3CA087A04"]
+			dependencies: ["50E059F7BCAE779E"]
 			id: "288826470DDF0F30"
 			rewards: [
 				{
@@ -463,8 +415,8 @@
 				}
 			]
 			title: "Heat Pipes"
-			x: 1.5d
-			y: -4.5d
+			x: 4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["288826470DDF0F30"]
@@ -483,26 +435,35 @@
 				}
 			]
 			title: "Solar Heating Plate"
-			x: 4.5d
-			y: -3.5d
+			x: 5.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["2185592369B7D5FC"]
-			description: [""]
+			dependencies: ["1BF667E512906C7F"]
+			description: ["Can be used to boil ingredients. Place on top of Basin and open like trapdoor to drop items manually."]
 			id: "3CD6BF0CF344C8A1"
-			shape: "diamond"
-			size: 0.7d
+			shape: "rsquare"
+			size: 1.0d
 			tasks: [{
 				id: "20F1151AF5039D7A"
 				item: "createdieselgenerators:basin_lid"
 				type: "item"
 			}]
-			x: -1.75d
-			y: -4.2d
+			x: -1.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["2185592369B7D5FC"]
-			description: ["With help of cardboard you can make nametags and use it for books or item frames."]
+			dependencies: [
+				"2185592369B7D5FC"
+				"209DE8284AADF311"
+				"793ABF03A8827044"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"With help of cardboard you can make nametags and use it for books or item frames."
+				""
+				"But most of it uses relate to special Packages system you can find in &l\"Storage Solutions\"&r."
+			]
 			icon: "create:cardboard"
 			id: "67A60A92B37AEADD"
 			shape: "hexagon"
@@ -520,8 +481,8 @@
 				}
 			]
 			title: "Cardboard"
-			x: -1.0d
-			y: -7.5d
+			x: 0.6619047619047791d
+			y: -7.129336734693844d
 		}
 		{
 			dependencies: ["67A60A92B37AEADD"]
@@ -588,8 +549,8 @@
 				}
 			]
 			title: "Not! That is not a Solid Snake!"
-			x: -0.9960884353741335d
-			y: -8.781972789115628d
+			x: -0.07653061224490898d
+			y: -7.125850340136054d
 		}
 		{
 			dependencies: ["1A3BA4BEFD861942"]
@@ -632,8 +593,8 @@
 				}
 			]
 			title: "Additional Molds"
-			x: 0.04948979591840441d
-			y: -5.296938775510185d
+			x: 2.9285714285714235d
+			y: -9.404761904761916d
 		}
 		{
 			dependencies: ["2185592369B7D5FC"]
@@ -647,11 +608,11 @@
 				item: "createdieselgenerators:gray_cement_bucket"
 				type: "item"
 			}]
-			x: 0.04158163265306314d
-			y: -4.4812925170068d
+			x: 1.4d
+			y: -5.6d
 		}
 		{
-			dependencies: ["22BE56C3CA087A04"]
+			dependencies: ["04EAB75326EB42CF"]
 			description: ["Can make wires and rods."]
 			id: "6157725B6CC022A4"
 			shape: "diamond"
@@ -660,8 +621,8 @@
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
-			x: -1.3914115646258267d
-			y: -1.962244897959181d
+			x: 2.4945578231292713d
+			y: -2.89336734693874d
 		}
 		{
 			dependencies: ["6157725B6CC022A4"]
@@ -672,23 +633,25 @@
 				item: "createaddition:barbed_wire"
 				type: "item"
 			}]
-			x: -2.162840136054399d
-			y: -1.962244897959181d
+			x: 2.0945578231292714d
+			y: -3.4933673469387396d
 		}
 		{
 			dependencies: ["311F17E0AB89A1B2"]
 			description: ["Can help separate some items with spinning force."]
 			id: "0DAACB42DF4A9056"
+			shape: "diamond"
 			tasks: [{
 				id: "504F7EAC0B8A2901"
 				item: "vintageimprovements:centrifuge"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.0d
+			x: 2.9945578231292713d
+			y: -2.39336734693874d
 		}
 		{
-			dependencies: ["22BE56C3CA087A04"]
+			dependencies: ["6157725B6CC022A4"]
+			description: ["Mechanism to make various springs from rods and wires."]
 			id: "311F17E0AB89A1B2"
 			shape: "diamond"
 			size: 1.0d
@@ -697,19 +660,21 @@
 				item: "vintageimprovements:spring_coiling_machine"
 				type: "item"
 			}]
-			x: -1.3999999999999995d
-			y: 0.15000000000000002d
+			x: 2.9945578231292713d
+			y: -3.39336734693874d
 		}
 		{
 			dependencies: ["311F17E0AB89A1B2"]
+			description: ["Can unpack items and sieve leaves."]
 			id: "1DB745BC4D6EDCA5"
+			shape: "diamond"
 			tasks: [{
 				id: "736A270EE00E7B37"
 				item: "vintageimprovements:vibrating_table"
 				type: "item"
 			}]
-			x: -2.4500000000000006d
-			y: -0.6999999999999998d
+			x: 3.4945578231292713d
+			y: -2.89336734693874d
 		}
 		{
 			dependencies: ["1DB745BC4D6EDCA5"]
@@ -720,21 +685,8 @@
 				item: "vintageimprovements:redstone_module"
 				type: "item"
 			}]
-			x: -3.15d
-			y: -1.4d
-		}
-		{
-			dependencies: ["621E6E9756E60D93"]
-			id: "04DAC545503E54B2"
-			shape: "diamond"
-			size: 0.65d
-			tasks: [{
-				id: "22EEB87EDF23F9E3"
-				item: "create_connected:empty_fan_catalyst"
-				type: "item"
-			}]
-			x: 2.020918367346937d
-			y: -3.7755102040816126d
+			x: 3.8445578231292714d
+			y: -3.74336734693874d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -775,35 +727,11 @@
 					type: "item"
 				}
 			]
-			x: 4.442857142857136d
-			y: -1.4141156462584945d
+			x: -0.6d
+			y: -0.6d
 		}
 		{
-			dependencies: ["54661956247869DD"]
-			dependency_requirement: "one_completed"
-			description: ["Simple chunk loader that use rotational power. Catch ghast by clicking it with empty one!"]
-			icon: "create_power_loader:andesite_chunk_loader"
-			id: "242CE134590880BD"
-			shape: "diamond"
-			size: 1.0d
-			tasks: [
-				{
-					id: "620FF69151ADD48F"
-					item: "create_power_loader:empty_andesite_chunk_loader"
-					type: "item"
-				}
-				{
-					id: "2C636304F5A3EDC4"
-					item: "create_power_loader:andesite_chunk_loader"
-					type: "item"
-				}
-			]
-			title: "Ghast Chunk Loader"
-			x: 5.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["25951FDCB7908145"]
+			dependencies: ["1BF667E512906C7F"]
 			description: ["Filters needed when you want ceirtan output or input when working with Create mod machines. &oEspecilly useful if there some overlap in recipes!&r"]
 			id: "1E77A0BEA339B0BB"
 			rewards: [
@@ -820,6 +748,7 @@
 					type: "item"
 				}
 			]
+			shape: "diamond"
 			tasks: [
 				{
 					id: "6BDFE17E7811785E"
@@ -833,221 +762,35 @@
 				}
 			]
 			title: "Create Filters"
-			x: -0.42193877551017067d
-			y: 2.750680272108859d
+			x: -0.24455782312924157d
+			y: -5.287244897959162d
 		}
 		{
-			dependencies: ["2185592369B7D5FC"]
+			dependencies: ["1A3BA4BEFD861942"]
 			description: [
-				"Bulk Fermentor can procces and help to craft many things."
+				"Bulk Fermentor can procces items and liquids to get new results. One block is enough to start, but you can make it bigger to speed up the processes."
 				""
-				"One block is enough to start, but you can make it bigger for more liquid storage."
+				"Bulk Fermenter can create &oRedstone Acid&r, but you can extract it only with kinetic pipes and Smart Fluid Pipe to filter output. So make first couple buckets manually."
+				""
+				"Another notable liquid is &oEthanol&r, that you can use to make &oBiodiesel&r."
 			]
+			icon: "createdieselgenerators:bulk_fermenter"
 			id: "209DE8284AADF311"
-			shape: "diamond"
-			tasks: [{
-				id: "3553C0677F1F17B2"
-				item: "createdieselgenerators:bulk_fermenter"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["7A0C939E0FE540EC"]
-			id: "54661956247869DD"
 			shape: "rsquare"
-			size: 1.2d
-			tasks: [{
-				id: "75946E4EDDDCAB70"
-				item: "create:empty_blaze_burner"
-				type: "item"
-			}]
-			x: 5.549489795918404d
-			y: -5.975510204081619d
-		}
-		{
-			dependencies: [
-				"54661956247869DD"
-				"5186990A391ADB8D"
-			]
-			dependency_requirement: "one_completed"
-			description: ["Generate Stress by heating water into steam."]
-			icon: "create:steam_engine"
-			id: "40B9ECFB3C0DB31F"
-			shape: "diamond"
-			size: 1.2d
 			tasks: [
 				{
-					id: "51660897DFAD0E55"
-					item: "create:steam_engine"
+					id: "3553C0677F1F17B2"
+					item: "createdieselgenerators:bulk_fermenter"
 					type: "item"
 				}
 				{
-					id: "5016667E8FD95F69"
-					item: "minecraft:campfire"
-					optional_task: true
+					id: "328FA3C3B6771401"
+					item: "immersiveengineering:redstone_acid_bucket"
 					type: "item"
 				}
 			]
-			x: 5.507908163265341d
-			y: -1.4078231292517032d
-		}
-		{
-			dependencies: ["54661956247869DD"]
-			description: ["Standart heater that use &mslavery&r help of Nether citizens!"]
-			id: "5B4C38C2E2CA7441"
-			tasks: [{
-				id: "05952F8B7DB80B45"
-				item: "create:blaze_burner"
-				type: "item"
-			}]
-			x: 4.549489795918404d
-			y: -6.975510204081619d
-		}
-		{
-			dependencies: ["54661956247869DD"]
-			description: ["Use Forge Energy to heat things. "]
-			id: "5CD12AC552AA4061"
-			tasks: [{
-				id: "117966985BB1862C"
-				item: "moreburners:electric_burner"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"54661956247869DD"
-				"288826470DDF0F30"
-			]
-			description: ["Consume heat system that get generated by solar heating plates or nuclear reactors."]
-			id: "0DB76665DD848A9A"
-			tasks: [{
-				id: "49DC50BF84CA042D"
-				item: "create_new_age:heater"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"54661956247869DD"
-				"043F7FFDC6430B34"
-			]
-			description: ["The most effective fuel for Burner is &lGasoline&r. It is only one which allow it to reach &osuperheated&r state."]
-			id: "036AB4BD3B27FB1B"
-			rewards: [{
-				id: "6E53A882F5DBD1E9"
-				item: "create:copper_valve_handle"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0E683E95464CDCDE"
-				item: "createdieselgenerators:burner"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["5CD12AC552AA4061"]
-			description: ["Allow energy heater get superheated state. Apply it on the block as upgrade."]
-			id: "1DA15BD0E020EBB9"
-			size: 0.6d
-			tasks: [{
-				id: "77589BB2B73B66EA"
-				item: "moreburners:heat_upgrade"
-				type: "item"
-			}]
-			x: 6.494302721088459d
-			y: -4.208163265306137d
-		}
-		{
-			dependencies: ["5B4C38C2E2CA7441"]
-			id: "13992CA785DBF66B"
-			size: 0.6d
-			tasks: [{
-				id: "585354293C63CD22"
-				item: "create:blaze_cake"
-				type: "item"
-			}]
-			x: 3.9d
-			y: -7.5d
-		}
-		{
-			dependencies: ["5B4C38C2E2CA7441"]
-			id: "005DB10C76DA5354"
-			size: 0.7d
-			tasks: [{
-				id: "0451DA21192C9998"
-				item: "createaddition:straw"
-				type: "item"
-			}]
-			x: 4.565051020408191d
-			y: -7.854761904761894d
-		}
-		{
-			dependencies: ["54661956247869DD"]
-			id: "34517076E949A7C5"
-			shape: "diamond"
-			size: 0.6d
-			tasks: [
-				{
-					id: "318CEF8A9233AD04"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"undermod:capability_item_life_leech": {
-								power: 1
-							}
-						}
-						id: "create_sa:blazing_cleaver"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "07B333E4952E86FF"
-					item: {
-						Count: 1
-						id: "create_sa:blazing_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "79655E3F2E3C4762"
-					item: {
-						Count: 1
-						id: "create_sa:blazing_axe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "74DF3E24DB6E2AB5"
-					item: {
-						Count: 1
-						id: "create_sa:blazing_shovel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Blazing Tools"
-			x: 5.1d
-			y: -4.5d
+			x: 0.636394557823138d
+			y: -8.355527210884336d
 		}
 		{
 			dependencies: ["22BE56C3CA087A04"]
@@ -1164,6 +907,7 @@
 							HasBulletInBarrel: 1b
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -1175,6 +919,7 @@
 							AttachmentId: "create_armorer:muzzle_refit_iron_spike"
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1198,24 +943,150 @@
 			y: 1.7736394557823303d
 		}
 		{
-			dependencies: ["311F17E0AB89A1B2"]
+			dependencies: [
+				"311F17E0AB89A1B2"
+				"1BF667E512906C7F"
+			]
+			description: [
+				"Can compress things into blocks."
+				""
+				"Have two operating mods, that can be changed with Wrench. "
+			]
 			icon: "vintageimprovements:vacuum_chamber"
 			id: "50E059F7BCAE779E"
+			shape: "rsquare"
+			tasks: [{
+				id: "03110AF03D89AB41"
+				item: "vintageimprovements:vacuum_chamber"
+				type: "item"
+			}]
+			title: "Mechanical Compressor"
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["22BE56C3CA087A04"]
+			description: ["Foundation for your kinetic machines. Use axe at your disposal to strip any wood log, then just click with Andesit Alloy! "]
+			id: "04EAB75326EB42CF"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "4A8AC5B28A443CC2"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 0.7380952380952408d
+			y: -2.8692176870748156d
+		}
+		{
+			dependencies: ["04EAB75326EB42CF"]
+			description: ["Basin is brother of cauldron that other kinetic machines use for their recipes."]
+			id: "1BF667E512906C7F"
+			shape: "rsquare"
+			tasks: [{
+				id: "39039AE651B6E654"
+				item: "create:basin"
+				type: "item"
+			}]
+			x: 0.7249999999999943d
+			y: -4.471088435374149d
+		}
+		{
+			dependencies: [
+				"3CD6BF0CF344C8A1"
+				"209DE8284AADF311"
+				"567F66C720FFFE6D"
+			]
+			description: [
+				"Advanced Create component made of polished Rose Quarts."
+				""
+				"To grow Rose Quartz you need to put two components into Basin closed by Lid: Quartz Dust and Redstone Acid. "
+				""
+				"After process ended you need to craft Sandpaper and put it in your offhand while Rose Quarts in main. Hold right click to polish them into refined state. A little bit of plating afterwards and you now have Electron Tube!"
+				""
+				"&lTo be continued in \"Brass Machinations\" tab.&r"
+			]
+			icon: "create:electron_tube"
+			id: "1E7D1485FC28B70C"
+			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
-					id: "03110AF03D89AB41"
-					item: "vintageimprovements:vacuum_chamber"
+					id: "5E1217AAABEBC152"
+					item: "create:rose_quartz"
 					type: "item"
 				}
 				{
-					id: "7E82CA137F89E880"
-					item: "create:basin"
+					id: "204562095B7B9A57"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:sandpaper"
+						}
+					}
+					title: "Sandpapers"
+					type: "item"
+				}
+				{
+					id: "2D2648C17DB7D0E6"
+					item: "create:electron_tube"
 					type: "item"
 				}
 			]
-			title: "Mechanical Compressor"
-			x: -3.0749999999999957d
-			y: 0.16649659863946908d
+			x: -2.5166666666666586d
+			y: -8.306675170068015d
+		}
+		{
+			dependencies: ["1E7D1485FC28B70C"]
+			description: ["Automate your Rose Quartz polishing!"]
+			id: "248AE8D941476C47"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "4264093076A2A562"
+				item: "vintageimprovements:belt_grinder"
+				type: "item"
+			}]
+			x: -2.505782312925149d
+			y: -9.595238095238095d
+		}
+		{
+			dependencies: ["04EAB75326EB42CF"]
+			description: [""]
+			id: "7950CD25991A2CD6"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "58FF435816BD1777"
+					item: "create:depot"
+					type: "item"
+				}
+				{
+					id: "06D0B298A9832A90"
+					item: "create:weighted_ejector"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -0.1666666666666714d
+			y: -3.60255102040815d
+		}
+		{
+			dependencies: ["188E10C139F48264"]
+			id: "015E916A3E3700BE"
+			shape: "diamond"
+			tasks: [{
+				id: "54270BCAEF76AF9E"
+				item: {
+					Count: 1
+					id: "create_sa:block_picker"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.3125850340136083d
+			y: -10.125340136054401d
 		}
 	]
 	title: "Simple Mechanisms"

@@ -11,15 +11,15 @@
 			id: "29EEF1CFBE826818"
 			linked_quest: "5C9C2540BA21612F"
 			shape: "hexagon"
-			x: 0.8190476190476375d
-			y: -11.726897321428552d
+			x: 1.0030612244898123d
+			y: -13.5d
 		}
 		{
-			id: "14C672FDFF64D846"
-			linked_quest: "745A282BA4A843D5"
-			shape: "octagon"
-			x: 2.209523809523809d
-			y: -8.738095238095234d
+			id: "005DF84327CE400B"
+			linked_quest: "7B2C8205EC91FAA1"
+			shape: "rsquare"
+			x: 2.5d
+			y: -8.0d
 		}
 	]
 	quests: [
@@ -130,7 +130,7 @@
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
-			description: ["Can crush things into dusts, but most not"]
+			description: ["Can crush things into dusts, but most notably use to finally get geology veins ores with better ratio."]
 			icon: "immersiveengineering:crusher"
 			id: "20FA9C099EFFB9A7"
 			shape: "gear"
@@ -172,8 +172,8 @@
 					type: "item"
 				}
 			]
-			x: 2.4d
-			y: -6.6d
+			x: 2.2238095238095283d
+			y: -6.535544217687082d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -242,8 +242,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -6.499999999999998d
+			x: -2.847619047619048d
+			y: -6.326360544217671d
 		}
 		{
 			dependencies: [
@@ -261,8 +261,8 @@
 				type: "item"
 			}]
 			title: "Repurposing wastes"
-			x: 0.8166666666666771d
-			y: -9.762611607142837d
+			x: -2.8666666666666742d
+			y: -12.078401360544234d
 		}
 		{
 			dependencies: [
@@ -321,8 +321,8 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: -11.5d
+			x: 3.684013605442175d
+			y: -12.273102678571448d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -427,8 +427,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: -6.5d
+			x: 1.1346938775510083d
+			y: -6.365816326530613d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -472,8 +472,8 @@
 					type: "item"
 				}
 			]
-			x: 1.2d
-			y: -6.0d
+			x: -0.6d
+			y: -6.6d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -626,8 +626,8 @@
 					type: "item"
 				}
 			]
-			x: 3.461904761904769d
-			y: -7.907142857142844d
+			x: 3.645918367346944d
+			y: -8.680245535714292d
 		}
 		{
 			dependencies: ["5FDD4C98C139F016"]
@@ -715,8 +715,8 @@
 				type: "item"
 			}]
 			title: "Molds for everything!"
-			x: 1.0d
-			y: -7.0d
+			x: -0.5809523809523824d
+			y: -9.935544217687088d
 		}
 		{
 			dependencies: [
@@ -736,6 +736,7 @@
 				}
 			}
 			id: "188646189318B493"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "57A02E9333FA6CA2"
@@ -762,8 +763,8 @@
 				}
 			]
 			title: "Fine Electrodes"
-			x: 3.5d
-			y: -9.5d
+			x: 3.661564625850339d
+			y: -9.930755739795941d
 		}
 		{
 			dependencies: ["5D42522665506478"]
@@ -833,8 +834,8 @@
 					type: "item"
 				}
 			]
-			x: -2.049999999999983d
-			y: -8.291183035714274d
+			x: -5.3999999999999995d
+			y: -11.4d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -885,8 +886,8 @@
 				}
 			]
 			title: "Unseen veins"
-			x: -3.5999999999999996d
-			y: -6.6d
+			x: -5.3999999999999995d
+			y: -3.5999999999999996d
 		}
 		{
 			dependencies: [
@@ -911,8 +912,8 @@
 				}
 			]
 			title: "Duroplast"
-			x: 0.7833333333333456d
-			y: -8.447619047619032d
+			x: -0.5333333333333314d
+			y: -11.268877551020424d
 		}
 		{
 			dependencies: ["5C9C2540BA21612F"]
@@ -973,8 +974,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0909863945578295d
-			y: -10.2d
+			x: -5.390986394557829d
+			y: -13.2d
 		}
 		{
 			dependencies: ["0375476849A35537"]
@@ -993,8 +994,8 @@
 				item: "immersiveengineering:earmuffs"
 				type: "item"
 			}]
-			x: -2.1d
-			y: -11.1d
+			x: -5.3999999999999995d
+			y: -14.1d
 		}
 		{
 			dependencies: ["45B0F7A0D28F319F"]
@@ -1006,7 +1007,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -12.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["5C9C2540BA21612F"]
@@ -1054,7 +1055,7 @@
 			]
 			title: "Heavy Tools"
 			x: -2.0d
-			y: -13.5d
+			y: -16.0d
 		}
 		{
 			dependencies: ["45B0F7A0D28F319F"]
@@ -1072,7 +1073,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -14.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["45B0F7A0D28F319F"]
@@ -1130,7 +1131,7 @@
 			]
 			title: "Heavy Drills"
 			x: -3.5d
-			y: -14.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["45B0F7A0D28F319F"]
@@ -1169,7 +1170,7 @@
 			]
 			title: "Heavy Upgrades"
 			x: -3.5d
-			y: -13.5d
+			y: -16.0d
 		}
 		{
 			dependencies: ["45B0F7A0D28F319F"]
@@ -1220,7 +1221,7 @@
 			]
 			title: "Heavy Sawblades"
 			x: -3.5d
-			y: -12.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["45B0F7A0D28F319F"]
@@ -1264,7 +1265,7 @@
 				}
 			]
 			x: 0.0d
-			y: -13.5d
+			y: -16.0d
 		}
 		{
 			dependencies: [
@@ -1279,8 +1280,8 @@
 				item: "immersiveengineering:herbicide_bucket"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -13.5d
+			x: 8.5d
+			y: -16.0d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -1482,8 +1483,8 @@
 				}
 			]
 			title: "Power of Magnets"
-			x: 0.0d
-			y: -7.5d
+			x: 3.57585034013605d
+			y: -10.987898596938798d
 		}
 		{
 			dependencies: ["0729C937DEFF1E0B"]
@@ -1501,6 +1502,47 @@
 			}]
 			x: 3.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["7B2C8205EC91FAA1"]
+			description: [
+				"With some steel plating and energy you can boost production of this industrial metal."
+				""
+				"Place Preheaters on the sides of the Blast Furnace and give them power. &oFront side&r will output &oSlag&r, while &lback side&r will output &lsteel&r itself."
+				""
+				"Top part is items input."
+			]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "745A282BA4A843D5"
+			rewards: [{
+				id: "0CE7ADC1EA15951B"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					count: 27L
+					id: "68CFC7DD9D063B7B"
+					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "592251313E28E9FF"
+					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
+				{
+					id: "40CEA24B000E795E"
+					item: "immersiveengineering:advanced_blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Improved blasting"
+			x: 3.6285714285714334d
+			y: -7.504591836734697d
 		}
 	]
 	title: "Heavy Duty"

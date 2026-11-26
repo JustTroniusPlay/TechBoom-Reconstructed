@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         'ADA'
     ],
     {
-        C: 'immersiveengineering:cokebrick',
+        C: 'immersivetechnology:reinforced_coke_brick',
         B: '#railcraft:quarried',  //arg 3: the mapping object
         A: 'gtceu:coke_oven_bricks',
         D: '#railcraft:abyssal'

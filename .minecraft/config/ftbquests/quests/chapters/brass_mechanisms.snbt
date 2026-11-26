@@ -1,4 +1,5 @@
 {
+	autofocus_id: "7ED421A21A7BB90C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "brass_mechanisms"
@@ -8,20 +9,28 @@
 	order_index: 2
 	quest_links: [
 		{
-			id: "567528A927199C37"
-			linked_quest: "1A155790CD83B2A7"
-			shape: "hexagon"
-			size: 1.5d
-			x: 7.5d
-			y: 4.15d
-		}
-		{
 			id: "50DFA12EEBA8E8B5"
 			linked_quest: "49BFD7BD22B74CBD"
 			shape: "octagon"
 			size: 0.7d
-			x: 2.0180272108843553d
-			y: -4.055272108843528d
+			x: 3.673384353741511d
+			y: -2.759693877551001d
+		}
+		{
+			id: "1306E641114908A8"
+			linked_quest: "1E7D1485FC28B70C"
+			shape: "gear"
+			size: 1.5d
+			x: 7.037755102040812d
+			y: 3.3795918367347397d
+		}
+		{
+			id: "6908C0D8669DCB0A"
+			linked_quest: "4DB35E534F12ABA6"
+			shape: "gear"
+			size: 1.5d
+			x: 7.037755102040812d
+			y: 5.62959183673474d
 		}
 	]
 	quests: [
@@ -38,8 +47,8 @@
 				type: "item"
 			}]
 			title: "Crushing Wheels"
-			x: -1.5819727891156448d
-			y: -4.255272108843529d
+			x: 1.303911564625845d
+			y: -1.0421768707482673d
 		}
 		{
 			dependencies: ["2EF4C6591798F00E"]
@@ -73,8 +82,8 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -5.5d
+			x: 3.001062925170075d
+			y: -3.709693877551004d
 		}
 		{
 			dependencies: [
@@ -121,8 +130,8 @@
 				}
 			]
 			title: "Looking For Eternal Veins"
-			x: 1.0180272108843553d
-			y: -4.055272108843528d
+			x: 3.01909013605443d
+			y: -2.2649659863945324d
 		}
 		{
 			dependencies: [
@@ -143,11 +152,11 @@
 				title: "Molten Vents"
 				type: "checkmark"
 			}]
-			x: -3.23588435374149d
-			y: -4.2059523809524d
+			x: -0.35d
+			y: -0.9928571428571389d
 		}
 		{
-			dependencies: ["3D1CCF8E85981E52"]
+			dependencies: ["1E7D1485FC28B70C"]
 			description: ["Apply items to other items to craft things or can use tools like a player!"]
 			icon: "create:deployer"
 			id: "37FAA3D4CF96E9EE"
@@ -159,11 +168,14 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 10.2d
-			y: -0.6d
+			x: 11.485926870748308d
+			y: -0.5034013605442298d
 		}
 		{
-			dependencies: ["3D1CCF8E85981E52"]
+			dependencies: [
+				"1E7D1485FC28B70C"
+				"4DB35E534F12ABA6"
+			]
 			description: ["Capable of craft things right in the world! And can work with even bigger grids then 3x3!"]
 			id: "7B289C03327D9227"
 			rewards: [{
@@ -185,7 +197,7 @@
 			y: -0.6d
 		}
 		{
-			dependencies: ["7B289C03327D9227"]
+			dependencies: ["0852CB10008D7CDB"]
 			id: "42F2B3DC445CED5F"
 			shape: "diamond"
 			size: 1.0d
@@ -194,11 +206,14 @@
 				item: "create:wand_of_symmetry"
 				type: "item"
 			}]
-			x: 2.9615646258503077d
-			y: 3.1078231292516953d
+			x: 7.0859268707483025d
+			y: -4.973809523809521d
 		}
 		{
-			dependencies: ["7B289C03327D9227"]
+			dependencies: [
+				"49BFD7BD22B74CBD"
+				"0852CB10008D7CDB"
+			]
 			description: [""]
 			id: "35E21107F56A809E"
 			shape: "diamond"
@@ -214,15 +229,25 @@
 				}
 				type: "item"
 			}]
-			x: 3.4615646258503077d
-			y: 2.6078231292516953d
+			x: 6.5859268707483025d
+			y: -4.473809523809521d
 		}
 		{
-			dependencies: ["7B289C03327D9227"]
-			description: ["Little silly companion with modular abilities!"]
+			dependencies: ["0852CB10008D7CDB"]
+			description: [
+				"Little silly companion with modular abilities!"
+				""
+				"&lBrass Drill&r dron can brake blocks."
+				""
+				"&lCopper Magnet&r can attract items."
+				""
+				"&lVault Component&r add some storage to your drone."
+				""
+				"&lFan Component&r can push entities around."
+			]
 			icon: "create_sa:brass_drone_item"
 			id: "2D24B69CEABE3F73"
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "16DA750BAC91D902"
@@ -234,57 +259,33 @@
 					item: "create_sa:drone_controller"
 					type: "item"
 				}
+				{
+					id: "58F0327E4C5C7AC7"
+					item: "create_sa:brass_drill_head"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D9AD2954E63003C"
+					item: "create_sa:copper_magnet"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6AF384B2D78E4037"
+					item: "create_sa:fan_component"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "30E535D1D334F4F9"
+					item: "create_sa:vault_component"
+					optional_task: true
+					type: "item"
+				}
 			]
-			x: -1.4819727891156447d
-			y: -0.5552721088435284d
-		}
-		{
-			dependencies: ["2D24B69CEABE3F73"]
-			description: ["Additional storage for your drone!"]
-			id: "1D6381AA70C87A0E"
-			tasks: [{
-				id: "0C4D4AB1C4FFC13F"
-				item: "create_sa:vault_component"
-				type: "item"
-			}]
-			x: -0.4819727891156447d
-			y: -1.5552721088435284d
-		}
-		{
-			dependencies: ["2D24B69CEABE3F73"]
-			description: ["Push items!"]
-			id: "2071E54E3C20E9B0"
-			tasks: [{
-				id: "141DDDE49F857406"
-				item: "create_sa:fan_component"
-				type: "item"
-			}]
-			x: -0.4819727891156447d
-			y: 0.4447278911564716d
-		}
-		{
-			dependencies: ["2D24B69CEABE3F73"]
-			description: ["Give drone ability to break blocks."]
-			id: "0524C6A3A4051DAC"
-			tasks: [{
-				id: "7B51DF1E3282AFE1"
-				item: "create_sa:brass_drill_head"
-				type: "item"
-			}]
-			x: -2.4819727891156447d
-			y: 0.4447278911564716d
-		}
-		{
-			dependencies: ["2D24B69CEABE3F73"]
-			description: ["Can pick up blocks or entities and move them around! Attracks items too!"]
-			id: "37DC8B98BD8A2989"
-			tasks: [{
-				id: "599FE90366E31732"
-				item: "create_sa:copper_magnet"
-				type: "item"
-			}]
-			x: -2.4819727891156447d
-			y: -1.5552721088435284d
+			x: 7.5859268707483025d
+			y: -4.473809523809521d
 		}
 		{
 			dependencies: [
@@ -320,8 +321,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: -2.0d
+			x: 7.1d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -356,20 +357,24 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 7.1d
+			y: -2.0d
 		}
 		{
-			dependencies: ["3D1CCF8E85981E52"]
+			dependencies: [
+				"4DB35E534F12ABA6"
+				"1E7D1485FC28B70C"
+			]
 			id: "01F0CE0956D6A361"
+			shape: "diamond"
 			subtitle: "Clock out of blocks!"
 			tasks: [{
 				id: "6248A70F71D52EB6"
 				item: "create:clockwork_bearing"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 4.0d
+			x: 8.037755102040812d
+			y: 4.37959183673474d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -396,8 +401,8 @@
 					type: "item"
 				}
 			]
-			x: 2.4615646258503077d
-			y: 2.6078231292516953d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["35EFF8146D90FE18"]
@@ -420,11 +425,14 @@
 				}
 			]
 			title: "Hans bring the flammenwerfer"
-			x: 2.461564625850322d
-			y: 3.979251700680269d
+			x: 7.035586734693858d
+			y: 1.617687074829952d
 		}
 		{
-			dependencies: ["37FAA3D4CF96E9EE"]
+			dependencies: [
+				"37FAA3D4CF96E9EE"
+				"7B289C03327D9227"
+			]
 			description: ["Complex little thing for complex mechanisms."]
 			id: "0852CB10008D7CDB"
 			shape: "hexagon"
@@ -434,8 +442,8 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 10.2d
-			y: -5.3999999999999995d
+			x: 7.12878401360544d
+			y: -6.567687074829919d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
@@ -448,8 +456,8 @@
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -5.5d
+			x: 8.300892857142841d
+			y: -6.986054421768699d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
@@ -466,53 +474,8 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			x: 10.978401360544197d
-			y: -4.779251700680284d
-		}
-		{
-			dependencies: ["1A155790CD83B2A7"]
-			description: [
-				"Advanced Create component made of polished Rose Quarts."
-				""
-				"Craft Sandpaper and put it in your offhand while rose quarts in main. Hold right click to polish."
-			]
-			icon: "create:electron_tube"
-			id: "3D1CCF8E85981E52"
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "09034466495D9971"
-					item: "create:electron_tube"
-					type: "item"
-				}
-				{
-					id: "4D001CD0B2A9A1D6"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "create:sandpaper"
-						}
-					}
-					title: "Sand Paper"
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["3D1CCF8E85981E52"]
-			id: "16C915DA96722503"
-			shape: "diamond"
-			size: 0.7d
-			tasks: [{
-				id: "5A1C9770541C568A"
-				item: "vintageimprovements:belt_grinder"
-				type: "item"
-			}]
-			x: 7.490986394557808d
-			y: 2.1299319727890946d
+			x: 8.800892857142841d
+			y: -6.486054421768699d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
@@ -524,46 +487,43 @@
 				item: "create_connected:kinetic_battery"
 				type: "item"
 			}]
-			x: 10.883163265306102d
-			y: -6.160204081632671d
+			x: 7.800892857142841d
+			y: -7.486054421768699d
 		}
 		{
 			dependencies: ["37FAA3D4CF96E9EE"]
 			id: "70A43884F1EE4D7A"
-			shape: "rsquare"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "44897A9AC6CC214E"
 				item: "create_factory_logistics:fluid_mechanism"
 				type: "item"
 			}]
-			x: 10.21649659863943d
-			y: 0.6731292517006651d
+			x: 11.50242346938774d
+			y: 0.7697278911564354d
 		}
 		{
-			dependencies: ["3D1CCF8E85981E52"]
+			dependencies: [
+				"4DB35E534F12ABA6"
+				"1E7D1485FC28B70C"
+			]
 			id: "269BE244B9748C44"
+			shape: "diamond"
 			tasks: [{
 				id: "6404C505F94DD717"
 				item: "create:content_observer"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.0d
+			x: 7.037755102040812d
+			y: 4.37959183673474d
 		}
 		{
-			dependencies: ["1A155790CD83B2A7"]
-			id: "05641858A233D910"
-			tasks: [{
-				id: "3388CAAE5DE6EAB6"
-				item: "create:attribute_filter"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 5.4d
-		}
-		{
-			dependencies: ["7ED421A21A7BB90C"]
+			dependencies: [
+				"7ED421A21A7BB90C"
+				"0E0B2F4801CE1F38"
+			]
+			dependency_requirement: "one_completed"
 			description: ["You can put Filling and Fueling tanks into the Charm slot in your accessories. Your Jetpacks and Exoskeletons will use their fuel first."]
 			id: "3768363D8D069FD0"
 			shape: "diamond"
@@ -609,8 +569,8 @@
 				}
 			]
 			title: "Fueling Tanks"
-			x: 7.5d
-			y: -3.0d
+			x: 7.09362244897963d
+			y: -1.2680272108843766d
 		}
 		{
 			dependencies: ["75D2966F919D360B"]
@@ -621,8 +581,8 @@
 				item: "create:experience_nugget"
 				type: "item"
 			}]
-			x: -2.3819727891156446d
-			y: -5.305272108843528d
+			x: 0.5039115646258453d
+			y: -2.092176870748267d
 		}
 		{
 			dependencies: ["031B519BF4D06C79"]
@@ -684,12 +644,13 @@
 					type: "item"
 				}
 			]
-			x: -3.2239795918367236d
-			y: -5.313095238095261d
+			x: -0.3380952380952337d
+			y: -2.1d
 		}
 		{
 			dependencies: ["7ED421A21A7BB90C"]
 			id: "40B6B0C798A68B81"
+			shape: "diamond"
 			tasks: [{
 				id: "2337EDCABE644A51"
 				item: {
@@ -702,11 +663,12 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0E0B2F4801CE1F38"]
 			id: "2A4AFDE15F127A08"
+			shape: "diamond"
 			tasks: [{
 				id: "777F9D46FFCF46D3"
 				item: {
@@ -716,12 +678,13 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: 0.5d
+			x: 7.0859268707483025d
+			y: -3.9738095238095212d
 		}
 		{
 			dependencies: ["7ED421A21A7BB90C"]
 			id: "6C4582F5223A69AB"
+			shape: "diamond"
 			tasks: [{
 				id: "5E0386E552BA4E93"
 				item: {
@@ -733,11 +696,12 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: -3.0d
+			x: 7.6d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
+			description: ["Special tools with more block reach."]
 			id: "45859986D34FB28C"
 			shape: "diamond"
 			tasks: [
@@ -792,12 +756,13 @@
 				}
 			]
 			title: "Gilded Tools"
-			x: 1.963435374149661d
-			y: 2.1054421768707705d
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0E0B2F4801CE1F38"]
 			id: "6C7E622388940B38"
+			shape: "diamond"
 			size: 1.0d
 			tasks: [{
 				id: "5CA1B3CA6D717365"
@@ -808,8 +773,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.5d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
@@ -828,60 +793,70 @@
 					type: "item"
 				}
 			]
-			x: 3.963435374149661d
-			y: 2.1054421768707705d
+			x: 3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0852CB10008D7CDB"]
 			description: ["Simply craft more glass panes from one glass block."]
 			id: "14EC0F32B3ED3C33"
 			shape: "diamond"
-			size: 0.85d
+			size: 1.0d
 			tasks: [{
 				id: "0F976689CD00F595"
 				item: "vintageimprovements:laser"
 				type: "item"
 			}]
-			x: 9.597448979591817d
-			y: -4.826870748299335d
+			x: 5.5d
+			y: -6.5d
 		}
 		{
-			dependencies: [
-				"0852CB10008D7CDB"
-				"7B289C03327D9227"
-			]
+			dependencies: ["0852CB10008D7CDB"]
+			description: ["With help of Lathe you can make special heads for Curving Press. Now some small crafts can be automated. "]
+			icon: "vintageimprovements:curving_press"
 			id: "769E68032FC9806D"
-			tasks: [{
-				id: "44108E03742800E5"
-				item: "vintageimprovements:lathe"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -7.0d
+			shape: "diamond"
+			tasks: [
+				{
+					id: "44108E03742800E5"
+					item: "vintageimprovements:lathe"
+					type: "item"
+				}
+				{
+					id: "336A337FF70C0F35"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "vintageimprovements:curving_heads"
+						}
+					}
+					title: "Curving Heads"
+					type: "item"
+				}
+				{
+					id: "247F40DC049B79BA"
+					item: "vintageimprovements:curving_press"
+					type: "item"
+				}
+			]
+			title: "Pressing Curves"
+			x: 7.12742346938775d
+			y: -8.077891156462577d
 		}
 		{
 			dependencies: ["7B289C03327D9227"]
 			description: ["Automated Smithing Table."]
 			id: "3F6DF0D28A64980E"
+			shape: "diamond"
 			size: 0.7d
 			tasks: [{
 				id: "0886E6A8BB4B16CE"
 				item: "vintageimprovements:helve_hammer"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -6.3d
-		}
-		{
-			dependencies: ["769E68032FC9806D"]
-			id: "6E9B2C7B591148F9"
-			tasks: [{
-				id: "3E124680BD9DC007"
-				item: "vintageimprovements:curving_press"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -8.0d
+			x: 3.0019132653061433d
+			y: 1.246938775510209d
 		}
 		{
 			dependencies: ["746BED2E65591E76"]
@@ -893,14 +868,11 @@
 				item: "createoreexcavation:extractor"
 				type: "item"
 			}]
-			x: 0.984863945578212d
-			y: -6.357993197278915d
+			x: 2.985926870748287d
+			y: -4.567687074829919d
 		}
 		{
-			dependencies: [
-				"0852CB10008D7CDB"
-				"7B289C03327D9227"
-			]
+			dependencies: ["0852CB10008D7CDB"]
 			description: ["Better version of Andesite Chunk Loader. "]
 			icon: "create_power_loader:brass_chunk_loader"
 			id: "43DC6334943F14C6"
@@ -917,8 +889,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: -4.5d
+			x: 6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["75D2966F919D360B"]
@@ -936,8 +908,8 @@
 					type: "item"
 				}
 			]
-			x: -3.2239795918367236d
-			y: -3.14642857142859d
+			x: -0.3380952380952337d
+			y: 0.06666666666667131d
 		}
 		{
 			dependencies: [
@@ -975,14 +947,13 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 2.5d
+			x: 1.278954081632635d
+			y: 0.1984693877551229d
 		}
 		{
 			dependencies: [
 				"799F7F64000A3084"
 				"0852CB10008D7CDB"
-				"7B289C03327D9227"
 			]
 			description: ["Attachment for Energy Acceptor. With it you now can power your ME system with rotational power."]
 			id: "5B16DA7287A8ABFE"
@@ -993,8 +964,8 @@
 				item: "createappliedkinetics:energy_provider"
 				type: "item"
 			}]
-			x: 5.189200680272101d
-			y: -5.385714285714272d
+			x: 6.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["37FAA3D4CF96E9EE"]
@@ -1009,7 +980,7 @@
 			]
 			id: "6C63FA3003078E6E"
 			shape: "gear"
-			size: 1.2d
+			size: 1.5d
 			tasks: [
 				{
 					id: "2225FC3D2346C00A"
@@ -1031,24 +1002,50 @@
 				}
 			]
 			title: "Bigger train tracks"
-			x: 12.0d
-			y: -0.6d
+			x: 11.43571428571429d
+			y: -3.8704081632652674d
 		}
 		{
 			dependencies: [
-				"54661956247869DD"
-				"37FAA3D4CF96E9EE"
-				"1A3BA4BEFD861942"
+				"75D2966F919D360B"
+				"1DED6CBFB9327179"
 			]
-			id: "0E4D4401AF3EDF54"
-			shape: "hexagon"
-			tasks: [{
-				id: "4F8727ABE9C24130"
-				item: "create_new_age:copper_circuit"
-				type: "item"
-			}]
-			x: 11.0d
-			y: -2.0d
+			dependency_requirement: "one_completed"
+			description: [
+				"By crushing Netherack into dust you can mix it with some Fire Clays and Blaze Powder. But for procces to work you need "
+				""
+				"Better version of Blast Furnace from Nether resources!"
+				""
+				"Makes steel faster and &ocan proccess Geology ores&r better then other ways."
+				""
+				"Just remember to clear Slag out of it!"
+			]
+			icon: "immersiveengineering:blast_furnace"
+			id: "7B2C8205EC91FAA1"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [
+				{
+					id: "2AF4A3EB55260EB8"
+					item: "crusty_chunks:blast_clay"
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "3796E9447B9B7604"
+					item: "immersiveengineering:blastbrick"
+					type: "item"
+				}
+				{
+					id: "1AA3B64CFFE6A083"
+					item: "immersiveengineering:blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Hellish Blast Furnace"
+			x: 1.2964285714285637d
+			y: -3.680102040816301d
 		}
 	]
 	title: "Brass Machinations"

@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         'ABA'
     ],
     {
-        A: 'immersiveengineering:wirecoil_structure_steel',
+        A: 'immersiveengineering:wirecoil_electrum_ins',
         B: 'immersiveengineering:coil_lv',
         C: 'create:andesite_alloy_block'
     })

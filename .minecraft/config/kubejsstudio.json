@@ -3,7 +3,7 @@
   "browserCollapsed": false,
   "pendingCollapsed": false,
   "sideListCollapsed": false,
-  "tab": 0,
+  "tab": 5,
   "propsBlocks": false,
   "filesExplorerCollapsed": false,
   "apiBrowserCollapsed": false,
@@ -15,9 +15,9 @@
   "filesConsoleCollapsed": false,
   "filesFilterFolders": true,
   "filesExplorerW": 212,
-  "filesConsoleH": 107,
+  "filesConsoleH": 96,
   "recipesBrowserW": 280,
-  "previewH": 111,
+  "previewH": 112,
   "sideListW": 200,
   "pendingHeight": 60,
   "pickerW": 0,
@@ -48,8 +48,8 @@
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts",
     "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\kubejsstudio"
   ],
-  "recipesSelected": "thermal:machines/furnace/furnace_rotten_flesh_to_leather",
-  "recipesSearch": "thermal:machines/furnace/furnace_rotten_flesh_to_leather",
+  "recipesSelected": "tconstruct:smeltery/casting/scorched/brick_composite",
+  "recipesSearch": "tconstruct:smeltery/casting/scorched/brick_composite",
   "tagsRegistry": "item",
   "tagsSelected": "ad_astra:aeronos_caps",
   "tagsSearch": "",
@@ -61,21 +61,21 @@
   "createSelected": "",
   "createSearch": "",
   "filesOpen": [
-    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\mekanism\\heat_gen.js"
+    "C:\\Users\\user\\AppData\\Roaming\\PrismLauncher\\instances\\TechBoom-Reconstructed\\.minecraft\\kubejs\\server_scripts\\create\\compressing.js"
   ],
   "recentPicks": [
+    "item crusty_chunks:blast_clay",
+    "item minecraft:blaze_powder",
+    "item gtceu:netherrack_dust",
+    "item create:cinder_flour",
+    "item immersivegeology:raw_fire_clay",
+    "item gtceu:compressed_fireclay",
+    "item #forge:glass_panes/silica",
+    "item thermal:rubber",
+    "item gtceu:sticky_resin",
+    "item minecraft:water_bucket",
     "item minecraft:leather",
-    "item minecraft:rotten_flesh",
-    "item tconstruct:seared_brick",
-    "item #forge:frames/invar",
-    "item #tconstruct:seared_bricks",
-    "item #forge:plates/invar",
-    "item #forge:plates/iron",
-    "item #forge:nuggets/wrought_iron",
-    "item #forge:rods/wrought_iron",
-    "item gtceu:small_iron_gear",
-    "item #forge:glass_panes",
-    "item immersiveengineering:redstone_acid_bucket"
+    "item minecraft:rotten_flesh"
   ],
   "filesActive": 0
 }

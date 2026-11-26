@@ -186,10 +186,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"26041794979A3851"
-				"3D1CCF8E85981E52"
-			]
+			dependencies: ["26041794979A3851"]
 			description: ["Brass version that now have filters and some more abilities!"]
 			icon: "create:brass_funnel"
 			id: "09A3CBAAEEA779DA"
@@ -222,10 +219,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"3D1CCF8E85981E52"
-				"2B605F8F5C28FCAD"
-			]
+			dependencies: ["2B605F8F5C28FCAD"]
 			description: [
 				"Will detect things for you in various storages."
 				""
@@ -241,10 +235,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"3D1CCF8E85981E52"
-				"7A722F4E1BB2DF66"
-			]
+			dependencies: ["7A722F4E1BB2DF66"]
 			description: ["Upgraded chute with redstone control and filter capabilities."]
 			id: "6260FB2B98C9ABE6"
 			tasks: [{

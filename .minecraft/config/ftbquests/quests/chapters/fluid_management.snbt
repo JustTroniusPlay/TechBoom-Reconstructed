@@ -1151,6 +1151,17 @@
 			x: 7.071045918367346d
 			y: -7.219940476190466d
 		}
+		{
+			dependencies: ["72304D7D63A87E7A"]
+			id: "00484AFAA3E75598"
+			tasks: [{
+				id: "5FAC0B28B13B2602"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: -1.7146683673469383d
+			y: -5.077083333333313d
+		}
 	]
 	title: "Fluid Management"
 }

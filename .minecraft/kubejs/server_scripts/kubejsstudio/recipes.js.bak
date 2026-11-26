@@ -34,6 +34,12 @@ ServerEvents.highPriorityData(event => {
     event.addJson('create:recipes/crafting/logistics/stock_ticker', {"type":"minecraft:crafting_shaped","category":"misc","pattern":["#","A","B"],"key":{"#":{"tag":"forge:glass_panes"},"A":{"item":"create:stock_link"},"B":{"tag":"forge:ingots/gold"}},"result":{"item":"create:stock_ticker","count":1}})
     event.addJson('crusty_chunks:recipes/iron_gear_recipe', {"type":"minecraft:crafting_shaped","category":"misc","pattern":["#A#","ABA","#A#"],"key":{"#":{"tag":"forge:nuggets/wrought_iron"},"A":{"tag":"forge:rods/wrought_iron"},"B":{"item":"gtceu:small_iron_gear"}},"result":{"item":"crusty_chunks:irongear","count":1}})
     event.addJson('mekanismgenerators:recipes/generator/heat', {"type":"minecraft:crafting_shaped","pattern":["###","ABA","ACA"],"key":{"#":{"tag":"forge:plates/iron"},"A":{"item":"tconstruct:seared_brick"},"B":{"tag":"forge:frames/invar"},"C":{"item":"minecraft:furnace"}},"result":{"item":"mekanismgenerators:heat_generator","count":1}})
+    event.addJson('techboom:recipes/lether_from_rotten', {"type":"minecraft:smelting","ingredient":{"item":"minecraft:rotten_flesh"},"result":{"item":"minecraft:leather","count":1},"experience":0.1,"cookingtime":200})
+    event.addJson('adpother:recipes/iron_respirator', {"type":"minecraft:crafting_shaped","category":"equipment","pattern":["#A#","BCB","DED"],"key":{"#":{"tag":"forge:glass_panes/silica"},"A":{"item":"minecraft:leather_helmet"},"B":{"tag":"forge:leather"},"C":{"tag":"forge:ingots/iron"},"D":{"tag":"minecraft:wool"},"E":{"tag":"minecraft:leaves"}},"result":{"item":"adpother:iron_respirator","count":1}})
+    event.addJson('adpother:recipes/gold_respirator', {"type":"minecraft:crafting_shaped","category":"equipment","pattern":["#A#","BCB","DED"],"key":{"#":{"tag":"forge:glass_panes/silica"},"A":{"item":"minecraft:leather_helmet"},"B":{"tag":"forge:leather"},"C":{"tag":"forge:ingots/gold"},"D":{"tag":"minecraft:wool"},"E":{"tag":"minecraft:leaves"}},"result":{"item":"adpother:gold_respirator","count":1}})
+    event.addJson('adpother:recipes/diamond_respirator', {"type":"minecraft:crafting_shaped","category":"equipment","pattern":["#A#","BCB","DED"],"key":{"#":{"tag":"forge:glass_panes/silica"},"A":{"item":"minecraft:leather_helmet"},"B":{"tag":"forge:leather"},"C":{"tag":"forge:gems/diamond"},"D":{"tag":"minecraft:wool"},"E":{"tag":"minecraft:leaves"}},"result":{"item":"adpother:diamond_respirator","count":1}})
+    event.addJson('create_new_age:recipes/shaped/basic_solar_heating_plate', {"type":"minecraft:crafting_shaped","category":"misc","pattern":["###","ABA","ABA"],"key":{"#":{"tag":"forge:glass_panes/silica"},"A":{"tag":"forge:ingots/iron"},"B":{"item":"create_new_age:heat_pipe"}},"result":{"item":"create_new_age:basic_solar_heating_plate","count":1}})
+    event.addJson('techboom:recipes/blast_clay_create', {"type":"create:mixing","ingredients":[[{"item":"gtceu:compressed_fireclay"},{"item":"immersivegeology:raw_fire_clay"}],[{"item":"create:cinder_flour"},{"item":"gtceu:netherrack_dust"}],{"item":"minecraft:blaze_powder"},{"amount":500,"tag":"minecraft:lava"}],"results":[{"item":"crusty_chunks:blast_clay","count":4}]})
 })
 ServerEvents.recipes(event => {
     event.remove({ id: 'civilian_aviation:bell206_black' })
@@ -122,4 +128,5 @@ ServerEvents.recipes(event => {
     event.shapeless('gtceu:diamond_plate', ['#gtceu:tools/crafting_saws', 'minecraft:diamond','minecraft:water_bucket']).id('techboom:diamond_plate_hand')
     event.remove({ id: 'kubejsstudio:my_recipe' })
     event.remove({ id: 'immersiveengineering:crafting/redstone_acid' })
+    event.shaped('thermal:rubber', [' # ', '#A#', ' # '], { '#': 'gtceu:sticky_resin', 'A': 'minecraft:water_bucket' }).id('techboom:rubber_from_resin')
 })

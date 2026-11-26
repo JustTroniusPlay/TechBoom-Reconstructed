@@ -6,14 +6,23 @@
 	icon: "thermal:steel_block"
 	id: "42130AB6A153F201"
 	order_index: 0
-	quest_links: [{
-		id: "0D37DA266658503C"
-		linked_quest: "7A0C939E0FE540EC"
-		shape: "gear"
-		size: 1.5d
-		x: 1.2d
-		y: 0.4500000000000002d
-	}]
+	quest_links: [
+		{
+			id: "0D37DA266658503C"
+			linked_quest: "7A0C939E0FE540EC"
+			shape: "gear"
+			size: 1.5d
+			x: 1.2d
+			y: 0.4500000000000002d
+		}
+		{
+			id: "6A111940E2357F42"
+			linked_quest: "5186990A391ADB8D"
+			shape: "octagon"
+			x: 5.094047619047629d
+			y: -4.397619047619052d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -171,112 +180,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"3CD05E2E5661246B"
-				"4647FBAA99333197"
-			]
-			description: [
-				"Better version of Blast Furnace from Nether resources!"
-				""
-				"Makes steel faster and &ocan proccess Geology ores&r better then other ways."
-				""
-				"Just remember to clear Slag out of it!"
-			]
-			icon: "immersiveengineering:blast_furnace"
-			id: "79EF5B4E470ACDB4"
-			tasks: [
-				{
-					count: 27L
-					id: "4539E419960B6A2B"
-					item: { Count: 27, id: "immersiveengineering:blastbrick" }
-					type: "item"
-				}
-				{
-					id: "6D40633FABDBF406"
-					item: "immersiveengineering:blast_furnace"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Better Blasting"
-			x: 1.2250000000000014d
-			y: -3.682142857142871d
-		}
-		{
-			dependencies: ["79EF5B4E470ACDB4"]
-			description: [
-				"With some steel plating and energy you can boost production of this industrial metal."
-				""
-				"Place Preheaters on the sides of the Blast Furnace and give them power. &oFront side&r will output &oSlag&r, while &lback side&r will output &lsteel&r itself."
-				""
-				"Top part is items input."
-			]
-			icon: "immersiveengineering:advanced_blast_furnace"
-			id: "745A282BA4A843D5"
-			rewards: [{
-				id: "0CE7ADC1EA15951B"
-				item: "minecraft:hopper"
-				type: "item"
-			}]
-			shape: "rsquare"
-			tasks: [
-				{
-					count: 27L
-					id: "68CFC7DD9D063B7B"
-					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "592251313E28E9FF"
-					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
-					type: "item"
-				}
-				{
-					id: "40CEA24B000E795E"
-					item: "immersiveengineering:advanced_blast_furnace"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Improved blasting"
-			x: 1.2250000000000014d
-			y: -5.467857142857156d
-		}
-		{
-			dependencies: ["37392944F830DC3E"]
-			description: ["Fastest Coke Oven version that do things on its own without any additional requirements."]
-			id: "575BDE04271E94D1"
-			shape: "rsquare"
-			size: 0.85d
-			tasks: [{
-				count: 27L
-				id: "2F40390FDF8B0340"
-				item: { Count: 27, id: "railcraft:coke_oven_bricks" }
-				type: "item"
-			}]
-			title: "Industrial Coke Oven"
-			x: -0.9739795918367378d
-			y: -5.539285714285729d
-		}
-		{
 			dependencies: ["7A0C939E0FE540EC"]
-			dependency_requirement: "one_started"
-			description: ["Nether opens you a way to get great amount of new resources."]
-			id: "4647FBAA99333197"
-			shape: "hexagon"
-			size: 1.2d
-			tasks: [{
-				id: "32EE79113BC817D7"
-				item: "crusty_chunks:blast_clay"
-				type: "item"
-			}]
-			title: "Hellish Materials"
-			x: 1.2d
-			y: -1.7999999999999998d
-		}
-		{
-			dependencies: ["4647FBAA99333197"]
 			id: "0E72E4B73D245BA0"
 			subtitle: "Work In Progress"
 			tasks: [
@@ -298,11 +202,11 @@
 					type: "item"
 				}
 			]
-			x: -0.9331632653061277d
-			y: -1.8045918367347085d
+			x: -0.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["79EF5B4E470ACDB4"]
+			dependencies: ["7A0C939E0FE540EC"]
 			description: ["Best standalone version of steel creating furnace."]
 			id: "697FDEFDED0990AC"
 			shape: "diamond"
@@ -313,41 +217,8 @@
 				type: "item"
 			}]
 			title: "Maximus Blasting"
-			x: 2.4392857142857167d
-			y: -3.682142857142871d
-		}
-		{
-			dependencies: ["79EF5B4E470ACDB4"]
-			description: [
-				"&lSlag&r that you get as waste can be repurposed into different things."
-				""
-				"Slag Gravel boost grow of water based plants."
-				""
-				"Slag Glass can work as insulator for HV relays."
-				""
-				"Slag Bricks have blast resistance."
-			]
-			id: "37392944F830DC3E"
-			tasks: [
-				{
-					id: "5DC071CF057CAC30"
-					item: "immersiveengineering:slag_brick"
-					type: "item"
-				}
-				{
-					id: "2771DF363D784788"
-					item: "immersiveengineering:slag_gravel"
-					type: "item"
-				}
-				{
-					id: "51E112E6F288D153"
-					item: "immersiveengineering:slag_glass"
-					type: "item"
-				}
-			]
-			title: "Slag Wonders"
-			x: -0.9739795918367378d
-			y: -3.74336734693879d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7A0C939E0FE540EC"]
@@ -466,6 +337,255 @@
 			title: "Special Bullets"
 			x: 3.9026785714285737d
 			y: 0.20892857142856514d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			description: ["Fastest Coke Oven version that do things on its own without any additional requirements."]
+			id: "575BDE04271E94D1"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				count: 27L
+				id: "2F40390FDF8B0340"
+				item: { Count: 27, id: "railcraft:coke_oven_bricks" }
+				type: "item"
+			}]
+			title: "Industrial Coke Oven"
+			x: 0.019196428571433444d
+			y: -1.616581632653066d
+		}
+		{
+			dependencies: [
+				"54661956247869DD"
+				"288826470DDF0F30"
+			]
+			description: ["Consume heat system that get generated by solar heating plates or nuclear reactors."]
+			id: "0DB76665DD848A9A"
+			tasks: [{
+				id: "49DC50BF84CA042D"
+				item: "create_new_age:heater"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"54661956247869DD"
+				"5186990A391ADB8D"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Generate Stress by heating water into steam."]
+			icon: "create:steam_engine"
+			id: "40B9ECFB3C0DB31F"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "51660897DFAD0E55"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					id: "5016667E8FD95F69"
+					item: "minecraft:campfire"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.058333333333344d
+			y: -4.397619047619052d
+		}
+		{
+			dependencies: ["5CD12AC552AA4061"]
+			description: ["Allow energy heater get superheated state. Apply it on the block as upgrade."]
+			id: "1DA15BD0E020EBB9"
+			size: 0.6d
+			tasks: [{
+				id: "77589BB2B73B66EA"
+				item: "moreburners:heat_upgrade"
+				type: "item"
+			}]
+			x: 3.494302721088459d
+			y: -2.6081632653061364d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			description: ["Use Forge Energy to heat things. "]
+			id: "5CD12AC552AA4061"
+			tasks: [{
+				id: "117966985BB1862C"
+				item: "moreburners:electric_burner"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7A0C939E0FE540EC"]
+			id: "54661956247869DD"
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				id: "75946E4EDDDCAB70"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: 2.549489795918404d
+			y: -4.3755102040816185d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			description: ["Standart heater that use &mslavery&r help of Nether citizens!"]
+			id: "5B4C38C2E2CA7441"
+			tasks: [{
+				id: "05952F8B7DB80B45"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5B4C38C2E2CA7441"]
+			id: "13992CA785DBF66B"
+			size: 0.6d
+			tasks: [{
+				id: "585354293C63CD22"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 0.8999999999999999d
+			y: -5.945238095238106d
+		}
+		{
+			dependencies: ["5B4C38C2E2CA7441"]
+			id: "005DB10C76DA5354"
+			size: 0.7d
+			tasks: [{
+				id: "0451DA21192C9998"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			x: 1.5650510204081907d
+			y: -6.3d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			dependency_requirement: "one_completed"
+			description: ["Simple chunk loader that use rotational power. Catch ghast by clicking it with empty one!"]
+			icon: "create_power_loader:andesite_chunk_loader"
+			id: "242CE134590880BD"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [
+				{
+					id: "620FF69151ADD48F"
+					item: "create_power_loader:empty_andesite_chunk_loader"
+					type: "item"
+				}
+				{
+					id: "2C636304F5A3EDC4"
+					item: "create_power_loader:andesite_chunk_loader"
+					type: "item"
+				}
+			]
+			title: "Ghast Chunk Loader"
+			x: 2.4999999999999996d
+			y: -6.8999999999999995d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			id: "34517076E949A7C5"
+			shape: "diamond"
+			size: 0.6d
+			tasks: [
+				{
+					id: "318CEF8A9233AD04"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"undermod:capability_item_life_leech": {
+								power: 1
+							}
+						}
+						id: "create_sa:blazing_cleaver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07B333E4952E86FF"
+					item: {
+						Count: 1
+						id: "create_sa:blazing_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79655E3F2E3C4762"
+					item: {
+						Count: 1
+						id: "create_sa:blazing_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "74DF3E24DB6E2AB5"
+					item: {
+						Count: 1
+						id: "create_sa:blazing_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Blazing Tools"
+			x: 2.1d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"54661956247869DD"
+				"043F7FFDC6430B34"
+			]
+			description: ["The most effective fuel for Burner is &lGasoline&r. It is only one which allow it to reach &osuperheated&r state."]
+			id: "036AB4BD3B27FB1B"
+			rewards: [{
+				id: "6E53A882F5DBD1E9"
+				item: "create:copper_valve_handle"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E683E95464CDCDE"
+				item: "createdieselgenerators:burner"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["54661956247869DD"]
+			description: ["Circuits to make addons for your rotational electric motors."]
+			id: "0E4D4401AF3EDF54"
+			shape: "hexagon"
+			tasks: [{
+				id: "4F8727ABE9C24130"
+				item: "create_new_age:copper_circuit"
+				type: "item"
+			}]
+			x: 1.0470238095238145d
+			y: -4.388775510204077d
 		}
 	]
 	title: "Steel Glaze [WIP]"
